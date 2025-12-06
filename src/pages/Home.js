@@ -65,11 +65,6 @@ const Home = () => {
             />
           ))}
         </div>
-        
-        <div className="btn-group">
-          <Link to="/contact" className="btn">Book a Session</Link>
-          <Link to="/rates" className="btn btn-outline">View Rates</Link>
-        </div>
       </Section>
 
       {/* About Adin */}
@@ -101,15 +96,24 @@ const Home = () => {
         title="Ready to Begin Your Transformation?"
         subtitle="Take the first step towards healing, growth, and spiritual connection. Book a session today and discover the peace and clarity you've been seeking."
       >
-        <div className="btn-group">
+        {/* <div className="btn-group">
           <Link to="/contact" className="btn">Book Now</Link>
           <Link to="/rates" className="btn btn-secondary">View Rates</Link>
         </div>
         <div>
-          <Link to="/contact" className="btn">Book a 20 minute discovery call</Link>
+          <Link to="/contact" className="btn">Book a 20 Minute Discovery Call</Link>
+        </div> */}
+        <div className="cta-section">
+          <div className="cta-buttons">
+            <Link to="/book-now" className="btn">Book Now</Link>
+            <Link to="/view-rates" className="btn btn-outline">View Rates</Link>
+          </div>
+          <div className="cta-discovery-call">
+            <Link to="/discovery-call" className="btn btn-small">Book a 20 Minute Discovery Call</Link>
+          </div>
         </div>
       </Section>
-      
+
     </div>
   );
 };

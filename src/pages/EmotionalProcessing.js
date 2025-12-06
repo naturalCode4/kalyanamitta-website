@@ -80,8 +80,17 @@ const EmotionalProcessing = () => {
           <div className="services-intro">
             <h2>Emotional Healing Services</h2>
             <p>
-              Emotions are messengers from our soul, carrying important information about our needs, 
-              boundaries, and growth opportunities. Learn to work with them rather than against them.
+            EFT (Emotional Freedom Techniques) (About EFT)
+            EFT stands for Emotional Freedom Techniques. I use it to help people break free from a wide range of deep-seated issues quickly, affordably, and effectively—issues that might otherwise take months or years to address. It is a fascinatingly powerful yet simple healing modality that involves self-tapping points on your body while bringing attention to issues you want resolved or outcomes you want to achieve. 
+            EFT is remarkably versatile (see “Who and what is EFT for” below)
+            While I have immersed myself in numerous spiritual practices and modalities, EFT is the most powerful and universal tool I have encountered for resolving specific psycho-somatic issues and creating positive new outcomes—and I am so grateful to have encountered it and offer it. I hope that I can support as many people as possible with EFT.
+            Why EFT is So Powerful
+            Imagine a tool that can relieve you of self-defeating thoughts, feelings, and actions—often within minutes or a single session—that you've held for years or decades, patterns you just assumed were an unchangeable part of your existence. Imagine being able to let go of these patterns and consciously uplevel your nervous system in a way that brings you great freedom, ease, joy, clarity, alignment, and empowerment.
+            EFT boils down Chinese Medicine, Neuroscience, Positive Psychology, and more into a highly effective yet simple modality that you can do anytime, anywhere. Practitioners may also draw upon methodologies from Internal Family Systems (IFS), Hypnotherapy, Cognitive Behavioral Therapy (CBT), EMDR (Eye Movement Desensitization and Reprocessing), Mindfulness and Ancient Wisdom, Polyvagal Theory, Neuro-Linguistic Programming (NLP), Shamanism, and more. At its core, EFT embodies the wisdom of Love, Acceptance, Letting Go, and your massive potential as a creator being.
+            Who and What is EFT For?
+            EFT is for anyone with a nervous system. It works across all ages, cultures, and belief systems, and can meet you wherever you are on your journey. Whether you're navigating daily overwhelm or deep trauma, physical pain or emotional wounds, self-doubt or anxiety, addiction or grief, relationship challenges or spiritual inquiry, manifesting abundance or actualizing your deepest calling—EFT can support your healing and transformation.
+            Evidence and Experience
+            EFT's effectiveness is well-backed by over 100 peer-reviewed scientific studies and trials, but more importantly, its power can be verified through your own personal experience—often in just minutes of tapping.
             </p>
           </div>
 

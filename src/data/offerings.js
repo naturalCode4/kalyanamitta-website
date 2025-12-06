@@ -15,7 +15,7 @@ export const offerings = [
     id: 'life-coaching',
     title: 'Spiritual Counseling and Education',
     availability: 'Available in-person or virtual',
-    content: `Short Description of Counseling and Education`
+    content: `Short Description of Counseling`
     // content: 'We need wise mentors and holistic support to live our lives. Together, we can explore Life Guidance, Spiritual Education and Tools, Understanding and relating to spiritual traditions in a healthy way, Authenticity Coaching, Perspective Shifting, and Matrix Breaking, Mens Issues Sexual Energy Transmutation and Relationships, Divine Masculinity and Femininity, Psychedelic Support and Integration, Deep Friendship & Holistic Support'
   },
 ];

@@ -46,11 +46,31 @@ const EnergyWork = () => {
       <section className="energy-work-services">
         <div className="container">
           <div className="services-intro">
-            <h2>Energy Healing Services</h2>
-            <p>
-              Energy work is based on the understanding that everything is made of energy, and by working with 
-              the body's energy field, we can promote healing on all levels - physical, emotional, mental, and spiritual.
+          <p>About Energy Healing
+              Energy healing addresses diverse needs by balancing, restoring, and optimizing the body's natural energy flow. See the Benefits section below to learn more about what energy healing can support.
+              I offer Reiki-based energy healing tailored to your needs, responding to any specific concerns you bring. Grounded in compassionate presence, I hold space for whatever arises with acceptance and care. In addition to Reiki, I may incorporate acupressure, other healing modalities, or share insights as appropriate to your session. When helpful, I can offer guidance to help you integrate your experience and move forward with clarity.
+              Benefits of Energy Healing
+              Energy healing helps remove blockages and deficiencies while activating your body's natural ability to heal itself. By restoring balance to your body's energy field and responding to what emerges from your system, you may experience:
+              Deeper sense of peace, love, and spiritual connection
+              Enhanced vitality, health, sleep quality, and immune function
+              Relief from physical pain and tension and accelerated recovery from injuries
+              Deep relaxation and reduced stress and anxiety
+              Emotional release, clarity, and resolution to psychological issues
+              Mental clarity, enhanced intuition, third eye activation, and increased energetic awareness
+              Intuitive downloads and messages
+              What is Reiki?
+              Reiki is an ancient Japanese healing art in which a practitioner channels a beneficent, spiritually conscious, self-intelligent, omnipresent (Rei) life force energy (Ki) to optimize a recipient's bio-energetic field. Reiki works on multiple dimensions simultaneously, supporting the recipient on the physical, emotional, mental, energetic, and spiritual planes.
+              When this field becomes stagnant, depleted, or disrupted through negative thinking, trauma, illness, emotional pain, etc., we experience dis-ease.
+              Reiki practitioners use gentle touch to channel Reiki to your body and field, acting as a conduit for Reiki to flow wherever you need support most. Sessions address not just symptoms but the underlying energetic patterns that contribute to imbalance. This practice partners with your body's innate wisdom, allowing deep healing to unfold from within.
+              Reiki meets you exactly where you are and guides you toward greater wholeness, alignment, and happiness.
+              What to Expect from a Session
+              Arrival & Discussion: We'll greet each other, settle into the space, and discuss any specific concerns you'd like addressed or questions you have.
+              Energy Healing Session: You'll lie comfortably on a mat, first face-up, then face-down, receiving energy healing through gentle, light touch. Hands-off treatment is available upon request.
+              Closing & Grounding: After the session, we'll take time to ground and integrate. If you'd like, we can discuss anything that arose—insights, experiences, or questions.
+              Spiritual Counseling -Optional-:
+              If desired, we can explore whatever is arising in your life, work through challenges, or engage in spiritual education and understanding to support your journey.
             </p>
+
           </div>
 
           <div className="services-grid">

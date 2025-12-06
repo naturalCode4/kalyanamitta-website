@@ -24,14 +24,32 @@
   margin-bottom: 20px;
 }
 
-.service-actions {
+/* .service-actions {
   margin-top: 20px;
   text-align: center;
+} */
+
+.service-actions {
+  display: flex;
+  gap: 1rem; /* Space between buttons */
+  justify-content: center; /* Center the buttons horizontally */
+  margin-top: 1rem; /* Space above the buttons */
 }
 
-.btn-small {
+.service-card {
+  width: 100%; /* Ensure cards are wide enough */
+  max-width: 400px; /* Optional: Set a max width for consistency */
+  margin: 0 auto; /* Center the card */
+}
+
+/* .btn-small {
   padding: 0.5rem 1rem;
   font-size: 0.9rem;
+} */
+
+.btn-small {
+  flex: 1; /* Ensure buttons take equal space */
+  text-align: center; /* Center text inside buttons */
 }
 
 .service-text {
