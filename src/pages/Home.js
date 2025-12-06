@@ -71,7 +71,7 @@ const Home = () => {
           <Link to="/rates" className="btn btn-outline">View Rates</Link>
         </div>
       </Section>
-      
+
       {/* About Adin */}
       <Section 
         variant="rainbow" 
@@ -95,18 +95,6 @@ const Home = () => {
         </div>
       </Section>
       
-      { /*First Session Free Section */}
-      <Section 
-        variant="rainbow" 
-        title="Your First Session is Free"
-        subtitle="Experience the transformative power of healing and guidance with a complimentary first session. This is your opportunity to connect with me and discover how I can support your journey."
-        >
-        <div className="btn-group">
-          <Link to="/contact" className="btn">Book a 30 minute free session / consultation</Link>
-        </div>
-      </Section>
-
-      
       {/* CTA Section */}
       <Section 
         variant="dark" 
@@ -117,7 +105,11 @@ const Home = () => {
           <Link to="/contact" className="btn">Book Now</Link>
           <Link to="/rates" className="btn btn-secondary">View Rates</Link>
         </div>
+        <div>
+          <Link to="/contact" className="btn">Book a 20 minute discovery call</Link>
+        </div>
       </Section>
+      
     </div>
   );
 };
