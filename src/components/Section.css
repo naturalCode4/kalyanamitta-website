@@ -1,0 +1,5 @@
+/* Section Component Styles */
+.section-rainbow .container {
+  position: relative;
+  z-index: 1;
+}

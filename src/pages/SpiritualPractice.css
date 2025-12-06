@@ -1,0 +1,208 @@
+/* Spiritual Practice Page Styles */
+.spiritual-practice {
+  min-height: 100vh;
+}
+
+.spiritual-practice-hero {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.spiritual-practice-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.spiritual-practice-subtitle {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.spiritual-practice-content {
+  padding: 80px 0;
+}
+
+.practices-intro {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.practices-intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.practices-intro p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #666;
+  line-height: 1.6;
+}
+
+.practices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.practice-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.practice-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.practice-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.practice-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.practice-techniques,
+.practice-benefits {
+  margin-bottom: 20px;
+}
+
+.practice-techniques h4,
+.practice-benefits h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.practice-techniques ul,
+.practice-benefits ul {
+  list-style: none;
+  padding: 0;
+}
+
+.practice-techniques li,
+.practice-benefits li {
+  padding: 5px 0;
+  color: #666;
+  position: relative;
+  padding-left: 20px;
+}
+
+.practice-techniques li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #4facfe;
+  font-weight: bold;
+}
+
+.practice-benefits li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #4facfe;
+  font-weight: bold;
+}
+
+.integration-section {
+  padding: 80px 0;
+}
+
+.integration-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: #333;
+}
+
+.integration-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.integration-item {
+  text-align: center;
+  padding: 30px;
+}
+
+.integration-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.integration-item p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.spiritual-practice-cta {
+  padding: 80px 0;
+}
+
+.cta-content {
+  text-align: center;
+  color: white;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .spiritual-practice-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .practices-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .practice-card {
+    padding: 30px;
+  }
+  
+  .integration-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,103 @@
+/* Calendly Embed Styles */
+.calendly-embed-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #1e1e1e 0%, #4a1a5c 10%, #3a2177 20%, #1e4d3e 30%, #125f4a 40%, #0f4c75 50%, #145a82 60%, #b45309 70%, #d4af37 80%, #8b0000 90%, #1e1e1e 100%);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(212, 175, 55, 0.2);
+  border: 2px solid #d4af37;
+  position: relative;
+  overflow: hidden;
+}
+
+.calendly-embed-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: conic-gradient(from 0deg, transparent, rgba(212, 175, 55, 0.08), rgba(18, 95, 74, 0.06), rgba(20, 90, 130, 0.04), rgba(154, 52, 18, 0.03), rgba(180, 83, 9, 0.04), transparent);
+  animation: rotate 20s linear infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.calendly-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.calendly-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.calendly-header p {
+  font-size: 1.2rem;
+  color: #e8e8e8;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.calendly-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 700px;
+}
+
+.calendly-inline-widget {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  background: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .calendly-embed-container {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .calendly-header h2 {
+    font-size: 2rem;
+  }
+  
+  .calendly-header p {
+    font-size: 1rem;
+  }
+  
+  .calendly-inline-widget {
+    min-width: 280px;
+    height: 600px;
+  }
+}
+
+@media (max-width: 480px) {
+  .calendly-embed-container {
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+  
+  .calendly-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .calendly-inline-widget {
+    min-width: 260px;
+    height: 500px;
+  }
+}

@@ -1,0 +1,410 @@
+/* About Hero */
+.about-hero {
+  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+  color: white;
+  padding: 8rem 0 4rem;
+  text-align: center;
+  border-bottom: 2px solid #2d3748;
+}
+
+.about-hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.about-subtitle {
+  font-size: 1.3rem;
+  opacity: 0.95;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* About Introduction */
+.about-intro {
+  padding: 6rem 0;
+}
+
+.about-intro h2 {
+  margin-bottom: 2rem;
+}
+
+.about-intro p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Background & Experience */
+.background-section {
+  padding: 6rem 0;
+}
+
+.background-section h2 {
+  margin-bottom: 2.5rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.background-section .grid > div {
+  padding: 2rem;
+  background: rgba(26, 26, 46, 0.3);
+  border-radius: 15px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.background-section h2:first-of-type {
+  margin-top: 0;
+}
+
+.background-section p {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.about-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-image {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* About Adin Section */
+.about-adin {
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.about-adin.section-rainbow {
+  background: linear-gradient(135deg, #1e1e1e 0%, #4a1a5c 10%, #3a2177 20%, #1e4d3e 30%, #125f4a 40%, #0f4c75 50%, #145a82 60%, #b45309 70%, #d4af37 80%, #8b0000 90%, #1e1e1e 100%) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-adin.section-rainbow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="sacred-geometry-about" width="40" height="40" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="3" fill="%23d4af37" opacity="0.1"/><polygon points="20,12 28,28 12,28" fill="none" stroke="%23d4af37" stroke-width="0.8" opacity="0.1"/><circle cx="20" cy="20" r="12" fill="none" stroke="%23125f4a" stroke-width="0.4" opacity="0.08"/><circle cx="20" cy="20" r="18" fill="none" stroke="%23145a82" stroke-width="0.3" opacity="0.06"/></pattern></defs><rect width="100" height="100" fill="url(%23sacred-geometry-about)"/></svg>');
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.about-adin.section-rainbow .container {
+  position: relative;
+  z-index: 1;
+}
+
+.about-adin h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.about-adin.section-rainbow h2 {
+  color: white !important;
+}
+
+.about-adin p {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #666;
+}
+
+.about-adin.section-rainbow p {
+  color: #b8b8b8 !important;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  color: #666;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.testimonial-author {
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Philosophy Section */
+.philosophy-section {
+  padding: 6rem 0;
+  background: white;
+}
+
+.philosophy-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.philosophy-content h2 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.philosophy-quote {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #667eea;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.philosophy-content p:last-child {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Offerings Details */
+.offerings-details {
+  padding: 6rem 0;
+}
+
+.offerings-details h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 2.5rem;
+}
+
+.offerings-list {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.offering-detail {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background: #1a1a1a;
+  border: 1px solid #2d3748;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.offering-detail:hover {
+  transform: translateY(-8px);
+  border-color: #4a5568;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+.offering-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.offering-icon-large {
+  font-size: 3rem;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 2px solid #4a5568;
+}
+
+.offering-header h3 {
+  margin-bottom: 0.5rem;
+  color: #e8e8e8;
+  font-size: 1.8rem;
+}
+
+.offering-description {
+  color: #4a5568;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.offering-content {
+  margin-left: 95px;
+}
+
+.offering-content p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  color: #b8b8b8;
+}
+
+/* About CTA */
+.about-cta {
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  color: #e8e8e8;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 6rem 0 3rem;
+  }
+  
+  .about-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .about-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .about-adin {
+    padding: 4rem 0;
+  }
+  
+  .about-adin h2 {
+    font-size: 2rem;
+  }
+  
+  .testimonials-section {
+    padding: 4rem 0;
+  }
+  
+  .testimonials-section h2 {
+    font-size: 2rem;
+  }
+  
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-intro {
+    padding: 4rem 0;
+  }
+  
+  .philosophy-section {
+    padding: 4rem 0;
+  }
+  
+  .philosophy-quote {
+    font-size: 1.3rem;
+  }
+  
+  .offerings-details {
+    padding: 4rem 0;
+  }
+  
+  .offering-detail {
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+  }
+  
+  .offering-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .offering-icon-large {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+  
+  .offering-content {
+    margin-left: 0;
+    text-align: center;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .philosophy-quote {
+    font-size: 1.2rem;
+  }
+  
+  .offering-header h3 {
+    font-size: 1.5rem;
+  }
+}
