@@ -29,7 +29,7 @@ const Home = () => {
         <div className="grid grid-2">
           <div>
             <p>This work supports healing, empowerment, embodied well-being, and alignment with your deepest wisdom.</p>
-            <p>I use EFT to help people break free from a wide range of deep-seated issues quickly, affordably, and effectively—issues that might otherwise take months or years to address</p>
+            <p>I use EFT to help people break free from a wide range of deep-seated issues quickly, affordably, and effectively—issues that might otherwise take months or years to address.</p>
             {/* <p>I work with modalities EFT (Emotional Freedom Techniques, or Tapping), Reiki Energy Healing, Meditation, Yoga, Breathwork, Sound Healing, and universal wisdom across spiritual traditions.</p> */}
             <p>I believe that our bodies, hearts, energy, and the universe itself are fundamentally good and possess inherent healing properties. My role is to help awaken this basic goodness and support your natural capacity for self-healing through loving presence, transformative practices, and guidance.</p>
             <p>My mission is to support beings in any way I can. If you're curious about how we can work together, so am I!</p>
@@ -109,7 +109,7 @@ const Home = () => {
             <Link to="/view-rates" className="btn btn-outline">View Rates</Link>
           </div>
           <div className="cta-discovery-call">
-            <Link to="/discovery-call" className="btn btn-small">Book a 20 Minute Discovery Call</Link>
+            <Link to="/discovery-call" className="btn btn-small">Book a Free 20 Minute Call</Link>
           </div>
         </div>
       </Section>

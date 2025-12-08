@@ -36,35 +36,19 @@ const Rates = () => {
 
   const packages = [
     {
-      name: '3-Session Combo',
-      description: 'Dive deeper into your practice',
-      price: '$240-480',
-      originalPrice: '$300-600',
-      discount: '20% OFF',
-      duration: '3 sessions',
+      name: '4-Session Combo',
+      description: 'Invest deeply in yourself. Make a huge impact on your life and well-being',
+      price: '$375. Sliding Scale $210-600',
+      originalPrice: '$500. Sliding Scale $280-800',
+      discount: '25% OFF',
+      // duration: '3 sessions',
       features: [
-        '20% discount on total price',
+        'Four 90 minute sessions',
+        '25% discount on total price',
         'Any combination of services',
-        'Personalized approach',
-        'Integration support',
         'Ongoing support and guidance'
       ]
     },
-    {
-      name: '5-Session Combo',
-      description: 'Commit to your showing up for your life',
-      price: '$500-1000',
-      originalPrice: '$750-1500',
-      discount: '33% OFF',
-      duration: '5 sessions',
-      features: [
-        '33% discount on total price',
-        'Any combination of services',
-        'Personalized approach',
-        'Comprehensive healing journey',
-        'Ongoing support and guidance'
-      ]
-    }
   ];
 
   const sessionTypes = [
@@ -99,42 +83,39 @@ const Rates = () => {
             <div className="flexible-content">
               <h3>Open Reciprocity Pricing</h3>
               <p className="flexible-label">Honor-Based</p>
-              <p className="flexible-description">To make this work available to anyone with a desire for transformation, the sliding scale allows those with greater financial capacity to support those with more need. This open reciprocity model is based on generosity and honors the exchange of energy between us, supports awareness work in the world, and allows this work to be accessible to more individuals.</p>
+              <p className="flexible-description">I use this open reciprocity model so that those for whom it's easy to spend money can support those who both want the healing work and need financial assistance. This honors the exchange of energy between us and supports healing on Earth by making this work accessible to more people. In the context of healing arts as well as traditional therapy, this sliding scale would be considered very accessible.</p>
+              <br></br><p className="flexible-description"><em>Rates for all 90 minute sessions*</em></p>
             </div>
           </div>
           <div className="pricing-timeline">
             <div className="timeline-point">
               <div className="timeline-number">1</div>
               <div className="timeline-content">
-                <h3>$50</h3>
-                <p className="timeline-label">Dharma Practitioners</p>
-                <p className="timeline-description">Special beginning rate for those deeply committed to Dharma and/or helping others. I know many of us have prioritized other things in our lives over $!</p>
+                <h3>$70</h3>
+                <p className="timeline-label">Affordable Range</p>
+                <p className="timeline-description">An affordable rate for those with lower financial means</p>
               </div>
             </div>
             
             <div className="timeline-point">
               <div className="timeline-number">2</div>
             </div>
-            
-            <div className="timeline-point">
-              <div className="timeline-number">3</div>
-            </div>
 
             <div className="timeline-point">
-              <div className="timeline-number">4</div>
+              <div className="timeline-number">3</div>
               <div className="timeline-content">
                 <h3>$200</h3>
-                <p className="timeline-label">Supporting Value</p>
-                <p className="timeline-description">For those at a financially secure stage who wish to support this work's sacred value and accessibility for others.</p>
+                <p className="timeline-label">Secure Range</p>
+                <p className="timeline-description">A way for those in a financially secure stage to honor the sacredness of this work -- This supports me and for those with fewer financial means to receive healing and guidance.</p>
               </div>
             </div>
           </div>
           
           <div className="timeline-middle-text">
             <div className="middle-text-content">
-              <h3>$100-150</h3>
-              <p className="middle-text-label">Main Rate Range</p>
-              <p className="middle-text-description">The recommended rate range for most clients</p>
+              <h3>$125</h3>
+              <p className="middle-text-label">Suggested Rate</p>
+              <p className="middle-text-description"></p>
             </div>
           </div>
           

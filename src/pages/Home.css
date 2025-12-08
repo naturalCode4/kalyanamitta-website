@@ -102,14 +102,14 @@
 }
 
 .section-rainbow .section-subtitle {
-  color: #b8b8b8 !important;
+  color: white;
   font-size: 1.1rem;
   margin-bottom: 2.5rem;
   line-height: 1.6;
 }
 
 .section-rainbow p {
-  color: #b8b8b8 !important;
+  color: white;
   text-align: left;
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
@@ -139,7 +139,7 @@
 }
 
 .section-rainbow .photo-caption {
-  color: #b8b8b8 !important;
+  color: white;
   font-size: 1rem;
   font-weight: 500;
   margin-top: 0.75rem;
@@ -264,14 +264,14 @@
 }
 
 .section-dark .section-title {
-  color: white !important;
+  color: white;
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 2rem;
 }
 
 .section-dark .section-subtitle {
-  color: #b8b8b8 !important;
+  color: #b8b8b8;
   text-align: center;
   font-size: 1.1rem;
   margin-bottom: 4rem;
@@ -299,23 +299,23 @@
 }
 
 .card-dark .service-availability {
-  color: #b8b8b8 !important;
+  color: #b8b8b8;
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }
 
 .card-dark .service-subcategories h4 {
-  color: white !important;
+  color: white;
   font-size: 1.1rem;
   margin-bottom: 10px;
 }
 
 .card-dark .service-subcategories li {
-  color: #b8b8b8 !important;
+  color: #b8b8b8;
 }
 
 .card-dark .service-subcategories li:before {
-  color: #667eea !important;
+  color: #667eea;
 }
 
 /* Button overrides to ensure proper styling */
@@ -758,4 +758,20 @@
     margin: 0 auto;
     display: block;
   }
+}
+
+.section-rainbow {
+  color: white; /* Default text color for better readability */
+}
+
+.section-rainbow p,
+.section-rainbow h1,
+.section-rainbow h2,
+.section-rainbow h3,
+.section-rainbow span {
+  color: white !important; /* Force white text for all common elements */
+}
+
+.section-rainbow * {
+  color: white !important; /* Apply to all elements inside .section-rainbow */
 }

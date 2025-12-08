@@ -18,6 +18,13 @@
   align-items: center;
 }
 
+.google-reviews-logo svg {
+  width: 3rem; /* Set the desired width */
+  height: 3rem; /* Set the desired height */
+  max-width: 100%; /* Ensure it doesn't overflow */
+  max-height: 100%; /* Ensure it doesn't overflow */
+}
+
 .google-reviews-header > div:last-child {
   display: flex;
   flex-direction: column;
@@ -28,7 +35,7 @@
 .google-reviews-header h3 {
   margin: 0;
   font-size: 2rem;
-  color: #333;
+  color: white;
   font-weight: 600;
 }
 
@@ -128,7 +135,7 @@
 }
 
 .reviews-error {
-  color: #d32f2f;
+  color: #666;
 }
 
 .google-reviews-footer {
@@ -139,7 +146,7 @@
 }
 
 .view-all-reviews-link {
-  color: #4285F4;
+  color: black;
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
@@ -148,7 +155,7 @@
 }
 
 .view-all-reviews-link:hover {
-  color: #1967D2;
+  color: white;
   text-decoration: underline;
 }
 

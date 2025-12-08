@@ -72,11 +72,11 @@
 }
 
 .card:not(.card-dark) .service-availability {
-  color: #666;
+  color: white;
 }
 
 .card:not(.card-dark) .service-description {
-  color: #666;
+  color: white;
 }
 
 .card:not(.card-dark) .service-subcategories h4,
@@ -143,7 +143,7 @@
 }
 
 .card-rainbow .service-availability {
-  color: #b8b8b8 !important;
+  color: white;
   font-size: 0.9rem;
   margin-bottom: 1rem;
   position: relative;
@@ -151,7 +151,7 @@
 }
 
 .card-rainbow .service-subcategories h4 {
-  color: white !important;
+  color: white;
   font-size: 1.1rem;
   margin-bottom: 10px;
   position: relative;
@@ -159,7 +159,7 @@
 }
 
 .card-rainbow .service-subcategories li {
-  color: #b8b8b8 !important;
+  color: white;
   text-align: left !important;
   position: relative;
   z-index: 1;
@@ -170,7 +170,7 @@
 }
 
 .card-rainbow .service-text {
-  color: #b8b8b8 !important;
+  color: white;
   text-align: left !important;
   position: relative;
   z-index: 1;
@@ -192,7 +192,7 @@
 }
 
 .card-rainbow .service-benefits li {
-  color: #b8b8b8 !important;
+  color: white;
   text-align: left !important;
   position: relative;
   z-index: 1;
