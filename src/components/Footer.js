@@ -24,9 +24,9 @@ const Footer = () => {
           
           <div className="footer-section">
             <h4>Contact Info</h4>
-            <p>Email: hello@Healing On Tap.com</p>
+            <p>Email healingontap963@gmail.com</p>
             <p>Phone: (301) 641-2855</p>
-            <p>Location: Virtual & In-Person Sessions</p>
+            <p>Location: West Philadelphia, Pennsylvania. In-Person or Virtual</p>
           </div>
         </div>
         

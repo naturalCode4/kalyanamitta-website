@@ -44,9 +44,9 @@ const Rates = () => {
       // duration: '3 sessions',
       features: [
         'Four 90 minute sessions',
-        '25% discount on total price',
         'Any combination of services',
-        'Ongoing support and guidance'
+        'Ongoing support and guidance',
+        '25% discount on total price'
       ]
     },
   ];

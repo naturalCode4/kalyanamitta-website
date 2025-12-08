@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
+import Contact from '../pages/Contact'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -50,7 +51,7 @@ const Header = () => {
                 <Link to="/rates" className="nav-link">Rates</Link>
               </li>
             <li className="nav-item">
-              <Link to="/contact" className="nav-link">Contact</Link>
+              <Link to="/contact" className="nav-link">Book & Contact</Link>
             </li>
             </ul>
           </nav>
