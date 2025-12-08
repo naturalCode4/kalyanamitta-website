@@ -23,6 +23,9 @@ const About = () => {
           <div className="grid grid-2">
             <div>
               <h2>About Adin</h2>
+              <p>Adin is a healer and spiritual guide who helps people transform, heal, and align with their inherent wisdom and basic goodness through Emotional Freedom Techniques, Energy Healing, and Spiritual Counseling, Practices, and Education.</p>
+              <p>He currently lives in West Philadelphia, PA. He is a certified practitioner of Emotional Freedom Techniques (EFT), Reiki II, Yoga, and Breathwork. He has practiced extensively in Zen, Tibetan, and Theravadan Buddhist lineages. He has also explored mysticism across Judaic, Christian, Sufi, and Taoist traditions, as well as somatic practices, medicine work, shamanism, healing arts, psychic development, bhakti, and ecstatic dance—seeking what genuinely gives life, unclouds the pure heart, and supports positive transformation.</p>
+              <h3>Story</h3>
               <p>
                 When I was 15, I rapidly shifted from being quite depressed to undergoing a radical expansion in consciousness and access to peace and happiness. It was as if my sense of self deeply quieted, replaced by a very peaceful and ecstatic presence. When this opened up, it felt like a natural continuation of who I'd always been. I remember in elementary school preferring to lay in the grass watching the clouds rather than hang out with friends, and I remember spending hours wandering through my neighborhood in deep play—a state that's so vital for children to experience. I navigated this blissful state and discovered I could dissolve negative emotions in 60-90 seconds simply by allowing them to be. Around that time, I encountered a neat little book called The Teachings of Buddha, and it immediately read like poetry pointing to the truths of consciousness, our kind and pure nature, and our potential.
               </p>
