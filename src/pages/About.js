@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import GoogleReviews from '../components/GoogleReviews';
 
 const About = () => {
 
@@ -20,9 +21,14 @@ const About = () => {
       {/* About Adin */}
       <section className="about-adin section-rainbow">
         <div className="container">
-          <div className="grid grid-2">
-            <div>
-              <h2>About Adin</h2>
+          <div className="about-adin-content">
+            <h2>About Adin</h2>
+            <div className="about-image">
+              <div className="placeholder-image">
+                <span>Profile Image</span>
+              </div>
+            </div>
+            <div className="about-adin-text">
               <p>Adin is a healer and spiritual guide who helps people transform, heal, and align with their inherent wisdom and basic goodness through Emotional Freedom Techniques, Energy Healing, and Spiritual Counseling, Practices, and Education.</p>
               <p>He currently lives in West Philadelphia, PA. He is a certified practitioner of Emotional Freedom Techniques (EFT), Reiki II, Yoga, and Breathwork. He has practiced extensively in Zen, Tibetan, and Theravadan Buddhist lineages. He has also explored mysticism across Judaic, Christian, Sufi, and Taoist traditions, as well as somatic practices, medicine work, shamanism, healing arts, psychic development, bhakti, and ecstatic dance—seeking what genuinely gives life, unclouds the pure heart, and supports positive transformation.</p>
               <h3>Story</h3>
@@ -47,17 +53,12 @@ const About = () => {
               <p>
                 If you're curious about how we might work together, I am too!
               </p>
-              <p>
+              <h3>
                 A Note on Teachers and Practice
-              </p>
+              </h3>
               <p>
                 I have deep respect for teachers who embody the great depths of practice and actualization. Those who have guided me in my spiritual development, particularly in meditation and healing arts, are more experienced and mature than I am (though we need not cling to hierarchies of advancement—we are all equal in our essential nature). I don't claim to match their capacity for spiritual transmission. If you have a profound longing for awakening, I can help you find an excellent practice community and/or teacher, and I'll remain a friend and support on your path. I'm not an NBA star, so I can't train you to be an NBA star. We can generally guide others to the degree of our own realization. Much gratitude and love to everyone who has supported me or taught me anything worth teaching
               </p>
-            </div>
-            <div className="about-image">
-              <div className="placeholder-image">
-                <span>Profile Image</span>
-              </div>
             </div>
           </div>
         </div>
@@ -67,27 +68,7 @@ const About = () => {
       <section className="testimonials-section section-light">
         <div className="container">
           <h2>Testimonials</h2>
-          <div className="testimonials-grid">
-            <div className="testimonial-card">
-              <p className="testimonial-text">
-                "Adin is a kind, caring and spiritually connected person. If you are looking to discover new ways to see life and your soul—or just need someone to talk to—I highly recommend engaging with Adin's deep breadth of experience and modalities that he offers.""
-              </p>
-              <p className="testimonial-author">- Travis D.</p>
-            </div>
-            <div className="testimonial-card">
-              <p className="testimonial-text">
-                "Adin is a warm, creative, and sagely steward for our times! He is a passionate practitioner of many modalities who has helped me expand my consciousness and deepen my meditation, yoga, and energy practices. Kind and reliable, I trust him from my soul."
-              </p>
-              <p className="testimonial-author">- Ethan B., Rabbi</p>
-            </div>
-            <div className="testimonial-card">
-              <p className="testimonial-text">
-                "I recently booked a Reiki session with Adin, who I have known for sometime through our shared interest in Yoga. I had done Reiki only once with a different practitioner, and came away as a bit of a skeptic; I didn't feel any different at the end of the session. My experience with Adin was very different. He has a very simple and straightforward way of speaking and explaining the Reiki process, which put me at ease very quickly.  We talked for a few minutes then he began the Reiki process.  Adin has a wonderful aura about him of contained energy and confidence, with a feeling of intuitively moving and allowing the energy to move, of becoming the 'Hollow Bone' that the ancient healers speak off.  I felt the energy within my body and mind, and came away from the session with a wonderful sense of energized peace and well-being that stayed with me for several days. I wholeheartedly recommend him as a naturally gifted Reiki practitioner, and look forward to doing more energy healing work with him soon.
-                "
-              </p>
-              <p className="testimonial-author">- Owen P., Kundalini Yoga Teacher</p>
-            </div>
-          </div>
+          <GoogleReviews />
         </div>
       </section>
 

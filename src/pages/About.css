@@ -63,9 +63,11 @@
 }
 
 .about-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  float: right;
+  width: 300px;
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
 }
 
 .placeholder-image {
@@ -85,6 +87,16 @@
 .about-adin {
   padding: 6rem 0;
   text-align: center;
+}
+
+.about-adin-content {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Clear float */
+}
+
+.about-adin-text {
+  width: 100%;
 }
 
 .about-adin.section-rainbow {
@@ -133,6 +145,18 @@
   color: #b8b8b8 !important;
 }
 
+.about-adin h3 {
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.about-adin.section-rainbow h3 {
+  color: white !important;
+}
+
 /* Testimonials Section */
 .testimonials-section {
   padding: 6rem 0;
@@ -179,6 +203,7 @@
   margin: 0;
   font-size: 0.9rem;
 }
+
 
 /* Philosophy Section */
 .philosophy-section {
@@ -339,6 +364,13 @@
     font-size: 2rem;
   }
   
+  .about-image {
+    float: none;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 2rem;
+  }
+  
   .testimonials-section {
     padding: 4rem 0;
   }
@@ -350,6 +382,7 @@
   .testimonials-grid {
     grid-template-columns: 1fr;
   }
+  
   
   .about-intro {
     padding: 4rem 0;

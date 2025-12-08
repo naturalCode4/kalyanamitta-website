@@ -136,12 +136,23 @@ src/
 
 ## Deployment
 
-The website is ready for deployment to any static hosting service:
+The website is ready for deployment to **any hosting platform**:
 
 - **Netlify**: Connect your repository and deploy automatically
 - **Vercel**: Deploy with zero configuration
 - **GitHub Pages**: Use the build folder contents
-- **AWS S3**: Upload the build folder to an S3 bucket
+- **AWS S3/Lambda**: Upload the build folder or use serverless functions
+- **Azure**: Deploy to Azure Static Web Apps or Functions
+- **Cloudflare**: Deploy to Cloudflare Pages or Workers
+- **Any other platform**: The code is universal and will work anywhere
+
+### Google Reviews Setup
+
+The Google Reviews feature works on any platform. See:
+- **`PRODUCTION_SETUP.md`** - ⭐ **START HERE** - Step-by-step production setup guide
+- `GOOGLE_REVIEWS_SETUP.md` - Detailed technical setup guide
+- `DEPLOYMENT_GUIDE.md` - Universal deployment instructions
+- `api/google-reviews-universal.js` - Platform-agnostic function templates
 
 ## Browser Support
 
