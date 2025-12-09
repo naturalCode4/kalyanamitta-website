@@ -93,6 +93,12 @@
   text-align: center;
 }
 
+.calendly-embed-container,
+.contact-email {
+  width: 1200px; /* Same as Calendly */
+  margin: 0 auto; /* Center align */
+}
+
 .contact-email h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
@@ -135,13 +141,13 @@
 .email-form button {
   display: inline-block;
   padding: 0.75rem 2rem;
-  background: linear-gradient(135deg, #1e1e3a 0%, #3a2177 25%, #125f4a 50%, #145a82 75%, #1e2a4a 100%);
-  color: white;
+  background: transparent;
+  color: #d4af37; /* Gold text */
   text-decoration: none;
+  border: 2px solid #d4af37; /* Gold border */
   border-radius: 8px;
   font-weight: 600;
   transition: all 0.3s ease;
-  border: 2px solid #d4af37;
   cursor: pointer;
   font-size: 1rem;
   text-transform: uppercase;
@@ -149,7 +155,8 @@
 }
 
 .email-form button:hover {
-  background: linear-gradient(135deg, #125f4a, #0c8891, #4a1a5c);
+  background: #d4af37; /* Gold background on hover */
+  color: #333; /* Dark text on hover */
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
 }
@@ -171,4 +178,11 @@
   .contact-content {
     padding: 4rem 0;
   }
+}
+
+/* Parent container for items */
+.content-items {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 2rem; /* Add space between items */
 }
