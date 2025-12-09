@@ -49,26 +49,109 @@
 /* Contact Content */
 .contact-content {
   padding: 6rem 0;
-  background: linear-gradient(135deg, #1e1e1e 0%, #4a1a5c 10%, #3a2177 20%, #1e4d3e 30%, #125f4a 40%, #0f4c75 50%, #145a82 60%, #b45309 70%, #d4af37 80%, #8b0000 90%, #1e1e1e 100%);
+  background: linear-gradient(
+    135deg,
+    #1e1e1e 5%,
+    #4a1a5c 10%,
+    #351f6e 18%,
+    #1e4d3e 24%,
+    #156953 30%,
+    #0c8891 33%, 
+    #004d84 44%, 
+    #004d84 45%, 
+    #0564ac 50%, 
+    rgb(1, 124, 225) 56%, 
+    #bd9205 64%,
+    #e4b108 68%,
+    #ea790f 76%,
+    #f3571f 80%,
+    #ca1111 84%,
+    #761616 90%,
+    #1e1e1e 97%
+  );
   position: relative;
   overflow: hidden;
-}
-
-.contact-content::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: conic-gradient(from 0deg, transparent, rgba(212, 175, 55, 0.08), rgba(18, 95, 74, 0.06), rgba(20, 90, 130, 0.04), rgba(154, 52, 18, 0.03), rgba(180, 83, 9, 0.04), transparent);
-  animation: rotate 20s linear infinite;
-  z-index: 1;
 }
 
 .contact-content .container {
   position: relative;
   z-index: 2;
+}
+
+/* Shared Bordered Section Style */
+.bordered-section {
+  border: 2px solid #d4af37; /* Gold border */
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  background: rgba(0, 0, 0, 0.3); /* Darkened background inside the border */
+}
+
+/* Contact Email Section */
+.contact-email {
+  color: white;
+  text-align: center;
+}
+
+.contact-email h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.email-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.email-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.email-form label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.email-form input,
+.email-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.email-form input {
+  height: 3rem;
+}
+
+.email-form textarea {
+  resize: none;
+}
+
+/* Match the Send button style to the Home page buttons */
+.email-form button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: linear-gradient(135deg, #1e1e3a 0%, #3a2177 25%, #125f4a 50%, #145a82 75%, #1e2a4a 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid #d4af37;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.email-form button:hover {
+  background: linear-gradient(135deg, #125f4a, #0c8891, #4a1a5c);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
 }
 
 /* Responsive Design */
