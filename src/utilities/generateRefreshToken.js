@@ -1,5 +1,5 @@
 require('dotenv').config({ path: '/Users/fireowl/Documents/coding/kalyanamitta-website/.env' });
-const { google } = require('googleapis'); // Import googleapis library
+const { google } = require('googleapis'); // Im googleapis library
 
 console.log('Environment Variables2:', process.env);
 

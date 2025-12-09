@@ -120,6 +120,16 @@
   margin-bottom: 0.5rem;
 }
 
+.email-form input:focus,
+.email-form textarea:focus {
+  outline: none;
+  border: 2px solid #d4af37;
+}
+
+.email-form input {
+  height: 3rem;
+}
+
 .email-form input,
 .email-form textarea {
   width: 100%;
@@ -127,10 +137,7 @@
   border: none;
   border-radius: 5px;
   font-size: 1rem;
-}
-
-.email-form input {
-  height: 3rem;
+  color: #333 !important
 }
 
 .email-form textarea {
