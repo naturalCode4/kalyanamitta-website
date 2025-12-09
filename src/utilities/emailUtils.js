@@ -1,6 +1,8 @@
 const sendEmail = async (formData) => {
     try {
-      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000'}/send-email`, {
+      console.log('REACT_APP_BACKEND_URL: ', process.env.REACT_APP_BACKEND_URL);
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/send-email`, {
+      // const response = await fetch(`${process.env.REACT_APP_BACKEND_URL || 'http://localhost:3000'}/send-email`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
