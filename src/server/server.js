@@ -4,8 +4,6 @@ require('dotenv').config({ path: '../../.env'});
 const nodemailer = require('nodemailer');
 const { google } = require('googleapis');
 
-console.log('env. :', process.env)
-
 const app = express();
 app.use(express.json());
 app.use(cors({
@@ -54,7 +52,7 @@ app.post('/send-email', async (req, res) => {
       from: email,
       to: process.env.EMAIL_USER, // Send to your email
       subject: `Web Message from ${name}`,
-      text: `${message}\nFrom: ${name} (${email})`,
+      text: `${message}\n\nFrom: ${name}\nEmail:(${email})`,
     };
 
     await transporter.sendMail(mailOptions);
@@ -68,49 +66,3 @@ app.post('/send-email', async (req, res) => {
 // Use environment variable for port or default to 5001
 const PORT = process.env.PORT_BACKEND || 5001;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
-// const express = require('express');
-// const nodemailer = require('nodemailer');
-// const cors = require('cors');
-
-// const app = express();
-// app.use(express.json());
-// app.use(cors()); // Allow requests from your frontend
-// app.use(cors({
-//   origin: 'http://localhost:3000', // Allow requests from React frontend
-//   methods: ['GET', 'POST'], // Allow specific HTTP methods
-//   credentials: true, // Allow cookies if needed
-// }));
-
-// // Configure nodemailer
-// const transporter = nodemailer.createTransport({
-//   service: 'gmail', // Use your email provider
-//   auth: {
-//     user: process.env.EMAIL_USER, // Use environment variable for email
-//     pass: process.env.EMAIL_PASS, // Use environment variable for password
-//   },
-// });
-
-// // Email endpoint
-// app.post('/send-email', async (req, res) => {
-//   const { name, email, message } = req.body;
-
-//   const mailOptions = {
-//     from: email,
-//     to: process.env.EMAIL_USER, // Send to your email, // Replace with your email
-//     subject: `Web Message from ${name}`,
-//     text: `${message}\nFrom: ${name} (${email})`,
-//   };
-
-//   try {
-//     await transporter.sendMail(mailOptions);
-//     res.status(200).send('Email sent successfully');
-//   } catch (error) {
-//     console.error('Error sending email:', error);
-//     res.status(500).send('Failed to send email');
-//   }
-// });
-
-// // Use environment variable for port or default to 5001
-// const PORT = process.env.PORT || 5001;
-// app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
