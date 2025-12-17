@@ -37,7 +37,7 @@ const Rates = () => {
   const packages = [
     {
       name: '4-Session Combo',
-      description: 'Invest deeply in yourself. Make a huge impact on your life and well-being',
+      description: "Invest in your growth and healing. Four potent sessions for the transformation you seek.",
       price: '$375. Sliding Scale $210-600',
       originalPrice: '$500. Sliding Scale $280-800',
       discount: '25% OFF',
@@ -83,8 +83,8 @@ const Rates = () => {
             <div className="flexible-content">
               <h3>Open Reciprocity Pricing</h3>
               <p className="flexible-label">Honor-Based</p>
-              <p className="flexible-description">I use this open reciprocity model so that those for whom it's easy to spend money can support those who both want the healing work and need financial assistance. This honors the exchange of energy between us and supports healing on Earth by making this work accessible to more people. In the context of healing arts as well as traditional therapy, this sliding scale would be considered very accessible.</p>
-              <br></br><p className="flexible-description"><em>Rates for all 90 minute sessions*</em></p>
+              <p className="subtitle">I use this open reciprocity model so that those for whom it's easy to spend money can support those who want the healing work and need financial assistance. This honors the exchange of energy between us and makes this work accessible to more people. Anyone is welcome to give any amount on the scale. In the context of healing arts as well as traditional therapy, this sliding scale would be considered very accessible.</p>
+              <br></br><p className="flexible-description"><em>Rates for 90 minute sessions</em></p>
             </div>
           </div>
           <div className="pricing-timeline">
@@ -106,7 +106,7 @@ const Rates = () => {
               <div className="timeline-content">
                 <h3>$200</h3>
                 <p className="timeline-label">Secure Range</p>
-                <p className="timeline-description">A way for those in a financially secure stage to honor the sacredness of this work -- This supports me and for those with fewer financial means to receive healing and guidance.</p>
+                <p className="timeline-description">A way for those who are financially secure to honor the value of this work, and support others</p>
               </div>
             </div>
           </div>
@@ -124,7 +124,41 @@ const Rates = () => {
 
 
       {/* Packages Section */}
+
       <section className="packages-section">
+        <div className="container">
+          <h2>Combo Packages</h2>
+          <div className="packages-grid">
+            {packages.map((pkg, index) => (
+              <div
+                key={index}
+                className={`package-card ${pkg.name === '4-Session Combo' ? 'combo-highlight' : ''}`}
+              >
+                <div className="package-header">
+                  <h3>{pkg.name}</h3>
+                  <p className="package-description">{pkg.description}</p>
+                  <div className="package-price">
+                    <span className="price">{pkg.price}</span>
+                    <span className="original-price">{pkg.originalPrice}</span>
+                    <span className="discount">{pkg.discount}</span>
+                  </div>
+                  <p className="package-duration">{pkg.duration}</p>
+                </div>
+                <div className="package-features">
+                  <h4>What's Included:</h4>
+                  <ul>
+                    {pkg.features.map((feature, featureIndex) => (
+                      <li key={featureIndex}>{feature}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* <section className="packages-section">
         <div className="container">
           <h2>Combo Packages</h2> th
           <div className="packages-grid">
@@ -153,7 +187,7 @@ const Rates = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
 
       {/* CTA Section */}
@@ -161,9 +195,8 @@ const Rates = () => {
         <div className="container">
           <div className="cta-content">
             <h2>Ready to Begin?</h2>
-            <p>
-              You can schedule a session with me directly, or get in touch if you'd like to discuss anything. 
-              I'm more than happy to answer any questions and help you find step for your path.
+            <p className="subtitle">
+              You can schedule a session with me directly, or get in touch if you'd like to discuss anything. I'm more than happy to answer any questions and help you find the next step for your path.
             </p>
             <div className="cta-buttons">
               <Link to="/contact" className="btn">Book Your Session</Link>

@@ -1,8 +1,6 @@
 const sendEmail = async (formData) => {
     try {
-      console.log('REACT_APP_BACKEND_URL: ', process.env.REACT_APP_BACKEND_URL);
       const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/send-email`, {
-      // const response = await fetch(`${process.env.REACT_APP_BACKEND_URL || 'http://localhost:3000'}/send-email`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
@@ -12,7 +10,7 @@ const sendEmail = async (formData) => {
         throw new Error('Failed to send email');
       }
   
-      return { success: true, message: 'Email sent successfully!' };
+      return { success: true, message: `Thank you for being in touch! I will respond to your message shortly --`};
     } catch (error) {
       console.error('Error sending email:', error);
       return { success: false, message: 'An error occurred while sending the email.' };

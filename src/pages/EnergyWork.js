@@ -47,7 +47,7 @@ const EnergyWork = () => {
         <div className="container">
           <div className="services-intro">
           <p>About Energy Healing
-              Energy healing addresses diverse needs by balancing, restoring, and optimizing the body's natural energy flow. See the Benefits section below to learn more about what energy healing can support.
+              Energy healing addresses diverse needs by balancing, restoring, and optimizing the body's natural energy field. See the Benefits section below to learn more about what energy healing can support.
               I offer Reiki-based energy healing tailored to your needs, responding to any specific concerns you bring. Grounded in compassionate presence, I hold space for whatever arises with acceptance and care. In addition to Reiki, I may incorporate acupressure, other healing modalities, or share insights as appropriate to your session. When helpful, I can offer guidance to help you integrate your experience and move forward with clarity.
               Benefits of Energy Healing
               Energy healing helps remove blockages and deficiencies while activating your body's natural ability to heal itself. By restoring balance to your body's energy field and responding to what emerges from your system, you may experience:

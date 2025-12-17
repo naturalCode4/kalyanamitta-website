@@ -1,0 +1,43 @@
+.custom-alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .custom-alert-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+  }
+  
+  .custom-alert-box p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .custom-alert-button {
+    background: #d4af37; /* Gold color */
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .custom-alert-button:hover {
+    background: #b38e2c; /* Darker gold on hover */
+  }

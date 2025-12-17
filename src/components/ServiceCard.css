@@ -206,3 +206,125 @@
   position: relative;
   z-index: 1;
 }
+
+/* ServiceCard Component Styles */
+.service-card {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Ensure spacing between content and buttons */
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%; /* Ensure all cards are the same height */
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Content Wrapper */
+.service-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute content evenly */
+  height: 100%; /* Ensure the wrapper takes up the full height of the card */
+}
+
+/* Title */
+.service-header h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  text-align: center;
+  min-height: 3rem; /* Ensure consistent height for titles */
+  display: flex;
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+}
+
+/* Description */
+.service-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: center;
+  min-height: 4rem; /* Ensure consistent height for descriptions */
+  display: flex;
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+}
+
+/* Content */
+.service-content {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: center;
+  min-height: 4rem; /* Ensure consistent height for content */
+  display: flex;
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+}
+
+/* Benefits */
+.service-benefits {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.service-benefits h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.service-benefits ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-benefits li {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+/* Availability */
+.service-availability {
+  font-size: 0.9rem;
+  color: #b8b8b8;
+  margin-bottom: auto; /* Push availability to the bottom of the content wrapper */
+  text-align: center;
+  min-height: 1.5rem; /* Ensure consistent height for availability */
+  display: flex;
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+}
+
+/* Buttons */
+.service-actions {
+  display: flex;
+  gap: 1rem; /* Space between buttons */
+  justify-content: center; /* Center the buttons horizontally */
+  margin-top: 1rem; /* Add spacing above the buttons */
+}
+
+.service-actions .btn {
+  flex: 1; /* Ensure buttons take equal space */
+  text-align: center; /* Center text inside buttons */
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.service-actions .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}

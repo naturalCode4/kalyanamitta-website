@@ -21,7 +21,8 @@ const Section = ({
             </h2>
           )}
           {subtitle && (
-            <p className={`section-subtitle section-subtitle-${variant === 'dark' || variant === 'rainbow' ? 'white' : 'dark'}`}>
+            <p className={"subtitle"}>
+            {/* <p className={`section-subtitle section-subtitle-${variant === 'dark' || variant === 'rainbow' ? 'white' : 'dark'}`}> */}
               {subtitle}
             </p>
           )}

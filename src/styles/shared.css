@@ -240,3 +240,12 @@
     padding: 1.5rem;
   }
 }
+
+/* Global Subtitle Style */
+.subtitle {
+  font-size: 1.2rem; /* Matches the font size of the list */
+  color: #d1d1d1; /* Light gray color for readability */
+  line-height: 1.8; /* Add spacing for better readability */
+  margin-bottom: 1.5rem; /* Add spacing below subtitles */
+  text-align: center; /* Center-align by default */
+}

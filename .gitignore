@@ -17,3 +17,11 @@ dist
 *.swp
 *.swo
 *~
+
+# Ignore node_modules
+node_modules/
+
+# Ignore cache files
+*.eslintcache
+*.pack
+.cache/

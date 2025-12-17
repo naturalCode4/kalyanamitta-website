@@ -334,9 +334,9 @@
 }
 
 .cta-content p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 2.5rem;
-  color: #e8e8e8;
+  color: #d1d1d1;
   line-height: 1.6;
 }
 
@@ -429,8 +429,10 @@
 }
 
 .package-description {
-  color: #b8b8b8;
-  margin-bottom: 1.5rem;
+  color: #e8e8e8;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 2rem;
   line-height: 1.6;
 }
 
@@ -453,10 +455,18 @@
 }
 
 .package-price .original-price {
-  color: #b8b8b8;
+  color: #d1d1d1;
   font-size: 1.2rem;
-  text-decoration: line-through;
   margin-left: 0.5rem;
+  text-decoration: line-through;
+}
+
+.package-price .original-price {
+  color: #d1d1d1;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  text-decoration: line-through;
 }
 
 .package-price .discount {
@@ -484,7 +494,7 @@
 .package-features h4 {
   color: #e8e8e8;
   margin-bottom: 1rem;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 .package-features ul {
@@ -493,8 +503,9 @@
 }
 
 .package-features li {
-  color: #b8b8b8;
+  color: #d1d1d1;
   margin-bottom: 0.75rem;
+  font-size: 1.2rem;
   padding-left: 1.5rem;
   position: relative;
 }
@@ -571,11 +582,13 @@
 .timeline-middle-text {
   position: absolute;
   /* top: 50rem; */
-  top: 63.5%;
+  top: 70.75%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
   pointer-events: none;
+  width: 16.5664rem;
+  height: 275px
 }
 
 .middle-text-content {
@@ -705,8 +718,8 @@
   overflow: hidden;
   margin-top: 1rem;
   text-align: center;
-  width: 100%;
-  max-width: 250px;
+  width: 70%;
+  /* max-width: 250px; */
 }
 
 .timeline-content::before {
@@ -741,8 +754,8 @@
 }
 
 .timeline-description {
-  font-size: 1rem;
-  color: #e8e8e8;
+  font-size: 1.1rem;
+  color: #d1d1d1;
   line-height: 1.6;
   margin: 0;
   position: relative;
@@ -752,6 +765,8 @@
 .flexible-pricing {
   margin-top: 2rem;
   margin-bottom: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   display: flex;
   justify-content: center;
 }
@@ -765,7 +780,6 @@
   position: relative;
   overflow: hidden;
   text-align: center;
-  max-width: 800px;
   width: 100%;
 }
 
@@ -860,7 +874,7 @@
 
 .flexible-description {
   font-size: 1rem;
-  color: #e8e8e8;
+  color: #d1d1d1;
   line-height: 1.6;
   margin: 0;
   position: relative;
@@ -991,4 +1005,28 @@
   .price {
     font-size: 2rem;
   }
+}
+
+.package-header h3 {
+  font-size: 1.5rem; /* Default size for other deals */
+  color: #e8e8e8; /* Default color for other deals */
+}
+
+.package-card .package-header h3 {
+  font-size: 1.8rem; /* Slightly larger for all deals */
+}
+
+.package-card.combo-highlight h3 {
+  font-size: 2rem; /* Larger for 4-Session Combo */
+  color: #d4af37; /* Golden color */
+}
+
+.timeline-content {
+  height: 275px; /* Set a higher height for the content boxes */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: center;
+  box-sizing: border-box; /* Ensure padding doesn’t affect height */
 }

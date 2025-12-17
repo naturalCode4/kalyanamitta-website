@@ -46,6 +46,12 @@ const About = () => {
                 In April 2025, it occurred to me that I was ready to center my livelihood around what I already love and genuinely want to do—helping people. Obvious when I thought of it... But to be fair, I wasn't fully ready before then. Once I made a confident commitment to step into this work, Spirit sent me on quite a healing journey, which I believe purified me and prepared me to step more fully into service. This year I certified in Reiki II, EFT, yoga, and pranayama. Now I feel aligned, grounded, and empowered to offer this work from a place of depth.
               </p>
               <p>
+                I draw from my own experiences. I am mainly able to support people with so much due to the extent of the shit I have gone through and overcome. And yeah also because of the really beautiful things that have unfolded. One gift I believe I bring is the ability to bridge the gap into spirituality in a ‘down-to-earth’ way that meets the Western mind. 
+              </p> 
+              <p>
+                Emotional and energetic healing is often taught by women, which can make it feel less accessible to men. As a male practitioner who holds both rigorous spiritual practice and healing work, I'm here to show men this path is ours to walk too.
+              </p>
+              <p>
                 My mission is to support you however I can by offering loving presence, powerful modalities, and wisdom—practicing integrity with work, aka Right Livelihood, in doing so. My approach is integrative and personal, grounded in intuition, science, and various spiritual traditions.
               </p>
               <p>
