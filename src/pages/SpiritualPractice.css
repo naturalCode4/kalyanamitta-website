@@ -3,42 +3,218 @@
   min-height: 100vh;
 }
 
+/* Hero Section - Match EmotionalProcessing dimensions with teal gradient */
 .spiritual-practice-hero {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); /* Teal gradient */
   color: white;
-  padding: 100px 0;
+  padding: 100px 0; /* Match EmotionalProcessing exactly */
   text-align: center;
+  border-bottom: 4px solid #d4af37; /* Match EmotionalProcessing gold line */
 }
 
 .spiritual-practice-hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  font-weight: 300;
+  font-size: 3.5rem; /* Match EmotionalProcessing exactly */
+  margin-bottom: 1rem; /* Match EmotionalProcessing exactly */
+  font-weight: 500; /* Match EmotionalProcessing exactly */
+  color: white;
 }
 
 .spiritual-practice-subtitle {
-  font-size: 1.25rem;
-  max-width: 600px;
+  font-size: 1.25rem; /* Match EmotionalProcessing exactly */
+  max-width: 600px; /* Match EmotionalProcessing exactly */
   margin: 0 auto;
-  opacity: 0.9;
+  color: #333; /* Match EmotionalProcessing exactly */
 }
 
-.spiritual-practice-content {
-  padding: 80px 0;
-}
-
-.practices-intro {
+/* About Spiritual Practice Section - Match EmotionalProcessing rainbow format */
+.about-spiritual-practice {
+  padding: 6rem 0;
   text-align: center;
-  margin-bottom: 60px;
 }
 
-.practices-intro h2 {
+.about-spiritual-practice-content {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.about-spiritual-practice-text {
+  width: 100%;
+}
+
+.about-spiritual-practice.section-rainbow {
+  background: linear-gradient(
+    135deg,
+    #1e1e1e 5%,
+    #4a1a5c 10%,
+    #351f6e 18%,
+    #1e4d3e 24%,
+    #156953 30%,
+    #0c8891 33%, 
+    #004d84 44%, 
+    #004d84 45%, 
+    #0564ac 50%, 
+    rgb(1, 124, 225) 56%, 
+    #bd9205 64%,
+    #e4b108 68%,
+    #d16500 76%,
+    #d84813 80%,
+    #ca1111 84%,
+    #761616 90%,
+    #1e1e1e 97%
+  ) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-spiritual-practice.section-rainbow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="sacred-geometry-about" width="40" height="40" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="3" fill="%23d4af37" opacity="0.1"/><polygon points="20,12 28,28 12,28" fill="none" stroke="%23d4af37" stroke-width="0.8" opacity="0.1"/><circle cx="20" cy="20" r="12" fill="none" stroke="%23125f4a" stroke-width="0.4" opacity="0.08"/><circle cx="20" cy="20" r="18" fill="none" stroke="%23145a82" stroke-width="0.3" opacity="0.06"/></pattern></defs><rect width="100" height="100" fill="url(%23sacred-geometry-about)"/></svg>');
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.about-spiritual-practice.section-rainbow .container {
+  position: relative;
+  z-index: 1;
+}
+
+.about-spiritual-practice h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.about-spiritual-practice.section-rainbow h2 {
+  color: white !important;
+}
+
+.about-spiritual-practice p {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #666;
+}
+
+.about-spiritual-practice.section-rainbow p {
+  color: white;
+}
+
+.about-spiritual-practice h3 {
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.about-spiritual-practice.section-rainbow h3 {
+  color: white !important;
+}
+
+/* About Image - Match EmotionalProcessing */
+.about-image {
+  float: right;
+  width: 300px;
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+
+.placeholder-image {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); /* Keep spiritual practice colors */
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* What to Expect Card - Match EmotionalProcessing exactly */
+.what-to-expect-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  color: #333;
+  padding-top: 1rem; /* Match EmotionalProcessing exactly */
+  padding-bottom: 1rem; /* Match EmotionalProcessing exactly */
+  padding-left: 3.5rem; /* Match EmotionalProcessing exactly */
+  padding-right: 3.5rem; /* Match EmotionalProcessing exactly */
+}
+
+.what-to-expect-card h3 {
+  font-size: 1.8rem;
+  margin-top: 1rem; /* Match EmotionalProcessing exactly */
+  margin-bottom: 2rem;
+  color: #333 !important;
+  text-align: center;
+}
+
+.expect-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.expect-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  color: #333 !important;
+  font-weight: 600;
+}
+
+.expect-item p {
+  color: #666 !important;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Force correct colors for What to Expect inside rainbow section */
+.about-spiritual-practice.section-rainbow .what-to-expect-card h3 {
+  color: #333 !important;
+}
+
+.about-spiritual-practice.section-rainbow .expect-item h4 {
+  color: #333 !important;
+}
+
+.about-spiritual-practice.section-rainbow .expect-item p {
+  color: #666 !important;
+}
+
+.about-spiritual-practice.section-rainbow .what-to-expect-card {
+  background: white !important;
+}
+
+/* Services Section - Keep the practice cards */
+.spiritual-practice-services {
+  padding: 6rem 0;
+}
+
+.services-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.services-intro h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: #333;
 }
 
-.practices-intro p {
+.services-intro p {
   font-size: 1.1rem;
   max-width: 800px;
   margin: 0 auto;
@@ -46,163 +222,115 @@
   line-height: 1.6;
 }
 
-.practices-grid {
+.services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 40px;
-  margin-top: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
 }
 
-.practice-card {
+.service-card {
   background: white;
-  padding: 40px;
+  padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.practice-card:hover {
+.service-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-.practice-card h3 {
+.service-card h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: #333;
 }
 
-.practice-description {
+.service-description {
   font-size: 1rem;
   color: #666;
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
-.practice-techniques,
-.practice-benefits {
+.service-techniques,
+.service-benefits {
   margin-bottom: 20px;
 }
 
-.practice-techniques h4,
-.practice-benefits h4 {
+.service-techniques h4,
+.service-benefits h4 {
   font-size: 1.1rem;
   margin-bottom: 10px;
   color: #333;
 }
 
-.practice-techniques ul,
-.practice-benefits ul {
+.service-techniques ul {
+  padding-left: 20px;
+}
+
+.service-techniques li {
+  padding: 5px 0;
+  color: #666;
+  line-height: 1.5;
+}
+
+.service-benefits ul {
   list-style: none;
   padding: 0;
 }
 
-.practice-techniques li,
-.practice-benefits li {
+.service-benefits li {
   padding: 5px 0;
   color: #666;
   position: relative;
   padding-left: 20px;
 }
 
-.practice-techniques li:before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #4facfe;
-  font-weight: bold;
-}
-
-.practice-benefits li:before {
+.service-benefits li:before {
   content: "✓";
   position: absolute;
   left: 0;
-  color: #4facfe;
+  color: #4facfe; /* Match hero theme */
   font-weight: bold;
 }
 
-.integration-section {
-  padding: 80px 0;
-}
-
-.integration-section h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 60px;
-  color: #333;
-}
-
-.integration-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
-}
-
-.integration-item {
-  text-align: center;
-  padding: 30px;
-}
-
-.integration-item h3 {
-  font-size: 1.3rem;
-  margin-bottom: 15px;
-  color: #333;
-}
-
-.integration-item p {
-  color: #666;
-  line-height: 1.6;
-}
-
-.spiritual-practice-cta {
-  padding: 80px 0;
-}
-
-.cta-content {
-  text-align: center;
-  color: white;
-}
-
-.cta-content h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.cta-content p {
-  font-size: 1.1rem;
-  margin-bottom: 30px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.cta-buttons {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* Responsive Design */
+/* Responsive - Match EmotionalProcessing */
 @media (max-width: 768px) {
   .spiritual-practice-hero-content h1 {
     font-size: 2.5rem;
   }
   
-  .practices-grid {
+  .about-spiritual-practice {
+    padding: 4rem 0;
+  }
+  
+  .about-spiritual-practice h2 {
+    font-size: 2rem;
+  }
+  
+  .about-spiritual-practice h3 {
+    font-size: 1.5rem;
+  }
+  
+  .about-image {
+    float: none;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 2rem;
+  }
+  
+  .expect-sections {
     grid-template-columns: 1fr;
   }
   
-  .practice-card {
-    padding: 30px;
+  .what-to-expect-card {
+    padding: 1.5rem;
   }
   
-  .integration-grid {
+  .services-grid {
     grid-template-columns: 1fr;
-  }
-  
-  .cta-buttons {
-    flex-direction: column;
-    align-items: center;
   }
 }

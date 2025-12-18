@@ -1,83 +1,73 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Section from '../components/Section';
+import CTA from '../components/CTA';
 import './SpiritualPractice.css';
 
 const SpiritualPractice = () => {
   const practices = [
     {
       title: 'Meditation',
-      description: 'Learn various meditation techniques to cultivate mindfulness, inner peace, and spiritual awareness.',
+      description: 'Learn various meditation techniques to cultivate inner peace, mindfulness, and spiritual awareness.',
       techniques: [
         'Mindfulness meditation',
-        'Loving-kindness meditation',
-        'Body scan meditation',
+        'Loving-kindness practice',
         'Breath awareness',
-        'Walking meditation',
-        'Guided visualization'
+        'Walking meditation'
       ],
       benefits: [
         'Reduced stress and anxiety',
-        'Improved focus and concentration',
-        'Greater emotional regulation',
-        'Enhanced self-awareness',
+        'Increased self-awareness',
+        'Enhanced emotional regulation',
         'Deeper spiritual connection'
       ]
     },
     {
       title: 'Yoga',
-      description: 'Integrate physical postures, breathwork, and mindfulness to create harmony between body, mind, and spirit.',
+      description: 'Integrate physical postures, breathwork, and meditation for holistic wellness and spiritual growth.',
       techniques: [
-        'Hatha yoga for beginners',
+        'Hatha yoga foundations',
         'Vinyasa flow sequences',
-        'Restorative yoga',
-        'Yin yoga for deep release',
-        'Chair yoga for accessibility',
-        'Yoga philosophy integration'
+        'Restorative poses',
+        'Alignment principles'
       ],
       benefits: [
         'Improved flexibility and strength',
-        'Better posture and body awareness',
-        'Stress relief and relaxation',
-        'Enhanced energy flow',
-        'Spiritual embodiment'
-      ]
-    },
-    {
-      title: 'Sound Healing',
-      description: 'Use the power of sound and vibration to promote healing, balance, and spiritual awakening.',
-      techniques: [
-        'Crystal singing bowls',
-        'Tibetan singing bowls',
-        'Tuning forks',
-        'Vocal toning and chanting',
-        'Drumming and rhythm',
-        'Binaural beats'
-      ],
-      benefits: [
-        'Deep relaxation and stress relief',
-        'Chakra balancing',
-        'Emotional release',
-        'Enhanced meditation states',
-        'Spiritual awakening'
+        'Better posture and balance',
+        'Stress relief',
+        'Mind-body integration'
       ]
     },
     {
       title: 'Breathwork',
-      description: 'Master conscious breathing techniques to regulate your nervous system and access higher states of consciousness.',
+      description: 'Harness the power of conscious breathing for healing, transformation, and expanded awareness.',
       techniques: [
-        'Pranayama (yogic breathing)',
+        'Pranayama techniques',
         'Box breathing',
-        'Alternate nostril breathing',
-        'Breath of fire',
-        'Holotropic breathwork',
-        'Conscious connected breathing'
+        'Breath retention practices',
+        'Energy circulation methods'
       ],
       benefits: [
-        'Nervous system regulation',
         'Increased energy and vitality',
         'Emotional processing',
         'Spiritual expansion',
         'Trauma release'
+      ]
+    },
+    {
+      title: 'Sound Healing',
+      description: 'Use sacred sounds, mantras, and vibrational healing for deep relaxation and spiritual awakening.',
+      techniques: [
+        'Mantra chanting',
+        'Singing bowl therapy',
+        'Tuning fork healing',
+        'Voice activation'
+      ],
+      benefits: [
+        'Deep relaxation',
+        'Chakra balancing',
+        'Emotional release',
+        'Heightened awareness'
       ]
     }
   ];
@@ -90,16 +80,79 @@ const SpiritualPractice = () => {
           <div className="spiritual-practice-hero-content">
             <h1>Spiritual Practice</h1>
             <p className="spiritual-practice-subtitle">
-              Learn mind-body practices for wellness and spiritual growth
+              Cultivate the wisdom and compassion needed to live well. Learn mind-body practices for wellness and spiritual growth
             </p>
           </div>
         </div>
       </section>
 
-      {/* Practices Section */}
-      <section className="spiritual-practice-content">
+      {/* About Spiritual Practice Section - Rainbow Background */}
+      <section className="about-spiritual-practice section-rainbow">
         <div className="container">
-          <div className="practices-intro">
+          <div className="about-spiritual-practice-content">
+            <h2>About Spiritual Practice</h2>
+            <div className="about-image">
+              <div className="placeholder-image">
+                <span>Spiritual Practice Image</span>
+              </div>
+            </div>
+            <div className="about-spiritual-practice-text">
+              <p>
+                Spiritual practices are time-tested methods for cultivating inner wisdom, peace, and connection to something greater than ourselves. I offer guidance in meditation, yoga, breathwork, and sound healing—ancient practices adapted for modern life.
+              </p>
+              <p>
+                These practices work synergistically to support your physical, emotional, mental, and spiritual well-being. Whether you're a complete beginner or looking to deepen your existing practice, I meet you where you are and provide personalized instruction.
+              </p>
+              
+              <h3>Why Practice?</h3>
+              <p>
+                In our fast-paced world, spiritual practices offer a refuge—a way to slow down, turn inward, and remember who you truly are beneath the noise of daily life. Regular practice cultivates resilience, clarity, and a deep sense of peace that carries into all aspects of your life.
+              </p>
+              <p>
+                These aren't just relaxation techniques; they're powerful tools for transformation that have been refined over thousands of years. Through consistent practice, you develop the capacity to respond to life's challenges with greater wisdom and equanimity.
+              </p>
+              
+              <h3>Integration & Support</h3>
+              <p>
+                Learning a practice is just the beginning. I provide ongoing support to help you integrate these tools into your daily life. We'll work together to create a sustainable practice that fits your lifestyle and supports your unique path of growth and awakening.
+              </p>
+            </div>
+
+            {/* What to Expect - Inside rainbow section */}
+            <div className="what-to-expect-card">
+              <h3>What to Expect from Sessions</h3>
+              
+              <div className="expect-sections">
+                <div className="expect-item">
+                  <h4>Learning & Practice</h4>
+                  <p>
+                    We'll explore techniques step-by-step, with hands-on instruction tailored to your experience level and goals.
+                  </p>
+                </div>
+                
+                <div className="expect-item">
+                  <h4>Integration Guidance</h4>
+                  <p>
+                    I'll help you understand how to incorporate these practices into your daily routine for lasting benefit.
+                  </p>
+                </div>
+                
+                <div className="expect-item">
+                  <h4>Ongoing Support</h4>
+                  <p>
+                    Continued guidance and refinement of your practice as you deepen your understanding and experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Spiritual Practice Cards Section */}
+      <section className="spiritual-practice-services">
+        <div className="container">
+          <div className="services-intro">
             <h2>Sacred Practices</h2>
             <p>
               These ancient and modern practices offer powerful tools for transformation, 
@@ -108,13 +161,13 @@ const SpiritualPractice = () => {
             </p>
           </div>
 
-          <div className="practices-grid">
+          <div className="services-grid">
             {practices.map((practice, index) => (
-              <div key={index} className="practice-card">
+              <div key={index} className="service-card">
                 <h3>{practice.title}</h3>
-                <p className="practice-description">{practice.description}</p>
+                <p className="service-description">{practice.description}</p>
                 
-                <div className="practice-techniques">
+                <div className="service-techniques">
                   <h4>Techniques We'll Explore:</h4>
                   <ul>
                     {practice.techniques.map((technique, idx) => (
@@ -123,7 +176,7 @@ const SpiritualPractice = () => {
                   </ul>
                 </div>
 
-                <div className="practice-benefits">
+                <div className="service-benefits">
                   <h4>Benefits Include:</h4>
                   <ul>
                     {practice.benefits.map((benefit, idx) => (
@@ -137,59 +190,14 @@ const SpiritualPractice = () => {
         </div>
       </section>
 
-      {/* Integration Section */}
-      <section className="integration-section section-light">
-        <div className="container">
-          <h2>Personalized Integration</h2>
-          <div className="integration-grid">
-            <div className="integration-item">
-              <h3>Beginner-Friendly</h3>
-              <p>
-                All practices are taught with complete beginners in mind. No prior experience 
-                or flexibility is required - we start exactly where you are.
-              </p>
-            </div>
-            <div className="integration-item">
-              <h3>Customized Approach</h3>
-              <p>
-                Each practice is adapted to your unique needs, physical abilities, and 
-                spiritual goals. Your journey is personal and honored.
-              </p>
-            </div>
-            <div className="integration-item">
-              <h3>Daily Integration</h3>
-              <p>
-                Learn how to weave these practices into your daily life in sustainable, 
-                meaningful ways that support your ongoing growth.
-              </p>
-            </div>
-            <div className="integration-item">
-              <h3>Spiritual Context</h3>
-              <p>
-                Understand the deeper spiritual principles behind each practice, helping you 
-                connect with the sacred in your everyday life.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
-      <section className="spiritual-practice-cta section-dark">
-        <div className="container">
-          <div className="cta-content">
-            <h2>Begin Your Practice Journey</h2>
-            <p>
-              Discover the transformative power of spiritual practice and learn tools 
-              that will support your growth for a lifetime.
-            </p>
-            <div className="cta-buttons">
-              <Link to="/contact" className="btn">Start Your Practice</Link>
-              <Link to="/rates" className="btn btn-secondary">View Rates</Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Section 
+        variant="dark" 
+        title="Ready to Begin?"
+        subtitle="Let's support your unfolding. Book a session or a free 30-minute consultation to bring clarity and grounding to your journey."
+      >
+        <CTA />
+      </Section>
     </div>
   );
 };
