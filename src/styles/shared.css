@@ -249,3 +249,7 @@
   margin-bottom: 1.5rem; /* Add spacing below subtitles */
   text-align: center; /* Center-align by default */
 }
+
+html {
+  scroll-behavior: smooth;
+}

@@ -22,7 +22,7 @@ const CalendlyEmbed = () => {
     <div className="calendly-embed-container">
       <div className="calendly-header">
         <h2>Book Your Session</h2>
-        <p>Choose from the available sessions below. All sessions available in-person or virtual.</p>
+        <p>All sessions are available in-person or virtual, except energy healing is in-person only. Ignore Calendly's meeting length: you can let me know the meeting length when you're booking.</p>
       </div>
       <div className="calendly-content">
         <div 

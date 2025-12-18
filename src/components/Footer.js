@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <h3>Healing On Tap</h3>
-            <p>Healing, coaching, and spiritual guidance to help you transform your life and connect with your true self.</p>
+            <p>Healing & Guidance Rooted in Love and Wisdom. Offering EFT, Energy Healing, Spiritual Counseling and Practice Support</p>
           </div>
           
           <div className="footer-section">
@@ -24,8 +24,8 @@ const Footer = () => {
           
           <div className="footer-section">
             <h4>Contact Info</h4>
-            <p>Email healingontap963@gmail.com</p>
-            <p>Phone: (301) 641-2855</p>
+            <p>Email: healingontap963@gmail.com</p>
+            <p>Phone: +1 (301) 641-2855</p>
             <p>Location: West Philadelphia, Pennsylvania. In-Person or Virtual</p>
           </div>
         </div>

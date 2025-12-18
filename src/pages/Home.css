@@ -263,13 +263,6 @@
   background: #0f0f0f !important;
 }
 
-.section-dark .section-title {
-  color: white;
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-}
-
 .section-dark .section-subtitle {
   color: #b8b8b8;
   text-align: center;
@@ -324,6 +317,7 @@
   padding: 0.75rem 2rem;
   background: #d4af37;
   color: #333;
+  /* color: #333; */
   text-decoration: none;
   border-radius: 8px;
   font-weight: 600;
@@ -334,7 +328,7 @@
 
 .btn:hover {
   background: #f4d03f;
-  transform: translateY(-2px);
+  transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
 }
 
@@ -790,9 +784,18 @@
 }
 
 .section-dark .section-title {
-  font-size: 2.5rem; /* Match the font size of "What I Can Help With" */
-  font-weight: bold;
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
   margin-bottom: 2rem;
+}
+
+.section-dark .section-title {
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
 }
 
 /* Help Section */
@@ -895,3 +898,12 @@
   }
 }
 
+/* Force black text for buttons inside the rainbow section */
+.section-rainbow .btn {
+  color: #000000 !important;
+}
+
+/* Optional: Ensure it stays black or changes appropriately on hover */
+.section-rainbow .btn:hover {
+  color: #000000 !important;
+}

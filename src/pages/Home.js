@@ -12,7 +12,7 @@ const Home = () => {
       <section className="hero">
         <div className="container">
           <div className="hero-content">
-            <h1>A Friend on the Path</h1>
+            <h1>Healing On Tap</h1>
             <p className="hero-subtitle">
               Healing & Guidance Rooted in Love and Wisdom
             </p>
@@ -32,9 +32,6 @@ const Home = () => {
             <p>I offer EFT (Emotional Freedom Techniques, or Tapping), Reiki Energy Healing, Spiritual Counseling and Practices (Meditation, Yoga, Breathwork, Sound Healing). My guidance and methods are rooted in direct experience and teachings across spiritual traditions.</p>
             <p>I believe that our bodies, hearts, energy, and the universe itself are fundamentally good and possess inherent healing properties. I'll help you realize and activate this in your life. My role is to offer loving presence, transformative modalities, and guidance—supporting you in awakening to the basic goodness already present within you and actualizing your natural capacity for healing, spiritual development, and life transformation.</p>
             <p>My mission is to support beings in any way I can. If you're curious about how we can work together, so am I!</p>
-            <div className="btn-group">
-              <Link to="/about" className="btn">Learn More</Link>
-            </div>
           </div>
           <div className="about-photos">
             <div className="photo-container">
@@ -94,6 +91,7 @@ const Home = () => {
             <p>Welcome, my name is Adin. It's a joy and honor to support you in this work. I offer free consultations and am happy to answer any questions you have beforehand.</p>
             <div className="btn-group">
               <Link to="/about" className="btn">Learn More</Link>
+              <Link to="/contact#get-in-touch" target="_blank" rel="noopener noreferrer" className="btn">Get in Touch</Link>
             </div>
           </div>
           <div className="about-photos">
@@ -109,17 +107,18 @@ const Home = () => {
       {/* CTA Section */}
       <Section 
         variant="dark" 
-        title="Ready to Begin Your Transformation?"
-        subtitle="Take the first step towards healing, growth, and spiritual connection. Book a session today and discover the peace and clarity you've been seeking."
+        title="Ready to Begin?"
+        // subtitle="Take the first step towards healing, growth, and spiritual connection. Book a session today and discover the peace and clarity you've been seeking."
+        subtitle="Book a session or a free 30 minute consultation call. I look forward to transforming with you"
       >
         <div className="cta-section">
           <div className="cta-buttons">
             <Link to="/book-now" className="btn">Book Now</Link>
             <Link to="/view-rates" className="btn btn-outline">View Rates</Link>
           </div>
-          <div className="cta-discovery-call">
-            <Link to="/discovery-call" className="btn btn-small">Book a Free 20 Minute Call</Link>
-          </div>
+          {/* <div className="cta-discovery-call">
+            <Link to="/discovery-call" className="btn btn-small">Book a Free 30 Minute Call</Link>
+          </div> */}
         </div>
       </Section>
 

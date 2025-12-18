@@ -211,3 +211,74 @@
     border-bottom: 1px solid #2d3748;
   }
 }
+
+/* 1. Ensure the list items align their contents vertically */
+.nav-list {
+  display: flex;
+  align-items: center; /* Vertically centers the list items */
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Ensure the individual items center their content */
+.nav-item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* 3. Normalize the link and button styles */
+.nav-link {
+  text-decoration: none;
+  color: #e8e8e8; /* Or your theme color */
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+  
+  /* Flexbox to align text and dropdown arrow */
+  display: flex;
+  align-items: center; 
+  gap: 0.5rem; /* Space between text and arrow */
+  
+  /* Reset default button styles */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: inherit; /* Inherit font from parent */
+  line-height: 1; /* Fixes baseline differences */
+}
+
+/* 4. Ensure the dropdown arrow doesn't throw off alignment */
+.dropdown-toggle::after {
+  content: '▼';
+  font-size: 0.7rem;
+  transition: transform 0.3s ease;
+  display: block; /* Ensures it behaves like a block for alignment */
+}
+
+/* Define the palette cycle animation */
+@keyframes paletteCycle {
+  0% { text-decoration-color: #b3922d; }   /* Darker Gold */
+  25% { text-decoration-color: #0e8a61; }  /* Darker Green */
+  50% { text-decoration-color: #5566c2; }  /* Darker Blue */
+  75% { text-decoration-color: #c98585; }  /* Darker Pink */
+  100% { text-decoration-color: #b3922d; } /* Back to Darker Gold */
+}
+
+.logo a {
+  text-decoration: none; /* No underline by default */
+  color: white;
+  transition: color 0.3s ease;
+}
+
+/* On Click (:active) */
+.logo a:active {
+  text-decoration: underline;
+  text-decoration-thickness: 3px; /* Make it nice and visible */
+  text-underline-offset: 4px; /* Give the text some breathing room */
+  
+  /* Cycle through the palette colors rapidly */
+  animation: paletteCycle 1s linear infinite; 
+}

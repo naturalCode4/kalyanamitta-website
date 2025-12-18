@@ -220,11 +220,6 @@
   height: 100%; /* Ensure all cards are the same height */
 }
 
-.service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
-
 /* Content Wrapper */
 .service-content-wrapper {
   display: flex;
@@ -324,7 +319,28 @@
   transition: all 0.3s ease;
 }
 
+.service-card:hover {
+  transform: none !important; /* Forces the card to stay still */
+  /* You can keep the shadow if you want, or set box-shadow: none; to remove that too */
+  /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);  */
+}
+
+.service-card.static:hover {
+  transform: none !important
+}
+
 .service-actions .btn:hover {
-  transform: translateY(-2px);
+  transform: translateY(-0px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+  /* Stop the card from moving */
+.card.service-card:hover,
+.service-card:hover {
+  transform: none !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important; /* Keep original shadow, don't grow it */
+}
+
+/* If you want the rainbow card specifically to stop moving too */
+.card.card-rainbow:hover {
+  transform: none !important;
 }

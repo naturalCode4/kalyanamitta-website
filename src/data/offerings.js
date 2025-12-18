@@ -3,13 +3,13 @@ export const offerings = [
     id: 'emotional-processing',
     title: 'Emotional Freedom Techniques (EFT)',
     availability: 'Available in-person or virtual',
-    content: "I offer EFT to help people rapidly upgrade their consciousness and break free from a wide range of deep-seated issues-- quickly, affordably, and effectively-- issues that might otherwise take months or years to address."
+    content: "I use EFT to help people rapidly improve their life and well-being and break free from a wide range of deep-seated issues— quickly, affordably, and effectively— issues that might otherwise take months or years to address."
   },
   {
     id: 'energy-work',
     title: 'Reiki-based Energy Work',
     availability: 'Available in-person',
-    content: "I offer Reiki-based energy healing to address diverse needs by balancing, restoring, and optimizing the body's natural bio-energy field. Benefits include promotes vitality, emotional healing, rest, connection, energetic attunement, and more."
+    content: "Energy Work can address diverse needs by balancing, restoring, and optimizing the body's natural bio-energy field. This promotes vitality, emotional healing, rest, connection, energetic attunement, and more. Generally it's a very pleasant and restful experience."
   },
   {
     id: 'life-coaching',
@@ -39,21 +39,22 @@ export const testimonials = [
 
 export const helpList = [
   "Cultivate happiness, peace, self-esteem, stability, and spiritual balance",
-  "Deepen love (especially self-love), compassion, and authenticity",
-  "Clarify and embody your purpose, voice, and sovereignty. Let go of interfering cultural and inherited models and beliefs",
-  "Build emotional intelligence, resilience, and regulation",
+  "Deepen love, compassion, and authenticity",
   "Release stuck emotions: fear, stress, limiting beliefs, anger, grief, and trauma",
-  "Heal from childhood and adulthood wounding-- including PTSD, breakups, and issues stemming from growing up in dysfunctional families",
+  "Build emotional intelligence, resilience, and regulation",
+  "Clarify and embody your purpose, voice, and sovereignty. Let go of interfering cultural and inherited models and beliefs",
+  "Heal from childhood wounding including issues stemming from growing up in dysfunctional families",
+  "Heal from adult trauma including difficult relationships/breakups and traumatic events (PTSD)",
+  "Relieve or resolve physical pain and psychosomatically-rooted conditions",
+  "Cultivate spiritual growth and insight rooted in direct experience, enriched by various spiritual traditions and modalities",
+  "Receive guidance and support in meditation, yoga, breathwork, or sound healing",
   "Enhance performance in athletics, work, intimacy, and daily life",
-  "Address physical pain and psychosomatically-rooted ailments and diseases",
-  "Improve sleep quality and address insomnia",
-  "Find freedom from addictions, cravings, and unwanted patterns",
   "Strengthen romantic relationships and interpersonal dynamics",
+  "Find freedom from addictions, phobias, and unwanted patterns",
+  "Improve sleep quality and address insomnia",
   "Build confidence and clarity for important decisions, major life transitions, and daily living",
-  "Cultivate inner wisdom rooted in direct experience, enriched by various spiritual traditions and modalities",
-  "Receive guidance and support in meditation, yoga, breathwork, and sound healing",
   "Men's work and healthy masculine development",
-  "Connect with nature",
   "Psychedelic preparation and integration",
+  "Connect with nature",
   "Experience deep friendship, understanding, and holistic support, and become that space for yourself and others",
 ];

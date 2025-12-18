@@ -51,7 +51,7 @@ const ServiceCard = ({
 
         {/* Buttons */}
         <div className="service-actions">
-          <Link to="/contact" className="btn btn-outline btn-small">Book a Session</Link>
+          <Link to="/contact#booking" className="btn btn-outline btn-small">Book a Session</Link>
           {learnMoreLink && (
             <Link to={learnMoreLink} className="btn btn-outline btn-small">Learn More</Link>
           )}

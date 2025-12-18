@@ -93,7 +93,7 @@ const Rates = () => {
               <div className="timeline-content">
                 <h3>$70</h3>
                 <p className="timeline-label">Affordable Range</p>
-                <p className="timeline-description">An affordable rate for those with lower financial means</p>
+                <p className="timeline-description">An accessible rate for those with lower financial means</p>
               </div>
             </div>
             
@@ -106,7 +106,7 @@ const Rates = () => {
               <div className="timeline-content">
                 <h3>$200</h3>
                 <p className="timeline-label">Secure Range</p>
-                <p className="timeline-description">A way for those who are financially secure to honor the value of this work, and support others</p>
+                <p className="timeline-description">A way for those who are financially secure to honor the value of this work and support others</p>
               </div>
             </div>
           </div>
