@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import './About.css';
 import GoogleReviews from '../components/GoogleReviews';
+import Section from '../components/Section';
+import CTA from '../components/CTA';
 
 const About = () => {
 
@@ -100,21 +102,13 @@ const About = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="about-cta section-dark">
-        <div className="container">
-          <div className="cta-content">
-            <h2>Ready to Begin Your Journey?</h2>
-            <p>
-              I'm here to support you on your path to healing, growth, and spiritual connection. 
-              Let's work together to create the transformation you're seeking.
-            </p>
-            <div className="cta-buttons">
-              <a href="/contact" className="btn">Book a Session</a>
-              <a href="/offerings" className="btn btn-outline">Learn More</a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Section 
+        variant="dark" 
+        title="Ready to Begin?"
+        subtitle="Take the step towards healing, growth, connection, and freedom. Discover the peace and clarity you've been seeking. I look forward to transforming with you. Book your session or a free 30 minute consultation. I'm happy to answer any questions."
+      >
+        <CTA />
+      </Section>
     </div>
   );
 };

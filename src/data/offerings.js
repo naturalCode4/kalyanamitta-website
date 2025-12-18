@@ -19,24 +19,6 @@ export const offerings = [
   },
 ];
 
-export const testimonials = [
-  {
-    name: 'Sarah M.',
-    text: 'Healing On Tap\'s energy healing sessions have been transformative. I feel more balanced and connected to myself than ever before.',
-    rating: 5
-  },
-  {
-    name: 'Michael R.',
-    text: 'The life coaching sessions helped me break through limiting beliefs and create a clear path forward. Highly recommended!',
-    rating: 5
-  },
-  {
-    name: 'Emma L.',
-    text: 'The spiritual guidance I received was exactly what I needed during a difficult time. Healing On Tap has a gift for helping others find their way.',
-    rating: 5
-  }
-];
-
 export const helpList = [
   "Cultivate happiness, peace, self-esteem, stability, and spiritual balance",
   "Deepen love, compassion, and authenticity",
@@ -47,6 +29,7 @@ export const helpList = [
   "Heal from adult trauma including difficult relationships/breakups and traumatic events (PTSD)",
   "Relieve or resolve physical pain and psychosomatically-rooted conditions",
   "Cultivate spiritual growth and insight rooted in direct experience, enriched by various spiritual traditions and modalities",
+  "Explore the nature of the heart, consciousness, and reality",
   "Receive guidance and support in meditation, yoga, breathwork, or sound healing",
   "Enhance performance in athletics, work, intimacy, and daily life",
   "Strengthen romantic relationships and interpersonal dynamics",

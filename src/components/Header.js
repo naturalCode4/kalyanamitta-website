@@ -39,15 +39,14 @@ const Header = () => {
               >
                 Offerings
               </button>
-              <ul 
+              <ul   
                 className={`dropdown-menu ${isOfferingsOpen ? 'show' : ''}`}
                 onMouseEnter={() => setIsOfferingsOpen(true)}
                 onMouseLeave={() => setIsOfferingsOpen(false)}
               >
+                <li><Link to="/emotional-processing" className="dropdown-link" onClick={() => setIsMenuOpen(false)}>EFT</Link></li>
                 <li><Link to="/energy-work" className="dropdown-link" onClick={() => setIsMenuOpen(false)}>Energy Work</Link></li>
-                <li><Link to="/life-coaching" className="dropdown-link" onClick={() => setIsMenuOpen(false)}>Life Coaching</Link></li>
                 <li><Link to="/spiritual-practice" className="dropdown-link" onClick={() => setIsMenuOpen(false)}>Spiritual Practice</Link></li>
-                <li><Link to="/emotional-processing" className="dropdown-link" onClick={() => setIsMenuOpen(false)}>Emotional Processing</Link></li>
               </ul>
             </li>
 

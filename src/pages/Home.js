@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Section from '../components/Section';
+import CTA from '../components/CTA';
 import ServiceCard from '../components/ServiceCard';
 import { offerings, helpList } from '../data/offerings';
 import './Home.css';
+
 
 const Home = () => {
   return (
@@ -91,7 +93,6 @@ const Home = () => {
             <p>Welcome, my name is Adin. It's a joy and honor to support you in this work. I offer free consultations and am happy to answer any questions you have beforehand.</p>
             <div className="btn-group">
               <Link to="/about" className="btn">Learn More</Link>
-              <Link to="/contact#get-in-touch" target="_blank" rel="noopener noreferrer" className="btn">Get in Touch</Link>
             </div>
           </div>
           <div className="about-photos">
@@ -105,23 +106,29 @@ const Home = () => {
       </Section>
       
       {/* CTA Section */}
-      <Section 
+      {/* <Section 
         variant="dark" 
         title="Ready to Begin?"
         // subtitle="Take the first step towards healing, growth, and spiritual connection. Book a session today and discover the peace and clarity you've been seeking."
-        subtitle="Book a session or a free 30 minute consultation call. I look forward to transforming with you"
+        subtitle="I look forward to transforming with you. Book your session or a free 30 minute consultation."
       >
         <div className="cta-section">
           <div className="cta-buttons">
-            <Link to="/book-now" className="btn">Book Now</Link>
+            <Link to="/book-now" className="btn">Book a Session</Link>
+          </div>
+          <div className="cta-discovery-call">
+            <Link to="/contact#get-in-touch" target="_blank" rel="noopener noreferrer" className="btn btn-outline">Get in Touch</Link>
             <Link to="/view-rates" className="btn btn-outline">View Rates</Link>
           </div>
-          {/* <div className="cta-discovery-call">
-            <Link to="/discovery-call" className="btn btn-small">Book a Free 30 Minute Call</Link>
-          </div> */}
         </div>
+      </Section> */}
+      <Section 
+        variant="dark" 
+        title="Ready to Begin?"
+        subtitle="Take the step towards healing, growth, connection, and freedom. Discover the peace and clarity you've been seeking. I look forward to transforming with you. Book your session or a free 30 minute consultation. I'm happy to answer any questions."
+      >
+        <CTA />
       </Section>
-
     </div>
   );
 };

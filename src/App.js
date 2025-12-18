@@ -7,7 +7,6 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Offerings from './pages/Offerings';
 import EnergyWork from './pages/EnergyWork';
-import LifeCoaching from './pages/LifeCoaching';
 import SpiritualPractice from './pages/SpiritualPractice';
 import EmotionalProcessing from './pages/EmotionalProcessing';
 import Rates from './pages/Rates';
@@ -24,7 +23,6 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/offerings" element={<Offerings />} />
             <Route path="/energy-work" element={<EnergyWork />} />
-            <Route path="/life-coaching" element={<LifeCoaching />} />
             <Route path="/spiritual-practice" element={<SpiritualPractice />} />
             <Route path="/emotional-processing" element={<EmotionalProcessing />} />
             <Route path="/rates" element={<Rates />} />

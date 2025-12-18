@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Rates.css';
+import Section from '../components/Section';
+import CTA from '../components/CTA';
 
 const Rates = () => {
   const pricingTiers = [
@@ -37,39 +39,30 @@ const Rates = () => {
   const packages = [
     {
       name: '4-Session Combo',
-      description: "Invest in your growth and healing. Four potent sessions for the transformation you seek.",
-      price: '$375. Sliding Scale $210-600',
+      description: "Invest in your growth and healing. Four potent sessions to transform your life and resolve several major issues.",
+      price: '$400. Sliding Scale $224-640',
       originalPrice: '$500. Sliding Scale $280-800',
-      discount: '25% OFF',
-      // duration: '3 sessions',
+      discount: '20% OFF',
       features: [
         'Four 90 minute sessions',
         'Any combination of services',
         'Ongoing support and guidance',
-        '25% discount on total price'
+        '20% discount on total price'
       ]
     },
-  ];
-
-  const sessionTypes = [
-    'Reiki & Energy Work',
-    'Applied Kinesiology', 
-    'Life Coaching & Self-Empowerment',
-    'Spiritual Education & Perspective Shifter',
-    'Spiritual Guidance',
-    'Deep Listening & Support',
-    'Emotional Processing & Upgrading',
-    'Acupressure & Massage',
-    'Meditation Teaching',
-    'Yoga Teaching',
-    'Sound Healing Teaching',
-    'Breathwork Teaching',
-    'Piano Improvisation Teaching',
-    'Men\'s Work & Issues',
-    'Psychedelic Education & Integration',
-    'Sexual Energy Practices',
-    'Connecting to Nature',
-    'Software Engineering'
+    // {
+    //   name: '7-Session Combo',
+    //   description: "Change your life and heal major issues, plain and simple.",
+    //   price: '$613. Sliding Scale $343-980',
+    //   originalPrice: '$875. Sliding Scale $490-1400',
+    //   discount: '30% OFF',
+    //   features: [
+    //     'Seven 90 minute sessions',
+    //     'Any combination of services',
+    //     'Ongoing support and guidance',
+    //     '30% discount on total price'
+    //   ]
+    // },
   ];
 
   return (
@@ -158,40 +151,8 @@ const Rates = () => {
         </div>
       </section>
 
-      {/* <section className="packages-section">
-        <div className="container">
-          <h2>Combo Packages</h2> th
-          <div className="packages-grid">
-            {packages.map((pkg, index) => (
-              <div key={index} className="package-card">
-                <div className="package-header">
-                  <h3>{pkg.name}</h3>
-                  <p className="package-description">{pkg.description}</p>
-                  <div className="package-price">
-                    <span className="price">{pkg.price}</span>
-                    <span className="original-price">{pkg.originalPrice}</span>
-                    <span className="discount">{pkg.discount}</span>
-                  </div>
-                  <p className="package-duration">{pkg.duration}</p>
-                </div>
-                
-                <div className="package-features">
-                  <h4>What's Included:</h4>
-                  <ul>
-                    {pkg.features.map((feature, featureIndex) => (
-                      <li key={featureIndex}>{feature}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
-
       {/* CTA Section */}
-      <section className="rates-cta">
+      {/* <section className="rates-cta">
         <div className="container">
           <div className="cta-content">
             <h2>Ready to Begin?</h2>
@@ -204,7 +165,14 @@ const Rates = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      <Section 
+        variant="dark" 
+        title="Ready to Begin?"
+        subtitle="Take the step towards healing, growth, connection, and freedom. Discover the peace and clarity you've been seeking. I look forward to transforming with you. Book your session or a free 30 minute consultation. I'm happy to answer any questions."
+      >
+        <CTA />
+      </Section>
     </div>
   );
 };

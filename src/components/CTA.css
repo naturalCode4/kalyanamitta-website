@@ -1,16 +1,34 @@
 /* CTA Component Styles */
-.cta-content {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
+.cta-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.cta-content h2 {
-  margin-bottom: 1.5rem;
+.cta-buttons {
+  display: flex;
+  gap: 0.75rem; /* Reduced from 1rem to bring buttons closer */
+  justify-content: center;
 }
 
-.cta-content p {
-  font-size: 1.1rem;
-  margin-bottom: 2.5rem;
-  line-height: 1.6;
+.cta-discovery-call {
+  display: flex;
+  gap: 0.75rem; /* Reduced from 1.5rem to bring these buttons closer */
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cta-discovery-call {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem; /* Reduced for mobile too */
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem; /* Reduced for mobile too */
+  }
 }
