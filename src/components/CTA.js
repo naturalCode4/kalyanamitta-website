@@ -37,7 +37,7 @@ import './CTA.css';
 
 const CTA = ({ 
   // title = "Ready to Begin?", 
-  // subtitle = "Take the step towards healing, growth, connection, and freedom. Discover the peace and clarity you've been seeking. I look forward to transforming with you. Book your session or a free 30 minute consultation. I'm happy to answer any questions.",
+  // subtitle = "When you're ready, I'm here. Book a session, schedule a free consultation, or reach out—I'm happy to answer any questions.",
   primaryButtonText = "Book a Session",
   primaryButtonLink = "/contact#booking"
 }) => {

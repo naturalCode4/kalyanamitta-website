@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Section from '../components/Section';
 import CTA from '../components/CTA';
@@ -6,8 +7,30 @@ import ServiceCard from '../components/ServiceCard';
 import { offerings, helpList } from '../data/offerings';
 import './Home.css';
 
-
 const Home = () => {
+  const { hash } = useLocation();
+
+  // Handle scroll to hash on load with OFFSET
+  useEffect(() => {
+    if (hash) {
+      setTimeout(() => {
+        const element = document.getElementById(hash.replace('#', ''));
+        if (element) {
+          const headerOffset = 68; // Adjust this value if needed
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+          });
+        }
+      }, 100);
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [hash]);
+
   return (
     <div className="home">
       {/* Hero Section */}
@@ -46,10 +69,11 @@ const Home = () => {
       </Section>
       
       {/* Help List Section */}
-      <Section 
+      <Section
+        id="what-we-can-do-together"
         variant="dark" 
         title="What We Can Do Together"
-        subtitle="These are my core strengths and areas of focus. We can address them through EFT, energy work, spiritual counseling, or any combination. The beautiful thing is they're all interconnected—transform in one area and you'll often find the rest alchemize and heal together."
+        subtitle="These are my core strengths and areas of focus. We can address them through EFT, energy work, spiritual counseling, or a combination. The beautiful thing is they're all interconnected—transform in one area and you'll often find the rest alchemize and heal together."
       >
         <div className="help-section">
           <ul className="help-list">
@@ -93,6 +117,14 @@ const Home = () => {
             <p>Welcome, my name is Adin. It's a joy and honor to support you in this work. I offer free consultations and am happy to answer any questions you have beforehand.</p>
             <div className="btn-group">
               <Link to="/about" className="btn">Learn More</Link>
+              <Link 
+                to="/contact#get-in-touch" 
+                className="btn btn-outline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Get in Touch
+              </Link>
             </div>
           </div>
           <div className="about-photos">
@@ -106,26 +138,10 @@ const Home = () => {
       </Section>
       
       {/* CTA Section */}
-      {/* <Section 
-        variant="dark" 
-        title="Ready to Begin?"
-        // subtitle="Take the first step towards healing, growth, and spiritual connection. Book a session today and discover the peace and clarity you've been seeking."
-        subtitle="I look forward to transforming with you. Book your session or a free 30 minute consultation."
-      >
-        <div className="cta-section">
-          <div className="cta-buttons">
-            <Link to="/book-now" className="btn">Book a Session</Link>
-          </div>
-          <div className="cta-discovery-call">
-            <Link to="/contact#get-in-touch" target="_blank" rel="noopener noreferrer" className="btn btn-outline">Get in Touch</Link>
-            <Link to="/view-rates" className="btn btn-outline">View Rates</Link>
-          </div>
-        </div>
-      </Section> */}
       <Section 
         variant="dark" 
         title="Ready to Begin?"
-        subtitle="Take the step towards healing, growth, connection, and freedom. Discover the peace and clarity you've been seeking. I look forward to transforming with you. Book your session or a free 30 minute consultation. I'm happy to answer any questions."
+        subtitle="When you're ready, I'm here. Book a session, schedule a free consultation, or reach out—I'm happy to answer any questions."
       >
         <CTA />
       </Section>

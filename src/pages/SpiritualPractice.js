@@ -9,66 +9,62 @@ const SpiritualPractice = () => {
     {
       title: 'Meditation',
       description: 'Learn various meditation techniques to cultivate inner peace, mindfulness, and spiritual awareness.',
-      techniques: [
+      points: [
         'Mindfulness meditation',
-        'Loving-kindness practice',
+        'Loving-kindness practice', 
         'Breath awareness',
-        'Walking meditation'
-      ],
-      benefits: [
+        'Walking meditation',
         'Reduced stress and anxiety',
         'Increased self-awareness',
         'Enhanced emotional regulation',
         'Deeper spiritual connection'
-      ]
+      ],
+      availability: 'In-person or Online'
     },
     {
       title: 'Yoga',
       description: 'Integrate physical postures, breathwork, and meditation for holistic wellness and spiritual growth.',
-      techniques: [
+      points: [
         'Hatha yoga foundations',
         'Vinyasa flow sequences',
         'Restorative poses',
-        'Alignment principles'
-      ],
-      benefits: [
+        'Alignment principles',
         'Improved flexibility and strength',
         'Better posture and balance',
         'Stress relief',
         'Mind-body integration'
-      ]
+      ],
+      availability: 'In-person or Online'
     },
     {
       title: 'Breathwork',
       description: 'Harness the power of conscious breathing for healing, transformation, and expanded awareness.',
-      techniques: [
+      points: [
         'Pranayama techniques',
         'Box breathing',
         'Breath retention practices',
-        'Energy circulation methods'
-      ],
-      benefits: [
+        'Energy circulation methods',
         'Increased energy and vitality',
         'Emotional processing',
         'Spiritual expansion',
         'Trauma release'
-      ]
+      ],
+      availability: 'In-person or Online'
     },
     {
       title: 'Sound Healing',
       description: 'Use sacred sounds, mantras, and vibrational healing for deep relaxation and spiritual awakening.',
-      techniques: [
+      points: [
         'Mantra chanting',
         'Singing bowl therapy',
         'Tuning fork healing',
-        'Voice activation'
-      ],
-      benefits: [
+        'Voice activation',
         'Deep relaxation',
         'Chakra balancing',
         'Emotional release',
         'Heightened awareness'
-      ]
+      ],
+      availability: 'In-person'
     }
   ];
 
@@ -78,9 +74,9 @@ const SpiritualPractice = () => {
       <section className="spiritual-practice-hero">
         <div className="container">
           <div className="spiritual-practice-hero-content">
-            <h1>Spiritual Practice</h1>
+            <h1>Spiritual Counseling</h1>
             <p className="spiritual-practice-subtitle">
-              Cultivate the wisdom and compassion needed to live well. Learn mind-body practices for wellness and spiritual growth
+              Build the wisdom and compassion needed to live well. Be seen and heard as you are. Learn and deepen mind-body practices.
             </p>
           </div>
         </div>
@@ -90,7 +86,7 @@ const SpiritualPractice = () => {
       <section className="about-spiritual-practice section-rainbow">
         <div className="container">
           <div className="about-spiritual-practice-content">
-            <h2>About Spiritual Practice</h2>
+            <h2>About Spiritual Counseling</h2>
             <div className="about-image">
               <div className="placeholder-image">
                 <span>Spiritual Practice Image</span>
@@ -98,94 +94,53 @@ const SpiritualPractice = () => {
             </div>
             <div className="about-spiritual-practice-text">
               <p>
-                Spiritual practices are time-tested methods for cultivating inner wisdom, peace, and connection to something greater than ourselves. I offer guidance in meditation, yoga, breathwork, and sound healing—ancient practices adapted for modern life.
+                Together we can cultivate well-being, wisdom, love, freedom, and what matters most to you. This is a space for being met, exploring, healing, finding direction, and growth- especially in <a href="/#what-we-can-do-together">these areas</a>.
               </p>
               <p>
-                These practices work synergistically to support your physical, emotional, mental, and spiritual well-being. Whether you're a complete beginner or looking to deepen your existing practice, I meet you where you are and provide personalized instruction.
-              </p>
-              
-              <h3>Why Practice?</h3>
-              <p>
-                In our fast-paced world, spiritual practices offer a refuge—a way to slow down, turn inward, and remember who you truly are beneath the noise of daily life. Regular practice cultivates resilience, clarity, and a deep sense of peace that carries into all aspects of your life.
+                We can be with whatever is alive in you. We can navigate your deepest yearnings and any obstacles to your fulfillment. 
               </p>
               <p>
-                These aren't just relaxation techniques; they're powerful tools for transformation that have been refined over thousands of years. Through consistent practice, you develop the capacity to respond to life's challenges with greater wisdom and equanimity.
+                Truly, sometimes all we really need is just someone to hear us, share presence, and validate our experience (without judgment or fixing). I am happy to be that person. I wish to be supportive to you and I'm open to what that looks like.
               </p>
-              
-              <h3>Integration & Support</h3>
               <p>
-                Learning a practice is just the beginning. I provide ongoing support to help you integrate these tools into your daily life. We'll work together to create a sustainable practice that fits your lifestyle and supports your unique path of growth and awakening.
+                Whether you're sprouting curiosity, deep in transformation, or have established practice(s), I offer grounded guidance and presence. Sessions are collaborative and responsive to what emerges.
+              </p>
+              <h3>
+                Practices
+              </h3>
+              <p>
+                I teach yoga, breathwork, and voice-based sound healing. I also offer support in meditation. These are all powerful multi-tools we can bring in in response to what is emerging. Alternatively they can be the focus of our time together.
+              </p>
+              <p>
+                Spiritual Counseling sessions can also be synthesized with EFT or Energy Healing. EFT is often extremely useful (and recommended!) to release and heal specific issues.
+              </p>
+              <br></br><br></br><br></br>
+              <p>
+                <em>I am offering spiritual guidance, not clinical mental health services.</em>
               </p>
             </div>
 
-            {/* What to Expect - Inside rainbow section */}
-            <div className="what-to-expect-card">
-              <h3>What to Expect from Sessions</h3>
-              
-              <div className="expect-sections">
-                <div className="expect-item">
-                  <h4>Learning & Practice</h4>
-                  <p>
-                    We'll explore techniques step-by-step, with hands-on instruction tailored to your experience level and goals.
-                  </p>
-                </div>
-                
-                <div className="expect-item">
-                  <h4>Integration Guidance</h4>
-                  <p>
-                    I'll help you understand how to incorporate these practices into your daily routine for lasting benefit.
-                  </p>
-                </div>
-                
-                <div className="expect-item">
-                  <h4>Ongoing Support</h4>
-                  <p>
-                    Continued guidance and refinement of your practice as you deepen your understanding and experience.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            {/* Spiritual Practice Cards - Now inside the rainbow section
+            <div className="services-grid">
+              {practices.map((practice, index) => (
+                <div key={index} className="service-card">
+                  <h3>{practice.title}</h3>
+                  <p className="service-description">{practice.description}</p>
+                  
+                  <div className="service-points">
+                    <ul>
+                      {practice.points.map((point, idx) => (
+                        <li key={idx}>{point}</li>
+                      ))}
+                    </ul>
+                  </div>
 
-      {/* Spiritual Practice Cards Section */}
-      <section className="spiritual-practice-services">
-        <div className="container">
-          <div className="services-intro">
-            <h2>Sacred Practices</h2>
-            <p>
-              These ancient and modern practices offer powerful tools for transformation, 
-              healing, and spiritual growth. Each practice can be adapted to your unique 
-              needs and integrated into your daily life.
-            </p>
-          </div>
-
-          <div className="services-grid">
-            {practices.map((practice, index) => (
-              <div key={index} className="service-card">
-                <h3>{practice.title}</h3>
-                <p className="service-description">{practice.description}</p>
-                
-                <div className="service-techniques">
-                  <h4>Techniques We'll Explore:</h4>
-                  <ul>
-                    {practice.techniques.map((technique, idx) => (
-                      <li key={idx}>{technique}</li>
-                    ))}
-                  </ul>
+                  <div className="service-availability">
+                    <p><strong>Availability:</strong> {practice.availability}</p>
+                  </div>
                 </div>
-
-                <div className="service-benefits">
-                  <h4>Benefits Include:</h4>
-                  <ul>
-                    {practice.benefits.map((benefit, idx) => (
-                      <li key={idx}>{benefit}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div> */}
           </div>
         </div>
       </section>

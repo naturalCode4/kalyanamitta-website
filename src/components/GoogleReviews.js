@@ -17,6 +17,28 @@ const GoogleReviews = () => {
   const [error, setError] = useState(null);
   /** @type {[number|null, function]} */
   const [overallRating, setOverallRating] = useState(null);
+  // Track expanded state for each review
+  const [expandedReviews, setExpandedReviews] = useState({});
+
+  // Function to toggle expanded state for a specific review
+  const toggleReview = (index) => {
+    setExpandedReviews(prev => ({
+      ...prev,
+      [index]: !prev[index]
+    }));
+  };
+
+  // Function to truncate text to approximately 3 lines
+  const truncateText = (text, maxChars = truncateLength) => {
+    if (text.length <= maxChars) return text;
+    return text.substring(0, maxChars).trim() + '...';
+  };
+
+  // const truncateText = (text, maxWords = 25) => {
+  //   const words = text.split(' ');
+  //   if (words.length <= maxWords) return text;
+  //   return words.slice(0, maxWords).join(' ') + '...';
+  // };
 
   useEffect(() => {
     const fetchReviews = async () => {
@@ -104,17 +126,17 @@ const GoogleReviews = () => {
       {
         author_name: "Zac K, Clinical Psychologist",
         rating: 5,
-        text: "Adin could see I was struggling deeply with self-judgment, shame, and worry when he offered me my first tapping session. I have to admit, the scientist in me was a little skeptical that it wouldn’t work, but I could not have been more wrong. My first session with Adin was so powerful—naming and releasing so much pain I have been dealing with for years—that I have tapped with him every week since then. Each session has been more powerful than the last, and he has provided me with other spiritual guidance and resources that are already bearing fruit in my life. Don’t miss out on Adin’s talent, kindness, wisdom, and generosity of spirit.",
+        text: "Adin could see I was struggling deeply with self-judgment, shame, and worry when he offered me my first tapping session. I have to admit, the scientist in me was a little skeptical that it wouldn't work, but I could not have been more wrong. My first session with Adin was so powerful—naming and releasing so much pain I have been dealing with for years—that I have tapped with him every week since then. Each session has been more powerful than the last, and he has provided me with other spiritual guidance and resources that are already bearing fruit in my life. Don't miss out on Adin's talent, kindness, wisdom, and generosity of spirit.",
         time: Date.now()
       },
       {
         author_name: "Owen P, Kundalini Yoga Teacher",
         rating: 5,
-        text: "I recently booked a Reiki session with Adin, who I have known for sometime through our shared interest in Yoga. I had done Reiki only once with a different practitioner, and came away as a bit of a skeptic; I didn't feel any different at the end of the session. My experience with Adin was very different. He has a very simple and straightforward way of speaking and explaining the Reiki process, which put me at ease very quickly. We talked for a few minutes then he began the Reiki process. Adin has a wonderful aura about him of contained energy and confidence, with a feeling of intuitively moving and allowing the energy to move, of becoming the 'Hollow Bone' that the ancient healers speak off. I felt the energy within my body and mind, and came away from the session with a wonderful sense of energized peace and well-being that stayed with me for several days. I wholeheartedly recommend him as a naturally gifted Reiki practitioner, and look forward to doing more energy healing work with him soon.",
+        text: "I recently booked a Reiki session with Adin, who I have known for sometime through our shared interest in Yoga. I had done Reiki only once with a different practitioner, and came away as a bit of a skeptic; I didn't feel any different at the end of the session. My experience with Adin was very different. He has a very simple and straightforward way of speaking and explaining the Reiki process, which put me at ease very quickly. We talked for a few minutes then he began the Reiki process. Adin has a wonderful aura about him of contained energy and confidence, with a feeling of intuitively moving and allowing the energy to move, of becoming the 'Hollow Bone' that the ancient healers speak off. I felt the energy within my body and mind, and came away from the session with a wonderful sense of energized peace and well-being that stayed with me for several days. I wholeheartedly recommend him as a naturally gifted Reiki practitioner, and look forward to doing more energy healing work with him.",
         time: Date.now()
       },
       {
-        author_name: "Bella S, Healer",
+        author_name: "Bella S, EFT Practition",
         rating: 5,
         text: "Adin made scheduling sessions remarkably easy. During our sessions, I felt deeply heard, and his focused presence allowed me to relax and explore my inner landscape. I felt safe and held with compassion, as he skillfully guided me through my sometimes rambling thoughts, helping me identify and eventually reframe critical focal points. His patience and ability to create a space where I could process emotions at my own pace, rather than rushing past discomfort, were invaluable. The work we did together has helped me shift and dissolve old social triggers and conditioning, empowering me in areas of my life where I need to take leadership so I show up with more confidence and efficacy.",
         time: Date.now()
@@ -122,13 +144,7 @@ const GoogleReviews = () => {
       {
         author_name: "Gloria R",
         rating: 5,
-        text: "I got to receive two sessions with Adin, doing EFT/tapping. Adin brought complete presence, compassion, and technical skill to our sessions. I felt safe and held in our sessions. They were also very impactful, they helped me shift a challenging relationship dynamic that I have been struggling with. I’m actually seeing lasting changes after our session!",
-        time: Date.now()
-      },
-      {
-        author_name: "Ethan B, Rabbi",
-        rating: 5,
-        text: "Adin is a warm, creative, and sagely steward for our times! He is a passionate practitioner of many modalities who has helped me expand my consciousness and deepen my meditation, yoga, and energy practices. Kind and reliable, I trust him from my soul.",
+        text: "I got to receive two sessions with Adin, doing EFT/tapping. Adin brought complete presence, compassion, and technical skill to our sessions. I felt safe and held in our sessions. They were also very impactful, they helped me shift a challenging relationship dynamic that I have been struggling with. I'm actually seeing lasting changes after our session!",
         time: Date.now()
       },
       {
@@ -136,9 +152,17 @@ const GoogleReviews = () => {
         rating: 5,
         text: "Adin is a kind, caring and spiritually connected person. If you are looking to discover new ways to see life and your soul—or just need someone to talk to—I highly recommend engaging with Adin's deep breadth of experience and modalities that he offers.",
         time: Date.now()
+      },
+      {
+        author_name: "Ethan B, Rabbi",
+        rating: 5,
+        text: "Adin is a warm, creative, and sagely steward for our times! He is a passionate practitioner of many modalities who has helped me expand my consciousness and deepen my meditation, yoga, and energy practices. Kind and reliable, I trust him from my soul.",
+        time: Date.now()
       }
     ];
   };
+
+  const truncateLength = 1500
 
   const renderStars = (rating) => {
     return '★'.repeat(rating) + '☆'.repeat(5 - rating);
@@ -187,27 +211,43 @@ const GoogleReviews = () => {
         </div>
       )}
       <div className="reviews-grid">
-        {reviews.map((review, index) => (
-          <div key={review.time || index} className="review-card">
-            <div className="review-header">
-              <div className="review-author">{review.author_name}</div>
-              <div className="review-rating" title={`${review.rating} out of 5 stars`}>
-                {renderStars(review.rating)}
+        {reviews.map((review, index) => {
+          const isExpanded = expandedReviews[index];
+          const shouldTruncate = review.text.length > truncateLength;
+          const displayText = isExpanded || !shouldTruncate 
+            ? review.text 
+            : truncateText(review.text);
+
+          return (
+            <div key={review.time || index} className="review-card">
+              <div className="review-header">
+                <div className="review-author">{review.author_name}</div>
+                <div className="review-rating" title={`${review.rating} out of 5 stars`}>
+                  {renderStars(review.rating)}
+                </div>
               </div>
+              <p className="review-text">"{displayText}"</p>
+              {shouldTruncate && (
+                <button 
+                  className="read-more-btn"
+                  onClick={() => toggleReview(index)}
+                >
+                  {isExpanded ? 'Show less' : 'Read more'}
+                </button>
+              )}
+              {review.relative_time_description && (
+                <div className="review-time">{review.relative_time_description}</div>
+              )}
             </div>
-            <p className="review-text">"{review.text}"</p>
-            {review.relative_time_description && (
-              <div className="review-time">{review.relative_time_description}</div>
-            )}
-          </div>
-        ))}
+          );
+        })}
       </div>
       <div className="google-reviews-footer">
-        <a 
+        <a
           href="https://www.google.com/search?sca_esv=281aa192389698e8&sxsrf=AE3TifNk9zQq2bqCj-jaAJZ12-Od__pmBQ:1765170604059&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-EwyJXTuXVS5aEX0JW1xEL5DvYFwgR7sVZ45kd6I9Bl_SZLxjblPSQzPdEpvH4WxiKlaTGcjhJB0kmY_gPUsN3WHWFsDQ&q=Healing+On+Tap+Reviews&sa=X&ved=2ahUKEwiqtcr2nK2RAxWYKlkFHV9iD70Q0bkNegQIHRAE&biw=1680&bih=962&dpr=2"
           target="_blank"
           rel="noopener noreferrer"
-          className="view-all-reviews-link"
+          className="view-all-reviews-btn btn btn-outline"
         >
           View all reviews on Google →
         </a>
@@ -217,4 +257,3 @@ const GoogleReviews = () => {
 };
 
 export default GoogleReviews;
-

@@ -317,7 +317,6 @@
   padding: 0.75rem 2rem;
   background: #d4af37;
   color: #333;
-  /* color: #333; */
   text-decoration: none;
   border-radius: 8px;
   font-weight: 600;
@@ -781,6 +780,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  margin-top: 2rem
 }
 
 .section-dark .section-title {
@@ -906,4 +906,9 @@
 /* Optional: Ensure it stays black or changes appropriately on hover */
 .section-rainbow .btn:hover {
   color: #000000 !important;
+}
+
+/* Change only text color for outline buttons on rainbow background */
+.section-rainbow .btn-outline {
+  color: white !important; /* Same white as the border */
 }

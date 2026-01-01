@@ -334,3 +334,25 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Make service cards work inside the rainbow section */
+.about-spiritual-practice.section-rainbow .services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.about-spiritual-practice.section-rainbow .service-card {
+  background: white !important;
+}
+
+.about-spiritual-practice.section-rainbow .service-card h3,
+.about-spiritual-practice.section-rainbow .service-card h4 {
+  color: #333 !important;
+}
+
+.about-spiritual-practice.section-rainbow .service-card p,
+.about-spiritual-practice.section-rainbow .service-card li {
+  color: #666 !important;
+}

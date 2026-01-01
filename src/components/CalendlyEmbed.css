@@ -3,7 +3,28 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
-  background: linear-gradient(135deg, #1e1e1e 0%, #4a1a5c 10%, #3a2177 20%, #1e4d3e 30%, #125f4a 40%, #0f4c75 50%, #145a82 60%, #b45309 70%, #d4af37 80%, #8b0000 90%, #1e1e1e 100%);
+  /*
+  background: linear-gradient(
+    135deg,
+    #1e1e1e 5%,
+    #4a1a5c 10%,
+    #351f6e 18%,
+    #1e4d3e 24%,
+    #156953 30%,
+    #0c8891 33%, 
+    #004d84 44%, 
+    #004d84 45%, 
+    #0564ac 50%, 
+    rgb(1, 124, 225) 56%, 
+    #bd9205 64%,
+    #e4b108 68%,
+    #d16500 76%,
+    #d84813 80%,
+    #ca1111 84%,
+    #761616 90%,
+    #1e1e1e 97%
+  );
+  */
   border-radius: 20px;
   box-shadow: 0 20px 40px rgba(212, 175, 55, 0.2);
   border: 2px solid #d4af37;

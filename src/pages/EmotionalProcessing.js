@@ -14,7 +14,7 @@ const EmotionalProcessing = () => {
           <div className="emotional-processing-hero-content">
             <h1>Emotional Freedom Techniques (EFT)</h1>
             <p className="emotional-processing-subtitle">
-              Rapidly process emotions, release stress, and rewire your nervous system as you desire.
+              Rapidly process emotions, regulate your nervous system, heal even major issues, and create the life you desire
             </p>
           </div>
         </div>
@@ -46,19 +46,19 @@ const EmotionalProcessing = () => {
                 Imagine a tool that can relieve you of self-defeating thoughts, feelings, and actions—often within minutes or a single session—that you've held for years or decades, patterns you just assumed were an unchangeable part of your existence. Imagine being able to let go of these patterns and consciously uplevel your nervous system in a way that brings you great freedom, ease, joy, clarity, alignment, and empowerment.
               </p>
               <p>
-                EFT boils down Chinese Medicine, Neuroscience, Positive Psychology, and more into a highly effective yet simple modality that you can do anytime, anywhere. Practitioners may also draw upon methodologies from Internal Family Systems (IFS), Hypnotherapy, Cognitive Behavioral Therapy (CBT), EMDR (Eye Movement Desensitization and Reprocessing), Mindfulness and Ancient Wisdom, Polyvagal Theory, Neuro-Linguistic Programming (NLP), Shamanism, and more. At its core, EFT embodies the wisdom of Love, Acceptance, Letting Go, and your massive potential as a creator being.
+                EFT boils down Chinese Medicine, Neuroscience, Positive Psychology, and more into a highly effective yet simple modality that you can do anytime, anywhere. Practitioners may also draw upon methodologies from Internal Family Systems (IFS), Hypnotherapy, Cognitive Behavioral Therapy (CBT), EMDR, Mindfulness, Polyvagal Theory, Neuro-Linguistic Programming (NLP), Shamanism, spiritual teachings, and more. At its core, EFT embodies the wisdom of Love, Acceptance, Letting Go, and your massive potential as a creator being.
               </p>
               <h3>
                 Who and What is EFT For?
               </h3>
               <p>
-                EFT is for anyone with a nervous system. It works across all ages, cultures, and belief systems, and can meet you wherever you are on your journey. Whether you're navigating daily overwhelm or deep trauma, physical pain or emotional wounds, self-doubt or anxiety, addiction or grief, relationship challenges or spiritual inquiry, manifesting abundance or actualizing your deepest calling—EFT can support your healing and transformation.
+                EFT is for anyone with a nervous system. It works across all ages, cultures, and belief systems, and can meet you wherever you are on your journey. Whether you're navigating daily overwhelm or deep trauma, physical pain or emotional wounds, self-doubt or anxiety, addiction or grief, relationship challenges or spiritual inquiry, manifesting abundance or actualizing your deepest calling, empowering higher consciousness or opening to love—EFT can support your healing and transformation. <a href="/#what-we-can-do-together">These are my core strengths are areas of focus</a>.
               </p>
               <h3>
                 Evidence and Experience
               </h3>
               <p>
-                EFT's effectiveness is well-backed by over 100 peer-reviewed scientific studies and trials, but more importantly, its power can be verified through your own personal experience—often in just minutes of tapping.
+                EFT's effectiveness is well-backed by over 100 peer-reviewed scientific studies and trials, and it is leading the modern western medical system in treating many diseases. Its power can be verified through your own personal experience—often in one session or even a few minutes.
               </p>
             </div>
 
@@ -71,15 +71,15 @@ const EmotionalProcessing = () => {
                   <h4>Beginning the Session</h4>
                   <p>
                     You'll be in a comfortable, private space where you can fully express yourself.
-                    I'll show you how to self-tap on meridian points on your body, and we will tap together throughout the session. We'll discuss what you'd like to work on, and I may ask you some questions to unlock the core of the issue. 
+                    I'll explain the practice and show you the meridian points to self-tap on your body, and we will tap together throughout the session. We'll discuss what you'd like to work on, and I may ask you some questions to unlock the core of the issue. 
                   </p>
                 </div>
                 
                 <div className="expect-item">
                   <h4>During the Session</h4>
                   <p>
-                    You'll be guided through various EFT techniques to process emotions and meet your goals. I will suggest things for you to say, which you are encouraged to modify so that your words resonates with you.
-                    You will likely directly experience rapid release of negative thoughts and emotions associated with your issue, and be gaining fresh insights, energy, healing, and resolution-- A.K.A. Emotional Freedom
+                    You'll be guided in EFT to relieve or resolve your issue and meet your goals. I will suggest things for you to say, which you are encouraged to modify so that your words resonates with you.
+                    You will likely directly experience rapid release of negative thoughts and emotions associated with your issue, and be gaining fresh insights, liberated energy, and resolution to even deep-seeded issues-- A.K.A. Emotional Freedom
                   </p>
                 </div>
                 
@@ -87,7 +87,7 @@ const EmotionalProcessing = () => {
                   <h4>After the Session</h4>
                   <p>
                     In most cases, you will notice significant relief, clarity, and shifts in your issue.
-                    EFT permanently resolves issues at the energetic and subconscious level, and you may continue to notice positive changes in the days and weeks following your session.
+                    EFT permanently resolves issues on energetic and subconscious levels, and you may continue to notice positive changes arise in the days and weeks following your session.
                     We may discuss practices that might support your healing and goals.
                   </p>
                 </div>
@@ -101,7 +101,7 @@ const EmotionalProcessing = () => {
       <Section 
         variant="dark" 
         title="Ready to Begin?"
-        subtitle="Take the step towards healing, growth, connection, and freedom. Discover the peace and clarity you've been seeking. I look forward to transforming with you. Book your session or a free 30 minute consultation. I'm happy to answer any questions."
+        subtitle="When you're ready, I'm here. Book a session, schedule a free consultation, or reach out—I'm happy to answer any questions."
       >
         <CTA />
       </Section>

@@ -20,15 +20,16 @@ export const offerings = [
 ];
 
 export const helpList = [
-  "Cultivate happiness, peace, self-esteem, stability, and spiritual balance",
+  "Cultivate happiness, peace, self-esteem, and stability",
   "Deepen love, compassion, and authenticity",
   "Release stuck emotions: fear, stress, limiting beliefs, anger, grief, and trauma",
   "Build emotional intelligence, resilience, and regulation",
-  "Clarify and embody your purpose, voice, and sovereignty. Let go of interfering cultural and inherited models and beliefs",
+  "Actualize your gifts, voice, and sovereignty. Let go of interfering cultural and inherited models and beliefs",
   "Heal from childhood wounding including issues stemming from growing up in dysfunctional families",
   "Heal from adult trauma including difficult relationships/breakups and traumatic events (PTSD)",
   "Relieve or resolve physical pain and psychosomatically-rooted conditions",
-  "Cultivate spiritual growth and insight rooted in direct experience, enriched by various spiritual traditions and modalities",
+  "Cultivate spiritual insight and growth rooted in direct experience, enriched by various spiritual traditions and modalities",
+  "Enliven your connection to the energy body, intuition, and sensitivity, enriched by mind-body modalities",
   "Explore the nature of the heart, consciousness, and reality",
   "Receive guidance and support in meditation, yoga, breathwork, or sound healing",
   "Enhance performance in athletics, work, intimacy, and daily life",

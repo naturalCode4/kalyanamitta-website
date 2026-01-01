@@ -7,13 +7,14 @@ const Section = ({
   variant = 'light', 
   title = '', 
   subtitle = '', 
-  container = true 
+  container = true,
+  id= ''
 }) => {
   
   const sectionClass = `section section-${variant} ${className}`.trim();
   
   return (
-    <section className={sectionClass}>
+    <section className={sectionClass} id={id}>
       {container ? (
         <div className="container">
           {title && (

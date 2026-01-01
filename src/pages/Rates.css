@@ -593,7 +593,7 @@
 
 .middle-text-content {
   background: linear-gradient(
-    0deg,
+    160deg,
     #1e1e1e 5%,
     #4a1a5c 10%,
     #351f6e 18%,
@@ -612,7 +612,7 @@
     #761616 90%,
     #1e1e1e 97%
   ),
-  rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+  rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay */
   background-blend-mode: darken; /* Blend the overlay with the gradient */
   color: white; /* Ensures text is readable */
   text-align: center; /* Optional: Centers text */
@@ -755,7 +755,7 @@
 
 .timeline-description {
   font-size: 1.1rem;
-  color: #d1d1d1;
+  color: #FFFFFF;
   line-height: 1.6;
   margin: 0;
   position: relative;
@@ -814,7 +814,7 @@
 
 .timeline-content {
   background: linear-gradient(
-    0deg,
+    160deg,
     #1e1e1e 5%,
     #4a1a5c 10%,
     #351f6e 18%,
@@ -833,7 +833,7 @@
     #761616 90%,
     #1e1e1e 97%
   ),
-  rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+  rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay */
   background-blend-mode: darken; /* Blend the overlay with the gradient */
   color: white; /* Ensures text is readable */
   text-align: center; /* Optional: Centers text */

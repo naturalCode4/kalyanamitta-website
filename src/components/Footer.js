@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <h3>Healing On Tap</h3>
-            <p>Healing & Guidance Rooted in Love and Wisdom. Offering EFT, Energy Healing, Spiritual Counseling and Practice Support</p>
+            <p>Healing & Guidance Rooted in Love and Wisdom. EFT, Energy Healing, & Spiritual Counseling</p>
           </div>
           
           <div className="footer-section">

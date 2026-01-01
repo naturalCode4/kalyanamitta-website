@@ -174,3 +174,253 @@
   }
 }
 
+.google-reviews-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.google-reviews-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.google-reviews-logo {
+  display: flex;
+  align-items: center;
+}
+
+.google-reviews-logo svg {
+  width: 3rem;
+  height: 3rem;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.google-reviews-header > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.google-reviews-header h3 {
+  margin: 0;
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+}
+
+.overall-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rating-stars {
+  color: #fbbc05;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.rating-number {
+  color: #666;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.review-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.review-author {
+  font-weight: 600;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.review-rating {
+  color: #fbbc05;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+
+.review-text {
+  color: #666;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin: 0 0 0.5rem 0;
+  font-style: italic;
+}
+
+/* Read more button styling */
+.read-more-btn {
+  background: none;
+  border: none;
+  color: #d4af37;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.25rem 0;
+  margin: 0.5rem 0;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  color: #b8941f;
+}
+
+.review-time {
+  color: #999;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  font-style: normal;
+}
+
+.reviews-warning {
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #856404;
+  font-size: 0.9rem;
+}
+
+.reviews-loading,
+.reviews-error {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.reviews-error {
+  color: #666;
+}
+
+.google-reviews-footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Style the "View all reviews" button to match "Get in Touch" style */
+.view-all-reviews-btn {
+  background: transparent !important;
+  color: white !important;
+  border: 2px solid white !important;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.view-all-reviews-btn:hover {
+  background: white !important;
+  color: #333 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .google-reviews-header h3 {
+    font-size: 1.5rem;
+  }
+  
+  .review-card {
+    padding: 1.5rem;
+  }
+  
+  .view-all-reviews-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+.reviews-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.review-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  width: 100%; /* Full width */
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.review-header {
+  display: flex;
+  justify-content: flex-start; /* Changed from space-between */
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem; /* Increased gap between name and stars */
+}
+
+.review-author {
+  font-weight: 600;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.review-rating {
+  color: #fbbc05;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}

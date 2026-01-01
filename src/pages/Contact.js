@@ -12,13 +12,15 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const formData = {
-      name: e.target.name.value,
-      email: e.target.email.value,
-      message: e.target.message.value,
+    const formData = new FormData(e.target);
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      subject: formData.get('subject'), // Add this line
+      message: formData.get('message')
     };
 
-    const result = await sendEmail(formData);
+    const result = await sendEmail(data);
 
     setAlertMessage(result.message); // Set the alert message
     setShowAlert(true); // Show the custom alert
@@ -78,9 +80,14 @@ const Contact = () => {
                 <label htmlFor="email">Your Email</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required />
               </div>
+              {/* Add Subject Field */}
+              <div className="form-group">
+                <label htmlFor="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter the Subject" />
+              </div>
               <div className="form-group">
                 <label htmlFor="message">Your Message</label>
-                <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+                <textarea id="message" name="message" placeholder="Enter your message" rows="6" required></textarea>
               </div>
               <button type="submit" className="btn btn-small">Send</button>
             </form>

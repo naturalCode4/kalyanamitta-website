@@ -13,7 +13,7 @@ const EnergyWork = () => {
           <div className="energy-work-hero-content">
             <h1>Energy Work</h1>
             <p className="energy-work-subtitle">
-              Channel universal life force energy to promote healing, balance, and transformation
+              Receive treatment of universal life force energy to promote healing, relaxation, balance, and transformation
             </p>
           </div>
         </div>
@@ -34,7 +34,7 @@ const EnergyWork = () => {
                 Energy healing addresses diverse needs by balancing, restoring, and optimizing the body's natural energy field. I offer Reiki-based energy healing tailored to your needs, responding to any specific concerns you bring. Grounded in compassionate presence, I hold space for whatever arises with acceptance and care.
               </p>
               <p>
-                In addition to Reiki, I may incorporate acupressure, other healing modalities, or share insights as appropriate to your session. When helpful, I can offer guidance to help you integrate your experience and move forward with clarity.
+                In addition to Reiki, I may incorporate acupressure, other healing techniques, or share insights as appropriate to your session. When helpful, I can offer guidance to help you integrate your experience and move forward with clarity.
               </p>
               
               <h3>Benefits of Energy Healing</h3>
@@ -50,7 +50,7 @@ const EnergyWork = () => {
                 Reiki is an ancient Japanese healing art in which a practitioner channels a beneficent, spiritually conscious, self-intelligent, omnipresent (Rei) life force energy (Ki) to optimize a recipient's bio-energetic field. Reiki works on multiple dimensions simultaneously, supporting the recipient on the physical, emotional, mental, energetic, and spiritual planes.
               </p>
               <p>
-                When this field becomes stagnant, depleted, or disrupted through negative thinking, trauma, illness, emotional pain, etc., we experience dis-ease. Reiki practitioners use gentle touch to channel Reiki to your body and field, acting as a conduit for Reiki to flow wherever you need support most.
+                When one's energy field becomes stagnant, depleted, or disrupted through negative thinking, stress, illness, disconnection, etc., we experience dis-ease. Reiki practitioners use gentle touch to channel Reiki to your body and field, acting as a conduit for Reiki to flow wherever you need support most.
               </p>
               <p>
                 Sessions address not just symptoms but the underlying energetic patterns that contribute to imbalance. This practice partners with your body's innate wisdom, allowing deep healing to unfold from within. Reiki meets you exactly where you are and guides you toward greater wholeness, alignment, and happiness.
@@ -72,14 +72,14 @@ const EnergyWork = () => {
                 <div className="expect-item">
                   <h4>Energy Healing Session</h4>
                   <p>
-                    You'll lie comfortably on a mat, first face-up, then face-down, receiving Reiki through gentle touch. I may integrate other energy work methods or acupressure. Hands-off treatment is available upon request.
+                    You'll lie comfortably on a mat, first face-up, then face-down, receiving Reiki through gentle touch. I may integrate other energy work methods and acupressure. Hands-off treatment is available upon request.
                   </p>
                 </div>
                 
                 <div className="expect-item">
                   <h4>Closing & Integration</h4>
                   <p>
-                    After the session, we'll take time to ground and integrate. If you'd like, we can discuss anything that arose—insights, experiences, or questions. Optional spiritual counseling is available if desired.
+                    After the session, we'll take time to ground and integrate. If you'd like, we can discuss anything that arose—insights, experiences, or questions. Spiritual counseling is available if desired.
                   </p>
                 </div>
               </div>
@@ -92,7 +92,7 @@ const EnergyWork = () => {
       <Section 
         variant="dark" 
         title="Ready to Begin?"
-        subtitle="Let's support your unfolding. Book a session or a free 30-minute consultation to bring clarity and grounding to your journey."
+        subtitle="When you're ready, I'm here. Book a session, schedule a free consultation, or reach out—I'm happy to answer any questions."
       >
         <CTA />
       </Section>
