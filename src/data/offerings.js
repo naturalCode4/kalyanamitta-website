@@ -12,7 +12,7 @@ export const offerings = [
     content: "Energy Work can address diverse needs by balancing, restoring, and optimizing the body's natural bio-energy field. This promotes vitality, emotional healing, rest, connection, energetic attunement, and more. Generally it's a very pleasant and restful experience."
   },
   {
-    id: 'life-coaching',
+    id: 'spiritual-practice',
     title: 'Spiritual Counseling and Education',
     availability: 'Available in-person or virtual',
     content: "Together we can cultivate the clarity, balance, awareness, compassion, and sovereignty needed to live well.  We will draw on wisdom both inner (direct experience) and outer (spiritual knowledge)."

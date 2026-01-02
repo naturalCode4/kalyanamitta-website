@@ -23,7 +23,7 @@ const Footer = () => {
           </div>
           
           <div className="footer-section">
-            <h4>Contact Info</h4>
+            <h4>Get in Touch</h4>
             <p>Email: healingontap963@gmail.com</p>
             <p>Phone: +1 (301) 641-2855</p>
             <p>Location: West Philadelphia, Pennsylvania. In-Person or Virtual</p>
