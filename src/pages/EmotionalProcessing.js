@@ -58,7 +58,7 @@ const EmotionalProcessing = () => {
                 Evidence and Experience
               </h3>
               <p>
-                EFT's effectiveness is well-backed by over 100 peer-reviewed scientific studies and trials, and it is leading the modern western medical system in treating many diseases. Its power can be verified through your own personal experience—often in one session or even a few minutes.
+                EFT's effectiveness is well-backed by over <a href="https://eftuniverse.com/research-studies/" target="_blank">100 peer-reviewed scientific studies and trials</a>, and it is leading the modern western medical system in treating many diseases. Its power can be verified through your own personal experience—often in one session or even a few minutes.
               </p>
             </div>
 

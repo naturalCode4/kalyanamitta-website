@@ -40,85 +40,152 @@ const GoogleReviews = () => {
   //   return words.slice(0, maxWords).join(' ') + '...';
   // };
 
-  useEffect(() => {
-    const fetchReviews = async () => {
-      try {
-        // Universal API endpoint configuration
-        // Priority: Environment variable > Auto-detection > Fallback
-        let apiUrl;
-        const isDevelopment = process.env.NODE_ENV === 'development';
-        const hostname = window.location.hostname;
+  // useEffect(() => {
+  //   const fetchReviews = async () => {
+  //     try {
+  //       // Universal API endpoint configuration
+  //       // Priority: Environment variable > Auto-detection > Fallback
+  //       let apiUrl;
+  //       const isDevelopment = process.env.NODE_ENV === 'development';
+  //       const hostname = window.location.hostname;
         
-        // For local development without a backend, skip API call and use fallback reviews
-        if (isDevelopment && hostname === 'localhost' && !process.env.REACT_APP_GOOGLE_REVIEWS_API_URL) {
-          // No backend running locally, use fallback reviews immediately
-          setReviews(getFallbackReviews());
-          setLoading(false);
-          return;
-        }
+  //       // For local development without a backend, skip API call and use fallback reviews
+  //       if (isDevelopment && hostname === 'localhost' && !process.env.REACT_APP_GOOGLE_REVIEWS_API_URL) {
+  //         // No backend running locally, use fallback reviews immediately
+  //         setReviews(getFallbackReviews());
+  //         setLoading(false);
+  //         return;
+  //       }
         
-        // 1. Check for explicit API URL in environment variable (works for any platform)
-        if (process.env.REACT_APP_GOOGLE_REVIEWS_API_URL) {
-          apiUrl = process.env.REACT_APP_GOOGLE_REVIEWS_API_URL;
-        } 
-        // 2. Auto-detect common platforms (fallback for convenience)
-        else {
-          // Vercel detection
-          if (hostname.includes('vercel')) {
-            apiUrl = '/api/google-reviews';
-          }
-          // Netlify detection (only if deployed to Netlify)
-          else if (hostname.includes('netlify')) {
-            apiUrl = '/.netlify/functions/google-reviews';
-          }
-          // AWS Lambda/API Gateway pattern
-          else if (hostname.includes('amazonaws') || hostname.includes('lambda')) {
-            // You would set REACT_APP_GOOGLE_REVIEWS_API_URL for AWS
-            apiUrl = '/api/google-reviews'; // Default API path
-          }
-          // Azure detection
-          else if (hostname.includes('azure')) {
-            // You would set REACT_APP_GOOGLE_REVIEWS_API_URL for Azure
-            apiUrl = '/api/google-reviews'; // Default API path
-          }
-          // Generic fallback - assumes API at /api/google-reviews
-          else {
-            apiUrl = '/api/google-reviews';
-          }
-        }
+  //       // 1. Check for explicit API URL in environment variable (works for any platform)
+  //       if (process.env.REACT_APP_GOOGLE_REVIEWS_API_URL) {
+  //         apiUrl = process.env.REACT_APP_GOOGLE_REVIEWS_API_URL;
+  //       } 
+  //       // 2. Auto-detect common platforms (fallback for convenience)
+  //       else {
+  //         // Vercel detection
+  //         if (hostname.includes('vercel')) {
+  //           apiUrl = '/api/google-reviews';
+  //         }
+  //         // Netlify detection (only if deployed to Netlify)
+  //         else if (hostname.includes('netlify')) {
+  //           apiUrl = '/.netlify/functions/google-reviews';
+  //         }
+  //         // AWS Lambda/API Gateway pattern
+  //         else if (hostname.includes('amazonaws') || hostname.includes('lambda')) {
+  //           // You would set REACT_APP_GOOGLE_REVIEWS_API_URL for AWS
+  //           apiUrl = '/api/google-reviews'; // Default API path
+  //         }
+  //         // Azure detection
+  //         else if (hostname.includes('azure')) {
+  //           // You would set REACT_APP_GOOGLE_REVIEWS_API_URL for Azure
+  //           apiUrl = '/api/google-reviews'; // Default API path
+  //         }
+  //         // Generic fallback - assumes API at /api/google-reviews
+  //         else {
+  //           apiUrl = '/api/google-reviews';
+  //         }
+  //       }
 
-        const response = await fetch(apiUrl);
+  //       const response = await fetch(apiUrl);
         
-        if (!response.ok) {
-          throw new Error(`Failed to fetch reviews: ${response.statusText}`);
-        }
+  //       if (!response.ok) {
+  //         throw new Error(`Failed to fetch reviews: ${response.statusText}`);
+  //       }
 
-        const data = await response.json();
+  //       const data = await response.json();
         
-        if (data.error) {
-          throw new Error(data.error);
-        }
+  //       if (data.error) {
+  //         throw new Error(data.error);
+  //       }
 
-        if (data.reviews && data.reviews.length > 0) {
-          setReviews(data.reviews);
-          setOverallRating(data.overall_rating);
-        } else {
-          // Fallback to static reviews if API returns no reviews
-          setReviews(getFallbackReviews());
-        }
+  //       if (data.reviews && data.reviews.length > 0) {
+  //         setReviews(data.reviews);
+  //         setOverallRating(data.overall_rating);
+  //       } else {
+  //         // Fallback to static reviews if API returns no reviews
+  //         setReviews(getFallbackReviews());
+  //       }
         
-        setLoading(false);
-      } catch (err) {
-        console.error('Error fetching Google Reviews:', err);
-        // Fallback to static reviews on error
-        setReviews(getFallbackReviews());
-        setError(err.message);
-        setLoading(false);
-      }
-    };
+  //       setLoading(false);
+  //     } catch (err) {
+  //       console.error('Error fetching Google Reviews:', err);
+  //       // Fallback to static reviews on error
+  //       setReviews(getFallbackReviews());
+  //       setError(err.message);
+  //       setLoading(false);
+  //     }
+  //   };
 
-    fetchReviews();
-  }, []);
+  //   fetchReviews();
+  // }, []);
+
+    useEffect(() => {
+      let isMounted = true; // 1. Add a mounted flag
+
+      const fetchReviews = async () => {
+        try {
+          // ... existing API URL logic ...
+          let apiUrl;
+          const isDevelopment = process.env.NODE_ENV === 'development';
+          const hostname = window.location.hostname;
+          
+          if (isDevelopment && hostname === 'localhost' && !process.env.REACT_APP_GOOGLE_REVIEWS_API_URL) {
+            if (isMounted) { // Check if mounted
+              setReviews(getFallbackReviews());
+              setLoading(false);
+            }
+            return;
+          }
+          
+          // ... existing URL detection logic ...
+          if (process.env.REACT_APP_GOOGLE_REVIEWS_API_URL) {
+            apiUrl = process.env.REACT_APP_GOOGLE_REVIEWS_API_URL;
+          } else {
+            // ... existing else block ...
+            apiUrl = '/api/google-reviews'; // Simplified for brevity
+          }
+
+          const response = await fetch(apiUrl);
+          
+          if (!response.ok) {
+            throw new Error(`Failed to fetch reviews: ${response.statusText}`);
+          }
+
+          const data = await response.json();
+          
+          if (data.error) {
+            throw new Error(data.error);
+          }
+
+          if (isMounted) { // 2. Only update state if component is still mounted
+            if (data.reviews && data.reviews.length > 0) {
+              // 3. Slice the array to ensure we don't accidentally get a massive list if the API returns too many
+              // and strictly REPLACE the state, never append.
+              setReviews(data.reviews.slice(0, 5)); 
+              setOverallRating(data.overall_rating);
+            } else {
+              setReviews(getFallbackReviews());
+            }
+            setLoading(false);
+          }
+        } catch (err) {
+          console.error('Error fetching Google Reviews:', err);
+          if (isMounted) {
+            setReviews(getFallbackReviews());
+            setError(err.message);
+            setLoading(false);
+          }
+        }
+      };
+
+      fetchReviews();
+
+      // 4. Cleanup function
+      return () => {
+        isMounted = false;
+      };
+    }, []);
 
   // Fallback reviews if API fails or returns no reviews
   const getFallbackReviews = () => {

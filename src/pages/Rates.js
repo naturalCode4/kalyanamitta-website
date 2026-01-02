@@ -5,6 +5,7 @@ import Section from '../components/Section';
 import CTA from '../components/CTA';
 
 const Rates = () => {
+
   const pricingTiers = [
     {
       name: 'Standard Sliding Scale',
@@ -68,6 +69,17 @@ const Rates = () => {
   return (
     <div className="rates">
 
+      {/* Hero Section */}
+      <section className="rates-hero">
+        <div className="container">
+          <div className="rates-hero-content">
+            <h1>Rates & Packages</h1>
+            <p className="rates-subtitle">
+              Flexible pricing
+            </p>
+          </div>
+        </div>
+      </section>
       {/* Pricing Timeline */}
       <section className="pricing-timeline-section">
         <div className="container">
@@ -76,7 +88,7 @@ const Rates = () => {
             <div className="flexible-content">
               <h3>Open Reciprocity Sliding Scale</h3>
               <p className="flexible-label">$70-200 for 90 minutes</p>
-              <p className="subtitle">I offer flexible, honor-based pricing so that this work is accessible to everyone. Choose an amount that feels right for you— trusting your own sense of what's fair and sustainable— all amounts are welcome and honored.</p>
+              <p className="subtitle">I offer flexible pricing so that this work is accessible to everyone. Choose an amount that feels aligned—honoring this work and what's sustainable for you. All amounts are welcome and honored.</p>
               <p className="subtitle">For those with financial ease, giving generously honors the exchange of energy between us, allows me to thrive doing what I love, supports this work in the world, and makes it accessible to others.</p>
               {/* <br></br><p className="flexible-description"><em>Rates for 90 minute sessions</em></p> */}
             </div>
@@ -99,7 +111,7 @@ const Rates = () => {
               <div className="timeline-number">3</div>
               <div className="timeline-content">
                 <h3>$200</h3>
-                <p className="timeline-label">Secure Range</p>
+                <p className="timeline-label">Full-Value Range</p>
                 <p className="timeline-description">Reciprocates the significance of this work and supports accessibility</p>
               </div>
             </div>

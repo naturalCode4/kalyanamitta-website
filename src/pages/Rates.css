@@ -177,7 +177,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="sacred-geometry-services" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="15" cy="15" r="2" fill="%23d4af37" opacity="0.15"/><polygon points="15,8 22,22 8,22" fill="none" stroke="%23d4af37" stroke-width="0.8" opacity="0.15"/><circle cx="15" cy="15" r="8" fill="none" stroke="%23125f4a" stroke-width="0.3" opacity="0.1"/><circle cx="15" cy="15" r="12" fill="none" stroke="%23145a82" stroke-width="0.2" opacity="0.08"/></pattern></defs><rect width="100" height="100" fill="url(%23sacred-geometry-services)"/></svg>');
   opacity: 0.4;
   pointer-events: none;
 }
@@ -318,7 +317,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="sacred-geometry-cta" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="15" cy="15" r="2" fill="%23d4af37" opacity="0.15"/><polygon points="15,8 22,22 8,22" fill="none" stroke="%23d4af37" stroke-width="0.8" opacity="0.15"/><circle cx="15" cy="15" r="8" fill="none" stroke="%23125f4a" stroke-width="0.3" opacity="0.1"/><circle cx="15" cy="15" r="12" fill="none" stroke="%23145a82" stroke-width="0.2" opacity="0.08"/></pattern></defs><rect width="100" height="100" fill="url(%23sacred-geometry-cta)"/></svg>');
   opacity: 0.4;
   pointer-events: none;
 }
@@ -350,7 +348,27 @@
 /* Packages Section */
 .packages-section {
   padding: 6rem 0;
-  background: linear-gradient(135deg, #1e1e1e 0%, #4a1a5c 10%, #3a2177 20%, #1e4d3e 30%, #125f4a 40%, #0f4c75 50%, #145a82 60%, #b45309 70%, #d4af37 80%, #8b0000 90%, #1e1e1e 100%);
+  background: linear-gradient(
+    45deg,
+    #1e1e1e 5%,
+    #4a1a5c 10%,
+    #351f6e 18%,
+    #1e4d3e 24%,
+    #156953 30%,
+    #0c8891 33%, 
+    #004d84 44%, 
+    #004d84 45%, 
+    #0564ac 50%, 
+    rgb(1, 124, 225) 56%, 
+    #bd9205 64%,
+    #e4b108 68%,
+    #ea790f 76%,
+    #f3571f 80%,
+    #ca1111 84%,
+    #761616 90%,
+    #1e1e1e 97%
+  );
+  /* background: linear-gradient(135deg, #1e1e1e 0%, #4a1a5c 10%, #3a2177 20%, #1e4d3e 30%, #125f4a 40%, #0f4c75 50%, #145a82 60%, #b45309 70%, #d4af37 80%, #8b0000 90%, #1e1e1e 100%); */
   border-top: 2px solid #d4af37;
   border-bottom: 2px solid #d4af37;
   position: relative;
@@ -363,8 +381,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="sacred-geometry-packages" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="15" cy="15" r="2" fill="%23d4af37" opacity="0.15"/><polygon points="15,8 22,22 8,22" fill="none" stroke="%23d4af37" stroke-width="0.8" opacity="0.15"/><circle cx="15" cy="15" r="8" fill="none" stroke="%23125f4a" stroke-width="0.3" opacity="0.1"/><circle cx="15" cy="15" r="12" fill="none" stroke="%23145a82" stroke-width="0.2" opacity="0.08"/></pattern></defs><rect width="100" height="100" fill="url(%23sacred-geometry-packages)"/></svg>');
-  opacity: 0.4;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="flower-of-life-centered" width="130" height="130" patternUnits="userSpaceOnUse" patternTransform="scale(0.35)"><g transform="translate(35,35)"><circle cx="30" cy="30" r="10" fill="none" stroke="%23d4af37" stroke-width="0.5" opacity="0.3"/><circle cx="30" cy="20" r="10" fill="none" stroke="%23d4af37" stroke-width="0.5" opacity="0.3"/><circle cx="30" cy="40" r="10" fill="none" stroke="%23d4af37" stroke-width="0.5" opacity="0.3"/><circle cx="30" cy="10" r="10" fill="none" stroke="%23d4af37" stroke-width="0.5" opacity="0.2"/><circle cx="30" cy="50" r="10" fill="none" stroke="%23d4af37" stroke-width="0.5" opacity="0.2"/><circle cx="21.34" cy="25" r="10" fill="none" stroke="%23d4af37" stroke-width="0.5" opacity="0.3"/><circle cx="21.34" cy="35" r="10" fill="none" stroke="%23d4af37" stroke-width="0.5" opacity="0.3"/><circle cx="38.66" cy="25" r="10" fill="none" stroke="%23d4af37" stroke-width="0.5" opacity="0.3"/><circle cx="38.66" cy="35" r="10" fill="none" stroke="%23d4af37" stroke-width="0.5" opacity="0.3"/><circle cx="21.34" cy="15" r="10" fill="none" stroke="%23d4af37" stroke-width="0.5" opacity="0.2"/><circle cx="21.34" cy="45" r="10" fill="none" stroke="%23d4af37" stroke-width="0.5" opacity="0.2"/><circle cx="38.66" cy="15" r="10" fill="none" stroke="%23d4af37" stroke-width="0.5" opacity="0.2"/><circle cx="38.66" cy="45" r="10" fill="none" stroke="%23d4af37" stroke-width="0.5" opacity="0.2"/><circle cx="12.68" cy="20" r="10" fill="none" stroke="%23d4af37" stroke-width="0.5" opacity="0.2"/><circle cx="12.68" cy="30" r="10" fill="none" stroke="%23d4af37" stroke-width="0.5" opacity="0.2"/><circle cx="12.68" cy="40" r="10" fill="none" stroke="%23d4af37" stroke-width="0.5" opacity="0.2"/><circle cx="47.32" cy="20" r="10" fill="none" stroke="%23d4af37" stroke-width="0.5" opacity="0.2"/><circle cx="47.32" cy="30" r="10" fill="none" stroke="%23d4af37" stroke-width="0.5" opacity="0.2"/><circle cx="47.32" cy="40" r="10" fill="none" stroke="%23d4af37" stroke-width="0.5" opacity="0.2"/></g></pattern></defs><rect width="100" height="100" fill="url(%23flower-of-life-centered)"/></svg>') !important;
+  opacity: .8;
   pointer-events: none;
 }
 
@@ -533,7 +551,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: conic-gradient(from 0deg, transparent, rgba(212, 175, 55, 0.08), rgba(18, 95, 74, 0.06), rgba(20, 90, 130, 0.04), rgba(154, 52, 18, 0.03), rgba(180, 83, 9, 0.04), transparent);
+  /* background: conic-gradient(from 0deg, transparent, rgba(212, 175, 55, 0.08), rgba(18, 95, 74, 0.06), rgba(20, 90, 130, 0.04), rgba(154, 52, 18, 0.03), rgba(180, 83, 9, 0.04), transparent); */
   animation: rotate 20s linear infinite;
   z-index: 1;
 }
@@ -593,7 +611,7 @@
 
 .middle-text-content {
   background: linear-gradient(
-    160deg,
+    155deg,
     #1e1e1e 5%,
     #4a1a5c 10%,
     #351f6e 18%,
@@ -612,7 +630,7 @@
     #761616 90%,
     #1e1e1e 97%
   ),
-  rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay */
+  rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
   background-blend-mode: darken; /* Blend the overlay with the gradient */
   color: white; /* Ensures text is readable */
   text-align: center; /* Optional: Centers text */
@@ -729,8 +747,6 @@
   left: -50%;
   width: 200%;
   height: 200%;
-  background: conic-gradient(from 0deg, transparent, rgba(212, 175, 55, 0.1), rgba(18, 95, 74, 0.08), rgba(20, 90, 130, 0.06), rgba(154, 52, 18, 0.04), rgba(180, 83, 9, 0.06), transparent);
-  /* animation: rotate 15s linear infinite; */
   pointer-events: none;
   z-index: 1;
 }
@@ -772,49 +788,42 @@
 }
 
 .flexible-content {
-  background: linear-gradient(135deg, #1e1e1e 0%, #4a1a5c 10%, #3a2177 20%, #1e4d3e 30%, #125f4a 40%, #0f4c75 50%, #145a82 60%, #b45309 70%, #d4af37 80%, #8b0000 90%, #1e1e1e 100%);
+  background: linear-gradient(
+    90deg,
+    #1e1e1e 5%,
+    #4a1a5c 10%,
+    #351f6e 18%,
+    #1e4d3e 24%,
+    #156953 30%,
+    #0c8891 33%, 
+    #004d84 44%, 
+    #004d84 45%, 
+    #0564ac 50%, 
+    rgb(1, 124, 225) 56%, 
+    #bd9205 64%,
+    #e4b108 68%,
+    #ea790f 76%,
+    #f3571f 80%,
+    #ca1111 84%,
+    #761616 90%,
+    #1e1e1e 97%
+  ),
+  rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+  background-blend-mode: darken; /* Blend the overlay with the gradient */
   border: 2px solid #d4af37;
   border-radius: 15px;
   padding: 2rem;
   box-shadow: 0 15px 35px rgba(212, 175, 55, 0.2);
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  width: 100%;
-}
-
-.flexible-content {
-  background: linear-gradient(
-    135deg,
-    #1e1e1e 5%,
-    #4a1a5c 10%,
-    #351f6e 18%,
-    #1e4d3e 24%,
-    #156953 30%,
-    #0c8891 33%, 
-    #004d84 44%, 
-    #004d84 45%, 
-    #0564ac 50%, 
-    rgb(1, 124, 225) 56%, 
-    #bd9205 64%,
-    #e4b108 68%,
-    #ea790f 76%,
-    #f3571f 80%,
-    #ca1111 84%,
-    #761616 90%,
-    #1e1e1e 97%
-  ),
-  rgba(0, 0, 0, 0.9); /* Semi-transparent black overlay */
-  background-blend-mode: darken; /* Blend the overlay with the gradient */
   color: white; /* Ensures text is readable */
   text-align: center; /* Optional: Centers text */
   overflow: hidden;
   position: relative;
+  width: 100%;
 }
 
 .timeline-content {
   background: linear-gradient(
-    160deg,
+    155deg,
     #1e1e1e 5%,
     #4a1a5c 10%,
     #351f6e 18%,
@@ -833,7 +842,7 @@
     #761616 90%,
     #1e1e1e 97%
   ),
-  rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay */
+  rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
   background-blend-mode: darken; /* Blend the overlay with the gradient */
   color: white; /* Ensures text is readable */
   text-align: center; /* Optional: Centers text */
@@ -848,14 +857,13 @@
   left: -50%;
   width: 200%;
   height: 200%;
-  background: conic-gradient(from 0deg, transparent, rgba(232, 165, 165, 0.1), rgba(18, 95, 74, 0.08), rgba(20, 90, 130, 0.06), rgba(154, 52, 18, 0.04), rgba(180, 83, 9, 0.06), transparent);
   animation: rotate 15s linear infinite;
   pointer-events: none;
   z-index: 1;
 }
 
 .flexible-content h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
   color: #d4af37;
@@ -864,7 +872,7 @@
 }
 
 .flexible-label {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: 600;
   color: #e8a5a5;
   margin-bottom: 1rem;
@@ -1029,4 +1037,14 @@
   align-items: center; /* Center content horizontally */
   text-align: center;
   box-sizing: border-box; /* Ensure padding doesn’t affect height */
+}
+
+.rates-hero {
+  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+  color: white;
+  padding: 8rem 0 6rem; /* Changed from 4rem to 6rem to match Home */
+  text-align: center;
+  border-bottom: 2px solid #d4af37; /* Changed from #2d3748 to gold */
+  position: relative; /* Added for consistency */
+  overflow: hidden; /* Added for consistency */
 }

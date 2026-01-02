@@ -29,7 +29,7 @@ const createTransporter = () => {
 
 // Email endpoint
 app.post('/send-email', async (req, res) => {
-  const { name, email, message } = req.body;
+  const { name, email, subject, message } = req.body;
 
   try {
     const transporter = createTransporter(); // Remove 'await' here
@@ -38,15 +38,14 @@ app.post('/send-email', async (req, res) => {
       from: process.env.EMAIL_USER, // Use your email as sender
       to: process.env.EMAIL_USER,   // Send to your email
       replyTo: email,               // Allow replying to the original sender
-      subject: `Web Message from ${name}`,
+      subject: `${name} sent a web message`,
       html: `
-        <h3>New message from your website</h3>
         <p><strong>From:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Message:</strong></p>
+        <p><strong>Subject:</strong> ${subject || 'No subject'}</p>
         <p>${message.replace(/\n/g, '<br>')}</p>
       `,
-      text: `${message}\n\nFrom: ${name}\nEmail: ${email}`
+      text: `${message}\n\nFrom: ${name}\nEmail: ${email}\nSubject: ${subject}`
     };
 
     const result = await transporter.sendMail(mailOptions);
