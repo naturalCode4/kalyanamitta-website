@@ -1,6 +1,9 @@
 - *Make responsive*
-- Address console errors
 - Add pictures
+- Address console errors
+- Clean up whole thing. Unused CSS and unused commented out code
+- Deploy
+- Test
 
 Later
 - Add Website by Adin link to portfolio

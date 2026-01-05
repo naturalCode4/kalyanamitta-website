@@ -6,42 +6,12 @@ import CTA from '../components/CTA';
 
 const Rates = () => {
 
-  const pricingTiers = [
-    {
-      name: 'Standard Sliding Scale',
-      description: 'Flexible pricing based on your financial situation',
-      sessions: 'Per hour',
-      price: '$100-200',
-      features: [
-        'All services available',
-        'Personalized healing session',
-        'Initial consultation included',
-        'Integration guidance',
-        'Email support for 48 hours'
-      ],
-      popular: true
-    },
-    {
-      name: 'Dharma & Service Pricing',
-      description: 'Special rates for those deeply committed to spiritual practice and service',
-      sessions: 'Per hour',
-      price: '$50-125',
-      features: [
-        'All services available',
-        'For Dharma practitioners',
-        'For those helping others',
-        'Same quality of care',
-        'Honor-based pricing'
-      ],
-      popular: false
-    }
-  ];
-
   const packages = [
     {
       name: '4-Session Combo',
-      description: "Invest in your healing and growth. Four potent sessions to transform your life and resolve several issues.",
-      price: '$400. Sliding Scale $224-640',
+      description: "Invest in your healing and goals. Four potent sessions to transform your life and resolve several issues.",
+      mainPrice: '$400',
+      slidingScale: '. Sliding Scale $224-640',
       originalPrice: '$500. Sliding Scale $280-800',
       discount: '20% OFF',
       features: [
@@ -54,7 +24,8 @@ const Rates = () => {
     {
       name: '7-Session Combo',
       description: "Change your life, heal major issues, and develop your spiritual toolkit. Commit yourself to being supported with seven powerful sessions.",
-      price: '$656. Sliding Scale $368-1050',
+      mainPrice: '$656',
+      slidingScale: '. Sliding Scale $368-1050',
       originalPrice: '$875. Sliding Scale $490-1400',
       discount: '25% OFF',
       features: [
@@ -144,9 +115,15 @@ const Rates = () => {
                   <h3>{pkg.name}</h3>
                   <p className="package-description">{pkg.description}</p>
                   <div className="package-price">
-                    <span className="price">{pkg.price}</span>
-                    <span className="original-price">{pkg.originalPrice}</span>
-                    <span className="discount">{pkg.discount}</span>
+                    {/* Render split prices */}
+                    <div className="current-price-container">
+                      <span className="price-gold">{pkg.mainPrice}</span>
+                      <span className="price-pink">{pkg.slidingScale}</span>
+                    </div>
+                    <div className="old-price-container">
+                      <span className="original-price">{pkg.originalPrice}</span>
+                      <span className="discount">{pkg.discount}</span>
+                    </div>
                   </div>
                   <p className="package-duration">{pkg.duration}</p>
                 </div>

@@ -236,7 +236,7 @@
 
 .single-price,
 .package-price {
-  text-align: center;
+  /* text-align: center; */
   flex: 1;
 }
 
@@ -457,34 +457,36 @@
 .package-price {
   display: flex;
   align-items: baseline;
-  gap: 0.5rem;
+  gap: .5rem;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column; /* Stack current price on top of old price */
+  align-items: flex-start;
 }
 
 .package-price .price {
   font-size: 1.8rem;
   font-weight: 700;
   color: #e8a5a5;
+  /* white-space: nowrap; */
 }
 
 .package-price .duration {
   color: #b8b8b8;
   font-size: 0.9rem;
+  margin: 0;
+  font-style: italic;
 }
 
 .package-price .original-price {
   color: #d1d1d1;
-  font-size: 1.2rem;
-  margin-left: 0.5rem;
-  text-decoration: line-through;
-}
-
-.package-price .original-price {
-  color: #d1d1d1;
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
+  white-space: nowrap;
+  font-size: 1rem;
+  margin-bottom: .8rem;
   line-height: 1.6;
   text-decoration: line-through;
+  margin: 0;
 }
 
 .package-price .discount {
@@ -494,14 +496,29 @@
   background: rgba(212, 175, 55, 0.2);
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
-  margin-left: 0.5rem;
+  margin-left: 0;
+  white-space: nowrap;
 }
 
-.package-duration {
-  color: #b8b8b8;
-  font-size: 0.9rem;
-  margin: 0;
-  font-style: italic;
+.current-price-container {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.price-gold {
+  color: #d4af37; /* Gold */
+}
+
+.price-pink {
+  color: #e8a5a5; /* Pink */
+}
+
+.old-price-container {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
 }
 
 .package-features {
@@ -779,10 +796,10 @@
 }
 
 .flexible-pricing {
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 3rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
   display: flex;
   justify-content: center;
 }
@@ -999,6 +1016,46 @@
   .timeline-content h3 {
     font-size: 1.5rem;
   }
+
+  .flexible-pricing {
+    padding-left: 1rem; /* Reduce side padding */
+    padding-right: 1rem;
+    width: 100%;
+  }
+
+  .flexible-content {
+    width: 100%;
+    padding: 1.5rem 1rem; /* Reduce internal padding */
+    box-sizing: border-box; /* Ensure padding doesn't overflow width */
+  }
+
+  /* Adjust Combo Price layout for mobile specifically if needed */
+  .package-price {
+    flex-direction: column; /* Stack prices on mobile if they are long */
+    gap: 0.5rem;
+  }
+
+  .flexible-content h3 {
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+  }
+
+  .flexible-label {
+    font-size: 1.1rem !important; /* Reduced from 1.4rem */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Ensure padding is comfortable */
+  .flexible-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .flexible-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1048,3 +1105,4 @@
   position: relative; /* Added for consistency */
   overflow: hidden; /* Added for consistency */
 }
+
