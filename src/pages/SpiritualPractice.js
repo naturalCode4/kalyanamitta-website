@@ -94,27 +94,27 @@ const SpiritualPractice = () => {
             </div>
             <div className="about-spiritual-practice-text">
               <p>
-                Together we can cultivate well-being, wisdom, love, freedom, and what matters most to you. This is a space for being met, exploring, healing, finding direction, and growth- especially in <a href="/#what-we-can-do-together">these areas</a>.
+                Together we can cultivate well-being, wisdom, love, freedom, and what matters most to you. This is a space for being met, exploring, healing, finding direction, and growing—especially in <a href="/home#what-we-can-do-together" target="_blank">these areas</a>.
               </p>
               <p>
-                We can be with whatever is alive in you. We can navigate your deepest yearnings and any obstacles to your fulfillment. 
+                We can be with whatever is alive in you. We can navigate your deepest yearnings and any obstacles to your fulfillment. Sometimes what we need most is just to be truly heard—to share presence with someone who compassionately validates your experience without judgment or fixing. I am here to hold that space for you.
               </p>
               <p>
-                Truly, sometimes all we really need is just someone to hear us, share presence, and validate our experience (without judgment or fixing). I am happy to be that person. I wish to be supportive to you and I'm open to what that looks like.
+                And when direct guidance and teachings serves you, I may offer them. This is a space of cultivating spiritual virtue and wisdom, with honest workshopping and growth. I'll help you look more deeply, contemplate what's important, and build confidence in yourself.
               </p>
               <p>
-                Whether you're sprouting curiosity, deep in transformation, or have established practice(s), I offer grounded guidance and presence. Sessions are collaborative and responsive to what emerges.
+                Whether you're newly curious, deep in transformation, or have established practice, I offer grounded presence and guidance. Sessions are collaborative and responsive to what emerges.
               </p>
               <h3>
                 Practices
               </h3>
               <p>
-                I teach yoga, breathwork, and voice-based sound healing. I also offer support in meditation. These are all powerful multi-tools we can bring in in response to what is emerging. Alternatively they can be the focus of our time together.
+                I teach yoga, breathwork, and voice-based sound healing. I also offer support in meditation. These are all powerful multi-tools we can bring into counseling, or they can be the focus of our time together.
               </p>
               <p>
                 Spiritual Counseling sessions can also be synthesized with EFT or Energy Healing. EFT is often extremely useful (and recommended!) to release and heal specific issues.
               </p>
-              <br></br><br></br><br></br>
+              <br></br><br></br>
               <p>
                 <em>I am offering spiritual guidance, not clinical mental health services.</em>
               </p>

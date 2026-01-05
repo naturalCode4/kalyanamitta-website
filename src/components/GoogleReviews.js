@@ -203,7 +203,7 @@ const GoogleReviews = () => {
         time: Date.now()
       },
       {
-        author_name: "Bella S, EFT Practition",
+        author_name: "Bella S, EFT Practitioner",
         rating: 5,
         text: "Adin made scheduling sessions remarkably easy. During our sessions, I felt deeply heard, and his focused presence allowed me to relax and explore my inner landscape. I felt safe and held with compassion, as he skillfully guided me through my sometimes rambling thoughts, helping me identify and eventually reframe critical focal points. His patience and ability to create a space where I could process emotions at my own pace, rather than rushing past discomfort, were invaluable. The work we did together has helped me shift and dissolve old social triggers and conditioning, empowering me in areas of my life where I need to take leadership so I show up with more confidence and efficacy.",
         time: Date.now()
@@ -311,12 +311,12 @@ const GoogleReviews = () => {
       </div>
       <div className="google-reviews-footer">
         <a
-          href="https://www.google.com/search?sca_esv=281aa192389698e8&sxsrf=AE3TifNk9zQq2bqCj-jaAJZ12-Od__pmBQ:1765170604059&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-EwyJXTuXVS5aEX0JW1xEL5DvYFwgR7sVZ45kd6I9Bl_SZLxjblPSQzPdEpvH4WxiKlaTGcjhJB0kmY_gPUsN3WHWFsDQ&q=Healing+On+Tap+Reviews&sa=X&ved=2ahUKEwiqtcr2nK2RAxWYKlkFHV9iD70Q0bkNegQIHRAE&biw=1680&bih=962&dpr=2"
+          href="https://www.google.com/search?sca_esv=51ce83e25ec719d4&sxsrf=AE3TifNlFbq4AK3zJQnfZYpPXSerqo2omw:1767397300592&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-EwyJXTuXVS5aEX0JW1xEL5DvYFwgR7sVZ45kd6I9Bl_SZLxjblPSQzPdEpvH4WxiKlaTGcjhJB0kmY_gPUsN3WHWFsDQ&q=Healing+On+Tap+Reviews&sa=X&ved=2ahUKEwjHn52ChO6RAxWFGlkFHfaOCUQQ0bkNegQIHxAE&biw=1680&bih=962&dpr=2"
           target="_blank"
           rel="noopener noreferrer"
           className="view-all-reviews-btn btn btn-outline"
         >
-          View all reviews on Google →
+          View more reviews on Google →
         </a>
       </div>
     </div>

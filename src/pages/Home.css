@@ -27,7 +27,8 @@
 }
 
 .hero h1 {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
+  margin-bottom: 3rem;
   color: white;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -909,4 +910,81 @@
 /* Change only text color for outline buttons on rainbow background */
 .section-rainbow .btn-outline {
   color: white !important; /* Same white as the border */
+}
+
+/* ... existing hero styles ... */
+
+/* New Manifesto Design */
+.hero-manifesto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 2rem auto 0;
+  position: relative;
+}
+
+.manifesto-item {
+  background: rgba(0, 0, 0, 0.4); /* Glass effect */
+  backdrop-filter: blur(5px);
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(212, 175, 55, 0.3); /* Subtle gold border */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  width: 100%;
+  max-width: 650px;
+}
+
+.manifesto-item:hover {
+  transform: translateY(-2px);
+  border-color: rgba(212, 175, 55, 0.6);
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.manifesto-text {
+  font-family: 'Playfair Display', serif; /* Elegant serif font */
+  font-size: 1.3rem;
+  color: #e8e8e8;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  font-style: italic;
+}
+
+/* The Golden Thread Connector */
+.manifesto-connector {
+  height: 40px;
+  width: 2px;
+  background: linear-gradient(to bottom, rgba(212, 175, 55, 0.3), rgba(212, 175, 55, 1), rgba(212, 175, 55, 0.3));
+  margin: 0.5rem 0;
+  position: relative;
+}
+
+/* Optional: Add a glowing dot to the connector */
+.manifesto-connector::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  background: #d4af37;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #d4af37;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .manifesto-item {
+    padding: 1rem;
+  }
+  
+  .manifesto-text {
+    font-size: 1.1rem;
+  }
+  
+  .manifesto-connector {
+    height: 25px;
+  }
 }

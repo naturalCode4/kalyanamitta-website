@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
@@ -14,11 +15,17 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Quick Links</h4>
             <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/offerings">Offerings</a></li>
-              <li><a href="/rates">Rates</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/about">About</Link></li>
+              {/* Updated Offerings Links */}
+              <li><Link to="/emotional-processing">EFT</Link></li>
+              <li><Link to="/energy-work">Energy Work</Link></li>
+              <li><Link to="/spiritual-practice">Spiritual Counseling</Link></li>
+              {/* Added Testimonials Link */}
+              <li><Link to="/about#testimonials">Testimonials</Link></li>
+              <li><Link to="/rates">Rates</Link></li>
+              <li><Link to="/contact">Book</Link></li>
+              <li><Link to="/contact#get-in-touch">Contact</Link></li>
             </ul>
           </div>
           
@@ -31,7 +38,12 @@ const Footer = () => {
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; 2024 Healing On Tap. All rights reserved.</p>
+          <div className="copyright">
+            &copy; {new Date().getFullYear()} Healing On Tap. All rights reserved.
+          </div>
+          <div className="developer-credit">
+            Website by <a href="#" className="dev-link">Adin</a>
+          </div>
         </div>
       </div>
     </footer>

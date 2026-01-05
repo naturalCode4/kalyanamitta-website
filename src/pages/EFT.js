@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './EmotionalProcessing.css';
+import './EFT.css';
 import Section from '../components/Section';
 import CTA from '../components/CTA';
 
-const EmotionalProcessing = () => {
+const EFT = () => {
 
   return (
     <div className="emotional-processing">
@@ -109,4 +109,4 @@ const EmotionalProcessing = () => {
   );
 };
 
-export default EmotionalProcessing;
+export default EFT;

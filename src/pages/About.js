@@ -7,22 +7,22 @@ import CTA from '../components/CTA';
 
 const About = () => {
 
-  const { hash } = useLocation();
-
+  
   // Fix: Manually scroll to the section if a hash exists in the URL
-  useEffect(() => {
-    if (hash) {
-      // Small timeout ensures DOM is ready before scrolling
-      setTimeout(() => {
-        const element = document.getElementById(hash.replace('#', ''));
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 100);
-    } else {
-      window.scrollTo(0, 0);
-    }
-  }, [hash]);
+  // const { hash } = useLocation();
+  // useEffect(() => {
+  //   if (hash) {
+  //     // Small timeout ensures DOM is ready before scrolling
+  //     setTimeout(() => {
+  //       const element = document.getElementById(hash.replace('#', ''));
+  //       if (element) {
+  //         element.scrollIntoView({ behavior: 'smooth' });
+  //       }
+  //     }, 100);
+  //   } else {
+  //     window.scrollTo(0, 0);
+  //   }
+  // }, [hash]);
 
   return (
     <div className="about">
@@ -49,9 +49,15 @@ const About = () => {
               </div>
             </div>
             <div className="about-adin-text">
-              <p>Adin is a healer and spiritual guide who helps people transform, heal, and align with their inherent wisdom and basic goodness. His mission is to support you however he can by offering powerful modalities, loving presence, and wisdom. His approach is integrative and personal, grounded in intuition, science, and various spiritual traditions.
+              <p>
+                Adin is a healer and spiritual guide who helps people transform, heal, and align with their inherent wisdom and basic goodness. His mission is to support you however he can by offering powerful modalities, loving presence, and wisdom. His approach is integrative and personal, grounded in intuition, science, and various spiritual traditions. 
               </p>
-              <p>He currently lives in West Philadelphia, PA. He is a certified practitioner of Emotional Freedom Techniques (EFT), Reiki II, Yoga (500 YTT), and Breathwork. He has practiced extensively in Zen, Tibetan, and Theravadan Buddhist lineages. He has also explored mysticism across Judaic, Christian, Sufi, and Taoist traditions, as well as yoga, qi gong, medicine work, shamanism, healing arts, psychic development, bhakti, and ecstatic dance—seeking what genuinely gives life, unclouds the pure heart, and supports positive transformation.</p>
+              <p>
+                His offerings are EFT (Emotional Freedom Techniques, or Tapping), Reiki Energy Healing, and Spiritual Counseling and Practices (Meditation, Yoga, Breathwork, Sound Healing).
+              </p>
+              <p>
+                He currently lives in West Philadelphia, PA. He is a certified practitioner of Emotional Freedom Techniques (EFT), Reiki II, Yoga (500 YTT), and Breathwork. He has practiced in Zen, Tibetan, and Theravadan Buddhist lineages. He has also explored mysticism across Judaic, Christian, Sufi, and Taoist traditions, as well as yoga, qi gong, medicine work, shamanism, healing arts, psychic development, bhakti, and ecstatic dance—seeking what genuinely gives life, unclouds the pure heart, and supports positive transformation.
+              </p>
               <h3>Story</h3>
               <p>
                 When I was 15, I rapidly shifted from being quite depressed to undergoing a radical expansion in consciousness and access to peace and joy. It was as if my sense of self was deeply quieted, replaced by eternal and ecstatic peace. When this opened up, it felt like a natural continuation of who I'd always been. I remember in elementary school often preferring to lay in the grass watching the clouds rather than hang out with my friends, and spending hours wandering through my neighborhood in deep play—a state that's so vital for children to experience. I navigated this blissful state and discovered I could dissolve negative emotions in 60-90 seconds simply by letting them be. Around that time, I encountered a neat little book called <a href="https://www.bdk.or.jp/pdf/buddhist-scriptures/02_english/TheTeachingofBuddha.pdf" target="_blank">The Teachings of Buddha</a>, and it immediately read like poetry pointing to the truths of consciousness, our kind and pure nature, and our potential.
@@ -101,6 +107,15 @@ const About = () => {
               </p>
               <p>
                 To any man who has felt the pull toward transformation, emotional healing, and wellness— but been challenged by questions of cultural acceptability, wondered where there is a space for you, or whether you are even capable of it: Let's walk this path together.
+              </p>
+              <h3>
+                Side Offerings
+              </h3>
+              <p>
+                <b>Web Development</b>: I designed and developed this website solo from scratch (including these rainbows!). Building and designing high quality custom websites is my side hustle. I have some availability, so <a href="/contact#get-in-touch" target="_blank">get in touch</a> if you would like me to build your site/app. I am especially excited to develop for Dharma centers, healing practitioners, and environmentally/socially positive organizations— and I may give you a friend rate for the good fortune of building something I feel a heart-connection to. I'm currently developing this <a href="https://dharma-gates.vercel.app/" target="_blank">Dharma Center Directory</a>!
+              </p>
+              <p>
+                <b>Music</b>: I play the keys. <a href="https://stoneboysolar.bandcamp.com/album/nomadic-improv" target="_blank">Here's the album</a> I released in 2025. It is my hope these nomadic improvisation brings you peace and close to your soul.
               </p>
               <h3>
                 A Note on Teachers and Practice

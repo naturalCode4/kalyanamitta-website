@@ -195,3 +195,20 @@
   flex-direction: column; /* Stack items vertically */
   gap: 2rem; /* Add space between items */
 }
+
+.calendly-embed-container,
+.contact-email {
+  width: 100%; /* Changed from 1200px to 100% */
+  max-width: 1200px; /* Added max-width to keep desktop look */
+  margin: 0 auto;
+  padding: 0 1rem; /* Add side padding for mobile */
+  box-sizing: border-box; /* Ensure padding doesn't increase width */
+}
+
+/* Add this to ensure the form doesn't overflow */
+.email-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}

@@ -33,14 +33,47 @@ const Home = () => {
 
   return (
     <div className="home">
-      {/* Hero Section */}
+      {/* Hero Section
       <section className="hero">
         <div className="container">
           <div className="hero-content">
             <h1>Healing On Tap</h1>
             <p className="hero-subtitle">
-              [3 bullet points. Get the people goin. See Paco]
+            Healing is your nature, Awaken boundless wisdom, Restore true connection.
             </p>
+            <p className="hero-subtitle">
+            Dissolve what limits you, Transmute difficult emotions, Liberate your heart, body, and mind.
+            </p>
+            <p className="hero-subtitle">
+            Embody sovereignty, Unmute your soul, Remember your power.
+            </p>
+          </div>
+        </div>
+      </section> */}
+      {/* Hero Section */}
+      <section className="hero">
+        <div className="container">
+          <div className="hero-content">
+            <h1>Healing On Tap</h1>
+            
+            <div className="hero-manifesto">
+              <div className="manifesto-item">
+                <span className="manifesto-text">Healing is your nature. Awaken boundless wisdom. Restore true connection.</span>
+              </div>
+              
+              <div className="manifesto-connector"></div>
+              
+              <div className="manifesto-item">
+                <span className="manifesto-text">Dissolve what limits you. Transmute difficult emotions. Liberate your heart, body, and mind.</span>
+              </div>
+              
+              <div className="manifesto-connector"></div>
+              
+              <div className="manifesto-item">
+                <span className="manifesto-text">Embody sovereignty. Unmute your soul. Remember your power.</span>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

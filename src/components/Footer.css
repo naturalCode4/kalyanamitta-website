@@ -60,6 +60,22 @@
   margin: 0;
 }
 
+.developer-credit {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.dev-link {
+  color: #d4af37;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.dev-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   .footer {
     padding: 2rem 0 1rem;

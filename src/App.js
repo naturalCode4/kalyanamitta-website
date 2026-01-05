@@ -6,10 +6,9 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
-import Offerings from './pages/Offerings';
 import EnergyWork from './pages/EnergyWork';
 import SpiritualPractice from './pages/SpiritualPractice';
-import EmotionalProcessing from './pages/EmotionalProcessing';
+import EFT from './pages/EFT';
 import Rates from './pages/Rates';
 import Contact from './pages/Contact';
 
@@ -23,12 +22,12 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/offerings" element={<Offerings />} />
             <Route path="/energy-work" element={<EnergyWork />} />
             <Route path="/spiritual-practice" element={<SpiritualPractice />} />
-            <Route path="/emotional-processing" element={<EmotionalProcessing />} />
+            <Route path="/emotional-processing" element={<EFT />} />
             <Route path="/rates" element={<Rates />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<Home />} />
           </Routes>
         </main>
         <Footer />

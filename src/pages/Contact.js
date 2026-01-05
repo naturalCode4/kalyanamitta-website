@@ -70,7 +70,7 @@ const Contact = () => {
 
           {/* Contact Me by Email Form */}
           <div id="get-in-touch" className="calendly-embed-container">
-            <h2>Contact Me by Email</h2>
+            <h2>Contact Me</h2>
             <form className="email-form" onSubmit={handleSubmit}>
               <div className="form-group">
                 <label htmlFor="name">Your Name</label>

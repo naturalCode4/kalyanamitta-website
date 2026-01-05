@@ -12,10 +12,6 @@ app.use(cors({
   credentials: true,
 }));
 
-// Debug: Check if environment variables are loaded
-console.log('EMAIL_USER:', process.env.EMAIL_USER);
-console.log('EMAIL_APP_PASSWORD:', process.env.EMAIL_APP_PASSWORD ? 'Present' : 'Missing');
-
 // Simple SMTP transporter (for Gmail) - NO OAUTH2
 const createTransporter = () => {
   return nodemailer.createTransport({

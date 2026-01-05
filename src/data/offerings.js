@@ -37,7 +37,7 @@ export const helpList = [
   "Find freedom from addictions, phobias, and unwanted patterns",
   "Improve sleep quality and address insomnia",
   "Build confidence and clarity for important decisions, major life transitions, and daily living",
-  "Men's work and healthy masculine development",
+  "Men's work and sexual vitality & alchemy",
   "Psychedelic preparation and integration",
   "Connect with nature",
   "Experience deep friendship, understanding, and holistic support, and become that space for yourself and others",
