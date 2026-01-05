@@ -1,7 +1,6 @@
 - *Make responsive*
 - Address console errors
 - Add pictures
-- Make flower of life brighter on mobile3
 
 Later
 - Add Website by Adin link to portfolio
@@ -32,6 +31,3 @@ Done
 - ? Sometimes the reviews repeat themselves forever, maybe that's only when i make edits now.
 - Update spiritual counseling for pointed Ruler energy guidance. Give them some more to bite on, like 3 bullet points: loving presence, pointed guidance, practice
 - on both desktop and mobile, the header goes too far out to the edge. it's basically touching. increase those margins 
-
-
-

@@ -26,26 +26,20 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   
+  // Toggle Offerings (Text Click)
   const toggleOfferings = (e) => {
-    if (isMobile) {
-      e.preventDefault();
-      setIsOfferingsOpen(!isOfferingsOpen);
-    } else {
-      setIsOfferingsOpen(!isOfferingsOpen);
-    }
+    e.preventDefault();
+    e.stopPropagation();
+    setIsOfferingsOpen(!isOfferingsOpen);
+    if (!isMobile && isAboutOpen) setIsAboutOpen(false);
   };
 
-  const handleAboutClick = (e) => {
-    if (isMobile) {
-      e.preventDefault();
-      if (isAboutOpen) {
-        setIsAboutOpen(false);
-      } else {
-        setIsAboutOpen(true);
-      }
-    } else {
-      handleNavClick(e, null);
-    }
+  // Toggle About Dropdown (Arrow Click)
+  const toggleAboutDropdown = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsAboutOpen(!isAboutOpen);
+    if (!isMobile && isOfferingsOpen) setIsOfferingsOpen(false);
   };
 
   const handleNavClick = (e, targetId) => {
@@ -91,21 +85,26 @@ const Header = () => {
               <Link to="/" className="nav-link" onClick={(e) => handleNavClick(e, null)}>Home</Link>
             </li>
             
+            {/* About Dropdown */}
             <li className="nav-item dropdown">
-              <Link 
-                  to="/about" 
-                  className={`nav-link dropdown-toggle ${isAboutOpen ? 'active' : ''}`}
-                  onClick={handleAboutClick} 
-                  onMouseEnter={() => !isMobile && setIsAboutOpen(true)}
-                  onMouseLeave={() => !isMobile && setIsAboutOpen(false)}
+              <div className="nav-link-wrapper">
+                <Link 
+                    to="/about" 
+                    className="nav-link" 
+                    onClick={(e) => handleNavClick(e, null)}
+                  >
+                    About
+                </Link>
+                <button 
+                  className={`dropdown-arrow ${isAboutOpen ? 'active' : ''}`}
+                  onClick={toggleAboutDropdown}
+                  aria-label="Toggle About Menu"
                 >
-                  About
-              </Link>
-              <ul 
-                className={`dropdown-menu ${isAboutOpen ? 'show' : ''}`}
-                onMouseEnter={() => !isMobile && setIsAboutOpen(true)}
-                onMouseLeave={() => !isMobile && setIsAboutOpen(false)}
-              >
+                  ▼
+                </button>
+              </div>
+              
+              <ul className={`dropdown-menu ${isAboutOpen ? 'show' : ''}`}>
                 <li>
                   <Link 
                     to="/about#about-adin" 
@@ -127,20 +126,26 @@ const Header = () => {
               </ul>
             </li>
 
+            {/* Offerings Dropdown - UPDATED TO MATCH ABOUT STRUCTURE */}
             <li className="nav-item dropdown">
-              <button
-                className={`nav-link dropdown-toggle ${isOfferingsOpen ? 'active' : ''}`}
-                onClick={toggleOfferings}
-                onMouseEnter={() => !isMobile && setIsOfferingsOpen(true)}
-                onMouseLeave={() => !isMobile && setIsOfferingsOpen(false)}
-              >
-                Offerings
-              </button>
-              <ul   
-                className={`dropdown-menu ${isOfferingsOpen ? 'show' : ''}`}
-                onMouseEnter={() => !isMobile && setIsOfferingsOpen(true)}
-                onMouseLeave={() => !isMobile && setIsOfferingsOpen(false)}
-              >
+              <div className="nav-link-wrapper">
+                <button
+                  className="nav-link" 
+                  onClick={toggleOfferings}
+                  style={{ cursor: 'pointer' }}
+                >
+                  Offerings
+                </button>
+                <button 
+                  className={`dropdown-arrow ${isOfferingsOpen ? 'active' : ''}`}
+                  onClick={toggleOfferings}
+                  aria-label="Toggle Offerings Menu"
+                >
+                  ▼
+                </button>
+              </div>
+
+              <ul className={`dropdown-menu ${isOfferingsOpen ? 'show' : ''}`}>
                 <li><Link to="/emotional-processing" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>EFT</Link></li>
                 <li><Link to="/energy-work" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>Energy Work</Link></li>
                 <li><Link to="/spiritual-practice" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>Spiritual Counseling & Practices</Link></li>
