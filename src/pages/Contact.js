@@ -34,30 +34,6 @@ const Contact = () => {
     setShowAlert(false); // Hide the custom alert
   };
 
-// Handle scroll to hash on load with OFFSET
-  // const { hash } = useLocation();
-
-  // useEffect(() => {
-  //   if (hash) {
-  //     setTimeout(() => {
-  //       const element = document.getElementById(hash.replace('#', ''));
-  //       if (element) {
-  //         // Calculate position with offset for fixed header
-  //         const headerOffset = 100; // Adjust this value if you need it higher/lower
-  //         const elementPosition = element.getBoundingClientRect().top;
-  //         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-  //         window.scrollTo({
-  //           top: offsetPosition,
-  //           behavior: "instant"
-  //         });
-  //       }
-  //     }, 0);
-  //   } else {
-  //     window.scrollTo(0, 0);
-  //   }
-  // }, [hash]);
-
   return (
     <div className="contact">
       {/* Combined Rainbow Section */}

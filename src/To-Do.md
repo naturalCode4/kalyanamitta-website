@@ -1,4 +1,3 @@
-- *Make responsive*
 - Add pictures
 - Address console errors
 - Clean up whole thing. Unused CSS and unused commented out code
@@ -11,7 +10,9 @@ Later
 Nonwebsite
 - Food stamps
 - Bells Mountain - Daily Schedule days and Saturday schedule. Spacing. Donation page pic is blurry
-- Add edance to my calendar
+- Mouse Exterminator Call
+- Respond to Paul
+- Dev portfolio
 
 Done
 - Google Reviews. Make em less long, with 'read more'. Like 3 lines max. Also long and short. Make 'Read all' more disible
@@ -34,3 +35,5 @@ Done
 - ? Sometimes the reviews repeat themselves forever, maybe that's only when i make edits now.
 - Update spiritual counseling for pointed Ruler energy guidance. Give them some more to bite on, like 3 bullet points: loving presence, pointed guidance, practice
 - on both desktop and mobile, the header goes too far out to the edge. it's basically touching. increase those margins 
+- Add edance to my calendar
+- *Make responsive*

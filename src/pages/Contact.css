@@ -108,6 +108,7 @@
   max-width: 600px;
   margin: 0 auto;
   text-align: left;
+  padding-bottom: 3.5rem;
 }
 
 .email-form .form-group {
@@ -165,9 +166,10 @@
 
 .email-form button:hover {
   background: #d4af37; /* Gold background on hover */
-  color: #333; /* Dark text on hover */
+  color: #333333; /* Dark text on hover */
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+  border-color: white;
 }
 
 /* Responsive Design */
@@ -203,12 +205,4 @@
   margin: 0 auto;
   padding: 0 1rem; /* Add side padding for mobile */
   box-sizing: border-box; /* Ensure padding doesn't increase width */
-}
-
-/* Add this to ensure the form doesn't overflow */
-.email-form {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  box-sizing: border-box;
 }

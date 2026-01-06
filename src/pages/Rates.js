@@ -11,7 +11,7 @@ const Rates = () => {
       name: '4-Session Combo',
       description: "Invest in your healing and goals. Four potent sessions to transform your life and resolve several issues.",
       mainPrice: '$400',
-      slidingScale: '. Sliding Scale $224-640',
+      slidingScale: ' / Sliding Scale $224-640',
       originalPrice: '$500. Sliding Scale $280-800',
       discount: '20% OFF',
       features: [
@@ -25,7 +25,7 @@ const Rates = () => {
       name: '7-Session Combo',
       description: "Change your life, heal major issues, and develop your spiritual toolkit. Commit yourself to being supported with seven powerful sessions.",
       mainPrice: '$656',
-      slidingScale: '. Sliding Scale $368-1050',
+      slidingScale: ' / Sliding Scale $368-1050',
       originalPrice: '$875. Sliding Scale $490-1400',
       discount: '25% OFF',
       features: [
@@ -51,17 +51,63 @@ const Rates = () => {
           </div>
         </div>
       </section>
-      {/* Pricing Timeline */}
-      <section className="pricing-timeline-section">
+            {/* Pricing Timeline */}
+            <section className="pricing-timeline-section">
         <div className="container">
-          {/* <h2>Open Reciprocity Pricing</h2> */}
           <div className="flexible-pricing">
             <div className="flexible-content">
               <h3>Open Reciprocity Sliding Scale</h3>
               <p className="flexible-label">$70-200 for 90 minutes</p>
               <p className="subtitle">I offer flexible pricing so that this work is accessible to everyone. Choose an amount that feels aligned—honoring this work and what's sustainable for you. All amounts are welcome and honored.</p>
               <p className="subtitle">For those with financial ease, giving generously honors the exchange of energy between us, allows me to thrive doing what I love, supports this work in the world, and makes it accessible to others.</p>
-              {/* <br></br><p className="flexible-description"><em>Rates for 90 minute sessions</em></p> */}
+            </div>
+          </div>
+          
+          <div className="pricing-timeline">
+            {/* Point 1: Affordable */}
+            <div className="timeline-point">
+              <div className="timeline-number">1</div>
+              <div className="timeline-content">
+                <h3>$70</h3>
+                <p className="timeline-label">Affordable Range</p>
+                <p className="timeline-description">Accessible rate— your presence and commitment matter most</p>
+              </div>
+            </div>
+            
+            {/* Point 2: Suggested (NOW INLINE) */}
+            <div className="timeline-point highlighted-point">
+              <div className="timeline-number">2</div>
+              {/* Added content here inside the point */}
+              <div className="timeline-content middle-card">
+                <h3>$125</h3>
+                <p className="timeline-label">Suggested Rate</p>
+                {/* <p className="timeline-description">The standard rate that supports my livelihood and practice</p> */}
+              </div>
+            </div>
+
+            {/* Point 3: Full Value */}
+            <div className="timeline-point">
+              <div className="timeline-number">3</div>
+              <div className="timeline-content">
+                <h3>$200</h3>
+                <p className="timeline-label">Full-Value Range</p>
+                <p className="timeline-description">Reciprocates the significance of this work and supports accessibility</p>
+              </div>
+            </div>
+          </div>
+          
+          {/* REMOVED the separate .timeline-middle-text div completely */}
+          
+        </div>
+      </section>
+      {/* <section className="pricing-timeline-section">
+        <div className="container">
+          <div className="flexible-pricing">
+            <div className="flexible-content">
+              <h3>Open Reciprocity Sliding Scale</h3>
+              <p className="flexible-label">$70-200 for 90 minutes</p>
+              <p className="subtitle">I offer flexible pricing so that this work is accessible to everyone. Choose an amount that feels aligned—honoring this work and what's sustainable for you. All amounts are welcome and honored.</p>
+              <p className="subtitle">For those with financial ease, giving generously honors the exchange of energy between us, allows me to thrive doing what I love, supports this work in the world, and makes it accessible to others.</p>
             </div>
           </div>
           <div className="pricing-timeline">
@@ -97,7 +143,7 @@ const Rates = () => {
           </div>
           
         </div>
-      </section>
+      </section> */}
 
 
       {/* Packages Section */}
