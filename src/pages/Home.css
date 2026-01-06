@@ -890,10 +890,14 @@
 @media (max-width: 768px) {
   .help-list {
     grid-template-columns: 1fr; /* Single column on smaller screens */
+    width: 85%; /* Restrict width so it doesn't touch edges */
+    margin: 0 auto; /* Center the list */
+    gap: 1rem;
   }
 
   .help-item {
     font-size: 0.9rem; /* Slightly smaller text for mobile */
+    padding: 1rem;
   }
 }
 

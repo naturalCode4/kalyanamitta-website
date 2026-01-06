@@ -628,7 +628,10 @@
 }
 
 .middle-text-content {
-  background: linear-gradient(
+  
+  background: 
+  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* reliable dimming layer */
+  linear-gradient(
     155deg,
     #1e1e1e 5%,
     #4a1a5c 10%,
@@ -649,7 +652,7 @@
     #1e1e1e 97%
   ),
   rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
-  background-blend-mode: darken; /* Blend the overlay with the gradient */
+  /* background-blend-mode: darken; 
   color: white; /* Ensures text is readable */
   text-align: center; /* Optional: Centers text */
   overflow: hidden;
@@ -807,7 +810,9 @@
 }
 
 .flexible-content {
-  background: linear-gradient(
+  background: 
+  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+  linear-gradient(
     90deg,
     #1e1e1e 5%,
     #4a1a5c 10%,
@@ -828,7 +833,6 @@
     #1e1e1e 97%
   ),
   rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
-  background-blend-mode: darken; /* Blend the overlay with the gradient */
   border: 2px solid #d4af37;
   border-radius: 15px;
   padding: 2rem;
@@ -841,7 +845,9 @@
 }
 
 .timeline-content {
-  background: linear-gradient(
+  background: 
+  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+  linear-gradient(
     155deg,
     #1e1e1e 5%,
     #4a1a5c 10%,
@@ -862,7 +868,6 @@
     #1e1e1e 97%
   ),
   rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
-  background-blend-mode: darken; /* Blend the overlay with the gradient */
   color: white; /* Ensures text is readable */
   text-align: center; /* Optional: Centers text */
   overflow: hidden;
