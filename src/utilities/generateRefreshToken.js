@@ -1,7 +1,7 @@
 require('dotenv').config({ path: '/Users/fireowl/Documents/coding/kalyanamitta-website/.env' });
 const { google } = require('googleapis'); // Im googleapis library
 
-console.log('Environment Variables2:', process.env);
+console.log('Environment Variables:', process.env);
 
 console.log('GOOGLE_OAUTH_CLIENT_ID_LOCAL:', process.env.GOOGLE_OAUTH_CLIENT_ID_LOCAL);
 console.log('GOOGLE_OAUTH_CLIENT_SECRET_LOCAL:', process.env.GOOGLE_OAUTH_CLIENT_SECRET_LOCAL);

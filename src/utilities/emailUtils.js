@@ -1,6 +1,7 @@
 const sendEmail = async (formData) => {
     try {
-      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/send-email`, {
+      const response = await fetch(`/api/send-email`, {
+      // const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/send-email`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
