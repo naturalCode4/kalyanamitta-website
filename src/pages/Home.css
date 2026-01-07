@@ -130,11 +130,17 @@
 }
 
 .section-rainbow .photo-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%; /* Take full width of its grid column */
+  max-width: 300px; /* Increase max-width (was likely smaller, like 150px or 200px) */
+  margin: 0 auto; /* Center it */
+}
+
+.about-image {
   width: 100%;
-  max-width: 250px;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 15px; /* Keep rounded corners if desired */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Optional: add shadow */
+  object-fit: cover; /* Ensures it fills area nicely if height was fixed */
 }
 
 .section-rainbow .photo-caption {

@@ -6,6 +6,8 @@ import CTA from '../components/CTA';
 import ServiceCard from '../components/ServiceCard';
 import { offerings, helpList } from '../data/offerings';
 import './Home.css';
+import pic2 from '../assets/pic2.png';
+import pic5 from '../assets/pic5.png';
 
 const Home = () => {
   const { hash } = useLocation();
@@ -77,7 +79,7 @@ const Home = () => {
           <div className="about-photos">
             <div className="photo-container">
               <img 
-                src="./public/assets/pic1.png" // need to import at top
+                src={pic2}
                 alt="Healing On Tap Pic" 
                 className="about-image" 
               />
@@ -147,9 +149,11 @@ const Home = () => {
           </div>
           <div className="about-photos">
             <div className="photo-container">
-              <div className="placeholder-image">
-                <span>Adin Photo</span>
-              </div>
+              <img 
+                src={pic5}
+                alt="Healing On Tap Pic" 
+                className="about-image"
+              ></img>
             </div>
           </div>
         </div>

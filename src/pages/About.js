@@ -4,25 +4,10 @@ import './About.css';
 import GoogleReviews from '../components/GoogleReviews';
 import Section from '../components/Section';
 import CTA from '../components/CTA';
+import pic5 from '../assets/pic5.png';
+
 
 const About = () => {
-
-  
-  // Fix: Manually scroll to the section if a hash exists in the URL
-  // const { hash } = useLocation();
-  // useEffect(() => {
-  //   if (hash) {
-  //     // Small timeout ensures DOM is ready before scrolling
-  //     setTimeout(() => {
-  //       const element = document.getElementById(hash.replace('#', ''));
-  //       if (element) {
-  //         element.scrollIntoView({ behavior: 'smooth' });
-  //       }
-  //     }, 100);
-  //   } else {
-  //     window.scrollTo(0, 0);
-  //   }
-  // }, [hash]);
 
   return (
     <div className="about">
@@ -39,14 +24,30 @@ const About = () => {
       </section>
 
       {/* About Adin */}
-      <section id="about-adin" className="about-adin section-rainbow">
+      {/* <section id="about-adin" className="about-adin section-rainbow">
         <div className="container">
           <div className="about-adin-content">
             <h2>About Adin</h2>
             <div className="about-image">
-              <div className="placeholder-image">
-                <span>Profile Image</span>
-              </div>
+              <img 
+                src={pic5}
+                alt="Healing On Tap Pic" 
+                className="about-image" 
+              />
+            </div> */}
+      <section id="about-adin" className="about-adin section-rainbow">
+        <div className="container">
+          <h2>About Adin</h2>
+          
+          <div className="about-layout-grid"> {/* NEW WRAPPER */}
+            
+            {/* Image Container */}
+            <div className="about-image-container">
+              <img 
+                src={pic5}
+                alt="Adin Portrait" 
+                className="about-profile-pic" 
+              />
             </div>
             <div className="about-adin-text">
               <p>

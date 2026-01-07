@@ -467,3 +467,43 @@
     font-size: 1.5rem;
   }
 }
+/* Layout Wrapper: Just a standard block now */
+.about-layout-grid {
+  display: block; /* Remove flex/grid */
+}
+
+/* Image Container: Float it to the right */
+.about-image-container {
+  float: right; /* Pushes image to the right */
+  margin-left: 2rem; /* Buffer space to the left of the image */
+  margin-bottom: 1rem; /* Buffer space below the image */
+  width: 100%;
+  max-width: 350px; /* Constrain size */
+  clear: right; /* Good practice */
+}
+
+/* The Image Itself */
+.about-profile-pic {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Text Container: Just standard text flow */
+.about-adin-text {
+  display: inline; /* Let text flow around float */
+  color: white; /* Ensure text is visible */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  /* On mobile, stack them by removing float */
+  .about-image-container {
+    float: none;
+    margin: 0 auto 2rem auto; /* Center and add bottom space */
+    max-width: 300px;
+    display: block;
+  }
+}

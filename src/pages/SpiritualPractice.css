@@ -356,3 +356,32 @@
 .about-spiritual-practice.section-rainbow .service-card li {
   color: #666 !important;
 }
+
+/* Image Container - Float Right */
+.spiritual-image-container {
+  float: right;
+  width: 100%;
+  max-width: 350px; /* Same max-width as About page */
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  clear: right;
+}
+
+/* The Image Itself */
+.spiritual-practice-pic {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .spiritual-image-container {
+    float: none;
+    margin: 0 auto 2rem auto;
+    max-width: 300px;
+    display: block;
+  }
+}

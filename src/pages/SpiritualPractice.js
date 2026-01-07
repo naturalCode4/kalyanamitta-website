@@ -3,70 +3,10 @@ import { Link } from 'react-router-dom';
 import Section from '../components/Section';
 import CTA from '../components/CTA';
 import './SpiritualPractice.css';
+import pic4 from '../assets/pic4.png';
+
 
 const SpiritualPractice = () => {
-  const practices = [
-    {
-      title: 'Meditation',
-      description: 'Learn various meditation techniques to cultivate inner peace, mindfulness, and spiritual awareness.',
-      points: [
-        'Mindfulness meditation',
-        'Loving-kindness practice', 
-        'Breath awareness',
-        'Walking meditation',
-        'Reduced stress and anxiety',
-        'Increased self-awareness',
-        'Enhanced emotional regulation',
-        'Deeper spiritual connection'
-      ],
-      availability: 'In-person or Online'
-    },
-    {
-      title: 'Yoga',
-      description: 'Integrate physical postures, breathwork, and meditation for holistic wellness and spiritual growth.',
-      points: [
-        'Hatha yoga foundations',
-        'Vinyasa flow sequences',
-        'Restorative poses',
-        'Alignment principles',
-        'Improved flexibility and strength',
-        'Better posture and balance',
-        'Stress relief',
-        'Mind-body integration'
-      ],
-      availability: 'In-person or Online'
-    },
-    {
-      title: 'Breathwork',
-      description: 'Harness the power of conscious breathing for healing, transformation, and expanded awareness.',
-      points: [
-        'Pranayama techniques',
-        'Box breathing',
-        'Breath retention practices',
-        'Energy circulation methods',
-        'Increased energy and vitality',
-        'Emotional processing',
-        'Spiritual expansion',
-        'Trauma release'
-      ],
-      availability: 'In-person or Online'
-    },
-    {
-      title: 'Sound Healing',
-      description: 'Use sacred sounds, mantras, and vibrational healing for deep relaxation and spiritual awakening.',
-      points: [
-        'Mantra chanting',
-        'Singing bowl therapy',
-        'Tuning fork healing',
-        'Voice activation',
-        'Deep relaxation',
-        'Chakra balancing',
-        'Emotional release',
-        'Heightened awareness'
-      ],
-      availability: 'In-person'
-    }
-  ];
 
   return (
     <div className="spiritual-practice">
@@ -87,10 +27,14 @@ const SpiritualPractice = () => {
         <div className="container">
           <div className="about-spiritual-practice-content">
             <h2>About Spiritual Counseling</h2>
-            <div className="about-image">
-              <div className="placeholder-image">
-                <span>Spiritual Practice Image</span>
-              </div>
+            
+            {/* UPDATED IMAGE CONTAINER */}
+            <div className="spiritual-image-container">
+              <img 
+                src={pic4}
+                alt="Spiritual Counseling Session" 
+                className="spiritual-practice-pic" 
+              />
             </div>
             <div className="about-spiritual-practice-text">
               <p>
