@@ -13,9 +13,9 @@ export const offerings = [
   },
   {
     id: 'spiritual-practice',
-    title: 'Spiritual Counseling and Education',
+    title: 'Spiritual Counseling and Practices',
     availability: 'Available in-person or virtual',
-    content: "Together we can cultivate the clarity, balance, awareness, compassion, and sovereignty needed to live well.  We will draw on wisdom both inner (direct experience) and outer (spiritual knowledge)."
+    content: "Together we can cultivate the wisdom and compassion needed to live well. Be seen and heard as you are; be supported in progressing towards what matters most to you. We may draw on inner wisdom as well as knowledge from spiritual traditions."
   },
 ];
 
@@ -24,14 +24,15 @@ export const helpList = [
   "Deepen love, compassion, acceptance for yourself and others",
   "Release stuck emotions: fear, stress, limiting beliefs, anger, grief, and trauma",
   "Build emotional intelligence, resilience, and regulation",
-  "Actualize your gifts, voice, and sovereignty. Let go of interfering cultural and inherited models and beliefs",
+  "Receive guidance and support in meditation, yoga, breathwork, or sound healing",
   "Heal from childhood wounding– including issues stemming from growing up in dysfunctional families",
   "Heal from adult trauma– including difficult relationships/breakups and traumatic events (PTSD)",
   "Relieve or resolve physical pain and psychosomatically-rooted conditions",
+  "Attain the life situation you desire, unblocking yourself from any obstacles",
   "Cultivate spiritual insight, connection, and growth rooted in direct experience– enriched by various spiritual traditions and modalities",
   "Enliven your connection to the energy body, intuition, and sensitivity– enriched by mind-body modalities",
   "Explore the nature of the heart, consciousness, and reality",
-  "Receive guidance and support in meditation, yoga, breathwork, or sound healing",
+  "Actualize your gifts, voice, and sovereignty. Let go of interfering cultural and inherited models and beliefs",
   "Enhance performance in athletics, work, intimacy, and daily life",
   "Strengthen interpersonal dynamics, including romantic relationships",
   "Find freedom from addictions, phobias, and unwanted patterns",

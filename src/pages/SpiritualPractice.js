@@ -94,7 +94,7 @@ const SpiritualPractice = () => {
             </div>
             <div className="about-spiritual-practice-text">
               <p>
-                Together we can cultivate well-being, wisdom, love, freedom, and what matters most to you. This is a space for being met, exploring, healing, finding direction, and growing—especially in <a href="/home#what-we-can-do-together" target="_blank">these areas</a>.
+                Together we can cultivate well-being, wisdom, love, freedom, and what matters most to you. This is a space for being met, exploring, healing, spiritual education, finding direction, and growing—especially in <a href="/home#what-we-can-do-together" target="_blank">these areas</a>.
               </p>
               <p>
                 We can be with whatever is alive in you. We can navigate your deepest yearnings and any obstacles to your fulfillment. Sometimes what we need most is just to be truly heard—to share presence with someone who compassionately validates your experience without judgment or fixing. I am here to hold that space for you.
@@ -109,7 +109,7 @@ const SpiritualPractice = () => {
                 Practices
               </h3>
               <p>
-                I teach yoga, breathwork, and voice-based sound healing. I also offer support in meditation. These are all powerful multi-tools we can bring into counseling, or they can be the focus of our time together.
+                I teach yoga, breathwork, voice-based sound healing, and offer support in meditation. These are all powerful multi-tools we can bring in, or they can be the focus of our time together.
               </p>
               <p>
                 Spiritual Counseling sessions can also be synthesized with EFT or Energy Healing. EFT is often extremely useful (and recommended!) to release and heal specific issues.
@@ -149,7 +149,7 @@ const SpiritualPractice = () => {
       <Section 
         variant="dark" 
         title="Ready to Begin?"
-        subtitle="Let's support your unfolding. Book a session or a free 30-minute consultation to bring clarity and grounding to your journey."
+        subtitle="When you're ready, I'm here. Book a session, schedule a free consultation, or reach out—I'm happy to answer any questions."
       >
         <CTA />
       </Section>

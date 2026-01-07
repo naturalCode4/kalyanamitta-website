@@ -41,7 +41,7 @@ const Home = () => {
             
             <div className="hero-manifesto">
               <div className="manifesto-item">
-                <span className="manifesto-text">Healing is your nature. Awaken boundless wisdom. Restore true connection.</span>
+                <span className="manifesto-text">Healing is your nature. Awaken your boundless wisdom. Restore true connection.</span>
               </div>
               
               <div className="manifesto-connector"></div>
@@ -69,16 +69,18 @@ const Home = () => {
       >
         <div className="grid grid-2">
           <div>
-            <p>This work supports healing, empowerment, embodied well-being, and alignment with your deepest wisdom.</p>
+            <p>This work supports embodied well-being, empowerment, all kinds of connection, getting desired outcomes, and alignment with your deepest wisdom.</p>
             <p>I offer EFT (Emotional Freedom Techniques, or Tapping), Reiki Energy Healing, and Spiritual Counseling and Practices (Meditation, Yoga, Breathwork, Sound Healing). My guidance and methods are rooted in direct experience and teachings across spiritual traditions.</p>
             <p>I believe that our bodies, hearts, energy, and the universe itself are fundamentally good and possess inherent healing properties. I'll help you realize and activate this in your life. My role is to offer loving presence, transformative modalities, and guidance—awakening to the basic goodness already present within you and actualizing your natural capacity for healing, spiritual development, and transformation.</p>
             <p>My mission is to support beings in any way I can. If you're curious about how we can work together, so am I!</p>
           </div>
           <div className="about-photos">
             <div className="photo-container">
-              <div className="placeholder-image">
-                <span>Healing On Tap Photo</span>
-              </div>
+              <img 
+                src="./public/assets/pic1.png" // need to import at top
+                alt="Healing On Tap Pic" 
+                className="about-image" 
+              />
             </div>
           </div>
         </div>
@@ -89,7 +91,7 @@ const Home = () => {
         id="what-we-can-do-together"
         variant="dark" 
         title="What We Can Do Together"
-        subtitle="These are my core strengths and areas of focus. We can address them through EFT, energy work, spiritual counseling, or a combination. The beautiful thing is they're all interconnected—transform in one area and you'll often find the rest alchemize and heal together."
+        subtitle="These are my core strengths and areas of focus. We can address them through EFT, energy work, spiritual counseling, practices, or a combination. The beautiful thing is they're all interconnected—transform in one area and you'll often find the rest alchemize and heal together."
       >
         <div className="help-section">
           <ul className="help-list">
