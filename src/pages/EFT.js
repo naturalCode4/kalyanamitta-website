@@ -52,7 +52,7 @@ const EFT = () => {
                 EFT works on the neurological, subconscious, and energetic level. Shifts are typically enduring once thoroughly addressed, as the neural networks are rewired and the nervous system releases stored issues. 
               </p>
               <p>
-                Tapping signals safety to the brain, as it effectively calms the amygdala's 'fight, flight, or freeze' response. So the nervous system doesn't follow its usual sympathetic response to an issue, but actually processes, releases, and updates. By tapping on each tapping point, we send an electrical impulse through each meridian (energy channel running through the body– each corresponding to an essential aspect of our human functionality) that balances the channel.
+                Tapping signals safety to the brain, as it effectively calms the amygdala's 'fight, flight, or freeze' response. So the nervous system doesn't follow its usual sympathetic response to an issue, but actually processes, releases, and updates. By tapping on each tapping point, we send an electrical impulse through each meridian (an energy channel running through the body– each corresponding to an essential aspect of our human functionality) that balances the channel.
               </p>
               <h3>
                 Who and What is EFT For?
@@ -107,7 +107,7 @@ const EFT = () => {
       <Section 
         variant="dark" 
         title="Ready to Begin?"
-        subtitle="When you're ready, I'm here. Book a session, schedule a free consultation, or reach out—I'm happy to answer any questions."
+        subtitle="When you're ready, I'm here. Book a session, schedule a free 30-minute consultation, or reach out—I'm happy to answer any questions."
       >
         <CTA />
       </Section>
