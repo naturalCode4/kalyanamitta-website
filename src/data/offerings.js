@@ -21,10 +21,10 @@ export const offerings = [
 
 export const helpList = [
   "Cultivate happiness, peace, self-esteem, and stability",
-  "Deepen love, compassion, acceptance for yourself and others",
+  "Deepen love, compassion, and acceptance for yourself and others",
   "Release stuck emotions: fear, stress, limiting beliefs, anger, grief, and trauma",
   "Build emotional intelligence, resilience, and regulation",
-  "Receive guidance and support in meditation, yoga, breathwork, or sound healing",
+  "Receive guidance and support in meditation, yoga, breathwork, and sound healing",
   "Heal from childhood wounding– including issues stemming from growing up in dysfunctional families",
   "Heal from adult trauma– including difficult relationships/breakups and traumatic events (PTSD)",
   "Relieve or resolve physical pain and psychosomatically-rooted conditions",
