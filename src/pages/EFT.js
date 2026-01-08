@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './EFT.css';
 import Section from '../components/Section';
 import CTA from '../components/CTA';
+import pic7 from '../assets/pic7.jpg';
 
 const EFT = () => {
 
@@ -24,10 +25,14 @@ const EFT = () => {
         <div className="container">
           <div className="about-eft-content">
             <h2>About EFT</h2>
-            <div className="about-image">
-              <div className="placeholder-image">
-                <span>EFT Session Image</span>
-              </div>
+            
+            {/* New Clean Container */}
+            <div className="eft-image-container">
+              <img 
+                src={pic7}
+                alt="EFT Session" 
+                className="eft-pic" 
+              />
             </div>
             <div className="about-eft-text">
               <p>

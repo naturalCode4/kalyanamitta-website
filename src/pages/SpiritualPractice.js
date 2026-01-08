@@ -63,28 +63,6 @@ const SpiritualPractice = () => {
                 <em>I am offering spiritual guidance, not clinical mental health services.</em>
               </p>
             </div>
-
-            {/* Spiritual Practice Cards - Now inside the rainbow section
-            <div className="services-grid">
-              {practices.map((practice, index) => (
-                <div key={index} className="service-card">
-                  <h3>{practice.title}</h3>
-                  <p className="service-description">{practice.description}</p>
-                  
-                  <div className="service-points">
-                    <ul>
-                      {practice.points.map((point, idx) => (
-                        <li key={idx}>{point}</li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="service-availability">
-                    <p><strong>Availability:</strong> {practice.availability}</p>
-                  </div>
-                </div>
-              ))}
-            </div> */}
           </div>
         </div>
       </section>

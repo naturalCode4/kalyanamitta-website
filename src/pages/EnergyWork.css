@@ -232,3 +232,63 @@
     padding: 1.5rem;
   }
 }
+
+/* 1. Force the parent to expand to fit the floated image */
+.about-energy-work-content {
+  overflow: hidden; /* Clears the float so image stays inside */
+  position: relative;
+}
+
+/* Update Image Container (Float Right) */
+.energy-image-container {
+  float: right;
+  width: 100%;
+  max-width: 350px; /* Keep this nice width */
+  margin-left: 2rem;
+  margin-bottom: 0.5rem; /* Reduced bottom margin to keep text close */
+  clear: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Aligns credit to right edge of image */
+}
+
+/* Image Styles (NO HOVER TRANSFORM) */
+.energy-work-pic {
+  width: 100%;
+  height: auto;
+  border-radius: 12px; /* Slightly tighter radius */
+  /* Remove any existing transforms/shadows here if needed */
+  display: block; /* Removes tiny gap under image */
+}
+
+/* Ensure no hover effect happens */
+.energy-work-pic:hover {
+  transform: none !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important; /* Keep original shadow */
+}
+
+/* Styling for Photo Credit */
+.photo-credit {
+  font-size: 0.6rem !important; /* Smaller size */
+  margin-top: 0.3rem;
+  margin-bottom: 0;
+  text-align: center; /* Center the text */
+  width: 100%;
+  line-height: 1;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .energy-image-container {
+    float: none;
+    margin: 0 auto 1rem auto;
+    margin-top: 3rem;
+    max-width: 100%; /* Allow it to fill width if needed, or stick to 300px */
+    width: 300px;
+    align-items: center; /* Center credit on mobile */
+  }
+  
+  .photo-credit {
+    text-align: center;
+  }
+}

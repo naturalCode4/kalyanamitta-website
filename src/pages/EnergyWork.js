@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Section from '../components/Section';
 import CTA from '../components/CTA';
 import './EnergyWork.css';
+import pic6 from '../assets/pic6.jpg';
 
 const EnergyWork = () => {
   return (
@@ -24,11 +25,17 @@ const EnergyWork = () => {
         <div className="container">
           <div className="about-energy-work-content">
             <h2>About Energy Healing</h2>
-            <div className="about-image">
-              <div className="placeholder-image">
-                <span>Energy Work Session Image</span>
-              </div>
+            
+            {/* Image Container with Credit - Cleanly placed inside the main content div */}
+            <div className="energy-image-container">
+              <img 
+                src={pic6}
+                alt="Energy Work Session" 
+                className="energy-work-pic" 
+              />
+              <p className="photo-credit">Image by Wirestock on Freepik</p>
             </div>
+
             <div className="about-energy-work-text">
               <p>
                 Energy healing addresses diverse needs by balancing, restoring, and optimizing the body's natural energy field. I offer Reiki-based energy healing tailored to your needs, responding to any specific concerns you bring. Grounded in compassionate presence, I hold space for whatever arises with acceptance and care.
