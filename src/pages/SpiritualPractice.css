@@ -361,7 +361,7 @@
 .spiritual-image-container {
   float: right;
   width: 100%;
-  max-width: 350px; /* Same max-width as About page */
+  max-width: 400px; /* Same max-width as About page */
   margin-left: 2rem;
   margin-bottom: 1rem;
   clear: right;

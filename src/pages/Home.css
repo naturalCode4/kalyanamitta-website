@@ -119,6 +119,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  display: block; /* Removes inline spacing quirks */
 }
 
 .section-rainbow .about-photos {
@@ -131,7 +134,7 @@
 
 .section-rainbow .photo-container {
   width: 100%; /* Take full width of its grid column */
-  max-width: 300px; /* Increase max-width (was likely smaller, like 150px or 200px) */
+  max-width: 350px; /* Increase max-width (was likely smaller, like 150px or 200px) */
   margin: 0 auto; /* Center it */
 }
 
@@ -153,7 +156,7 @@
 
 .section-rainbow .placeholder-image {
   width: 100%;
-  height: 200px;
+  height: 400px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border-radius: 15px;
   display: flex;
@@ -703,7 +706,7 @@
   }
   
   .section-rainbow .photo-container {
-    max-width: 150px;
+    max-width: 250px !important;
   }
   
   .section-rainbow .placeholder-image {

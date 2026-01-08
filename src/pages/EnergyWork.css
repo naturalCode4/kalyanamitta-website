@@ -243,7 +243,7 @@
 .energy-image-container {
   float: right;
   width: 100%;
-  max-width: 350px; /* Keep this nice width */
+  max-width: 400px; /* Keep this nice width */
   margin-left: 2rem;
   margin-bottom: 0.5rem; /* Reduced bottom margin to keep text close */
   clear: right;

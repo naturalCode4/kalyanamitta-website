@@ -478,7 +478,7 @@
   margin-left: 2rem; /* Buffer space to the left of the image */
   margin-bottom: 1rem; /* Buffer space below the image */
   width: 100%;
-  max-width: 350px; /* Constrain size */
+  max-width: 400px; /* Constrain size */
   clear: right; /* Good practice */
 }
 
