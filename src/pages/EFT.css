@@ -434,10 +434,22 @@
 .eft-image-container {
   float: right;
   width: 100%;
-  max-width: 400px;
+  max-width: 400px; /* Kept your existing width */
   margin-left: 2rem;
   margin-bottom: 1rem;
   clear: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers credit under image */
+}
+
+.photo-credit {
+  font-size: 0.7rem !important;
+  margin-top: 0.3rem;
+  margin-bottom: 0;
+  text-align: center;
+  width: 100%;
+  line-height: 1;
 }
 
 /* Image Proper */

@@ -33,6 +33,7 @@ const EFT = () => {
                 alt="EFT Session" 
                 className="eft-pic" 
               />
+              <p className="photo-credit">Image by Freepik</p>
             </div>
             <div className="about-eft-text">
               <p>
