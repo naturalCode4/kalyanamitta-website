@@ -73,7 +73,7 @@ const Home = () => {
           <div>
             <p>This work supports embodied well-being, love, empowerment, all kinds of connection, getting desired outcomes, and alignment with deep wisdom.</p>
             <p>I offer EFT (Emotional Freedom Techniques, or Tapping), Reiki Energy Healing, and Spiritual Counseling and Practices (Meditation, Yoga, Breathwork, Sound Healing). My guidance and methods are rooted in direct experience and teachings across spiritual traditions.</p>
-            <p>I believe that our bodies, hearts, energy, and the universe itself are fundamentally good and possess inherent healing properties. I'll help you realize and activate this in your life. My role is to offer loving presence, transformative modalities, and guidance—awakening to the basic goodness already present within you and actualizing your natural capacity for healing, spiritual development, and transformation.</p>
+            <p>I believe that our bodies, hearts, energy, and the universe itself are fundamentally good and possess inherent healing properties. I'll help you realize and activate this in your life. My role is to offer loving presence, transformative modalities, and guidance—awakening to the basic goodness already present within you and actualizing your natural capacity for healing, love, spiritual realization, and transformation.</p>
             <p>My mission is to support beings in any way I can. If you're curious about how we can work together, so am I!</p>
           </div>
           <div className="about-photos">
