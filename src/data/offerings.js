@@ -25,7 +25,7 @@ export const helpList = [
   "Release stuck emotions: fear, stress, limiting beliefs, anger, grief, and trauma",
   "Build emotional intelligence, resilience, and regulation",
   "Receive guidance and support in meditation, yoga, breathwork, and sound healing",
-  "Heal from childhood wounding– including issues stemming from growing up in dysfunctional families",
+  "Heal from childhood wounding– including issues stemming from growing up in a dysfunctional family / culture",
   "Heal from adult trauma– including difficult relationships/breakups and traumatic events (PTSD)",
   "Relieve or resolve physical pain and psychosomatically-rooted conditions",
   "Attain the life situation you desire, unblocking yourself from any obstacles",
