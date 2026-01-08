@@ -15,7 +15,7 @@ export const offerings = [
     id: 'spiritual-practice',
     title: 'Spiritual Counseling and Practices',
     availability: 'Available in-person or virtual',
-    content: "Together we can cultivate the wisdom and compassion needed to live well. Be seen and heard as you are; be supported in progressing towards what matters most to you. We may draw on inner wisdom as well as knowledge from spiritual traditions."
+    content: "Together we can cultivate the wisdom and compassion needed to live well. Be seen and heard as you are; be supported in progressing towards what matters most to you. We may draw on both inner wisdom and outer knowledge from spiritual traditions."
   },
 ];
 
