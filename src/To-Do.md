@@ -1,18 +1,13 @@
-- Add pictures
-- Address console errors
-- Clean up whole thing. Unused CSS and unused commented out code
-- Deploy
-- Test
+- Optional: Address console errors (I think they already don't show live)
+- Optional: Clean up whole thing. Unused CSS and unused commented out code
 
 Later
-- Add Website by Adin link to portfolio
+- Add Website by Adin link to portfolio (add portfolio)
 
 Nonwebsite
 - Food stamps
 - Bells Mountain - Daily Schedule days and Saturday schedule. Spacing. Donation page pic is blurry
-- Mouse Exterminator Call
 - Respond to Paul
-- Dev portfolio
 
 Done
 - Google Reviews. Make em less long, with 'read more'. Like 3 lines max. Also long and short. Make 'Read all' more disible
@@ -37,3 +32,6 @@ Done
 - on both desktop and mobile, the header goes too far out to the edge. it's basically touching. increase those margins 
 - Add edance to my calendar
 - *Make responsive*
+- Deploy
+- Test
+- Add pictures

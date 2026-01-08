@@ -43,13 +43,13 @@ const Home = () => {
             
             <div className="hero-manifesto">
               <div className="manifesto-item">
-                <span className="manifesto-text">Healing is your nature. Awaken your boundless wisdom. Restore true connection.</span>
+                <span className="manifesto-text">Dissolve what limits you. Awaken your boundless wisdom. Restore true connection.</span>
               </div>
               
               <div className="manifesto-connector"></div>
               
               <div className="manifesto-item">
-                <span className="manifesto-text">Dissolve what limits you. Transmute difficult emotions. Liberate your heart, body, and mind.</span>
+                <span className="manifesto-text">Healing is your nature. Transmute difficult emotions. Liberate your heart, body, and mind.</span>
               </div>
               
               <div className="manifesto-connector"></div>
