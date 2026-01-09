@@ -23,7 +23,7 @@
 
 /* Booking Content */
 .booking-content {
-  padding: 6rem 0;
+  padding: 3rem 0;
   background: #0f0f0f;
   border-bottom: 1px solid #2d3748;
 }
@@ -313,7 +313,7 @@
   }
   
   .booking-content {
-    padding: 4rem 0;
+    padding: 3rem 0;
   }
   
   .booking-grid {

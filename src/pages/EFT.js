@@ -56,7 +56,7 @@ const EFT = () => {
                 EFT boils down Chinese Medicine, Neuroscience, Positive Psychology, and more into a highly effective yet simple modality that one can learn to do anytime, anywhere. Practitioners may also draw upon methodologies from Internal Family Systems (IFS), Hypnotherapy, Cognitive Behavioral Therapy (CBT), EMDR, Mindfulness, Polyvagal Theory, Neuro-Linguistic Programming (NLP), Shamanism, Spiritual Teachings, and more. At its core, EFT embodies the wisdom of Love, Acceptance, Letting Go, and your boundless potential as a creator being.
               </p>
               <p>
-                EFT works on the neurological, subconscious, and energetic level. Shifts are typically enduring once thoroughly addressed, as the neural networks are rewired and the nervous system releases stored issues. 
+                EFT works on the neurological, subconscious, and energetic level. Shifts are enduring once thoroughly addressed, as neural networks are reprogrammed and the nervous system releases and resolves built-up issues. 
               </p>
               <p>
                 Tapping signals safety to the brain, as it effectively calms the amygdala's 'fight, flight, or freeze' response. So the nervous system doesn't follow its usual sympathetic response to an issue, but actually processes, releases, and updates. By tapping on each tapping point, we send an electrical impulse through each meridian (an energy channel running through the body– each corresponding to an essential aspect of our human functionality) that balances the channel.
@@ -66,7 +66,7 @@ const EFT = () => {
                 Who and What is EFT For?
               </h3>
               <p>
-                EFT is for anyone with a nervous system. It works across all ages, cultures, and belief systems, and can meet you wherever you are on your journey. Whether you're navigating daily overwhelm or deep trauma, physical pain or emotional wounds, self-doubt or anxiety, addiction or grief, relationship challenges or spiritual inquiry, manifesting abundance or actualizing your deepest calling, empowering higher consciousness or opening to love—EFT can support your healing and transformation. <a href="/#what-we-can-do-together" target="_blank">These are my core strengths and areas of focus</a>.
+                EFT is for anyone with a nervous system. It works across all ages, cultures, and belief systems, and can meet you wherever you are on your journey. Whether you're navigating daily overwhelm or trauma, physical pain or deep emotions, self-doubt or anxiety, addiction or grief, relationship challenges or spiritual inquiry, manifesting abundance or actualizing your deepest calling, empowering higher consciousness or opening to love—EFT can support your healing and transformation. <a href="/#what-we-can-do-together" target="_blank">These are my core strengths and areas of focus</a>.
               </p>
               <div className="gold-divider"></div>
               <h3>
