@@ -49,6 +49,7 @@ const SpiritualPractice = () => {
               <p>
                 Whether you're newly curious, deep in transformation, or have established practice, I offer grounded presence and guidance. Sessions are collaborative and responsive to what emerges.
               </p>
+              <div className="gold-divider"></div>
               <h3>
                 Practices
               </h3>
@@ -58,7 +59,7 @@ const SpiritualPractice = () => {
               <p>
                 Spiritual Counseling sessions can also be synthesized with EFT or Energy Healing. EFT is often extremely useful (and recommended!) to release and heal specific issues.
               </p>
-              <br></br><br></br>
+              <div className="gold-divider"></div>
               <p>
                 <em>I am offering spiritual guidance, not clinical mental health services.</em>
               </p>

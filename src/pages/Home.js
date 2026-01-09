@@ -43,19 +43,20 @@ const Home = () => {
             
             <div className="hero-manifesto">
               <div className="manifesto-item">
-                <span className="manifesto-text">Dissolve what limits you. Awaken your boundless wisdom. Restore true connection.</span>
+                <span className="manifesto-text">Dissolve what limits you. See your life clearly. {window.innerWidth > 768 && <br />}Restore true connection.</span>
+                {/* <span className="manifesto-text">Dissolve what limits you. Awaken your boundless wisdom. Restore true connection.</span> */}
               </div>
               
               <div className="manifesto-connector"></div>
               
               <div className="manifesto-item">
-                <span className="manifesto-text">Healing is your nature. Transmute difficult emotions. Liberate your heart, body, and mind.</span>
+                <span className="manifesto-text">Healing is your nature. Transmute difficult emotions. {window.innerWidth > 768 && <br />}Liberate heart, body, and mind.</span>
               </div>
               
               <div className="manifesto-connector"></div>
               
               <div className="manifesto-item">
-                <span className="manifesto-text">Embody sovereignty. Unmute your soul. Remember your power.</span>
+                <span className="manifesto-text">Embody sovereignty. Unmute your soul. {window.innerWidth > 768 && <br />}Remember your power.</span>
               </div>
             </div>
 
@@ -71,8 +72,8 @@ const Home = () => {
       >
         <div className="grid grid-2">
           <div>
-            <p>This work supports embodied well-being, love, empowerment, all kinds of connection, getting desired outcomes, and alignment with deep wisdom.</p>
-            <p>I offer EFT (Emotional Freedom Techniques, or Tapping), Reiki Energy Healing, and Spiritual Counseling and Practices (Meditation, Yoga, Breathwork, Sound Healing). My guidance and methods are rooted in direct experience and teachings across spiritual traditions.</p>
+            <p>This work supports embodied well-being, love, empowerment, all kinds of connection, getting desired outcomes, and alignment with clear wisdom.</p>
+            <p>I offer EFT (Emotional Freedom Techniques, or Tapping), Reiki Energy Healing, and Spiritual Counseling and Practices (Yoga, Breathwork, Sound Healing, and Meditation). My guidance and modalities are integrative and rooted in direct experience and teachings from spiritual traditions.</p>
             <p>I believe that our bodies, hearts, energy, and the universe itself are fundamentally good and possess inherent healing properties. I'll help you realize and activate this in your life. My role is to offer loving presence, transformative modalities, and guidance—awakening to the basic goodness already present within you and actualizing your natural capacity for healing, love, spiritual realization, and transformation.</p>
             <p>My mission is to support beings in any way I can. If you're curious about how we can work together, so am I!</p>
           </div>

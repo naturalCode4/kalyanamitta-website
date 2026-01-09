@@ -43,7 +43,8 @@ const EnergyWork = () => {
               <p>
                 In addition to Reiki, I may incorporate acupressure, other healing techniques, or share insights as appropriate to your session. When helpful, I can offer guidance to help you integrate your experience and move forward with clarity.
               </p>
-              
+              {window.innerWidth > 768 && <br />}
+              <div className="gold-divider"></div>
               <h3>Benefits of Energy Healing</h3>
               <p>
                 Energy healing helps remove blockages and deficiencies while activating your body's natural ability to heal itself. By restoring balance to your body's energy field and responding to what emerges from your system, you may experience:
@@ -51,7 +52,7 @@ const EnergyWork = () => {
               <p>
                 Deeper sense of peace, love, and spiritual connection • Enhanced vitality, health, sleep quality, and immune function • Relief from physical pain and tension and accelerated recovery from injuries • Deep relaxation and reduced stress and anxiety • Emotional release, clarity, and resolution to psychological issues • Mental clarity, enhanced intuition, third eye activation, and increased energetic awareness • Intuitive downloads and messages
               </p>
-              
+              <div className="gold-divider"></div>
               <h3>What is Reiki?</h3>
               <p>
                 Reiki is an ancient Japanese healing art in which a practitioner channels a beneficent, spiritually conscious, self-intelligent, omnipresent (Rei) life force energy (Ki) to optimize a recipient's bio-energetic field. Reiki works on multiple dimensions simultaneously, supporting the recipient on the physical, emotional, mental, energetic, and spiritual planes.
@@ -62,6 +63,7 @@ const EnergyWork = () => {
               <p>
                 Sessions address not just symptoms but the underlying energetic patterns that contribute to imbalance. This practice partners with your body's innate wisdom, allowing deep healing to unfold from within. Reiki meets you exactly where you are and guides you toward greater wholeness, alignment, and happiness.
               </p>
+              <div className="gold-divider"></div>
             </div>
 
             {/* What to Expect - Now inside the rainbow section */}

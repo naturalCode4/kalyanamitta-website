@@ -45,6 +45,7 @@ const EFT = () => {
               <p>
                 While I have immersed myself in numerous spiritual practices and modalities, EFT is the most powerful and universal tool I have encountered for resolving specific psycho-emotional issues and creating positive new outcomes—and I am so grateful to have encountered it and offer it. I hope that I can support as many people as possible with EFT.
               </p>
+              <div className="gold-divider"></div>
               <h3>
                 Why EFT is So Powerful
               </h3>
@@ -60,18 +61,21 @@ const EFT = () => {
               <p>
                 Tapping signals safety to the brain, as it effectively calms the amygdala's 'fight, flight, or freeze' response. So the nervous system doesn't follow its usual sympathetic response to an issue, but actually processes, releases, and updates. By tapping on each tapping point, we send an electrical impulse through each meridian (an energy channel running through the body– each corresponding to an essential aspect of our human functionality) that balances the channel.
               </p>
+              <div className="gold-divider"></div>
               <h3>
                 Who and What is EFT For?
               </h3>
               <p>
                 EFT is for anyone with a nervous system. It works across all ages, cultures, and belief systems, and can meet you wherever you are on your journey. Whether you're navigating daily overwhelm or deep trauma, physical pain or emotional wounds, self-doubt or anxiety, addiction or grief, relationship challenges or spiritual inquiry, manifesting abundance or actualizing your deepest calling, empowering higher consciousness or opening to love—EFT can support your healing and transformation. <a href="/#what-we-can-do-together" target="_blank">These are my core strengths and areas of focus</a>.
               </p>
+              <div className="gold-divider"></div>
               <h3>
                 Evidence and Experience
               </h3>
               <p>
                 EFT's effectiveness is well-backed by over <a href="https://eftuniverse.com/research-studies/" target="_blank">100 peer-reviewed scientific studies and trials</a>, and it is leading the modern western medical system in treating many ailments. Its power can be verified through your own personal experience—often in one session or even a few minutes.
               </p>
+              <div className="gold-divider"></div>
             </div>
 
             {/* What to Expect - Single Horizontal Card */}
