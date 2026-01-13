@@ -210,25 +210,35 @@ const Home = () => {
   }, [hash]);
 
   // -- CAROUSEL LOGIC --
+  /* src/pages/Home.js */
+
+  // -- CAROUSEL LOGIC --
   useEffect(() => {
     if (scrollContainerRef.current) {
       const container = scrollContainerRef.current;
-      const activeItem = container.children[activeIndex];
+      const totalItems = helpList.length;
       
-      if (activeItem) {
-        // 1. Get the item's distance from the start of the scrollable track
-        const itemOffset = activeItem.offsetLeft;
-        const itemWidth = activeItem.offsetWidth;
+      // We assume items have a reasonably consistent width. 
+      // This is safer than measuring offsetLeft during animations.
+      if (container.children.length > 0) {
         
-        // 2. Get the visible width of the container
+        // 1. Get properties of the target item
+        const activeItem = container.children[activeIndex];
+        
+        // 2. Determine scroll target
+        // We calculate: (Distance to Item) - (Half Container) + (Half Item)
+        // using offsetLeft is usually fine, but if it drifts, it means offsetLeft is incorrect due to padding/margin.
+        // Let's use a specialized 'scrollTo' that centers it.
+        
+        const itemLeft = activeItem.offsetLeft;
+        const itemWidth = activeItem.offsetWidth;
         const containerWidth = container.clientWidth;
         
-        // 3. Calculate exactly where to scroll so the item is in the middle
-        // Target = (Item Left) - (Half Window) + (Half Item)
-        const targetScrollLeft = itemOffset - (containerWidth / 2) + (itemWidth / 2);
+        const targetScroll = itemLeft - (containerWidth / 2) + (itemWidth / 2);
 
+        // 3. Execute Scroll
         container.scrollTo({
-          left: targetScrollLeft,
+          left: targetScroll,
           behavior: 'smooth'
         });
       }

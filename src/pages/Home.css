@@ -1193,7 +1193,7 @@
   .strip-fade-left, .strip-fade-right { width: 40px; }
 
   .featured-content { 
-    padding: 1rem .75rem; 
+    padding: .75rem .75rem; 
     max-width: 90%; 
     margin-top: -30px;
     margin-bottom: -15px;
@@ -1206,7 +1206,7 @@
   
   .featured-content h3 {
     font-size: 1.3rem; /* Slightly smaller text */
-    line-height: 1.4;
+    line-height: 1.5;
   }
 
   /* Mobile Active Thumbnail: Black background (not purple), but keep structure */
