@@ -38,7 +38,7 @@ export const helpList = [
   "Improve sleep quality and address insomnia",
   "Build confidence and clarity for important decisions, major life transitions, and daily living",
   "Men's issues and healthy masculine development",
-  "Develop conscious sexuality— channeling sexual energy into creativity, spiritual growth, and life force",
+  "Develop conscious sexuality and channel sexual energy into creativity, radiance, love, and life force",
   "Psychedelic preparation and integration",
   "Commune with nature and connect more deeply to elemental energy",
   "Experience deep friendship, understanding, and integrative support, and become that space for yourself and others",
