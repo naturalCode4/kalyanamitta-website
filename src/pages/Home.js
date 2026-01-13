@@ -135,18 +135,7 @@ const Home = () => {
       >
         <div className="grid grid-2">
           <div>
-            <p>Welcome, my name is Adin. It's a joy and honor to support you in this work. I offer free consultations and am happy to answer any questions you have beforehand.</p>
-            <div className="btn-group">
-              <Link to="/about" className="btn">Learn More</Link>
-              <Link 
-                to="/contact#get-in-touch" 
-                className="btn btn-outline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Get in Touch
-              </Link>
-            </div>
+            <p>Welcome, my name is Adin. It's a joy and honor to support you in this work. I offer 30-minute free consultations and am happy to discuss anything beforehand.</p>
           </div>
           <div className="about-photos">
             <div className="photo-container">
@@ -157,6 +146,17 @@ const Home = () => {
               ></img>
             </div>
           </div>
+          <div className="btn-group">
+              <Link to="/about" className="btn">Learn More</Link>
+              <Link 
+                to="/contact#get-in-touch" 
+                className="btn btn-outline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Get in Touch
+              </Link>
+            </div>
         </div>
       </Section>
       
