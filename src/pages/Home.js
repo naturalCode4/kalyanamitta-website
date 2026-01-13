@@ -216,27 +216,17 @@ const Home = () => {
   useEffect(() => {
     if (scrollContainerRef.current) {
       const container = scrollContainerRef.current;
-      const totalItems = helpList.length;
+      const activeItem = container.children[activeIndex];
       
-      // We assume items have a reasonably consistent width. 
-      // This is safer than measuring offsetLeft during animations.
-      if (container.children.length > 0) {
+      if (activeItem) {
+        // CALCULATE CENTER POSITION
+        // We use offsetLeft relative to the container scroll view
+        const itemCenter = activeItem.offsetLeft + (activeItem.offsetWidth / 2);
+        const containerCenter = container.clientWidth / 2;
         
-        // 1. Get properties of the target item
-        const activeItem = container.children[activeIndex];
-        
-        // 2. Determine scroll target
-        // We calculate: (Distance to Item) - (Half Container) + (Half Item)
-        // using offsetLeft is usually fine, but if it drifts, it means offsetLeft is incorrect due to padding/margin.
-        // Let's use a specialized 'scrollTo' that centers it.
-        
-        const itemLeft = activeItem.offsetLeft;
-        const itemWidth = activeItem.offsetWidth;
-        const containerWidth = container.clientWidth;
-        
-        const targetScroll = itemLeft - (containerWidth / 2) + (itemWidth / 2);
+        // Target scroll = Item Center - Half the Screen Width
+        const targetScroll = itemCenter - containerCenter;
 
-        // 3. Execute Scroll
         container.scrollTo({
           left: targetScroll,
           behavior: 'smooth'
@@ -248,11 +238,11 @@ const Home = () => {
   // 2. Keyboard Navigation
   useEffect(() => {
     const handleKeyDown = (e) => {
-      // Only navigate if the carousel section is roughly in view could be better, 
-      // but simplistic global listener works for now.
       if (e.key === 'ArrowLeft') {
+        e.preventDefault(); // STOP browser from scrolling natively
         scrollLeft();
       } else if (e.key === 'ArrowRight') {
+        e.preventDefault(); // STOP browser from scrolling natively
         scrollRight();
       }
     };
@@ -379,7 +369,7 @@ const Home = () => {
 
           </div>
           
-          <p className="carousel-hint mobile-only"><em>Tap to explore</em></p>
+          <p className="carousel-hint"><em>Swipe to explore</em></p>
         </div>
       </Section>
 
@@ -409,30 +399,35 @@ const Home = () => {
         title="About Adin"
         subtitle=""
       >
-        <div className="grid grid-2">
-          <div>
+
+        <div className="about-adin-home-container"> 
+          
+          <div className="about-text-content">
             <p>Welcome, my name is Adin. It's a joy and honor to support you in this work. I offer 30-minute free consultations and am happy to discuss anything beforehand.</p>
           </div>
+          
           <div className="about-photos">
             <div className="photo-container">
               <img 
                 src={pic5}
-                alt="Healing On Tap Pic" 
+                alt="Adin Portrait" 
                 className="about-image"
               />
             </div>
           </div>
-          <div className="btn-group">
-              <Link to="/about" className="btn">Learn More</Link>
-              <Link 
-                to="/contact#get-in-touch" 
-                className="btn btn-outline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Get in Touch
-              </Link>
-            </div>
+          
+          <div className="btn-group about-buttons">
+            <Link to="/about" className="btn">Learn More</Link>
+            <Link 
+              to="/contact#get-in-touch" 
+              className="btn btn-outline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get in Touch
+            </Link>
+          </div>
+
         </div>
       </Section>
       

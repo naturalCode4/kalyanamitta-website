@@ -1045,6 +1045,46 @@
   }
 }
 
+/* Fix About Adin Section Layout */
+.about-adin-home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem; /* Space between text, image, buttons */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-text-content p {
+  text-align: center !important; /* Force center alignment */
+}
+
+.about-buttons .btn {
+  min-width: 150px; /* Restore proper button width if it was squished */
+}
+
+/* Ensure Swipe Hint works */
+.carousel-hint {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Base state: Hide on Desktop */
+.mobile-only {
+  display: none;
+}
+
+/* Mobile Media Query Updates */
+@media (max-width: 768px) {
+  /* Show on Mobile */
+  .mobile-only {
+    display: block;
+  }
+}
+
 /* --- CAROUSEL STYLES (Version 5 - Fixed Cutoff & Jumping) --- */
 
 .carousel-container {
@@ -1182,7 +1222,11 @@
 
 .strip-item.active .mini-text {
   color: #fff;
-  font-weight: 600;
+  /* font-weight: 600; */
+}
+
+.carousel-hint {
+  display: none
 }
 
 /* Mobile */
@@ -1191,6 +1235,7 @@
   .strip-item { width: 130px; }
   .mini-card { height: 90px; }
   .strip-fade-left, .strip-fade-right { width: 40px; }
+  .carousel-hint {display: block}
 
   .featured-content { 
     padding: .75rem .75rem; 
