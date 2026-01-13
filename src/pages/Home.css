@@ -1064,19 +1064,6 @@
   min-width: 150px; /* Restore proper button width if it was squished */
 }
 
-/* Ensure Swipe Hint works */
-.carousel-hint {
-  font-size: 0.9rem;
-  color: #888;
-  margin-top: 1rem;
-  text-align: center;
-}
-
-/* Base state: Hide on Desktop */
-.mobile-only {
-  display: none;
-}
-
 /* Mobile Media Query Updates */
 @media (max-width: 768px) {
   /* Show on Mobile */
