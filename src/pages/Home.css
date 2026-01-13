@@ -1044,3 +1044,242 @@
     height: 25px;
   }
 }
+
+/* --- CAROUSEL STYLES (Version 5 - Fixed Cutoff & Jumping) --- */
+
+.carousel-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* 1. Featured Display (Top Big Card) */
+.featured-display {
+  margin-bottom: 0.5rem; /* Keep this tight */
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Reduce min-height so it doesn't force extra space if text is short */
+  /* min-height: 250px; */
+}
+
+.featured-content {
+  background: linear-gradient(135deg, #1e1e1e 0%, #4a1a5c 40%, #2d1b4e 100%);
+  width: 100%;
+  max-width: 500px;
+  min-height: 190px;
+  
+  /* TIGHTER PADDING (Desktop) */
+  padding: 2rem 1.5rem; /* Reduced from 3rem 2rem */
+  
+  border-radius: 20px;
+  border: 2px solid #d4af37;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; 
+}
+
+.featured-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0;
+  text-align: center;
+}
+
+/* 2. Carousel Strip Wrapper */
+.carousel-strip-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 30px
+}
+
+/* Fades */
+.strip-fade-left,
+.strip-fade-right {
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  width: 150px;
+  z-index: 20;
+  pointer-events: none;
+}
+.strip-fade-left { left: 0; background: linear-gradient(to right, #0f0f0f 30%, transparent 100%); }
+.strip-fade-right { right: 0; background: linear-gradient(to left, #0f0f0f 30%, transparent 100%); }
+
+/* The Strip */
+.carousel-strip {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  
+  /* Keep the internal padding to prevent top cutoff */
+  padding: 60px 50% 20px 50%;
+  
+  /* FIX SPACING: Remove the negative margin that was pulling it up */
+  margin-top: 0; 
+  
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+}
+.carousel-strip::-webkit-scrollbar { display: none; }
+
+/* The Items */
+.strip-item {
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 150px;
+  position: relative;
+  z-index: 1;
+}
+
+.mini-card {
+  height: 100px;
+  background: #1a1a1a;
+  /* Gold Border for inactive items */
+  border: 1px solid rgba(212, 175, 55, 0.5); 
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+}
+
+.mini-text {
+  font-size: 0.75rem;
+  color: #aaa;
+  line-height: 1.4;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* --- ACTIVE STATE --- */
+.strip-item.active {
+  z-index: 30;
+}
+
+.strip-item.active .mini-card {
+  /* Pop UP - now moves into the padding-top area defined in .carousel-strip */
+  transform: translateY(-30px) scale(1.15); 
+  
+  /* Active Theme */
+  background: linear-gradient(135deg, #4a1a5c 0%, #2d1b4e 100%);
+  border: 2px solid #d4af37;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+}
+
+.strip-item.active .mini-text {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .featured-display { min-height: auto; } /* Let mobile flow naturally */
+  .strip-item { width: 130px; }
+  .mini-card { height: 90px; }
+  .strip-fade-left, .strip-fade-right { width: 40px; }
+
+  .featured-content { 
+    padding: 1rem .75rem; 
+    max-width: 90%; 
+    margin-top: -30px;
+    margin-bottom: -15px;
+    min-height: none;}
+
+  .featured-display {
+    min-height: auto; /* Let it shrink to content */
+    margin-bottom: 0; /* Remove gap */
+  }
+  
+  .featured-content h3 {
+    font-size: 1.3rem; /* Slightly smaller text */
+    line-height: 1.4;
+  }
+
+  /* Mobile Active Thumbnail: Black background (not purple), but keep structure */
+  .strip-item.active .mini-card {
+    background: #1a1a1a;  /* Force black/dark grey */
+    background: linear-gradient(135deg, #2d2d2d, #1a1a1a); /* Subtle dark gradient */
+    /* Keep the pop/border, just change color */
+  }
+  
+  /* Ensure the text is visible on black */
+  .strip-item.active .mini-text {
+    color: #fff; /* White text is fine, or revert to #aaa if desired */
+  }
+}
+
+/* Tighter Spacing for Featured Card */
+.featured-display {
+  margin-bottom: 0.5rem;
+}
+
+/* Nav Area Wrapper - Flex to hold buttons and strip */
+.carousel-navigation-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Pushes arrows to edges, strip in middle */
+  gap: 1rem;
+  position: relative;
+  width: 100%;
+}
+
+/* Strip Wrapper Tightening */
+.carousel-strip-wrapper {
+  flex: 1; 
+  width: 100%; /* Ensure it fills the flex item */
+  overflow: hidden; /* Contains the strip */
+  /* Remove margins that might shift it */
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.nav-btn {
+  flex-shrink: 0; /* Prevents squishing */
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #d4af37;
+  color: #d4af37;
+  /* FORCE SQUARE/CIRCLE DIMENSIONS */
+  width: 40px !important;
+  height: 40px !important;
+  min-width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+  z-index: 10;
+  
+  /* Adjust vertical alignment if needed */
+}
+
+.nav-btn:hover {
+  background: #d4af37;
+  color: #000;
+  transform: scale(1.1);
+}
+
+/* Mobile Hiding */
+@media (max-width: 768px) {
+  .nav-btn { display: none; } /* Hide explicit buttons on mobile, swipe/tap is better */
+  
+  /* Reset spacing on mobile so it doesn't look cramped if buttons are gone */
+  .carousel-navigation-area { display: block; } 
+  .carousel-strip-wrapper { margin-top: -10px; }
+}

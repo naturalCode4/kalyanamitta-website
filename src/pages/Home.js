@@ -1,4 +1,180 @@
-import React, { useEffect } from 'react';
+// import React, { useEffect } from 'react';
+// import { useLocation } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+// import Section from '../components/Section';
+// import CTA from '../components/CTA';
+// import ServiceCard from '../components/ServiceCard';
+// import { offerings, helpList } from '../data/offerings';
+// import './Home.css';
+// import pic2 from '../assets/pic2.png';
+// import pic5 from '../assets/pic5.png';
+
+// const Home = () => {
+//   const { hash } = useLocation();
+
+//   // Handle scroll to hash on load with OFFSET
+//   useEffect(() => {
+//     if (hash) {
+//       setTimeout(() => {
+//         const element = document.getElementById(hash.replace('#', ''));
+//         if (element) {
+//           const headerOffset = 68; // Adjust this value if needed
+//           const elementPosition = element.getBoundingClientRect().top;
+//           const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+//           window.scrollTo({
+//             top: offsetPosition,
+//             behavior: "smooth"
+//           });
+//         }
+//       }, 100);
+//     } else {
+//       window.scrollTo(0, 0);
+//     }
+//   }, [hash]);
+
+//   return (
+//     <div className="home">
+//       {/* Hero Section */}
+//       <section className="hero">
+//         <div className="container">
+//           <div className="hero-content">
+//             <h1>Healing On Tap</h1>
+            
+//             <div className="hero-manifesto">
+//               <div className="manifesto-item">
+//                 <span className="manifesto-text">Dissolve what limits you. See your life clearly. {window.innerWidth > 768 && <br />}Restore true connection.</span>
+//                 {/* <span className="manifesto-text">Dissolve what limits you. Awaken your boundless wisdom. Restore true connection.</span> */}
+//               </div>
+              
+//               <div className="manifesto-connector"></div>
+              
+//               <div className="manifesto-item">
+//                 <span className="manifesto-text">Healing is your nature. Transmute difficult emotions. {window.innerWidth > 768 && <br />}Liberate heart, body, and mind.</span>
+//               </div>
+              
+//               <div className="manifesto-connector"></div>
+              
+//               <div className="manifesto-item">
+//                 <span className="manifesto-text">Embody sovereignty. Unmute your soul. {window.innerWidth > 768 && <br />}Remember your power.</span>
+//               </div>
+//             </div>
+
+//           </div>
+//         </div>
+//       </section>
+
+//        {/* About Healing On Tap */}
+//        <Section 
+//         variant="rainbow" 
+//         title="About Healing On Tap"
+//         subtitle=""
+//       >
+//         <div className="grid grid-2">
+//           <div>
+//             <p>This work supports embodied well-being, love, empowerment, all kinds of connection, getting desired outcomes, and alignment with clear wisdom.</p>
+//             <p>I offer EFT (Emotional Freedom Techniques, or Tapping), Reiki Energy Healing, and Spiritual Counseling and Practices (Yoga, Breathwork, Sound Healing, and Meditation). My guidance and modalities are integrative and rooted in direct experience and teachings from spiritual traditions.</p>
+//             <p>I believe that our bodies, hearts, energy, and the universe itself are fundamentally good and possess inherent healing properties. I'll help you realize and activate this in your life. My role is to offer loving presence, transformative modalities, and guidance—awakening to the basic goodness already present within you and actualizing your natural capacity for healing, love, spiritual insight, and transformation.</p>
+//             <p>My mission is to support beings in any way I can. If you're curious about how we can work together, so am I!</p>
+//           </div>
+//           <div className="about-photos">
+//             <div className="photo-container">
+//               <img 
+//                 src={pic2}
+//                 alt="Healing On Tap Pic" 
+//                 className="about-image" 
+//               />
+//             </div>
+//           </div>
+//         </div>
+//       </Section>
+      
+//       {/* Help List Section */}
+//       <Section
+//         id="what-we-can-do-together"
+//         variant="dark" 
+//         title="What We Can Do Together"
+//         subtitle="These are my core strengths and areas of focus. The beautiful thing is they're all interconnected— transform in one area and you'll often find the rest alchemize and heal together."
+//       >
+//         <div className="help-section">
+//           <ul className="help-list">
+//             {helpList.map((item, index) => (
+//               <li key={index} className="help-item">
+//                 {item}
+//               </li>
+//             ))}
+//           </ul>
+//         </div>
+//       </Section>
+
+//       {/* Offerings Section */}
+//       <Section 
+//         variant="dark" 
+//         title="Offerings"
+//         subtitle=""
+//       >
+//         <div className="grid grid-cards">
+//           {offerings.map((offering) => (
+//             <ServiceCard
+//               key={offering.id}
+//               title={offering.title}
+//               availability={offering.availability}
+//               content={offering.content}
+//               learnMoreLink={`/${offering.id}`}
+//               variant="rainbow"
+//             />
+//           ))}
+//         </div>
+//       </Section>
+
+//       {/* About Adin */}
+//       <Section 
+//         variant="rainbow" 
+//         title="About Adin"
+//         subtitle=""
+//       >
+//         <div className="grid grid-2">
+//           <div>
+//             <p>Welcome, my name is Adin. It's a joy and honor to support you in this work. I offer 30-minute free consultations and am happy to discuss anything beforehand.</p>
+//           </div>
+//           <div className="about-photos">
+//             <div className="photo-container">
+//               <img 
+//                 src={pic5}
+//                 alt="Healing On Tap Pic" 
+//                 className="about-image"
+//               ></img>
+//             </div>
+//           </div>
+//           <div className="btn-group">
+//               <Link to="/about" className="btn">Learn More</Link>
+//               <Link 
+//                 to="/contact#get-in-touch" 
+//                 className="btn btn-outline"
+//                 target="_blank"
+//                 rel="noopener noreferrer"
+//               >
+//                 Get in Touch
+//               </Link>
+//             </div>
+//         </div>
+//       </Section>
+      
+//       {/* CTA Section */}
+//       <Section 
+//         variant="dark" 
+//         title="Ready to Begin?"
+//         subtitle="When you're ready, I'm here. Book a session, schedule a free 30-minute consultation, or reach out—I'm happy to answer any questions."
+//       >
+//         <CTA />
+//       </Section>
+//     </div>
+//   );
+// };
+
+// export default Home;
+
+import React, { useEffect, useState, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Section from '../components/Section';
@@ -11,27 +187,76 @@ import pic5 from '../assets/pic5.png';
 
 const Home = () => {
   const { hash } = useLocation();
+  
+  // -- CAROUSEL STATE --
+  const [activeIndex, setActiveIndex] = useState(0);
+  const scrollContainerRef = useRef(null);
 
-  // Handle scroll to hash on load with OFFSET
+  // Handle scroll to hash
   useEffect(() => {
     if (hash) {
       setTimeout(() => {
         const element = document.getElementById(hash.replace('#', ''));
         if (element) {
-          const headerOffset = 68; // Adjust this value if needed
+          const headerOffset = 68;
           const elementPosition = element.getBoundingClientRect().top;
           const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: "smooth"
-          });
+          window.scrollTo({ top: offsetPosition, behavior: "smooth" });
         }
       }, 100);
     } else {
       window.scrollTo(0, 0);
     }
   }, [hash]);
+
+  // -- CAROUSEL LOGIC --
+  useEffect(() => {
+    if (scrollContainerRef.current) {
+      const container = scrollContainerRef.current;
+      const activeItem = container.children[activeIndex];
+      
+      if (activeItem) {
+        // 1. Get the item's distance from the start of the scrollable track
+        const itemOffset = activeItem.offsetLeft;
+        const itemWidth = activeItem.offsetWidth;
+        
+        // 2. Get the visible width of the container
+        const containerWidth = container.clientWidth;
+        
+        // 3. Calculate exactly where to scroll so the item is in the middle
+        // Target = (Item Left) - (Half Window) + (Half Item)
+        const targetScrollLeft = itemOffset - (containerWidth / 2) + (itemWidth / 2);
+
+        container.scrollTo({
+          left: targetScrollLeft,
+          behavior: 'smooth'
+        });
+      }
+    }
+  }, [activeIndex]);
+
+  // 2. Keyboard Navigation
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      // Only navigate if the carousel section is roughly in view could be better, 
+      // but simplistic global listener works for now.
+      if (e.key === 'ArrowLeft') {
+        scrollLeft();
+      } else if (e.key === 'ArrowRight') {
+        scrollRight();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
+  const scrollLeft = () => {
+    setActiveIndex(prev => (prev > 0 ? prev - 1 : helpList.length - 1));
+  };
+
+  const scrollRight = () => {
+    setActiveIndex(prev => (prev < helpList.length - 1 ? prev + 1 : 0));
+  };
 
   return (
     <div className="home">
@@ -43,20 +268,15 @@ const Home = () => {
             
             <div className="hero-manifesto">
               <div className="manifesto-item">
-                <span className="manifesto-text">Dissolve what limits you. See your life clearly. {window.innerWidth > 768 && <br />}Restore true connection.</span>
-                {/* <span className="manifesto-text">Dissolve what limits you. Awaken your boundless wisdom. Restore true connection.</span> */}
+                <span className="manifesto-text">Dissolve what limits you. See your life clearly. <br className="desktop-break" />Restore true connection.</span>
               </div>
-              
               <div className="manifesto-connector"></div>
-              
               <div className="manifesto-item">
-                <span className="manifesto-text">Healing is your nature. Transmute difficult emotions. {window.innerWidth > 768 && <br />}Liberate heart, body, and mind.</span>
+                <span className="manifesto-text">Healing is your nature. Transmute difficult emotions. <br className="desktop-break" />Liberate heart, body, and mind.</span>
               </div>
-              
               <div className="manifesto-connector"></div>
-              
               <div className="manifesto-item">
-                <span className="manifesto-text">Embody sovereignty. Unmute your soul. {window.innerWidth > 768 && <br />}Remember your power.</span>
+                <span className="manifesto-text">Embody sovereignty. Unmute your soul. <br className="desktop-break" />Remember your power.</span>
               </div>
             </div>
 
@@ -89,21 +309,67 @@ const Home = () => {
         </div>
       </Section>
       
-      {/* Help List Section */}
+      {/* Help List Section - CAROUSEL */}
       <Section
         id="what-we-can-do-together"
         variant="dark" 
         title="What We Can Do Together"
-        subtitle="These are my core strengths and areas of focus. We can address them through EFT, energy work, spiritual counseling, practices, or a combination. The beautiful thing is they're all interconnected—transform in one area and you'll often find the rest alchemize and heal together."
+        subtitle="These are my core strengths and areas of focus. The beautiful thing is they're all interconnected— grow in one area and you'll often find the rest alchemize and heal together"
       >
-        <div className="help-section">
-          <ul className="help-list">
-            {helpList.map((item, index) => (
-              <li key={index} className="help-item">
-                {item}
-              </li>
-            ))}
-          </ul>
+        <div className="carousel-container">
+
+          {/* Main Featured Card */}
+          <div className="featured-display">
+            <div className="featured-content">
+              <h3>{helpList[activeIndex]}</h3>
+            </div>
+          </div>
+
+          {/* Navigation Area (Arrows + Strip) */}
+          <div className="carousel-navigation-area">
+            
+            {/* Left Button */}
+            <button 
+              className="nav-btn prev-btn desktop-only" 
+              onClick={scrollLeft}
+              aria-label="Previous Item"
+            >
+              {/* Thicker Entity or SVG */}
+              <strong>&#10094;</strong> 
+            </button>
+
+            {/* Navigation Strip */}
+            <div className="carousel-strip-wrapper">
+              <div className="strip-fade-left"></div>
+              <div className="strip-fade-right"></div>
+
+              <div className="carousel-strip" ref={scrollContainerRef}>
+                {helpList.map((item, index) => (
+                  <div 
+                    key={index} 
+                    className={`strip-item ${index === activeIndex ? 'active' : ''}`}
+                    onClick={() => setActiveIndex(index)}
+                  >
+                    <div className="mini-card">
+                      <span className="mini-text">{item}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Right Button */}
+            <button 
+              className="nav-btn next-btn desktop-only" 
+              onClick={scrollRight}
+              aria-label="Next Item"
+            >
+              <strong>&#10095;</strong>
+            </button>
+
+          </div>
+          
+          <p className="carousel-hint mobile-only"><em>Tap to explore</em></p>
         </div>
       </Section>
 
@@ -128,7 +394,7 @@ const Home = () => {
       </Section>
 
       {/* About Adin */}
-      <Section 
+      <Section
         variant="rainbow" 
         title="About Adin"
         subtitle=""
@@ -143,7 +409,7 @@ const Home = () => {
                 src={pic5}
                 alt="Healing On Tap Pic" 
                 className="about-image"
-              ></img>
+              />
             </div>
           </div>
           <div className="btn-group">
