@@ -28,11 +28,11 @@ const Portfolio = () => {
       title: "The Mobile Sanctuary - In Progress",
       role: "Developer & Designer",
       description: "Developing a custom website for a local business' offerings. Client is asking for a simple, mobile-friendly site focused on a soothing user experience.",
-      link: "#", // ADD LINK HERE
+      link: null, // ADD LINK HERE
       linkText: "Coming Soon"
     },
     {
-      title: "University Credit",
+      title: "California Educational Consultant Group Inc.",
       role: "Lead Software Engineer, Designer, and Product Manager",
       description: "Spearheaded end-to-end development of complex university administration apps (React, Node, Mongo, AWS). Managed cross-functional teams of developers, designers, and business owners through architecture, developing a complex interface, build, and deployment. Managed DevOps, AWS infrastructure, and PCI L1 security compliance for sensitive data.",
       link: null, 
@@ -60,7 +60,7 @@ const Portfolio = () => {
       linkText: "Visit Website"
     },
     {
-      title: "Music Genius",
+      title: "Music Genius - In Progress",
       role: "Developer and Designer",
       description: "Created an elegant interface mimicking audio equipment. Improved Spotify API performance by enhancing the search algorithm, fetching and playing music based on user preferences",
       link: "https://musicgenius.onrender.com/",
@@ -68,10 +68,10 @@ const Portfolio = () => {
     },
     {
       title: "Devmountain",
-      role: "React.js Specialist",
-      description: "Completed an intensive full-stack engineering program specializing in React, Node.js, and SQL. Collaborated in teams to build production-ready applications, mastering OOP principles, testing, and modern industry standards.",
-      link: "https://devmountain.com/", 
-      linkText: "View Program"
+      role: "React.JS Specialization Graduate",
+      description: "Completed a 16 week intensive full-stack engineering program specializing in React, Node.js, and SQL. Collaborated in teams to build production-ready applications, mastering OOP principles, testing, and modern industry standards.",
+      link: null, 
+      linkText: null
     },
     {
       title: "Wesleyan University",
@@ -86,7 +86,7 @@ const Portfolio = () => {
     <div className="portfolio-page">
       <Helmet>
         <title>Adin | Web Developer Portfolio</title>
-        <meta name="description" content="Portfolio of Adin - Specialist in React, Web Design, and Audio Engineering." />
+        <meta name="description" content="Portfolio of Adin - Versatile with core strength in Web Development • React.js • UI/UX Design • Fullstack Applications" />
         <meta property="og:title" content="Adin | Web Developer Portfolio" />
         <meta property="og:description" content="View my latest web development projects and resume." />
         <meta name="robots" content="noindex" /> {/* Optional: Hide from Google if you only want to send it directly */}
@@ -105,13 +105,15 @@ const Portfolio = () => {
       {/* Projects Grid */}
       <div className="container portfolio-section">
         <div className="portfolio-grid">
-          {projects.map((project, index) => (
+        {projects.map((project, index) => (
             <div key={index} className="portfolio-card">
               <span className="card-number">0{index + 1}</span>
               <h3>{project.title}</h3>
               <h4>{project.role}</h4>
               <p>{project.description}</p>
-              {project.link && (
+              
+              {/* LOGIC UPDATE: Handle Link vs No-Link Text */}
+              {project.link ? (
                 <a 
                   href={project.link} 
                   target="_blank" 
@@ -120,7 +122,12 @@ const Portfolio = () => {
                 >
                   {project.linkText} →
                 </a>
-              )}
+              ) : project.linkText ? (
+                <span className="portfolio-no-link">
+                  {project.linkText}
+                </span>
+              ) : null}
+              
             </div>
           ))}
         </div>
@@ -132,24 +139,27 @@ const Portfolio = () => {
           <h2>Resume</h2>
           <p>Download my full resume for detailed work history and technical skills.</p>
           
-          <div className="resume-actions">
-            <a 
-              href={RESUME_PATH} 
-              download="Adin_Resume.pdf" 
-              className="btn" // Uses your existing gold button class
-            >
-              Download PDF
-            </a>
-            
-            <a 
-              href={RESUME_PATH} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="btn btn-outline"
-            >
-              View in Browser
-            </a>
+          <div className="cta-section"> {/* WRAPPER ADDED */}
+            <div className="cta-buttons">
+              <a 
+                href={RESUME_PATH} 
+                download="Adin_Resume.pdf" 
+                className="btn"
+              >
+                Download PDF
+              </a>
+              
+              <a 
+                href={RESUME_PATH} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn btn-outline"
+              >
+                View in Browser
+              </a>
+            </div>
           </div>
+
         </div>
       </section>
 

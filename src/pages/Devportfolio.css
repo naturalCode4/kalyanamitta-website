@@ -49,7 +49,7 @@
   
   /* --- Portfolio Grid --- */
   .portfolio-section {
-    padding: 6rem 0;
+    padding: 4rem 0;
   }
   
   .portfolio-grid {
@@ -90,12 +90,25 @@
   }
   
   .portfolio-card h4 {
-    color: #e8e8e8; /* Much lighter grey (was #a0aec0) */
-    font-size: 0.95rem; /* Slight bump in size */
+    color: #ffffff; /* Bright white for contrast */
+    font-family: 'Inter', sans-serif; /* Switch to clean sans-serif */
+    font-size: 1rem;
+    font-weight: 700; /* Bold */
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     margin-bottom: 1rem;
-    font-weight: 600; /* Added weight for clarity */
+    opacity: 0.9;
+    border-bottom: 1px solid #d4af37; /* Optional: adds a nice separator line */
+    display: inline-block;
+    padding-bottom: 0.5rem;
+  }
+
+  .portfolio-no-link {
+    color: #888;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: auto; /* Pushes it to bottom like the button */
+    display: block;
   }
   
   .portfolio-card p {
@@ -149,5 +162,29 @@
     }
     .portfolio-grid {
       grid-template-columns: 1fr;
+    }
+
+    .portfolio-hero {
+      padding-bottom: 2rem; /* Reduced from 4rem */
+    }
+    .portfolio-section {
+      padding-top: 2rem; /* Reduced from 6rem */
+      padding-bottom: 2rem; /* Reduced from 6rem */
+    }
+  
+    .resume-section {
+      padding-top: 3rem; /* Reduced from 6rem */
+      padding-bottom: 3rem;
+    }
+
+    .resume-actions .btn {
+      padding: 0.5rem 1rem; /* Less padding */
+      font-size: 0.9rem;    /* Smaller text */
+      min-width: auto;      /* Remove minimum width constraint if any */
+    }
+    
+    /* Ensure they stack if needed, or stay side-by-side but smaller */
+    .resume-actions {
+      gap: 0.5rem;
     }
   }
