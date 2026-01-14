@@ -16,6 +16,7 @@ const EFT = () => {
         <meta name="description" content="Rapidly process emotions, regulate your nervous system, heal even major issues, and create the life you desire" />
         <meta property="og:title" content="EFT – Emotional Freedom Techniques | Rapidly heal yourself" />
         <meta property="og:description" content="Rapidly process emotions, regulate your nervous system, heal even major issues, and create the life you desire" />
+        <meta property="og:url" content="https://healing-on-tap.com/EFT-emotional-freedom-techniques" />
       </Helmet>
       {/* Hero Section */}
       <section className="EFT-emotional-freedom-techniques-hero">

@@ -15,6 +15,7 @@ const SpiritualPractice = () => {
         <meta name="description" content="Build the wisdom and compassion needed to live well. Be seen and heard as you are. Learn and deepen mind-body practices." />
         <meta property="og:title" content="Spiritual Counseling and Practices | Deep Support for Your Life and Spiritual Path" />
         <meta property="og:description" content="Build the wisdom and compassion needed to live well. Be seen and heard as you are. Learn and deepen mind-body practices." />
+        <meta property="og:url" content="https://healing-on-tap.com/spiritual-practice" />
       </Helmet>
       {/* Hero Section */}
       <section className="spiritual-practice-hero">

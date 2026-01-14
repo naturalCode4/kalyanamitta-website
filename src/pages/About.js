@@ -17,6 +17,7 @@ const About = () => {
         <meta name="description" content="Learn more about Adin Kramer and Healing On Tap. Life story, approach, testimonials, and more" />
         <meta property="og:title" content="About Adin and This Powerful Healing Practice" />
         <meta property="og:description" content="Learn more about Adin Kramer and Healing On Tap. Life story, approach, testimonials, and more." />
+        <meta property="og:url" content="https://healing-on-tap.com/about" />
       </Helmet>
       {/* Hero Section */}
       <section className="about-hero">
@@ -30,18 +31,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* About Adin */}
-      {/* <section id="about-adin" className="about-adin section-rainbow">
-        <div className="container">
-          <div className="about-adin-content">
-            <h2>About Adin</h2>
-            <div className="about-image">
-              <img 
-                src={pic5}
-                alt="Healing On Tap Pic" 
-                className="about-image" 
-              />
-            </div> */}
       <section id="about-adin" className="about-adin section-rainbow">
         <div className="container">
           <h2>About Adin</h2>
@@ -55,6 +44,7 @@ const About = () => {
                 alt="Adin Portrait" 
                 className="about-profile-pic" 
               />
+              <p className="photo-credit">Headshot by Sarah Bork Hamilton photography. License coming soon.</p>
             </div>
             <div className="about-adin-text">
               <p>

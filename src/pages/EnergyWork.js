@@ -15,6 +15,7 @@ const EnergyWork = () => {
         <meta name="description" content="Receive universal life force energy to promote healing, relaxation, balance, and transformation" />
         <meta property="og:title" content="Reiki Energy Healing | Universal Life Force Energy is on Tap" />
         <meta property="og:description" content="Receive universal life force energy to promote healing, relaxation, balance, and transformation" />
+        <meta property="og:url" content="https://healing-on-tap.com/energy-work" />
       </Helmet>
       {/* Hero Section */}
       <section className="energy-work-hero">

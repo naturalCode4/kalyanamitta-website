@@ -45,6 +45,7 @@ const Rates = () => {
         <meta name="description" content="View pricing for single sessions and packages for EFT, Reiki, and Counseling." />
         <meta property="og:title" content="Rates & Packages | Healing On Tap" />
         <meta property="og:description" content="View pricing for single sessions and packages for EFT, Reiki, and Counseling." />
+        <meta property="og:url" content="https://healing-on-tap.com/rates" />
       </Helmet>
       {/* Hero Section */}
       <section className="rates-hero">

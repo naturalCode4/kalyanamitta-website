@@ -287,8 +287,8 @@
     float: none;
     margin: 0 auto 1rem auto;
     margin-top: 3rem;
+    width: 350px;
     max-width: 100%; /* Allow it to fill width if needed, or stick to 300px */
-    width: 300px;
     align-items: center; /* Center credit on mobile */
   }
   
@@ -301,7 +301,7 @@
 .energy-image-left {
   float: left;
   width: 100%;
-  max-width: 475px; /* Adjust size as desired */
+  max-width: 500px; /* Adjust size as desired */
   margin-right: 2rem;
   margin-bottom: 0rem;
   margin-top: 0.25rem;
@@ -316,7 +316,7 @@
   .energy-image-left {
     float: none;
     margin: 2rem auto; /* Space it out nicely */
-    max-width: 300px;
+    max-width: 350px;
     display: block;
   }
 }
