@@ -42,7 +42,7 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} Healing On Tap. All rights reserved.
           </div>
           <div className="developer-credit">
-            Website by <a href="#" className="dev-link">Adin</a>
+            Website by <a href="/devportfolio" className="dev-link">Adin</a>
           </div>
         </div>
       </div>

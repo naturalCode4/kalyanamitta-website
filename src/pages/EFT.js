@@ -64,20 +64,20 @@ const EFT = () => {
               <p>
                 EFT boils down Chinese Medicine, Neuroscience, Positive Psychology, and more into a highly effective yet simple modality that one can learn to do anytime, anywhere. Practitioners may also draw upon methodologies from Internal Family Systems (IFS), Hypnotherapy, Cognitive Behavioral Therapy (CBT), EMDR, Mindfulness, Polyvagal Theory, Neuro-Linguistic Programming (NLP), Shamanism, Spiritual Teachings, and more. At its core, EFT embodies the wisdom of Love, Acceptance, Letting Go, and your boundless potential as a creator being.
               </p>
+              <p>
+                Tapping signals safety to the brain, as it effectively calms the amygdala's 'fight, flight, or freeze' response. So the nervous system doesn't follow its usual sympathetic response to an issue, but actually can process, release, and update. By tapping on each tapping point, we balance each meridian (an energy channel running through the body that governs essential aspect of our body, mind, and spirit)– by sending an electrical impulse through the entire channel.
+              </p>
               {/* --- NEW IMAGE (Float Left) --- */}
               <div className="eft-image-left">
                 <img 
                   src={pic8}
                   alt="EFT Brain Impact" 
                   className="eft-pic" 
-                />
-                <p className="photo-credit">Image from The Center of Traditional Taoist Studies</p>
+                  />
+                <p className="photo-credit">The Meridian Channels. Image from The Center of Traditional Taoist Studies</p>
               </div>
               <p>
                 EFT works on the neurological, subconscious, and energetic level. Shifts are enduring once thoroughly addressed, as neural networks are reprogrammed and the nervous system releases and resolves built-up issues. 
-              </p>
-              <p>
-                Tapping signals safety to the brain, as it effectively calms the amygdala's 'fight, flight, or freeze' response. So the nervous system doesn't follow its usual sympathetic response to an issue, but actually can process, release, and update. By tapping on each tapping point, we balance each meridian (an energy channel running through the body that governs essential aspect of our body, mind, and spirit)– by sending an electrical impulse through the entire channel.
               </p>
               <p>
               For some issues, EFT may provide relief very quickly, while with other issues we may see long-lasting shifts emerge over multiple sessions. How quickly you experience benefits can vary based on individual factors and the nature of your concerns. Some people get immediate relief and resolution, while others may notice gradual improvements over time. Multiple sessions may be recommended for deeper or ongoing issues.

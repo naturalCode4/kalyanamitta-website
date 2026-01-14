@@ -1,0 +1,153 @@
+/* Dark Theme Variables */
+.portfolio-page {
+    background-color: #0f0f0f;
+    min-height: 100vh;
+    color: #e8e8e8;
+  }
+  
+  /* --- Hero Section --- */
+  .portfolio-hero {
+    background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+    color: white;
+    padding: 8rem 0 4rem;
+    text-align: center;
+    border-bottom: 2px solid #d4af37;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Grainy Pattern Overlay (Matches Contact Page) */
+  .portfolio-hero::before {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23d4af37" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="%23d4af37" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="%23d4af37" opacity="0.05"/><circle cx="10" cy="50" r="0.5" fill="%23d4af37" opacity="0.05"/><circle cx="90" cy="30" r="0.5" fill="%23d4af37" opacity="0.05"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+    pointer-events: none;
+  }
+  
+  .portfolio-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: white;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .portfolio-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.95;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #b8b8b8;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* --- Portfolio Grid --- */
+  .portfolio-section {
+    padding: 6rem 0;
+  }
+  
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+  }
+  
+  /* Card Style */
+  .portfolio-card {
+    background: #1a1a1a;
+    border: 1px solid #2d3748;
+    border-radius: 12px;
+    padding: 2rem;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .portfolio-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: rgba(212, 175, 55, 0.2);
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  
+  .portfolio-card h3 {
+    color: #d4af37;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .portfolio-card h4 {
+    color: #e8e8e8; /* Much lighter grey (was #a0aec0) */
+    font-size: 0.95rem; /* Slight bump in size */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    font-weight: 600; /* Added weight for clarity */
+  }
+  
+  .portfolio-card p {
+    color: #e8e8e8;
+    font-size: 1rem;
+    line-height: 1.6;
+    flex-grow: 1; /* Pushes button down if needed */
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Links */
+  .portfolio-link {
+    display: inline-block;
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+    width: fit-content;
+  }
+  
+  .portfolio-link:hover {
+    border-bottom-color: #d4af37;
+    letter-spacing: 0.5px;
+  }
+  
+  /* --- Resume Section --- */
+  .resume-section {
+    background: #151515;
+    padding: 6rem 0;
+    text-align: center;
+    border-top: 1px solid #2d3748;
+  }
+  
+  .resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .resume-actions {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .portfolio-hero h1 {
+      font-size: 2.5rem;
+    }
+    .portfolio-grid {
+      grid-template-columns: 1fr;
+    }
+  }

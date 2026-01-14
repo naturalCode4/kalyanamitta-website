@@ -11,6 +11,7 @@ import SpiritualPractice from './pages/SpiritualPractice';
 import EFT from './pages/EFT';
 import Rates from './pages/Rates';
 import Contact from './pages/Contact';
+import Devportfolio from './pages/Devportfolio';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="/EFT-emotional-freedom-techniques" element={<EFT />} />
             <Route path="/rates" element={<Rates />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/devportfolio" element={<Devportfolio />} />
             <Route path="*" element={<Home />} />
           </Routes>
         </main>
