@@ -4,6 +4,7 @@ import CalendlyEmbed from '../components/CalendlyEmbed';
 import sendEmail from '../utilities/emailUtils'; // Import the utility
 import CustomAlert from '../components/CustomAlert'; // Import the custom alert
 import './Contact.css';
+import { Helmet } from 'react-helmet'; 
 
 const Contact = () => {
   const [alertMessage, setAlertMessage] = useState('');
@@ -36,6 +37,12 @@ const Contact = () => {
 
   return (
     <div className="contact">
+      <Helmet>
+        <title>Book a Session or Get In Touch | Healing On Tap</title>
+        <meta name="description" content="You are loved. Get started with EFT, Reiki Energy Healing, or Spiritual Counseling. Get in Touch" />
+        <meta property="og:title" content="Book a Session or Get In Touch | Healing On Tap" />
+        <meta property="og:description" content="You are loved. Get started with EFT, Reiki Energy Healing, or Spiritual Counseling. Get in Touch" />
+      </Helmet>
       {/* Combined Rainbow Section */}
       <section id="booking" className="contact-content section-rainbow">
         <div className="container content-items">

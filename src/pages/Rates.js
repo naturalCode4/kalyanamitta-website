@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './Rates.css';
 import Section from '../components/Section';
 import CTA from '../components/CTA';
+import { Helmet } from 'react-helmet';
 
 const Rates = () => {
 
@@ -39,7 +40,12 @@ const Rates = () => {
 
   return (
     <div className="rates">
-
+      <Helmet>
+        <title>Rates & Packages | Healing On Tap</title>
+        <meta name="description" content="View pricing for single sessions and packages for EFT, Reiki, and Counseling." />
+        <meta property="og:title" content="Rates & Packages | Healing On Tap" />
+        <meta property="og:description" content="View pricing for single sessions and packages for EFT, Reiki, and Counseling." />
+      </Helmet>
       {/* Hero Section */}
       <section className="rates-hero">
         <div className="container">
@@ -100,53 +106,6 @@ const Rates = () => {
           
         </div>
       </section>
-      {/* <section className="pricing-timeline-section">
-        <div className="container">
-          <div className="flexible-pricing">
-            <div className="flexible-content">
-              <h3>Open Reciprocity Sliding Scale</h3>
-              <p className="flexible-label">$70-200 for 90 minutes</p>
-              <p className="subtitle">I offer flexible pricing so that this work is accessible to everyone. Choose an amount that feels aligned—honoring this work and what's sustainable for you. All amounts are welcome and honored.</p>
-              <p className="subtitle">For those with financial ease, giving generously honors the exchange of energy between us, allows me to thrive doing what I love, supports this work in the world, and makes it accessible to others.</p>
-            </div>
-          </div>
-          <div className="pricing-timeline">
-            <div className="timeline-point">
-              <div className="timeline-number">1</div>
-              <div className="timeline-content">
-                <h3>$70</h3>
-                <p className="timeline-label">Affordable Range</p>
-                <p className="timeline-description">Accessible rate— your presence and commitment matter most</p>
-              </div>
-            </div>
-            
-            <div className="timeline-point">
-              <div className="timeline-number">2</div>
-            </div>
-
-            <div className="timeline-point">
-              <div className="timeline-number">3</div>
-              <div className="timeline-content">
-                <h3>$200</h3>
-                <p className="timeline-label">Full-Value Range</p>
-                <p className="timeline-description">Reciprocates the significance of this work and supports accessibility</p>
-              </div>
-            </div>
-          </div>
-          
-          <div className="timeline-middle-text">
-            <div className="middle-text-content">
-              <h3>$125</h3>
-              <p className="middle-text-label">Suggested Rate</p>
-              <p className="middle-text-description"></p>
-            </div>
-          </div>
-          
-        </div>
-      </section> */}
-
-
-      {/* Packages Section */}
 
       <section className="packages-section">
         <div className="container">
@@ -187,21 +146,6 @@ const Rates = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      {/* <section className="rates-cta">
-        <div className="container">
-          <div className="cta-content">
-            <h2>Ready to Begin?</h2>
-            <p className="subtitle">
-              You can schedule a session with me directly, or get in touch if you'd like to discuss anything. I'm more than happy to answer any questions and help you find the next step for your path.
-            </p>
-            <div className="cta-buttons">
-              <Link to="/contact" className="btn">Book Your Session</Link>
-              <Link to="/contact" className="btn btn-outline">Get in Touch</Link>
-            </div>
-          </div>
-        </div>
-      </section> */}
       <Section 
         variant="dark" 
         title="Ready to Begin?"

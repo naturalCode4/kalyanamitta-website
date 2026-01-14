@@ -4,13 +4,20 @@ import './About.css';
 import GoogleReviews from '../components/GoogleReviews';
 import Section from '../components/Section';
 import CTA from '../components/CTA';
-import pic5 from '../assets/pic5.png';
+import pic5 from '../assets/pic5.jpg';
+import { Helmet } from 'react-helmet';
 
 
 const About = () => {
 
   return (
     <div className="about">
+      <Helmet>
+        <title>About Adin and This Powerful Healing Practice</title>
+        <meta name="description" content="Learn more about Adin Kramer and Healing On Tap. Life story, approach, testimonials, and more" />
+        <meta property="og:title" content="About Adin and This Powerful Healing Practice" />
+        <meta property="og:description" content="Learn more about Adin Kramer and Healing On Tap. Life story, approach, testimonials, and more." />
+      </Helmet>
       {/* Hero Section */}
       <section className="about-hero">
         <div className="container">
@@ -110,7 +117,7 @@ const About = () => {
                 As a male practitioner committed to both spiritual practice and healing work (which are not separate), I'm here to show that this path is ours to walk too. I'm here to help dissolve the internal barriers we've accumulated. This work isn't gendered—it's human and transcendent. It is for all to claim, regardless of gender or cultural conditioning.
               </p>
               <p>
-                To any man who has felt the pull toward transformation, emotional healing, and wellness— but been challenged by questions of cultural acceptability, wondered where there is a space for you, or whether you are even capable of it: Let's walk this path together.
+                To any man who has felt the pull toward transformation and healing— but been challenged by questions of cultural acceptability, wondered where there is a space for you, or whether you are even capable of it: Let's walk this path together.
               </p>
               <div className="gold-divider"></div>
               <h3>

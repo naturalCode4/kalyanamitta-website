@@ -4,11 +4,18 @@ import './EFT.css';
 import Section from '../components/Section';
 import CTA from '../components/CTA';
 import pic7 from '../assets/pic7.jpg';
+import { Helmet } from 'react-helmet'
 
 const EFT = () => {
 
   return (
     <div className="emotional-processing">
+      <Helmet>
+        <title>EFT – Emotional Freedom Techniques | Rapidly heal yourself</title>
+        <meta name="description" content="Rapidly process emotions, regulate your nervous system, heal even major issues, and create the life you desire" />
+        <meta property="og:title" content="EFT – Emotional Freedom Techniques | Rapidly heal yourself" />
+        <meta property="og:description" content="Rapidly process emotions, regulate your nervous system, heal even major issues, and create the life you desire" />
+      </Helmet>
       {/* Hero Section */}
       <section className="emotional-processing-hero">
         <div className="container">

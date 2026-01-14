@@ -4,17 +4,24 @@ import Section from '../components/Section';
 import CTA from '../components/CTA';
 import './EnergyWork.css';
 import pic6 from '../assets/pic6.jpg';
+import { Helmet } from 'react-helmet';
 
 const EnergyWork = () => {
   return (
     <div className="energy-work">
+      <Helmet>
+        <title>Reiki Energy Healing | Universal Life Force Energy is on Tap</title>
+        <meta name="description" content="Receive universal life force energy to promote healing, relaxation, balance, and transformation" />
+        <meta property="og:title" content="Reiki Energy Healing | Universal Life Force Energy is on Tap" />
+        <meta property="og:description" content="Receive universal life force energy to promote healing, relaxation, balance, and transformation" />
+      </Helmet>
       {/* Hero Section */}
       <section className="energy-work-hero">
         <div className="container">
           <div className="energy-work-hero-content">
             <h1>Energy Work</h1>
             <p className="energy-work-subtitle">
-              Receive treatment of universal life force energy to promote healing, relaxation, balance, and transformation
+              Receive universal life force energy to promote healing, relaxation, balance, and transformation
             </p>
           </div>
         </div>

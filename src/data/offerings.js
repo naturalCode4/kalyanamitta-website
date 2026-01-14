@@ -41,5 +41,5 @@ export const helpList = [
   "Develop conscious sexuality and channel sexual energy into creativity, radiance, love, and life force",
   "Psychedelic preparation and integration",
   "Commune with nature and connect more deeply to elemental energy",
-  "Receive deep, understanding, friendship, and support, and become that space for yourself and others",
+  "Receive understanding, friendship, and support, and become that space for yourself and others",
 ];

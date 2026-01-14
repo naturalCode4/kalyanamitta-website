@@ -6,8 +6,9 @@ import CTA from '../components/CTA';
 import ServiceCard from '../components/ServiceCard';
 import { offerings, helpList } from '../data/offerings';
 import './Home.css';
-import pic2 from '../assets/pic2.png';
-import pic5 from '../assets/pic5.png';
+import pic2 from '../assets/pic2.jpg';
+import pic5 from '../assets/pic5.jpg';
+import { Helmet } from 'react-helmet';
 
 const Home = () => {
   const { hash } = useLocation();
@@ -84,6 +85,12 @@ const Home = () => {
 
   return (
     <div className="home">
+      <Helmet>
+        <title>Healing On Tap | Integrative Healing & Guidance</title>
+        <meta name="description" content="Transform your whole life with EFT Tapping, Reiki Energy Work, and Spiritual Counseling. Based in West Philadelphia & Virtual." />
+        <meta property="og:title" content="Healing On Tap | Integrative Healing & Guidance" />
+        <meta property="og:description" content="Transform your whole life with EFT Tapping, Reiki Energy Work, and Spiritual Counseling. Based in West Philadelphia & Virtual." />
+      </Helmet>
       {/* Hero Section */}
       <section className="hero">
         <div className="container">

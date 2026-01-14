@@ -3,13 +3,19 @@ import { Link } from 'react-router-dom';
 import Section from '../components/Section';
 import CTA from '../components/CTA';
 import './SpiritualPractice.css';
-import pic4 from '../assets/pic4.png';
-
+import pic4 from '../assets/pic4.jpg';
+import { Helmet } from 'react-helmet';
 
 const SpiritualPractice = () => {
 
   return (
     <div className="spiritual-practice">
+      <Helmet>
+        <title>Spiritual Counseling and Practices | Deep Support for Your Life and Spiritual Path</title>
+        <meta name="description" content="Build the wisdom and compassion needed to live well. Be seen and heard as you are. Learn and deepen mind-body practices." />
+        <meta property="og:title" content="Spiritual Counseling and Practices | Deep Support for Your Life and Spiritual Path" />
+        <meta property="og:description" content="Build the wisdom and compassion needed to live well. Be seen and heard as you are. Learn and deepen mind-body practices." />
+      </Helmet>
       {/* Hero Section */}
       <section className="spiritual-practice-hero">
         <div className="container">
