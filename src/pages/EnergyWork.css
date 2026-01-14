@@ -195,6 +195,10 @@
   color: #666 !important;
 }
 
+.about-energy-work.section-rainbow .expect-item p strong {
+  color: #333 !important;
+}
+
 .about-energy-work.section-rainbow .what-to-expect-card {
   background: white !important;
 }
