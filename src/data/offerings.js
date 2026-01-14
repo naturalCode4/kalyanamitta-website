@@ -36,7 +36,7 @@ export const helpList = [
   "Relieve or resolve tension, pain, and psychosomatically-rooted conditions",
   "Enhance performance in athletics, work, intimacy, and daily life",
   "Improve sleep quality and address insomnia",
-  "Build confidence and clarity for important decisions, major life transitions, and daily living",
+  "Build confidence and clarity for important decisions, conversations, major life transitions, and daily living",
   "Men's issues and healthy masculine development",
   "Develop conscious sexuality and channel sexual energy into creativity, radiance, love, and life force",
   "Psychedelic preparation and integration",

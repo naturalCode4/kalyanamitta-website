@@ -111,7 +111,7 @@ const EnergyWork = () => {
                     <br/>
                     <strong>Mental:</strong> Meditative or dreamlike state • Thoughts slowing down • Mild drowsiness or floaty feeling • Insights and downloads
                     <br/>
-                    <strong>Energetic:</strong> Awareness of energy moving • Feeling lighter or more open • Sense of blockages releasing
+                    <strong>Energetic:</strong> Bliss • Awareness of energy moving • Feeling lighter or more open • Sense of blockages releasing
                   </p>
                 </div>
 
@@ -123,7 +123,7 @@ const EnergyWork = () => {
                     <br/>
                     <strong>Emotional:</strong> Deeper sense of peace, love, and connectedness • Reduced stress and anxiety • Emotional release, clarity, and resolution to psychological issues
                     <br/>
-                    <strong>Mental/Energetic:</strong> Mental clarity and reduced brain fog • Enhanced intuition and increased energetic awareness
+                    <strong>Mental/Energetic:</strong> Mental clarity and reduced brain fog • Increased vitality • Enhanced intuition and increased energetic awareness
                     <br/>
                     <strong>Spiritual:</strong> Third eye activation • Intuitive downloads, messages, and connection to supernal consciousness
                   </p>

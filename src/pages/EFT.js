@@ -68,6 +68,9 @@ const EFT = () => {
               <p>
                 Tapping signals safety to the brain, as it effectively calms the amygdala's 'fight, flight, or freeze' response. So the nervous system doesn't follow its usual sympathetic response to an issue, but actually processes, releases, and updates. By tapping on each tapping point, we send an electrical impulse through each meridian (an energy channel running through the body– each corresponding to an essential aspect of our human functionality) that balances the channel.
               </p>
+              <p>
+                How quickly you experience benefits can vary based on individual factors and the nature of your concerns. Some people get immediate relief and resolution, while others may notice gradual improvements over time. Multiple sessions may be recommended for deeper or ongoing issues.
+              </p>
               <div className="gold-divider"></div>
               <h3>
                 Who and What is EFT For?
