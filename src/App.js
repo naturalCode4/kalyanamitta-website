@@ -24,7 +24,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/energy-work" element={<EnergyWork />} />
             <Route path="/spiritual-practice" element={<SpiritualPractice />} />
-            <Route path="/emotional-processing" element={<EFT />} />
+            <Route path="/EFT-emotional-freedom-techniques" element={<EFT />} />
             <Route path="/rates" element={<Rates />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<Home />} />

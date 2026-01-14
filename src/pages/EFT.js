@@ -4,12 +4,13 @@ import './EFT.css';
 import Section from '../components/Section';
 import CTA from '../components/CTA';
 import pic7 from '../assets/pic7.jpg';
+import pic8 from '../assets/pic8.webp';
 import { Helmet } from 'react-helmet'
 
 const EFT = () => {
 
   return (
-    <div className="emotional-processing">
+    <div className="EFT-emotional-freedom-techniques">
       <Helmet>
         <title>EFT – Emotional Freedom Techniques | Rapidly heal yourself</title>
         <meta name="description" content="Rapidly process emotions, regulate your nervous system, heal even major issues, and create the life you desire" />
@@ -17,11 +18,11 @@ const EFT = () => {
         <meta property="og:description" content="Rapidly process emotions, regulate your nervous system, heal even major issues, and create the life you desire" />
       </Helmet>
       {/* Hero Section */}
-      <section className="emotional-processing-hero">
+      <section className="EFT-emotional-freedom-techniques-hero">
         <div className="container">
-          <div className="emotional-processing-hero-content">
+          <div className="EFT-emotional-freedom-techniques-hero-content">
             <h1>Emotional Freedom Techniques (EFT)</h1>
-            <p className="emotional-processing-subtitle">
+            <p className="EFT-emotional-freedom-techniques-subtitle">
               Rapidly process emotions, regulate your nervous system, heal even major issues, and create the life you desire
             </p>
           </div>
@@ -57,19 +58,28 @@ const EFT = () => {
                 Why EFT is So Powerful
               </h3>
               <p>
-                Imagine a tool that can relieve you of self-defeating thoughts, feelings, and actions–that you've held for years or decades– patterns you just assumed were an unchangeable part of your existence. Imagine being able to let go of these patterns and consciously uplevel your nervous system in a way that brings you great freedom, ease, joy, clarity, alignment, and empowerment. For some issues, EFT may provide relief very quickly, while with other issues we may see long-lasting shifts emerge over multiple sessions.
+                Imagine a tool that can relieve you of self-defeating thoughts, feelings, and actions– that you've held for years or decades– patterns you just assumed were an unchangeable part of your existence. Imagine being able to let go of these patterns and consciously uplevel your nervous system in a way that brings you great freedom, ease, joy, clarity, alignment, and empowerment.
               </p>
               <p>
                 EFT boils down Chinese Medicine, Neuroscience, Positive Psychology, and more into a highly effective yet simple modality that one can learn to do anytime, anywhere. Practitioners may also draw upon methodologies from Internal Family Systems (IFS), Hypnotherapy, Cognitive Behavioral Therapy (CBT), EMDR, Mindfulness, Polyvagal Theory, Neuro-Linguistic Programming (NLP), Shamanism, Spiritual Teachings, and more. At its core, EFT embodies the wisdom of Love, Acceptance, Letting Go, and your boundless potential as a creator being.
               </p>
+              {/* --- NEW IMAGE (Float Left) --- */}
+              <div className="eft-image-left">
+                <img 
+                  src={pic8}
+                  alt="EFT Brain Impact" 
+                  className="eft-pic" 
+                />
+                <p className="photo-credit">Image from The Center of Traditional Taoist Studies</p>
+              </div>
               <p>
                 EFT works on the neurological, subconscious, and energetic level. Shifts are enduring once thoroughly addressed, as neural networks are reprogrammed and the nervous system releases and resolves built-up issues. 
               </p>
               <p>
-                Tapping signals safety to the brain, as it effectively calms the amygdala's 'fight, flight, or freeze' response. So the nervous system doesn't follow its usual sympathetic response to an issue, but actually processes, releases, and updates. By tapping on each tapping point, we send an electrical impulse through each meridian (an energy channel running through the body– each corresponding to an essential aspect of our human functionality) that balances the channel.
+                Tapping signals safety to the brain, as it effectively calms the amygdala's 'fight, flight, or freeze' response. So the nervous system doesn't follow its usual sympathetic response to an issue, but actually can process, release, and update. By tapping on each tapping point, we balance each meridian (an energy channel running through the body that governs essential aspect of our body, mind, and spirit)– by sending an electrical impulse through the entire channel.
               </p>
               <p>
-                How quickly you experience benefits can vary based on individual factors and the nature of your concerns. Some people get immediate relief and resolution, while others may notice gradual improvements over time. Multiple sessions may be recommended for deeper or ongoing issues.
+              For some issues, EFT may provide relief very quickly, while with other issues we may see long-lasting shifts emerge over multiple sessions. How quickly you experience benefits can vary based on individual factors and the nature of your concerns. Some people get immediate relief and resolution, while others may notice gradual improvements over time. Multiple sessions may be recommended for deeper or ongoing issues.
               </p>
               <div className="gold-divider"></div>
               <h3>

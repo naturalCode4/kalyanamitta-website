@@ -1,9 +1,9 @@
 /* Emotional Processing Page Styles */
-.emotional-processing {
+.EFT-emotional-freedom-techniques {
   min-height: 100vh;
 }
 
-.emotional-processing-hero {
+.EFT-emotional-freedom-techniques-hero {
   background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
   color: white;
   padding: 100px 0;
@@ -11,20 +11,20 @@
   border-bottom: 4px solid #d4af37; /* Gold line */
 }
 
-.emotional-processing-hero-content h1 {
+.EFT-emotional-freedom-techniques-hero-content h1 {
   font-size: 3.5rem;
   margin-bottom: 1rem;
   font-weight: 500;
 }
 
-.emotional-processing-subtitle {
+.EFT-emotional-freedom-techniques-subtitle {
   font-size: 1.25rem;
   max-width: 600px;
   margin: 0 auto;
   color: #333
 }
 
-.emotional-processing-services {
+.EFT-emotional-freedom-techniques-services {
   padding: 80px 0;
 }
 
@@ -188,7 +188,7 @@
   line-height: 1.6;
 }
 
-.emotional-processing-cta {
+.EFT-emotional-freedom-techniques-cta {
   padding: 80px 0;
 }
 
@@ -219,7 +219,7 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .emotional-processing-hero-content h1 {
+  .EFT-emotional-freedom-techniques-hero-content h1 {
     font-size: 2.5rem;
   }
   
@@ -350,26 +350,26 @@
   }
 }
 
-.emotional-processing .service-card h3 {
+.EFT-emotional-freedom-techniques .service-card h3 {
   color: #333 !important;
 }
 
-.emotional-processing .service-card .service-description {
+.EFT-emotional-freedom-techniques .service-card .service-description {
   color: #666 !important;
 }
 
-.emotional-processing .service-card .service-process h4,
-.emotional-processing .service-card .service-benefits h4 {
+.EFT-emotional-freedom-techniques .service-card .service-process h4,
+.EFT-emotional-freedom-techniques .service-card .service-benefits h4 {
   color: #333 !important;
 }
 
-.emotional-processing .service-card .service-process li,
-.emotional-processing .service-card .service-benefits li {
+.EFT-emotional-freedom-techniques .service-card .service-process li,
+.EFT-emotional-freedom-techniques .service-card .service-benefits li {
   color: #666 !important;
 }
 
 /* Also ensure the card background is white */
-.emotional-processing .service-card {
+.EFT-emotional-freedom-techniques .service-card {
   background: white !important;
   color: #333 !important;
 }
@@ -396,7 +396,7 @@
   text-align: center;
 }
 
-.emotional-processing .what-to-expect-card h3 {
+.EFT-emotional-freedom-techniques .what-to-expect-card h3 {
   color: #333 !important;
 }
 
@@ -474,5 +474,29 @@
     max-width: 300px;
     display: block;
     margin-top: 1rem;
+  }
+}
+
+/* Image Container - Float LEFT (for the second image) */
+.eft-image-left {
+  float: left;
+  width: 100%;
+  max-width: 250px; /* slightly smaller than the top one usually looks good */
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  clear: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Mobile Responsiveness for Left Image */
+@media (max-width: 768px) {
+  .eft-image-left {
+    float: none;
+    margin: 2rem auto;
+    max-width: 275px;
+    display: block;
   }
 }

@@ -146,7 +146,7 @@ const Header = () => {
               </div>
 
               <ul className={`dropdown-menu ${isOfferingsOpen ? 'show' : ''}`}>
-                <li><Link to="/emotional-processing" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>EFT</Link></li>
+                <li><Link to="/EFT-emotional-freedom-techniques" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>EFT</Link></li>
                 <li><Link to="/energy-work" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>Energy Work</Link></li>
                 <li><Link to="/spiritual-practice" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>Spiritual Counseling & Practices</Link></li>
               </ul>

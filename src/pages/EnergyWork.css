@@ -296,3 +296,27 @@
     text-align: center;
   }
 }
+
+/* Image Container - Float LEFT (for the second image) */
+.energy-image-left {
+  float: left;
+  width: 100%;
+  max-width: 475px; /* Adjust size as desired */
+  margin-right: 2rem;
+  margin-bottom: 0rem;
+  margin-top: 0.25rem;
+  clear: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Mobile Responsiveness for Left Image */
+@media (max-width: 768px) {
+  .energy-image-left {
+    float: none;
+    margin: 2rem auto; /* Space it out nicely */
+    max-width: 300px;
+    display: block;
+  }
+}

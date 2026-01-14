@@ -1,6 +1,6 @@
 export const offerings = [
   {
-    id: 'emotional-processing',
+    id: 'EFT-emotional-freedom-techniques',
     title: 'Emotional Freedom Techniques (EFT)',
     availability: 'Available in-person or virtual',
     content: "I use EFT to help people rapidly improve their life and well-being and break free from a wide range of deep-seated issues— quickly, affordably, and effectively— issues that might otherwise take months or years to address."

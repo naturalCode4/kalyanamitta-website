@@ -4,6 +4,7 @@ import Section from '../components/Section';
 import CTA from '../components/CTA';
 import './EnergyWork.css';
 import pic6 from '../assets/pic6.jpg';
+import pic9 from '../assets/pic9.jpg';
 import { Helmet } from 'react-helmet';
 
 const EnergyWork = () => {
@@ -64,14 +65,24 @@ const EnergyWork = () => {
               </p>
               <div className="gold-divider"></div>
               <h3>What is Reiki?</h3>
+              {/* --- NEW IMAGE pic9 (Float Left) --- */}
+              <div className="energy-image-left">
+                <img 
+                  src={pic9}
+                  alt="Reiki Symbols or Energy" 
+                  className="energy-work-pic" 
+                />
+                <p className="photo-credit">Image from International End-of-Life Doula Association</p>
+              </div>
               <p>
                 Reiki is an ancient Japanese healing art in which a practitioner channels this beneficent, spiritually conscious, self-intelligent, omnipresent (Rei) life force energy (Ki) to optimize a recipient's bio-energetic field. Reiki works on multiple dimensions simultaneously, supporting the recipient on the physical, emotional, mental, energetic, and spiritual planes.
               </p>
               <p>
-                When one's energy field becomes stagnant, depleted, or disrupted through negative thinking, stress, illness, disconnection, etc., we experience dis-ease. Reiki practitioners use gentle touch to channel Reiki, acting as a conduit for Reiki to flow wherever you need support most.
+                When one's energy field becomes stagnant, depleted, or disrupted through negative thinking, stress, illness, disconnection, etc., we experience dis-ease. Reiki practitioners use gentle touch to channel Reiki, acting as a conduit for Reiki to flow through you.
               </p>
+              <br/>
               <p>
-                Sessions address not just symptoms but the underlying energetic patterns that contribute to imbalance. This practice partners with your body's innate wisdom, allowing deep healing to unfold from within. Reiki meets you exactly where you are and guides you toward greater wholeness, alignment, and happiness.
+                Sessions address not just symptoms but the underlying energetic patterns that contribute to imbalance. This practice activates your body's innate wisdom, allowing deep healing to unfold from within. Reiki meets you exactly where you are and guides you toward greater wholeness, alignment, and happiness.
               </p>
               <div className="gold-divider"></div>
             </div>
