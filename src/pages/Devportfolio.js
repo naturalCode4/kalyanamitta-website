@@ -12,10 +12,10 @@ const Portfolio = () => {
   
   useEffect(() => {
     const footer = document.querySelector('footer');
-    if (footer) footer.style.display = 'none';
-    return () => {
-      if (footer) footer.style.display = 'block'; // Restore on unmount
-    };
+      if (footer) footer.style.display = 'none';
+      return () => {
+        if (footer) footer.style.display = 'block'; // Restore on unmount
+      };
   }, []);
 
   const projects = [
@@ -189,7 +189,7 @@ const Portfolio = () => {
           <div className="contact-text-col">
             <h3>Let's Connect</h3>
             <p>
-              Building and designing high quality custom websites is a passion. I have some availability, so get in touch if you would like me to build (or contribute to) your website or app.
+              Building and designing high quality custom websites is a passion! I have some availability, so get in touch if you would like me to build (or contribute to) your website or app.
             </p>
             <p>
               If you value clean code, excellent design, timely delivery, and a seasoned developer who invests and cares about the product, I'd love to hear from you.
