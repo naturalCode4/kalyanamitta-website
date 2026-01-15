@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './EFT.css';
 import Section from '../components/Section';
@@ -7,7 +7,29 @@ import pic7 from '../assets/pic7.jpg';
 import pic8 from '../assets/pic8.webp';
 import { Helmet } from 'react-helmet'
 
+function useIsDesktop(breakpoint = 768) {
+  const [isDesktop, setIsDesktop] = useState(
+    window.innerWidth >= breakpoint
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= breakpoint);
+    };
+
+    // Check on mount in case initial state was wrong
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [breakpoint]);
+
+  return isDesktop;
+}
+
 const EFT = () => {
+
+  const isDesktop = useIsDesktop(768)
 
   return (
     <div className="EFT-emotional-freedom-techniques">
@@ -64,18 +86,29 @@ const EFT = () => {
               <p>
                 EFT boils down Chinese Medicine, Neuroscience, Positive Psychology, and more into a highly effective yet simple modality that one can learn to do anytime, anywhere. Practitioners may also draw upon methodologies from Internal Family Systems (IFS), Hypnotherapy, Cognitive Behavioral Therapy (CBT), EMDR, Mindfulness, Polyvagal Theory, Neuro-Linguistic Programming (NLP), Shamanism, Spiritual Teachings, and more. At its core, EFT embodies the wisdom of Love, Acceptance, Letting Go, and your boundless potential as a creator being.
               </p>
+              {isDesktop && (
+                <div className="eft-image-left">
+                  <img 
+                    src={pic8}
+                    alt="EFT Brain Impact" 
+                    className="eft-pic" 
+                    />
+                  <p className="photo-credit">The Meridian Channels. Image from The Center of Traditional Taoist Studies</p>
+                </div>
+              )}
               <p>
                 Tapping signals safety to the brain, as it effectively calms the amygdala's 'fight, flight, or freeze' response. So the nervous system doesn't follow its usual sympathetic response to an issue, but actually can process, release, and update. By tapping on each tapping point, we balance each meridian (an energy channel running through the body that governs essential aspect of our body, mind, and spirit)– by sending an electrical impulse through the entire channel.
               </p>
-              {/* --- NEW IMAGE (Float Left) --- */}
-              <div className="eft-image-left">
-                <img 
-                  src={pic8}
-                  alt="EFT Brain Impact" 
-                  className="eft-pic" 
-                  />
-                <p className="photo-credit">The Meridian Channels. Image from The Center of Traditional Taoist Studies</p>
-              </div>
+              {!isDesktop && (
+                <div className="eft-image-left">
+                  <img 
+                    src={pic8}
+                    alt="EFT Brain Impact" 
+                    className="eft-pic" 
+                    />
+                  <p className="photo-credit">The Meridian Channels. Image from The Center of Traditional Taoist Studies</p>
+                </div>
+              )}
               <p>
                 EFT works on the neurological, subconscious, and energetic level. Shifts are enduring once thoroughly addressed, as neural networks are reprogrammed and the nervous system releases and resolves built-up issues. 
               </p>
