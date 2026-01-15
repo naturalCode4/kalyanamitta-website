@@ -34,13 +34,6 @@ const Portfolio = () => {
       linkText: "Visit Website"
     },
     {
-      title: "The Mobile Sanctuary - In Progress",
-      role: "Developer & Designer",
-      description: "Developing a custom website for a local business' offerings. Client is asking for a simple, mobile-friendly site focused on a soothing user experience.",
-      link: null, // ADD LINK HERE
-      linkText: "Coming Soon"
-    },
-    {
       title: "California Educational Consultant Group Inc.",
       role: "Lead Software Engineer, Designer, and Product Manager",
       description: "Spearheaded end-to-end development of complex university administration apps (React, Node, Mongo, AWS). Managed cross-functional teams of developers, designers, and business owners through architecture, developing a complex interface, build, and deployment. Managed DevOps, AWS infrastructure, and PCI L1 security compliance for sensitive data.",
@@ -69,7 +62,21 @@ const Portfolio = () => {
       linkText: "Visit Website"
     },
     {
-      title: "Music Genius - In Progress",
+      title: "The Mobile Sanctuary - In Progress",
+      role: "Developer & Designer",
+      description: "Developing a custom website for a local business' offerings. Client is asking for a simple, mobile-friendly site focused on a soothing user experience.",
+      link: null,
+      linkText: "Coming Soon"
+    },
+    {
+      title: "Dharma Center Directory - In Progress",
+      role: "Creator, Developer, Designer, Educator",
+      description: "The Dharma Center Directory has the mission to make deep and authentic Buddhist practice accessible. It a living, crowdsourced map and global directory of authentic Dharma practice around the world – built to be by far the most robust directory available",
+      link: "https://dharma-gates.vercel.app",
+      linkText: "Visit Website"
+    },
+    {
+      title: "Music Genius - Temporary bug: Fixing Spotify API issues",
       role: "Developer and Designer",
       description: "Created an elegant interface mimicking audio equipment. Improved Spotify API performance by enhancing the search algorithm, fetching and playing music based on user preferences",
       link: "https://musicgenius.onrender.com/",
