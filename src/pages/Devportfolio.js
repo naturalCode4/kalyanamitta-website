@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect }from 'react';
 import { Helmet } from 'react-helmet';
 import './Devportfolio.css';
 import Section from '../components/Section';
+import pic5 from '../assets/pic5.jpg'
 
 // You will need to put your resume PDF in public/assets/ or src/assets/
 // For now, I'll link to a placeholder path
@@ -9,6 +10,14 @@ const RESUME_PATH = "/assets/Adin_Resume.pdf";
 
 const Portfolio = () => {
   
+  useEffect(() => {
+    const footer = document.querySelector('footer');
+    if (footer) footer.style.display = 'none';
+    return () => {
+      if (footer) footer.style.display = 'block'; // Restore on unmount
+    };
+  }, []);
+
   const projects = [
     {
       title: "Healing On Tap",
@@ -96,8 +105,9 @@ const Portfolio = () => {
       <section className="portfolio-hero">
         <div className="container">
           <h1>Software Development Portfolio</h1>
+          <h2>Adin Solar Kramer</h2> {/* Added Name */}
           <p className="portfolio-subtitle">
-            Web Development • React.js • UI/UX Design • Fullstack Applications
+            Web Development • React.JS • Fullstack Applications • UI/UX Design
           </p>
         </div>
       </section>
@@ -160,6 +170,39 @@ const Portfolio = () => {
             </div>
           </div>
 
+        </div>
+      </section>
+
+      {/* NEW Contact / Bio Section */}
+      <section className="portfolio-contact-section">
+        <div className="container contact-content-wrapper">
+          <div className="contact-image-col">
+            <img src={pic5} alt="Adin Solar Kramer" className="portfolio-profile-pic" />
+          </div>
+          <div className="contact-text-col">
+            <h3>Let's Connect</h3>
+            <p>
+              Building and designing high quality custom websites is a passion. I have some availability, so get in touch if you would like me to build (or contribute to) your website or app.
+            </p>
+            <p>
+              If you value clean code, excellent design, timely delivery, and a seasoned developer who invests and cares about the product, I'd love to hear from you.
+            </p>
+            <p>
+              I am especially excited to develop for Dharma centers, healing practitioners, and environmentally/socially positive organizations— and I may give you a friend rate for the good fortune of building something I feel a heart-connection to.
+            </p>
+            <div className="contact-details">
+              <p><strong>Email:</strong> adinscoolmail@gmail.com</p>
+              <p><strong>Phone:</strong> +1 (301) 641-2855</p>
+              <p><strong>Location:</strong> Philadelphia, PA / Remote</p>
+            </div>
+            
+            <div className="cta-section" style={{ marginTop: '1.5rem', alignItems: 'flex-start' }}>
+              <div className="cta-buttons">
+                <a href="mailto:adinscoolmail@gmail.com" className="btn">Email Me</a>
+                <a href="https://www.linkedin.com/in/adinkramer/" target="_blank" rel="noopener noreferrer" className="btn btn-outline">LinkedIn</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
