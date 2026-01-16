@@ -71,7 +71,7 @@ const EFT = () => {
                 EFT stands for Emotional Freedom Techniques. I use it to help people break free from a wide range of deep-seated issues quickly, affordably, and effectively— issues that might otherwise take months or years (or lifetimes) to address. It is a fascinatingly powerful yet simple healing modality that involves self-tapping points on your body while bringing attention to issues you want resolved or outcomes you want to achieve.
               </p>
               <p>
-                EFT is remarkably versatile multi-tool you can apply to most areas in your life (see “Who and What is EFT For” below)
+                EFT is a remarkably versatile multi-tool you can apply to most areas in your life (see “Who and What is EFT For” below)
               </p>
               <p>
                 While I have immersed myself in numerous spiritual practices and modalities, EFT is the most powerful and universal tool I have encountered for resolving specific psycho-emotional issues and creating positive new outcomes—and I am so grateful to have encountered it and offer it. I hope that I can support as many people as possible with EFT.
