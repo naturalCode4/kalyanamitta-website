@@ -94,7 +94,7 @@ const Rates = () => {
           <div className="flexible-pricing">
             <div className="flexible-content">
               <h3>Open Reciprocity Sliding Scale</h3>
-              <p className="flexible-label">90 minutes: $80-225 • 60 minutes: $55-175</p>
+              <p className="flexible-label">90 minutes: $80-250 • 60 minutes: $55-175</p>
               <p className="subtitle">I offer flexible pricing so that this work is accessible to everyone. Choose an amount that feels aligned—honoring this work and what's sustainable for you.</p>
               <p className="subtitle">I offer very accessible rates because I am passionate about this work and desire to share it widely. There is a huge wealth disparity in the modern world. For some, the standard rate is an easy investment, and for others its basic expenses they can't forego.</p>
               <p className="subtitle">For those with financial ease, your generosity honors the exchange of energy between us, allows me to thrive doing what I love, supports this work in the world, and makes it accessible to others.</p>
