@@ -23,7 +23,7 @@ const SpiritualPractice = () => {
           <div className="spiritual-practice-hero-content">
             <h1>Spiritual Counseling</h1>
             <p className="spiritual-practice-subtitle">
-              Build the wisdom and compassion needed to live well. Be seen and heard as you are. Learn and deepen mind-body practices.
+              Build the wisdom and compassion needed to live well. Be seen and heard as you are. Learn and deepen mind-body practices. 
             </p>
           </div>
         </div>

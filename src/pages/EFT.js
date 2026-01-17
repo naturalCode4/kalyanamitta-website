@@ -68,7 +68,7 @@ const EFT = () => {
             </div>
             <div className="about-eft-text">
               <p>
-                EFT stands for Emotional Freedom Techniques. I use it to help people break free from a wide range of deep-seated issues quickly, affordably, and effectively— issues that might otherwise take months or years (or lifetimes) to address. It is a fascinatingly powerful yet simple healing modality that involves self-tapping points on your body while bringing attention to issues you want resolved or outcomes you want to achieve.
+                EFT stands for Emotional Freedom Techniques. I use it to help people break free from a wide range of deep-seated issues quickly, affordably, and effectively— issues that might otherwise take months or years (or lifetimes) to address. It is a fascinatingly powerful yet simple healing modality that involves self-tapping acupoints on your body while bringing attention to issues you want resolved or outcomes you want to achieve.
               </p>
               <p>
                 EFT is a remarkably versatile multi-tool you can apply to most areas in your life (see “Who and What is EFT For” below)

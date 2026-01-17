@@ -3,19 +3,19 @@ export const offerings = [
     id: 'EFT-emotional-freedom-techniques',
     title: 'Emotional Freedom Techniques (EFT)',
     availability: 'Available in-person or virtual',
-    content: "I use EFT to help people rapidly improve their life and well-being and break free from a wide range of deep-seated issues— quickly, affordably, and effectively— issues that might otherwise take months or years to address."
+    content: "Rapidly process emotions, regulate your nervous system, heal even major issues, and create the life you desire. EFT is a fascinatingly powerful yet simple healing modality that involves self-tapping points on your body while bringing attention to issues you want resolved or outcomes you want to achieve."
   },
   {
     id: 'energy-work',
     title: 'Reiki-based Energy Work',
     availability: 'Available in-person',
-    content: "Energy Work can address diverse needs by balancing, restoring, and optimizing the body's natural bio-energy field. This promotes vitality, emotional healing, rest, connection, energetic attunement, and more. Generally it's a very pleasant and restful experience."
+    content: "Receive universal life force energy to optimize the body's natural bio-energy field. This promotes vitality, emotional healing, rest, connection, energetic attunement, removes blockages and deficiencies, and more. Generally it is a very pleasant and restful experience."
   },
   {
     id: 'spiritual-practice',
     title: 'Spiritual Counseling and Practices',
     availability: 'Available in-person or virtual',
-    content: "Together we can cultivate the wisdom and compassion needed to live well. Be seen and heard as you are; be supported in progressing towards what matters most to you. We may draw on both inner wisdom and outer knowledge from spiritual traditions."
+    content: "Build the wisdom and compassion needed to live well. Be seen and heard as you are. Learn and deepen mind-body practices. Deepen authenticity. Progress towards what matters most to you. We will draw on both inner knowing and outer knowledge from spiritual traditions."
   },
 ];
 

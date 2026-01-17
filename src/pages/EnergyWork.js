@@ -22,9 +22,7 @@ const EnergyWork = () => {
         <div className="container">
           <div className="energy-work-hero-content">
             <h1>Energy Work</h1>
-            <p className="energy-work-subtitle">
-              Receive universal life force energy to promote healing, relaxation, balance, and transformation
-            </p>
+            <p className="energy-work-subtitle">Receive universal life force energy for vitality, emotional healing, rest, connection, energetic attunement, and more.</p>
           </div>
         </div>
       </section>
