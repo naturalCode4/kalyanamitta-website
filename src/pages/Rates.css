@@ -694,7 +694,7 @@
 }
 
 .middle-text-label {
-  color: #e8a5a5;
+  color: #f5b9b9;
   font-size: 1rem;
   margin-bottom: 0.5rem;
   font-weight: 600;
@@ -759,7 +759,7 @@
   overflow: hidden;
   margin-top: 1rem;
   text-align: center;
-  width: 70%;
+  width: 80%;
 }
 
 .timeline-content::before {
@@ -785,7 +785,7 @@
 .timeline-label {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #e8a5a5;
+  color: #f5b9b9;
   margin-bottom: 1rem;
   position: relative;
   z-index: 2;
@@ -872,7 +872,7 @@
   text-align: center; /* Optional: Centers text */
   overflow: hidden;
   position: relative;
-  padding: .5rem 1rem
+  padding: .5rem 1rem;
 }
 
 .flexible-content::before {
@@ -899,7 +899,7 @@
 .flexible-label {
   font-size: 1.4rem;
   font-weight: 600;
-  color: #e8a5a5;
+  color: #f5b9b9;
   margin-bottom: 1rem;
   position: relative;
   z-index: 2;
@@ -998,20 +998,9 @@
   .timeline-point:not(:last-child)::before {
     content: '';
     position: absolute;
-    top: 2rem; /* Start at center of number */
-    left: 2rem; /* Center of width (4rem/2) */
-    bottom: 0; /* Go down to next item */
-    width: 2px;
-    background: linear-gradient(to bottom, #e8a5a5, rgba(232, 165, 165, 0.3));
-    z-index: 1;
-  }
-
-  .timeline-point:not(:last-child)::before {
-    content: '';
-    position: absolute;
-    left: 2rem; /* Center of 2.5rem circle */
+    left: 1.925rem; /* Center of 2.5rem circle */
     top: 40%;
-    bottom: -4rem; /* Connect to next */
+    bottom: -6rem; /* Connect to next */
     width: 2px;
     background: linear-gradient(to bottom, #e8a5a5, rgba(232, 165, 165, 0.3));
     z-index: 1;

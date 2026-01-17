@@ -11,9 +11,9 @@ const Rates = () => {
     {
       name: '4-Session Combo',
       description: "Invest in your healing and goals. Four potent sessions to transform your life and resolve several issues.",
-      mainPrice: '$400',
-      slidingScale: ' / Sliding Scale $224-640',
-      originalPrice: '$500. Sliding Scale $280-800',
+      mainPrice: '$528',
+      slidingScale: ' / Sliding Scale $256-800',
+      originalPrice: '$660. Sliding Scale $320-1000',
       discount: '20% OFF',
       features: [
         'Four 90 minute sessions',
@@ -25,9 +25,9 @@ const Rates = () => {
     {
       name: '7-Session Combo',
       description: "Change your life, heal major issues, and develop your spiritual toolkit. Commit yourself to being supported with seven powerful sessions.",
-      mainPrice: '$656',
-      slidingScale: ' / Sliding Scale $368-1050',
-      originalPrice: '$875. Sliding Scale $490-1400',
+      mainPrice: '$866',
+      slidingScale: ' / Sliding Scale $420-1,312',
+      originalPrice: '$1,155. Sliding Scale $560-1,750',
       discount: '25% OFF',
       features: [
         'Seven 90 minute sessions',
@@ -37,6 +37,36 @@ const Rates = () => {
       ]
     },
   ];
+  // const packages = [
+  //   {
+  //     name: '4-Session Combo',
+  //     description: "Invest in your healing and goals. Four potent sessions to transform your life and resolve several issues.",
+  //     mainPrice: '$400',
+  //     slidingScale: ' / Sliding Scale $224-640',
+  //     originalPrice: '$500. Sliding Scale $280-800',
+  //     discount: '20% OFF',
+  //     features: [
+  //       'Four 90 minute sessions',
+  //       'Any combination of services',
+  //       'Ongoing support and guidance',
+  //       '20% discount on total price'
+  //     ]
+  //   },
+  //   {
+  //     name: '7-Session Combo',
+  //     description: "Change your life, heal major issues, and develop your spiritual toolkit. Commit yourself to being supported with seven powerful sessions.",
+  //     mainPrice: '$656',
+  //     slidingScale: ' / Sliding Scale $368-1050',
+  //     originalPrice: '$875. Sliding Scale $490-1400',
+  //     discount: '25% OFF',
+  //     features: [
+  //       'Seven 90 minute sessions',
+  //       'Any combination of services',
+  //       'Ongoing support and guidance',
+  //       '25% discount on total price'
+  //     ]
+  //   },
+  // ];
 
   return (
     <div className="rates">
@@ -64,48 +94,54 @@ const Rates = () => {
           <div className="flexible-pricing">
             <div className="flexible-content">
               <h3>Open Reciprocity Sliding Scale</h3>
-              <p className="flexible-label">$70-200 for 90 minutes</p>
-              <p className="subtitle">I offer flexible pricing so that this work is accessible to everyone. Choose an amount that feels aligned—honoring this work and what's sustainable for you. All amounts are welcome and honored.</p>
-              <p className="subtitle">For those with financial ease, giving generously honors the exchange of energy between us, allows me to thrive doing what I love, supports this work in the world, and makes it accessible to others.</p>
+              <p className="flexible-label">90 minutes: $80-225 • 60 minutes: $55-175</p>
+              <p className="subtitle">I offer flexible pricing so that this work is accessible to everyone. Choose an amount that feels aligned—honoring this work and what's sustainable for you.</p>
+              <p className="subtitle">I offer very accessible rates because I am passionate about this work and desire to share it widely. There is a huge wealth disparity in the modern world. For some, the standard rate is an easy investment, and for others its basic expenses they can't forego.</p>
+              <p className="subtitle">For those with financial ease, your generosity honors the exchange of energy between us, allows me to thrive doing what I love, supports this work in the world, and makes it accessible to others.</p>
             </div>
           </div>
           
           <div className="pricing-timeline">
-            {/* Point 1: Affordable */}
-            <div className="timeline-point">
-              <div className="timeline-number">1</div>
-              <div className="timeline-content">
-                <h3>$70</h3>
-                <p className="timeline-label">Affordable Range</p>
-                <p className="timeline-description">Accessible rate— your presence and commitment matter most</p>
-              </div>
-            </div>
             
-            {/* Point 2: Suggested (NOW INLINE) */}
+            {/* <div className="timeline-point">
+              <div className="timeline-number"></div>
+              <div className="timeline-content">
+                <h3>Deep Accessibility</h3>
+                <p className="timeline-label">90min: 50 - 70<br></br>60min: 40 - 50</p>
+                <p className="timeline-description">Reserved for those struggling financially. Your presence and commitment matters most.</p>
+              </div>
+            </div> */}
+            
             <div className="timeline-point highlighted-point">
-              <div className="timeline-number">2</div>
-              {/* Added content here inside the point */}
+              <div className="timeline-number">1</div>
               <div className="timeline-content middle-card">
-                <h3>$125</h3>
-                <p className="timeline-label">Suggested Rate</p>
-                {/* <p className="timeline-description">The standard rate that supports my livelihood and practice</p> */}
+                <h3>Accessible Range</h3>
+                <p className="timeline-label">90min: 80 - 120<br></br>60min: 55 - 85</p>
+                <p className="timeline-description">For those finding the standard rate out of reach and for dharma & healing practitioners</p>
               </div>
             </div>
 
-            {/* Point 3: Full Value */}
+            <div className="timeline-point highlighted-point">
+              <div className="timeline-number">2</div>
+              <div className="timeline-content middle-card">
+                <h3>Standard Rate</h3>
+                <p className="timeline-label">90min: 165<br></br>60min: 115</p>
+                {/* <p className="timeline-description"></p> */}
+              </div>
+            </div>
+
             <div className="timeline-point">
               <div className="timeline-number">3</div>
               <div className="timeline-content">
-                <h3>$200</h3>
-                <p className="timeline-label">Full-Value Range</p>
-                <p className="timeline-description">Reciprocates the significance of this work and supports accessibility</p>
+                <h3>Sustaining Range</h3>
+                <p className="timeline-label">90 min: 225 - 250<br></br>60 min: 150 - 175</p>
+                <p className="timeline-description">For those who can—honoring what deep healing is worth while making it available to others.</p>
               </div>
             </div>
           </div>
           
-          {/* REMOVED the separate .timeline-middle-text div completely */}
-          
         </div>
+
       </section>
 
       <section className="packages-section">
