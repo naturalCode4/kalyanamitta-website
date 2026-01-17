@@ -116,7 +116,7 @@ const Rates = () => {
               <div className="timeline-number">1</div>
               <div className="timeline-content middle-card">
                 <h3>Accessible Range</h3>
-                <p className="timeline-label">90min: 80 - 120<br></br>60min: 55 - 85</p>
+                <p className="timeline-label">90 min: 80 - 120<br></br>60 min: 55 - 85</p>
                 <p className="timeline-description">For those finding the standard rate out of reach and for dharma & healing practitioners</p>
               </div>
             </div>
@@ -125,7 +125,7 @@ const Rates = () => {
               <div className="timeline-number">2</div>
               <div className="timeline-content middle-card">
                 <h3>Standard Rate</h3>
-                <p className="timeline-label">90min: 165<br></br>60min: 115</p>
+                <p className="timeline-label">90 min: 165<br></br>60 min: 115</p>
                 {/* <p className="timeline-description"></p> */}
               </div>
             </div>

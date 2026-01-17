@@ -788,6 +788,8 @@
   color: #f5b9b9;
   margin-bottom: 1rem;
   position: relative;
+  text-align: start;
+  padding-top: .5rem;
   z-index: 2;
 }
 
@@ -901,6 +903,7 @@
   font-weight: 600;
   color: #f5b9b9;
   margin-bottom: 1rem;
+  padding-top: .5rem;
   position: relative;
   z-index: 2;
 }
