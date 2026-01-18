@@ -23,7 +23,7 @@ const SpiritualPractice = () => {
           <div className="spiritual-practice-hero-content">
             <h1>Spiritual Counseling</h1>
             <p className="spiritual-practice-subtitle">
-              Build the wisdom and compassion needed to live well. Be seen and heard as you are. Learn and deepen mind-body practices. 
+              Build the wisdom & compassion needed to live well. Be seen and supported as you are. Learn or deepen spiritual practices. 
             </p>
           </div>
         </div>
@@ -45,13 +45,13 @@ const SpiritualPractice = () => {
             </div>
             <div className="about-spiritual-practice-text">
               <p>
-                Together we can cultivate well-being, wisdom, love, freedom, and what matters most to you. This is a space for being met, exploring, healing, spiritual education, finding direction, and growing—especially in <a href="/home#what-we-can-do-together" target="_blank">these areas</a>.
+                Together we can cultivate well-being, wisdom, love, freedom, and what matters most to you. This is a space for being met, unconditionally supported, exploring, healing, spiritual education, finding direction, and growing—especially in <a href="/home#what-we-can-do-together" target="_blank">these areas</a>.
               </p>
               <p>
-                We can be with whatever is alive in you. We can navigate your deepest yearnings and any obstacles to your fulfillment. Sometimes what we need most is just to be truly heard—to share presence with someone who compassionately validates your experience without judgment or fixing. I am here to hold that space for you.
+                We can be with whatever is alive in you. We can navigate your deepest yearnings and any obstacles to your fulfillment. We can sit with both beauty and pain.. Sometimes what we need most is just to be truly heard—to share presence with someone who compassionately validates your experience without judgment or fixing. I am here to hold that space for you.
               </p>
               <p>
-                And when direct guidance and teachings serves you, I may offer them. This is a space of cultivating spiritual virtue and wisdom, with honest workshopping and growth. I'll help you look more deeply, contemplate what's important, and build confidence in yourself.
+                And when direct guidance and teachings serves you, I may offer them. This can be a ground for cultivating spiritual virtue and wisdom, with honest workshopping and growth. I'll help you look more deeply, contemplate what's important, and build confidence in yourself.
               </p>
               <p>
                 Whether you're newly curious, deep in transformation, or have established practice, I offer grounded presence and guidance. Sessions are collaborative and responsive to what emerges.

@@ -568,8 +568,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  /* background: conic-gradient(from 0deg, transparent, rgba(212, 175, 55, 0.08), rgba(18, 95, 74, 0.06), rgba(20, 90, 130, 0.04), rgba(154, 52, 18, 0.03), rgba(180, 83, 9, 0.04), transparent); */
-  animation: rotate 20s linear infinite;
   z-index: 1;
 }
 
@@ -1143,3 +1141,11 @@
   overflow: hidden; /* Added for consistency */
 }
 
+.pricing-timeline-section-2 {
+  margin-top: -0rem
+}
+
+.timeline-content-2 {
+  width: 25%;
+  margin-bottom: 4rem
+}

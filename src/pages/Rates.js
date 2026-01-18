@@ -105,15 +105,6 @@ const Rates = () => {
           
           <div className="pricing-timeline">
             
-            {/* <div className="timeline-point">
-              <div className="timeline-number">1</div>
-              <div className="timeline-content">
-                <h3>$45 - 70</h3>
-                <p className="timeline-label">Deep Accessibility</p>
-                <p className="timeline-description">Reserved for those struggling financially. Your presence and commitment matters most.</p>
-              </div>
-            </div> */}
-            
             <div className="timeline-point highlighted-point">
               <div className="timeline-number">1</div>
               <div className="timeline-content middle-card">
@@ -151,6 +142,22 @@ const Rates = () => {
         </div>
 
       </section>
+      
+      {/* <section className="pricing-timeline-section pricing-timeline-section-2">              
+        <div className="container">
+          <div className="pricing-timeline">
+          <div className="timeline-point">
+            <div className="timeline-number">4</div>
+            <div className="timeline-content timeline-content-2">
+              <h3>$50 - 70</h3>
+              <p className="timeline-label">Deep Accessibility</p>
+              <p className="timeline-description">I have a few slots strictly reserved for those struggling financially but who sincerely long to do this work. Your presence and commitment matter most.</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section> */}
+
         {/* Pricing Timeline without 60 minutes */}
         {/* <section className="pricing-timeline-section">
         <div className="container">
