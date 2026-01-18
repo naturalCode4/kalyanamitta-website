@@ -99,6 +99,7 @@ const Rates = () => {
               <p className="subtitle">I offer flexible pricing so that this work is accessible to everyone. Choose an amount that feels aligned—honoring this work and what's sustainable for you.</p>
               <p className="subtitle">I offer accessible rates because I am passionate about this work and desire to share it widely. There is a huge wealth disparity in the modern world. For some, the standard rate is an easy investment, and for others its basic expenses they can't forego.</p>
               <p className="subtitle">For those with financial ease, your generosity honors the exchange of energy between us, allows me to thrive doing what I love, supports this work in the world, and makes it accessible to others.</p>
+              <p className="subtitle extra"><em>Rates listed are for 90 minutes. 60 and 30 minute sessions are available as well</em></p>
             </div>
           </div>
           

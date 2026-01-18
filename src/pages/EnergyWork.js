@@ -22,7 +22,7 @@ const EnergyWork = () => {
         <div className="container">
           <div className="energy-work-hero-content">
             <h1>Energy Work</h1>
-            <p className="energy-work-subtitle">Receive universal life force energy for vitality, emotional healing, rest, connection, energetic attunement, and more.</p>
+            <p className="energy-work-subtitle">Receive universal life force energy for relaxation, vitality, emotional healing, connection, clarity, and more.</p>
           </div>
         </div>
       </section>
@@ -57,7 +57,7 @@ const EnergyWork = () => {
                 Energy healing transmits vital energy to your whole being, helps remove blockages and deficiencies, and restores the natural healing intelligence within us all. From energy work and restoring balance to your body's energy field, you may experience:
               </p>
               <p>
-                Deeper sense of peace, love, and connectedness • Enhanced vitality, health, sleep quality, and immune function • Relief from physical pain and tension and accelerated recovery from injuries • Deep relaxation and reduced stress and anxiety • Emotional release, clarity, and resolution to psychological issues • Mental clarity, enhanced intuition, third eye activation, and increased energetic awareness • Intuitive downloads, messages, and connection to supernal consciousness
+                Deeper sense of peace, love, and connectedness • Enhanced vitality, health, sleep quality, and immune function • Relief from physical pain and tension and accelerated recovery from injuries • Deep relaxation and reduced stress and anxiety • Emotional release, clarity, and resolution to psychological issues • Mental clarity, reduced brain fog, enhanced intuition, third eye activation, and increased energetic awareness • Intuitive downloads, messages, and connection to supernal consciousness
               </p>
               <p>
                 How quickly you experience benefits can vary based on individual factors and the nature of your concerns. Some people feel immediate relief and relaxation, while others may notice gradual improvements over time. Multiple sessions may be recommended for deeper or ongoing issues.
@@ -81,7 +81,7 @@ const EnergyWork = () => {
               </p>
               <br/>
               <p>
-                Sessions address not just symptoms but the underlying energetic patterns that contribute to imbalance. This practice activates your body's innate wisdom, allowing deep healing to unfold from within. Reiki meets you exactly where you are and guides you toward greater wholeness, alignment, and happiness.
+                Sessions address not just symptoms but the underlying energetic patterns that contribute to imbalance. This practice activates your body's innate wisdom– allowing balance to unfold from within. Reiki meets you where you are and supports your system in gaining balance.
               </p>
               <div className="gold-divider"></div>
             </div>

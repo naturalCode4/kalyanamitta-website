@@ -908,6 +908,10 @@
   z-index: 2;
 }
 
+.extra {
+  font-size: 1rem
+}
+
 .flexible-description {
   font-size: 1rem;
   color: #d1d1d1;

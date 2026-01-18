@@ -149,14 +149,14 @@ const EFT = () => {
                   <h4>During the Session</h4>
                   <p>
                     As we tap, you'll be guided to relieve or resolve your issue and meet your goals. I will suggest things for you to say, which you are encouraged to modify so that your words resonates with you.
-                    You will likely directly experience shifts in energy, rapid release of negative thoughts and emotions associated with your issue, and fresh insights, and freedom around your issue(s)-- A.K.A. Emotional Freedom. 
+                    You will likely directly experience shifts in energy, release of negative thoughts and emotions, fresh insights, and freedom around your issue(s)-- A.K.A. Emotional Freedom. 
                   </p>
                 </div>
                 
                 <div className="expect-item">
                   <h4>After the Session</h4>
                   <p>
-                    In most cases, you will notice significant relief, clarity, and shifts in your issue.
+                    In most cases, you will notice significant relief, clarity, and shifts.
                     EFT deeply resolves issues on the subconscious and neurological level, and you may continue to notice positive changes arise in the days and weeks following your session.
                     We may discuss practices that might support your healing and goals.
                   </p>

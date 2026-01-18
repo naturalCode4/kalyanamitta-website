@@ -64,7 +64,7 @@ const SpiritualPractice = () => {
                 I teach yoga, breathwork, voice-based sound healing, and offer support in meditation. These are all powerful multi-tools we can bring in, or they can be the focus of our time together.
               </p>
               <p>
-                Spiritual Counseling sessions can also be synthesized with EFT or Energy Healing. EFT is often extremely useful (and recommended!) to release and heal specific issues.
+                Spiritual Counseling sessions can also be synthesized with EFT or Energy Healing. EFT is often extremely useful (and recommended!) for working through certain things.
               </p>
               <div className="gold-divider"></div>
               <p>
