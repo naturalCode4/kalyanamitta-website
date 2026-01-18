@@ -97,26 +97,24 @@ const Rates = () => {
               <h3>Open Reciprocity Sliding Scale</h3>
               <p className="flexible-label">90 minutes: $80-250</p>
               <p className="subtitle">I offer flexible pricing so that this work is accessible to everyone. Choose an amount that feels aligned—honoring this work and what's sustainable for you.</p>
-              <p className="subtitle">I offer very accessible rates because I am passionate about this work and desire to share it widely. There is a huge wealth disparity in the modern world. For some, the standard rate is an easy investment, and for others its basic expenses they can't forego.</p>
+              <p className="subtitle">I offer accessible rates because I am passionate about this work and desire to share it widely. There is a huge wealth disparity in the modern world. For some, the standard rate is an easy investment, and for others its basic expenses they can't forego.</p>
               <p className="subtitle">For those with financial ease, your generosity honors the exchange of energy between us, allows me to thrive doing what I love, supports this work in the world, and makes it accessible to others.</p>
             </div>
           </div>
           
           <div className="pricing-timeline">
             
-            <div className="timeline-point">
+            {/* <div className="timeline-point">
               <div className="timeline-number">1</div>
               <div className="timeline-content">
                 <h3>$45 - 70</h3>
                 <p className="timeline-label">Deep Accessibility</p>
-                {/* <h3>Deep Accessibility</h3>
-                <p className="timeline-label">45 - 70</p> */}
                 <p className="timeline-description">Reserved for those struggling financially. Your presence and commitment matters most.</p>
               </div>
-            </div>
+            </div> */}
             
             <div className="timeline-point highlighted-point">
-              <div className="timeline-number">2</div>
+              <div className="timeline-number">1</div>
               <div className="timeline-content middle-card">
                 <h3>$80 - 120</h3>
                 <p className="timeline-label">Accessible Range</p>
@@ -127,7 +125,7 @@ const Rates = () => {
             </div>
 
             <div className="timeline-point highlighted-point">
-              <div className="timeline-number">3</div>
+              <div className="timeline-number">2</div>
               <div className="timeline-content middle-card">
                 <h3>$165</h3>
                 <p className="timeline-label">Standard Rate</p>
@@ -138,7 +136,7 @@ const Rates = () => {
             </div>
 
             <div className="timeline-point">
-              <div className="timeline-number">4</div>
+              <div className="timeline-number">3</div>
               <div className="timeline-content">
                 <h3>$225 - 250</h3>
                 <p className="timeline-label">Sustaining Range</p>
