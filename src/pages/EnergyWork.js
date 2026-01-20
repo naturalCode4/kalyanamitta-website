@@ -57,7 +57,7 @@ const EnergyWork = () => {
                 Energy healing transmits vital energy to your whole being, helps remove blockages and deficiencies, and restores the natural healing intelligence within us all. From energy work and restoring balance to your body's energy field, you may experience:
               </p>
               <p>
-                Deeper sense of peace, love, and connectedness • Enhanced vitality, health, sleep quality, and immune function • Relief from physical pain and tension and accelerated recovery from injuries • Deep relaxation and reduced stress and anxiety • Emotional release, clarity, and resolution to psychological issues • Mental clarity, reduced brain fog, enhanced intuition, third eye activation, and increased energetic awareness • Intuitive downloads, messages, and connection to supernal consciousness
+                Deeper sense of peace, love, and connectedness • Enhanced vitality, health, sleep quality, and immune function • Relief from physical pain and tension and accelerated recovery from injuries • Deep relaxation and reduced stress and anxiety • Emotional release, clarity, and resolution to psychological issues • Mental clarity, reduced brain fog, enhanced intuition, third eye activation, and increased energetic awareness • Intuitive downloads, messages, and deepened connection to supernal consciousness.
               </p>
               <p>
                 How quickly you experience benefits can vary based on individual factors and the nature of your concerns. Some people feel immediate relief and relaxation, while others may notice gradual improvements over time. Multiple sessions may be recommended for deeper or ongoing issues.
@@ -77,7 +77,7 @@ const EnergyWork = () => {
                 Reiki is an ancient Japanese healing art in which a practitioner channels this beneficent, spiritually conscious, self-intelligent, omnipresent (Rei) life force energy (Ki) to optimize a recipient's bio-energetic field. Reiki works on multiple dimensions simultaneously, supporting the recipient on the physical, emotional, mental, energetic, and spiritual planes.
               </p>
               <p>
-                When one's energy field becomes stagnant, depleted, or disrupted through negative thinking, stress, illness, disconnection, etc., we experience dis-ease. Reiki practitioners use gentle touch to channel Reiki, acting as a conduit for Reiki to flow through you.
+                When one's energy field becomes stagnant, depleted, or disrupted through negative thinking, stress, illness, disconnection, etc., we experience dis-ease. Reiki practitioners trasmit Reiki, acting as a conduit for Reiki to flow through you.
               </p>
               <br/>
               <p>

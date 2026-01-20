@@ -99,15 +99,15 @@ const Home = () => {
             
             <div className="hero-manifesto">
               <div className="manifesto-item">
-                <span className="manifesto-text">Healing is your nature.<br className="desktop-break" />Transmute difficult emotions.<br className="desktop-break" />Dissolve what limits you.</span>
+                <span className="manifesto-text">Healing is your nature.<br className="desktop-break" />Release stuck emotions.<br className="desktop-break" />Dissolve what limits you.</span>
               </div>
               <div className="manifesto-connector"></div>
               <div className="manifesto-item">
-                <span className="manifesto-text">Unveil clarity and purpose.<br className="desktop-break" />Restore true connection.<br className="desktop-break" />Liberate your heart, body, and mind.</span>   
+                <span className="manifesto-text">Restore true connection.<br className="desktop-break" />Unveil clarity and purpose.<br className="desktop-break" />Liberate your heart, body, and mind.</span>   
               </div>
               <div className="manifesto-connector"></div>
               <div className="manifesto-item">
-                <span className="manifesto-text">Embody sovereignty.<br className="desktop-break" />Unmute your soul.<br className="desktop-break" />Remember your power.</span>
+                <span className="manifesto-text">Unmute your soul.<br className="desktop-break" />Embody sovereignty.<br className="desktop-break" />Remember your power.</span>
               </div>
             </div>
 

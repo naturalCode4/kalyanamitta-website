@@ -10,7 +10,7 @@ const Rates = () => {
   const packages = [
     {
       name: '4-Session Combo',
-      description: "Invest in your healing and goals. Four potent sessions to transform your life and resolve several issues.",
+      description: "Invest in your healing, goals, and getting your energy back. Four potent sessions to transform your life and free yourself from these issues.",
       mainPrice: '$528',
       slidingScale: ' / Sliding Scale $256-800',
       originalPrice: '$660. Sliding Scale $320-1000',
@@ -24,7 +24,7 @@ const Rates = () => {
     },
     {
       name: '7-Session Combo',
-      description: "Change your life, heal major issues, and develop your spiritual toolkit. Commit yourself to being supported with seven powerful sessions.",
+      description: "Transform your life, heal even major issues, and develop your spiritual toolkit. Commit yourself to being supported with seven potent sessions.",
       mainPrice: '$866',
       slidingScale: ' / Sliding Scale $420-1,312',
       originalPrice: '$1,155. Sliding Scale $560-1,750',
@@ -96,10 +96,10 @@ const Rates = () => {
             <div className="flexible-content">
               <h3>Open Reciprocity Sliding Scale</h3>
               <p className="flexible-label">90 minutes: $80-250</p>
-              <p className="subtitle">I offer flexible pricing so that this work is accessible to everyone. Choose an amount that feels aligned—honoring this work and what's sustainable for you.</p>
-              <p className="subtitle">I offer accessible rates because I am passionate about this work and desire to share it widely. There is a huge wealth disparity in the modern world. For some, the standard rate is an easy investment, and for others its basic expenses they can't forego.</p>
+              <p className="subtitle">I offer flexible pricing so that this work is accessible. Choose an amount that feels aligned—honoring this work and what's sustainable for you.</p>
+              <p className="subtitle">I am currently offering these rates because I am passionate about this work and desire to share it widely. There is a huge wealth disparity in the modern world. For some, the standard rate is an easy investment, and for others its basic expenses they can't forego.</p>
               <p className="subtitle">For those with financial ease, your generosity honors the exchange of energy between us, allows me to thrive doing what I love, supports this work in the world, and makes it accessible to others.</p>
-              <p className="subtitle extra"><em>Rates listed are for 90 minutes. 60 and 30 minute sessions are available as well</em></p>
+              <p className="subtitle extra"><em>Rates listed are for 90 minutes. 60 and 30 minute sessions are available as well.</em></p>
             </div>
           </div>
           
@@ -108,12 +108,17 @@ const Rates = () => {
             <div className="timeline-point highlighted-point">
               <div className="timeline-number">1</div>
               <div className="timeline-content middle-card">
-                <h3>$80 - 120</h3>
+                <h3>$80 - 108</h3>
                 <p className="timeline-label">Accessible Range</p>
                 {/* <h3>Accessible Range</h3>
                 <p className="timeline-label">80 - 120</p> */}
                 <p className="timeline-description">For those finding the standard rate beyond their means, and for dharma practitioners</p>
               </div>
+              {/* <div className="timeline-content">
+                <h3>$50 - 70</h3>
+                <p className="timeline-label">Deep Accessibility</p>
+                <p className="timeline-description">Reserved only for those with struggling financially but who sincerely long to do this work. Your presence and commitment matter most.</p>
+              </div> */}
             </div>
 
             <div className="timeline-point highlighted-point">
@@ -147,11 +152,10 @@ const Rates = () => {
         <div className="container">
           <div className="pricing-timeline">
           <div className="timeline-point">
-            <div className="timeline-number">4</div>
             <div className="timeline-content timeline-content-2">
               <h3>$50 - 70</h3>
               <p className="timeline-label">Deep Accessibility</p>
-              <p className="timeline-description">I have a few slots strictly reserved for those struggling financially but who sincerely long to do this work. Your presence and commitment matter most.</p>
+              <p className="timeline-description">Reserved only for those struggling financially but who sincerely long to do this work. Your presence and commitment matter most.</p>
             </div>
           </div>
           </div>

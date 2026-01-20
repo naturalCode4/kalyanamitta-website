@@ -46,7 +46,7 @@ const EFT = () => {
           <div className="EFT-emotional-freedom-techniques-hero-content">
             <h1>Emotional Freedom Techniques (EFT)</h1>
             <p className="EFT-emotional-freedom-techniques-subtitle">
-              Rapidly process emotions, regulate your nervous system, heal even major issues, and create the life you desire
+              Rapidly process emotions, regulate your nervous system, heal even major issues, and create the life you desire.
             </p>
           </div>
         </div>
@@ -113,7 +113,7 @@ const EFT = () => {
                 EFT works on the neurological, subconscious, and energetic level. Shifts are enduring once thoroughly addressed, as neural networks are reprogrammed and the nervous system releases and resolves built-up issues. 
               </p>
               <p>
-              For some issues, EFT may provide relief very quickly, while with other issues we may see long-lasting shifts emerge over multiple sessions. How quickly you experience benefits can vary based on individual factors and the nature of your concerns. Some people get immediate relief and resolution, while others may notice gradual improvements over time. Multiple sessions may be recommended for deeper or ongoing issues.
+                For some issues, EFT may provide relief very quickly, while with other issues you may experience improvements over time. How quickly you experience benefits can vary based on individual factors and the nature of your concerns.
               </p>
               <div className="gold-divider"></div>
               <h3>

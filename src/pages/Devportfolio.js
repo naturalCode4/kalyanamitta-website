@@ -198,14 +198,14 @@ const Portfolio = () => {
               I am especially excited to develop for Dharma centers, healing practitioners, and environmentally/socially positive organizations— and I may give you a friend rate for the good fortune of building something I feel a heart-connection to.
             </p>
             <div className="contact-details">
-              <p><strong>Email:</strong> adinscoolmail@gmail.com</p>
+              <p><strong>Email:</strong> healingontap963@gmail.com</p>
               <p><strong>Phone:</strong> +1 (301) 641-2855</p>
               <p><strong>Location:</strong> Philadelphia, PA / Remote</p>
             </div>
             
             <div className="cta-section" style={{ marginTop: '1.5rem', alignItems: 'flex-start' }}>
               <div className="cta-buttons">
-                <a href="mailto:adinscoolmail@gmail.com" className="btn">Email Me</a>
+                <a href="mailto:healingontap963@gmail.com" className="btn">Email Me</a>
                 <a href="https://www.linkedin.com/in/adinkramer/" target="_blank" rel="noopener noreferrer" className="btn btn-outline">LinkedIn</a>
               </div>
             </div>
