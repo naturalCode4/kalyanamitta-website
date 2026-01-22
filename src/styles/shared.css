@@ -278,7 +278,7 @@ html {
   }
 }
 
-/* Collapsible Section Styles */
+* Collapsible Section Styles */
 .collapsible-header {
   cursor: pointer;
   user-select: none;
@@ -286,28 +286,12 @@ html {
   align-items: center;
   gap: 10px;
   transition: color 0.2s ease;
-  
-  /* Nuclear tap highlight removal */
-  -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
-  tap-highlight-color: rgba(0,0,0,0) !important;
-  -webkit-touch-callout: none !important;
-  -webkit-user-select: none !important;
-  
-  /* Remove any possible background */
-  background: none !important;
-  background-color: transparent !important;
-  border: none !important;
-  outline: none !important;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
 }
 
-.collapsible-header:hover,
-.collapsible-header:focus,
-.collapsible-header:active,
-.collapsible-header:visited {
+.collapsible-header:hover {
   opacity: 0.8;
-  background: none !important;
-  background-color: transparent !important;
-  outline: none !important;
 }
 
 .triangle {
@@ -315,8 +299,14 @@ html {
   transition: transform 0.3s ease;
   font-size: 0.8em;
   color: inherit;
-  -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
-  flex-shrink: 0;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  
+  /* iOS-specific fixes */
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
 }
 
 .triangle.open {
