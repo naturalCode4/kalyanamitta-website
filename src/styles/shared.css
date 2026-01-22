@@ -286,24 +286,30 @@ html {
   align-items: center;
   gap: 10px;
   transition: color 0.2s ease;
-  -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-  tap-highlight-color: transparent;
-  outline: none;
-  background: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
-.collapsible-header:focus {
-  outline: none;
-  background: none;
+.collapsible-header * {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 .collapsible-header:hover {
   opacity: 0.8;
 }
 
+.collapsible-header:focus {
+  outline: none;
+}
+
 .collapsible-header:active {
-  background: none;
+  background-color: transparent;
 }
 
 .triangle {
@@ -311,9 +317,8 @@ html {
   transition: transform 0.3s ease;
   font-size: 0.8em;
   color: inherit;
-  -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-  pointer-events: none; /* Prevent triangle itself from being tapped */
+  flex-shrink: 0;
 }
 
 .triangle.open {
@@ -328,23 +333,7 @@ html {
 }
 
 .collapsible-content.open {
-  max-height: 5000px; /* Large enough to accommodate content */
+  max-height: 5000px;
   opacity: 1;
   transition: max-height 0.5s ease-in, opacity 0.4s ease-in;
-}
-
-/* Mobile-specific collapsible header override */
-@media (max-width: 768px) {
-  .collapsible-header {
-    -webkit-tap-highlight-color: transparent !important;
-    -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
-    outline: none !important;
-    background: none !important;
-  }
-  
-  .collapsible-header:focus,
-  .collapsible-header:active {
-    background: none !important;
-    outline: none !important;
-  }
 }

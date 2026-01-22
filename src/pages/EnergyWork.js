@@ -60,7 +60,7 @@ const EnergyWork = () => {
                 Energy healing addresses diverse needs by restoring and optimizing the body's natural energy field. I offer Reiki-based energy healing attuned to your being and any specific concerns– whether they be physical, emotional, energetic, or spiritual. Grounded in compassionate presence, I hold space for whatever arises with acceptance and care.
               </p>
               <p>
-                In addition to Reiki, I may incorporate acupressure, other healing techniques, or share insights as appropriate to your session. When helpful, I can offer guidance to help you integrate your experience and move forward with clarity.
+                In addition to Reiki, I may incorporate other healing techniques, focused pressure on specific energy points, or share insights as appropriate to your session. When helpful, I can offer guidance to help you integrate your experience and move forward with clarity.
               </p>
               {window.innerWidth > 768 && <br />}
               <div className="gold-divider"></div>
@@ -131,7 +131,7 @@ const EnergyWork = () => {
                 <div className="expect-item">
                   <h4>Energy Healing Session</h4>
                   <p>
-                    You'll lie comfortably on a table or mat receiving Reiki through gentle touch. I may integrate other energy work methods and acupressure. Hands-off treatment is available upon request. Each session and person is unique. You may experience shifts in sensation. It is often a very pleasant and relaxing experience.
+                    You'll lie comfortably on a table or mat receiving Reiki. I may integrate other healing modalities as well. Hands-off treatment is available upon request. Each session and person is unique. You may experience shifts in sensation. It is often a very pleasant and relaxing experience.
                   </p>
                 </div>
 
