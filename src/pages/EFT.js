@@ -92,7 +92,7 @@ const EFT = () => {
               
               {/* Why EFT is So Powerful - Collapsible */}
               <h3 className="collapsible-header" onClick={() => toggleSection('whyPowerful')}>
-                <span className={`triangle ${openSections.whyPowerful ? 'open' : ''}`}>▶</span>
+                <span className={`triangle ${openSections.whyPowerful ? 'open' : ''}`}></span>
                 Why EFT is So Powerful
               </h3>
               <div className={`collapsible-content ${openSections.whyPowerful ? 'open' : ''}`}>
@@ -137,7 +137,7 @@ const EFT = () => {
               
               {/* Who and What is EFT For - Collapsible */}
               <h3 className="collapsible-header" onClick={() => toggleSection('whoWhat')}>
-                <span className={`triangle ${openSections.whoWhat ? 'open' : ''}`}>▶</span>
+                <span className={`triangle ${openSections.whoWhat ? 'open' : ''}`}></span>
                 Who and What is EFT For?
               </h3>
               <div className={`collapsible-content ${openSections.whoWhat ? 'open' : ''}`}>
@@ -150,7 +150,7 @@ const EFT = () => {
               
               {/* Evidence and Experience - Collapsible */}
               <h3 className="collapsible-header" onClick={() => toggleSection('evidence')}>
-                <span className={`triangle ${openSections.evidence ? 'open' : ''}`}>▶</span>
+                <span className={`triangle ${openSections.evidence ? 'open' : ''}`}></span>
                 Evidence and Experience
               </h3>
               <div className={`collapsible-content ${openSections.evidence ? 'open' : ''}`}>

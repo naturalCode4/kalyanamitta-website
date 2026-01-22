@@ -74,7 +74,7 @@ const About = () => {
               
               {/* My Approach - Collapsible */}
               <h3 className="collapsible-header" onClick={() => toggleSection('approach')}>
-                <span className={`triangle ${openSections.approach ? 'open' : ''}`}>▶</span>
+                <span className={`triangle ${openSections.approach ? 'open' : ''}`}></span>
                 My Approach
               </h3>
               <div className={`collapsible-content ${openSections.approach ? 'open' : ''}`}>
@@ -102,7 +102,7 @@ const About = () => {
               
               {/* Story - Collapsible */}
               <h3 className="collapsible-header" onClick={() => toggleSection('story')}>
-                <span className={`triangle ${openSections.story ? 'open' : ''}`}>▶</span>
+                <span className={`triangle ${openSections.story ? 'open' : ''}`}></span>
                 Story
               </h3>
               <div className={`collapsible-content ${openSections.story ? 'open' : ''}`}>
@@ -127,7 +127,7 @@ const About = () => {
               
               {/* Healing is For Everyone - Collapsible */}
               <h3 className="collapsible-header" onClick={() => toggleSection('healing')}>
-                <span className={`triangle ${openSections.healing ? 'open' : ''}`}>▶</span>
+                <span className={`triangle ${openSections.healing ? 'open' : ''}`}></span>
                 Healing is For Everyone
               </h3>
               <div className={`collapsible-content ${openSections.healing ? 'open' : ''}`}>
@@ -149,7 +149,7 @@ const About = () => {
               
               {/* A Note on Teachers and Practice - Collapsible */}
               <h3 className="collapsible-header" onClick={() => toggleSection('teachers')}>
-                <span className={`triangle ${openSections.teachers ? 'open' : ''}`}>▶</span>
+                <span className={`triangle ${openSections.teachers ? 'open' : ''}`}></span>
                 A Note on Teachers and Practice
               </h3>
               <div className={`collapsible-content ${openSections.teachers ? 'open' : ''}`}>
@@ -165,7 +165,7 @@ const About = () => {
               
               {/* Side Offerings - Collapsible */}
               <h3 className="collapsible-header" onClick={() => toggleSection('side')}>
-                <span className={`triangle ${openSections.side ? 'open' : ''}`}>▶</span>
+                <span className={`triangle ${openSections.side ? 'open' : ''}`}></span>
                 Side Offerings
               </h3>
               <div className={`collapsible-content ${openSections.side ? 'open' : ''}`}>

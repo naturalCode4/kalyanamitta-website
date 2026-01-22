@@ -70,7 +70,7 @@ const SpiritualPractice = () => {
               
               {/* Practices - Collapsible */}
               <h3 className="collapsible-header" onClick={() => toggleSection('practices')}>
-                <span className={`triangle ${openSections.practices ? 'open' : ''}`}>▶</span>
+                <span className={`triangle ${openSections.practices ? 'open' : ''}`}></span>
                 Practices
               </h3>
               <div className={`collapsible-content ${openSections.practices ? 'open' : ''}`}>

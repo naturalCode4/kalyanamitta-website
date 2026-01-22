@@ -67,7 +67,7 @@ const EnergyWork = () => {
               
               {/* Benefits of Energy Healing - Collapsible */}
               <h3 className="collapsible-header" onClick={() => toggleSection('benefits')}>
-                <span className={`triangle ${openSections.benefits ? 'open' : ''}`}>▶</span>
+                <span className={`triangle ${openSections.benefits ? 'open' : ''}`}></span>
                 Benefits of Energy Healing
               </h3>
               <div className={`collapsible-content ${openSections.benefits ? 'open' : ''}`}>
@@ -89,7 +89,7 @@ const EnergyWork = () => {
               
               {/* What is Reiki? - Collapsible */}
               <h3 className="collapsible-header" onClick={() => toggleSection('whatIsReiki')}>
-                <span className={`triangle ${openSections.whatIsReiki ? 'open' : ''}`}>▶</span>
+                <span className={`triangle ${openSections.whatIsReiki ? 'open' : ''}`}></span>
                 What is Reiki?
               </h3>
               <div className={`collapsible-content ${openSections.whatIsReiki ? 'open' : ''}`}>
