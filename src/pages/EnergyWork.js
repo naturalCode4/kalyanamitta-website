@@ -57,7 +57,7 @@ const EnergyWork = () => {
 
             <div className="about-energy-work-text">
               <p>
-                Energy healing addresses diverse needs by balancing, restoring, and optimizing the body's natural energy field. I offer Reiki-based energy healing attuned to your being, responding to any specific concerns you bring– whether they be physical, emotional, energetic, or spiritual. Grounded in compassionate presence, I hold space for whatever arises with acceptance and care.
+                Energy healing addresses diverse needs by restoring and optimizing the body's natural energy field. I offer Reiki-based energy healing attuned to your being and any specific concerns– whether they be physical, emotional, energetic, or spiritual. Grounded in compassionate presence, I hold space for whatever arises with acceptance and care.
               </p>
               <p>
                 In addition to Reiki, I may incorporate acupressure, other healing techniques, or share insights as appropriate to your session. When helpful, I can offer guidance to help you integrate your experience and move forward with clarity.
@@ -106,11 +106,10 @@ const EnergyWork = () => {
                   Reiki is an ancient Japanese healing art in which a practitioner channels this beneficent, spiritually conscious, self-intelligent, omnipresent (Rei) life force energy (Ki) to optimize a recipient's bio-energetic field. Reiki works on multiple dimensions simultaneously, supporting the recipient on the physical, emotional, mental, energetic, and spiritual planes.
                 </p>
                 <p>
-                  When one's energy field becomes stagnant, depleted, or disrupted through negative thinking, stress, illness, disconnection, etc., we experience dis-ease. Reiki practitioners trasmit Reiki, acting as a conduit for Reiki to flow through you.
+                  When one's energy field becomes stagnant, depleted, or disrupted through negative thinking, stress, illness, disconnection, etc., we experience dis-ease.
                 </p>
-                <br/>
                 <p>
-                  Sessions address not just symptoms but the underlying energetic patterns that contribute to imbalance. This practice participates with your body's innate wisdom– allowing balance to unfold from within. Reiki meets you where you are and supports your system in gaining balance.
+                  Sessions address not just symptoms but the underlying energetic patterns that contribute to imbalance. Practitioners act as a conduit for Reiki to trasmit to you. This practice participates with your body's innate wisdom– allowing balance to unfold from within. Reiki meets you where you are and supports your system in gaining balance.
                 </p>
               </div>
               
@@ -132,7 +131,7 @@ const EnergyWork = () => {
                 <div className="expect-item">
                   <h4>Energy Healing Session</h4>
                   <p>
-                    You'll lie comfortably on a mat, first face-up, then face-down, the face-up again, receiving Reiki through gentle touch. I may integrate other energy work methods and acupressure. Hands-off treatment is available upon request. Each session and person is unique. You may experience shifts in sensation. It is often a very pleasant and relaxing experience.
+                    You'll lie comfortably on a table or mat receiving Reiki through gentle touch. I may integrate other energy work methods and acupressure. Hands-off treatment is available upon request. Each session and person is unique. You may experience shifts in sensation. It is often a very pleasant and relaxing experience.
                   </p>
                 </div>
 
@@ -163,9 +162,9 @@ const EnergyWork = () => {
                     <br/>
                     <strong>Emotional:</strong> Deeper sense of peace, love, and connectedness • Reduced stress and anxiety • Emotional release, clarity, and resolution to psychological issues
                     <br/>
-                    <strong>Mental/Energetic:</strong> More positive thinking • Mental clarity and reduced brain fog • Increased vitality
+                    <strong>Mental/Energetic:</strong> More positive thinking • Mental clarity and reduced brain fog • Increased vitality and energetic awareness
                     <br/>
-                    <strong>Spiritual:</strong> • Enhanced intuition, third eye activation, and increased energetic awareness • Intuitive downloads, messages, and deepened connection to supernal consciousness.Third eye activation • Intuitive downloads, messages, and connection to supernal consciousness
+                    <strong>Spiritual:</strong> • Enhanced intuition and third eye activation • Intuitive downloads, messages, and deepened connection to supernal consciousness
                   </p>
                 </div>
               </div>
