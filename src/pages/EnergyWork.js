@@ -34,7 +34,7 @@ const EnergyWork = () => {
         <div className="container">
           <div className="energy-work-hero-content">
             <h1>Reiki-Based Energy Healing</h1>
-            <p className="energy-work-subtitle">Receive universal life force energy for relaxation, vitality, emotional healing, connection, clarity, and more.</p>
+            <p className="energy-work-subtitle">Treatment of universal life force energy for health, relaxation, vitality, emotional healing, connection, clarity, and more.</p>
           </div>
         </div>
       </section>
@@ -57,10 +57,16 @@ const EnergyWork = () => {
 
             <div className="about-energy-work-text">
               <p>
-                Energy Healing addresses diverse needs by restoring and optimizing the body's natural energy field. I offer Reiki-based energy healing attuned to your being and any specific concerns– whether they be physical, emotional, energetic, or spiritual. Grounded in compassionate presence, I hold space for whatever arises with acceptance and care.
+                Reiki-based Energy Healing treatment restores and optimizes your energy field to bring many wonderful benefits (see "Benefits of Energy Healing" below).
               </p>
               <p>
-                In addition to Reiki, I may incorporate other healing techniques, focused pressure on specific energy points, or share insights as appropriate to your session. When helpful, I can offer guidance to help you integrate your experience and move forward with clarity.
+                I attune to your whole being and address any specific concerns– whether they be physical, emotional, energetic, or spiritual.
+              </p>
+              <p>
+                Grounded in safe and compassionate presence, I hold space for whatever arises with acceptance and care.
+              </p>
+              <p>
+                In addition to Reiki, I may incorporate other modes of energy work, focused pressure on specific energy points, or share information when it is helpful to you. When requested, I offer guidance and discussion to help you integrate your experience and move forward with clarity.
               </p>
               {window.innerWidth > 768 && <br />}
               <div className="gold-divider"></div>

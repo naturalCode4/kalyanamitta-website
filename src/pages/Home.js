@@ -99,6 +99,17 @@ const Home = () => {
             
             <div className="hero-manifesto">
               <div className="manifesto-item">
+                <span className="manifesto-text">Healing is your nature,<br className="desktop-break" />Dissolve what limits you.</span>
+              </div>
+              <div className="manifesto-connector"></div>
+              <div className="manifesto-item">
+                <span className="manifesto-text">Restore clarity and connection,<br className="desktop-break" />Liberate your heart, body, and mind.</span>   
+              </div>
+              <div className="manifesto-connector"></div>
+              <div className="manifesto-item">
+                <span className="manifesto-text">Unmute your soul,<br className="desktop-break" />Remember your power.</span>
+              </div>
+              {/* <div className="manifesto-item">
                 <span className="manifesto-text">Healing is your nature.<br className="desktop-break" />Release stuck emotions.<br className="desktop-break" />Dissolve what limits you.</span>
               </div>
               <div className="manifesto-connector"></div>
@@ -108,7 +119,7 @@ const Home = () => {
               <div className="manifesto-connector"></div>
               <div className="manifesto-item">
                 <span className="manifesto-text">Unmute your soul.<br className="desktop-break" />Embody sovereignty.<br className="desktop-break" />Remember your power.</span>
-              </div>
+              </div> */}
             </div>
 
           </div>
@@ -123,10 +134,10 @@ const Home = () => {
       >
         <div className="grid grid-2">
           <div>
-            <p>This work supports embodied well-being, love, empowerment, all kinds of connection, getting desired outcomes, and alignment with clear wisdom.</p>
-            <p>I offer EFT (Emotional Freedom Techniques, or Tapping), Reiki Energy Healing, and Spiritual Counseling and Practices (Yoga, Breathwork, Sound Healing, and Meditation). My guidance and modalities are integrative and rooted in direct experience and teachings from spiritual traditions.</p>
-            <p>I believe that our bodies, hearts, energy, and the universe itself are fundamentally good and possess inherent healing properties. I'll help you realize and activate this in your life. My role is to offer loving presence, transformative modalities, and guidance—awakening to the basic goodness already present within you and actualizing your natural capacity for healing, love, spiritual insight, and transformation.</p>
-            <p>My mission is to support beings in any way I can. If you're curious about how we can work together, so am I!</p>
+            <p>This work creates <b>well-being, health, love, power, deeper connection, desired outcomes, letting go of what does not serve, alignment with clear wisdom and purpose, and much more.</b></p>
+            <p>My modalities are EFT (Emotional Freedom Techniques, or Tapping), Reiki Energy Healing, and Spiritual Counseling and Practices (Yoga, Breathwork, Sound Healing, and Meditation). My guidance and modalities are integrative and rooted in direct experience, science, and essential teachings from spiritual traditions.</p>
+            <p>You are fundamentally good and have inherent healing potential. I help you realize and activate this so you can <b>experience this for yourself</b>. I offer potent modalities, loving presence, and spiritually integrative guidance— helping you awaken to the spirit already present within you and actualizing your natural capacity for healing, love, spiritual insight, and transformation.</p>
+            <p>My mission is to support beings in any way I can, whatever stage they're at. If you're curious about how we can work together, so am I.</p>
           </div>
           <div className="about-photos">
             <div className="photo-container">
