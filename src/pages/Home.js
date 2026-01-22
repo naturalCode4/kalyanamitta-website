@@ -87,9 +87,9 @@ const Home = () => {
     <div className="home">
       <Helmet>
         <title>Healing On Tap | Integrative Healing & Guidance</title>
-        <meta name="description" content="Transform your whole life with EFT Tapping, Reiki Energy Work, and Spiritual Counseling. Based in West Philadelphia & Virtual." />
+        <meta name="description" content="Transform your whole life with EFT Tapping, Reiki Energy Healing, and Spiritual Counseling. Based in West Philadelphia & Virtual." />
         <meta property="og:title" content="Healing On Tap | Integrative Healing & Guidance" />
-        <meta property="og:description" content="Transform your whole life with EFT Tapping, Reiki Energy Work, and Spiritual Counseling. Based in West Philadelphia & Virtual." />
+        <meta property="og:description" content="Transform your whole life with EFT Tapping, Reiki Energy Healing, and Spiritual Counseling. Based in West Philadelphia & Virtual." />
       </Helmet>
       {/* Hero Section */}
       <section className="hero">

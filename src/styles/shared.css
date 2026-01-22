@@ -286,30 +286,28 @@ html {
   align-items: center;
   gap: 10px;
   transition: color 0.2s ease;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  margin: 0;
+  
+  /* Nuclear tap highlight removal */
+  -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+  tap-highlight-color: rgba(0,0,0,0) !important;
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+  
+  /* Remove any possible background */
+  background: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
 }
 
-.collapsible-header * {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
-.collapsible-header:hover {
+.collapsible-header:hover,
+.collapsible-header:focus,
+.collapsible-header:active,
+.collapsible-header:visited {
   opacity: 0.8;
-}
-
-.collapsible-header:focus {
-  outline: none;
-}
-
-.collapsible-header:active {
-  background-color: transparent;
+  background: none !important;
+  background-color: transparent !important;
+  outline: none !important;
 }
 
 .triangle {
@@ -317,7 +315,7 @@ html {
   transition: transform 0.3s ease;
   font-size: 0.8em;
   color: inherit;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
   flex-shrink: 0;
 }
 

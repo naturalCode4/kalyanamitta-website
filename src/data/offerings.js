@@ -7,7 +7,7 @@ export const offerings = [
   },
   {
     id: 'energy-work',
-    title: 'Reiki-based Energy Work',
+    title: 'Reiki-based Energy Healing',
     availability: 'Available in-person',
     content: "Receive universal life force energy to optimize the body's natural bio-energy field. This promotes relaxation, vitality, emotional healing, connection, clarity, removes blockages and deficiencies, and more. Generally it is a very pleasant and restful experience."
   },

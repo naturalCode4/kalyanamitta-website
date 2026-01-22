@@ -33,13 +33,13 @@ const EnergyWork = () => {
       <section className="energy-work-hero">
         <div className="container">
           <div className="energy-work-hero-content">
-            <h1>Energy Work</h1>
+            <h1>Reiki-Based Energy Healing</h1>
             <p className="energy-work-subtitle">Receive universal life force energy for relaxation, vitality, emotional healing, connection, clarity, and more.</p>
           </div>
         </div>
       </section>
 
-      {/* About Energy Work Section - Rainbow Background */}
+      {/* About energy healing Section - Rainbow Background */}
       <section className="about-energy-work section-rainbow">
         <div className="container">
           <div className="about-energy-work-content">
@@ -49,7 +49,7 @@ const EnergyWork = () => {
             <div className="energy-image-container">
               <img 
                 src={pic6}
-                alt="Energy Work Session" 
+                alt="energy healing Session" 
                 className="energy-work-pic" 
               />
               <p className="photo-credit">Image by Wirestock on Freepik</p>
@@ -57,7 +57,7 @@ const EnergyWork = () => {
 
             <div className="about-energy-work-text">
               <p>
-                Energy healing addresses diverse needs by restoring and optimizing the body's natural energy field. I offer Reiki-based energy healing attuned to your being and any specific concerns– whether they be physical, emotional, energetic, or spiritual. Grounded in compassionate presence, I hold space for whatever arises with acceptance and care.
+                Energy Healing addresses diverse needs by restoring and optimizing the body's natural energy field. I offer Reiki-based energy healing attuned to your being and any specific concerns– whether they be physical, emotional, energetic, or spiritual. Grounded in compassionate presence, I hold space for whatever arises with acceptance and care.
               </p>
               <p>
                 In addition to Reiki, I may incorporate other healing techniques, focused pressure on specific energy points, or share insights as appropriate to your session. When helpful, I can offer guidance to help you integrate your experience and move forward with clarity.
