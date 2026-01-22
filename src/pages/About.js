@@ -68,7 +68,7 @@ const About = () => {
                 His offerings are EFT (Emotional Freedom Techniques, or Tapping), Reiki Energy Healing, and Spiritual Counseling and Practices (Meditation, Yoga, Breathwork, Sound Healing).
               </p>
               <p>
-                He currently lives in West Philadelphia, PA. He is a certified practitioner of Emotional Freedom Techniques (EFT), Reiki II, Yoga (500 YTT), and Breathwork. He has practiced in Zen, Tibetan, and Theravadan Buddhist lineages. He has also explored mysticism across Judaic, Christian, Sufi, and Taoist traditions, as well as yoga, qi gong, medicine work, shamanism, healing arts, psychic development, bhakti, and ecstatic dance—seeking what genuinely gives life, unclouds the pure heart, and supports positive transformation.
+                He currently lives in West Philadelphia, PA. He is a certified practitioner of Emotional Freedom Techniques (EFT), Reiki II, Yoga (500 YTT), and Breathwork. He has practiced in Zen, Tibetan, and Theravadan Buddhist lineages. He has explored mysticism across Native, Taoist, Judaic, Christian, Hermetic, and Sufi traditions, as well as yoga, qi gong, medicine work, shamanism, healing arts, psychic development, bhakti, and ecstatic dance—seeking what genuinely gives life, unclouds the pure heart, and supports positive transformation.
               </p>
               <div className="gold-divider"></div>
               
@@ -131,18 +131,19 @@ const About = () => {
                 Healing is For Everyone
               </h3>
               <div className={`collapsible-content ${openSections.healing ? 'open' : ''}`}>
-                <p>
-                  Across history and cultures, men have always been deeply involved in spiritual practice, meditation, and inner work. The explicit focus on emotional and shadow work is more of a modern development. Women have been leading the way in emotional and energetic healing in our culture, but men need this work just as much.
-                </p>
-                <p>
-                  In contemporary Western culture, many men have felt that healing isn't for them—that they had to choose between masculinity and emotional depth, authenticity, and healing.
-                </p>
-                <p>
-                  As a male practitioner committed to both spiritual practice and healing work (which are not separate), I'm here to show that this path is ours to walk too. I'm here to help dissolve the internal barriers we've accumulated. This work isn't gendered—it's human and transcendent. It is for all to claim, regardless of gender or cultural conditioning.
-                </p>
-                <p>
-                  To any man who has felt the pull toward transformation and healing— but been challenged by questions of cultural acceptability, wondered where there is a space for you, or whether you are even capable of it: Let's walk this path together.
-                </p>
+              <p>
+                In modern Western culture, there has been a strong emphasis on emotional and shadow healing, as well as energy arts. While men have long pursued spiritual training, women are disproportionately engaging in this work.
+              </p>
+              <p>
+                Many men have felt that healing isn’t for them—that they must choose between 'masculinity' and emotional depth, authenticity, and healing. The strength of a man is not in some bullshit Impenetrable Great Wall of Nonchalantness secretly concealing a terrified little boy. I say 'nay' to that.
+              </p>
+              <p>
+                As a male practitioner committed to both spiritual practice and healing work—which are not separate—I am here to show that healing is a path men can walk too. I am here to help dissolve the internal barriers we have accumulated. Similarly, cultural norms have historically limited women from engaging in traditional spiritual trainings, another arbitrary limitation that the world is dissolving.
+              </p>
+              <p>
+                To any man who has felt the pull toward transformation and healing—but has been challenged by questions of cultural acceptability, wondered where there is space for you, or doubted whether you are even capable of it—let’s walk this path together.
+              </p>
+
               </div>
               
               <div className="gold-divider"></div>

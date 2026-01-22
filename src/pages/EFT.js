@@ -142,7 +142,7 @@ const EFT = () => {
               </h3>
               <div className={`collapsible-content ${openSections.whoWhat ? 'open' : ''}`}>
                 <p>
-                  EFT is for anyone with a nervous system. It works across all ages, cultures, and belief systems, and can meet you wherever you are on your journey. Whether you're navigating daily overwhelm or trauma, physical pain or deep emotions, self-doubt or anxiety, addiction or grief, relationship challenges or spiritual inquiry, manifesting abundance or actualizing your deepest calling, empowering higher consciousness or opening to love—EFT can support your healing and transformation. <a href="/#what-we-can-do-together" target="_blank">These are my core strengths and areas of focus</a>.
+                  EFT is for anyone with a nervous system. It works across all ages, cultures, and belief systems, and can meet you wherever you are on your journey. Whether you're navigating daily overwhelm or trauma, physical pain or deep emotions, self-doubt or anxiety, addiction or grief, relationship challenges or spiritual inquiry, manifesting abundance or actualizing your deepest calling, empowering higher consciousness or opening to love—EFT can accelerate your healing and transformation. <a href="/#what-we-can-do-together" target="_blank">These are my core strengths and areas of focus</a>.
                 </p>
               </div>
               

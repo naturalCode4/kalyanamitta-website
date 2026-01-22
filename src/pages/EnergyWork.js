@@ -72,7 +72,7 @@ const EnergyWork = () => {
               </h3>
               <div className={`collapsible-content ${openSections.benefits ? 'open' : ''}`}>
                 <p>
-                  Reiki transmits vital energy to your whole being, helps remove blockages and deficiencies, and restores the natural healing intelligence within us all. Practitioners can help guide Reiki to address particular deficiencies. By restoring balance to your body's energy field, you may experience:
+                  Reiki transmits vital energy to your whole being, helps remove blockages and deficiencies, and restores your natural healing intelligence. Practitioners can help guide Reiki to address particular deficiencies. By restoring balance to your body's energy field, you may experience:
                 </p>
                 <p>
                   Deeper sense of peace, love, and connectedness • Enhanced vitality • Improvements in health conditions, immune function, and sleep quality • Relief from physical pain and tension and accelerated recovery from injuries • Deep relaxation and reduced stress and anxiety • Emotional release, clarity, and resolution to psychological issues • More positive thinking • Mental clarity and reduced brain fog • Enhanced intuition, third eye activation, and increased energetic awareness • Intuitive downloads, messages, and deepened connection to supernal consciousness.
@@ -109,7 +109,7 @@ const EnergyWork = () => {
                   When one's energy field becomes stagnant, depleted, or disrupted through negative thinking, stress, illness, disconnection, etc., we experience dis-ease.
                 </p>
                 <p>
-                  Sessions address not just symptoms but the underlying energetic patterns that contribute to imbalance. Practitioners act as a conduit for Reiki to trasmit to you. This practice participates with your body's innate wisdom– allowing balance to unfold from within. Reiki meets you where you are and supports your system in gaining balance.
+                  Sessions address not just symptoms but the underlying energetic patterns that contribute to imbalance. Practitioners act as a conduit for Reiki to trasmit to you. This practice participates with your body's innate wisdom– allowing healing to unfold from within. Reiki meets you where you are and supports your system in gaining balance.
                 </p>
               </div>
               
@@ -131,7 +131,7 @@ const EnergyWork = () => {
                 <div className="expect-item">
                   <h4>Energy Healing Session</h4>
                   <p>
-                    You'll lie comfortably on a table or mat receiving Reiki. I may integrate other healing modalities as well. Hands-off treatment is available upon request. Each session and person is unique. You may experience shifts in sensation. It is often a very pleasant and relaxing experience.
+                    You'll lie comfortably on a table or mat and receive Reiki. I may integrate other healing modalities as well. Hands-off treatment is available upon request. Each session and person is unique. You may experience shifts in sensation. It is often a very pleasant and relaxing experience.
                   </p>
                 </div>
 
