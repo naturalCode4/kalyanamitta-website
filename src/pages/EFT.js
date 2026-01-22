@@ -100,7 +100,7 @@ const EFT = () => {
                   Imagine a tool that can relieve you of self-defeating thoughts, feelings, and actions– that you've held for years or decades– patterns you just assumed were an unchangeable part of your existence. Imagine being able to let go of these patterns and consciously uplevel your nervous system in a way that brings you great freedom, ease, joy, clarity, alignment, and empowerment.
                 </p>
                 <p>
-                  EFT boils down Chinese Medicine, Neuroscience, Positive Psychology, and more into a highly effective yet simple modality that one can learn to do anytime, anywhere. Practitioners may also draw upon methodologies from Internal Family Systems (IFS), Hypnotherapy, Cognitive Behavioral Therapy (CBT), EMDR, Mindfulness, Polyvagal Theory, Neuro-Linguistic Programming (NLP), Shamanism, Spiritual Teachings, and more. At its core, EFT embodies the wisdom of Love, Acceptance, Letting Go, and your boundless potential as a creator being.
+                  EFT boils down Chinese Medicine, Neuroscience, Positive Psychology, and more into a highly effective yet simple modality that one can learn to practice on their own. Practitioners may also draw upon methodologies from Internal Family Systems (IFS), Hypnotherapy, Cognitive Behavioral Therapy (CBT), EMDR, Mindfulness, Polyvagal Theory, Neuro-Linguistic Programming (NLP), Shamanism, Spiritual Teachings, and more. At its core, EFT embodies the wisdom of Love, Acceptance, Letting Go, and your boundless potential as a creator being.
                 </p>
                 {isDesktop && (
                   <div className="eft-image-left">

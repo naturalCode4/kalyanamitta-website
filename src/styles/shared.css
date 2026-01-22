@@ -286,6 +286,8 @@ html {
   align-items: center;
   gap: 10px;
   transition: color 0.2s ease;
+  -webkit-tap-highlight-color: transparent; /* Remove mobile tap highlight */
+  -webkit-touch-callout: none; /* Disable callout on long press */
 }
 
 .collapsible-header:hover {
@@ -297,6 +299,8 @@ html {
   transition: transform 0.3s ease;
   font-size: 0.8em;
   color: inherit;
+  -webkit-tap-highlight-color: transparent; /* Remove from triangle too */
+
 }
 
 .triangle.open {
