@@ -10,7 +10,7 @@ const Rates = () => {
   const packages = [
     {
       name: '4-Session Combo',
-      description: "Invest in your healing, goals, and getting your energy back. Four potent sessions to transform your life and free yourself from these issues.",
+      description: "Invest in your development, goals, and get your energy back. Four potent sessions to find freedom and transform yourself.",
       mainPrice: '$528',
       slidingScale: ' / Sliding Scale $256-800',
       originalPrice: '$660. Sliding Scale $320-1000',
@@ -24,7 +24,7 @@ const Rates = () => {
     },
     {
       name: '7-Session Combo',
-      description: "Transform your life, heal even major issues, and develop your spiritual toolkit. Commit yourself to being supported with seven potent sessions.",
+      description: "Transform your life, heal even major issues, and develop your spiritual capacity and toolkit. Commit yourself to being supported with seven potent sessions.",
       mainPrice: '$866',
       slidingScale: ' / Sliding Scale $420-1,312',
       originalPrice: '$1,155. Sliding Scale $560-1,750',
@@ -97,7 +97,7 @@ const Rates = () => {
               <h3>Open Reciprocity Sliding Scale</h3>
               <p className="flexible-label">90 minutes: $80-250</p>
               <p className="subtitle">I offer flexible pricing so that this work is accessible. Choose an amount that feels aligned—honoring this work and what's sustainable for you.</p>
-              <p className="subtitle">I am currently offering these rates because I am passionate about this work and desire to share it widely. There is a huge wealth disparity in the modern world. For some, the standard rate is an easy investment, and for others its basic expenses they can't forego.</p>
+              <p className="subtitle">I offer these rates because I am passionate about this powerful work and desire for it to be shared it widely. There is a huge wealth disparity in the modern world. For some, the standard rate is an easy investment, and for others its basic expenses they can't forego.</p>
               <p className="subtitle">For those with financial ease, your generosity honors the exchange of energy between us, allows me to thrive doing what I love, supports this work in the world, and makes it accessible to others.</p>
               <p className="subtitle extra"><em>Rates listed are for 90 minutes. 60 and 30 minute sessions are available as well.</em></p>
             </div>
@@ -112,7 +112,7 @@ const Rates = () => {
                 <p className="timeline-label">Accessible Range</p>
                 {/* <h3>Accessible Range</h3>
                 <p className="timeline-label">80 - 120</p> */}
-                <p className="timeline-description">For those finding the standard rate beyond their means, and for dharma practitioners</p>
+                <p className="timeline-description">For those whom the standard rate would create financial strain, and for dharma practitioners. Your presence and sincerity matter most.</p>
               </div>
               {/* <div className="timeline-content">
                 <h3>$50 - 70</h3>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Section from '../components/Section';
 import CTA from '../components/CTA';
@@ -7,6 +7,16 @@ import pic4 from '../assets/pic4.jpg';
 import { Helmet } from 'react-helmet';
 
 const SpiritualPractice = () => {
+  const [openSections, setOpenSections] = useState({
+    practices: false
+  });
+
+  const toggleSection = (section) => {
+    setOpenSections(prev => ({
+      ...prev,
+      [section]: !prev[section]
+    }));
+  };
 
   return (
     <div className="spiritual-practice">
@@ -57,15 +67,21 @@ const SpiritualPractice = () => {
                 Whether you're newly curious, deep in transformation, or have established practice, I offer grounded presence and guidance. Sessions are collaborative and responsive to what emerges.
               </p>
               <div className="gold-divider"></div>
-              <h3>
+              
+              {/* Practices - Collapsible */}
+              <h3 className="collapsible-header" onClick={() => toggleSection('practices')}>
+                <span className={`triangle ${openSections.practices ? 'open' : ''}`}>▶</span>
                 Practices
               </h3>
-              <p>
-                I teach yoga, breathwork, voice-based sound healing, and offer support in meditation. These are all powerful multi-tools we can bring in, or they can be the focus of our time together.
-              </p>
-              <p>
-                Spiritual Counseling sessions can also be synthesized with EFT or Energy Healing. EFT is often extremely useful (and recommended!) for working through certain things.
-              </p>
+              <div className={`collapsible-content ${openSections.practices ? 'open' : ''}`}>
+                <p>
+                  I teach breathwork, voice-based sound healing, yoga, and meditation. These are all powerful multi-tools we can bring integrate into counseling, or they can be the focus of our time together.
+                </p>
+                <p>
+                  Spiritual Counseling sessions can also be synthesized with EFT or Energy Healing. EFT is often extremely useful (and recommended!) for working through certain things.
+                </p>
+              </div>
+              
               <div className="gold-divider"></div>
               <p>
                 <em>I am offering spiritual guidance, not clinical mental health services.</em>

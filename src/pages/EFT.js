@@ -28,8 +28,20 @@ function useIsDesktop(breakpoint = 768) {
 }
 
 const EFT = () => {
+  const isDesktop = useIsDesktop(768);
+  
+  const [openSections, setOpenSections] = useState({
+    whyPowerful: false,
+    whoWhat: false,
+    evidence: false
+  });
 
-  const isDesktop = useIsDesktop(768)
+  const toggleSection = (section) => {
+    setOpenSections(prev => ({
+      ...prev,
+      [section]: !prev[section]
+    }));
+  };
 
   return (
     <div className="EFT-emotional-freedom-techniques">
@@ -71,64 +83,82 @@ const EFT = () => {
                 EFT stands for Emotional Freedom Techniques. I use it to help people break free from a wide range of deep-seated issues quickly, affordably, and effectively— issues that might otherwise take months or years (or lifetimes) to address. It is a fascinatingly powerful yet simple healing modality that involves self-tapping acupoints on your body while bringing attention to issues you want resolved or outcomes you want to achieve.
               </p>
               <p>
-                EFT is a remarkably versatile multi-tool you can apply to most areas in your life (see “Who and What is EFT For” below)
+                EFT is a remarkably versatile multi-tool you can apply to most areas in your life (see "Who and What is EFT For" below)
               </p>
               <p>
                 While I have immersed myself in numerous spiritual practices and modalities, EFT is the most powerful and universal tool I have encountered for resolving specific psycho-emotional issues and creating positive new outcomes—and I am so grateful to have encountered it and offer it. I hope that I can support as many people as possible with EFT.
               </p>
               <div className="gold-divider"></div>
-              <h3>
+              
+              {/* Why EFT is So Powerful - Collapsible */}
+              <h3 className="collapsible-header" onClick={() => toggleSection('whyPowerful')}>
+                <span className={`triangle ${openSections.whyPowerful ? 'open' : ''}`}>▶</span>
                 Why EFT is So Powerful
               </h3>
-              <p>
-                Imagine a tool that can relieve you of self-defeating thoughts, feelings, and actions– that you've held for years or decades– patterns you just assumed were an unchangeable part of your existence. Imagine being able to let go of these patterns and consciously uplevel your nervous system in a way that brings you great freedom, ease, joy, clarity, alignment, and empowerment.
-              </p>
-              <p>
-                EFT boils down Chinese Medicine, Neuroscience, Positive Psychology, and more into a highly effective yet simple modality that one can learn to do anytime, anywhere. Practitioners may also draw upon methodologies from Internal Family Systems (IFS), Hypnotherapy, Cognitive Behavioral Therapy (CBT), EMDR, Mindfulness, Polyvagal Theory, Neuro-Linguistic Programming (NLP), Shamanism, Spiritual Teachings, and more. At its core, EFT embodies the wisdom of Love, Acceptance, Letting Go, and your boundless potential as a creator being.
-              </p>
-              {isDesktop && (
-                <div className="eft-image-left">
-                  <img 
-                    src={pic8}
-                    alt="EFT Brain Impact" 
-                    className="eft-pic" 
-                    />
-                  <p className="photo-credit">The Meridian Channels. Image from The Center of Traditional Taoist Studies</p>
-                </div>
-              )}
-              <p>
-                Tapping signals safety to the brain, as it effectively calms the amygdala's 'fight, flight, or freeze' response. So the nervous system doesn't follow its usual sympathetic response to an issue, but actually can process, release, and update. By tapping on each tapping point, we balance each meridian (an energy channel running through the body that governs essential aspect of our body, mind, and spirit)– by sending an electrical impulse through the entire channel.
-              </p>
-              {!isDesktop && (
-                <div className="eft-image-left">
-                  <img 
-                    src={pic8}
-                    alt="EFT Brain Impact" 
-                    className="eft-pic" 
-                    />
-                  <p className="photo-credit">The Meridian Channels. Image from The Center of Traditional Taoist Studies</p>
-                </div>
-              )}
-              <p>
-                EFT works on the neurological, subconscious, and energetic level. Shifts are enduring once thoroughly addressed, as neural networks are reprogrammed and the nervous system releases and resolves built-up issues. 
-              </p>
-              <p>
-                For some issues, EFT may provide relief very quickly, while with other issues you may experience improvements over time. How quickly you experience benefits can vary based on individual factors and the nature of your concerns.
-              </p>
+              <div className={`collapsible-content ${openSections.whyPowerful ? 'open' : ''}`}>
+                <p>
+                  Imagine a tool that can relieve you of self-defeating thoughts, feelings, and actions– that you've held for years or decades– patterns you just assumed were an unchangeable part of your existence. Imagine being able to let go of these patterns and consciously uplevel your nervous system in a way that brings you great freedom, ease, joy, clarity, alignment, and empowerment.
+                </p>
+                <p>
+                  EFT boils down Chinese Medicine, Neuroscience, Positive Psychology, and more into a highly effective yet simple modality that one can learn to do anytime, anywhere. Practitioners may also draw upon methodologies from Internal Family Systems (IFS), Hypnotherapy, Cognitive Behavioral Therapy (CBT), EMDR, Mindfulness, Polyvagal Theory, Neuro-Linguistic Programming (NLP), Shamanism, Spiritual Teachings, and more. At its core, EFT embodies the wisdom of Love, Acceptance, Letting Go, and your boundless potential as a creator being.
+                </p>
+                {isDesktop && (
+                  <div className="eft-image-left">
+                    <img 
+                      src={pic8}
+                      alt="EFT Brain Impact" 
+                      className="eft-pic" 
+                      />
+                    <p className="photo-credit">The Meridian Channels. Image from The Center of Traditional Taoist Studies</p>
+                  </div>
+                )}
+                <p>
+                  Tapping signals safety to the brain, as it effectively calms the amygdala's 'fight, flight, or freeze' response. So the nervous system doesn't follow its usual sympathetic response to an issue, but actually can process, release, and update. By tapping on each tapping point, we balance each meridian (an energy channel running through the body that governs essential aspect of our body, mind, and spirit)– by sending an electrical impulse through the entire channel.
+                </p>
+                {!isDesktop && (
+                  <div className="eft-image-left">
+                    <img 
+                      src={pic8}
+                      alt="The Meridian Channels" 
+                      className="eft-pic" 
+                      />
+                    <p className="photo-credit">The Meridian Channels. Image from The Center of Traditional Taoist Studies</p>
+                  </div>
+                )}
+                <p>
+                  EFT works on the neurological, subconscious, and energetic level. Shifts are enduring once thoroughly addressed, as neural networks are reprogrammed and the nervous system releases and resolves built-up issues. 
+                </p>
+                <p>
+                  For some issues, EFT may provide relief very quickly, while with other issues you may experience improvements over time. How quickly you experience benefits can vary based on individual factors and the nature of your concerns.
+                </p>
+              </div>
+              
               <div className="gold-divider"></div>
-              <h3>
+              
+              {/* Who and What is EFT For - Collapsible */}
+              <h3 className="collapsible-header" onClick={() => toggleSection('whoWhat')}>
+                <span className={`triangle ${openSections.whoWhat ? 'open' : ''}`}>▶</span>
                 Who and What is EFT For?
               </h3>
-              <p>
-                EFT is for anyone with a nervous system. It works across all ages, cultures, and belief systems, and can meet you wherever you are on your journey. Whether you're navigating daily overwhelm or trauma, physical pain or deep emotions, self-doubt or anxiety, addiction or grief, relationship challenges or spiritual inquiry, manifesting abundance or actualizing your deepest calling, empowering higher consciousness or opening to love—EFT can support your healing and transformation. <a href="/#what-we-can-do-together" target="_blank">These are my core strengths and areas of focus</a>.
-              </p>
+              <div className={`collapsible-content ${openSections.whoWhat ? 'open' : ''}`}>
+                <p>
+                  EFT is for anyone with a nervous system. It works across all ages, cultures, and belief systems, and can meet you wherever you are on your journey. Whether you're navigating daily overwhelm or trauma, physical pain or deep emotions, self-doubt or anxiety, addiction or grief, relationship challenges or spiritual inquiry, manifesting abundance or actualizing your deepest calling, empowering higher consciousness or opening to love—EFT can support your healing and transformation. <a href="/#what-we-can-do-together" target="_blank">These are my core strengths and areas of focus</a>.
+                </p>
+              </div>
+              
               <div className="gold-divider"></div>
-              <h3>
+              
+              {/* Evidence and Experience - Collapsible */}
+              <h3 className="collapsible-header" onClick={() => toggleSection('evidence')}>
+                <span className={`triangle ${openSections.evidence ? 'open' : ''}`}>▶</span>
                 Evidence and Experience
               </h3>
-              <p>
-                EFT's effectiveness is well-backed by over <a href="https://eftuniverse.com/research-studies/" target="_blank">100 peer-reviewed scientific studies and trials</a>, and it is leading the modern western medical system in treating many ailments. Its power can be verified through your own personal experience—often in one session or even a few minutes.
-              </p>
+              <div className={`collapsible-content ${openSections.evidence ? 'open' : ''}`}>
+                <p>
+                  EFT's effectiveness is well-backed by over <a href="https://eftuniverse.com/research-studies/" target="_blank">100 peer-reviewed scientific studies and trials</a>, and it is leading the modern western medical system in treating many ailments. Its power can be verified through your own personal experience—often in one session or even a few minutes.
+                </p>
+              </div>
+              
               <div className="gold-divider"></div>
             </div>
 

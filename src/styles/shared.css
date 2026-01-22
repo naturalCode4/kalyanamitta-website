@@ -277,3 +277,41 @@ html {
     max-width: 80%;
   }
 }
+
+/* Collapsible Section Styles */
+.collapsible-header {
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.2s ease;
+}
+
+.collapsible-header:hover {
+  opacity: 0.8;
+}
+
+.triangle {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  font-size: 0.8em;
+  color: inherit;
+}
+
+.triangle.open {
+  transform: rotate(90deg);
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, opacity 0.3s ease-out;
+  opacity: 0;
+}
+
+.collapsible-content.open {
+  max-height: 5000px; /* Large enough to accommodate content */
+  opacity: 1;
+  transition: max-height 0.5s ease-in, opacity 0.4s ease-in;
+}

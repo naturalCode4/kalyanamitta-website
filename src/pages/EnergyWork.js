@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Section from '../components/Section';
 import CTA from '../components/CTA';
@@ -8,6 +8,18 @@ import pic9 from '../assets/pic9.jpg';
 import { Helmet } from 'react-helmet';
 
 const EnergyWork = () => {
+  const [openSections, setOpenSections] = useState({
+    benefits: false,
+    whatIsReiki: false
+  });
+
+  const toggleSection = (section) => {
+    setOpenSections(prev => ({
+      ...prev,
+      [section]: !prev[section]
+    }));
+  };
+
   return (
     <div className="energy-work">
       <Helmet>
@@ -45,44 +57,63 @@ const EnergyWork = () => {
 
             <div className="about-energy-work-text">
               <p>
-                Energy healing addresses diverse needs by balancing, restoring, and optimizing the body's natural energy field. I offer Reiki-based energy healing attuned to your being, responding to any specific concerns you bring. Grounded in compassionate presence, I hold space for whatever arises with acceptance and care.
+                Energy healing addresses diverse needs by balancing, restoring, and optimizing the body's natural energy field. I offer Reiki-based energy healing attuned to your being, responding to any specific concerns you bring– whether they be physical, emotional, energetic, or spiritual. Grounded in compassionate presence, I hold space for whatever arises with acceptance and care.
               </p>
               <p>
                 In addition to Reiki, I may incorporate acupressure, other healing techniques, or share insights as appropriate to your session. When helpful, I can offer guidance to help you integrate your experience and move forward with clarity.
               </p>
               {window.innerWidth > 768 && <br />}
               <div className="gold-divider"></div>
-              <h3>Benefits of Energy Healing</h3>
-              <p>
-                Energy healing transmits vital energy to your whole being, helps remove blockages and deficiencies, and restores the natural healing intelligence within us all. From energy work and restoring balance to your body's energy field, you may experience:
-              </p>
-              <p>
-                Deeper sense of peace, love, and connectedness • Enhanced vitality, health, sleep quality, and immune function • Relief from physical pain and tension and accelerated recovery from injuries • Deep relaxation and reduced stress and anxiety • Emotional release, clarity, and resolution to psychological issues • Mental clarity, reduced brain fog, enhanced intuition, third eye activation, and increased energetic awareness • Intuitive downloads, messages, and deepened connection to supernal consciousness.
-              </p>
-              <p>
-                How quickly you experience benefits can vary based on individual factors and the nature of your concerns. Some people feel immediate relief and relaxation, while others may notice gradual improvements over time. Multiple sessions may be recommended for deeper or ongoing issues.
-              </p>
-              <div className="gold-divider"></div>
-              <h3>What is Reiki?</h3>
-              {/* --- NEW IMAGE pic9 (Float Left) --- */}
-              <div className="energy-image-left">
-                <img 
-                  src={pic9}
-                  alt="Reiki Symbols or Energy" 
-                  className="energy-work-pic" 
-                />
-                <p className="photo-credit">Image from International End-of-Life Doula Association</p>
+              
+              {/* Benefits of Energy Healing - Collapsible */}
+              <h3 className="collapsible-header" onClick={() => toggleSection('benefits')}>
+                <span className={`triangle ${openSections.benefits ? 'open' : ''}`}>▶</span>
+                Benefits of Energy Healing
+              </h3>
+              <div className={`collapsible-content ${openSections.benefits ? 'open' : ''}`}>
+                <p>
+                  Reiki transmits vital energy to your whole being, helps remove blockages and deficiencies, and restores the natural healing intelligence within us all. Practitioners can help guide Reiki to address particular deficiencies. By restoring balance to your body's energy field, you may experience:
+                </p>
+                <p>
+                  Deeper sense of peace, love, and connectedness • Enhanced vitality • Improvements in health conditions, immune function, and sleep quality • Relief from physical pain and tension and accelerated recovery from injuries • Deep relaxation and reduced stress and anxiety • Emotional release, clarity, and resolution to psychological issues • More positive thinking • Mental clarity and reduced brain fog • Enhanced intuition, third eye activation, and increased energetic awareness • Intuitive downloads, messages, and deepened connection to supernal consciousness.
+                </p>
+                <p>
+                  Reiki has been successfully used to <a href="https://centerforreikiresearch.com/our-research/" target="_blank">address many kinds of physical and mental health conditions</a>.
+                </p>
+                <p>
+                  How quickly you experience benefits can vary based on individual factors and the nature of your concerns. Some people feel immediate relief and relaxation, while others may notice gradual improvements over time. Multiple sessions may be recommended for deeper or ongoing issues.
+                </p>
               </div>
-              <p>
-                Reiki is an ancient Japanese healing art in which a practitioner channels this beneficent, spiritually conscious, self-intelligent, omnipresent (Rei) life force energy (Ki) to optimize a recipient's bio-energetic field. Reiki works on multiple dimensions simultaneously, supporting the recipient on the physical, emotional, mental, energetic, and spiritual planes.
-              </p>
-              <p>
-                When one's energy field becomes stagnant, depleted, or disrupted through negative thinking, stress, illness, disconnection, etc., we experience dis-ease. Reiki practitioners trasmit Reiki, acting as a conduit for Reiki to flow through you.
-              </p>
-              <br/>
-              <p>
-                Sessions address not just symptoms but the underlying energetic patterns that contribute to imbalance. This practice activates your body's innate wisdom– allowing balance to unfold from within. Reiki meets you where you are and supports your system in gaining balance.
-              </p>
+              
+              <div className="gold-divider"></div>
+              
+              {/* What is Reiki? - Collapsible */}
+              <h3 className="collapsible-header" onClick={() => toggleSection('whatIsReiki')}>
+                <span className={`triangle ${openSections.whatIsReiki ? 'open' : ''}`}>▶</span>
+                What is Reiki?
+              </h3>
+              <div className={`collapsible-content ${openSections.whatIsReiki ? 'open' : ''}`}>
+                {/* --- NEW IMAGE pic9 (Float Left) --- */}
+                <div className="energy-image-left">
+                  <img 
+                    src={pic9}
+                    alt="Reiki Symbols or Energy" 
+                    className="energy-work-pic" 
+                  />
+                  <p className="photo-credit">Image from International End-of-Life Doula Association</p>
+                </div>
+                <p>
+                  Reiki is an ancient Japanese healing art in which a practitioner channels this beneficent, spiritually conscious, self-intelligent, omnipresent (Rei) life force energy (Ki) to optimize a recipient's bio-energetic field. Reiki works on multiple dimensions simultaneously, supporting the recipient on the physical, emotional, mental, energetic, and spiritual planes.
+                </p>
+                <p>
+                  When one's energy field becomes stagnant, depleted, or disrupted through negative thinking, stress, illness, disconnection, etc., we experience dis-ease. Reiki practitioners trasmit Reiki, acting as a conduit for Reiki to flow through you.
+                </p>
+                <br/>
+                <p>
+                  Sessions address not just symptoms but the underlying energetic patterns that contribute to imbalance. This practice participates with your body's innate wisdom– allowing balance to unfold from within. Reiki meets you where you are and supports your system in gaining balance.
+                </p>
+              </div>
+              
               <div className="gold-divider"></div>
             </div>
 
@@ -125,21 +156,18 @@ const EnergyWork = () => {
                   </p>
                 </div>
 
-
                 <div className="expect-item">
                   <h4>After the Session You May Notice</h4>
                   <p>
-                    <strong>Physical:</strong> Enhanced vitality, health, sleep quality, and immune function • Relief from physical pain and tension and accelerated recovery from injuries • Deep relaxation
+                    <strong>Physical:</strong> Enhanced vitality • Improvements in health conditions, immune function, and sleep quality • Relief from physical pain and tension and accelerated recovery from injuries • Deep relaxation
                     <br/>
                     <strong>Emotional:</strong> Deeper sense of peace, love, and connectedness • Reduced stress and anxiety • Emotional release, clarity, and resolution to psychological issues
                     <br/>
-                    <strong>Mental/Energetic:</strong> Mental clarity and reduced brain fog • Increased vitality • Enhanced intuition and increased energetic awareness
+                    <strong>Mental/Energetic:</strong> More positive thinking • Mental clarity and reduced brain fog • Increased vitality
                     <br/>
-                    <strong>Spiritual:</strong> Third eye activation • Intuitive downloads, messages, and connection to supernal consciousness
+                    <strong>Spiritual:</strong> • Enhanced intuition, third eye activation, and increased energetic awareness • Intuitive downloads, messages, and deepened connection to supernal consciousness.Third eye activation • Intuitive downloads, messages, and connection to supernal consciousness
                   </p>
                 </div>
-
-
               </div>
             </div>
           </div>

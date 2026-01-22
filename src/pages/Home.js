@@ -103,7 +103,7 @@ const Home = () => {
               </div>
               <div className="manifesto-connector"></div>
               <div className="manifesto-item">
-                <span className="manifesto-text">Restore true connection.<br className="desktop-break" />Unveil clarity and purpose.<br className="desktop-break" />Liberate your heart, body, and mind.</span>   
+                <span className="manifesto-text">Restore true connection.<br className="desktop-break" />Unveil clarity and intuition.<br className="desktop-break" />Liberate your heart, body, and mind.</span>   
               </div>
               <div className="manifesto-connector"></div>
               <div className="manifesto-item">
