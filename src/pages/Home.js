@@ -137,7 +137,6 @@ const Home = () => {
             <p>This work creates <b>well-being, health, love, power, deeper connection, desired outcomes, letting go of what does not serve, alignment with clear wisdom and purpose, and much more.</b></p>
             <p>My modalities are EFT (Emotional Freedom Techniques, or Tapping), Reiki Energy Healing, and Spiritual Counseling and Practices (Yoga, Breathwork, Sound Healing, and Meditation). My guidance and modalities are integrative and rooted in direct experience, science, and essential teachings from spiritual traditions.</p>
             <p>You are fundamentally good and have inherent healing potential. I help you realize and activate this so you can <b>experience this for yourself</b>. I offer potent modalities, loving presence, and spiritually integrative guidance— helping you awaken to the spirit already present within you and actualizing your natural capacity for healing, love, spiritual insight, and transformation.</p>
-            <p>My mission is to support beings in any way I can, whatever stage they're at. If you're curious about how we can work together, so am I.</p>
           </div>
           <div className="about-photos">
             <div className="photo-container">
