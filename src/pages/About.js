@@ -65,7 +65,7 @@ const About = () => {
                 Adin is a healer and integrative guide who helps people transform, heal, and align with their inherent wisdom and basic goodness. His mission is to support you however he can by offering powerful modalities, loving presence, and wisdom. His approach is integrative and personal– grounded in intuition, science, and various spiritual traditions. 
               </p>
               <p>
-                His offerings are EFT (Emotional Freedom Techniques, or Tapping), Reiki Energy Healing, and Spiritual Counseling and Practices (Meditation, Yoga, Breathwork, Sound Healing).
+                He offers EFT (Emotional Freedom Techniques, or Tapping), Reiki Energy Healing, and Spiritual Counseling and Practices (Meditation, Yoga, Breathwork, Sound Healing).
               </p>
               <p>
                 He currently lives in West Philadelphia, PA. He is a certified practitioner of Emotional Freedom Techniques (EFT), Reiki II, Yoga (500 YTT), and Breathwork. He has practiced in Zen, Tibetan, and Theravadan Buddhist lineages. He has explored mysticism across Native, Taoist, Judaic, Christian, Hermetic, and Sufi traditions, as well as yoga, qi gong, medicine work, shamanism, healing arts, psychic development, bhakti, and ecstatic dance—seeking what genuinely gives life, unclouds the pure heart, and supports positive transformation.
@@ -79,7 +79,7 @@ const About = () => {
               </h3>
               <div className={`collapsible-content ${openSections.approach ? 'open' : ''}`}>
                 <p>
-                  My approach is integrative and personal–– grounded in compassion, intuition, clear guidance, spiritual knowledge, implementation of modalities, lived experience and learning by overcoming personal challenges, and some beautiful healing abilities that have unfolded in my life and consciousness. When I draw on esoteric knowledge, spiritual traditions, or science, I strive to root this in direct truth and present experience—which is, after all, what spirituality with any value whatsoever should point to.
+                  My approach is integrative and personal–– grounded in compassion, intuition, science, clear guidance, spiritual knowledge, implementation of modalities, lived experience and learning by overcoming personal challenges, and some beautiful healing abilities that have unfolded in my life and consciousness. When I draw on esoteric knowledge, spiritual traditions, or science, I strive to root this in direct truth and present experience—which is, after all, what spirituality with any value whatsoever should point to.
                 </p>
                 <p>
                   I believe our challenges are palpably redeemed through developing compassion and the capacity to walk wisely with others navigating similar terrain. Much of my ability to guide comes from what I've experienced and overcome myself, what I can empathize with in you, understanding our shared path, and from years of practice supporting others.
