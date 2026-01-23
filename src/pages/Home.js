@@ -135,7 +135,7 @@ const Home = () => {
         <div className="grid grid-2">
           <div>
             <p>This work creates <b>well-being, health, love, power, deeper connection, desired outcomes, letting go of what does not serve, alignment with clear wisdom and purpose, and much more.</b></p>
-            <p>My modalities are EFT (Emotional Freedom Techniques, or Tapping), Reiki Energy Healing, and Spiritual Counseling and Practices (Yoga, Breathwork, Sound Healing, and Meditation). My guidance and modalities are integrative and rooted in direct experience, science, and essential teachings from spiritual traditions.</p>
+            <p>My modalities are <b>EFT (Emotional Freedom Techniques, or Tapping)</b>, <b>Reiki Energy Healing</b>, and <b>Spiritual Counseling and Practices (Yoga, Breathwork, Sound Healing, and Meditation)</b>. My guidance and modalities are integrative and rooted in direct experience, science, and essential teachings from spiritual traditions.</p>
             <p>You are fundamentally good and have inherent healing potential. I help you realize and activate this so you can <b>experience this for yourself</b>. I offer potent modalities, loving presence, and spiritually integrative guidance— helping you awaken to the spirit already present within you and actualizing your natural capacity for healing, love, spiritual insight, and transformation.</p>
           </div>
           <div className="about-photos">
