@@ -84,7 +84,7 @@ const EFT = () => {
                 EFT helps people break free from a wide range of deep-seated issues– rapidly, affordably, and effectively— that might otherwise take months or years (or lifetimes) to address. 
               </p>
               <p>
-                EFT stands for Emotional Freedom Techniques. It is a fascinatingly powerful yet simple healing modality that involves self-tapping acupoints on your body while bringing attention to want resolved or achieved.
+                EFT stands for Emotional Freedom Techniques. It is a fascinatingly powerful yet simple healing modality that involves self-tapping acupoints on your body while bringing attention to your issue / goal.
               </p>
               <p>
                 This is a remarkably versatile multi-tool that can make a significant difference in any area of your life (see "Who and What is EFT For" below).

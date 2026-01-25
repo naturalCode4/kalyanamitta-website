@@ -10,7 +10,7 @@ const Rates = () => {
   const packages = [
     {
       name: '4-Session Combo',
-      description: "Invest in your development, goals, and get your energy back. Four potent sessions to find freedom and transform yourself.",
+      description: "Invest in your healing and personal development, and get your energy back. Four potent sessions to find freedom and align yourself.",
       mainPrice: '$528',
       slidingScale: ' / Sliding Scale $256-800',
       originalPrice: '$660. Sliding Scale $320-1000',
@@ -24,7 +24,7 @@ const Rates = () => {
     },
     {
       name: '7-Session Combo',
-      description: "Transform your life, heal even major issues, and develop your spiritual capacity and toolkit. Commit yourself to being supported with seven potent sessions.",
+      description: "Transform yourself, heal even major issues, and expand your spiritual capacity and toolkit. Commit to being supported with seven potent sessions.",
       mainPrice: '$866',
       slidingScale: ' / Sliding Scale $420-1,312',
       originalPrice: '$1,155. Sliding Scale $560-1,750',
@@ -108,11 +108,11 @@ const Rates = () => {
             <div className="timeline-point highlighted-point">
               <div className="timeline-number">1</div>
               <div className="timeline-content middle-card">
-                <h3>$80 - 108</h3>
+                <h3>$80 - 111</h3>
                 <p className="timeline-label">Accessible Range</p>
                 {/* <h3>Accessible Range</h3>
                 <p className="timeline-label">80 - 120</p> */}
-                <p className="timeline-description">For those whom the standard rate would create financial strain, and for dharma practitioners. Your presence and sincerity matter most.</p>
+                <p className="timeline-description">For those whom the standard rate would create financial strain. Your presence & sincerity matter most.</p>
               </div>
               {/* <div className="timeline-content">
                 <h3>$50 - 70</h3>
@@ -135,7 +135,7 @@ const Rates = () => {
             <div className="timeline-point">
               <div className="timeline-number">3</div>
               <div className="timeline-content">
-                <h3>$225 - 250</h3>
+                <h3>$222 - 250</h3>
                 <p className="timeline-label">Sustaining Range</p>
                 {/* <h3>Sustaining Range</h3>
                 <p className="timeline-label">225 - 250</p> */}
