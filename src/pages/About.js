@@ -135,13 +135,13 @@ const About = () => {
                 In modern Western culture, there has been a strong emphasis on emotional and shadow healing, as well as energy arts. While men have long pursued spiritual training, women are disproportionately engaging in this work.
               </p>
               <p>
-                Many men have felt that healing isn’t for them—that they must choose between 'masculinity' and emotional depth, authenticity, and healing. The strength of a man is not in some bullshit Impenetrable Great Wall of Nonchalantness secretly concealing a terrified little boy. I say 'nay' to that.
+                Many men have felt that healing isn’t for them—that they must choose between 'masculinity' and emotional depth, authenticity, and healing. However, the strength of the masculine does not lie in impenetrability or nonchalantness, but more accurately in overcoming these great shields. The masculine has the opportunity to open the heart, find compassion and growth through life's trials, to favor service over selfishness, to hold deep integrity, and weild their power and abilities well.
               </p>
               <p>
-                As a male practitioner committed to both spiritual practice and healing work—which are not separate—I am here to show that healing is a path men can walk too. I am here to help dissolve the internal barriers we have accumulated. Similarly, cultural norms have historically limited women from engaging in traditional spiritual trainings, another arbitrary limitation that the world is dissolving.
+                As a male practitioner committed to both spiritual practice and healing work—which are not separate—I am here to show that healing is a path men can walk too. I am here to help dissolve the internal barriers we have accumulated. Similarly, cultural norms have historically limited women from engaging in traditional spiritual trainings, another arbitrary limitation that is dissolving.
               </p>
               <p>
-                To any man who has felt the pull toward transformation and healing—but has been challenged by questions of cultural acceptability, wondered where there is space for you, or doubted whether you are even capable of it—let’s walk this path together.
+                To any one who has felt the pull toward transformation and healing—but has been challenged by questions of cultural acceptability, wondered where there is space for you, or doubted whether you are even capable of it—let’s walk this path together.
               </p>
 
               </div>

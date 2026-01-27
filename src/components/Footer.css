@@ -60,13 +60,19 @@
   margin: 0;
 }
 
-.developer-credit {
+.copyright {
+  color: #b8b8e8
+}
+
+.developer-credit p {
   font-size: 1rem;
   opacity: 0.8;
+  font-weight: 600;
+  color: #ffffff
 }
 
 .dev-link {
-  color: #d4af37;
+  color: #e8c03f;
   text-decoration: none;
   transition: color 0.3s ease;
 }

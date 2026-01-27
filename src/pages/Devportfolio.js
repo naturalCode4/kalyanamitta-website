@@ -112,7 +112,7 @@ const Portfolio = () => {
       <section className="portfolio-hero">
         <div className="container">
           <h1>Software Development Portfolio</h1>
-          <h2>Adin Solar Kramer</h2> {/* Added Name */}
+          <h2>Adin "Stone Boy" Kramer</h2> {/* Added Name */}
           <p className="portfolio-subtitle">
             Web Development • React.JS • Fullstack Applications • UI/UX Design
           </p>
@@ -184,7 +184,7 @@ const Portfolio = () => {
       <section className="portfolio-contact-section">
         <div className="container contact-content-wrapper">
           <div className="contact-image-col">
-            <img src={pic5} alt="Adin Solar Kramer" className="portfolio-profile-pic" />
+            <img src={pic5} alt='Adin "Stone Boy" Kramer' className="portfolio-profile-pic" />
           </div>
           <div className="contact-text-col">
             <h3>Let's Connect</h3>
