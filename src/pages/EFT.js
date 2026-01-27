@@ -90,7 +90,7 @@ const EFT = () => {
                 This is a remarkably versatile multi-tool that can make a significant difference in any area of your life (see "Who and What is EFT For" below).
               </p>
               <p>
-                I am advanced certified in EFT and integrate techniques and spiritual teachings well-beyond typical EFT territory. Attuned to the client, I bring in spiritual understanding, the wisdom of Love, Acceptance, Letting Go, and your boundless potential as a creator being.
+                I am advanced certified in EFT and integrate techniques and spiritual teachings beyond typical EFT territory. Attuned to the client, I bring in spiritual understanding, the wisdom of Love, Acceptance, Letting Go, and your boundless potential as a creator being.
               </p>
               <div className="gold-divider"></div>
               
@@ -129,7 +129,7 @@ const EFT = () => {
                   </div>
                 )}
                 <p>
-                  Tapping signals safety to the brain, as it effectively calms the amygdala's 'fight, flight, or freeze' response. So the nervous system doesn't follow its usual sympathetic response to an issue, but actually can process, release, and update. By tapping on each tapping point, we balance each meridian (an energy channel running through the body that governs essential aspect of our body, mind, and spirit)– by sending an electrical impulse through the entire channel.
+                  Tapping signals safety to the brain, as it effectively calms the amygdala's 'fight, flight, or freeze' response. Then the nervous system doesn't follow its usual stress response to an issue, but actually can process, release, and update. By tapping on each tapping point, we balance each meridian (an energy channel running through the body that governs essential aspect of our body, mind, and spirit)– by sending an electrical impulse through the entire channel.
                 </p>
                 {!isDesktop && (
                   <div className="eft-image-left">
@@ -164,7 +164,7 @@ const EFT = () => {
                   I can help with any area of your life using EFT. <a href="/#what-we-can-do-together" target="_blank">These are my core strengths and areas of focus</a>, but the possibilities are virtually endless.
                 </p>
                 <p>
-                  Whether you're navigating daily overwhelm or trauma, physical pain or deep emotions, self-doubt or anxiety, addiction or grief, relationship challenges or spiritual inquiry, manifesting abundance or actualizing your deepest calling, empowering higher consciousness or opening to love—EFT can accelerate your healing and transformation.
+                  Whether you're navigating daily overwhelm or trauma, physical pain or deep emotions, self-doubt or anxiety, addiction or grief, relationship challenges or break up pains, manifesting abundance or actualizing your deepest calling, connecting to higher consciousness or opening to love—EFT can accelerate your healing and transformation.
                 </p>
               </div>
               
@@ -193,7 +193,7 @@ const EFT = () => {
                   <h4>Beginning the Session</h4>
                   <p>
                     You'll be in a comfortable, private space where you can fully express yourself.
-                    I'll explain the practice and show you the meridian points to self-tap on your body, and we will tap together throughout the session. We'll discuss what you'd like to work on, and I may ask you some questions to unlock the core of the issue. 
+                    I'll explain the practice and show you the points to self-tap on your body, and we will tap together throughout the session. We'll discuss what you'd like to work on, and I may ask you some questions to unlock the core of the issue. 
                   </p>
                 </div>
                 

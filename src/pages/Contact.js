@@ -39,9 +39,9 @@ const Contact = () => {
     <div className="contact">
       <Helmet>
         <title>Book a Session or Get In Touch | Healing On Tap</title>
-        <meta name="description" content="You are loved. Get started with EFT, Reiki Energy Healing, or Spiritual Counseling. Get in Touch" />
-        <meta property="og:title" content="Book a Session or Get In Touch | Healing On Tap" />
-        <meta property="og:description" content="You are loved. Get started with EFT, Reiki Energy Healing, or Spiritual Counseling. Get in Touch" />
+        <meta name="description" content="Transform yourself and heal. Get started with EFT, Reiki Energy Healing, or Spiritual Counseling. Get in Touch" />
+        <meta property="og:title" content="Healing On Tap | Book a Session or Get In Touch" />
+        <meta property="og:description" content="Transform yourself and heal. Get started with EFT, Reiki Energy Healing, or Spiritual Counseling. Get in Touch" />
         <meta property="og:url" content="https://healing-on-tap.com/contact" />
       </Helmet>
       {/* Combined Rainbow Section */}
