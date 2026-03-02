@@ -99,7 +99,7 @@ const Home = () => {
             
             <div className="hero-manifesto">
               <div className="manifesto-item">
-                <span className="manifesto-text">Healing is your nature,<br className="desktop-break" />Dissolve what limits you.</span>
+                <span className="manifesto-text">Healing is your nature, Dissolve what limits you.<br className="desktop-break" />All it takes is your willingness.</span>
               </div>
               <div className="manifesto-connector"></div>
               <div className="manifesto-item">
