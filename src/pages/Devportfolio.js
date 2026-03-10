@@ -200,7 +200,7 @@ const Portfolio = () => {
             <div className="contact-details">
               <p><strong>Email:</strong> healingontap963@gmail.com</p>
               <p><strong>Phone:</strong> +1 (301) 641-2855</p>
-              <p><strong>Location:</strong> Philadelphia, PA / Remote</p>
+              <p><strong>Location:</strong> West Philadelphia, PA / Remote</p>
             </div>
             
             <div className="cta-section" style={{ marginTop: '1.5rem', alignItems: 'flex-start' }}>

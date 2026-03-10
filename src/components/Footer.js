@@ -26,7 +26,7 @@ const Footer = () => {
               <li><Link to="/rates">Rates</Link></li>
               <li><Link to="/contact">Book</Link></li>
               <li><Link to="/contact#get-in-touch">Get in Touch</Link></li>
-              <li><Link to="/devportfolio">Side Offering: WebDev Portfolio</Link></li>
+              <li><Link to="/devportfolio">Web Development Portfolio</Link></li>
             </ul>
           </div>
           
@@ -34,7 +34,7 @@ const Footer = () => {
             <h4>Get in Touch</h4>
             <p>Email: healingontap963@gmail.com</p>
             <p>Phone: +1 (301) 641-2855</p>
-            <p>Location: West Philadelphia, Pennsylvania. In-Person or Virtual</p>
+            <p>Location: Nomadic & worldwide — I work with clients virtually or in person wherever my travels take me.</p>
           </div>
         </div>
         
