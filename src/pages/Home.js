@@ -134,7 +134,7 @@ const Home = () => {
       >
         <div className="grid grid-2">
           <div>
-            <p>This work deepens <b>well-being, connection of all kinds, love, strength, health, getting desired outcomes, dissolving emotional afflictions, clarity and wisdom, alignment with one's highest Self, spiritual development, and much more.</b></p>
+            <p>This work deepens <b>well-being, connection of all kinds, love, strength, health, getting desired outcomes, dissolving emotional afflictions, clarity and wisdom, alignment with one's highest Self, spiritual development, and much more.</b> All it takes is your <b>willingness.</b></p>
             <p>My modalities are <b>EFT (Emotional Freedom Techniques, or Tapping)</b>, <b>Reiki Energy Healing</b>, and <b>Spiritual Counseling and Practices (Yoga, Breathwork, Sound Healing, and Meditation)</b>. My guidance and modalities are integrative and rooted in direct experience, science, and essential teachings from spiritual traditions.</p>
             <p>At your essence, you are luminous, free, and unbounded— inherently loving, wise, peaceful and complete.  This work ignites this truth so you can <b>experience it for yourself</b>. Through powerful modalities, attuned presence, and spiritually integrative guidance, this work unfolds and deepens your healing and these natural faculties.</p>
           </div>
@@ -244,7 +244,7 @@ const Home = () => {
         <div className="about-adin-home-container"> 
           
           <div className="about-text-content">
-            <p>Welcome, my name is Adin. It's a joy and honor to support you in this work. I offer 30-minute free consultations and am happy to discuss anything beforehand.</p>
+            <p>Welcome! My name is Adin. It's a joy and honor to support you in this work. <br></br><br></br>I walk with people and help them gain love, wisdom, clarity, freedom, ease, authenticity, and spiritual capacity– to let go of limiting beliefs, anxiety, negative emotion, and trauma– and to get the inner world and outer circumstances they desire. I offer what I <b>live</b> and deeply believe in. <br></br><br></br> I offer 30-minute free consultations and am happy to discuss anything beforehand.</p>
           </div>
           
           <div className="about-photos">
