@@ -17,7 +17,6 @@ This document outlines the steps to set up email functionality using Gmail and O
      GOOGLE_OAUTH_CLIENT_ID_LOCAL=<your-client-id>
      GOOGLE_OAUTH_CLIENT_SECRET_LOCAL=<your-client-secret>
      REACT_APP_BACKEND_URL=http://localhost:5001
-     EMAIL_USER=healingontap963@gmail.com
      ```
 
 3. **Script to Generate Refresh Token**:
