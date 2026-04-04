@@ -111,7 +111,7 @@ const Portfolio = () => {
       {/* Hero Section */}
       <section className="portfolio-hero">
         <div className="container">
-          <h1>Software Development Portfolio</h1>
+          <h1>Software Engineer</h1>
           <h2>Adin "Stone Boy" Kramer</h2> {/* Added Name */}
           <p className="portfolio-subtitle">
             Web Development • React.JS • Fullstack Applications • UI/UX Design
@@ -145,7 +145,7 @@ const Portfolio = () => {
             
             <div className="cta-section" style={{ marginTop: '1.5rem', alignItems: 'flex-start' }}>
               <div className="cta-buttons">
-                <a href="/contact#get-in-touch" className="btn">Contact Me for a Free Call</a>
+                <a href="/contact#get-in-touch" target="_blank" className="btn">Contact Me for a Free Call</a>
                 <a href="https://www.linkedin.com/in/adinkramer/" target="_blank" rel="noopener noreferrer" className="btn btn-outline">LinkedIn</a>
               </div>
             </div>
@@ -208,7 +208,7 @@ const Portfolio = () => {
               >
                 View in Browser
               </a>
-              <a href="/contact#get-in-touch" className="btn">Contact Me for a Free Call</a>
+              <a href="/contact#get-in-touch" target="_blank" className="btn">Contact Me for a Free Call</a>
               <a href="https://www.linkedin.com/in/adinkramer/" target="_blank" rel="noopener noreferrer" className="btn btn-outline">LinkedIn</a>
             </div>
           </div>
