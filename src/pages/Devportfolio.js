@@ -51,8 +51,8 @@ const Portfolio = () => {
       title: "U-Queue",
       role: "Fullstack Software Engineer",
       description: "Architected scalable features for a collaborative live music queueing application. Built a 50-endpoint Node.js REST API and handled rapid MongoDB data pipelines via Websockets. Developed a responsive B2C frontend using React and MaterialUI within an Agile CI/CD workflow.",
-      link: "https://www.u-queue.com/",
-      linkText: "Visit Website"
+      // link: "https://www.u-queue.com/",
+      // linkText: "Visit Website"
     },
     {
       title: "Constitution Quiz",
@@ -76,11 +76,11 @@ const Portfolio = () => {
       linkText: "Visit Website"
     },
     {
-      title: "Music Genius - Temporary bug: Fixing Spotify API issues",
+      title: "Music Genius - Spotify deprecated the API... : (",
       role: "Developer and Designer",
-      description: "Created an elegant interface mimicking audio equipment. Improved Spotify API performance by enhancing the search algorithm, fetching and playing music based on user preferences",
-      link: "https://musicgenius.onrender.com/",
-      linkText: "Visit Website"
+      description: "Created an elegant interface mimicking audio equipment. Improved Spotify API performance by enhancing the search algorithm, fetching and playing music based on user preferences. Unfortunately, Spotify deprecated this API's functionality, so the app is no longer working. Here's a video demo",
+      link: "https://www.youtube.com/watch?v=NT_9bwzr0Hs",
+      linkText: "Watch Tutorial"
     },
     {
       title: "Devmountain",
