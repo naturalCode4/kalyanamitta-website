@@ -119,6 +119,40 @@ const Portfolio = () => {
         </div>
       </section>
 
+            {/* NEW Contact / Bio Section */}
+      <section className="portfolio-contact-section">
+        <div className="container contact-content-wrapper">
+          <div className="contact-image-col">
+            <img src={pic5} alt='Adin "Stone Boy" Kramer' className="portfolio-profile-pic" />
+          </div>
+          <div className="contact-text-col">
+            <h3>Work With Me</h3>
+            <p><i>4+ years of experience, trusted by clients across the US.</i></p>
+            <p>
+              I build beautiful, custom websites and apps for businesses and individuals who care about quality. Clean code, thoughtful design, clear communication — and I handle everything from concept to launch.
+            </p>
+            <p>
+              Affordable and flexible to fit your budget. Let's talk about your project.
+            </p>
+            <p><i>
+              I have a special place in my heart for Dharma centers, healing practitioners, and environmentally and socially positive organizations — reach out and we can likely work something out on price.
+            </i></p>
+
+            <div className="contact-details">
+              <p><strong>Phone:</strong> +1 (301) 641-2855</p>
+              <p><strong>Location:</strong> West Philadelphia, PA / Remote</p>
+            </div>
+            
+            <div className="cta-section" style={{ marginTop: '1.5rem', alignItems: 'flex-start' }}>
+              <div className="cta-buttons">
+                <a href="/contact#get-in-touch" className="btn">Contact Me for a Free Call</a>
+                <a href="https://www.linkedin.com/in/adinkramer/" target="_blank" rel="noopener noreferrer" className="btn btn-outline">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Projects Grid */}
       <div className="container portfolio-section">
         <div className="portfolio-grid">
@@ -174,41 +208,11 @@ const Portfolio = () => {
               >
                 View in Browser
               </a>
+              <a href="/contact#get-in-touch" className="btn">Contact Me for a Free Call</a>
+              <a href="https://www.linkedin.com/in/adinkramer/" target="_blank" rel="noopener noreferrer" className="btn btn-outline">LinkedIn</a>
             </div>
           </div>
 
-        </div>
-      </section>
-
-      {/* NEW Contact / Bio Section */}
-      <section className="portfolio-contact-section">
-        <div className="container contact-content-wrapper">
-          <div className="contact-image-col">
-            <img src={pic5} alt='Adin "Stone Boy" Kramer' className="portfolio-profile-pic" />
-          </div>
-          <div className="contact-text-col">
-            <h3>Let's Connect</h3>
-            <p>
-              Building and designing high quality custom websites is a passion! I have some availability, so get in touch if you would like me to build (or contribute to) your website or app.
-            </p>
-            <p>
-              If you value clean code, excellent design, timely delivery, and a seasoned developer who invests and cares about the product, I'd love to hear from you.
-            </p>
-            <p>
-              I am especially excited to develop for Dharma centers, healing practitioners, and environmentally/socially positive organizations— and I may give you a friend rate for the good fortune of building something I feel a heart-connection to.
-            </p>
-            <div className="contact-details">
-              <p><strong>Phone:</strong> +1 (301) 641-2855</p>
-              <p><strong>Location:</strong> West Philadelphia, PA / Remote</p>
-            </div>
-            
-            <div className="cta-section" style={{ marginTop: '1.5rem', alignItems: 'flex-start' }}>
-              <div className="cta-buttons">
-                <a href="/contact#get-in-touch" className="btn">Contact Me</a>
-                <a href="https://www.linkedin.com/in/adinkramer/" target="_blank" rel="noopener noreferrer" className="btn btn-outline">LinkedIn</a>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
