@@ -153,6 +153,16 @@ const Portfolio = () => {
         </div>
       </section>
 
+      <section className="quote-section">
+        <div className="container quote-wrapper">
+        <p>"Extremely reliable and followed through with every task in a timely manner."</p>
+        <br></br>
+        <p>"Adin had a very thorough understanding of our different options as we navigated our website, and was able to elucidate them to us in a very simple manner."</p>
+        <br></br>
+        <p>"We are very satisfied with the creativity, intelligence, and beauty of his work and would be very quick to recommend his services."</p>
+        </div>
+      </section>
+
       {/* Projects Grid */}
       <div className="container portfolio-section">
         <div className="portfolio-grid">

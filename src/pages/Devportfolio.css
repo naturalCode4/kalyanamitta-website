@@ -59,6 +59,7 @@
   /* --- Portfolio Grid --- */
   .portfolio-section {
     padding: 4rem 0;
+    border-top: 1px solid #2d3748;
   }
   
   .portfolio-grid {
@@ -197,6 +198,25 @@
       gap: 0.5rem;
     }
   }
+
+.quote-section {
+  padding-top: 0rem;
+  padding-bottom: 6rem;
+  background: #0f0f0f;
+  /* border-top: 1px solid #2d3748; */
+}
+
+.quote-wrapper {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.quote-wrapper p {
+  color: #e8e8e8
+}
 
 /* New Contact Section Styles */
 .portfolio-contact-section {
