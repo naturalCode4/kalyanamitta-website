@@ -140,7 +140,7 @@ const Portfolio = () => {
             </i></p>
 
             <div className="contact-details">
-              <p><strong>Phone:</strong> +1 (301) 641-2855</p>
+              {/* <p><strong>Phone:</strong> +1 (301) 641-2855</p> */}
               <p><strong>Location:</strong> West Philadelphia, PA / Remote</p>
             </div>
             
