@@ -111,8 +111,8 @@ const Portfolio = () => {
       {/* Hero Section */}
       <section className="portfolio-hero">
         <div className="container">
-          <h1>Software Engineer</h1>
-          <h2>Adin Kramer</h2>
+          <h1>Adin Kramer</h1>
+          <h2>Software Engineer</h2>
           {/* <h2>Adin "Stone Boy" Kramer</h2> */}
           <p className="portfolio-subtitle">
             Full Stack Web Development • React.JS • UI/UX Design • Squarespace
