@@ -102,7 +102,7 @@ const Portfolio = () => {
     <div className="portfolio-page">
       <Helmet>
         <title>Adin | Web Developer Portfolio</title>
-        <meta name="description" content="Portfolio of Adin - Versatile with core strength in Web Development • React.js • UI/UX Design • Fullstack Applications" />
+        <meta name="description" content="Portfolio of Adin - Versatile with core strength in Full Stack Web Development • React.js • UI/UX Design • Squarespace" />
         <meta property="og:title" content="Adin | Web Developer Portfolio" />
         <meta property="og:description" content="View my latest web development projects and resume." />
         <meta name="robots" content="noindex" /> {/* Optional: Hide from Google if you only want to send it directly */}
@@ -114,7 +114,7 @@ const Portfolio = () => {
           <h1>Software Engineer</h1>
           <h2>Adin "Stone Boy" Kramer</h2> {/* Added Name */}
           <p className="portfolio-subtitle">
-            Web Development • React.JS • Fullstack Applications • UI/UX Design
+            Full Stack Web Development • React.JS • UI/UX Design • Squarespace
           </p>
         </div>
       </section>
