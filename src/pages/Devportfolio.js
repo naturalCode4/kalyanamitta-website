@@ -112,7 +112,8 @@ const Portfolio = () => {
       <section className="portfolio-hero">
         <div className="container">
           <h1>Software Engineer</h1>
-          <h2>Adin "Stone Boy" Kramer</h2> {/* Added Name */}
+          <h2>Adin Kramer</h2>
+          {/* <h2>Adin "Stone Boy" Kramer</h2> */}
           <p className="portfolio-subtitle">
             Full Stack Web Development • React.JS • UI/UX Design • Squarespace
           </p>
@@ -129,7 +130,7 @@ const Portfolio = () => {
             <h3>Work With Me</h3>
             <p><i>4+ years of experience, trusted by clients across the US.</i></p>
             <p>
-              I build beautiful, custom websites and apps for businesses and individuals who care about quality. Clean code, thoughtful design, clear communication — and I handle everything from concept to launch.
+              I build beautiful, custom websites and apps for businesses and individuals who care about quality. Clean code, thoughtful design, clear communication — and I can handle everything from concept to launch.
             </p>
             <p>
               Affordable and flexible to fit your budget. Let's talk about your project.
