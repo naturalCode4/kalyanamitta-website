@@ -145,8 +145,8 @@ const Portfolio = () => {
             
             <div className="cta-section" style={{ marginTop: '1.5rem', alignItems: 'flex-start' }}>
               <div className="cta-buttons">
-                <a href="/contact#get-in-touch" target="_blank" className="btn">Contact Me for a Free Call</a>
-                <a href="https://www.linkedin.com/in/adinkramer/" target="_blank" rel="noopener noreferrer" className="btn btn-outline">LinkedIn</a>
+                {/* <a href="/contact#get-in-touch" target="_blank" className="btn">Contact Me for a Free Call</a> */}
+                {/* <a href="https://www.linkedin.com/in/adinkramer/" target="_blank" rel="noopener noreferrer" className="btn btn-outline">LinkedIn</a> */}
               </div>
             </div>
           </div>
@@ -197,7 +197,7 @@ const Portfolio = () => {
       {/* Resume Section */}
       <section className="resume-section">
         <div className="container resume-container">
-          <h2>Resume</h2>
+          <h2>Résumé</h2>
           <p>Download my full resume for detailed work history and technical skills.</p>
           
           <div className="cta-section"> {/* WRAPPER ADDED */}
@@ -218,8 +218,9 @@ const Portfolio = () => {
               >
                 View in Browser
               </a>
-              <a href="/contact#get-in-touch" target="_blank" className="btn">Contact Me for a Free Call</a>
               <a href="https://www.linkedin.com/in/adinkramer/" target="_blank" rel="noopener noreferrer" className="btn btn-outline">LinkedIn</a>
+              {/* <a href="/contact#get-in-touch" target="_blank" className="btn">Contact Me for a Free Call</a> */}
+              {/* <a href="https://www.linkedin.com/in/adinkramer/" target="_blank" rel="noopener noreferrer" className="btn btn-outline">LinkedIn</a> */}
             </div>
           </div>
 
