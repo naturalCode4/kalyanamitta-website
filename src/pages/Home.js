@@ -254,7 +254,7 @@ const Home = () => {
                 alt="Adin Portrait" 
                 className="about-image"
               />
-              <p className="photo-credit">Sarah Bork Hamilton photography. License coming soon.</p>
+              {/* <p className="photo-credit">Sarah Bork Hamilton photography. License coming soon.</p> */}
             </div>
           </div>
           

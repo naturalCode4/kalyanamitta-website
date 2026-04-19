@@ -58,7 +58,7 @@ const About = () => {
                 alt="Adin Portrait" 
                 className="about-profile-pic" 
               />
-              <p className="photo-credit">Headshot by Sarah Bork Hamilton photography. License coming soon.</p>
+              {/* <p className="photo-credit">Headshot by Sarah Bork Hamilton photography. License coming soon.</p> */}
             </div>
             <div className="about-adin-text">
               <p>
