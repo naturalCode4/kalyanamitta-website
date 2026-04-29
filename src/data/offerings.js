@@ -1,7 +1,7 @@
 export const offerings = [
   {
     id: 'EFT-emotional-freedom-techniques',
-    title: 'Emotional Freedom Techniques (EFT)',
+    title: 'EFT – (Emotional Freedom Techniques / Tapping)',
     availability: 'Available in-person or virtual',
     content: "Rapidly drop negativity and pain, heal your nervous system, resolve even major issues, and create the life you desire. EFT is a fascinatingly powerful yet simple healing modality that involves self-tapping points on your body while bringing attention to issues you want resolved or outcomes you want to achieve."
   },

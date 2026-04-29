@@ -96,30 +96,18 @@ const Home = () => {
         <div className="container">
           <div className="hero-content">
             <h1>Healing On Tap</h1>
-            
-            <div className="hero-manifesto">
-              <div className="manifesto-item">
-                <span className="manifesto-text">Healing is your nature, Dissolve what limits you.<br className="desktop-break" />All it takes is your willingness.</span>
-              </div>
-              <div className="manifesto-connector"></div>
-              <div className="manifesto-item">
-                <span className="manifesto-text">Restore clarity and connection,<br className="desktop-break" />Liberate your heart, body, and mind.</span>   
-              </div>
-              <div className="manifesto-connector"></div>
-              <div className="manifesto-item">
-                <span className="manifesto-text">Unmute your soul,<br className="desktop-break" />Remember your power.</span>
-              </div>
-              {/* <div className="manifesto-item">
-                <span className="manifesto-text">Healing is your nature.<br className="desktop-break" />Release stuck emotions.<br className="desktop-break" />Dissolve what limits you.</span>
-              </div>
-              <div className="manifesto-connector"></div>
-              <div className="manifesto-item">
-                <span className="manifesto-text">Restore true connection.<br className="desktop-break" />Unveil clarity and intuition.<br className="desktop-break" />Liberate your heart, body, and mind.</span>   
-              </div>
-              <div className="manifesto-connector"></div>
-              <div className="manifesto-item">
-                <span className="manifesto-text">Unmute your soul.<br className="desktop-break" />Embody sovereignty.<br className="desktop-break" />Remember your power.</span>
-              </div> */}
+
+            <div className="grid grid-cards">
+              {offerings.map((offering) => (
+                <ServiceCard
+                  key={offering.id}
+                  title={offering.title}
+                  availability={offering.availability}
+                  content={offering.content}
+                  learnMoreLink={`/${offering.id}`}
+                  variant="rainbow"
+                />
+              ))}
             </div>
 
           </div>
@@ -214,23 +202,24 @@ const Home = () => {
         </div>
       </Section>
 
-      {/* Offerings Section */}
+      {/* Manifesto Section */}
       <Section 
         variant="dark" 
-        title="Offerings"
+        title="Do you remember your true nature?"
         subtitle=""
       >
-        <div className="grid grid-cards">
-          {offerings.map((offering) => (
-            <ServiceCard
-              key={offering.id}
-              title={offering.title}
-              availability={offering.availability}
-              content={offering.content}
-              learnMoreLink={`/${offering.id}`}
-              variant="rainbow"
-            />
-          ))}
+        <div className="hero-manifesto">
+          <div className="manifesto-item">
+            <span className="manifesto-text">Healing is your nature, Dissolve what limits you.<br className="desktop-break" />All it takes is your willingness.</span>
+          </div>
+          <div className="manifesto-connector"></div>
+          <div className="manifesto-item">
+            <span className="manifesto-text">Restore clarity and connection,<br className="desktop-break" />Liberate your heart, body, and mind.</span>   
+          </div>
+          <div className="manifesto-connector"></div>
+          <div className="manifesto-item">
+            <span className="manifesto-text">Unmute your soul,<br className="desktop-break" />Remember your power.</span>
+          </div>
         </div>
       </Section>
 

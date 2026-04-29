@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './CalendlyEmbed.css';
 
 const CalendlyEmbed = () => {
@@ -22,7 +23,20 @@ const CalendlyEmbed = () => {
     <div className="calendly-embed-container">
       <div className="calendly-header">
         <h2>Book a Session</h2>
-        <p>Sessions are currently available only virtually, as I am traveling. All modalities except Energy Healing and Yoga are available virtually. <br></br><br></br>Note: If you're looking for a meeting shorter than 90 minutes, ignore Calendly's meeting length: you can specify when you're booking.</p>
+        <div className="offering-learn-more-buttons">
+          <Link to="/EFT-emotional-freedom-techniques" className="btn btn-outline btn-small" target="_blank">
+            Learn more about EFT (Tapping)
+          </Link>
+          {/* <Link to="/energy-work" className="btn btn-outline btn-small" target="_blank">
+            Reiki / Energy Healing
+          </Link> */}
+          <Link to="/spiritual-practice" className="btn btn-outline btn-small" target="_blank">
+            Learn more about Spiritual Counseling
+          </Link>
+        </div>
+        <br></br>
+        <br></br>
+        <p>All sessions are currently held virtually or in my current location (St. Petersburg, FL)</p>
       </div>
       <div className="calendly-content">
         <div 
