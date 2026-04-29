@@ -122,7 +122,7 @@ const Home = () => {
       >
         <div className="grid grid-2">
           <div>
-            <p>This work deepens <b>well-being, connection of all kinds, love, strength, health, getting desired outcomes, dissolving emotional afflictions, clarity and wisdom, alignment with one's highest Self, spiritual development, and much more.</b> All it takes is your <b>willingness.</b></p>
+            <p>This work deepens <b>well-being, connection of all kinds, love, strength, health, getting desired outcomes, dissolving emotional afflictions, clarity and wisdom, alignment with one's highest Self, spiritual development, and much more.</b> It takes is your <b>willingness.</b></p>
             <p>My modalities are <b>EFT (Emotional Freedom Techniques, or Tapping)</b>, <b>Reiki Energy Healing</b>, and <b>Spiritual Counseling and Practices (Yoga, Breathwork, Sound Healing, and Meditation)</b>. My guidance and modalities are integrative and rooted in direct experience, science, and essential teachings from spiritual traditions.</p>
             <p>At your essence, you are luminous, free, and unbounded— inherently loving, wise, peaceful and complete.  This work ignites this truth so you can <b>experience it for yourself</b>. Through powerful modalities, attuned presence, and spiritually integrative guidance, this work unfolds and deepens your healing and these natural faculties.</p>
           </div>
@@ -210,11 +210,11 @@ const Home = () => {
       >
         <div className="hero-manifesto">
           <div className="manifesto-item">
-            <span className="manifesto-text">Healing is your nature, Dissolve what limits you.<br className="desktop-break" />All it takes is your willingness.</span>
+            <span className="manifesto-text">Healing and goodness is your nature,<br className="desktop-break" />Dissolve what limits you.</span>
           </div>
           <div className="manifesto-connector"></div>
           <div className="manifesto-item">
-            <span className="manifesto-text">Restore clarity and connection,<br className="desktop-break" />Liberate your heart, body, and mind.</span>   
+            <span className="manifesto-text">Restore wisdom and connection,<br className="desktop-break" />Liberate your heart, body, and mind.</span>   
           </div>
           <div className="manifesto-connector"></div>
           <div className="manifesto-item">
