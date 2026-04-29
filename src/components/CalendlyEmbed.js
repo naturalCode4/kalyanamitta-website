@@ -27,9 +27,9 @@ const CalendlyEmbed = () => {
           <Link to="/EFT-emotional-freedom-techniques" className="btn btn-outline btn-small" target="_blank">
             Learn more about EFT (Tapping)
           </Link>
-          {/* <Link to="/energy-work" className="btn btn-outline btn-small" target="_blank">
-            Reiki / Energy Healing
-          </Link> */}
+          <Link to="/energy-work" className="btn btn-outline btn-small" target="_blank">
+            Learn more about Reiki / Energy Healing
+          </Link>
           <Link to="/spiritual-practice" className="btn btn-outline btn-small" target="_blank">
             Learn more about Spiritual Counseling
           </Link>
