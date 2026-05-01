@@ -33,8 +33,11 @@
     font-weight: 700;
     background: linear-gradient(135deg, #e8e8e8 0%, #ffffff 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* -webkit-text-fill-color: transparent; */
     background-clip: text;
+    color: white;
+    font-family: fantasy;
+    text-shadow: 2px 2px 2px #e4b108;
   }
   
   .logo a {

@@ -43,7 +43,7 @@ const EnergyWork = () => {
       <section className="about-energy-work section-rainbow">
         <div className="container">
           <div className="about-energy-work-content">
-            <h2>About Energy Healing</h2>
+            <h2 className="subtitle-heading">About Energy Healing</h2>
             
             {/* Image Container with Credit - Cleanly placed inside the main content div */}
             <div className="energy-image-container">

@@ -68,7 +68,7 @@ const EFT = () => {
       <section className="about-eft section-rainbow">
         <div className="container">
           <div className="about-eft-content">
-            <h2>About EFT</h2>
+            <h2 className="subtitle-heading">About EFT</h2>
             
             {/* New Clean Container */}
             <div className="eft-image-container">

@@ -16,8 +16,10 @@
 .energy-work-hero-content h1 {
   font-size: 3.5rem; /* Match EmotionalProcessing exactly */
   margin-bottom: 1rem; /* Match EmotionalProcessing exactly */
-  font-weight: 500; /* Match EmotionalProcessing exactly */
-  color: white;
+  font-weight: 700;
+  color: black;
+  font-family: fantasy;
+  text-shadow: 4px 2px 4px #e4b108;
 }
 
 .energy-work-subtitle {

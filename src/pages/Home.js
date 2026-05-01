@@ -122,9 +122,10 @@ const Home = () => {
       >
         <div className="grid grid-2">
           <div>
-            <p>This work deepens <b>well-being, connection of all kinds, love, strength, health, getting desired outcomes, dissolving emotional afflictions, clarity and wisdom, alignment with one's highest Self, spiritual development, and much more.</b> It takes is your <b>willingness.</b></p>
-            <p>My modalities are <b>EFT (Emotional Freedom Techniques, or Tapping)</b>, <b>Reiki Energy Healing</b>, and <b>Spiritual Counseling and Practices (Yoga, Breathwork, Sound Healing, and Meditation)</b>. My guidance and modalities are integrative and rooted in direct experience, science, and essential teachings from spiritual traditions.</p>
-            <p>At your essence, you are luminous, free, and unbounded— inherently loving, wise, peaceful and complete.  This work ignites this truth so you can <b>experience it for yourself</b>. Through powerful modalities, attuned presence, and spiritually integrative guidance, this work unfolds and deepens your healing and these natural faculties.</p>
+            <p>This work offers profound, lasting transformation — in your well-being, relationships, emotional freedom, clarity, strength, and alignment with who you truly are.</p>
+            <p>At your essence, you are luminous, free, and unbounded— inherently loving, wise, peaceful and whole.</p>
+            <p>Through <b>EFT (Tapping)</b>, <b>Reiki Energy Healing</b>, and <b>Spiritual Counseling and Practices</b> — including <b>Breathwork, Yoga,Sound Healing, and Meditation </b>— this work releases what holds you back and restores your natural capacities for healing, love, wisdom, and peace.</p>
+            <p>Grounded in intuition, science, and essential spiritual teachings, this guidance meets you where you are and unfolds at the depth you're ready for. All it takes is your willingness.</p>
           </div>
           <div className="about-photos">
             <div className="photo-container">

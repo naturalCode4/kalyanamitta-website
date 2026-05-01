@@ -31,7 +31,8 @@
   margin-bottom: 4rem;
   margin-top: -1rem;
   color: white;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: fantasy;
+  text-shadow: 4px 2px 4px #e4b108;
 }
 
 .hero-subtitle {

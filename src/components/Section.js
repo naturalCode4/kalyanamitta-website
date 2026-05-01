@@ -18,7 +18,7 @@ const Section = ({
       {container ? (
         <div className="container">
           {title && (
-            <h2 className={`section-title section-title-${variant === 'dark' || variant === 'rainbow' ? 'white' : 'dark'}`}>
+            <h2 className={`section-title subtitle-heading section-title-${variant === 'dark' || variant === 'rainbow' ? 'white' : 'dark'}`}>
               {title}
             </h2>
           )}

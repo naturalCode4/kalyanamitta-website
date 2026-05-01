@@ -22,7 +22,7 @@ const CalendlyEmbed = () => {
   return (
     <div className="calendly-embed-container">
       <div className="calendly-header">
-        <h2>Book a Session</h2>
+        <h2 className="subtitle-heading">Book a Session</h2>
         <div className="offering-learn-more-buttons">
           <Link to="/EFT-emotional-freedom-techniques" className="btn btn-outline btn-small" target="_blank">
             Learn more about EFT (Tapping)
@@ -36,7 +36,7 @@ const CalendlyEmbed = () => {
         </div>
         <br></br>
         <br></br>
-        <p>All sessions are currently held virtually or in my current location (St. Petersburg, FL)</p>
+        <p>All sessions are held virtually or in my current location (St. Petersburg, FL)</p>
       </div>
       <div className="calendly-content">
         <div 

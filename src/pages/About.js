@@ -47,7 +47,7 @@ const About = () => {
 
       <section id="about-adin" className="about-adin section-rainbow">
         <div className="container">
-          <h2>About Adin</h2>
+          <h2 className="subtitle-heading">About Adin</h2>
           
           <div className="about-layout-grid">
             
@@ -180,7 +180,7 @@ const About = () => {
       {/* Testimonials */}
       <section id="testimonials" className="testimonials-section section-light">
         <div className="container">
-          <h2>Testimonials</h2>
+          <h2 className="subtitle-heading">Testimonials</h2>
           <GoogleReviews />
         </div>
       </section>

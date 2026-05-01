@@ -81,6 +81,12 @@
   font-weight: 300;
 }
 
+.subtitle-heading {
+  color: #ffffff;
+  font-family: fantasy;
+  text-shadow: 2px 2px 2px #e4b108;
+}
+
 .section-subtitle {
   font-size: 1.1rem;
   margin-bottom: 3rem;

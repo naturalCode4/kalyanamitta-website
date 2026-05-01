@@ -81,10 +81,10 @@ const Rates = () => {
       <section className="rates-hero">
         <div className="container">
           <div className="rates-hero-content">
-            <h1>Rates & Packages</h1>
-            <p className="rates-subtitle">
+            <h1 className="subtitle-heading">Rates & Packages</h1>
+            {/* <p className="rates-subtitle">
               Flexible pricing
-            </p>
+            </p> */}
           </div>
         </div>
       </section>
@@ -217,7 +217,7 @@ const Rates = () => {
 
       <section className="packages-section">
         <div className="container">
-          <h2>Combo Packages</h2>
+          <h2 className="subtitle-heading">Combo Packages</h2>
           <div className="packages-grid">
             {packages.map((pkg, index) => (
               <div

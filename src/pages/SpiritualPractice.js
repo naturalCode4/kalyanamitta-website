@@ -33,7 +33,7 @@ const SpiritualPractice = () => {
           <div className="spiritual-practice-hero-content">
             <h1>Spiritual Counseling</h1>
             <p className="spiritual-practice-subtitle">
-              Build the wisdom & compassion needed to live well. Be seen and supported as you are. Enter your truth and spiritual depths. 
+              Cultivate the wisdom, compassion, & authenticity needed to live well. Be fully met and holistically supported. 
             </p>
           </div>
         </div>
@@ -43,7 +43,7 @@ const SpiritualPractice = () => {
       <section className="about-spiritual-practice section-rainbow">
         <div className="container">
           <div className="about-spiritual-practice-content">
-            <h2>About Spiritual Counseling</h2>
+            <h2 className="subtitle-heading">About Spiritual Counseling</h2>
             
             {/* UPDATED IMAGE CONTAINER */}
             <div className="spiritual-image-container">
@@ -55,10 +55,7 @@ const SpiritualPractice = () => {
             </div>
             <div className="about-spiritual-practice-text">
               <p>
-                Together we will cultivate well-being, wisdom, love, freedom, and what matters most to you.
-              </p>
-              <p>
-                This is a space for being met, unconditionally supported, exploring, healing, spiritual education, finding direction, and growing—especially in <a href="/home#what-we-can-do-together" target="_blank">these areas</a>.
+                In this space you will be met unconditionally and holistically supported. This is a space of exploring your authentic , healing, spiritual education, exploring your authentically are, and growing—especially in <a href="/home#what-we-can-do-together" target="_blank">these areas</a>.
               </p>
               <p>
                 We can be with whatever is alive in you. We can navigate your deepest yearnings and any obstacles to your fulfillment. We can sit with both beauty and pain. Sometimes what we need most is just to be truly heard—to share presence with someone who compassionately validates your experience without judgment or fixing. I am here to hold that space for you.
