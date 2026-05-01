@@ -1,21 +1,21 @@
 export const offerings = [
   {
     id: 'EFT-emotional-freedom-techniques',
-    title: 'EFT – (Emotional Freedom Techniques / Tapping)',
+    title: 'EFT (Tapping)',
     availability: 'Available in-person or virtual',
-    content: "Rapidly drop negativity and pain, heal your nervous system, resolve even major issues, and create the life you desire. EFT is a fascinatingly powerful yet simple healing modality that involves self-tapping points on your body while bringing attention to issues you want resolved or outcomes you want to achieve."
+    content: "Rapidly release negativity and difficult emotions, heal your nervous system, resolve even major issues, and create the life you desire. EFT is a powerful yet simple multi-tool modality that involves tapping energy points on one's own body while a practitioner guides someone to process something they want to shift."
   },
   {
     id: 'energy-work',
     title: 'Reiki-based Energy Healing',
-    availability: 'Available in-person',
-    content: "Receive universal life force energy to optimize the body's natural bio-energy field. This promotes relaxation, vitality, emotional healing, connection, clarity, removes blockages and deficiencies, and more. Generally it is a very pleasant and restful experience."
+    availability: 'Available in-person only',
+    content: "Receive universal life force energy to optimize the body's natural bio-energy field. This promotes relaxation, vitality, emotional healing, connection, clarity, removes blockages and deficiencies, and more."
   },
   {
     id: 'spiritual-practice',
     title: 'Spiritual Counseling and Practices',
     availability: 'Available in-person or virtual',
-    content: "Build the wisdom and compassion needed to live well. Be seen and heard as you are. Learn and deepen mind-body practices. Deepen authenticity. Progress towards what matters most to you. We will draw on both inner knowing and outer knowledge from spiritual traditions."
+    content: "Cultivate the wisdom, compassion, & authenticity needed to live well. Be seen and heard as you are. Learn and deepen mind-body practices. Embody what matters most to you. We may draw on both inner knowing and outer knowledge from spiritual traditions."
   },
 ];
 
