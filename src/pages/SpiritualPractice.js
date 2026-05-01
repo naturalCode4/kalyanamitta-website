@@ -55,7 +55,7 @@ const SpiritualPractice = () => {
             </div>
             <div className="about-spiritual-practice-text">
               <p>
-                In this space you will be met unconditionally and holistically supported. This is a space for embodying what's authentic to you, and for spiritual education, exploration, and cultivation.Here are some <a href="/home#what-we-can-do-together" target="_blank">topics</a> I can especially support people in.
+                In this space you will be met unconditionally and holistically supported. This is a space for embodying what's authentic to you, and for spiritual education, exploration, practices, and cultivation. Here are some <a href="/home#what-we-can-do-together" target="_blank">topics</a> I can especially support people in.
               </p>
               <p>
                 We can be with whatever is alive in you — your deepest yearnings, your obstacles, your beauty and your pain. Sometimes what we need most is just to be truly heard, without judgment or fixing. I am here to hold that space.

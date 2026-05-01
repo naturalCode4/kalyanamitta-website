@@ -20,7 +20,7 @@ export const offerings = [
 ];
 
 export const helpList = [
-  "Release difficult emotions: fear, shame, stress, limiting beliefs and memories, anger, grief, and trauma",
+  "Release difficult emotions: fear, shame, low slumps, stress, limiting beliefs and memories, anger, grief, and trauma",
   "Attain the life situation you desire, unblocking yourself from any obstacles",
   "Deepen love, compassion, and acceptance for yourself and others",
   "Cultivate emotional intelligence and stability, happiness, peace, and self-esteem",
