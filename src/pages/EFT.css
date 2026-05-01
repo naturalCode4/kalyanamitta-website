@@ -314,6 +314,16 @@
   color: white !important;
 }
 
+.about-eft .offering-book-cta {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 2rem;
+}
+
+.about-eft .offering-book-cta .btn {
+  min-width: 220px;
+}
+
 .about-eft p {
   text-align: left;
   margin-bottom: 1.5rem;

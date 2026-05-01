@@ -97,6 +97,16 @@
   color: white !important;
 }
 
+.about-spiritual-practice .offering-book-cta {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 2rem;
+}
+
+.about-spiritual-practice .offering-book-cta .btn {
+  min-width: 220px;
+}
+
 .about-spiritual-practice p {
   text-align: left;
   margin-bottom: 1.5rem;

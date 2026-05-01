@@ -69,6 +69,11 @@ const EFT = () => {
         <div className="container">
           <div className="about-eft-content">
             <h2 className="subtitle-heading">About EFT</h2>
+            <div className="offering-book-cta">
+              <Link to="/contact#booking" className="btn btn-outline">
+                Book a Session
+              </Link>
+            </div>
             
             {/* New Clean Container */}
             <div className="eft-image-container">
