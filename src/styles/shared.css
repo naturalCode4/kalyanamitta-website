@@ -237,6 +237,21 @@
   .section-title {
     font-size: 2rem;
   }
+
+  /* Fantasy stack renders larger on many mobile browsers — keep headings tighter */
+  .subtitle-heading {
+    font-size: 1.65rem;
+    line-height: 1.2;
+  }
+
+  .section-title.subtitle-heading {
+    font-size: 1.65rem;
+  }
+
+  h1.subtitle-heading {
+    font-size: 2rem;
+    line-height: 1.15;
+  }
   
   .grid-2,
   .grid-3,

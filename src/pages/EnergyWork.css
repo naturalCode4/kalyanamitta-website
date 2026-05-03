@@ -218,7 +218,7 @@
 /* Responsive - Match EmotionalProcessing */
 @media (max-width: 768px) {
   .energy-work-hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   
   .about-energy-work {
@@ -226,7 +226,7 @@
   }
   
   .about-energy-work h2 {
-    font-size: 2rem;
+    font-size: 1.65rem;
   }
   
   .about-energy-work h3 {

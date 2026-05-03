@@ -926,7 +926,7 @@
   }
   
   .rates-hero h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   
   .rates-subtitle {
@@ -1093,7 +1093,7 @@
 
 @media (max-width: 480px) {
   .rates-hero h1 {
-    font-size: 3rem;
+    font-size: 1.85rem;
   }
   
   .pricing-card {
