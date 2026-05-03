@@ -16,7 +16,8 @@
   margin-bottom: 1rem;
   font-weight: 700;
   color: black;
-  font-family: fantasy;
+    font-family: papyrus, 'Bodoni Moda', serif;
+
   text-shadow: 4px 2px 4px #e4b108;
 }
 
@@ -222,10 +223,6 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .EFT-emotional-freedom-techniques-hero-content h1 {
-    font-size: 2rem;
-  }
-  
   .services-grid {
     grid-template-columns: 1fr;
   }

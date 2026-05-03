@@ -17,7 +17,8 @@
   margin-bottom: 1rem; /* Match EmotionalProcessing exactly */
   font-weight: 700;
   color: black;
-  font-family: fantasy;
+    font-family: papyrus, 'Bodoni Moda', serif;
+
   text-shadow: 4px 2px 5px #e4b108;
 }
 
@@ -311,10 +312,6 @@
 
 /* Responsive - Match EmotionalProcessing */
 @media (max-width: 768px) {
-  .spiritual-practice-hero-content h1 {
-    font-size: 2rem;
-  }
-  
   .about-spiritual-practice {
     padding: 4rem 0;
   }

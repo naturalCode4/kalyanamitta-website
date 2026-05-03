@@ -36,7 +36,8 @@
     /* -webkit-text-fill-color: transparent; */
     background-clip: text;
     color: white;
-    font-family: fantasy;
+      font-family: papyrus, 'Bodoni Moda', serif;
+
     text-shadow: 2px 2px 2px #e4b108;
   }
   
@@ -265,10 +266,6 @@
    ========================================= */
 
    @media (max-width: 768px) {
-
-    .logo h1 {
-      font-size: 1.15rem;
-    }
 
     .mobile-menu-btn {
       display: block; 

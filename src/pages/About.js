@@ -26,7 +26,7 @@ const About = () => {
   return (
     <div className="about">
       <Helmet>
-        <title>About Adin and This Powerful Healing Practice</title>
+        <title>Adin and His Healing Practice</title>
         <meta name="description" content="Learn more about Adin Kramer and Healing On Tap. Life story, approach, testimonials, and more" />
         <meta property="og:title" content="About Adin and This Powerful Healing Practice" />
         <meta property="og:description" content="Learn more about Adin Kramer and Healing On Tap. Life story, approach, testimonials, and more." />
