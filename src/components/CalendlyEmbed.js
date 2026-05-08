@@ -41,7 +41,7 @@ const CalendlyEmbed = () => {
       <div className="calendly-content">
         <div 
           className="calendly-inline-widget" 
-          data-url="https://calendly.com/healingontap/30min"
+          data-url="https://calendly.com/healingontap/sessionwithadin"
           style={{ minWidth: '320px', height: '700px' }}
         ></div>
       </div>
