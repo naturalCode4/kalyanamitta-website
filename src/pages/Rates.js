@@ -137,8 +137,8 @@ const Rates = () => {
             <div className="timeline-point highlighted-point">
               <div className="timeline-number">1</div>
               <div className="timeline-content middle-card">
-                <h3>$111</h3>
-                <p className="timeline-label">Accessible Rate</p>
+                <h3>$90-111</h3>
+                <p className="timeline-label">Accessible Range</p>
                 {/* <h3>Accessible Range</h3>
                 <p className="timeline-label">80 - 120</p> */}
                 <p className="timeline-description">For those whom the standard rate is financially inaccessible. Your presence & sincerity matter most.</p>
