@@ -11,32 +11,62 @@ const Rates = () => {
     {
       name: '4-Session Combo',
       description: "Invest in your healing and personal development, and get your energy back. Four potent sessions to find freedom and align yourself.",
-      mainPrice: '$528',
-      slidingScale: ' / Sliding Scale $256-800',
-      originalPrice: '$660. Sliding Scale $320-1000',
-      discount: '20% OFF',
+      mainPrice: '$578',
+      slidingScale: ' / Sliding Scale $377-850',
+      originalPrice: '$680. Sliding Scale $444-1000',
+      discount: '15% OFF',
       features: [
         'Four 90 minute sessions',
         'Any combination of services',
         'Ongoing support and guidance',
-        '20% discount on total price'
+        '15% discount on total price'
       ]
     },
     {
       name: '7-Session Combo',
       description: "Transform yourself, heal even major issues, and expand your spiritual capacity and toolkit. Commit to being supported with seven potent sessions.",
-      mainPrice: '$866',
-      slidingScale: ' / Sliding Scale $420-1,312',
-      originalPrice: '$1,155. Sliding Scale $560-1,750',
-      discount: '25% OFF',
+      mainPrice: '$952',
+      slidingScale: ' / Sliding Scale $621-1,400',
+      originalPrice: '$1,190. Sliding Scale $777-1,750',
+      discount: '20% OFF',
       features: [
         'Seven 90 minute sessions',
         'Any combination of services',
         'Ongoing support and guidance',
-        '25% discount on total price'
+        '20% discount on total price'
       ]
     },
   ];
+  // const packages = [
+  //   {
+  //     name: '4-Session Combo',
+  //     description: "Invest in your healing and personal development, and get your energy back. Four potent sessions to find freedom and align yourself.",
+  //     mainPrice: '$528',
+  //     slidingScale: ' / Sliding Scale $256-800',
+  //     originalPrice: '$660. Sliding Scale $320-1000',
+  //     discount: '20% OFF',
+  //     features: [
+  //       'Four 90 minute sessions',
+  //       'Any combination of services',
+  //       'Ongoing support and guidance',
+  //       '20% discount on total price'
+  //     ]
+  //   },
+  //   {
+  //     name: '7-Session Combo',
+  //     description: "Transform yourself, heal even major issues, and expand your spiritual capacity and toolkit. Commit to being supported with seven potent sessions.",
+  //     mainPrice: '$866',
+  //     slidingScale: ' / Sliding Scale $420-1,312',
+  //     originalPrice: '$1,155. Sliding Scale $560-1,750',
+  //     discount: '25% OFF',
+  //     features: [
+  //       'Seven 90 minute sessions',
+  //       'Any combination of services',
+  //       'Ongoing support and guidance',
+  //       '25% discount on total price'
+  //     ]
+  //   },
+  // ];
   // const packages = [
   //   {
   //     name: '4-Session Combo',
@@ -93,27 +123,25 @@ const Rates = () => {
         <section className="pricing-timeline-section">
         <div className="container">
           <div className="flexible-pricing">
-            <div className="flexible-content">
-              <h3>Open Reciprocity Sliding Scale</h3>
-              <br></br>
-              {/* <p className="flexible-label">90 minutes: $80-250</p> */}
-              <p className="subtitle">I offer flexible pricing so that this work is accessible. Choose an amount that feels aligned—honoring this work and what's sustainable for you.</p>
-              <p className="subtitle">I offer these rates because I am passionate about this powerful work and desire for it to be shared it widely. There is a huge wealth disparity in the modern world. For some, the standard rate is an easy investment, and for others its basic expenses they can't forego.</p>
-              <p className="subtitle">For those with financial ease, your generosity honors the exchange of energy between us, allows me to thrive doing what I love, supports this work in the world, and makes it accessible to others.</p>
-              <p className="subtitle extra"><em>Rates listed are for 90 minutes. 60 and 30 minute sessions are also available.</em></p>
+              <div className="flexible-content">
+                <h3>Open Reciprocity Sliding Scale</h3>
+                <br></br>
+                {/* <p className="flexible-label">90 minutes: $80-250</p> */}
+                <p className="subtitle">I offer flexible pricing so that this work is accessible. Choose an amount that feels aligned—honoring this work and what's sustainable for you.</p>
+                <p className="subtitle">I offer these rates because I am passionate about this powerful work and desire for it to be shared it widely. There is a huge wealth disparity in the modern world. For some, the standard rate is an easy investment, and for others its basic expenses they can't forego.</p>
+                <p className="subtitle">For those with financial ease, your generosity honors the exchange of energy between us, allows me to thrive doing what I love, supports this work in the world, and makes it accessible to others.</p>
+              </div>
             </div>
-          </div>
-          
+          <p className="subtitle extra"><em>Rates listed are for 90 minutes. 60 and 30 minute sessions are also available.</em></p>
           <div className="pricing-timeline">
-            
             <div className="timeline-point highlighted-point">
               <div className="timeline-number">1</div>
               <div className="timeline-content middle-card">
-                <h3>$80 - 111</h3>
-                <p className="timeline-label">Accessible Range</p>
+                <h3>$111</h3>
+                <p className="timeline-label">Accessible Rate</p>
                 {/* <h3>Accessible Range</h3>
                 <p className="timeline-label">80 - 120</p> */}
-                <p className="timeline-description">For those whom the standard rate would create financial strain. Your presence & sincerity matter most.</p>
+                <p className="timeline-description">For those whom the standard rate is financially inaccessible. Your presence & sincerity matter most.</p>
               </div>
               {/* <div className="timeline-content">
                 <h3>$50 - 70</h3>
@@ -125,7 +153,7 @@ const Rates = () => {
             <div className="timeline-point highlighted-point">
               <div className="timeline-number">2</div>
               <div className="timeline-content middle-card">
-                <h3>$165</h3>
+                <h3>$170</h3>
                 <p className="timeline-label">Standard Rate</p>
                 {/* <h3>Standard Rate</h3>
                 <p className="timeline-label">165</p> */}
@@ -136,15 +164,14 @@ const Rates = () => {
             <div className="timeline-point">
               <div className="timeline-number">3</div>
               <div className="timeline-content">
-                <h3>$222 - 250</h3>
+                <h3>$222-250</h3>
                 <p className="timeline-label">Sustaining Range</p>
                 {/* <h3>Sustaining Range</h3>
                 <p className="timeline-label">225 - 250</p> */}
-                <p className="timeline-description">For those who can—honoring what deep healing is worth while making it available to others.</p>
+                <p className="timeline-description">For those who can— honoring what deep healing is worth and making it available to others.</p>
               </div>
             </div>
           </div>
-          
         </div>
 
       </section>
