@@ -276,6 +276,10 @@ const Rates = () => {
                     ))}
                   </ul>
                 </div>
+                <br></br>
+                <Link to="/contact#booking" className="btn btn-outline">
+                  Start your Journey
+                </Link>
               </div>
             ))}
           </div>
