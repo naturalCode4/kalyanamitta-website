@@ -97,17 +97,18 @@ const Home = () => {
           <div className="hero-content">
             <h1>Healing On Tap</h1>
 
-            <div className="grid grid-cards">
-              {offerings.map((offering) => (
-                <ServiceCard
-                  key={offering.id}
-                  title={offering.title}
-                  availability={offering.availability}
-                  content={offering.content}
-                  learnMoreLink={`/${offering.id}`}
-                  variant="rainbow"
-                />
-              ))}
+            <div className="hero-manifesto">
+              <div className="manifesto-item">
+                <span className="manifesto-text">Healing and love <u>is</u> your nature,<br className="desktop-break" />Dissolve what limits you.</span>
+              </div>
+              <div className="manifesto-connector"></div>
+              <div className="manifesto-item">
+                <span className="manifesto-text">Restore wisdom and connection,<br className="desktop-break" />Liberate your heart, body, and mind.</span>   
+              </div>
+              <div className="manifesto-connector"></div>
+              <div className="manifesto-item">
+                <span className="manifesto-text">Unmute your soul,<br className="desktop-break" />Remember your divinity and power.</span>
+              </div>
             </div>
 
           </div>
@@ -139,12 +140,33 @@ const Home = () => {
         </div>
       </Section>
       
+      {/* Manifesto Section */}
+      <Section 
+        variant="dark" 
+        title="Are you ready to live from your true nature? ..."
+        subtitle=""
+      >
+
+        <div className="grid grid-cards">
+          {offerings.map((offering) => (
+            <ServiceCard
+              key={offering.id}
+              title={offering.title}
+              availability={offering.availability}
+              content={offering.content}
+              learnMoreLink={`/${offering.id}`}
+              variant="rainbow"
+            />
+          ))}
+        </div>
+      </Section>
+
       {/* Help List Section - CAROUSEL */}
       <Section
         id="what-we-can-do-together"
         variant="dark" 
-        title="What We Can Do Together"
-        subtitle="These are my core strengths and areas of focus. The beautiful thing is they're all interconnected— grow in one area and you'll often find the rest alchemize and heal together"
+        title="Some of What I Can Help You Do ..."
+        subtitle="These are some of my core areas of specialization. The beautiful thing is that if you grow in one area, you'll often find the aspects of your life alchemize and heal together"
       >
         <div className="carousel-container">
 
@@ -200,27 +222,6 @@ const Home = () => {
           </div>
           
           <p className="carousel-hint"><em>Swipe to explore</em></p>
-        </div>
-      </Section>
-
-      {/* Manifesto Section */}
-      <Section 
-        variant="dark" 
-        title="Do you remember your true nature?"
-        subtitle=""
-      >
-        <div className="hero-manifesto">
-          <div className="manifesto-item">
-            <span className="manifesto-text">Healing and goodness is your nature,<br className="desktop-break" />Dissolve what limits you.</span>
-          </div>
-          <div className="manifesto-connector"></div>
-          <div className="manifesto-item">
-            <span className="manifesto-text">Restore wisdom and connection,<br className="desktop-break" />Liberate your heart, body, and mind.</span>   
-          </div>
-          <div className="manifesto-connector"></div>
-          <div className="manifesto-item">
-            <span className="manifesto-text">Unmute your soul,<br className="desktop-break" />Remember your power.</span>
-          </div>
         </div>
       </Section>
 

@@ -1323,7 +1323,7 @@
 }
 
 #what-we-can-do-together {
-  border-bottom: none;
+  border-top: none;
 }
 /* Mobile Hiding */
 @media (max-width: 768px) {

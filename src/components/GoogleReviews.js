@@ -230,7 +230,7 @@ const GoogleReviews = () => {
           rel="noopener noreferrer"
           className="view-all-reviews-btn btn btn-outline"
         >
-          View more reviews on Google →
+          More reviews here →
         </a>
       </div>
     </div>
