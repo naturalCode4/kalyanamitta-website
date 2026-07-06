@@ -36,7 +36,7 @@ const CalendlyEmbed = () => {
         </div>
         <br></br>
         <br></br>
-        <p>All sessions are held virtually or in my current location (St. Petersburg, FL)</p>
+        <p>All sessions are held virtually or in my current location (Aguascalientes, MX)</p>
       </div>
       <div className="calendly-content">
         <div 
