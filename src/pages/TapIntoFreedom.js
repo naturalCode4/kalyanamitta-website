@@ -192,7 +192,7 @@ const TapIntoFreedom = () => {
           </h3>
           <ul className="list-bullets tif-intro-list">
             <li>Receive <strong>12 potent 90-minute 1-on-1 EFT sessions</strong> (Emotional Freedom Techniques, aka Tapping) — <em>the single most effective healing tool I've found for resolving nearly any issue at the root. Powerful, simple, gentle, and fast.</em> (More on EFT later)</li>
-            <li>Gain proficiency in the <strong>doing EFT on yourself.</strong></li>
+            <li>Gain proficiency in <strong>doing EFT on yourself.</strong></li>
             <li>Learn or deepen a <strong>Spiritual Practice</strong> and be guided and held <strong>accountable</strong> for its development.</li>
             <li>Be in a container of <strong>support the whole way — I'll be in your corner</strong>: reachable between sessions by email — bringing guidance, presence, and integration support.</li>
           </ul>
@@ -302,7 +302,7 @@ const TapIntoFreedom = () => {
 
               <p>I've practiced extensively with healing modalities, mystical traditions, and spiritual practices.</p>
               <p>
-                EFT is the <em>single most effective healing tool</em> I've found for resolving nearly any issue at the root — powerful, simple, gentle, and fast. It involves self-acceptance, self-love, and tapping acupoints on your body while skillfully addressing an issue or goal. It neutralizes and dissolves negative thought patterns and emotions, undesired conditioning, and restores access to your full energy and the ability to be authentic, aligned, and create the life you desire.
+                EFT is the <em>single most effective tool</em> I've found for resolving nearly any issue at the root — powerful, simple, gentle, and fast. It involves self-acceptance, self-love, and tapping acupoints on your body while skillfully addressing an issue or goal. It neutralizes and dissolves negative thought patterns and emotions, undesired conditioning, and restores access to your full energy and the ability to be authentic, aligned, and create the life you desire.
               </p>
 
               {/* Placed before the eftWorks/sessionExpect dropdown stack so
@@ -326,13 +326,13 @@ const TapIntoFreedom = () => {
                       Tapping works wonders on the system! Research suggests it reduces activation of the amygdala's threat response, allowing the nervous system to shift into a calmer, more regulated state — even while bringing attention to what would previously have triggered the body's automatic stress response. In this way, tapping enables us to stay present with the issue and feel safe enough to fully feel and process it.
                     </p>
                     <p>
-                      EFT incorporates acupoints from Traditional Chinese Medicine. Each tapping point lies on a meridian — an energy channel that governs essential aspects of the body, mind, and spirit. By tapping these points, we're essentially giving ourselves a needle-free acupuncture treatment while meeting the emotions and beliefs we're working to transform. This physiologically treats your issue.
+                      EFT incorporates acupoints from Traditional Chinese Medicine. Each tapping point lies on a meridian — an energy channel that governs essential aspects of the body, mind, and spirit. By tapping these points, we're balancing each meridian and essentially giving ourselves a needle-free acupuncture treatment, while addressing the emotions and beliefs we wish to transform. This physiologically treats your issue.
                     </p>
                     <p>
                       When the original experience(s) that created the issue occurred, we may not have had the capacity to fully feel, process, or integrate what happened. As a result, there's an embodied emotional imprint we still carry… like old baggage (how's this 'baggage' metaphor working for you?). Through tapping, we revisit the trigger from a different state — one of greater calm, safety, self-compassion, and love. Instead of reinforcing the old reaction, the neural pathways are updated to this healthier response. We dissolve an issue on the neurological level and rewrite our lives. The heavy baggage gets dropped, and we attain genuine freedom.
                     </p>
                     <p>
-                      EFT is well-backed by over 100 studies and trials.
+                      EFT is well-backed by over <a href="https://eftuniverse.com/research-studies" target="_blank">100 studies and trials</a>.
                     </p>
                   </div>
                 </aside>
@@ -356,7 +356,7 @@ const TapIntoFreedom = () => {
               <div className="gold-divider"></div>
 
               <p className="tif-emphasis">This excellent modality will become yours for life.</p>
-              <p className="tif-color-green">In this program, you will not only receive 12 potent EFT sessions: You will gain proficiency in practicing EFT on yourself.
+              <p className="tif-color-green">In this program, you will not only receive 12 potent EFT sessions: You will gain proficiency in practicing EFT on yourself. You can use EFT to address the challenges of your life and continue your inner work.
               </p>
 
               <div className="gold-divider"></div>
@@ -444,7 +444,7 @@ const TapIntoFreedom = () => {
 
             <div className="tif-flow-main tif-flow-main-both">
               <p>
-                I have <u className="tif-underline">lived</u> this work, not just studied it: I've come through PTSD, deep childhood wounding, emotionally immature parenting, anxiety, depression, shame, insecurity, heartbreak, and more. I know what it's like on the other side, because I've lived it.
+                I have <u className="tif-underline">lived</u> this work, not just studied it: I've come through PTSD, deep childhood wounding, emotionally immature parenting, anxiety, depression, shame, insecurity, heartbreak, and more. I know what it's like down in the mud, because I've walked through it.
               </p>
 
               <div className="collapsible-header tif-inline-trigger" onClick={() => toggleSection('fullStory')}>
@@ -456,7 +456,7 @@ const TapIntoFreedom = () => {
                   I've always had a natural affinity for genuine connection, meditation, deep play, the natural world, and spiritual understanding. I knew early to follow my own path — and take a different way from the mediocrity most of the adults and institutions around me were offering. There is an authenticity and unfolding <u className="tif-underline">only you can walk.</u>
                 </p>
                 <p>
-                  EFT has been <u className="tif-underline">absolutely essential</u> in my healing journey. As I write this, I actually see the world as beautiful. I actually love and accept myself. I’m no longer crushed by negative emotions and thoughts like I was most of my life. My work feels deeply aligned. I feel peace, freedom, power, and have confidence in myself. My health, habits, all my relationships, sense of self-worth, sense of divinity, have all improved. I offer to you what I’ve lived, because I know it can do the same for you. And it’s so, so worth it.
+                  EFT has been <u className="tif-underline">absolutely essential</u> in my healing journey. As I write this, I actually see the world as beautiful. I actually love and accept myself. I’m no longer crushed by negative emotions, triggers, and thoughts like I was most of my life. My work feels deeply aligned. I feel peace, freedom, power, and have confidence in myself. My health, habits, all my relationships, sense of self-worth, sense of divinity, have all improved. I offer to you what I’ve lived, because I know <u className="tif-underline">it can do the same for you</u>. And it’s so, so worth it.
                 </p>
               </div>
 
@@ -494,7 +494,7 @@ const TapIntoFreedom = () => {
             <div className="tif-flow-main tif-flow-main-both">
               <p>Think vast! Bring what's yours. I've rarely met a thing I can't address.</p>
               <p>
-                Ask yourself: if Adin could wave a magic wand over me and resolve any issue, what would make the biggest difference in my life? EFT is a multi-tool we can use on nearly anything.
+                Ask yourself: if Adin could wave a magic wand over me and resolve any 3-6 issues, what would make the biggest difference in my life? EFT is a multi-tool we can use on nearly anything.
               </p>
 
               {/* Absolutely positioned as the left-hand sidebar on desktop
@@ -542,7 +542,7 @@ const TapIntoFreedom = () => {
             In this way, you can <u className="tif-underline">be, live, think, feel, and act</u> from <em>genuine freedom</em> — beyond limitations.
           </p>
           <p className="tif-emphasis">
-            You gain easy of access to <u className="tif-underline"> your power</u>.
+            You gain ease of access to <u className="tif-underline"> your power</u>.
           </p>
 
           <div className="gold-divider"></div>
@@ -556,7 +556,7 @@ const TapIntoFreedom = () => {
               <div className={`collapsible-content ${openSections.forYouIf ? 'open' : ''}`}>
                 <ul className="list-bullets">
                   <li>You're carrying something unresolved and you're ready to put down the weight — maybe that hasn't budged no matter what you've tried</li>
-                  <li>You want more personal power, peace, play, or to improve aspect(s) of your life</li>
+                  <li>You want more personal power, peace, play, love, and to improve aspect(s) of your life</li>
                   <li>You're ready to invest in yourself financially</li>
                   <li>You want embodied change, not just talk</li>
                   <li>You want a better-functioning nervous system, brain, body, and mind</li>
@@ -579,8 +579,7 @@ const TapIntoFreedom = () => {
                 <ul className="list-bullets">
                   <li>You're seeking a quick fix with no real engagement — this work asks something of you</li>
                   <li>You're not ready to invest your focus, time, and money into you</li>
-                  <li>You're not ready to see yourself or would rather idly talk about your problems — this work asks you to meet yourself deeply</li>
-                  <li>You're at a stage where you'd rather play the victim than actually improve your situation. But, if you'd like to step out of victimhood, that we can do</li>
+                  <li>You're not ready to see yourself, would rather idly talk about your problems or play the victim than actually improve your situation— this work asks you to meet yourself deeply</li>
                   <li>Living from your heart and with integrity, isn't really a priority for you</li>
                   <li>You're in acute crisis or need primary medical or mental-health treatment — that care comes first, and this can complement it once you're stable</li>
                 </ul>
@@ -599,10 +598,11 @@ const TapIntoFreedom = () => {
 
           <p className="tif-tagline tif-tagline-lg">This is an investment that can completely transform your life.</p>
           <ul className="list-bullets tif-investment-list">
-            <li>A 3-month container of profound healing and upgrades with ongoing support.</li>
-            <li>Twelve 90-minute EFT sessions.</li>
-            <li>Learn the powerful modality of EFT for yourself.</li>
-            <li>Gain a spiritual practice that's genuinely yours.</li>
+            <li>A 3-month container of profound healing and upgrades with my ongoing support.</li>
+            <li>Twelve potent 90-minute 1-on-1 EFT & Coaching sessions with Adin.</li>
+            <li>Gain proficiency in using the powerful modality of EFT on yourself.</li>
+            <li>Cultivate a spiritual practice that's genuinely yours and deeply supports your life.</li>
+            <li>Weekly (optional) cohort circles with sharing, integration, and tapping (when we have enough people).</li>
           </ul>
 
           <div className="gold-divider"></div>
@@ -635,7 +635,6 @@ const TapIntoFreedom = () => {
       {/* Sign off */}
       <section className="tif-signoff">
         <div className="container">
-          <Link to="/contact#get-in-touch" className="tif-feedback-link">Provide Feedback. Help us make this program the best it can be →</Link>
 
           <div className="gold-divider"></div>
 
@@ -644,6 +643,7 @@ const TapIntoFreedom = () => {
           <div className="tif-cta-center">
             <a href={ALIGNMENT_FORM_URL} className="btn">Let's do this →</a>
           </div>
+          <Link to="/contact#get-in-touch" className="tif-feedback-link">Provide Feedback. Help us make this program the best it can be →</Link>
         </div>
       </section>
     </div>

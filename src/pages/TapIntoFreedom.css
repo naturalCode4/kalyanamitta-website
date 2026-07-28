@@ -85,7 +85,7 @@
 /* ---------- Section headers used throughout ---------- */
 .tap-into-freedom h2.subtitle-heading {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3.2rem;
   margin-bottom: 2rem;
 }
 
@@ -320,6 +320,18 @@
   font-size: 1.15rem;
   color: #ffffff;
   margin: 0 !important;
+}
+
+/* Sidebars are absolutely positioned, so their height never reflows the
+   section around them (see the .tif-flow note above) — which also means a
+   long dropdown, once opened, can grow taller than the section itself and
+   spill into whatever comes next. Capping the open height with a scrollbar
+   keeps it contained no matter how long the content is. More specific than
+   the shared ".collapsible-content.open { max-height: 5000px }" rule, so no
+   !important needed. */
+.tif-sidebar-dropdown .collapsible-content.open {
+  max-height: 480px;
+  overflow-y: auto;
 }
 
 .tif-sidebar-dropdown-header .triangle {
@@ -788,7 +800,7 @@
   }
 
   .tap-into-freedom h2.subtitle-heading {
-    font-size: 1.8rem;
+    font-size: 2.3rem;
   }
 
   .tif-emphasis-strong {
