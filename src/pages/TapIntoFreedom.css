@@ -111,21 +111,27 @@
 }
 
 /* ---------- Emphasis lines ---------- */
+/* font-size/text-align need !important: Home.css has a page-wide
+   ".section-rainbow p { font-size: 1.1rem; text-align: left; ... }" rule
+   that's MORE specific than a single class like .tif-emphasis (it also
+   matches on the "p" element), and Benefits/Wise Friend/Focus all use
+   .section-rainbow — without !important that leak silently shrinks and
+   left-aligns every .tif-emphasis line in those three sections. */
 .tif-emphasis {
   font-weight: 700;
-  font-size: 1.28rem;
-  line-height: 1.7;
+  font-size: 1.8rem !important;
+  line-height: 1.6;
   color: #f0f0f0;
-  text-align: center;
+  text-align: center !important;
   max-width: 800px;
   margin: 1.8rem auto;
 }
 
 .tif-emphasis-strong {
   font-weight: 700;
-  font-size: 1.45rem;
+  font-size: 1.45rem !important; /* !important: see the note above .tif-emphasis */
   color: #ffffff;
-  text-align: center;
+  text-align: center !important;
   max-width: 800px;
   margin: 0 auto 1.5rem;
 }
@@ -133,7 +139,7 @@
 .tif-small-italic {
   font-style: italic;
   text-align: center !important;
-  font-size: 1.05rem;
+  font-size: 1.05rem !important; /* !important: see the note above .tif-emphasis */
   /* Plain white (via Home.css's page-wide .section-rainbow rule) — Where We
      Focus deliberately isn't part of the rainbow text-color system, see the
      note at the top of this file. */
@@ -162,10 +168,10 @@
    this the gold color silently loses to that section's default light-grey
    paragraph color. */
 .tif-tagline {
-  text-align: center;
+  text-align: center !important; /* !important: see the note above .tif-emphasis */
   font-style: italic;
   font-weight: 700;
-  font-size: 1.85rem;
+  font-size: 1.85rem !important;
   color: #d4af37 !important;
   max-width: 700px;
   margin: 2rem auto 1.5rem;
@@ -175,14 +181,14 @@
 /* One-off size bump for a specific tagline instance, e.g. the Investment
    section's opening line — stack alongside .tif-tagline, not instead of it. */
 .tif-tagline-lg {
-  font-size: 2.1rem;
+  font-size: 2.1rem !important; /* !important: needed to beat .tif-tagline's own !important */
   max-width: 850px;
 }
 
 /* One-off size bump for a specific .tif-emphasis instance — stack alongside
    .tif-emphasis, not instead of it. */
 .tif-emphasis-lg {
-  font-size: 1.6rem;
+  font-size: 2.2rem !important;
 }
 
 /* ---------- CTA buttons ---------- */
@@ -416,19 +422,24 @@
   margin-bottom: 0.5rem;
 }
 
+/* text-align/font-size !important: see the note above .tif-emphasis — the
+   same Home.css leak also force-left-aligns quote text inside
+   Benefits/Wise Friend/Focus without this. */
 .tif-quote-text {
   font-style: italic;
   color: #e8e8e8;
   margin-bottom: 0.5rem;
   line-height: 1.6;
-  font-size: 1.1rem;
+  font-size: 1.1rem !important;
+  text-align: center !important;
 }
 
 .tif-quote-author {
   font-weight: 600;
   color: #d4af37;
   margin-bottom: 0;
-  font-size: 1.05rem;
+  font-size: 1.05rem !important; /* !important: see the note above .tif-quote-text */
+  text-align: center !important;
 }
 
 /* ---------- Benefit list (each item its own dropdown when it has a review) ---------- */
@@ -458,7 +469,9 @@
 
 .tif-benefit-detail {
   text-align: left;
-  font-size: 1.08rem;
+  /* !important: see the note above .tif-emphasis — Home.css's page-wide
+     .section-rainbow leak otherwise shrinks this back down to 1.1rem. */
+  font-size: 1.08rem !important;
   line-height: 1.8;
   margin-top: 0.75rem;
   margin-bottom: 0;
@@ -523,13 +536,13 @@
   text-align: center;
 }
 
-.tif-intro p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author),
-.tif-method p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author),
-.tif-about p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author),
-.tif-focus p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author),
-.tif-wise-friend p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author),
-.tif-benefits p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author),
-.tif-investment p:not(.tif-emphasis):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author) {
+.tif-intro p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author):not(.tif-emphasis-strong):not(.tif-benefit-detail):not(.tif-sidebar-quote),
+.tif-method p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author):not(.tif-emphasis-strong):not(.tif-benefit-detail):not(.tif-sidebar-quote),
+.tif-about p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author):not(.tif-emphasis-strong):not(.tif-benefit-detail):not(.tif-sidebar-quote),
+.tif-focus p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author):not(.tif-emphasis-strong):not(.tif-benefit-detail):not(.tif-sidebar-quote),
+.tif-wise-friend p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author):not(.tif-emphasis-strong):not(.tif-benefit-detail):not(.tif-sidebar-quote),
+.tif-benefits p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author):not(.tif-emphasis-strong):not(.tif-benefit-detail):not(.tif-sidebar-quote),
+.tif-investment p:not(.tif-emphasis):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author):not(.tif-emphasis-strong):not(.tif-benefit-detail):not(.tif-sidebar-quote) {
   text-align: left;
   font-size: 1.18rem;
   line-height: 1.9;
@@ -594,13 +607,16 @@
 
 .tif-investment-list li {
   font-weight: 700;
-  font-size: 1.15rem;
+  font-size: 1.35rem;
   color: #c9a3e8; /* explicit request: purple */
   padding: 0.4rem 0 0.4rem 20px;
 }
 
+/* Very light pastel rainbow instead of flat white — each card gets a
+   different hue order so the two read as distinct, still light enough that
+   the card's existing dark text (#1a1a1a / #444) stays easily readable. */
 .tif-price-card {
-  background: white;
+  background: linear-gradient(135deg, #f8d3e2 0%, #faedb8 33%, #bfe9d3 66%, #c3ddf5 100%);
   border-radius: 12px;
   padding: 2rem;
   text-align: center;
@@ -630,6 +646,7 @@
 }
 
 .tif-price-highlight {
+  background: linear-gradient(135deg, #c9d0f5 0%, #ddc3f2 33%, #f7c8e0 66%, #fbe6ae 100%);
   border: 6px solid #d4af37;
   transform: scale(1.03);
 }

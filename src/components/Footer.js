@@ -34,6 +34,7 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Get in Touch</h4>
             <p>Phone: +1 (301) 641-2855</p>
+            <p>Email: <Link to="/contact#get-in-touch">Click here</Link></p>
             <p>Location: Nomadic & worldwide — I work with clients virtually and in person where I travel.</p>
           </div>
         </div>

@@ -167,7 +167,7 @@ const TapIntoFreedom = () => {
 
           <div className="collapsible-header tif-inline-trigger" onClick={() => toggleSection('costOfCarrying')}>
             <span className={`triangle ${openSections.costOfCarrying ? 'open' : ''}`}></span>
-            See what this is actually costing you
+            See what this is actually costing us
           </div>
           <div className={`collapsible-content ${openSections.costOfCarrying ? 'open' : ''}`}>
             <p className="tif-emphasis">
@@ -181,9 +181,9 @@ const TapIntoFreedom = () => {
 
           <div className="gold-divider"></div>
 
-          <p className="tif-emphasis"><em>Tap Into Freedom</em> exists to end that cost. For good.</p>
+          <p className="tif-emphasis"><u className="tif-underline"><em>Tap Into Freedom</em></u> exists to end that cost. For good.</p>
+          <p className="tif-emphasis">All of it aimed at a <u className="tif-underline">whole life healing</u> and liberation of your peace, authenticity, desires, and flourishing –– and hand you excellent <u className="tif-underline">tools for life.</u></p>
           <p className="tif-emphasis">Whatever you're carrying – we <em>can</em> shift it.</p>
-          <p className="tif-emphasis">All of it aimed at a whole life healing and liberation of your peace, authenticity, desires, and flourishing –– and hand you excellent tools for life.</p>
 
           <div className="gold-divider"></div>
 
@@ -191,10 +191,10 @@ const TapIntoFreedom = () => {
             During the 12 week <strong>Tap Into Freedom</strong> program, you will:
           </h3>
           <ul className="list-bullets tif-intro-list">
-            <li>Receive 12 potent 90-minute 1-on-1 EFT (Emotional Freedom Techniques, aka Tapping) — the single most effective healing tool I've found for resolving nearly any issue at the root. Powerful, simple, gentle, and fast. (More on EFT later)</li>
-            <li>Gain proficiency in the self-practice of EFT.</li>
-            <li>Learn or deepen a Spiritual Practice and be held accountable and guided in it – so it [?...?]</li>
-            <li>Be in a container of support the whole way — I'll be in your corner: reachable between sessions by email — bringing guidance, presence, and integration support.</li>
+            <li>Receive <strong>12 potent 90-minute 1-on-1 EFT</strong> (Emotional Freedom Techniques, aka Tapping) — <em>the single most effective healing tool I've found for resolving nearly any issue at the root. Powerful, simple, gentle, and fast.</em> (More on EFT later)</li>
+            <li>Gain proficiency in the <strong>doing EFT on yourself.</strong></li>
+            <li>Learn or deepen a <strong>Spiritual Practice</strong> and be guided and held <strong>accountable</strong> for its development.</li>
+            <li>Be in a container of <strong>support the whole way — I'll be in your corner</strong>: reachable between sessions by email — bringing guidance, presence, and integration support.</li>
           </ul>
 
 
@@ -211,10 +211,10 @@ const TapIntoFreedom = () => {
         <div className="container">
           <h2 className="subtitle-heading">It's Time to Get All Your Energy Back.</h2>
 
-          <p className="tif-emphasis">
+          <p className="tif-emphasis-strong">
             This is where you get to say: I'm done with this old baggage running the show. I'm taking my life back now.
           </p>
-          <p className="tif-emphasis">This is a real, sustained transformation that can profoundly shift nearly anything you carry.</p>
+          <p className="tif-emphasis-strong">This is a real, sustained transformation that can profoundly shift nearly anything you carry.</p>
 
           <div className="gold-divider"></div>
 
@@ -235,7 +235,7 @@ const TapIntoFreedom = () => {
             ))}
           </ul>
 
-          <p className="tif-emphasis tif-emphasis-lg">Until feeling any other way is <em>literally</em> a memory.</p>
+          <p className="tif-emphasis tif-emphasis-lg" >Until feeling any other way is <em>literally</em> a memory.</p>
 
           <div className="gold-divider"></div>
 
@@ -377,7 +377,7 @@ const TapIntoFreedom = () => {
 
               <p className="tif-tagline">My wish is as many people as possible experience this life-changing modality</p>
               <div className="tif-cta-center">
-                <a href="#investment" className="btn">I want to be part of the magic →</a>
+                <a href="#investment" className="btn">Be part of the magic →</a>
               </div>
             </div>
           </div>
@@ -419,7 +419,6 @@ const TapIntoFreedom = () => {
                 </div>
               </aside>
 
-              <div className="gold-divider"></div>
               <Quote text="Adin is an innately gifted intuitive healer, with the dedication and discipline to match his inborn talents. I trust both the quality of his own energy and the many ways he facilitates energetic balance and emotional wellness for others." author="Zachary H." />
 
             </div>
@@ -472,7 +471,7 @@ const TapIntoFreedom = () => {
               <div className="gold-divider"></div>
 
               
-              <p className="tif-tagline">I'm ready to break out of old conditioning, and follow my own path.</p>
+              <p className="tif-tagline">Break free from old conditioning, and trailblaze your own path.</p>
               <div className="tif-cta-center">
                 <a href="#investment" className="btn">Join Now →</a>
               </div>
@@ -521,7 +520,7 @@ const TapIntoFreedom = () => {
 
               <h3 className="collapsible-header" onClick={() => toggleSection('transform')}>
                 <span className={`triangle ${openSections.transform ? 'open' : ''}`}></span>
-                What's on the other side? —
+                What's on the other side?
               </h3>
               <div className={`collapsible-content ${openSections.transform ? 'open' : ''}`}>
                 <ul className="list-bullets">
@@ -538,10 +537,10 @@ const TapIntoFreedom = () => {
           </div>
 
           <p className="tif-emphasis">
-            In this way, you can be, live, think, feel, and act from <u className="tif-underline">genuine freedom</u> — beyond limitations.
+            In this way, you can <u className="tif-underline">be, live, think, feel, and act</u> from <em>genuine freedom</em> — beyond limitations.
           </p>
           <p className="tif-emphasis">
-            You get to be in your power.
+            You gain the keys to <u className="tif-underline"> your power</u>.
           </p>
 
           <div className="gold-divider"></div>
