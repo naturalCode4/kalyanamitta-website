@@ -5,6 +5,7 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
+import TapIntoFreedom from './pages/TapIntoFreedom';
 import About from './pages/About';
 import EnergyWork from './pages/EnergyWork';
 import SpiritualPractice from './pages/SpiritualPractice';
@@ -23,6 +24,7 @@ function AppContent() {
       {!hideHeader && <Header />}
       <main className="main-content">
         <Routes>
+          <Route path="/tap-into-freedom" element={<TapIntoFreedom />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/energy-work" element={<EnergyWork />} />

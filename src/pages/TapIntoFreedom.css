@@ -1,0 +1,580 @@
+/* Tap Into Freedom Page Styles */
+.tap-into-freedom {
+  min-height: 100vh;
+}
+
+.tap-into-freedom section {
+  padding: 5rem 0;
+}
+
+/* ---------- Hero ---------- */
+.tif-hero {
+  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+  text-align: center;
+  padding: 8rem 0 4rem;
+  border-bottom: 2px solid #d4af37;
+}
+
+.tif-hero h1.subtitle-heading {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.tif-hero-line {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #f0f0f0;
+  max-width: 700px;
+  margin: 0 auto 0.75rem;
+  line-height: 1.5;
+}
+
+/* Reusable underline treatment — apply className="tif-underline" to any
+   <u> (or other inline element) wherever an underline is wanted on this
+   page, so the styling stays consistent. */
+.tif-underline {
+  text-decoration: underline;
+  text-decoration-color: #d4af37;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+/* ---------- Section headers used throughout ---------- */
+.tap-into-freedom h2.subtitle-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.tap-into-freedom h3 {
+  font-size: 1.7rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.tif-intro h3,
+.tif-method h3,
+.tif-about h3,
+.tif-focus h3,
+.tif-wise-friend h3 {
+  color: #f0f0f0;
+}
+
+/* Dropdown / collapsible headers are centered on this page, including the
+   per-benefit headers (they reuse the shared .collapsible-header class). */
+.tap-into-freedom .collapsible-header {
+  justify-content: center;
+}
+
+/* ---------- Emphasis lines ---------- */
+.tif-emphasis {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #f0f0f0;
+  text-align: center;
+  max-width: 800px;
+  margin: 1.5rem auto;
+}
+
+.tif-emphasis-strong {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #ffffff;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+}
+
+.tif-small-italic {
+  font-style: italic;
+  text-align: center !important;
+  color: #b8b8b8;
+  font-size: 0.95rem;
+}
+
+/* Utility for one-off plain paragraphs that need centering — the default
+   section rule left-aligns ordinary <p> tags for body-copy readability, so
+   use this to override on a specific paragraph without touching the rest. */
+.tif-center {
+  text-align: center !important;
+}
+
+/* ---------- Tagline pull-lines before CTAs ---------- */
+.tif-tagline {
+  text-align: center;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #d4af37;
+  max-width: 700px;
+  margin: 2rem auto 1.5rem;
+  line-height: 1.5;
+}
+
+/* One-off size bump for a specific tagline instance, e.g. the Investment
+   section's opening line — stack alongside .tif-tagline, not instead of it. */
+.tif-tagline-lg {
+  font-size: 2.1rem;
+  max-width: 850px;
+}
+
+/* ---------- CTA buttons ---------- */
+.tif-cta-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.tif-cta-group {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+/* ---------- Sidebars / callout boxes ----------
+   True independent side column: the sidebar is taken clean out of the
+   document flow (position: absolute) and pinned to a margin the main text
+   reserves for it. Because it's out of flow, it never reshapes the main
+   text (unlike float) and never makes the next block wait for it to finish
+   (unlike a grid row, which sizes to its tallest cell). The main column's
+   own height is all that matters for what comes after — text continues
+   right away. .tif-flow is the positioning context; .tif-flow-main is the
+   reserved-margin text column; each .tif-sidebar is pinned left or right
+   via a modifier class. Sections with sidebars get a wider container so
+   there's real breathing room in the middle once the margins are reserved. */
+.tif-intro .container,
+.tif-wise-friend .container,
+.tif-about .container,
+.tif-focus .container,
+.tif-method .container {
+  max-width: 1600px;
+}
+
+.tif-flow {
+  position: relative;
+}
+
+.tif-flow-main {
+  max-width: 720px;
+}
+
+.tif-flow-main.tif-flow-main-left {
+  margin-left: 440px;
+}
+
+/* Reserve both margins explicitly — rather than just capping a width and
+   letting it sit flush left — so the text column can never run underneath
+   a sidebar, and so it reads as genuinely centered on the page rather than
+   centered-within-whatever-space-was-left (which looks left- or
+   right-shifted whenever the reservation is asymmetric). Used both when
+   there are two sidebars (one real reservation each side) and when there's
+   only one (a matching phantom reservation on the empty side keeps the
+   text visually centered instead of hugging that side). */
+.tif-flow-main.tif-flow-main-both {
+  margin-left: 440px;
+  margin-right: 440px;
+  max-width: none;
+}
+
+.tif-sidebar {
+  position: absolute;
+  top: 0;
+  width: 380px;
+  background: rgba(212, 175, 55, 0.06);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  border-radius: 12px;
+  padding: 1.75rem 2rem;
+}
+
+.tif-sidebar.tif-side-left {
+  left: 0;
+}
+
+.tif-sidebar.tif-side-right {
+  right: 0;
+}
+
+.tif-sidebar p {
+  margin-bottom: 0;
+  font-size: 1rem;
+  text-align: left !important;
+}
+
+.tif-sidebar p + p {
+  margin-top: 1rem;
+}
+
+.tif-sidebar .tif-quote {
+  margin: 0;
+  max-width: none;
+}
+
+/* A sidebar that's ALSO a dropdown: same bordered box, but the header
+   toggles a collapsed/expanded content block inside it, starting closed. */
+.tif-sidebar-dropdown-header {
+  justify-content: flex-start !important;
+  text-align: left;
+  font-size: 1.05rem;
+  color: #ffffff;
+  margin: 0 !important;
+}
+
+.tif-sidebar-dropdown-header .triangle {
+  color: #d4af37;
+  flex-shrink: 0;
+}
+
+.tif-sidebar-dropdown .collapsible-content p {
+  text-align: left !important;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #d1d1d1;
+}
+
+.tif-sidebar-dropdown .collapsible-content p:first-child {
+  margin-top: 1rem;
+}
+
+.tif-sidebar-quote {
+  font-style: italic;
+  color: #d4af37 !important;
+  margin-top: 1rem !important;
+}
+
+/* Below this, reserved margins leave too little room to read comfortably —
+   text can shrink to a cramped sliver right next to the sidebar, which
+   reads as broken/overlapping even though nothing is technically
+   colliding. As a principle: drop the side columns back into plain,
+   full-width, static blocks in reading order (no absolute positioning, no
+   reserved margins) well before that gets tight, so mobile AND common
+   laptop widths just read straight down the page. */
+@media (max-width: 1400px) {
+  .tif-flow-main,
+  .tif-flow-main.tif-flow-main-left,
+  .tif-flow-main.tif-flow-main-both {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .tif-sidebar {
+    position: static;
+    width: 100%;
+    margin: 0 0 1.5rem;
+    top: auto !important;
+  }
+}
+
+/* ---------- Pull quotes (Anais Nin, Sonya Sophia, Carl Rogers, Buddha) ---------- */
+.tif-pullquote {
+  font-style: italic;
+  font-size: 1.15rem;
+  color: #e8e8e8;
+  text-align: center;
+  max-width: 800px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+  border-left: none;
+  line-height: 1.7;
+  position: relative;
+}
+
+.tif-pullquote::before,
+.tif-pullquote::after {
+  color: #d4af37;
+  font-size: 1.4rem;
+}
+
+.tif-pullquote-dialogue {
+  text-align: left;
+  font-size: 1rem;
+}
+
+.tif-sidebar .tif-pullquote {
+  margin: 0;
+  max-width: none;
+  padding: 0;
+  font-size: 1rem;
+}
+
+/* ---------- Inline star testimonials ---------- */
+.tif-quote {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  max-width: 700px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.tif-stars {
+  color: #fbbc05;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.tif-quote-text {
+  font-style: italic;
+  color: #e8e8e8;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.tif-quote-author {
+  font-weight: 600;
+  color: #d4af37;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+/* ---------- Benefit list (each item its own dropdown when it has a review) ---------- */
+.tif-benefit-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem auto 2.5rem;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 2.5rem;
+  align-items: start;
+}
+
+.tif-benefit-item {
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  padding: 0.9rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 900px) {
+  .tif-benefit-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tif-benefit-detail {
+  color: #d1d1d1;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+}
+
+.tif-benefit-header {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin: 0;
+  padding-left: 0.2rem;
+  /* Fixed height + left-aligned content so 1-line and 2-line labels still
+     line up on the same row height, with the arrow at a fixed x/y position
+     down each column regardless of how the label wraps. Centering the text
+     here would let the arrow drift left/right with label length, so this
+     overrides the page-wide centered-dropdown rule for this one case. */
+  min-height: 3.4rem;
+  align-items: center;
+  justify-content: flex-start !important;
+  text-align: left;
+}
+
+.tif-benefit-header .triangle {
+  color: #d4af37;
+}
+
+.tif-benefit-item .collapsible-content .tif-quote {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* ---------- "This Is For You If" / "This Is NOT For You If" side by side ---------- */
+.tif-dual-dropdown {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 3rem;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tif-dual-dropdown h3 {
+  margin-top: 0;
+}
+
+@media (max-width: 900px) {
+  .tif-dual-dropdown {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+/* ---------- Section variants for this page ---------- */
+.tif-intro,
+.tif-benefits,
+.tif-notsymptom,
+.tif-wise-friend,
+.tif-focus,
+.tif-investment {
+  text-align: center;
+}
+
+.tif-intro p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline),
+.tif-method p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline),
+.tif-about p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline),
+.tif-focus p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline),
+.tif-wise-friend p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline),
+.tif-benefits p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline),
+.tif-investment p:not(.tif-emphasis):not(.tif-tagline) {
+  text-align: left;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.tif-notsymptom p {
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------- Investment / pricing ---------- */
+.tif-pricing-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 800px;
+  margin: 2.5rem auto;
+}
+
+.tif-price-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.tif-price-card h3 {
+  color: #1a1a1a !important;
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.tif-price {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1a1a1a !important;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.tif-price-note {
+  color: #444 !important;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.tif-price-highlight {
+  border: 3px solid #d4af37;
+  transform: scale(1.03);
+}
+
+/* ---------- Consistent vertical rhythm ----------
+   Every "special" block (quotes, pull-quotes, taglines, emphasis lines,
+   CTA clusters, dropdown groups) shares the same top/bottom margin, so the
+   gap around them stays even no matter which two happen to sit next to
+   each other. Gold dividers are the one deliberate exception — a bigger,
+   intentional break between sub-sections. These rules come last on
+   purpose so they win over each component's own earlier margin. */
+.tif-quote,
+.tif-pullquote,
+.tif-tagline,
+.tif-emphasis,
+.tif-emphasis-strong,
+.tif-benefit-list,
+.tif-dual-dropdown,
+.tif-pricing-row {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* CTA clusters get extra room on both sides — since margins collapse
+   between adjacent blocks, bumping just this one (rather than every
+   neighbor it could land next to) is enough to open up the gap both
+   before the preceding tagline/one-liner and after, into whatever quote
+   or paragraph follows. */
+.tif-cta-center,
+.tif-cta-group {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.tap-into-freedom .gold-divider {
+  margin: 5rem auto;
+}
+
+/* ---------- Sign off ---------- */
+.tif-signoff {
+  text-align: center;
+}
+
+.tif-feedback-link {
+  color: #d4af37;
+  text-decoration: underline;
+  font-size: 0.95rem;
+}
+
+.tif-feedback-link:hover {
+  color: #f4d03f;
+}
+
+.tif-signoff-text {
+  font-size: 1.3rem;
+  color: #f0f0f0;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .tap-into-freedom section {
+    padding: 3rem 0;
+  }
+
+  .tif-hero {
+    padding: 6rem 0 3rem;
+  }
+
+  .tif-hero h1.subtitle-heading {
+    font-size: 2.2rem;
+  }
+
+  .tif-hero-line {
+    font-size: 1.15rem;
+  }
+
+  .tap-into-freedom h2.subtitle-heading {
+    font-size: 1.8rem;
+  }
+
+  .tif-emphasis-strong {
+    font-size: 1.1rem;
+  }
+
+  .tif-tagline {
+    font-size: 1.1rem;
+  }
+
+  .tif-price-highlight {
+    transform: none;
+  }
+
+  .tif-cta-group {
+    flex-direction: column;
+    align-items: center;
+  }
+}
