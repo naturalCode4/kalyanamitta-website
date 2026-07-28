@@ -21,7 +21,10 @@ body {
 
 .main-content {
   flex: 1;
-  padding-top: 80px;
+  /* Matches the fixed .header's actual rendered height (~68.5px) — this used
+     to be 80px, leaving an ~11.5px strip of plain body background visible
+     between the header and every page's first section. */
+  padding-top: 69px;
 }
 
 /* Typography */

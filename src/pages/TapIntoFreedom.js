@@ -191,7 +191,7 @@ const TapIntoFreedom = () => {
             During the 12 week <strong>Tap Into Freedom</strong> program, you will:
           </h3>
           <ul className="list-bullets tif-intro-list">
-            <li>Receive <strong>12 potent 90-minute 1-on-1 EFT</strong> (Emotional Freedom Techniques, aka Tapping) — <em>the single most effective healing tool I've found for resolving nearly any issue at the root. Powerful, simple, gentle, and fast.</em> (More on EFT later)</li>
+            <li>Receive <strong>12 potent 90-minute 1-on-1 EFT sessions</strong> (Emotional Freedom Techniques, aka Tapping) — <em>the single most effective healing tool I've found for resolving nearly any issue at the root. Powerful, simple, gentle, and fast.</em> (More on EFT later)</li>
             <li>Gain proficiency in the <strong>doing EFT on yourself.</strong></li>
             <li>Learn or deepen a <strong>Spiritual Practice</strong> and be guided and held <strong>accountable</strong> for its development.</li>
             <li>Be in a container of <strong>support the whole way — I'll be in your corner</strong>: reachable between sessions by email — bringing guidance, presence, and integration support.</li>
@@ -253,7 +253,7 @@ const TapIntoFreedom = () => {
           <h2 className="subtitle-heading">The Real Thing.</h2>
           <p className="tif-emphasis-strong">Not symptom management. Not a temporary fix. Not a retreat high that fades.</p>
           <p className="tif-emphasis-strong">
-            <em>A life-changing shift on every level: emotionally, mentally, energetically, neurologically, physically down into the cells of the body and your very DNA. A wonderful, lasting upgrade to your life — starting from exactly where you're at.</em>
+            <em>A life-changing shift on every level: emotionally, mentally, energetically, neurologically, physically down into the cells of the body and your very DNA. A wonderful, <u className="tif-underline">lasting upgrade</u> to your life — starting from exactly where you're at.</em>
           </p>
           <p className="tif-emphasis-strong">I'm telling you straight: this is the real, genuine possibility I can guide you to achieve.</p>
           <p className="tif-tagline">Get your energy back, and get your life back.</p>
@@ -277,9 +277,10 @@ const TapIntoFreedom = () => {
                 How do we create this powerful shift?
               </div>
               <div className={`collapsible-content ${openSections.howShift ? 'open' : ''}`}>
-                <p>The core of this work is weekly 90-minute 1-on-1 EFT (Emotional Freedom Techniques, aka Tapping) sessions. Coaching is woven in.</p>
-                <p>You'll also learn or deepen a spiritual practice — meditation, breathwork, yoga, voice-based sound healing, prayer, ecstatic dance, or another you're interested in. You'll be guided and held accountable for its development.</p>
-                <p>You'll also be taught proficiency in self-practice of EFT.</p>
+                <p>The core of this work is weekly <strong>90-minute 1-on-1 EFT</strong> (Emotional Freedom Techniques, aka Tapping) sessions. Coaching is woven in.</p>
+                <p>You'll learn or deepen a <strong>spiritual practice</strong> — meditation, breathwork, yoga, voice-based sound healing, prayer, ecstatic dance, or another you're interested in. You'll be guided and held accountable for its development.</p>
+                <p>You'll be taught proficiency in <strong>self-practice of EFT</strong>.</p>
+                <p>And you'll be held in <strong>support the whole way.</strong></p>
               </div>
 
               <div className="gold-divider"></div>
@@ -304,52 +305,53 @@ const TapIntoFreedom = () => {
                 EFT is the <em>single most effective healing tool</em> I've found for resolving nearly any issue at the root — powerful, simple, gentle, and fast. It involves self-acceptance, self-love, and tapping acupoints on your body while skillfully addressing an issue or goal. It neutralizes and dissolves negative thought patterns and emotions, undesired conditioning, and restores access to your full energy and the ability to be authentic, aligned, and create the life you desire.
               </p>
 
-              {/* Level with "So What is EFT?" / the Sonya Sophia quote box
-                  (both at top: 311px) — placed here in the DOM so mobile
-                  stacking matches that same relative position. */}
-              <aside className="tif-sidebar tif-side-left tif-sidebar-dropdown" style={{ top: '311px' }}>
-                <div className="collapsible-header tif-sidebar-dropdown-header" onClick={() => toggleSection('eftWorks')}>
-                  <span className={`triangle ${openSections.eftWorks ? 'open' : ''}`}></span>
-                  Want to know more about how EFT works?
-                </div>
-                <div className={`collapsible-content ${openSections.eftWorks ? 'open' : ''}`}>
-                  <p>
-                    Tapping works wonders on the system! Research suggests it reduces activation of the amygdala's threat response, allowing the nervous system to shift into a calmer, more regulated state — even while bringing attention to what would previously have triggered the body's automatic stress response. In this way, tapping enables us to stay present with the issue and feel safe enough to fully feel and process it.
-                  </p>
-                  <p>
-                    EFT incorporates acupoints from Traditional Chinese Medicine. Each tapping point lies on a meridian — an energy channel that governs essential aspects of the body, mind, and spirit. By tapping these points, we're essentially giving ourselves a needle-free acupuncture treatment while meeting the emotions and beliefs we're working to transform. This physiologically treats your issue.
-                  </p>
-                  <p>
-                    When the original experience(s) that created the issue occurred, we may not have had the capacity to fully feel, process, or integrate what happened. As a result, there's an embodied emotional imprint we still carry… like old baggage (how's this 'baggage' metaphor working for you?). Through tapping, we revisit the trigger from a different state — one of greater calm, safety, self-compassion, and love. Instead of reinforcing the old reaction, the neural pathways are updated to this healthier response. We dissolve an issue on the neurological level and rewrite our lives. The heavy baggage gets dropped, and we attain genuine freedom.
-                  </p>
-                  <p>
-                    EFT is well-backed by over 100 studies and trials.
-                  </p>
-                  <p>
-                    During a session, people typically experience shifts in energy, reduction in negative thoughts, emotions, and intensity around an issue, new ways of seeing and more positive thinking (sometimes full-on downloads from the universe), a greater sense of confidence, love, ease, and other wonderful qualities. Shifts often continue to unfold for many days after a session.
-                  </p>
-                </div>
-              </aside>
-
-              {/* Pushed below the "eftWorks" box just above (same side,
-                  top: 311px) — collapsed it's short, but needs clearance
-                  for whenever it's expanded open. */}
-              <aside className="tif-sidebar tif-side-left tif-sidebar-dropdown" style={{ top: '460px' }}>
-                <div className="collapsible-header tif-sidebar-dropdown-header" onClick={() => toggleSection('sessionExpect')}>
-                  <span className={`triangle ${openSections.sessionExpect ? 'open' : ''}`}></span>
-                  Curious what you'll actually do in a session?
-                </div>
-                <div className={`collapsible-content ${openSections.sessionExpect ? 'open' : ''}`}>
-                  <p>
-                    Gentle tapping on various points on the body, call-and-response guidance, and expressing in your own voice. I will guide you towards self-acceptance, love, and to process your issue on the deepest level. I meet you where you are, and move at the pace your own system is ready for.
-                  </p>
-                  <p>
-                    During a session you'll typically see improvements in your issue, shifts in energy and emotion, more positive thinking and deep insights around your issue (sometimes full-on universal downloads — no joke), love, ease, and other wonderful qualities. Shifts often continue to unfold for several days after a session.
-                  </p>
-                </div>
-              </aside>
-
+              {/* Placed before the eftWorks/sessionExpect dropdown stack so
+                  mobile stacking shows this quote above both of them. */}
               <Quote text="It was like magic!" author="Andrea L." />
+
+              {/* Both dropdowns share one side, so they're wrapped in a single
+                  tif-sidebar-stack (positioned once, at top: 311px — level
+                  with "So What is EFT?" / the Sonya Sophia quote box) whose
+                  children stack in normal flow. That way opening eftWorks
+                  naturally pushes sessionExpect down instead of overlapping
+                  it or leaving a dead gap when both are collapsed. */}
+              <div className="tif-sidebar-stack tif-side-left" style={{ top: '311px' }}>
+                <aside className="tif-sidebar tif-sidebar-dropdown">
+                  <div className="collapsible-header tif-sidebar-dropdown-header" onClick={() => toggleSection('eftWorks')}>
+                    <span className={`triangle ${openSections.eftWorks ? 'open' : ''}`}></span>
+                    Want to know more about how EFT works?
+                  </div>
+                  <div className={`collapsible-content ${openSections.eftWorks ? 'open' : ''}`}>
+                    <p>
+                      Tapping works wonders on the system! Research suggests it reduces activation of the amygdala's threat response, allowing the nervous system to shift into a calmer, more regulated state — even while bringing attention to what would previously have triggered the body's automatic stress response. In this way, tapping enables us to stay present with the issue and feel safe enough to fully feel and process it.
+                    </p>
+                    <p>
+                      EFT incorporates acupoints from Traditional Chinese Medicine. Each tapping point lies on a meridian — an energy channel that governs essential aspects of the body, mind, and spirit. By tapping these points, we're essentially giving ourselves a needle-free acupuncture treatment while meeting the emotions and beliefs we're working to transform. This physiologically treats your issue.
+                    </p>
+                    <p>
+                      When the original experience(s) that created the issue occurred, we may not have had the capacity to fully feel, process, or integrate what happened. As a result, there's an embodied emotional imprint we still carry… like old baggage (how's this 'baggage' metaphor working for you?). Through tapping, we revisit the trigger from a different state — one of greater calm, safety, self-compassion, and love. Instead of reinforcing the old reaction, the neural pathways are updated to this healthier response. We dissolve an issue on the neurological level and rewrite our lives. The heavy baggage gets dropped, and we attain genuine freedom.
+                    </p>
+                    <p>
+                      EFT is well-backed by over 100 studies and trials.
+                    </p>
+                  </div>
+                </aside>
+
+                <aside className="tif-sidebar tif-sidebar-dropdown">
+                  <div className="collapsible-header tif-sidebar-dropdown-header" onClick={() => toggleSection('sessionExpect')}>
+                    <span className={`triangle ${openSections.sessionExpect ? 'open' : ''}`}></span>
+                    Curious what you'll actually do in a session?
+                  </div>
+                  <div className={`collapsible-content ${openSections.sessionExpect ? 'open' : ''}`}>
+                    <p>
+                      Gentle tapping on various points on the body, call-and-response guidance, and expressing in your own voice. I will guide you towards self-acceptance, love, and to process your issue on the deepest level. I meet you where you are, and move at the pace your own system is ready for.
+                    </p>
+                    <p>
+                      During a session you'll typically see improvements in your issue, more positive thinking and emotions, and insights around your issue (sometimes full-on universal downloads — no joke). Also a sense of love, peace, confidence, and other wonderful qualities. Shifts usually continue to unfold for several days after a session.
+                    </p>
+                  </div>
+                </aside>
+              </div>
 
               <div className="gold-divider"></div>
 
@@ -515,7 +517,7 @@ const TapIntoFreedom = () => {
               <div className="gold-divider"></div>
 
               <p className="tif-emphasis">
-                Together, we address 3–6 Areas of Focus that matter most to you right now, and heal and upgrade them using the wonderful modality of EFT as the core. And as you're totally interconnected, other parts of you will alchemize and heal along-side of it!
+                Together, we address <u className="tif-underline">3–6 Areas of Focus</u> that matter most to you right now, and heal and upgrade them using the wonderful modality of EFT as the core. And as you're totally interconnected, other parts of you will alchemize and heal along-side of it!
               </p>
 
               <h3 className="collapsible-header" onClick={() => toggleSection('transform')}>
@@ -540,7 +542,7 @@ const TapIntoFreedom = () => {
             In this way, you can <u className="tif-underline">be, live, think, feel, and act</u> from <em>genuine freedom</em> — beyond limitations.
           </p>
           <p className="tif-emphasis">
-            You gain the keys to <u className="tif-underline"> your power</u>.
+            You gain easy of access to <u className="tif-underline"> your power</u>.
           </p>
 
           <div className="gold-divider"></div>
@@ -599,7 +601,7 @@ const TapIntoFreedom = () => {
           <ul className="list-bullets tif-investment-list">
             <li>A 3-month container of profound healing and upgrades with ongoing support.</li>
             <li>Twelve 90-minute EFT sessions.</li>
-            <li>Learn this powerful modality for yourself.</li>
+            <li>Learn the powerful modality of EFT for yourself.</li>
             <li>Gain a spiritual practice that's genuinely yours.</li>
           </ul>
 
