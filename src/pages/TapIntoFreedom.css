@@ -4,13 +4,15 @@
    Plain grey body text (most sections quietly fell back to the site's
    global grey, #b8b8b8, since they don't use the .section-dark /
    .section-rainbow color overrides), replaced with a light-pastel rainbow
-   that shifts one step — red, orange, yellow, green, blue, indigo, violet —
-   every time you cross into the next section, in reading order down the
-   page: Intro → Benefits → Method → A Wise Friend → About Adin →
-   Where We Focus → Investment. Detail text nested inside a section
-   (benefit dropdowns, sidebar-dropdown text, small italic asides) reuses
-   that same section's variable rather than getting its own color, so a
-   "break" is per-section, not per-component.
+   that shifts one step — red, yellow, blue, violet — in reading order down
+   the page: Intro → Method → About Adin → Investment. Benefits, A Wise
+   Friend, and Where We Focus are excluded on purpose: those three sections
+   use the busy .section-rainbow background image, and colored text on top
+   of it read as noisy/hard to read, so their body copy stays plain white.
+   Their rainbow variables (orange, green, indigo) still exist below and are
+   reused for a few specific one-off requests elsewhere on the page (e.g.
+   the Intro bullet list, the green Method paragraphs) even though they're
+   no longer that section's own body-text color.
    TO REVERT: delete this whole block plus the "Per-section body text
    color" rules and the reused-variable rules further down, and remove the
    var(...) references from those selectors — every plain-paragraph rule
@@ -131,8 +133,10 @@
 .tif-small-italic {
   font-style: italic;
   text-align: center !important;
-  color: var(--tif-focus-text); /* only used within Where We Focus */
   font-size: 1.05rem;
+  /* Plain white (via Home.css's page-wide .section-rainbow rule) — Where We
+     Focus deliberately isn't part of the rainbow text-color system, see the
+     note at the top of this file. */
 }
 
 /* Utility for one-off plain paragraphs that need centering — the default
@@ -161,7 +165,7 @@
   text-align: center;
   font-style: italic;
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 1.85rem;
   color: #d4af37 !important;
   max-width: 700px;
   margin: 2rem auto 1.5rem;
@@ -173,6 +177,12 @@
 .tif-tagline-lg {
   font-size: 2.1rem;
   max-width: 850px;
+}
+
+/* One-off size bump for a specific .tif-emphasis instance — stack alongside
+   .tif-emphasis, not instead of it. */
+.tif-emphasis-lg {
+  font-size: 1.6rem;
 }
 
 /* ---------- CTA buttons ---------- */
@@ -291,13 +301,14 @@
   margin-bottom: 1.2rem;
 }
 
-/* Reuses each section's own rainbow color rather than a separate one, so
-   the sidebar-dropdown text matches whichever section it's actually in. */
+/* Reuses the section's own rainbow color rather than a separate one, so
+   the sidebar-dropdown text matches whichever section it's actually in.
+   Focus isn't included here — it deliberately isn't part of the rainbow
+   text-color system (see the note at the top of this file), so its
+   sidebar-dropdown text just falls through to plain white like the rest of
+   that section's body copy. */
 .tif-method .tif-sidebar-dropdown .collapsible-content p {
   color: var(--tif-method-text);
-}
-.tif-focus .tif-sidebar-dropdown .collapsible-content p {
-  color: var(--tif-focus-text);
 }
 
 .tif-sidebar-dropdown .collapsible-content p:first-child {
@@ -310,7 +321,7 @@
 .tif-inline-trigger {
   justify-content: center;
   color: #d4af37;
-  font-size: 1.1rem;
+  font-size: 1.28rem;
   font-weight: 600;
   font-style: italic;
   margin: 1.5rem auto !important;
@@ -446,12 +457,14 @@
 }
 
 .tif-benefit-detail {
-  color: var(--tif-benefits-text); /* only used within It's Time to Get All Your Energy Back */
   text-align: left;
   font-size: 1.08rem;
   line-height: 1.8;
   margin-top: 0.75rem;
   margin-bottom: 0;
+  /* Plain white (via Home.css's page-wide .section-rainbow rule) — Benefits
+     deliberately isn't part of the rainbow text-color system, see the note
+     at the top of this file. */
 }
 
 .tif-benefit-header {
@@ -527,7 +540,10 @@
    the top of this file for the palette and revert instructions. Testimonial
    quote text/author and pull-quotes are explicitly excluded: quotes need to
    stay visually distinct from body copy, not inherit the section's rainbow
-   hue like ordinary paragraphs do. */
+   hue like ordinary paragraphs do. Benefits, Wise Friend, and Focus are
+   deliberately NOT colored here — see the note at the top of this file —
+   so their plain paragraphs just fall through to Home.css's page-wide
+   ".section-rainbow * { color: white !important }" rule. */
 .tif-intro p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author) {
   color: var(--tif-intro-text);
 }
@@ -536,15 +552,6 @@
 }
 .tif-about p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author) {
   color: var(--tif-about-text);
-}
-.tif-focus p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author) {
-  color: var(--tif-focus-text);
-}
-.tif-wise-friend p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author) {
-  color: var(--tif-wise-friend-text);
-}
-.tif-benefits p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author) {
-  color: var(--tif-benefits-text);
 }
 .tif-investment p:not(.tif-emphasis):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author) {
   color: var(--tif-investment-text);
@@ -672,14 +679,27 @@
 }
 
 /* ---------- Sign off ---------- */
+/* Same muted dark-rainbow treatment as the hero, but shifted to a purple
+   theme (indigo/violet/magenta) instead of the hero's red/orange, so the
+   page opens and closes with the same technique in two different hues. */
 .tif-signoff {
   text-align: center;
+  background: linear-gradient(
+    135deg,
+    #0f0f0f 0%,
+    #1c1430 20%,
+    #241a3a 38%,
+    #2b1a40 52%,
+    #3a1a3a 68%,
+    #2a1030 82%,
+    #0f0f0f 100%
+  );
 }
 
 .tif-feedback-link {
   color: #d4af37;
   text-decoration: underline;
-  font-size: 0.95rem;
+  font-size: 1.15rem;
 }
 
 .tif-feedback-link:hover {
@@ -687,7 +707,7 @@
 }
 
 .tif-signoff-text {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   color: #f0f0f0;
 }
 

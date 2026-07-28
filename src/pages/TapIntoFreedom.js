@@ -191,7 +191,7 @@ const TapIntoFreedom = () => {
             During the 12 week <strong>Tap Into Freedom</strong> program, you will:
           </h3>
           <ul className="list-bullets tif-intro-list">
-            <li>Receive 12 potent 90-minute 1-on-1 EFT (Emotional Freedom Techniques, aka Tapping) — the single most effective healing tool I've found for resolving nearly any issue at the root. Powerful, simple, gentle, and fast.</li>
+            <li>Receive 12 potent 90-minute 1-on-1 EFT (Emotional Freedom Techniques, aka Tapping) — the single most effective healing tool I've found for resolving nearly any issue at the root. Powerful, simple, gentle, and fast. (More on EFT later)</li>
             <li>Gain proficiency in the self-practice of EFT.</li>
             <li>Learn or deepen a Spiritual Practice and be held accountable and guided in it – so it [?...?]</li>
             <li>Be in a container of support the whole way — I'll be in your corner: reachable between sessions by email — bringing guidance, presence, and integration support.</li>
@@ -211,7 +211,7 @@ const TapIntoFreedom = () => {
         <div className="container">
           <h2 className="subtitle-heading">It's Time to Get All Your Energy Back.</h2>
 
-          <p className="tif-center">
+          <p className="tif-emphasis">
             This is where you get to say: I'm done with this old baggage running the show. I'm taking my life back now.
           </p>
           <p className="tif-emphasis">This is a real, sustained transformation that can profoundly shift nearly anything you carry.</p>
@@ -235,7 +235,7 @@ const TapIntoFreedom = () => {
             ))}
           </ul>
 
-          <p className="tif-emphasis">Until feeling any other way is <em>literally</em> a memory.</p>
+          <p className="tif-emphasis tif-emphasis-lg">Until feeling any other way is <em>literally</em> a memory.</p>
 
           <div className="gold-divider"></div>
 
@@ -377,7 +377,7 @@ const TapIntoFreedom = () => {
 
               <p className="tif-tagline">My wish is as many people as possible experience this life-changing modality</p>
               <div className="tif-cta-center">
-                <a href="#investment" className="btn">Let's Do This →</a>
+                <a href="#investment" className="btn">I want to be part of the magic →</a>
               </div>
             </div>
           </div>
