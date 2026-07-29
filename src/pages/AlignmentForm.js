@@ -326,7 +326,7 @@ const AlignmentForm = () => {
   const [failedAttempts, setFailedAttempts] = useState(0);
   const [openBenefits, setOpenBenefits] = useState({});
   const [openMore, setOpenMore] = useState({});
-  const [missingField, setMissingField] = useState(ALL_FIELDS[6]);
+  const [missingField, setMissingField] = useState(null);
 
   const toggleBenefit = (key) => setOpenBenefits((prev) => ({ ...prev, [key]: !prev[key] }));
   const toggleMore = (key) => setOpenMore((prev) => ({ ...prev, [key]: !prev[key] }));
@@ -476,7 +476,7 @@ const AlignmentForm = () => {
       </Helmet>
 
       {status === 'success' ? (
-        <section className="af-hero">
+        <section className="af-hero af-success-view">
           <div className="container">
             <h1 className="subtitle-heading">Alignment Form</h1>
             <p className="alignment-form-confirmation">
