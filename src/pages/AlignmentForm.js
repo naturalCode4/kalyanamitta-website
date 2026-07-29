@@ -174,6 +174,11 @@ const SECTIONS = [
     sidebarQuote: 'sila',
     intro: ["These questions help us both understand what's resonating before we even talk. The more honest and specific you can be, the more useful our work together becomes from session one."],
     fields: [
+      { label: 'Name', type: 'text' },
+      { label: 'Email', type: 'email' },
+      { label: 'Phone', type: 'tel' },
+      { label: 'Location', note: '(city is fine)', type: 'text' },
+      { label: 'Timezone', note: "(so we can find a time that works for our 30-minute call)", type: 'text' },
       { label: 'What about this program drew you in?', type: 'textarea', rows: 4 },
       { label: 'Why does this matter to you right now?', type: 'textarea', rows: 4 },
       { label: 'How did you find your way here?', note: '(optional –– for my own context)', type: 'text', optional: true },
@@ -245,6 +250,7 @@ const SECTIONS = [
     hue: 210,
     hueOpts: { light: 78 },
     sidebarQuote: 'ethan',
+    quoteAfterTitle: true,
     intro: ['This modality will be yours for life.'],
     fields: [
       { label: 'Are you interested in developing a spiritual practice? Why yes, why no?', type: 'textarea', rows: 4 },
@@ -380,10 +386,10 @@ const AlignmentForm = () => {
         />
       )}
 
-      {field.type === 'text' && (
+      {['text', 'email', 'tel'].includes(field.type) && (
         <input
           id={field.name}
-          type="text"
+          type={field.type}
           value={answers[field.label]}
           onChange={handleChange(field.label)}
           required={!field.optional}
@@ -458,7 +464,7 @@ const AlignmentForm = () => {
               <h1 className="subtitle-heading">Alignment Form</h1>
               <p className="af-hero-line"><u className="af-underline">Welcome.</u></p>
               <p className="af-hero-line">
-                In the <em>Tap Into Freedom</em> program you will become more calm, happy, free, and empowered as your baseline, dissolve pain that's been quietly running your life, and restore your freedom, for good.
+                In the <em>Tap Into Freedom</em> program you will become more calm, happy, free, and empowered as your baseline, dissolve pain that's been quietly running your life, and restore your freedom –– for good.
               </p>
             </div>
           </section>
@@ -467,7 +473,7 @@ const AlignmentForm = () => {
           <section className="af-transform" style={hueVars(0, { sat: 60, light: 75 })}>
             <div className="container">
               <p className="af-emphasis">
-                A life-changing shift <u className="af-underline">on every level</u>: emotionally, mentally, energetically, neurologically, physically down into the cells of the body and your very DNA. A wonderful, lasting upgrade to your life — starting from exactly where you're at.
+                A life-changing shift <u className="af-underline">on every level</u>: emotionally, mentally, energetically, neurologically, physically down into the cells of the body and your very DNA. A wonderful, <u className="af-underline">lasting upgrade to your life</u> — starting from exactly where you're at.
               </p>
 
               <div className="gold-divider"></div>
@@ -500,7 +506,7 @@ const AlignmentForm = () => {
           {/* Investment recap — same content as the Tap Into Freedom page's
               Investment section, reused here rather than imported since that
               page's CSS isn't guaranteed loaded on this route. */}
-          <section className="af-investment" style={hueVars(40)}>
+          <section className="af-investment" style={hueVars(40, { light: 82 })}>
             <div className="container">
               <h2 className="subtitle-heading af-center-heading">Investment</h2>
               <p className="af-tagline af-tagline-lg">This is an investment that can completely transform your life.</p>
@@ -526,9 +532,22 @@ const AlignmentForm = () => {
                       key={section.key}
                       style={hueVars(section.hue, section.hueOpts)}
                     >
+                      {/* Rendered before the title by default: on desktop
+                          this is absolutely positioned so DOM order doesn't
+                          matter, but on mobile (position: static) it falls
+                          at the end of the PREVIOUS section instead of
+                          interrupting this section's own title. Spiritual
+                          Practice's quote is the one exception that stays
+                          after its own title (quoteAfterTitle). */}
+                      {quote && !section.quoteAfterTitle && (
+                        <aside className="af-section-quote">
+                          <Quote text={quote.text} author={quote.author} />
+                        </aside>
+                      )}
+
                       <h2 className="subtitle-heading af-section-title">{section.title}</h2>
 
-                      {quote && (
+                      {quote && section.quoteAfterTitle && (
                         <aside className="af-section-quote">
                           <Quote text={quote.text} author={quote.author} />
                         </aside>
@@ -553,7 +572,7 @@ const AlignmentForm = () => {
 
                 {/* Benefits recap — openable dropdowns, right before Submit */}
                 <div className="af-benefits">
-                  <h2 className="af-plain-heading">In the coming three months, be prepared (maybe even excited?) for these beneficial, lasting shifts — subtly or drastically:</h2>
+                  <h2 className="af-plain-heading">In the coming three months, be prepared (maybe even excited?!) for these beneficial, lasting shifts — subtly or drastically:</h2>
 
                   <ul className="af-benefit-list">
                     {BENEFITS.map((b) => (
