@@ -480,7 +480,10 @@ const AlignmentForm = () => {
           <div className="container">
             <h1 className="subtitle-heading">Alignment Form</h1>
             <p className="alignment-form-confirmation">
-              Congradulations on submitting your Alignment Form! I've received it and will reach out to you shortly.
+              Congradulations on submitting your Alignment Form!
+            </p>
+            <p className="alignment-form-confirmation">
+              I've received it and will reach out to you shortly.
             </p>
           </div>
         </section>
