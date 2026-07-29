@@ -82,6 +82,19 @@
   text-decoration: underline;
 }
 
+/* Plain-text links inside .footer-section p (e.g. the email "Click here")
+   aren't covered by ".footer-section ul li a" — without this they fall back
+   to the browser's default (dark, hard to read on this background) link
+   color. */
+.footer-inline-link {
+  color: #e8c03f;
+  text-decoration: underline;
+}
+
+.footer-inline-link:hover {
+  color: white;
+}
+
 @media (max-width: 768px) {
   .footer {
     padding: 2rem 0 1rem;

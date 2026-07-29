@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A beautiful, spiritual healing and coaching website built with React.js. This website showcases healing, coaching, and spirituality offerings with a clean, modern design that conveys spirituality and healing without being overly new-age or cheesy.",
   "main": "index.js",
+  "proxy": "http://localhost:3001",
   "overrides": {
     "string-width-cjs": "npm:string-width@^4.2.0",
     "strip-ansi-cjs": "npm:strip-ansi@^6.0.1",
@@ -865,7 +866,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev:api": "node scripts/dev-api-server.js"
   },
   "repository": {
     "type": "git",
@@ -889,5 +891,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.1"
   }
 }

@@ -13,6 +13,7 @@ import EFT from './pages/EFT';
 import Rates from './pages/Rates';
 import Contact from './pages/Contact';
 import Devportfolio from './pages/Devportfolio';
+import AlignmentForm from './pages/AlignmentForm';
 
 function AppContent() {
   const location = useLocation();
@@ -33,6 +34,8 @@ function AppContent() {
           <Route path="/rates" element={<Rates />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/devportfolio" element={<Devportfolio />} />
+          {/* No nav link on purpose — only reachable via the CTAs that link here. */}
+          <Route path="/alignment-form" element={<AlignmentForm />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </main>

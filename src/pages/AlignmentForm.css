@@ -1,0 +1,520 @@
+/* Alignment Form Page Styles
+   Same visual language as TapIntoFreedom.css (subtitle-heading, gold-divider,
+   collapsible-header/triangle, .tif-quote-style testimonials) but WITHOUT
+   the .section-rainbow textured background — color instead comes from a
+   red -> violet spectrum applied per form section via inline CSS vars
+   (--af-text / --af-accent / --af-accent-bg), set in AlignmentForm.js. */
+
+.alignment-form-page {
+  min-height: 100vh;
+}
+
+.alignment-form-page section {
+  padding: 5rem 0;
+}
+
+.alignment-form-page .container {
+  max-width: 820px;
+}
+
+.af-center-heading {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+/* ---------- Hero ----------
+   Same dark purple gradient as TapIntoFreedom's .tif-signoff section —
+   reused directly since it's already a proven dark-purple version of that
+   page's muted-gradient technique. */
+.af-hero {
+  background: linear-gradient(
+    135deg,
+    #0f0f0f 0%,
+    #1c1430 20%,
+    #241a3a 38%,
+    #2b1a40 52%,
+    #3a1a3a 68%,
+    #2a1030 82%,
+    #0f0f0f 100%
+  );
+  text-align: center;
+  padding: 7rem 0 3.5rem;
+  border-bottom: 2px solid #d4af37;
+}
+
+.af-hero-line {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f0f0f0;
+  max-width: 700px;
+  margin: 1.75rem auto 0;
+  line-height: 1.5;
+}
+
+/* Same treatment as TapIntoFreedom's .tif-underline (defined locally since
+   that page's CSS isn't guaranteed to be loaded here). */
+.af-underline {
+  text-decoration: underline;
+  text-decoration-color: #d4af37;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+/* ---------- Benefits recap (sits right before the Submit button) ---------- */
+.af-benefits {
+  margin: 1rem 0 2.5rem;
+}
+
+/* Same font as the hero's "Welcome..." line (plain site font, not the
+   decorative subtitle-heading/papyrus treatment used for section titles). */
+.af-plain-heading {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #f0f0f0;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 1rem;
+}
+
+.af-benefit-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem auto 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 2.5rem;
+  align-items: start;
+}
+
+.af-benefit-item {
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  padding: 0.9rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.af-benefit-header {
+  font-size: 1.15rem;
+  color: #ffffff;
+  margin: 0;
+  padding-left: 0.2rem;
+  min-height: 3.4rem;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.af-benefit-header .triangle {
+  color: #d4af37;
+  flex-shrink: 0;
+}
+
+.af-benefit-detail {
+  text-align: left;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+  color: #d1d1d1;
+}
+
+@media (max-width: 900px) {
+  .af-benefit-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.af-tagline {
+  text-align: center;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #d4af37;
+  max-width: 700px;
+  margin: 2rem auto 0;
+  line-height: 1.5;
+}
+
+/* ---------- Testimonials (same look as TapIntoFreedom's tif-quote) ---------- */
+.af-quote {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  max-width: 700px;
+  margin: 1.5rem auto 0;
+  text-align: center;
+}
+
+.af-stars {
+  color: #fbbc05;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.af-quote-text {
+  font-style: italic;
+  color: #e8e8e8;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+.af-quote-author {
+  font-weight: 600;
+  color: #d4af37;
+  margin-bottom: 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* ---------- Transformation emphasis ---------- */
+.af-transform {
+  text-align: center;
+}
+
+.af-emphasis {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #f0f0f0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.af-review-note {
+  color: var(--af-text, #d1d1d1);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ---------- More about the program ---------- */
+.af-more-item {
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+  padding: 1.5rem 0;
+}
+
+.af-more-item:last-child {
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.af-more-header {
+  font-size: 1.25rem;
+  color: #f0f0f0;
+  font-weight: 600;
+}
+
+.af-more-header .triangle {
+  color: #d4af37;
+  flex-shrink: 0;
+}
+
+.af-more-body {
+  margin-top: 1rem;
+}
+
+.af-more-body p {
+  color: var(--af-text, #d1d1d1);
+  font-size: 1.08rem;
+  line-height: 1.8;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.af-more-body p:last-child {
+  margin-bottom: 0;
+}
+
+.af-more-body .list-bullets {
+  margin: 1rem 0;
+}
+
+.af-more-body .list-bullets li {
+  color: var(--af-text, #d1d1d1);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  padding-bottom: 0.6rem;
+}
+
+/* ---------- Survey sections ---------- */
+.af-survey {
+  text-align: left;
+}
+
+/* Wider container just for this section so there's room for a reserved
+   right-hand margin on the 4 sections that carry a testimonial — same
+   technique as TapIntoFreedom's sidebar sections: each quote is taken out
+   of flow (position: absolute) within its own section so it never reshapes
+   that section's text, and collapses to plain static stacking (right where
+   it already sits in the DOM, i.e. one quote per section) on narrower
+   screens (see the 1400px breakpoint below). */
+.alignment-form-page .container.af-survey-container {
+  max-width: 1500px;
+}
+
+.af-section {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.af-section-body {
+  max-width: 820px;
+}
+
+.af-section-body-narrow {
+  max-width: none;
+  margin-right: 400px;
+}
+
+.af-section-quote {
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  width: 360px;
+}
+
+.af-section-quote .af-quote {
+  margin: 0;
+  max-width: none;
+}
+
+@media (max-width: 1400px) {
+  .af-section-body-narrow {
+    margin-right: 0;
+  }
+
+  .af-section-quote {
+    position: static;
+    width: 100%;
+    margin: 0 0 2rem;
+  }
+}
+
+.af-section-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.af-section-intro {
+  color: var(--af-text, #d1d1d1);
+  font-size: 1.12rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.af-section-trailing-note {
+  color: var(--af-text, #b8b8b8);
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.9;
+  margin-top: 0.5rem;
+}
+
+.af-pullquote {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #e8e8e8;
+  text-align: center;
+  max-width: 700px;
+  margin: 2rem auto;
+  line-height: 1.7;
+}
+
+.af-section-divider {
+  margin: 3rem auto 2.5rem;
+}
+
+/* ---------- Form fields ---------- */
+.alignment-form .form-group {
+  margin-bottom: 1.75rem;
+}
+
+.alignment-form label {
+  display: block;
+  font-size: 1.1rem;
+  color: #f0f0f0;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.af-field-note {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--af-text, #b8b8b8);
+  opacity: 0.9;
+  margin: 0 0 0.75rem;
+  line-height: 1.6;
+}
+
+.af-field-note-warning {
+  font-style: normal;
+  opacity: 1;
+  color: #f0d0c8;
+  background: rgba(200, 80, 60, 0.12);
+  border-left: 3px solid #d46a4a;
+  padding: 0.6rem 0.9rem;
+  border-radius: 4px;
+}
+
+.alignment-form textarea,
+.alignment-form input[type='text'] {
+  width: 100%;
+  padding: 0.85rem;
+  border: 3px solid transparent;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333 !important;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.alignment-form textarea {
+  resize: vertical;
+}
+
+.alignment-form textarea:focus,
+.alignment-form input[type='text']:focus {
+  outline: none;
+  border: 3px solid var(--af-accent, #d4af37);
+}
+
+/* ---------- Scale (1-10) and Yes/No button groups ----------
+   Built from real radio inputs (visually hidden) so the browser's native
+   required-field validation still works — only the <label> is styled to
+   look like a button. */
+.af-scale-group,
+.af-yesno-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.af-scale-option,
+.af-yesno-option {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid var(--af-accent, rgba(212, 175, 55, 0.35));
+  border-radius: 8px;
+  color: var(--af-text, #e8e8e8);
+  font-size: 1rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.03);
+  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+  user-select: none;
+}
+
+.af-scale-option {
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  line-height: 1;
+  text-align: center;
+}
+
+.af-yesno-option {
+  padding: 0.75rem 2rem;
+}
+
+.af-scale-option input,
+.af-yesno-option input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.af-scale-option:hover,
+.af-yesno-option:hover {
+  border-color: var(--af-accent, #d4af37);
+}
+
+.af-scale-option.selected,
+.af-yesno-option.selected {
+  background: var(--af-accent-bg, rgba(212, 175, 55, 0.25));
+  border-color: var(--af-accent, #d4af37);
+  color: #ffffff;
+}
+
+.alignment-form button[type='submit'] {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.alignment-form-confirmation {
+  font-size: 1.3rem;
+  color: #f0f0f0;
+  font-style: italic;
+  margin: 2rem auto 0;
+  max-width: 500px;
+  text-align: center;
+}
+
+.alignment-form-error {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  text-align: center;
+}
+
+.alignment-form-error p {
+  color: #e8e8e8;
+  margin-bottom: 1rem;
+}
+
+.alignment-form-error-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.alignment-form-error-note {
+  margin-top: 1rem;
+  margin-bottom: 0 !important;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #b8b8b8;
+}
+
+@media (max-width: 768px) {
+  .alignment-form-page section {
+    padding: 3rem 0;
+  }
+
+  .af-hero {
+    padding: 5rem 0 2.5rem;
+  }
+
+  .af-center-heading {
+    font-size: 1.8rem;
+  }
+
+  .af-section-title {
+    font-size: 1.5rem;
+  }
+
+  .af-emphasis {
+    font-size: 1.25rem;
+  }
+
+  .af-scale-option {
+    width: 2.6rem;
+    height: 2.6rem;
+    font-size: 0.9rem;
+  }
+}

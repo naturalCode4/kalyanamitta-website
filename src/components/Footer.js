@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Quick Links</h4>
             <ul>
-              <li><Link to="/tap-into-freedom">Tap Into Freedom</Link></li>
+              <li><Link to="/tap-into-freedom">Tap Into Freedom Program</Link></li>
               <li><Link to="/">Home</Link></li>
               <li><Link to="/about">About</Link></li>
               {/* Updated Offerings Links */}
@@ -34,7 +34,7 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Get in Touch</h4>
             <p>Phone: +1 (301) 641-2855</p>
-            <p>Email: <Link to="/contact#get-in-touch">Click here</Link></p>
+            <p>Email: <Link to="/contact#get-in-touch" className="footer-inline-link">Click here</Link></p>
             <p>Location: Nomadic & worldwide — I work with clients virtually and in person where I travel.</p>
           </div>
         </div>
