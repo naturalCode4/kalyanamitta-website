@@ -178,7 +178,6 @@ const SECTIONS = [
       { label: 'Email', type: 'email' },
       { label: 'Phone', type: 'tel' },
       { label: 'Location', note: '(city is fine)', type: 'text' },
-      { label: 'Timezone', note: "(so we can find a time that works for our 30-minute call)", type: 'text' },
       { label: 'What about this program drew you in?', type: 'textarea', rows: 4 },
       { label: 'Why does this matter to you right now?', type: 'textarea', rows: 4 },
       { label: 'How did you find your way here?', note: '(optional –– for my own context)', type: 'text', optional: true },
@@ -236,7 +235,7 @@ const SECTIONS = [
     ],
     fields: [
       {
-        label: 'What areas of your life — inner or outer — matter most to you right now?',
+        label: 'What areas of your life — inner or outer — matter most to you to improve right now?',
         note: "(These are just suggested categories your Areas of Focus might fall under — it can be whatever's actually yours: recovering lost emotional clarity or strength, releasing difficult emotions, thought patterns, anxiety, or depression, healing trauma, PTSD, or ancestral/cultural conditioning, authenticity, confidence, and voice, relationships, sexual energy and intimacy, true masculinity, true femininity, purpose, work, or money, life transitions, physical health, spiritual growth, or something else entirely.)",
         type: 'textarea',
         rows: 6,
@@ -256,7 +255,7 @@ const SECTIONS = [
       { label: 'Are you interested in developing a spiritual practice? Why yes, why no?', type: 'textarea', rows: 4 },
       { label: 'Do you currently have a spiritual or contemplative practice? If so, what is it?', type: 'textarea', rows: 4 },
       {
-        label: "I can teach or help you deepen: meditation, breathwork, yoga, voice-based sound healing, prayer, ecstatic dance, or another practice you're drawn to. Does anything here call to you?",
+        label: "I can teach or help you deepen: meditation, breathwork, yoga, voice-based sound healing, prayer, ecstatic dance, or another practice you're drawn to. Does anything here resonate with you?",
         note: '(Totally fine to say "not sure yet" — we\'ll find a good fit; you don\'t have to know now.)',
         type: 'textarea',
         rows: 4,
@@ -327,21 +326,46 @@ const AlignmentForm = () => {
   const [failedAttempts, setFailedAttempts] = useState(0);
   const [openBenefits, setOpenBenefits] = useState({});
   const [openMore, setOpenMore] = useState({});
+  const [missingField, setMissingField] = useState(ALL_FIELDS[6]);
 
   const toggleBenefit = (key) => setOpenBenefits((prev) => ({ ...prev, [key]: !prev[key] }));
   const toggleMore = (key) => setOpenMore((prev) => ({ ...prev, [key]: !prev[key] }));
 
   const handleChange = (label) => (e) => {
-    setAnswers((prev) => ({ ...prev, [label]: e.target.value }));
+    const value = e.target.value;
+    setAnswers((prev) => ({ ...prev, [label]: value }));
+    if (missingField && missingField.label === label && value) setMissingField(null);
   };
 
   const handleChoice = (label, value) => {
     setAnswers((prev) => ({ ...prev, [label]: value }));
+    if (missingField && missingField.label === label && value) setMissingField(null);
+  };
+
+  // Native HTML5 validation (via `required`) is unreliable here — it
+  // doesn't consistently scroll to radio-group fields, and its bubble is
+  // easy to miss on a page this long. `noValidate` on the <form> disables
+  // that, and this does the same job by hand: find the first unanswered
+  // required field, scroll it into view, focus it, and show a clear
+  // message instead of just silently refusing to submit.
+  const scrollToField = (field) => {
+    const wrapper = document.getElementById(`af-field-${field.name}`);
+    if (wrapper) wrapper.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    const focusTarget = document.getElementById(field.name) || document.querySelector(`[name="${field.name}"]`);
+    if (focusTarget) setTimeout(() => focusTarget.focus(), 400);
   };
 
   const submit = async (e) => {
     if (e) e.preventDefault();
     if (status === 'submitting') return; // guard against double-submit
+
+    const missing = ALL_FIELDS.find((f) => !f.optional && !answers[f.label]);
+    if (missing) {
+      setMissingField(missing);
+      scrollToField(missing);
+      return;
+    }
+    setMissingField(null);
 
     setStatus('submitting');
 
@@ -367,11 +391,15 @@ const AlignmentForm = () => {
 
   const renderField = (field) => (
     <div
-      className="form-group af-field"
+      id={`af-field-${field.name}`}
+      className={`form-group af-field ${missingField?.name === field.name ? 'af-field-missing' : ''}`}
       key={field.name}
       style={field.hue !== undefined ? hueVars(field.hue, field.hueOpts) : undefined}
     >
       <label htmlFor={field.name}>{field.label}</label>
+      {missingField?.name === field.name && (
+        <p className="af-field-missing-note">Please answer this one before submitting.</p>
+      )}
       {field.note && (
         <p className={`af-field-note ${field.warning ? 'af-field-note-warning' : ''}`}>{field.note}</p>
       )}
@@ -462,7 +490,7 @@ const AlignmentForm = () => {
           <section className="af-hero">
             <div className="container">
               <h1 className="subtitle-heading">Alignment Form</h1>
-              <p className="af-hero-line"><u className="af-underline">Welcome.</u></p>
+              <p className="af-hero-line"><u className="af-underline af-hero-welcome">Welcome.</u></p>
               <p className="af-hero-line">
                 In the <em>Tap Into Freedom</em> program you will become more calm, happy, free, and empowered as your baseline, dissolve pain that's been quietly running your life, and restore your freedom –– for good.
               </p>
@@ -500,22 +528,27 @@ const AlignmentForm = () => {
                   </div>
                 </div>
               ))}
+
+              <div className="gold-divider af-section-divider"></div>
             </div>
           </section>
 
           {/* Investment recap — same content as the Tap Into Freedom page's
               Investment section, reused here rather than imported since that
-              page's CSS isn't guaranteed loaded on this route. */}
-          <section className="af-investment" style={hueVars(40, { light: 82 })}>
+              page's CSS isn't guaranteed loaded on this route. Each line
+              steps forward along the same red -> violet spectrum as the
+              rest of the page, from the opening tagline to the last bullet. */}
+          <section className="af-investment">
             <div className="container">
-              <h2 className="subtitle-heading af-center-heading">Investment</h2>
-              <p className="af-tagline af-tagline-lg">This is an investment that can completely transform your life.</p>
+              <p className="af-tagline af-tagline-lg" style={hueVars(28, { light: 82 })}>This is an investment that can <u className="af-underline">completely transform your life.</u></p>
+              <p className="af-tagline af-tagline-lg" style={hueVars(32, { light: 82 })}>And throughout our time, you'll the enjoy palpable <u className="af-underline">steps of improvement</u> along the way.</p>
+              <p className="af-tagline af-tagline-lg" style={hueVars(35, { light: 82 })}>And obtain <u className="af-underline">excellent tools</u> to continue</p>
               <ul className="list-bullets af-investment-list">
-                <li>A 3-month container of <u className="af-underline">profound healing and upgrades</u> with my <u className="af-underline">ongoing support.</u></li>
-                <li>Twelve potent 90-minute 1-on-1 <u className="af-underline">EFT &amp; Coaching sessions</u> with Adin. EFT is the single most effective healing tool I've found for resolving nearly any issue at the root. Powerful, simple, gentle, fast, and versatile.</li>
-                <li>Gain proficiency in using the powerful modality of <u className="af-underline">EFT on yourself.</u></li>
-                <li>Cultivate a <u className="af-underline">spiritual practice</u> that's genuinely yours and deeply supports your life.</li>
-                <li>Weekly <u className="af-underline">cohort circles</u> for sharing, connection, and tapping (when we have enough people).</li>
+                <li style={hueVars(39, { light: 82 })}>A 3-month container of <u className="af-underline">profound healing and upgrades</u> with my <u className="af-underline">ongoing support.</u></li>
+                <li style={hueVars(42, { light: 82 })}>Twelve potent 90-minute 1-on-1 <u className="af-underline">EFT &amp; Coaching sessions</u> with Adin. <em>EFT is the single most effective healing tool</em> I've found for resolving nearly any issue at the root. Powerful, simple, gentle, fast, and versatile.</li>
+                <li style={hueVars(46, { light: 82 })}>Gain proficiency in using the powerful modality of <u className="af-underline">EFT on yourself.</u></li>
+                <li style={hueVars(49, { light: 82 })}>Cultivate a <u className="af-underline">spiritual practice</u> that's genuinely yours and deeply supports your life.</li>
+                <li style={hueVars(53, { light: 82 })}>Weekly <u className="af-underline">cohort circles</u> for sharing, connection, and tapping (when we have enough people).</li>
               </ul>
             </div>
           </section>
@@ -523,7 +556,7 @@ const AlignmentForm = () => {
           {/* The actual survey */}
           <section className="af-survey">
             <div className="container af-survey-container">
-              <form className="alignment-form" onSubmit={submit}>
+              <form className="alignment-form" onSubmit={submit} noValidate>
                 {SECTIONS.map((section) => {
                   const quote = section.sidebarQuote && quoteByKey(section.sidebarQuote);
                   return (
@@ -595,6 +628,12 @@ const AlignmentForm = () => {
 
                   <p className="af-tagline">Get your energy back, and get your life back.</p> 
                 </div>
+
+                {missingField && (
+                  <p className="af-submit-blocked-note">
+                    Please answer "{missingField.label}" before submitting — jumping you there now.
+                  </p>
+                )}
 
                 <button type="submit" className="btn" disabled={status === 'submitting'}>
                   {status === 'submitting' ? 'Submitting…' : 'Submit'}

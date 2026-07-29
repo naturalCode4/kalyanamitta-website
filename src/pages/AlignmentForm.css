@@ -61,6 +61,11 @@
   text-underline-offset: 4px;
 }
 
+.af-hero-welcome {
+  font-size: 2.2rem;
+  display: inline-block;
+}
+
 /* ---------- Benefits recap (sits right before the Submit button) ---------- */
 .af-benefits {
   margin: 1rem 0 2.5rem;
@@ -230,10 +235,6 @@
   padding: 1.5rem 0;
 }
 
-.af-more-item:last-child {
-  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
-}
-
 .af-more-header {
   font-size: 1.25rem;
   color: #f0f0f0;
@@ -322,7 +323,7 @@
   .af-section-quote {
     position: static;
     width: 100%;
-    margin: 0 0 2rem;
+    margin: 2rem 0;
   }
 }
 
@@ -392,6 +393,28 @@
   border-left: 3px solid #d46a4a;
   padding: 0.6rem 0.9rem;
   border-radius: 4px;
+}
+
+/* ---------- Custom "please fill this in" validation ---------- */
+.af-field-missing {
+  outline: 2px solid #e05c4a;
+  outline-offset: 8px;
+  border-radius: 8px;
+}
+
+.af-field-missing-note {
+  color: #ff8a70;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin: 0 0 0.5rem;
+}
+
+.af-submit-blocked-note {
+  text-align: center;
+  color: #ff8a70;
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin: 0 0 1rem;
 }
 
 .alignment-form textarea,
