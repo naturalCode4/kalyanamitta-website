@@ -138,6 +138,34 @@
   line-height: 1.5;
 }
 
+.af-tagline-lg {
+  font-size: 1.85rem;
+  max-width: 850px;
+}
+
+/* ---------- Investment recap ---------- */
+.af-investment {
+  text-align: center;
+}
+
+.af-investment-list {
+  max-width: 700px;
+  margin: 2rem auto 0;
+  text-align: left;
+}
+
+.af-investment-list li {
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: var(--af-text, #c9a3e8);
+  padding: 0.5rem 0 0.5rem 20px;
+}
+
+.af-investment .af-tagline {
+  color: var(--af-text, #d4af37);
+}
+
 /* ---------- Testimonials (same look as TapIntoFreedom's tif-quote) ---------- */
 .af-quote {
   background: rgba(255, 255, 255, 0.03);

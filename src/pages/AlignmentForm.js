@@ -197,11 +197,12 @@ const SECTIONS = [
     hueOpts: { light: 78 },
     sidebarQuote: 'zach',
     intro: [
-      'The vast majority of people are carrying heavy baggage that quietly affects their life-force, peace, relationships, confidence, health, clarity, and much more.',
+      'The vast majority of people are carrying heavy baggage that quietly affects their well-being, life-force, peace, relationships, confidence, health, clarity, and much more.',
+      'Tap Into Freedom exists to end that cost. For good.',
       'This is a real, sustained transformation that can profoundly shift nearly anything you carry.',
     ],
     fields: [
-      { label: 'What feels like the biggest obstacle(s) right now?', type: 'textarea', rows: 5 },
+      { label: 'What feels like the biggest obstacle(s) right now? What is between you and the best version of yourself you just described?', type: 'textarea', rows: 5 },
       { label: 'On a scale of 1–10, how much is this affecting your life today?', note: '(1 = barely a blip, 10 = consuming everything)', type: 'scale', hue: 120, hueOpts: { light: 78 } },
       { label: 'What is staying the same costing you right now — in time, energy, well-being, relationships, health, or opportunities?', type: 'textarea', rows: 5 },
     ],
@@ -466,7 +467,7 @@ const AlignmentForm = () => {
           <section className="af-transform" style={hueVars(0, { sat: 60, light: 75 })}>
             <div className="container">
               <p className="af-emphasis">
-                A life-changing shift on every level: emotionally, mentally, energetically, neurologically, physically down into the cells of the body and your very DNA. A wonderful, lasting upgrade to your life — starting from exactly where you're at.
+                A life-changing shift <u className="af-underline">on every level</u>: emotionally, mentally, energetically, neurologically, physically down into the cells of the body and your very DNA. A wonderful, lasting upgrade to your life — starting from exactly where you're at.
               </p>
 
               <div className="gold-divider"></div>
@@ -493,6 +494,23 @@ const AlignmentForm = () => {
                   </div>
                 </div>
               ))}
+            </div>
+          </section>
+
+          {/* Investment recap — same content as the Tap Into Freedom page's
+              Investment section, reused here rather than imported since that
+              page's CSS isn't guaranteed loaded on this route. */}
+          <section className="af-investment" style={hueVars(40)}>
+            <div className="container">
+              <h2 className="subtitle-heading af-center-heading">Investment</h2>
+              <p className="af-tagline af-tagline-lg">This is an investment that can completely transform your life.</p>
+              <ul className="list-bullets af-investment-list">
+                <li>A 3-month container of <u className="af-underline">profound healing and upgrades</u> with my <u className="af-underline">ongoing support.</u></li>
+                <li>Twelve potent 90-minute 1-on-1 <u className="af-underline">EFT &amp; Coaching sessions</u> with Adin. EFT is the single most effective healing tool I've found for resolving nearly any issue at the root. Powerful, simple, gentle, fast, and versatile.</li>
+                <li>Gain proficiency in using the powerful modality of <u className="af-underline">EFT on yourself.</u></li>
+                <li>Cultivate a <u className="af-underline">spiritual practice</u> that's genuinely yours and deeply supports your life.</li>
+                <li>Weekly <u className="af-underline">cohort circles</u> for sharing, connection, and tapping (when we have enough people).</li>
+              </ul>
             </div>
           </section>
 
@@ -535,7 +553,7 @@ const AlignmentForm = () => {
 
                 {/* Benefits recap — openable dropdowns, right before Submit */}
                 <div className="af-benefits">
-                  <h2 className="af-plain-heading">In the coming three months, be prepared to will have these wonderful, lasting shifts — subtly or drastically:</h2>
+                  <h2 className="af-plain-heading">In the coming three months, be prepared (maybe even excited?) for these beneficial, lasting shifts — subtly or drastically:</h2>
 
                   <ul className="af-benefit-list">
                     {BENEFITS.map((b) => (
