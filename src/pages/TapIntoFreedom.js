@@ -100,7 +100,7 @@ const TapIntoFreedom = () => {
     {
       key: 'eq',
       text: 'Higher emotional intelligence',
-      detail: 'This work inherently is an education on the emotional body, and creates intimacy and wisdom with your inner world. You may also be able to empathize and see others more deeply.',
+      detail: 'This work inherently is an education on presence, the emotional body, and creates intimacy and wisdom with your inner world. You may also be able to empathize and see others more deeply.',
     },
     {
       key: 'relationships',
@@ -160,7 +160,7 @@ const TapIntoFreedom = () => {
             That's not a slogan or hype. In fact, I hate flashy or manipulative marketing. It's what this work <u className="tif-underline">actually does</u>.
           </p>
           <p className="tif-emphasis">
-          <u className="tif-underline">Listen:</u> Most people are quietly paying an enormous, invisible price: unprocessed pain, negative emotions, old fear, and limiting beliefs they <em>never chose</em>. Heavy baggage quietly living in the nervous system, running life behind the scenes.
+          <u className="tif-underline">Listen:</u> Most people are quietly paying an <u className="tif-underline">enormous</u>, invisible price: unprocessed pain, negative emotions, old fear, and limiting beliefs they <em>never chose</em>. Heavy baggage quietly <u className="tif-underline">living in the nervous system</u>, <u className="tif-underline">running life behind the scenes</u>.
           </p>
 
           <div className="collapsible-header tif-inline-trigger" onClick={() => toggleSection('costOfCarrying')}>
@@ -169,7 +169,7 @@ const TapIntoFreedom = () => {
           </div>
           <div className={`collapsible-content ${openSections.costOfCarrying ? 'open' : ''}`}>
             <p className="tif-emphasis">
-              The truth is it <u className="tif-underline">costs</u> people so much: their life-force, peace, relationships, confidence, physical health, mental clarity, focus, positivity, quality of their actions and words, and much more. Even skewing their very view of this reality and what's possible.
+              The truth is it <u className="tif-underline">costs</u> people so much: their <em>life-force, peace, relationships, confidence, physical health, mental clarity, focus, positivity, quality of their actions and words, and much more.</em> Even skewing their very <em>view of this reality and what's possible.</em>
             </p>
           </div>
 
@@ -180,19 +180,32 @@ const TapIntoFreedom = () => {
           <div className="gold-divider"></div>
 
           <p className="tif-emphasis"><u className="tif-underline"><em>Tap Into Freedom</em></u> exists to end that cost. For good.</p>
-          <p className="tif-emphasis">All of it aimed at a <u className="tif-underline">whole life healing</u> and liberation of your peace, authenticity, desires, and flourishing –– and hand you excellent <u className="tif-underline">tools for life.</u></p>
+          <p className="tif-emphasis">All of it aimed at a <u className="tif-underline">whole life healing</u> and <u className="tif-underline">dissolution the pain that's restricting your fullness</u> – and to hand you excellent tools <u className="tif-underline">for life</u>.</p>
           <p className="tif-emphasis">Whatever you're carrying – we <em>can</em> shift it.</p>
 
           <div className="gold-divider"></div>
 
           <h3 className="tif-center tif-narrow">
-            During the 12 week <strong>Tap Into Freedom</strong> program, you will:
+            During the 12 week <strong>Tap Into Freedom</strong> program, we:
+          </h3>
+          <h3 className="tif-center tif-narrow">
+            • Relieve the heavy load you've carried <u className="tif-underline">profoundly</u> – restoring your life-force
+          </h3>
+          <h3 className="tif-center tif-narrow">
+            • Heal and upgrade at the <u className="tif-underline">deepest, root level</u>
+          </h3>
+          <h3 className="tif-center tif-narrow">
+            • <u className="tif-underline">Earn the freedom</u> to live more calm, happy, free, and empowered.
+          </h3>
+          <h3 className="tif-center tif-narrow">
+            You will:
           </h3>
           <ul className="list-bullets tif-intro-list">
-            <li>Receive <strong>12 potent 90-minute 1-on-1 EFT sessions</strong> (Emotional Freedom Techniques, aka Tapping) — <em>the single most effective healing tool I've found for resolving nearly any issue at the root. Powerful, simple, gentle, and fast.</em> (More on EFT later)</li>
-            <li>Gain proficiency in <strong>doing EFT on yourself.</strong></li>
-            <li>Learn or deepen a <strong>Spiritual Practice</strong> and be guided and held <strong>accountable</strong> for its development.</li>
-            <li>Be in a container of <strong>support the whole way — I'll be in your corner</strong>: reachable between sessions by email — bringing guidance, presence, and integration support.</li>
+            <li>Receive <strong>12 potent 90-minute 1-on-1 EFT sessions</strong> (Emotional Freedom Techniques, aka Tapping) — <em>the single most effective healing tool I've found for resolving nearly any issue at the root. Powerful, simple, gentle, fast, and versatile.</em> (More on EFT later)</li>
+            <li>Gain proficiency in using the powerful modality of<strong> EFT on yourself.</strong></li>
+            <li>Learn or deepen a <strong>Spiritual Practice</strong> and be guided and held accountable for its development.</li>
+            <li>Be in a container of <strong>support the whole way — I'll be in your corner</strong>: bringing guidance, presence, and integration support.</li>
+            <li><strong>Weekly cohort circles</strong> for sharing, connection, and tapping *when we have enough people*.</li>
           </ul>
 
 
@@ -210,9 +223,9 @@ const TapIntoFreedom = () => {
           <h2 className="subtitle-heading">It's Time to Get All Your Energy Back.</h2>
 
           <p className="tif-emphasis-strong">
-            This is where you get to say: I'm done with this old baggage running the show. I'm taking my life back now.
+            This is where you get to say: I'm done with this old baggage running the show. <u className="tif-underline">I'm taking my life back now</u>.
           </p>
-          <p className="tif-emphasis-strong">This is a real, sustained transformation that can profoundly shift nearly anything you carry.</p>
+          <p className="tif-emphasis-strong">This is a real, sustained transformation that can profoundly shift *nearly* <u className="tif-underline">anything you carry</u>.</p>
 
           <div className="gold-divider"></div>
 
@@ -278,6 +291,7 @@ const TapIntoFreedom = () => {
                 <p>The core of this work is weekly <strong>90-minute 1-on-1 EFT</strong> (Emotional Freedom Techniques, aka Tapping) sessions. Coaching is woven in.</p>
                 <p>You'll learn or deepen a <strong>spiritual practice</strong> — meditation, breathwork, yoga, voice-based sound healing, prayer, ecstatic dance, or another you're interested in. You'll be guided and held accountable for its development.</p>
                 <p>You'll be taught proficiency in <strong>self-practice of EFT</strong>.</p>
+                <p>We'll have weekly cohort circles (optional but recommended). We heal better in <strong>community</strong>.</p>
                 <p>And you'll be held in <strong>support the whole way.</strong></p>
               </div>
 
@@ -300,7 +314,7 @@ const TapIntoFreedom = () => {
 
               <p>I've practiced extensively with healing modalities, mystical traditions, and spiritual practices.</p>
               <p>
-                EFT is the <em>single most effective tool</em> I've found for resolving nearly any issue at the root — powerful, simple, gentle, and fast. It involves self-acceptance, self-love, and tapping acupoints on your body while skillfully addressing an issue or goal. It neutralizes and dissolves negative thought patterns and emotions, undesired conditioning, and restores access to your full energy and the ability to be authentic, aligned, and create the life you desire.
+                EFT is the <em>single most effective tool</em> I've found for resolving nearly any issue at the root — powerful, simple, gentle, fast, and versatile. It involves self-acceptance, self-love, and tapping acupoints on your body while skillfully addressing an issue or goal. It neutralizes and dissolves negative thought patterns and emotions, undesired conditioning, and restores access to your full energy and the ability to be authentic, aligned, and create the life you desire.
               </p>
 
               {/* Placed before the eftWorks/sessionExpect dropdown stack so
@@ -327,7 +341,7 @@ const TapIntoFreedom = () => {
                       EFT incorporates acupoints from Traditional Chinese Medicine. Each tapping point lies on a meridian — an energy channel that governs essential aspects of the body, mind, and spirit. By tapping these points, we're balancing each meridian and essentially giving ourselves a needle-free acupuncture treatment, while addressing the emotions and beliefs we wish to transform. This physiologically treats your issue.
                     </p>
                     <p>
-                      When the original experience(s) that created the issue occurred, we may not have had the capacity to fully feel, process, or integrate what happened. As a result, there's an embodied emotional imprint we still carry… like old baggage (how's this 'baggage' metaphor working for you?). Through tapping, we revisit the trigger from a different state — one of greater calm, safety, self-compassion, and love. Instead of reinforcing the old reaction, the neural pathways are updated to this healthier response. We dissolve an issue on the neurological level and rewrite our lives. The heavy baggage gets dropped, and we attain genuine freedom.
+                      When the original experience(s) that created the issue occurred, we may not have had the capacity to fully feel, process, or integrate what happened. As a result, there's an embodied emotional imprint we still carry… like old baggage. Through tapping, we revisit the trigger from a different state — one of greater calm, safety, self-compassion, and love. Instead of reinforcing the old reaction, the neural pathways are updated to this healthier response. We dissolve an issue on the neurological level and rewrite our lives. The heavy baggage (how's this 'baggage' metaphor working out for you?) gets dropped, and we attain genuine freedom.
                     </p>
                     <p>
                       EFT is well-backed by over <a href="https://eftuniverse.com/research-studies" target="_blank" rel="noopener noreferrer" className="tif-inline-link">100 studies and trials</a>.
@@ -399,13 +413,9 @@ const TapIntoFreedom = () => {
                 I will be walking by your side, supporting you every step of the way — through the deep inner transformation, including the difficult stuff. It's a blessing to be of service.
               </p>
               <p>
-                Across nearly every spiritual tradition, having a wise guide is considered essential. In Buddhism, this friend is called a <em>kalyāṇamitta</em> – someone who helps guide you in your highest interest, helping your eyes to see things they never saw before. This person should embody wisdom, unconditional love, detachment, and skillfulness –– through thick and thin. I strive to be that for you.
+                Across nearly every spiritual tradition, having a wise guide is considered essential. In Buddhism, this friend is called a <em>kalyāṇamitta</em> – someone who helps guide you in your highest interest, helping your eyes to see things they never saw before. They may not just tell you want you want to hear or what's comfortable. This person should embody wisdom, unconditional love, detachment, and skillfulness –– through thick and thin. I strive to be that for you.
               </p>
 
-              {/* Absolutely positioned as the right-hand sidebar on desktop
-                  (regardless of DOM position); placed here, right after the
-                  kalyāṇamitta paragraph, so mobile stacking shows it there
-                  too instead of jumping to the very end. */}
               <aside className="tif-sidebar tif-side-right tif-sidebar-dropdown">
                 <div className="collapsible-header tif-sidebar-dropdown-header" onClick={() => toggleSection('buddhaQuote')}>
                   <span className={`triangle ${openSections.buddhaQuote ? 'open' : ''}`}></span>
@@ -524,6 +534,7 @@ const TapIntoFreedom = () => {
               </h3>
               <div className={`collapsible-content ${openSections.transform ? 'open' : ''}`}>
                 <ul className="list-bullets">
+                  <li>You'll feel so much better in your body, heart, and mind –– once you address what's really been going on inside!</li>
                   <li>A weight lifted –– you may not have even realized you were carrying.</li>
                   <li>Clarity, energy, and self-empowerment — from having dissolved what was sucking on you subconsciously.</li>
                   <li>Ease, lightness, and joy — from having resolved where stress and old patterns used to run the show.</li>
@@ -559,6 +570,7 @@ const TapIntoFreedom = () => {
                   <li>You want embodied change, not just talk</li>
                   <li>You want a better-functioning nervous system, brain, body, and mind</li>
                   <li>Maybe you are a spiritual practitioner, but your practice isn't addressing certain layers of your psyche, trauma, or humanity. If that's you, you hold a place in my heart and this has been designed with you in mind</li>
+                  <li>You are in <em>any part</em> of your personal development, spiritual maturity, and healing journey. I support people who are just starting to open to these dimensions, as well as those that are already very mature in their inner work</li>
                   <li>You're ready to go deep and be honest, with someone who can hold it</li>
                   <li>Living from your heart and in integrity matters deeply to you</li>
                   <li>You want tools to keep growing, not a forever dependency</li>
@@ -577,7 +589,7 @@ const TapIntoFreedom = () => {
                 <ul className="list-bullets">
                   <li>You're seeking a quick fix with no real engagement — this work asks something of you</li>
                   <li>You're not ready to invest your focus, time, and money into you</li>
-                  <li>You're not ready to see yourself, would rather idly talk about your problems or play the victim than actually improve your situation— this work asks you to meet yourself deeply</li>
+                  <li>You're not ready to see yourself, would rather idly talk about your problems, or would play the victim than actually improve your situation— this work asks you to meet yourself deeply</li>
                   <li>Living from your heart and with integrity, isn't really a priority for you</li>
                   <li>You're in acute crisis or need primary medical or mental-health treatment — that care comes first, and this can complement it once you're stable</li>
                 </ul>

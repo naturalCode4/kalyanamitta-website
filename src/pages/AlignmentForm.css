@@ -39,6 +39,11 @@
   border-bottom: 2px solid #d4af37;
 }
 
+.af-hero h1.subtitle-heading {
+  font-size: 4.2rem;
+  margin-bottom: 1rem;
+}
+
 /* The success view is the only thing rendered on this page once submitted
    — without this it left a big flat empty gap below the short confirmation
    message, before the site footer. Filling most of the remaining viewport
@@ -564,6 +569,10 @@
 
   .af-hero {
     padding: 5rem 0 2.5rem;
+  }
+
+  .af-hero h1.subtitle-heading {
+    font-size: 2.4rem;
   }
 
   .af-center-heading {

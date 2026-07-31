@@ -144,7 +144,7 @@ const MORE_ABOUT = [
     key: 'spiritualPractice',
     title: 'More on the spiritual practice',
     body: (
-      <p>Alongside EFT, we introduce or deepen a spiritual practice that's genuinely yours. I can teach or help you deepen: meditation, breathwork, yoga, voice-based sound healing, prayer, ecstatic dance, or another practice you're already drawn to. We'll find a good fit; you don't have to know now.</p>
+      <p>Alongside EFT, we introduce or deepen a spiritual practice and make it genuinely yours. You'll be guided and held accountable for its flourishing. I can teach or help you deepen: meditation, breathwork, yoga, voice-based sound healing, prayer, ecstatic dance, or another practice you're already drawn to. We'll find a good fit; you don't have to know now.</p>
     ),
   },
   {
@@ -152,6 +152,13 @@ const MORE_ABOUT = [
     title: 'How Deep, How Fast?',
     body: (
       <p>Ultimately, everything that happens is according to what you're ready for. Some issues may radically shift like magic within a single session. I've seen it happen time and time again. Older, deeper patterns may move through gradually, with patience. What I can tell you is that when it moves, it moves profoundly — not just on the surface. I'll meet you right where you're at, guide you, encourage your best, and help you get what you came here for.</p>
+    ),
+  },
+  {
+    key: 'ongoingSupport',
+    title: 'More on ongoing support',
+    body: (
+      <p>Beyond the weekly sessions themselves, I hold availability and heart-space for my clients throughout the whole three months. That includes being reachable by email between sessions — typically I respond to 1 email a week — for guidance, presence, sharing, and integration support as things come up for you. We'll also have Weekly cohort circles for sharing, connection, and tapping</p>
     ),
   },
 ];
@@ -217,10 +224,10 @@ const SECTIONS = [
     hue: 145,
     hueOpts: { light: 78 },
     sidebarQuote: 'travis',
-    intro: ['This asks real commitment willingness to turn toward yourself.'],
+    intro: ['This asks real commitment and willingness to turn toward yourself.'],
     fields: [
       { label: 'If you knew — really knew — that this could genuinely change, how much would you want that — on a scale of 1-10?', type: 'scale', hue: 150, hueOpts: { light: 78 } },
-      { label: 'This is a three-month container of real transformation. On a scale of 1–10, how ready are you to show up fully for that — in time, energy, and financially?', type: 'scale', hue: 175, hueOpts: { light: 78 } },
+      { label: 'This is a three-month container of real transformation. Are you ready to invest in yourself financially, energetically, and with your time?', type: 'yesno', options: ['Absolutely', 'Maybe Later'], hue: 175, hueOpts: { light: 78 } },
       { label: 'Real transformation tends to ripple: waves of emotion, deep questions, shifts in your sense of self, your relationships, your priorities, the way you see things — all of it may move. On a scale of 1–10, how ready are you to show up to that kind of unfolding?', type: 'scale', hue: 200, hueOpts: { light: 78 } },
     ],
   },
@@ -236,12 +243,12 @@ const SECTIONS = [
     fields: [
       {
         label: 'What areas of your life — inner or outer — matter most to you to improve right now?',
-        note: "(These are just suggested categories your Areas of Focus might fall under — it can be whatever's actually yours: recovering lost emotional clarity or strength, releasing difficult emotions, thought patterns, anxiety, or depression, healing trauma, PTSD, or ancestral/cultural conditioning, authenticity, confidence, and voice, relationships, sexual energy and intimacy, true masculinity, true femininity, purpose, work, or money, life transitions, physical health, spiritual growth, or something else entirely.)",
+        note: "(These are just suggested categories your Areas of Focus might fall under — it can be whatever's actually yours: recovering lost mental clarity or strength in a particular area, releasing difficult emotions, thought patterns, anxiety, or depression, healing trauma, PTSD, or ancestral/cultural conditioning, authenticity, confidence, and voice, relationships, self-image, sexual energy and intimacy, true masculinity, true femininity, purpose, work, or money, life transitions, physical health, spiritual growth, or something else entirely. Again, just examples to get the ball rollin')",
         type: 'textarea',
         rows: 6,
       },
     ],
-    trailingNote: "You don't need this fully figured out in advance. Discovering the roots together is part of the work, and we're free to shift focus as we go. Nothing here is fixed.",
+    trailingNote: "You don't need this fully figured out in advance. Discovering the roots together is part of the work, and we're free to shift focus as we go. Nothing here has to be fixed.",
   },
   {
     key: 'spiritualPractice',
@@ -256,6 +263,11 @@ const SECTIONS = [
       { label: 'Do you currently have a spiritual or contemplative practice? If so, what is it?', type: 'textarea', rows: 4 },
       {
         label: "I can teach or help you deepen: meditation, breathwork, yoga, voice-based sound healing, prayer, ecstatic dance, or another practice you're drawn to. Does anything here resonate with you?",
+        labelNode: (
+          <>
+            I can teach or help you deepen: <strong>meditation</strong>, <strong>breathwork</strong>, <strong>yoga</strong>, <strong>voice-based sound healing</strong>, <strong>prayer</strong>, <strong>ecstatic dance</strong>, or another practice you're drawn to. Does anything here resonate with you?
+          </>
+        ),
         note: '(Totally fine to say "not sure yet" — we\'ll find a good fit; you don\'t have to know now.)',
         type: 'textarea',
         rows: 4,
@@ -268,7 +280,7 @@ const SECTIONS = [
     hue: 245,
     hueOpts: { sat: 55, light: 82 },
     sidebarQuote: 'ryan',
-    intro: ["This isn't about disqualifying you — it's about making sure this is safe and appropriate for where you're at right now, and if it's not quite the right fit today, I want to help point you toward what would actually help more. This work can complement professional mental health treatment once you're stable."],
+    intro: ["This isn't about disqualifying you — it's about meeting you where you're at and making sure this appropriate for where you're at right now."],
     fields: [
       {
         label: 'Are you currently receiving care from a therapist, doctor, psychiatrist, or other health professional? If so, briefly, what for?',
@@ -278,8 +290,8 @@ const SECTIONS = [
       },
       { label: 'Is there anything about your physical or mental health I should know, to work with you safely and responsibly?', type: 'textarea', rows: 4 },
       {
-        label: 'Are you currently in crisis, or having thoughts of harming yourself or someone else?',
-        note: "If yes: please reach out to a crisis line or emergency services right away — in the US, you can call or text 988. This program isn't equipped to support acute crisis, but I care about you getting the right help. (Optional)",
+        label: "Are you currently in crisis, or having thoughts of harming yourself or someone else?",
+        note: "If yes: please reach out to a crisis line or emergency services right away — in the US, you can call or text 988. This program isn't equipped to support acute crisis, but I care about you getting the right help. if it's not quite the right fit today, I want to help point you toward what would actually help more. This work can complement professional mental health treatment once you're stable. (Optional)",
         warning: true,
         type: 'textarea',
         rows: 3,
@@ -396,7 +408,7 @@ const AlignmentForm = () => {
       key={field.name}
       style={field.hue !== undefined ? hueVars(field.hue, field.hueOpts) : undefined}
     >
-      <label htmlFor={field.name}>{field.label}</label>
+      <label htmlFor={field.name}>{field.labelNode || field.label}</label>
       {missingField?.name === field.name && (
         <p className="af-field-missing-note">Please answer this one before submitting.</p>
       )}
@@ -447,7 +459,7 @@ const AlignmentForm = () => {
 
       {field.type === 'yesno' && (
         <div className="af-yesno-group" role="group" aria-label={field.label}>
-          {['Yes', 'No'].map((opt) => (
+          {(field.options || ['Yes', 'No']).map((opt) => (
             <label
               key={opt}
               className={`af-yesno-option ${answers[field.label] === opt ? 'selected' : ''}`}
@@ -480,7 +492,7 @@ const AlignmentForm = () => {
           <div className="container">
             <h1 className="subtitle-heading">Alignment Form</h1>
             <p className="alignment-form-confirmation">
-              Congradulations on submitting your Alignment Form!
+              Congratulations on submitting your Alignment Form!
             </p>
             <p className="alignment-form-confirmation">
               I've received it and will reach out to you shortly.
@@ -495,7 +507,7 @@ const AlignmentForm = () => {
               <h1 className="subtitle-heading">Alignment Form</h1>
               <p className="af-hero-line"><u className="af-underline af-hero-welcome">Welcome.</u></p>
               <p className="af-hero-line">
-                In the <em>Tap Into Freedom</em> program you will become more calm, happy, free, and empowered as your baseline, dissolve pain that's been quietly running your life, and restore your freedom –– for good.
+                In the <em>Tap Into Freedom</em> program you will become more calm, happy, free, and empowered as your baseline, dissolve pain that's been quietly running your life, and restore your freedom — for good.
               </p>
             </div>
           </section>
@@ -543,9 +555,9 @@ const AlignmentForm = () => {
               rest of the page, from the opening tagline to the last bullet. */}
           <section className="af-investment">
             <div className="container">
-              <p className="af-tagline af-tagline-lg" style={hueVars(28, { light: 82 })}>This is an investment that can <u className="af-underline">completely transform your life.</u></p>
-              <p className="af-tagline af-tagline-lg" style={hueVars(32, { light: 82 })}>And throughout our time, you'll the enjoy palpable <u className="af-underline">steps of improvement</u> along the way.</p>
-              <p className="af-tagline af-tagline-lg" style={hueVars(35, { light: 82 })}>And obtain <u className="af-underline">excellent tools</u> to continue</p>
+              <p className="af-tagline af-tagline-lg" style={hueVars(28, { light: 82 })}>This is an investment that can <u className="af-underline">completely transform your life</u> and <u className="af-underline">deeply resolve</u> huge amounts of undesired – for good.</p>
+              <p className="af-tagline af-tagline-lg" style={hueVars(32, { light: 82 })}>Throughout our time, you'll enjoy palpable <u className="af-underline">steps of improvement</u> along the way.</p>
+              <p className="af-tagline af-tagline-lg" style={hueVars(35, { light: 82 })}>You'll obtain <u className="af-underline">excellent tools</u> to continue your success and healing.</p>
               <ul className="list-bullets af-investment-list">
                 <li style={hueVars(39, { light: 82 })}>A 3-month container of <u className="af-underline">profound healing and upgrades</u> with my <u className="af-underline">ongoing support.</u></li>
                 <li style={hueVars(42, { light: 82 })}>Twelve potent 90-minute 1-on-1 <u className="af-underline">EFT &amp; Coaching sessions</u> with Adin. <em>EFT is the single most effective healing tool</em> I've found for resolving nearly any issue at the root. Powerful, simple, gentle, fast, and versatile.</li>
@@ -608,7 +620,7 @@ const AlignmentForm = () => {
 
                 {/* Benefits recap — openable dropdowns, right before Submit */}
                 <div className="af-benefits">
-                  <h2 className="af-plain-heading">In the coming three months, be prepared (maybe even excited?!) for these beneficial, lasting shifts — subtly or drastically:</h2>
+                  <h2 className="af-plain-heading">In the coming three months, be prepared (AND even excited?!) for these beneficial, lasting shifts — subtly or drastically:</h2>
 
                   <ul className="af-benefit-list">
                     {BENEFITS.map((b) => (
