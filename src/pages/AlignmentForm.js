@@ -158,7 +158,7 @@ const MORE_ABOUT = [
     key: 'ongoingSupport',
     title: 'More on ongoing support',
     body: (
-      <p>Beyond the weekly sessions themselves, I hold availability and heart-space for my clients throughout the whole three months. That includes being reachable by email between sessions — typically I respond to 1 email a week — for guidance, presence, sharing, and integration support as things come up for you. We'll also have Weekly cohort circles for sharing, connection, and tapping</p>
+      <p>Beyond the weekly sessions themselves, I am availability for my clients throughout the whole three months. That includes being reachable by email between sessions — typically I respond to 1 email a week — for guidance, presence, sharing, and integration support as things come up for you. We'll also have Weekly cohort circles for sharing, connection, and tapping</p>
     ),
   },
 ];
