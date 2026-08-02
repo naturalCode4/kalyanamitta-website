@@ -226,6 +226,7 @@ const TapIntoFreedom = () => {
             This is where you get to say: I'm done with this old baggage running the show. <u className="tif-underline">I'm taking my life back now</u>.
           </p>
           <p className="tif-emphasis-strong">This is a real, sustained transformation that can profoundly shift *nearly* <u className="tif-underline">anything you carry</u>.</p>
+          <p className="tif-emphasis-strong"><u className="tif-underline">Ask yourself:</u> What 3-6 areas in my life would make the biggest difference to resolve? <u className="tif-underline">Tap Into Freedom</u> is built to thorougly purify and restore your energy in each one of these areas.</p>
 
           <div className="gold-divider"></div>
 
