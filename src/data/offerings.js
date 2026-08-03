@@ -3,11 +3,11 @@ export const offerings = [
     id: 'EFT-emotional-freedom-techniques',
     title: 'EFT (Tapping)',
     availability: 'Available in-person or virtual',
-    content: "Rapidly release negativity and difficult emotions, heal your nervous system, resolve even major issues, and create the life you desire. EFT is a powerful yet simple multi-tool modality that involves tapping energy points on one's own body while a practitioner guides someone to process something they want to shift."
+    content: "EFT is the single most effective healing tool I've found for resolving nearly any issue at the root — powerful, simple, gentle, and fast. It involves tapping acupoints on your own body while a practitioner skillfully guides you to heal and upgrade at the root of an issue or goal. It neutralizes and dissolves negative thought patterns and emotions, undesired conditioning, and restores access to your full energy and the ability to be authentic, aligned, and create the life you desire."
   },
   {
     id: 'energy-work',
-    title: 'Reiki-based Energy Healing',
+    title: 'Reiki Energy Healing',
     availability: 'Available in-person only',
     content: "Receive universal life force energy to optimize the body's natural bio-energy field. This promotes relaxation, vitality, emotional healing, connection, clarity, removes blockages and deficiencies, and more."
   },
@@ -15,7 +15,7 @@ export const offerings = [
     id: 'spiritual-practice',
     title: 'Spiritual Counseling and Practices',
     availability: 'Available in-person or virtual',
-    content: "Cultivate the wisdom, compassion, & authenticity needed to live well. Be seen and heard as you are. Learn and deepen mind-body practices. Embody what matters most to you. We may draw on both inner knowing and outer knowledge from spiritual traditions."
+    content: "Guidance, education, and heart-companionship on your spiritual life and path — addressing where you face challenges, where you're growing, and what's next. I also help you learn or deepen a practice — building a real, living relationship with it: meditation, breathwork, yoga, voice-based sound healing, prayer, ecstatic dance, or another entirely."
   },
 ];
 

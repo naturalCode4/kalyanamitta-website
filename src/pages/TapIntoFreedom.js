@@ -180,13 +180,13 @@ const TapIntoFreedom = () => {
           <div className="gold-divider"></div>
 
           <p className="tif-emphasis"><u className="tif-underline"><em>Tap Into Freedom</em></u> exists to end that cost. For good.</p>
-          <p className="tif-emphasis">All of it aimed at a <u className="tif-underline">whole life healing</u> and <u className="tif-underline">dissolution the pain that's restricting your fullness</u> – and to hand you excellent tools <u className="tif-underline">for life</u>.</p>
+          <p className="tif-emphasis">All of it aimed at a <u className="tif-underline">whole life healing</u> and <u className="tif-underline">dissolution of the pain that's restricting your fullness</u> – and to hand you excellent tools <u className="tif-underline">for life</u>.</p>
           <p className="tif-emphasis">Whatever you're carrying – we <em>can</em> shift it.</p>
 
           <div className="gold-divider"></div>
 
           <h3 className="tif-center tif-narrow">
-            During the 12 week <strong>Tap Into Freedom</strong> program, we:
+            The <u className="tif-underline">Tap Into Freedom</u> Offer is a 12-week container of guided, one-on-one transformation. The full breakdown of The Method is below. You will:
           </h3>
           <h3 className="tif-center tif-narrow">
             • Relieve the heavy load you've carried <u className="tif-underline">profoundly</u> – restoring your life-force
@@ -197,16 +197,17 @@ const TapIntoFreedom = () => {
           <h3 className="tif-center tif-narrow">
             • <u className="tif-underline">Earn the freedom</u> to live more calm, happy, free, and empowered.
           </h3>
-          <h3 className="tif-center tif-narrow">
-            You will:
-          </h3>
-          <ul className="list-bullets tif-intro-list">
+
+
+          <div className="gold-divider"></div>
+
+          {/* <ul className="list-bullets tif-intro-list">
             <li>Receive <strong>12 potent 90-minute 1-on-1 EFT sessions</strong> (Emotional Freedom Techniques, aka Tapping) — <em>the single most effective healing tool I've found for resolving nearly any issue at the root. Powerful, simple, gentle, fast, and versatile.</em> (More on EFT later)</li>
             <li>Gain proficiency in using the powerful modality of<strong> EFT on yourself.</strong></li>
             <li>Learn or deepen a <strong>Spiritual Practice</strong> and be guided and held accountable for its development.</li>
             <li>Be in a container of <strong>support the whole way — I'll be in your corner</strong>: bringing guidance, presence, and integration support.</li>
             <li><strong>Weekly cohort circles</strong> for sharing, connection, and tapping *when we have enough people*.</li>
-          </ul>
+          </ul> */}
 
 
           <Quote text="Adin's presence is grounded, compassionate, and deeply intuitive — he creates a safe space where real emotional release and clarity can unfold." author="Ryan S." />

@@ -2,7 +2,7 @@
 .calendly-embed-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 4rem 2rem 2rem;
   /*
   background: linear-gradient(
     135deg,
@@ -55,7 +55,7 @@
 .calendly-header h2 {
   font-size: 3.5rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   color: white;
   text-shadow: 2px 2px 2px #e4b108;
 }
@@ -65,7 +65,11 @@
   color: #e8e8e8;
   line-height: 1.6;
   max-width: 900px;
-  text-align: center;
+  /* !important: Contact.js renders this inside a .section-rainbow wrapper,
+     and Home.css's page-wide ".section-rainbow p { text-align: left }" is
+     the same specificity as this rule — without this it wins on source
+     order alone and silently left-aligns this paragraph. */
+  text-align: center !important;
   margin: 0 auto;
 }
 
@@ -75,7 +79,7 @@
   gap: 0.75rem;
   justify-content: center;
   align-items: center;
-  margin: 1rem auto 0;
+  margin: 1rem auto 2rem;
   max-width: 900px;
 }
 
@@ -110,20 +114,10 @@
   background: white;
 }
 
-.calendly-embed-container h2 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  padding: 2rem;
-  color: white;
-  text-align: center;
-  font-size: 3rem
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .calendly-embed-container {
-    padding: 1.5rem;
+    padding: 2.25rem 1.5rem 1.5rem;
     margin: 1rem;
   }
 

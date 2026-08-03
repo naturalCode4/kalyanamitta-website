@@ -99,15 +99,15 @@ const Home = () => {
 
             <div className="hero-manifesto">
               <div className="manifesto-item">
-                <span className="manifesto-text">Healing and love <u>is</u> your nature,<br className="desktop-break" />Dissolve what limits you.</span>
+                <span className="manifesto-text">Healing and love <u>are</u> your nature!<br className="desktop-break" />Dissolve what limits you.</span>
               </div>
               <div className="manifesto-connector"></div>
               <div className="manifesto-item">
-                <span className="manifesto-text">Restore authenticity and connection,<br className="desktop-break" />Liberate your heart, body, and mind.</span>   
+                <span className="manifesto-text">Restore a healthy nervous system and mind,<br className="desktop-break" />Liberate authenticity and connection.</span>   
               </div>
               <div className="manifesto-connector"></div>
               <div className="manifesto-item">
-                <span className="manifesto-text">Unmute your soul,<br className="desktop-break" />Remember your divinity and power.</span>
+                <span className="manifesto-text">Unmute your soul,<br className="desktop-break" />Remember your power and divinity.</span>
               </div>
             </div>
 
@@ -123,10 +123,13 @@ const Home = () => {
       >
         <div className="grid grid-2">
           <div>
-            <p>This work offers profound, lasting transformation — in your well-being, relationships, emotional freedom, clarity, strength, and alignment with who you truly are.</p>
-            <p>At your essence, you are luminous, free, and unbounded— inherently loving, wise, peaceful and whole.</p>
-            <p>Through <b>EFT (Tapping)</b>, <b>Reiki Energy Healing</b>, and <b>Spiritual Counseling and Practices</b> — including <b>Breathwork, Yoga,Sound Healing, and Meditation </b>— this work releases what holds you back and restores your natural capacities for healing, love, wisdom, and peace.</p>
-            <p>Grounded in intuition, science, and essential spiritual teachings, this guidance meets you where you are and unfolds at the depth you're ready for. All it takes is your willingness.</p>
+            <p><em>Healing On Tap</em> offers <b>life-changing shifts</b> to all who are called — on every level: emotionally, mentally, energetically, spiritually, neurologically, physically down to the cells of your body.</p>
+            <p>This work offers profound, lasting transformation — reaching into every part of your life, inner and outer. <b>Whatever it is you're carrying, this work can shift it.</b></p>
+            <p>This is where you <b>put down the heavy baggage</b> — the old fear, unprocessed pain, negative emotions, and limiting beliefs and conditioning you never chose. Here, at the deepest, root level, you restore your <b>life-force</b> — earning the <b>freedom to live calm, happy, free, and empowered.</b></p>
+            <p>At your core, you are <em>already</em> <b></b>whole, inherently <b>loving</b>, <b>wise</b>, <b>peaceful</b>, with the <b>innate capacity for healing</b>. This work clears what's been in the way, and activates these innate qualities so they can <b>fully bloom.</b></p>
+            <p>The primary methods we use are <b>EFT (Emotional Freedom Techniques, aka Tapping)</b>, <b>Reiki Energy Healing</b>, and <b>Spiritual Counseling and Practices</b> — including <b>breathwork, yoga, sound healing, prayer, meditation, and ecstatic dance</b>.</p>
+            <p>Some shifts will happen wonderfully <b>fast</b>, almost like <b>magic.</b> Others take patience. Either way, when it moves, it moves <b>palpably and profoundly</b> — not just on the surface.</p>
+            <p>Grounded in intuition, science, essential spiritual teachings, deep training and experience, and love and wisdom, this guidance meets you where you are, and unfolds at the depth you're ready for. <b>I got you.</b> <em>All it takes is your willingness.</em></p>
           </div>
           <div className="about-photos">
             <div className="photo-container">
@@ -143,7 +146,7 @@ const Home = () => {
       {/* Manifesto Section */}
       <Section 
         variant="dark" 
-        title="Are you ready to live from your true nature? ..."
+        title="Offerings"
         subtitle=""
       >
 

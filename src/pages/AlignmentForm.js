@@ -280,7 +280,7 @@ const SECTIONS = [
     hue: 245,
     hueOpts: { sat: 55, light: 82 },
     sidebarQuote: 'ryan',
-    intro: ["This isn't about disqualifying you — it's about meeting you where you're at and making sure this appropriate for where you're at right now."],
+    intro: ["This isn't about disqualifying you — it's about meeting you where you're at and making sure this is appropriate for where you're at right now."],
     fields: [
       {
         label: 'Are you currently receiving care from a therapist, doctor, psychiatrist, or other health professional? If so, briefly, what for?',
@@ -291,7 +291,8 @@ const SECTIONS = [
       { label: 'Is there anything about your physical or mental health I should know, to work with you safely and responsibly?', type: 'textarea', rows: 4 },
       {
         label: "Are you currently in crisis, or having thoughts of harming yourself or someone else?",
-        note: "If yes: please reach out to a crisis line or emergency services right away — in the US, you can call or text 988. This program isn't equipped to support acute crisis, but I care about you getting the right help. if it's not quite the right fit today, I want to help point you toward what would actually help more. This work can complement professional mental health treatment once you're stable. (Optional)",
+        note: "If yes: please reach out to a crisis line or emergency services right away — in the US, you can call or text 988. This program isn't equipped to support acute crisis, but I care about you getting the right help. This work can complement professional mental health treatment once you're stable. (Optional)",
+        // note: "If yes: please reach out to a crisis line or emergency services right away — in the US, you can call or text 988. This program isn't equipped to support acute crisis, but I care about you getting the right help.  This work can complement professional mental health treatment once you're stable. (Optional)",
         warning: true,
         type: 'textarea',
         rows: 3,
@@ -555,7 +556,7 @@ const AlignmentForm = () => {
               rest of the page, from the opening tagline to the last bullet. */}
           <section className="af-investment">
             <div className="container">
-              <p className="af-tagline af-tagline-lg" style={hueVars(28, { light: 82 })}>This is an investment that can <u className="af-underline">completely transform your life</u> and <u className="af-underline">deeply resolve</u> huge amounts of undesired – for good.</p>
+              <p className="af-tagline af-tagline-lg" style={hueVars(28, { light: 82 })}>This is an investment that can <u className="af-underline">completely transform your life</u> and <u className="af-underline">deeply resolve</u> huge amounts of undesired pain– for good.</p>
               <p className="af-tagline af-tagline-lg" style={hueVars(32, { light: 82 })}>Throughout our time, you'll enjoy palpable <u className="af-underline">steps of improvement</u> along the way.</p>
               <p className="af-tagline af-tagline-lg" style={hueVars(35, { light: 82 })}>You'll obtain <u className="af-underline">excellent tools</u> to continue your success and healing.</p>
               <ul className="list-bullets af-investment-list">

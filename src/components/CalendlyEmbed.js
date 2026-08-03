@@ -22,8 +22,17 @@ const CalendlyEmbed = () => {
   return (
     <div className="calendly-embed-container">
       <div className="calendly-header">
-        <h2 className="subtitle-heading">Book a Session</h2>
-        <div className="offering-learn-more-buttons">
+        <h2 className="subtitle-heading">Get a Session</h2>
+        <p>Sessions are held virtually or in my current location (Aguascalientes, MX)</p>
+      </div>
+      <div className="calendly-content">
+        <div 
+          className="calendly-inline-widget" 
+          data-url="https://calendly.com/healingontap/sessionwithadin"
+          style={{ minWidth: '320px', height: '700px' }}
+        ></div>
+      </div>
+      <div className="offering-learn-more-buttons">
           <Link to="/EFT-emotional-freedom-techniques" className="btn btn-outline btn-small" target="_blank">
             Learn more about EFT (Tapping)
           </Link>
@@ -34,17 +43,6 @@ const CalendlyEmbed = () => {
             Learn more about Spiritual Counseling
           </Link>
         </div>
-        <br></br>
-        <br></br>
-        <p>All sessions are held virtually or in my current location (Aguascalientes, MX)</p>
-      </div>
-      <div className="calendly-content">
-        <div 
-          className="calendly-inline-widget" 
-          data-url="https://calendly.com/healingontap/sessionwithadin"
-          style={{ minWidth: '320px', height: '700px' }}
-        ></div>
-      </div>
     </div>
   );
 };
