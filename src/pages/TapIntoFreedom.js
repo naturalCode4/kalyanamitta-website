@@ -283,19 +283,16 @@ const TapIntoFreedom = () => {
 
           <div className="tif-flow">
             <div className="tif-flow-main tif-flow-main-both">
-              <p>A twelve-week container of transformative healing and upgrades. You'll have me in your corner the whole way.</p>
+              <p></p>
 
-              <div className="collapsible-header tif-inline-trigger" onClick={() => toggleSection('howShift')}>
-                <span className={`triangle ${openSections.howShift ? 'open' : ''}`}></span>
-                How do we create this powerful shift?
-              </div>
-              <div className={`collapsible-content ${openSections.howShift ? 'open' : ''}`}>
-                <p>The core of this work is weekly <strong>90-minute 1-on-1 EFT</strong> (Emotional Freedom Techniques, aka Tapping) sessions. Coaching is woven in.</p>
-                <p>You'll learn or deepen a <strong>spiritual practice</strong> — meditation, breathwork, yoga, voice-based sound healing, prayer, ecstatic dance, or another you're interested in. You'll be guided and held accountable for its development.</p>
-                <p>You'll be taught proficiency in <strong>self-practice of EFT</strong>.</p>
-                <p>We'll have weekly cohort circles (optional but recommended). We heal better in <strong>community</strong>.</p>
-                <p>And you'll be held in <strong>support the whole way.</strong></p>
-              </div>
+              <h3 className="tif-gold-heading">How do we create this powerful shift?</h3>
+              <ul className="list-bullets tif-method-list">
+                <li>A 3-month container of <strong>transformative healing and upgrades</strong>. You'll have me in your corner the whole way with <strong>ongoing support.</strong></li>
+                <li>Twelve potent <strong>90-minute 1-on-1 EFT</strong> & Coaching sessions with Adin.</li>
+                <li>Gain proficiency in using the powerful modality of <strong>EFT on yourself</strong>.</li>
+                <li>Cultivate a <strong>spiritual practice</strong> that's genuinely yours and deeply supports your life.</li>
+                <li>Weekly cohort circles for sharing, connection, and tapping (Optional but recommended. We heal better in <strong>community</strong>).</li>
+              </ul>
 
               <div className="gold-divider"></div>
 

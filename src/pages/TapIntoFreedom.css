@@ -383,6 +383,13 @@
 /* A dropdown trigger that sits inline in the main body copy — not a section
    heading (h3) and not a sidebar, just a short "see more" prompt between
    paragraphs. Shortening plan: content behind these starts collapsed. */
+/* Same gold, italic look the "How do we create this powerful shift?" line
+   had as a .tif-inline-trigger dropdown before it became a plain header. */
+.tif-gold-heading {
+  color: #d4af37 !important;
+  font-style: italic;
+}
+
 .tif-inline-trigger {
   justify-content: center;
   color: #d4af37;
@@ -627,6 +634,17 @@
 }
 .tif-method p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author) {
   color: var(--tif-method-text);
+}
+/* The "what's included" list added to the howShift dropdown has no <p>
+   wrapper, so the rule above never reaches it — without this it silently
+   falls through to the body's default dark text color (nearly invisible
+   against this section's dark background). Font-size/line-height match
+   what the paragraphs it replaced rendered at (the shared
+   ".tif-method p:not(...)" rule elsewhere in this file). */
+.tif-method-list li {
+  color: var(--tif-method-text);
+  font-size: 1.18rem;
+  line-height: 1.9;
 }
 .tif-about p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author) {
   color: var(--tif-about-text);
