@@ -348,7 +348,7 @@ const TapIntoFreedom = () => {
                   </div>
                   <div className={`collapsible-content ${openSections.sessionExpect ? 'open' : ''}`}>
                     <p>
-                      Gentle tapping on various points on the body, call-and-response guidance, and expressing in your own voice. I will guide you towards self-acceptance, love, and to process your issue on the deepest level. I meet you where you are, and move at the pace your own system is ready for.
+                      Gentle tapping on various points on the body, call-and-response guidance, and expressing in your own voice. I will guide you to process your issue on the deepest level and move towards self-acceptance and love. I meet you where you are, and move at the pace your own system is ready for.
                     </p>
                     <p>
                       During a session you'll typically see improvements in your issue, more positive thinking and emotions, and insights around your issue (sometimes full-on universal downloads — no joke). Also a sense of love, peace, confidence, and other wonderful qualities. Shifts usually continue to unfold for several days after a session.

@@ -41,6 +41,12 @@
    sequence (purple → teal → gold → orange → red) as the vivid
    .section-rainbow bands elsewhere, just desaturated and darkened so it
    reads as a subtle tint rather than the full rainbow treatment. */
+/* Offsets the #method in-page jump link so the fixed site header (~69px,
+   see App.css) doesn't cover the top of the section it scrolls to. */
+#method {
+  scroll-margin-top: 85px;
+}
+
 .tif-hero {
   background: linear-gradient(
     135deg,
