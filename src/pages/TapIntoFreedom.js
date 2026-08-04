@@ -186,29 +186,22 @@ const TapIntoFreedom = () => {
           <div className="gold-divider"></div>
 
           <h3 className="tif-center tif-narrow">
-            The <u className="tif-underline">Tap Into Freedom</u> Offer is a 12-week container of guided, one-on-one transformation. The full breakdown of The Method is below. You will:
+            The <u className="tif-underline">Tap Into Freedom</u> Offer is a 12-week container of guided, one-on-one transformation that:
           </h3>
           <h3 className="tif-center tif-narrow">
-            • Relieve the heavy load you've carried <u className="tif-underline">profoundly</u> – restoring your life-force
+            • Relieves the heavy load you've carried <u className="tif-underline">profoundly</u> – restoring your life-force
           </h3>
           <h3 className="tif-center tif-narrow">
-            • Heal and upgrade at the <u className="tif-underline">deepest, root level</u>
+            • Heals and upgrades at the <u className="tif-underline">deepest, root level</u>
           </h3>
           <h3 className="tif-center tif-narrow">
-            • <u className="tif-underline">Earn the freedom</u> to live more calm, happy, free, and empowered.
+            • <u className="tif-underline">Earns you the freedom</u> to live more calm, happy, free, and empowered.
           </h3>
-
+          <h3 className="tif-center tif-narrow">
+            • The full breakdown of <a href="#method" className="tif-inline-link">The Method</a> is explained in a later section.
+          </h3>
 
           <div className="gold-divider"></div>
-
-          {/* <ul className="list-bullets tif-intro-list">
-            <li>Receive <strong>12 potent 90-minute 1-on-1 EFT sessions</strong> (Emotional Freedom Techniques, aka Tapping) — <em>the single most effective healing tool I've found for resolving nearly any issue at the root. Powerful, simple, gentle, fast, and versatile.</em> (More on EFT later)</li>
-            <li>Gain proficiency in using the powerful modality of<strong> EFT on yourself.</strong></li>
-            <li>Learn or deepen a <strong>Spiritual Practice</strong> and be guided and held accountable for its development.</li>
-            <li>Be in a container of <strong>support the whole way — I'll be in your corner</strong>: bringing guidance, presence, and integration support.</li>
-            <li><strong>Weekly cohort circles</strong> for sharing, connection, and tapping *when we have enough people*.</li>
-          </ul> */}
-
 
           <Quote text="Adin's presence is grounded, compassionate, and deeply intuitive — he creates a safe space where real emotional release and clarity can unfold." author="Ryan S." />
 
@@ -277,7 +270,7 @@ const TapIntoFreedom = () => {
       </section>
 
       {/* The Method */}
-      <section className="tif-method">
+      <section className="tif-method" id="method">
         <div className="container">
           <h2 className="subtitle-heading">The Method.</h2>
 
