@@ -523,7 +523,7 @@ const AlignmentForm = () => {
               <div className="gold-divider"></div>
 
               <p className="af-review-note">
-                I review each application personally. If it's a good fit, we'll set up a free 30-minute call to understand the program better, ask each other any questions we have, and get to know each other better.
+                I review each application personally. If it's a good fit, we'll set up a free 30-minute call to align, understand the program better, ask each other any questions we have.
               </p>
             </div>
           </section>

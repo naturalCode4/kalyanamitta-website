@@ -566,7 +566,7 @@ const TapIntoFreedom = () => {
                   <li>You're ready to go deep and be honest, with someone who can hold it</li>
                   <li>Living from your heart and in integrity matters deeply to you</li>
                   <li>You want tools to keep growing, not a forever dependency</li>
-                  <li>You feel a strong connection with me, your guide</li>
+                  <li>You feel a connection with me, your guide</li>
                   <li>Even if you're a little skeptical, or you've been let down before</li>
                 </ul>
               </div>
