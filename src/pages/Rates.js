@@ -10,7 +10,7 @@ const Rates = () => {
   const packages = [
     {
       name: 'Tap Into Freedom Program',
-      description: "A 12-week container to dissolve what's been running your life, and become calm, happy, free, and empowered — for good.",
+      description: "A 12-week container to dissolve the limitations that have been running your life, and become calm, happy, free, and empowered — for good.",
       mainPrice: '$2,222',
       slidingScale: ' Founding Cohort',
       originalPrice: '$3,000',
@@ -27,7 +27,7 @@ const Rates = () => {
     },
     {
       name: '4-Session Combo',
-      description: "Invest in your healing and personal development, and get your energy back. Four potent sessions to find freedom and align yourself.",
+      description: "If you're tired of white-knuckling through life, this is for you. Four potent sessions to release what's weighing you down and reclaim your energy — fast.",
       mainPrice: '$578',
       slidingScale: ' / Sliding Scale $377-850',
       originalPrice: '$680. Sliding Scale $444-1000',
@@ -41,7 +41,7 @@ const Rates = () => {
     },
     {
       name: '7-Session Combo',
-      description: "Transform yourself, heal even major issues, and expand your spiritual capacity and toolkit. Commit to being supported with seven potent sessions.",
+      description: "For those ready to go all in on real change — even the big stuff. Seven potent sessions to heal at the root and expand your spiritual capacity, for good.",
       mainPrice: '$952',
       slidingScale: ' / Sliding Scale $621-1,400',
       originalPrice: '$1,190. Sliding Scale $777-1,750',

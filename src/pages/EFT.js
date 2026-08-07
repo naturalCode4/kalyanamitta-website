@@ -71,7 +71,7 @@ const EFT = () => {
             <h2 className="subtitle-heading">About EFT</h2>
             <div className="offering-book-cta">
               <Link to="/contact#booking" className="btn btn-outline">
-                Book a Session
+                Book a Session →
               </Link>
             </div>
             

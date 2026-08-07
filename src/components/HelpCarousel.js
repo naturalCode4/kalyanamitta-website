@@ -38,6 +38,7 @@ const HelpCarousel = ({ list }) => {
       {/* Main Featured Card */}
       <div className="featured-display">
         <div className="featured-content">
+          <span className="carousel-counter">{activeIndex + 1}/{list.length}</span>
           <h3>{list[activeIndex]}</h3>
         </div>
       </div>

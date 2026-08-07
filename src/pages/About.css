@@ -67,10 +67,13 @@
 
 .about-image {
   float: right;
-  width: 300px;
+  width: 160px;
   margin-left: 2rem;
   margin-bottom: 1.5rem;
   margin-top: 0;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .placeholder-image {

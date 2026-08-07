@@ -275,6 +275,29 @@
   max-width: none;
 }
 
+.tif-about-image {
+  float: right;
+  width: 260px;
+  margin: 0 0 1rem 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(212, 175, 55, 0.4);
+}
+
+/* Stop the floated portrait from squeezing the "More about Adin" dropdown
+   into a narrow column — the float should only sit beside the opening
+   paragraph, not everything that follows it. */
+.tif-about .tif-inline-trigger {
+  clear: both;
+}
+
+/* The page-wide 5rem gold-divider margin is tuned for gaps between major
+   sections — right after this short dropdown trigger it reads as a dead
+   zone, so it gets a tighter margin here specifically. */
+.tif-about-divider {
+  margin: 1.5rem auto !important;
+}
+
 .tif-sidebar {
   position: absolute;
   top: 0;
@@ -446,6 +469,14 @@
     position: static;
     width: 100%;
     top: auto !important;
+  }
+
+  .tif-about-image {
+    float: none;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 1.5rem;
+    display: block;
   }
 }
 

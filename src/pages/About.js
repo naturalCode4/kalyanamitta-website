@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import './About.css';
 import GoogleReviews from '../components/GoogleReviews';
 import Section from '../components/Section';
 import CTA from '../components/CTA';
 import pic5 from '../assets/pic5.jpg';
+import pic10 from '../assets/pic10.jpg';
 import { Helmet } from 'react-helmet';
 
 const About = () => {
+  const { hash } = useLocation();
   const [openSections, setOpenSections] = useState({
     approach: false,
     story: false,
@@ -22,6 +24,23 @@ const About = () => {
       [section]: !prev[section]
     }));
   };
+
+  // Handle scroll to hash
+  useEffect(() => {
+    if (hash) {
+      setTimeout(() => {
+        const element = document.getElementById(hash.replace('#', ''));
+        if (element) {
+          const headerOffset = 68;
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [hash]);
 
   return (
     <div className="about">
@@ -113,6 +132,11 @@ const About = () => {
                 Story
               </h3>
               <div className={`collapsible-content ${openSections.story ? 'open' : ''}`}>
+                <img
+                  src={pic10}
+                  alt="Adin outdoors among the trees"
+                  className="about-image"
+                />
                 <p>
                   When I was 15, I underwent a rapid shift from depression to radical expansion of awareness and access to peace and joy. It was as if my mind stilled, and opened to eternal and ecstatic presence. It felt like a natural continuation of who I'd always been and the natural expansiveness I longed for. Love and peace to the forefront! I remember in elementary school often preferring to lie in the grass— with the trees, birds, clouds, sky— than hang out with my friends, and I spent abundant time wandering through my neighborhood in a state of deep play—a state that's so vital for children to experience. I navigated this blissful state and I discovered I could dissolve negative feelings in minutes simply by, with a heart of loving presence: accepting and letting it be. This turns out to be profound wisdom emphasized in the worlds of spiritual evolution, healing, and emotional processing. Around that time, I encountered a small, luminous book called <a href="https://www.bdk.or.jp/pdf/buddhist-scriptures/02_english/TheTeachingofBuddha.pdf" target="_blank">The Teachings of Buddha</a>, and it immediately read like poetry pointing to the truths of consciousness, our kind and pure nature, and our potential.                </p>
                 <p>

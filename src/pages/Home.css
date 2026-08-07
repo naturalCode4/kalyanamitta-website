@@ -1183,6 +1183,18 @@
   line-height: 1.7;
 }
 
+@media (min-width: 901px) {
+  /* Fixed (not min-) height + flex centering, so the subtitle box takes
+     up the same vertical space regardless of its line count, and both
+     carousels below start at the same height. */
+  .help-list-subtitle {
+    height: 5.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 900px) {
   .help-lists-grid {
     grid-template-columns: 1fr;
@@ -1217,18 +1229,30 @@
   width: 100%;
   max-width: 500px;
   min-height: 190px;
-  
+
   /* TIGHTER PADDING (Desktop) */
   padding: 2rem 1.5rem; /* Reduced from 3rem 2rem */
-  
+
   border-radius: 20px;
   border: 2px solid #d4af37;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%; 
+  height: 100%;
+  position: relative;
+}
+
+.carousel-counter {
+  position: absolute;
+  top: 0.9rem;
+  right: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #d4af37;
+  opacity: 0.85;
 }
 
 .featured-content h3 {

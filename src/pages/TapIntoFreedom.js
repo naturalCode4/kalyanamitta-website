@@ -1,11 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './TapIntoFreedom.css';
 import { Helmet } from 'react-helmet';
+import pic10 from '../assets/pic10.jpg';
 
 // Every "Fill out the Alignment Form" CTA on this page reads from this one
 // constant.
 const ALIGNMENT_FORM_URL = '/alignment-form';
+
+// Same Google reviews link used in components/GoogleReviews.js.
+const GOOGLE_REVIEWS_URL = "https://www.google.com/search?sca_esv=51ce83e25ec719d4&sxsrf=AE3TifNlFbq4AK3zJQnfZYpPXSerqo2omw:1767397300592&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-EwyJXTuXVS5aEX0JW1xEL5DvYFwgR7sVZ45kd6I9Bl_SZLxjblPSQzPdEpvH4WxiKlaTGcjhJB0kmY_gPUsN3WHWFsDQ&q=Healing+On+Tap+Reviews&sa=X&ved=2ahUKEwjHn52ChO6RAxWFGlkFHfaOCUQQ0bkNegQIHxAE&biw=1680&bih=962&dpr=2";
+
+// Same fallback used in components/GoogleReviews.js — used only when the
+// live Google Places total isn't available.
+const FALLBACK_TOTAL_REVIEWS = 16;
 
 const Stars = () => <span className="tif-stars">★★★★★</span>;
 
@@ -18,6 +26,41 @@ const Quote = ({ text, author }) => (
 );
 
 const TapIntoFreedom = () => {
+  const [totalReviews, setTotalReviews] = useState(null);
+
+  // Same fetch logic as components/GoogleReviews.js, trimmed to just the
+  // total count needed for the "See X 5-Star reviews" link below.
+  useEffect(() => {
+    let isMounted = true;
+
+    const fetchTotalReviews = async () => {
+      try {
+        const isDevelopment = process.env.NODE_ENV === 'development';
+        const hostname = window.location.hostname;
+
+        if (isDevelopment && hostname === 'localhost' && !process.env.REACT_APP_GOOGLE_REVIEWS_API_URL) {
+          if (isMounted) setTotalReviews(FALLBACK_TOTAL_REVIEWS);
+          return;
+        }
+
+        const apiUrl = process.env.REACT_APP_GOOGLE_REVIEWS_API_URL || '/api/google-reviews';
+        const response = await fetch(apiUrl);
+        if (!response.ok) throw new Error('Failed to fetch reviews');
+
+        const data = await response.json();
+        if (data.error) throw new Error(data.error);
+
+        if (isMounted) setTotalReviews(data.total_reviews ?? FALLBACK_TOTAL_REVIEWS);
+      } catch (err) {
+        console.error('Error fetching Google Reviews total:', err);
+        if (isMounted) setTotalReviews(FALLBACK_TOTAL_REVIEWS);
+      }
+    };
+
+    fetchTotalReviews();
+    return () => { isMounted = false; };
+  }, []);
+
   const [openSections, setOpenSections] = useState({
     eftWorks: false,
     sessionExpect: false,
@@ -443,9 +486,25 @@ const TapIntoFreedom = () => {
             </aside>
 
             <div className="tif-flow-main tif-flow-main-both">
+              <img
+                src={pic10}
+                alt="Adin outdoors among the trees"
+                className="tif-about-image"
+              />
               <p>
-                I have <u className="tif-underline">lived</u> this work, not just studied it: I've come through PTSD, deep childhood wounding, emotionally immature parenting, anxiety, depression, shame, insecurity, heartbreak, and more. I know what it's like down in the mud, because I've walked through it.
+                I have <u className="tif-underline">lived</u> this work, not just studied it: I've gained my calm, happiness, freedom, authority, energy, and life. I've come through PTSD, childhood wounding, emotionally immature parenting, anxiety, depression, shame, insecurity, heartbreak, and learned to walk as a sensitive and conscious soul and blacksheep.
               </p>
+              <p>
+                When you work with me, you're with someone who's <u className="tif-underline"><em>been down there</em></u> in the mud, made it through, and earned their metaphorical badges and stamps. You're not alone in this!
+              </p>
+              <p>
+                People describe me as warm, intuitive, reliable, open-hearted, compassionate, safe, rooted, gentle, intelligence, devoted, and wise. People say I help them understand healing and spiritual in a way that's <em>real</em>.
+              </p>
+              {totalReviews !== null && (
+                <p>
+                  <a href={GOOGLE_REVIEWS_URL} target="_blank" rel="noopener noreferrer" className="tif-inline-link">See {totalReviews} 5-Star reviews on Google →</a>
+                </p>
+              )}
 
               <div className="collapsible-header tif-inline-trigger" onClick={() => toggleSection('fullStory')}>
                 <span className={`triangle ${openSections.fullStory ? 'open' : ''}`}></span>
@@ -460,11 +519,7 @@ const TapIntoFreedom = () => {
                 </p>
               </div>
 
-              <p>
-                When you work with me, you're with someone who's <u className="tif-underline"><em>been down there</em></u>, made it through, and earned their metaphorical badges and stamps. I'm empathic, compassionate, intuitive, open-hearted, and sometimes funny! You're not alone in this.
-              </p>
-
-              <div className="gold-divider"></div>
+              <div className="gold-divider tif-about-divider"></div>
 
               <p>
                 I am Advanced Certified in EFT through the Sonya Sophia School of Living Arts. Reiki II. 500-hour Yoga Teacher Training. Deep experience across Buddhist, Native American, and other spiritual traditions. And, most importantly: shaped by a life seeking what actually illuminates <u className="tif-underline">Truth, Freedom, Love, and Goodness.</u>

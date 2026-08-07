@@ -17,26 +17,24 @@ const Footer = () => {
             <ul>
               <li><Link to="/tap-into-freedom">Tap Into Freedom Program</Link></li>
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">About</Link></li>
-              {/* Updated Offerings Links */}
               <li><Link to="/EFT-emotional-freedom-techniques">EFT</Link></li>
               {/* Reiki / Energy Healing temporarily removed from nav — page still live at /energy-work for direct links */}
               {/* <li><Link to="/energy-work">Energy Healing</Link></li> */}
               <li><Link to="/spiritual-practice">Spiritual Counseling</Link></li>
-              {/* Added Testimonials Link */}
               <li><Link to="/about#testimonials">Testimonials</Link></li>
+              <li><Link to="/about#about-adin">About Adin</Link></li>
               <li><Link to="/rates">Rates</Link></li>
-              <li><Link to="/contact">Book</Link></li>
+              <li><Link to="/contact">Book Your Session →</Link></li>
               <li><Link to="/contact#get-in-touch">Get in Touch</Link></li>
-              <li><Link to="/devportfolio" target='_blank'>Web Development Portfolio</Link></li>
+              {/* <li><Link to="/devportfolio" target='_blank'>Web Development Portfolio</Link></li> */}
             </ul>
           </div>
           
           <div className="footer-section">
-            <h4>Get in Touch</h4>
+            <h4>Get In Touch</h4>
             <p>Phone: +1 (301) 641-2855</p>
-            <p>Email: <Link to="/contact#get-in-touch" className="footer-inline-link">Click here</Link></p>
-            <p>Location: Nomadic & worldwide — I work with clients virtually and in person where I travel.</p>
+            <p>Email me: <Link to="/contact#get-in-touch" className="footer-inline-link">Click here</Link></p>
+            <p>Location: Worldwide — I work with clients virtually and in person where I visit.</p>
           </div>
         </div>
         
