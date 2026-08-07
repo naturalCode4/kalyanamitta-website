@@ -9,6 +9,23 @@ const Rates = () => {
 
   const packages = [
     {
+      name: 'Tap Into Freedom Program',
+      description: "A 12-week container to dissolve what's been running your life, and become calm, happy, free, and empowered — for good.",
+      mainPrice: '$2,222',
+      slidingScale: ' Founding Cohort',
+      originalPrice: '$3,000',
+      discount: 'Standard Rate',
+      features: [
+        'Twelve 90-minute 1-on-1 EFT & Coaching sessions',
+        'Gain proficiency using EFT on yourself',
+        "Cultivate a spiritual practice that's genuinely yours",
+        'Weekly cohort circles for sharing and connection',
+        'My ongoing support the whole way'
+      ],
+      ctaText: 'Learn More & Apply',
+      ctaLink: '/tap-into-freedom'
+    },
+    {
       name: '4-Session Combo',
       description: "Invest in your healing and personal development, and get your energy back. Four potent sessions to find freedom and align yourself.",
       mainPrice: '$578',
@@ -102,9 +119,9 @@ const Rates = () => {
     <div className="rates">
       <Helmet>
         <title>Rates & Packages | Healing On Tap</title>
-        <meta name="description" content="View pricing for single sessions and packages for EFT, Reiki, and Counseling." />
+        <meta name="description" content="View pricing for single sessions and packages for EFT and Counseling." />
         <meta property="og:title" content="Healing On Tap | Rates & Packages" />
-        <meta property="og:description" content="View pricing for single sessions and packages for EFT, Reiki, and Counseling." />
+        <meta property="og:description" content="View pricing for single sessions and packages for EFT and Counseling." />
         <meta property="og:url" content="https://healing-on-tap.com/rates" />
       </Helmet>
       {/* Hero Section */}
@@ -116,6 +133,21 @@ const Rates = () => {
               Flexible pricing
             </p> */}
           </div>
+        </div>
+      </section>
+
+      {/* Tap Into Freedom Program highlight */}
+      <section className="rates-tif-highlight section-dark">
+        <div className="container">
+          <h2 className="subtitle-heading">The <u className="rates-underline">Tap Into Freedom</u> Program</h2>
+          <p className="rates-tif-description">
+            A 12-week container to dissolve what's been running your life, and become calm, happy, free, and empowered — for good.
+          </p>
+          <div className="rates-tif-price">
+            <span className="price-gold">$2,222</span> Founding Cohort
+            <span className="rates-tif-original"> · $3,000 Standard</span>
+          </div>
+          <Link to="/tap-into-freedom" className="btn">Learn More →</Link>
         </div>
       </section>
 
@@ -132,7 +164,9 @@ const Rates = () => {
                 <p className="subtitle">For those with financial ease, your generosity honors the exchange of energy between us, allows me to thrive doing what I love, supports this work in the world, and makes it accessible to others.</p>
               </div>
             </div>
-          <p className="subtitle extra"><em>Rates listed are for 90 minutes. 60 and 30 minute sessions are also available.</em></p>
+          <p className="rates-duration-note">
+            <strong>The rates below are for 90-minute sessions.</strong> 60 and 30-minute sessions are also available.
+          </p>
           <div className="pricing-timeline">
             <div className="timeline-point highlighted-point">
               <div className="timeline-number">1</div>
@@ -245,12 +279,12 @@ const Rates = () => {
 
       <section className="packages-section">
         <div className="container">
-          <h2 className="subtitle-heading">Combo Packages</h2>
+          <h2 className="subtitle-heading">Programs & Packages</h2>
           <div className="packages-grid">
             {packages.map((pkg, index) => (
               <div
                 key={index}
-                className={`package-card ${pkg.name.includes('Session Combo') ? 'combo-highlight' : ''}`}
+                className={`package-card ${pkg.name.includes('Session Combo') || pkg.name === 'Tap Into Freedom Program' ? 'combo-highlight' : ''}`}
               >
                 <div className="package-header">
                   <h3>{pkg.name}</h3>
@@ -277,8 +311,8 @@ const Rates = () => {
                   </ul>
                 </div>
                 <br></br>
-                <Link to="/contact#booking" className="btn btn-outline">
-                  Start your Journey
+                <Link to={pkg.ctaLink || '/contact#booking'} className="btn btn-outline">
+                  {pkg.ctaText || 'Start your Journey'}
                 </Link>
               </div>
             ))}
@@ -288,8 +322,8 @@ const Rates = () => {
 
       <Section 
         variant="dark" 
-        title="Ready to Begin?"
-        subtitle="When you're ready, I'm here. Book a session, schedule a free 30-minute consultation, or reach out—I'm happy to answer any questions."
+        title="Let's Begin →"
+        subtitle="This is your invitation to inner and outer freedom."
       >
         <CTA />
       </Section>

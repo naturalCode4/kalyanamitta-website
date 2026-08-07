@@ -86,7 +86,7 @@ const SpiritualPractice = () => {
                   I facilitate <b>voice-based sound healing practice, pranayama (breathwork), yoga asana, and meditation.</b> These are all powerful tools that can excel one's wellness and spiritual growth. We can integrate practice into counseling, or they can be the focus of our time together. I offer what I live; all of these have and continue to be of benefit to me.
                 </p>
                 <p>
-                  Spiritual Counseling sessions can also be synthesized with EFT or Energy Healing. EFT is often extremely useful (and recommended) for addressing certain concerns.
+                  Spiritual Counseling sessions can also be synthesized with EFT, which is often extremely useful (and recommended) for addressing certain concerns.
                 </p>
               </div>
               
@@ -102,8 +102,8 @@ const SpiritualPractice = () => {
       {/* CTA Section */}
       <Section 
         variant="dark" 
-        title="Ready to Begin?"
-        subtitle="When you're ready, I'm here. Book a session, schedule a free 30-minute consultation, or reach out—I'm happy to answer any questions."
+        title="Let's Begin →"
+        subtitle="This is your invitation to inner and outer freedom."
       >
         <CTA />
       </Section>

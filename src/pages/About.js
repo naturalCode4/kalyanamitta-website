@@ -45,6 +45,14 @@ const About = () => {
         </div>
       </section>
 
+      {/* Testimonials */}
+      <section id="testimonials" className="testimonials-section section-light">
+        <div className="container">
+          <h2 className="subtitle-heading">Testimonials</h2>
+          <GoogleReviews />
+        </div>
+      </section>
+
       <section id="about-adin" className="about-adin section-rainbow">
         <div className="container">
           <h2 className="subtitle-heading">About Adin</h2>
@@ -65,7 +73,7 @@ const About = () => {
                 Adin is a healer and integrative guide who helps people transform, heal, and align with their inherent wisdom and basic goodness. His mission is to alchemize evolution by offering powerful modalities, his loving presence, and wisdom. His approach is integrative and personal– grounded in intuition, science, and various spiritual traditions.
               </p>
               <p>
-                He offers EFT (Emotional Freedom Techniques, or Tapping), Reiki Energy Healing, and Spiritual Counseling and Practices (Meditation, Yoga, Breathwork, Sound Healing).
+                He offers EFT (Emotional Freedom Techniques, or Tapping) and Spiritual Counseling and Practices (Meditation, Yoga, Breathwork, Sound Healing).
               </p>
               <p>
                 He is a certified practitioner of Emotional Freedom Techniques (EFT), Reiki II, Yoga (500 YTT), and Breathwork. He has practiced in Zen, Tibetan, and Theravadan Buddhist lineages. He has explored mysticism across Native, Taoist, Judaic, Christian, Hermetic, and Sufi traditions, as well as yoga, qi gong, medicine work, shamanism, healing arts, psychic development, bhakti, and ecstatic dance—seeking what genuinely gives life, unclouds the pure heart, and supports positive transformation.
@@ -112,7 +120,7 @@ const About = () => {
                 <p>
                   At Wesleyan University, while studying music and engineering, I explored Buddhist meditation, Ashtanga Yoga, Shamanism, and eagerly pursued a more truthful knowing of the heart, mind, and how to live this life well. My friends and I were concerned about the stress and mental-performance-focused culture we saw both on campus and in society at large. We founded the Wesleyan Buddhist meditation club and created a really supportive space together. A friend who had spent a semester at <a href="https://zenstudies.org/dai-bosatsu-zendo/" target="_blank">Dai Bosatsu Zendo</a> brought our group there, where I got to experience meditation in a beautiful, traditional context. A wonderful non-profit organization, <a href="https://www.dharma-gates.org/" target="_blank">Dharma Gates</a>, arose from my friend group's desire to positively impact culture and wellness— which generously (without cost) offers immersions for young people in deep and authentic Buddhist meditation practice.                </p> 
                 <p>
-                  Since then I've explored many other kinds of contemplative practices. Each of the practices I offer today– Emotional Freedom Techniques (Tapping), Reiki and Energy Healing, Spiritual Counseling, Meditation, Yoga, Breathwork, and Sound Healing– have had a very positive impact on me. I offer what I believe in and have lived.                </p> 
+                  Since then I've explored many other kinds of contemplative practices. Each of the practices I offer today– Emotional Freedom Techniques (Tapping), Spiritual Counseling, Meditation, Yoga, Breathwork, and Sound Healing– have had a very positive impact on me. I offer what I believe in and have lived.                </p>
                 <p>
                   In April 2025, I felt ready to center my livelihood around what I already love doing—helping people and sharing my life and practice. The willingness to follow divine alignment and purpose was perhaps very obvious when it came to me! But to be fair, I wasn't fully ready before then. Then, once I made a confident commitment to step into this work, The Great Spirit sent me on a healing journey, which I believe purified me and prepared me to step more fully into service. I am continually learning and growing. That same year I certified in Reiki II, <a href="https://trainwithsonya.us/" target="_blank">EFT (Tapping)</a>, yoga, and pranayama. I feel aligned, grounded, and empowered to offer this work from a place of depth, stability, and clear intention.
                 </p>
@@ -177,14 +185,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section id="testimonials" className="testimonials-section section-light">
-        <div className="container">
-          <h2 className="subtitle-heading">Testimonials</h2>
-          <GoogleReviews />
-        </div>
-      </section>
-      
     </div>
   );
 };

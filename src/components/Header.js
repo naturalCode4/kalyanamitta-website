@@ -109,21 +109,21 @@ const Header = () => {
               
               <ul className={`dropdown-menu ${isAboutOpen ? 'show' : ''}`}>
                 <li>
-                  <Link 
-                    to="/about#about-adin" 
-                    className="dropdown-link" 
-                    onClick={(e) => handleNavClick(e, 'about-adin')}
-                  >
-                    About Adin
-                  </Link>
-                </li>
-                <li>
-                  <Link 
-                    to="/about#testimonials" 
-                    className="dropdown-link" 
+                  <Link
+                    to="/about#testimonials"
+                    className="dropdown-link"
                     onClick={(e) => handleNavClick(e, 'testimonials')}
                   >
                     Testimonials
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/about#about-adin"
+                    className="dropdown-link"
+                    onClick={(e) => handleNavClick(e, 'about-adin')}
+                  >
+                    About Adin
                   </Link>
                 </li>
               </ul>
@@ -150,7 +150,8 @@ const Header = () => {
 
               <ul className={`dropdown-menu ${isOfferingsOpen ? 'show' : ''}`}>
                 <li><Link to="/EFT-emotional-freedom-techniques" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>EFT</Link></li>
-                <li><Link to="/energy-work" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>Energy Healing</Link></li>
+                {/* Reiki / Energy Healing temporarily removed from nav — page still live at /energy-work for direct links */}
+                {/* <li><Link to="/energy-work" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>Energy Healing</Link></li> */}
                 <li><Link to="/spiritual-practice" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>Spiritual Counseling & Practices</Link></li>
               </ul>
             </li>

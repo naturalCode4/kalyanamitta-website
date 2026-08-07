@@ -5,18 +5,35 @@ export const offerings = [
     availability: 'Available in-person or virtual',
     content: "EFT is the single most effective healing tool I've found for resolving nearly any issue at the root — powerful, simple, gentle, and fast. It involves tapping acupoints on your own body while a practitioner skillfully guides you to heal and upgrade at the root of an issue or goal. It neutralizes and dissolves negative thought patterns and emotions, undesired conditioning, and restores access to your full energy and the ability to be authentic, aligned, and create the life you desire."
   },
-  {
-    id: 'energy-work',
-    title: 'Reiki Energy Healing',
-    availability: 'Available in-person only',
-    content: "Receive universal life force energy to optimize the body's natural bio-energy field. This promotes relaxation, vitality, emotional healing, connection, clarity, removes blockages and deficiencies, and more."
-  },
+  // Reiki / Energy Healing temporarily removed from the offerings grid — page still live at /energy-work for direct links
+  // {
+  //   id: 'energy-work',
+  //   title: 'Reiki Energy Healing',
+  //   availability: 'Available in-person only',
+  //   content: "Receive universal life force energy to optimize the body's natural bio-energy field. This promotes relaxation, vitality, emotional healing, connection, clarity, removes blockages and deficiencies, and more."
+  // },
   {
     id: 'spiritual-practice',
     title: 'Spiritual Counseling and Practices',
     availability: 'Available in-person or virtual',
     content: "Guidance, education, and heart-companionship on your spiritual life and path — addressing where you face challenges, where you're growing, and what's next. I also help you learn or deepen a practice — building a real, living relationship with it: meditation, breathwork, yoga, voice-based sound healing, prayer, ecstatic dance, or another entirely."
   },
+];
+
+export const gainsList = [
+  "Lighter, calmer, healthier, and regulated",
+  "Increased energy, focus, and creativity",
+  "Deeper self-love, self-respect, and self-acceptance",
+  "Exit the matrix of unwanted cultural and ancestral karma",
+  "Authenticity, authority, confidence, purpose, and your voice",
+  "Heal your inner child",
+  "Restored mental clarity and intuition",
+  "Higher emotional intelligence",
+  "Improved relationships",
+  "The ability to embody your values",
+  "Happiness, humor, and wisdom",
+  "Be deeply met and compassionately guided",
+  "Practices that stay with you, for life",
 ];
 
 export const helpList = [
@@ -27,7 +44,7 @@ export const helpList = [
   "Heal from childhood wounding– including issues stemming from growing up in a dysfunctional family / culture",
   "Heal from adult trauma– including difficult relationships/breakups and traumatic events (PTSD)",
   "Receive guidance and support in meditation, yoga, breathwork, and sound healing",
-  "Explore the nature of consciousness and reality. Practice and deepen moment-by-moment awareness",
+  "Awaken more deeply to the nature of consciousness and reality.",
   "Cultivate spiritual insight, connection, and growth– enriched by spiritual traditions and mind-body modalities",
   "Enliven your connection to the energy body, intuition, and sensitivity– enriched by mind-body modalities",
   "Actualize your gifts, purpose, voice, and sovereignty. Stop being controlled by interfering cultural and inherited beliefs",

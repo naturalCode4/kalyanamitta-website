@@ -120,7 +120,7 @@ const TapIntoFreedom = () => {
     },
     {
       key: 'supported',
-      text: 'Be deeply met, compassionately supported, and guided',
+      text: 'Be deeply met and compassionately guided',
       detail: 'Three months held with care the whole way, safe to bring anything.',
     },
     {

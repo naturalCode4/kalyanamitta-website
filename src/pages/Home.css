@@ -26,6 +26,13 @@
   margin: 0 auto;
 }
 
+/* Widened so the manifesto boxes below (max-width up to 1300px) can
+   actually stretch toward the screen edges instead of being capped by
+   the site-wide .container's 1200px max-width. */
+.hero .container {
+  max-width: 1600px;
+}
+
 .hero h1 {
   font-size: 4.5rem;
   margin-bottom: 4rem;
@@ -35,10 +42,29 @@
   font-family: papyrus, 'Bodoni Moda', serif;
 }
 
+.hero-underline {
+  text-decoration: underline;
+  text-decoration-color: #f4d03f;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px;
+}
+
 .hero-subtitle {
-  font-size: 1.3rem;
-  opacity: 0.95;
-  line-height: 1.6;
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1.4;
+  max-width: 900px;
+  margin: -1.5rem auto 3rem;
+  color: #d4af37;
+}
+
+.hero-polarize {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #d4af37;
+  max-width: 750px;
+  margin: 2.5rem auto 0;
+  line-height: 1.5;
 }
 
 .hero-buttons {
@@ -46,6 +72,7 @@
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 2.5rem;
 }
 
 /* First Session Section - Override shared styles */
@@ -632,13 +659,34 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero {
-    padding: 1.5rem 0 3rem;
+    padding: 3.5rem 0 3rem;
   }
-  
+
   .hero h1 {
     font-size: 2.75rem;
     margin-bottom: 2rem;
-    margin-top: -1rem;
+    margin-top: 0;
+  }
+
+  .hero-subtitle {
+    font-size: 1.4rem;
+    margin-top: -0.5rem;
+  }
+
+  .manifesto-item {
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  /* Flex items default to min-width: auto, which refuses to shrink below
+     the text's unwrapped width — without this the longer boxes overflow
+     the screen instead of wrapping. */
+  .manifesto-item .manifesto-text {
+    min-width: 0;
+    max-width: 100%;
   }
 
   .section-rainbow .section-title.subtitle-heading,
@@ -795,7 +843,11 @@
 
 .grid-cards {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  /* auto-fit + justify-content:center instead of a fixed 3 columns, so the
+     grid stays centered whether there are 2 offering cards or 3 (Reiki is
+     currently commented out in src/data/offerings.js) */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 380px));
+  justify-content: center;
   gap: 2rem;
   margin-top: 2rem
 }
@@ -947,7 +999,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 800px;
+  max-width: 1400px;
+  width: 100%;
   margin: 2rem auto 0;
   position: relative;
 }
@@ -982,7 +1035,7 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, border-color 0.3s ease;
   width: 100%;
-  max-width: 625px;
+  max-width: 1300px;
 }
 
 .manifesto-item:hover {
@@ -1014,11 +1067,11 @@
 
 .manifesto-text {
   font-family: 'Playfair Display', serif; /* Elegant serif font */
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   color: #ffffff;
   font-weight: 600;
   font-style: italic;
-  line-height: 1.6;
+  line-height: 1.5;
   letter-spacing: 0.5px;
 }
 
@@ -1052,9 +1105,9 @@
   }
   
   .manifesto-text {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
-  
+
   .manifesto-connector {
     height: 25px;
   }
@@ -1084,6 +1137,60 @@
   /* Show on Mobile */
   .mobile-only {
     display: block;
+  }
+}
+
+/* --- "What This Work Does" collapsible lists, side by side --- */
+.help-lists-grid {
+  display: grid;
+  /* minmax(0, 1fr), not plain 1fr — grid tracks default to a minimum of
+     "auto" (the content's min-content width), so a wide, unshrinkable
+     carousel strip inside a column would otherwise force that column,
+     the grid, and the whole page wider than the viewport instead of
+     scrolling internally. */
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0 3rem;
+  align-items: start;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.help-list-block {
+  min-width: 0;
+  border-top: 1px solid rgba(212, 175, 55, 0.3);
+  padding: 1.5rem 0;
+}
+
+.help-list-header {
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #f0f0f0;
+}
+
+.help-list-header .triangle {
+  color: #d4af37;
+  flex-shrink: 0;
+}
+
+.help-list-subtitle {
+  text-align: center;
+  max-width: 600px;
+  margin: 1.5rem auto 0;
+  color: #d1d1d1;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .help-lists-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .help-list-block:last-child {
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
   }
 }
 
@@ -1286,7 +1393,15 @@
 
 /* Strip Wrapper Tightening */
 .carousel-strip-wrapper {
-  flex: 1; 
+  flex: 1;
+  /* Without this, flex items default to min-width: auto — refusing to
+     shrink below the strip's full unwrapped content width. That's harmless
+     when the carousel has the whole section to itself, but once two of
+     them sit side by side in a half-width grid column, the wrapper (and
+     everything above it: the grid column, .help-lists-grid, the page)
+     gets forced wider than the viewport instead of the strip just
+     scrolling internally. */
+  min-width: 0;
   width: 100%; /* Ensure it fills the flex item */
   overflow: hidden; /* Contains the strip */
   /* Remove margins that might shift it */

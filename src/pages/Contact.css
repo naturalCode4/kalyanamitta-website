@@ -122,6 +122,7 @@
 }
 
 .email-form input:focus,
+.email-form select:focus,
 .email-form textarea:focus {
   outline: none;
   border: 2px solid #d4af37;
@@ -129,6 +130,7 @@
 }
 
 .email-form input,
+.email-form select,
 .email-form textarea {
   width: 100%;
   padding: 0.75rem;
@@ -139,12 +141,17 @@
   box-sizing: border-box; /* Ensures padding and border are included in the element's dimensions */
 }
 
-.email-form input {
+.email-form input,
+.email-form select {
   height: 3rem;
 }
 
 .email-form textarea {
   resize: none;
+}
+
+.email-form .subject-other-input {
+  margin-top: 0.75rem;
 }
 
 /* Match the Send button style to the Home page buttons */

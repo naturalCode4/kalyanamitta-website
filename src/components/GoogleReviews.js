@@ -10,6 +10,15 @@ import './GoogleReviews.css';
  * @property {string} [relative_time_description]
  */
 
+// Used only when the live Google Places total isn't available (local dev
+// without an API key, or a failed fetch) — production always shows the
+// real-time count from the API. Last confirmed against the live listing.
+const FALLBACK_TOTAL_REVIEWS = 16;
+
+// Same destination used both for the "See X reviews" link up top and the
+// "More reviews here" link at the bottom.
+const GOOGLE_REVIEWS_URL = "https://www.google.com/search?sca_esv=51ce83e25ec719d4&sxsrf=AE3TifNlFbq4AK3zJQnfZYpPXSerqo2omw:1767397300592&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-EwyJXTuXVS5aEX0JW1xEL5DvYFwgR7sVZ45kd6I9Bl_SZLxjblPSQzPdEpvH4WxiKlaTGcjhJB0kmY_gPUsN3WHWFsDQ&q=Healing+On+Tap+Reviews&sa=X&ved=2ahUKEwjHn52ChO6RAxWFGlkFHfaOCUQQ0bkNegQIHxAE&biw=1680&bih=962&dpr=2";
+
 const GoogleReviews = () => {
   /** @type {[Review[], function]} */
   const [reviews, setReviews] = useState([]);
@@ -17,6 +26,8 @@ const GoogleReviews = () => {
   const [error, setError] = useState(null);
   /** @type {[number|null, function]} */
   const [overallRating, setOverallRating] = useState(null);
+  /** @type {[number|null, function]} */
+  const [totalReviews, setTotalReviews] = useState(null);
   // Track expanded state for each review
   const [expandedReviews, setExpandedReviews] = useState({});
 
@@ -47,6 +58,7 @@ const GoogleReviews = () => {
           if (isDevelopment && hostname === 'localhost' && !process.env.REACT_APP_GOOGLE_REVIEWS_API_URL) {
             if (isMounted) { // Check if mounted
               setReviews(getFallbackReviews());
+              setTotalReviews(FALLBACK_TOTAL_REVIEWS);
               setLoading(false);
             }
             return;
@@ -76,10 +88,12 @@ const GoogleReviews = () => {
             if (data.reviews && data.reviews.length > 0) {
               // 3. Slice the array to ensure we don't accidentally get a massive list if the API returns too many
               // and strictly REPLACE the state, never append.
-              setReviews(data.reviews.slice(0, 5)); 
+              setReviews(data.reviews.slice(0, 5));
               setOverallRating(data.overall_rating);
+              setTotalReviews(data.total_reviews ?? null);
             } else {
               setReviews(getFallbackReviews());
+              setTotalReviews(FALLBACK_TOTAL_REVIEWS);
             }
             setLoading(false);
           }
@@ -87,6 +101,7 @@ const GoogleReviews = () => {
           console.error('Error fetching Google Reviews:', err);
           if (isMounted) {
             setReviews(getFallbackReviews());
+            setTotalReviews(FALLBACK_TOTAL_REVIEWS);
             setError(err.message);
             setLoading(false);
           }
@@ -191,6 +206,16 @@ const GoogleReviews = () => {
           <p>Note: Using cached reviews. {error}</p>
         </div>
       )}
+      {totalReviews !== null && totalReviews !== undefined && (
+        <a
+          href={GOOGLE_REVIEWS_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="see-all-reviews-link"
+        >
+          See {totalReviews} 5-star reviews →
+        </a>
+      )}
       <div className="reviews-grid">
         {reviews.map((review, index) => {
           const isExpanded = expandedReviews[index];
@@ -225,7 +250,7 @@ const GoogleReviews = () => {
       </div>
       <div className="google-reviews-footer">
         <a
-          href="https://www.google.com/search?sca_esv=51ce83e25ec719d4&sxsrf=AE3TifNlFbq4AK3zJQnfZYpPXSerqo2omw:1767397300592&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-EwyJXTuXVS5aEX0JW1xEL5DvYFwgR7sVZ45kd6I9Bl_SZLxjblPSQzPdEpvH4WxiKlaTGcjhJB0kmY_gPUsN3WHWFsDQ&q=Healing+On+Tap+Reviews&sa=X&ved=2ahUKEwjHn52ChO6RAxWFGlkFHfaOCUQQ0bkNegQIHxAE&biw=1680&bih=962&dpr=2"
+          href={GOOGLE_REVIEWS_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="view-all-reviews-btn btn btn-outline"

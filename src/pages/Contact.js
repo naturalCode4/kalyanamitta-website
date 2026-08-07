@@ -6,18 +6,28 @@ import CustomAlert from '../components/CustomAlert'; // Import the custom alert
 import './Contact.css';
 import { Helmet } from 'react-helmet'; 
 
+const SUBJECT_OPTIONS = [
+  'Schedule a 30-minute Free Consultation',
+  'Question about Offerings and Programs',
+  'Invite Adin to Lead An Event',
+  'Other',
+];
+
 const Contact = () => {
   const [alertMessage, setAlertMessage] = useState('');
   const [showAlert, setShowAlert] = useState(false);
+  const [subjectChoice, setSubjectChoice] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const formData = new FormData(e.target);
+    const rawSubject = formData.get('subject');
+    const subject = rawSubject === 'Other' ? formData.get('customSubject') : rawSubject;
     const data = {
       name: formData.get('name'),
       email: formData.get('email'),
-      subject: formData.get('subject'), // Add this line
+      subject,
       message: formData.get('message')
     };
 
@@ -28,6 +38,7 @@ const Contact = () => {
 
     if (result.success) {
       e.target.reset(); // Reset the form after successful submission
+      setSubjectChoice(''); // Native reset() doesn't touch this controlled select
     }
   };
 
@@ -39,9 +50,9 @@ const Contact = () => {
     <div className="contact">
       <Helmet>
         <title>Book a Session or Get In Touch | Healing On Tap</title>
-        <meta name="description" content="Transform yourself and heal. Get started with EFT, Reiki Energy Healing, or Spiritual Counseling. Get in Touch" />
+        <meta name="description" content="Transform yourself and heal. Get started with EFT or Spiritual Counseling. Get in Touch" />
         <meta property="og:title" content="Healing On Tap | Book a Session or Get In Touch" />
-        <meta property="og:description" content="Transform yourself and heal. Get started with EFT, Reiki Energy Healing, or Spiritual Counseling. Get in Touch" />
+        <meta property="og:description" content="Transform yourself and heal. Get started with EFT or Spiritual Counseling. Get in Touch" />
         <meta property="og:url" content="https://healing-on-tap.com/contact" />
       </Helmet>
       {/* Combined Rainbow Section */}
@@ -64,14 +75,34 @@ const Contact = () => {
                 <label htmlFor="email">Your Email</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required />
               </div>
-              {/* Add Subject Field */}
+              {/* Subject Field */}
               <div className="form-group">
                 <label htmlFor="subject">Subject</label>
-                <input type="text" id="subject" name="subject" placeholder="Enter the Subject" />
+                <select
+                  id="subject"
+                  name="subject"
+                  value={subjectChoice}
+                  onChange={(e) => setSubjectChoice(e.target.value)}
+                  required
+                >
+                  <option value="" disabled>Select a subject</option>
+                  {SUBJECT_OPTIONS.map((option) => (
+                    <option key={option} value={option}>{option}</option>
+                  ))}
+                </select>
+                {subjectChoice === 'Other' && (
+                  <input
+                    type="text"
+                    name="customSubject"
+                    placeholder="Please specify"
+                    className="subject-other-input"
+                    required
+                  />
+                )}
               </div>
               <div className="form-group">
                 <label htmlFor="message">Your Message</label>
-                <textarea id="message" name="message" placeholder="Enter your message" rows={6} required></textarea>
+                <textarea id="message" name="message" placeholder="Your message" rows={6} required></textarea>
               </div>
               <button type="submit" className="btn btn-small">Send</button>
             </form>

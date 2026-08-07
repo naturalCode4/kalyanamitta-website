@@ -227,8 +227,8 @@ const EFT = () => {
       {/* CTA Section */}
       <Section 
         variant="dark" 
-        title="Ready to Begin?"
-        subtitle="When you're ready, I'm here. Book a session, schedule a free 30-minute consultation, or reach out—I'm happy to answer any questions."
+        title="Let's Begin →"
+        subtitle="This is your invitation to inner and outer freedom."
       >
         <CTA />
       </Section>

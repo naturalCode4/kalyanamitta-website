@@ -22,8 +22,7 @@ const CalendlyEmbed = () => {
   return (
     <div className="calendly-embed-container">
       <div className="calendly-header">
-        <h2 className="subtitle-heading">Get a Session</h2>
-        <p>Sessions are held virtually or in my current location (Aguascalientes, MX)</p>
+        <h2 className="subtitle-heading">Book a Session</h2>
       </div>
       <div className="calendly-content">
         <div 
@@ -36,13 +35,15 @@ const CalendlyEmbed = () => {
           <Link to="/EFT-emotional-freedom-techniques" className="btn btn-outline btn-small" target="_blank">
             Learn more about EFT (Tapping)
           </Link>
-          <Link to="/energy-work" className="btn btn-outline btn-small" target="_blank">
+          {/* Reiki / Energy Healing temporarily removed — page still live at /energy-work for direct links */}
+          {/* <Link to="/energy-work" className="btn btn-outline btn-small" target="_blank">
             Learn more about Reiki / Energy Healing
-          </Link>
-          <Link to="/spiritual-practice" className="btn btn-outline btn-small" target="_blank">
+          </Link> */}
+<Link to="/spiritual-practice" className="btn btn-outline btn-small" target="_blank">
             Learn more about Spiritual Counseling
           </Link>
         </div>
+        <p className="calendly-footer-note">Sessions are held virtually or in my current location (Aguascalientes, MX)</p>
     </div>
   );
 };

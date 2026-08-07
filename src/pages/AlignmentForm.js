@@ -115,7 +115,7 @@ const BENEFITS = [
   },
   {
     key: 'supported',
-    text: 'Be deeply met, compassionately supported, and guided',
+    text: 'Be deeply met and compassionately guided',
     detail: 'Three months held with care the whole way, safe to bring anything.',
   },
   {
@@ -158,7 +158,7 @@ const MORE_ABOUT = [
     key: 'ongoingSupport',
     title: 'More on ongoing support',
     body: (
-      <p>Beyond the weekly sessions themselves, I am availability for my clients throughout the whole three months. That includes being reachable by email between sessions — typically I respond to 1 email a week — for guidance, presence, sharing, and integration support as things come up for you. We'll also have Weekly cohort circles for sharing, connection, and tapping</p>
+      <p>Beyond the weekly sessions themselves, I maintain availability for my clients throughout the whole three months. That includes being reachable by email between sessions — typically I respond to 1 email a week — for guidance, presence, sharing, and integration support as things come up for you. We'll also have Weekly cohort circles for sharing, connection, and tapping</p>
     ),
   },
 ];
@@ -556,7 +556,7 @@ const AlignmentForm = () => {
               rest of the page, from the opening tagline to the last bullet. */}
           <section className="af-investment">
             <div className="container">
-              <p className="af-tagline af-tagline-lg" style={hueVars(28, { light: 82 })}>This is an investment that can <u className="af-underline">completely transform your life</u> and <u className="af-underline">deeply resolve</u> huge amounts of undesired pain– for good.</p>
+              <p className="af-tagline af-tagline-lg" style={hueVars(28, { light: 82 })}>This is an investment that can <u className="af-underline">completely transform your life</u> and <u className="af-underline">deeply resolve</u> huge amounts of undesired pain – for good.</p>
               <p className="af-tagline af-tagline-lg" style={hueVars(32, { light: 82 })}>Throughout our time, you'll enjoy palpable <u className="af-underline">steps of improvement</u> along the way.</p>
               <p className="af-tagline af-tagline-lg" style={hueVars(35, { light: 82 })}>You'll obtain <u className="af-underline">excellent tools</u> to continue your success and healing.</p>
               <ul className="list-bullets af-investment-list">

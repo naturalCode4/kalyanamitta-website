@@ -1,10 +1,11 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Section from '../components/Section';
 import CTA from '../components/CTA';
 import ServiceCard from '../components/ServiceCard';
-import { offerings, helpList } from '../data/offerings';
+import HelpCarousel from '../components/HelpCarousel';
+import { offerings, helpList, gainsList } from '../data/offerings';
 import './Home.css';
 import pic2 from '../assets/pic2.jpg';
 import pic5 from '../assets/pic5.jpg';
@@ -12,10 +13,12 @@ import { Helmet } from 'react-helmet';
 
 const Home = () => {
   const { hash } = useLocation();
-  
-  // -- CAROUSEL STATE --
-  const [activeIndex, setActiveIndex] = useState(0);
-  const scrollContainerRef = useRef(null);
+
+  // -- "What This Work Does" collapsible lists --
+  const [openHelpLists, setOpenHelpLists] = useState({ gains: true, help: true });
+  const toggleHelpList = (key) => {
+    setOpenHelpLists(prev => ({ ...prev, [key]: !prev[key] }));
+  };
 
   // Handle scroll to hash
   useEffect(() => {
@@ -34,81 +37,48 @@ const Home = () => {
     }
   }, [hash]);
 
-  // -- CAROUSEL LOGIC --
-  /* src/pages/Home.js */
-
-  // -- CAROUSEL LOGIC --
-  useEffect(() => {
-    if (scrollContainerRef.current) {
-      const container = scrollContainerRef.current;
-      const activeItem = container.children[activeIndex];
-      
-      if (activeItem) {
-        // CALCULATE CENTER POSITION
-        // We use offsetLeft relative to the container scroll view
-        const itemCenter = activeItem.offsetLeft + (activeItem.offsetWidth / 2);
-        const containerCenter = container.clientWidth / 2;
-        
-        // Target scroll = Item Center - Half the Screen Width
-        const targetScroll = itemCenter - containerCenter;
-
-        container.scrollTo({
-          left: targetScroll,
-          behavior: 'smooth'
-        });
-      }
-    }
-  }, [activeIndex]);
-
-  // 2. Keyboard Navigation
-  useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (e.key === 'ArrowLeft') {
-        e.preventDefault(); // STOP browser from scrolling natively
-        scrollLeft();
-      } else if (e.key === 'ArrowRight') {
-        e.preventDefault(); // STOP browser from scrolling natively
-        scrollRight();
-      }
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, []);
-
-  const scrollLeft = () => {
-    setActiveIndex(prev => (prev > 0 ? prev - 1 : helpList.length - 1));
-  };
-
-  const scrollRight = () => {
-    setActiveIndex(prev => (prev < helpList.length - 1 ? prev + 1 : 0));
-  };
-
   return (
     <div className="home">
       <Helmet>
         <title>Healing On Tap | Integrative Healing & Guidance</title>
-        <meta name="description" content="Transform your life with EFT Tapping, Reiki Energy Healing, and Spiritual Counseling." />
+        <meta name="description" content="Transform your life with EFT Tapping and Spiritual Counseling." />
         <meta property="og:title" content="Healing On Tap | Integrative Healing & Guidance" />
-        <meta property="og:description" content="Transform your life with EFT Tapping, Reiki Energy Healing, and Spiritual Counseling." />
+        <meta property="og:description" content="Transform your life with EFT Tapping and Spiritual Counseling." />
       </Helmet>
       {/* Hero Section */}
       <section className="hero">
         <div className="container">
           <div className="hero-content">
-            <h1>Healing On Tap</h1>
+            <h1><u className="hero-underline">Healing On Tap</u></h1>
+
+            <p className="hero-subtitle">
+              This is where you gain real, lasting freedom.
+            </p>
+            <p className="hero-subtitle">
+              <em>You've made it.</em>
+            </p>
 
             <div className="hero-manifesto">
               <div className="manifesto-item">
-                <span className="manifesto-text">Healing and love <u>are</u> your nature!<br className="desktop-break" />Dissolve what limits you.</span>
+                <span className="manifesto-text">Become calm, happy, free, and empowered – as your baseline.<br className="desktop-break" />Unmute your soul.</span>
               </div>
               <div className="manifesto-connector"></div>
               <div className="manifesto-item">
-                <span className="manifesto-text">Restore a healthy nervous system and mind,<br className="desktop-break" />Liberate authenticity and connection.</span>   
+                <span className="manifesto-text">Transform at the deepest root — not just the surface.<br className="desktop-break" />Gain the life you desire.</span>
               </div>
               <div className="manifesto-connector"></div>
               <div className="manifesto-item">
-                <span className="manifesto-text">Unmute your soul,<br className="desktop-break" />Remember your power and divinity.</span>
+                <span className="manifesto-text">It's time to get all your life-force back,<br className="desktop-break" />and dissolve the pain you never chose.</span>
               </div>
+            </div>
+
+            <p className="hero-polarize">
+              This is the real thing. This is your invitation. So, are you ready?
+            </p>
+
+            <div className="hero-buttons">
+              <Link to="/tap-into-freedom" className="btn">Apply for the Tap Into Freedom Program →</Link>
+              <Link to="/contact#booking" className="btn btn-outline">Book Your Session →</Link>
             </div>
 
           </div>
@@ -127,7 +97,7 @@ const Home = () => {
             <p>This work offers profound, lasting transformation — reaching into every part of your life, inner and outer. <b>Whatever it is you're carrying, this work can shift it.</b></p>
             <p>This is where you <b>put down the heavy baggage</b> — the old fear, unprocessed pain, negative emotions, and limiting beliefs and conditioning you never chose. Here, at the deepest, root level, you restore your <b>life-force</b> — earning the <b>freedom to live calm, happy, free, and empowered.</b></p>
             <p>At your core, you are <em>already</em> <b></b>whole, inherently <b>loving</b>, <b>wise</b>, <b>peaceful</b>, with the <b>innate capacity for healing</b>. This work clears what's been in the way, and activates these innate qualities so they can <b>fully bloom.</b></p>
-            <p>The primary methods we use are <b>EFT (Emotional Freedom Techniques, aka Tapping)</b>, <b>Reiki Energy Healing</b>, and <b>Spiritual Counseling and Practices</b> — including <b>breathwork, yoga, sound healing, prayer, meditation, and ecstatic dance</b>.</p>
+            <p>The primary methods we use are <b>EFT (Emotional Freedom Techniques, aka Tapping)</b> and <b>Spiritual Counseling and Practices</b> — including <b>breathwork, yoga, sound healing, prayer, meditation, and ecstatic dance</b>.</p>
             <p>Some shifts will happen wonderfully <b>fast</b>, almost like <b>magic.</b> Others take patience. Either way, when it moves, it moves <b>palpably and profoundly</b> — not just on the surface.</p>
             <p>Grounded in intuition, science, essential spiritual teachings, deep training and experience, and love and wisdom, this guidance meets you where you are, and unfolds at the depth you're ready for. <b>I got you.</b> <em>All it takes is your willingness.</em></p>
           </div>
@@ -164,67 +134,35 @@ const Home = () => {
         </div>
       </Section>
 
-      {/* Help List Section - CAROUSEL */}
+      {/* Help List Section - two collapsible carousels, side by side */}
       <Section
         id="what-we-can-do-together"
-        variant="dark" 
-        title="Some of What I Can Help You Do ..."
-        subtitle="These are some of my core areas of specialization. The beautiful thing is that if you grow in one area, you'll often find the aspects of your life alchemize and heal together"
+        variant="dark"
+        title="Results of This Work"
+        subtitle=""
       >
-        <div className="carousel-container">
-
-          {/* Main Featured Card */}
-          <div className="featured-display">
-            <div className="featured-content">
-              <h3>{helpList[activeIndex]}</h3>
+        <div className="help-lists-grid">
+          <div className="help-list-block">
+            <div className="collapsible-header help-list-header" onClick={() => toggleHelpList('gains')}>
+              <span className={`triangle ${openHelpLists.gains ? 'open' : ''}`}></span>
+              What You'll Gain
+            </div>
+            <div className={`collapsible-content ${openHelpLists.gains ? 'open' : ''}`}>
+              <p className="help-list-subtitle">These are some of the lasting shifts you're likely to experience — subtly or drastically — through this work.</p>
+              <HelpCarousel list={gainsList} />
             </div>
           </div>
 
-          {/* Navigation Area (Arrows + Strip) */}
-          <div className="carousel-navigation-area">
-            
-            {/* Left Button */}
-            <button 
-              className="nav-btn prev-btn desktop-only" 
-              onClick={scrollLeft}
-              aria-label="Previous Item"
-            >
-              {/* Thicker Entity or SVG */}
-              <strong>&#10094;</strong> 
-            </button>
-
-            {/* Navigation Strip */}
-            <div className="carousel-strip-wrapper">
-              <div className="strip-fade-left"></div>
-              <div className="strip-fade-right"></div>
-
-              <div className="carousel-strip" ref={scrollContainerRef}>
-                {helpList.map((item, index) => (
-                  <div 
-                    key={index} 
-                    className={`strip-item ${index === activeIndex ? 'active' : ''}`}
-                    onClick={() => setActiveIndex(index)}
-                  >
-                    <div className="mini-card">
-                      <span className="mini-text">{item}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
+          <div className="help-list-block">
+            <div className="collapsible-header help-list-header" onClick={() => toggleHelpList('help')}>
+              <span className={`triangle ${openHelpLists.help ? 'open' : ''}`}></span>
+              What I Do Best
             </div>
-
-            {/* Right Button */}
-            <button 
-              className="nav-btn next-btn desktop-only" 
-              onClick={scrollRight}
-              aria-label="Next Item"
-            >
-              <strong>&#10095;</strong>
-            </button>
-
+            <div className={`collapsible-content ${openHelpLists.help ? 'open' : ''}`}>
+              <p className="help-list-subtitle">These are my core areas of specialization, but I've rarely met a thing I couldn't help shift. The beautiful thing is that if you grow in one area, you'll often find the aspects of your life alchemize and heal together</p>
+              <HelpCarousel list={helpList} />
+            </div>
           </div>
-          
-          <p className="carousel-hint"><em>Swipe to explore</em></p>
         </div>
       </Section>
 
@@ -270,8 +208,8 @@ const Home = () => {
       {/* CTA Section */}
       <Section 
         variant="dark" 
-        title="Ready to Begin?"
-        subtitle="When you're ready, I'm here. Book a session, schedule a free 30-minute consultation, or reach out—I'm happy to answer any questions."
+        title="Let's Begin →"
+        subtitle="This is your invitation to inner and outer freedom."
       >
         <CTA />
       </Section>

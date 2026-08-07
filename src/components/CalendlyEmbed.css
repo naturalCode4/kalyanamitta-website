@@ -73,6 +73,17 @@
   margin: 0 auto;
 }
 
+.calendly-footer-note {
+  font-size: 1rem;
+  color: #b8b8b8;
+  max-width: 700px;
+  /* !important: same .section-rainbow leak as .calendly-header p above —
+     this note lives outside .calendly-header now, so it needs its own
+     override. */
+  text-align: center !important;
+  margin: 1.5rem auto 0;
+}
+
 .offering-learn-more-buttons {
   display: flex;
   flex-wrap: wrap;

@@ -32,7 +32,7 @@ export default async function handler(req, res) {
     }
 
     // Fetch place details including reviews
-    const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${PLACE_ID}&fields=name,rating,reviews&key=${GOOGLE_PLACES_API_KEY}`;
+    const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${PLACE_ID}&fields=name,rating,user_ratings_total,reviews&key=${GOOGLE_PLACES_API_KEY}`;
 
     const response = await fetch(url);
     const data = await response.json();
@@ -58,6 +58,7 @@ export default async function handler(req, res) {
       reviews,
       place_name: data.result.name,
       overall_rating: data.result.rating,
+      total_reviews: data.result.user_ratings_total,
     });
   } catch (error) {
     console.error('Error fetching Google Reviews:', error);

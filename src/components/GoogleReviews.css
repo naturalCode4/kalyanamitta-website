@@ -339,6 +339,20 @@
   border-top: 1px solid #e0e0e0;
 }
 
+.see-all-reviews-link {
+  display: block;
+  text-align: center;
+  color: #d4af37;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: underline;
+  margin: -1.5rem auto 2.5rem;
+}
+
+.see-all-reviews-link:hover {
+  color: #f4d03f;
+}
+
 /* Style the "View all reviews" button to match "Get in Touch" style */
 .view-all-reviews-btn {
   background: transparent !important;
