@@ -167,6 +167,13 @@
   margin: 0 auto; /* Center it */
 }
 
+/* "About Healing On Tap" photo only — bigger than the default .photo-container
+   size above, without affecting the "About Adin" section which shares the
+   same base classes. */
+.section-rainbow .hot-photo-container {
+  max-width: 480px;
+}
+
 .about-image {
   width: 100%;
   height: auto; /* Maintain aspect ratio */

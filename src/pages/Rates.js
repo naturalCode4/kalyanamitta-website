@@ -160,7 +160,7 @@ const Rates = () => {
                 <br></br>
                 {/* <p className="flexible-label">90 minutes: $80-250</p> */}
                 <p className="subtitle">I offer flexible pricing so that this work is accessible. Choose an amount that feels aligned—honoring this work and what's sustainable for you.</p>
-                <p className="subtitle">I offer these rates because I am passionate about this powerful work and desire for it to be shared it widely. There is a huge wealth disparity in the modern world. For some, the standard rate is an easy investment, and for others its basic expenses they can't forego.</p>
+                <p className="subtitle">I offer these rates because I am passionate about this powerful work and desire for it to be shared widely. There is a huge wealth disparity in the modern world. For many, the standard rate or more is an easy investment, and others can use the support.</p>
                 <p className="subtitle">For those with financial ease, your generosity honors the exchange of energy between us, allows me to thrive doing what I love, supports this work in the world, and makes it accessible to others.</p>
               </div>
             </div>

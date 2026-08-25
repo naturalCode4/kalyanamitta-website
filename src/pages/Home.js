@@ -8,7 +8,7 @@ import HelpCarousel from '../components/HelpCarousel';
 import { offerings, helpList, gainsList } from '../data/offerings';
 import './Home.css';
 import pic2 from '../assets/pic2.jpg';
-import pic5 from '../assets/pic5.jpg';
+import pic17 from '../assets/pic17.jpg';
 import { Helmet } from 'react-helmet';
 
 const Home = () => {
@@ -101,12 +101,12 @@ const Home = () => {
             <p>Some shifts will happen wonderfully <b>fast</b>, almost like <b>magic.</b> Others take patience. Either way, when it moves, it moves <b>palpably and profoundly</b> — not just on the surface.</p>
             <p>Grounded in intuition, science, essential spiritual teachings, deep training and experience, and love and wisdom, this guidance meets you where you are, and unfolds at the depth you're ready for. <b>I got you.</b> <em>All it takes is your willingness.</em></p>
           </div>
-          <div className="about-photos">
-            <div className="photo-container">
-              <img 
+          <div className="about-photos hot-about-photos">
+            <div className="photo-container hot-photo-container">
+              <img
                 src={pic2}
-                alt="Healing On Tap Pic" 
-                className="about-image" 
+                alt="Healing On Tap Pic"
+                className="about-image"
               />
             </div>
           </div>
@@ -181,12 +181,11 @@ const Home = () => {
           
           <div className="about-photos">
             <div className="photo-container">
-              <img 
-                src={pic5}
-                alt="Adin Portrait" 
+              <img
+                src={pic17}
+                alt="Adin outdoors"
                 className="about-image"
               />
-              {/* <p className="photo-credit">Sarah Bork Hamilton photography. License coming soon.</p> */}
             </div>
           </div>
           

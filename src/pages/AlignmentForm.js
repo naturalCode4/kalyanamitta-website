@@ -158,7 +158,11 @@ const MORE_ABOUT = [
     key: 'ongoingSupport',
     title: 'More on ongoing support',
     body: (
-      <p>Beyond the weekly sessions themselves, I maintain availability for my clients throughout the whole three months. That includes being reachable by email between sessions — typically I respond to 1 email a week — for guidance, presence, sharing, and integration support as things come up for you. We'll also have Weekly cohort circles for sharing, connection, and tapping</p>
+      <>
+        <p>Direct email access with Adin, for check-ins and ongoing support and guidance between sessions to keep you on track.</p>
+        <p>Beyond the weekly sessions themselves, I maintain availability for my clients throughout the whole three months. That includes being reachable by email between sessions — typically I respond to 1 or 2 emails a week — for guidance, presence, sharing, and integration support as things come up for you.</p>
+        {/* Cohort experience temporarily removed: "We'll also have Weekly cohort circles for sharing, connection, and tapping." */}
+      </>
     ),
   },
 ];
@@ -560,11 +564,14 @@ const AlignmentForm = () => {
               <p className="af-tagline af-tagline-lg" style={hueVars(32, { light: 82 })}>Throughout our time, you'll enjoy palpable <u className="af-underline">steps of improvement</u> along the way.</p>
               <p className="af-tagline af-tagline-lg" style={hueVars(35, { light: 82 })}>You'll obtain <u className="af-underline">excellent tools</u> to continue your success and healing.</p>
               <ul className="list-bullets af-investment-list">
-                <li style={hueVars(39, { light: 82 })}>A 3-month container of <u className="af-underline">profound healing and upgrades</u> with my <u className="af-underline">ongoing support.</u></li>
+                <li style={hueVars(39, { light: 82 })}>A 3-month container of <u className="af-underline">profound healing and upgrades</u>. Become <u className="af-underline">calm, happy, free, and empowered as your baseline</u>, dissolve pain that's been quietly running your life, and restore your <u className="af-underline">freedom.</u></li>
                 <li style={hueVars(42, { light: 82 })}>Twelve potent 90-minute 1-on-1 <u className="af-underline">EFT &amp; Coaching sessions</u> with Adin. <em>EFT is the single most effective healing tool</em> I've found for resolving nearly any issue at the root. Powerful, simple, gentle, fast, and versatile.</li>
+                <li style={hueVars(39, { light: 82 })}>Direct email access with Adin, for check-ins and guidance between sessions to keep you on track</li>
                 <li style={hueVars(46, { light: 82 })}>Gain proficiency in using the powerful modality of <u className="af-underline">EFT on yourself.</u></li>
                 <li style={hueVars(49, { light: 82 })}>Cultivate a <u className="af-underline">spiritual practice</u> that's genuinely yours and deeply supports your life.</li>
-                <li style={hueVars(53, { light: 82 })}>Weekly <u className="af-underline">cohort circles</u> for sharing, connection, and tapping (when we have enough people).</li>
+                {/* Cohort experience temporarily removed
+                <li style={hueVars(53, { light: 82 })}>Weekly <u className="af-underline">cohort circles</u> for sharing, connection, and tapping.</li>
+                */}
               </ul>
             </div>
           </section>

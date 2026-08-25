@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './TapIntoFreedom.css';
 import { Helmet } from 'react-helmet';
 import pic10 from '../assets/pic10.jpg';
+import pic17 from '../assets/pic17.jpg';
 
 // Every "Fill out the Alignment Form" CTA on this page reads from this one
 // constant.
@@ -323,11 +324,14 @@ const TapIntoFreedom = () => {
 
               <h3 className="tif-gold-heading">How do we create this powerful shift?</h3>
               <ul className="list-bullets tif-method-list">
-                <li>A 3-month container of <strong>transformative healing and upgrades</strong>. You'll have me in your corner the whole way with <strong>ongoing support.</strong></li>
+                <li>A 3-month container of <strong>transformative healing and upgrades</strong>.</li>
+                <li>Direct email access with Adin, for check-ins and <strong>ongoing support</strong> and guidance between sessions to keep you on track.</li>
                 <li>Twelve potent <strong>90-minute 1-on-1 EFT</strong> & Coaching sessions with Adin.</li>
                 <li>Gain proficiency in using the powerful modality of <strong>EFT on yourself</strong>.</li>
                 <li>Cultivate a <strong>spiritual practice</strong> that's genuinely yours and deeply supports your life.</li>
+                {/* Cohort experience temporarily removed
                 <li>Weekly cohort circles for sharing, connection, and tapping (Optional but recommended. We heal better in <strong>community</strong>).</li>
+                */}
               </ul>
 
               <div className="gold-divider"></div>
@@ -444,6 +448,11 @@ const TapIntoFreedom = () => {
             </aside>
 
             <div className="tif-flow-main tif-flow-main-both">
+              <img
+                src={pic17}
+                alt="Adin outdoors among flowers"
+                className="tif-about-image"
+              />
               <p className="tif-emphasis">
                 I will be walking by your side, supporting you every step of the way — through the deep inner transformation, including the difficult stuff. It's a blessing to be of service.
               </p>
@@ -655,11 +664,14 @@ const TapIntoFreedom = () => {
 
           <p className="tif-tagline tif-tagline-lg">This is an investment that can completely transform your life.</p>
           <ul className="list-bullets tif-investment-list">
-            <li>A 3-month container of profound healing and upgrades with my ongoing support.</li>
+            <li>A 3-month container of profound healing and upgrades - Become calm, happy, free, and empowered as your baseline, dissolve pain that's been quietly running your life, and restore your freedom.</li>
             <li>Twelve potent 90-minute 1-on-1 EFT & Coaching sessions with Adin.</li>
+            <li>Direct email access with Adin, for check-ins and ongoing support and guidance between sessions to keep you on track.</li>
             <li>Gain proficiency in using the powerful modality of EFT on yourself.</li>
             <li>Cultivate a spiritual practice that's genuinely yours and deeply supports your life.</li>
-            <li>Weekly cohort circles for sharing, connection, and tapping (when we have enough people).</li>
+            {/* Cohort experience temporarily removed
+            <li>Weekly cohort circles for sharing, connection, and tapping.</li>
+            */}
           </ul>
 
           <div className="gold-divider"></div>
