@@ -235,29 +235,27 @@ const TapIntoFreedom = () => {
 
           <div className="gold-divider"></div>
 
-          <p className="tif-emphasis"><u className="tif-underline"><em>Tap Into Freedom</em></u> exists to end that cost. For good.</p>
+          <p className="tif-emphasis"><u className="tif-underline"><em>Tap Into Freedom</em></u> is a 12-week container of guided, one-on-one transformation that exists to end that cost. For good.</p>
           <p className="tif-emphasis">All of it aimed at a <u className="tif-underline">whole life healing</u> and <u className="tif-underline">dissolution of the pain that's restricting your fullness</u> – and to hand you excellent tools <u className="tif-underline">for life</u>.</p>
           <p className="tif-emphasis">Whatever you're carrying – we <em>can</em> shift it.</p>
 
           <div className="gold-divider"></div>
 
-          <h3 className="tif-center tif-narrow">
+          {/* <h3 className="tif-center tif-narrow">
             The <u className="tif-underline">Tap Into Freedom</u> Offer is a 12-week container of guided, one-on-one transformation that:
           </h3>
           <h3 className="tif-center tif-narrow tif-italic">
             • Relieves the heavy load you've carried <u className="tif-underline">profoundly</u>
           </h3>
           <h3 className="tif-center tif-narrow tif-italic">
-            • Heals and upgrades at the <u className="tif-underline">deepest, root level</u>, ear
+            • Heals and upgrades at the <u className="tif-underline">deepest, root level</u>, earning greater calm, happiness, freedom, and empowerment.
           </h3>
           <h3 className="tif-center tif-narrow tif-italic">
-            • <u className="tif-underline">Earns you the freedom</u> to live more calm, happy, free, and empowered.
+            • <u className="tif-underline">Earns you the freedom</u> to attain the outcomes and abundance you desire
           </h3>
           <h3 className="tif-center tif-narrow tif-italic">
             • The full breakdown of <a href="#method" className="tif-inline-link">The Method</a> is explained in a later section.
-          </h3>
-
-          <div className="gold-divider"></div>
+          </h3> */}
 
           <Quote text="Adin's presence is grounded, compassionate, and deeply intuitive — he creates a safe space where real emotional release and clarity can unfold." author="Ryan S." />
 
