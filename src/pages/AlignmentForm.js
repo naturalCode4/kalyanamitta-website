@@ -56,6 +56,22 @@ const quoteByKey = (key) => SIDEBAR_QUOTES.find((q) => q.key === key);
 // for this page, but the detail/review text is intentionally identical.
 const BENEFITS = [
   {
+    key: 'health',
+    text: 'Improved health',
+    detail: 'Get free from addictions, phobias, and unwanted patterns, and resolve physical pain, tension, and psychosomatically-rooted conditions. We heal stress and stored emotion, a primary reason people get diseases.',
+  },
+  {
+    key: 'relationships',
+    text: 'Better relationships',
+    detail: 'Develop authentic relationships, increase your capacity for genuine love and connection, and resolve relationship issues.',
+    review: { text: "It helped me shift a challenging relationship dynamic I'd been struggling with. I'm actually seeing lasting changes.", author: 'Gloria R.' },
+  },
+  {
+    key: 'outcomes',
+    text: 'Achieve the outcomes you desire',
+    detail: 'Get more of what you actually want — money and abundance, thriving relationships, vibrant health, purposeful work, and whatever else matters most to you.',
+  },
+  {
     key: 'lighter',
     text: 'Lighter, calmer, healthier, and regulated',
     detail: "Dissolve years or decades of stress, trauma, and emotional pain, eliminate negative thought patterns, stop being thrown off by old triggers, and settle into a baseline that's more regulated, vital, centered, and aware. Feel much better in your body. Stress is a principal cause of disease.",
@@ -96,12 +112,6 @@ const BENEFITS = [
     key: 'eq',
     text: 'Higher emotional intelligence',
     detail: 'This work inherently is an education on the emotional body, and creates intimacy and wisdom with your inner world. You may also be able to empathize and see others more deeply.',
-  },
-  {
-    key: 'relationships',
-    text: 'Improved relationships',
-    detail: 'Connect from alignment. Increase your capacity for genuine connection, honesty, and love.',
-    review: { text: "It helped me shift a challenging relationship dynamic I'd been struggling with. I'm actually seeing lasting changes.", author: 'Gloria R.' },
   },
   {
     key: 'values',

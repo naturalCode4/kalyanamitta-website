@@ -43,7 +43,8 @@
    reads as a subtle tint rather than the full rainbow treatment. */
 /* Offsets the #method in-page jump link so the fixed site header (~69px,
    see App.css) doesn't cover the top of the section it scrolls to. */
-#method {
+#method,
+#benefits {
   scroll-margin-top: 85px;
 }
 
@@ -282,6 +283,53 @@
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   border: 2px solid rgba(212, 175, 55, 0.4);
+}
+
+/* "On Wise Companions" portrait, paired with its paragraph as a flex row
+   instead of a CSS float — a float here would only ever wrap a fixed
+   number of lines around it regardless of height (confirmed by testing up
+   to 900px with no change), a real cross-browser float/line-wrap quirk, so
+   flexbox is used instead for a predictable, matchable height. */
+.tif-wise-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin: 1.8rem 0;
+}
+
+.tif-wise-image {
+  flex: 0 0 240px;
+  width: 240px;
+  height: 565px;
+  object-fit: cover;
+  object-position: center 78%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(212, 175, 55, 0.4);
+  transform: scaleX(-1);
+}
+
+.tif-emphasis.tif-wise-emphasis {
+  flex: 1;
+  min-width: 0;
+  text-align: left !important;
+  max-width: none !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 700px) {
+  .tif-wise-row {
+    flex-direction: column;
+  }
+
+  .tif-wise-image {
+    flex: none;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    margin: 0 auto;
+  }
 }
 
 /* Stop the floated portrait from squeezing the "More about Adin" dropdown
@@ -730,6 +778,21 @@
   font-size: 1.5rem;
   color: #c9a3e8; /* explicit request: purple */
   padding: 0.4rem 0 0.4rem 20px;
+}
+
+/* Explicit request: bolder than the pale --tif-intro-text red used for
+   ordinary Intro paragraphs, while staying in the same red family. */
+.tif-intro-strong {
+  color: hsl(0, 80%, 74%) !important;
+}
+
+.tif-italic {
+  font-style: italic;
+}
+
+/* Explicit request: darker purple than the .tif-investment-list bullets above. */
+.tif-payment-note {
+  color: #a878d9 !important;
 }
 
 /* Very light pastel rainbow instead of flat white — each card gets a

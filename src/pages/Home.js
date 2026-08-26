@@ -148,7 +148,7 @@ const Home = () => {
               What You'll Gain
             </div>
             <div className={`collapsible-content ${openHelpLists.gains ? 'open' : ''}`}>
-              <p className="help-list-subtitle">These are some of the lasting shifts you're likely to experience — subtly or drastically — through this work.</p>
+              <p className="help-list-subtitle">These are some of the lasting shifts you're likely to experience — subtly or drastically — through this work, plus whatever's specific to your own particular areas of focus and needs.</p>
               <HelpCarousel list={gainsList} />
             </div>
           </div>
@@ -173,22 +173,24 @@ const Home = () => {
         subtitle=""
       >
 
-        <div className="about-adin-home-container"> 
-          
-          <div className="about-text-content">
-            <p>Welcome! My name is Adin. It's a joy and honor to support you in this work. <br></br><br></br>I walk with people and help them gain love, wisdom, clarity, freedom, ease, authenticity, and spiritual capacity– to let go of limiting beliefs, anxiety, negative emotion, and trauma– and to get the inner world and outer circumstances they desire. I offer what I <b>live</b> and deeply believe in. <br></br><br></br> I offer 30-minute free consultations and am happy to discuss anything beforehand.</p>
-          </div>
-          
-          <div className="about-photos">
-            <div className="photo-container">
-              <img
-                src={pic17}
-                alt="Adin outdoors"
-                className="about-image"
-              />
+        <div className="about-adin-home-container">
+
+          <div className="about-adin-top">
+            <div className="about-photos">
+              <div className="photo-container">
+                <img
+                  src={pic17}
+                  alt="Adin outdoors"
+                  className="about-image"
+                />
+              </div>
+            </div>
+
+            <div className="about-text-content">
+              <p>Welcome! My name is Adin. It's a joy and honor to support you in this work. <br></br><br></br>I walk with people and help them gain love, wisdom, clarity, freedom, ease, authenticity, and spiritual capacity– to let go of limiting beliefs, anxiety, negative emotion, and trauma– and to get the inner world and outer circumstances they desire. I offer what I <b>live</b> and deeply believe in. <br></br><br></br> I offer 30-minute free consultations and am happy to discuss anything beforehand.</p>
             </div>
           </div>
-          
+
           <div className="btn-group about-buttons">
             <Link to="/about" className="btn">Learn More</Link>
             <Link 

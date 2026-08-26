@@ -21,6 +21,9 @@ export const offerings = [
 ];
 
 export const gainsList = [
+  "Improved physical health",
+  "Better relationships",
+  "Attain the outcomes you desire",
   "Lighter, calmer, healthier, and regulated",
   "Increased energy, focus, and creativity",
   "Deeper love, acceptance, self-respect, and personal peace",
@@ -29,7 +32,6 @@ export const gainsList = [
   "Heal your inner child",
   "Restored mental clarity and intuition",
   "Higher emotional intelligence",
-  "Improved relationships",
   "The ability to embody your values",
   "Happiness, humor, and wisdom",
   "Be deeply met and compassionately guided",
@@ -37,8 +39,7 @@ export const gainsList = [
 ];
 
 export const helpList = [
-  "Attain the life you desire.",
-  "Increase wealth, shift money mindsets and blocks, and open to abundance",
+  "Shift money mindsets and blocks, and open to abundance",
   "Release difficult emotions: fear, shame, low slumps, stress, limiting beliefs and memories, anger, grief, trauma.",
   "Heal from childhood wounding – including issues stemming from growing up in a dysfunctional family / culture",
   "Heal from adult trauma– including difficult relationships/breakups and traumatic events (PTSD)",

@@ -1127,7 +1127,7 @@
   align-items: center;
   text-align: center;
   gap: 2rem; /* Space between text, image, buttons */
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -1137,6 +1137,67 @@
 
 .about-buttons .btn {
   min-width: 150px; /* Restore proper button width if it was squished */
+}
+
+/* About Adin: photo to the left of the text. Percentage/stretch-based
+   height matching doesn't reliably resolve here (the image's own intrinsic
+   aspect ratio wins once nested a couple of divs deep), so this uses a
+   fixed height tuned to this section's actual copy length instead, with
+   object-fit:cover doing the cropping. */
+.about-adin-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  width: 100%;
+  text-align: left;
+}
+
+.about-adin-top .about-photos {
+  flex: 0 0 320px;
+}
+
+.about-adin-top .photo-container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.about-adin-top .photo-container .about-image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  /* Biases the crop toward the face/shoulders and away from the flowers
+     filling the top of the source photo. */
+  object-position: center 75%;
+}
+
+.about-adin-top .about-text-content p {
+  text-align: left !important;
+}
+
+@media (max-width: 768px) {
+  .about-adin-top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-adin-top .about-photos {
+    flex: none;
+  }
+
+  .about-adin-top .photo-container {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .about-adin-top .photo-container .about-image {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .about-adin-top .about-text-content p {
+    text-align: center !important;
+  }
 }
 
 /* Mobile Media Query Updates */
