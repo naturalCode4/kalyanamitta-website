@@ -235,7 +235,7 @@ const TapIntoFreedom = () => {
 
           <div className="gold-divider"></div>
 
-          <p className="tif-emphasis"><u className="tif-underline"><em>Tap Into Freedom</em></u> is a 12-week container of guided, one-on-one transformation that exists to end that cost. For good.</p>
+          <p className="tif-emphasis"><u className="tif-underline"><em>Tap Into Freedom</em></u> is a 12-week container of guided, one-on-one transformation that exists to end that cost for you. For good.</p>
           <p className="tif-emphasis">All of it aimed at a <u className="tif-underline">whole life healing</u> and <u className="tif-underline">dissolution of the pain that's restricting your fullness</u> – and to hand you excellent tools <u className="tif-underline">for life</u>.</p>
           <p className="tif-emphasis">Whatever you're carrying – we <em>can</em> shift it.</p>
 
