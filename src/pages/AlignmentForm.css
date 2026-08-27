@@ -89,6 +89,19 @@
 
 /* Same font as the hero's "Welcome..." line (plain site font, not the
    decorative subtitle-heading/papyrus treatment used for section titles). */
+#af-benefits-recap {
+  scroll-margin-top: 85px;
+}
+
+.af-inline-link {
+  color: #d4af37;
+  text-decoration: underline;
+}
+
+.af-inline-link:hover {
+  color: #f4d03f;
+}
+
 .af-plain-heading {
   font-family: 'Inter', sans-serif;
   font-weight: 700;

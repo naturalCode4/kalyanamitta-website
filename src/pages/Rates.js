@@ -11,7 +11,7 @@ const Rates = () => {
     {
       name: 'Tap Into Freedom Program',
       description: "A 12-week container to dissolve the limitations that have been running your life, and become calm, happy, free, and empowered — for good.",
-      mainPrice: '$2,222',
+      mainPrice: '$2,420',
       slidingScale: ' Founding Cohort',
       originalPrice: '$3,000',
       discount: 'Standard Rate',
@@ -28,9 +28,9 @@ const Rates = () => {
     {
       name: '4-Session Combo',
       description: "If you're tired of white-knuckling through life, this is for you. Four potent sessions to release what's weighing you down and reclaim your energy — fast.",
-      mainPrice: '$578',
-      slidingScale: ' / Sliding Scale $377-850',
-      originalPrice: '$680. Sliding Scale $444-1000',
+      mainPrice: '$612',
+      slidingScale: ' / Sliding Scale $377-1,020',
+      originalPrice: '$720. Sliding Scale $444-1,200',
       discount: '15% OFF',
       features: [
         'Four 90 minute sessions',
@@ -42,9 +42,9 @@ const Rates = () => {
     {
       name: '7-Session Combo',
       description: "For those ready to go all in on real change — even the big stuff. Seven potent sessions to heal at the root and expand your spiritual capacity, for good.",
-      mainPrice: '$952',
-      slidingScale: ' / Sliding Scale $621-1,400',
-      originalPrice: '$1,190. Sliding Scale $777-1,750',
+      mainPrice: '$1,008',
+      slidingScale: ' / Sliding Scale $621-1,680',
+      originalPrice: '$1,260. Sliding Scale $777-2,100',
       discount: '20% OFF',
       features: [
         'Seven 90 minute sessions',
@@ -144,7 +144,7 @@ const Rates = () => {
             A 12-week container to dissolve what's been running your life, and become calm, happy, free, and empowered — for good.
           </p>
           <div className="rates-tif-price">
-            <span className="price-gold">$2,222</span> Founding Cohort
+            <span className="price-gold">$2,420</span> Founding Cohort
             <span className="rates-tif-original"> · $3,000 Standard</span>
           </div>
           <Link to="/tap-into-freedom" className="btn">Learn More →</Link>

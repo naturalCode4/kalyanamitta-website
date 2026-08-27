@@ -152,9 +152,12 @@ const MORE_ABOUT = [
   },
   {
     key: 'spiritualPractice',
-    title: 'More on the spiritual practice',
+    title: 'More about the spiritual practice',
     body: (
-      <p>Alongside EFT, we introduce or deepen a spiritual practice and make it genuinely yours. You'll be guided and held accountable for its flourishing. I can teach or help you deepen: meditation, breathwork, yoga, voice-based sound healing, prayer, ecstatic dance, or another practice you're already drawn to. We'll find a good fit; you don't have to know now.</p>
+      <>
+        <p>This is optional but encouraged, and included in your package.</p>
+        <p>Alongside EFT, we introduce or deepen a spiritual practice and make it genuinely yours. You'll be guided and held accountable for its flourishing. I will teach or help you deepen: meditation (many styles available), breathwork, yoga, voice-based sound healing, prayer, ecstatic dance, or another practice you're already drawn to. We'll find a good fit; you don't have to know now.</p>
+      </>
     ),
   },
   {
@@ -169,10 +172,17 @@ const MORE_ABOUT = [
     title: 'More on ongoing support',
     body: (
       <>
-        <p>Direct email access with Adin, for check-ins and ongoing support and guidance between sessions to keep you on track.</p>
-        <p>Beyond the weekly sessions themselves, I maintain availability for my clients throughout the whole three months. That includes being reachable by email between sessions — typically I respond to 1 or 2 emails a week — for guidance, presence, sharing, and integration support as things come up for you.</p>
+        <p>This isn't a group program where you're one of many. You get a <strong>private 1-on-1</strong> program, the whole way through — <strong>my full presence and direct, expert guidance </strong>, built to <strong>fully meet you.</strong></p>
+        <p>Direct email access with Adin. Beyond the weekly sessions themselves, I maintain availability for my clients throughout the whole three months. That includes being energetically available and reachable by email — typically 1 or 2 emails a week — for guidance, presence, sharing, and integration support as things come up.</p>
         {/* Cohort experience temporarily removed: "We'll also have Weekly cohort circles for sharing, connection, and tapping." */}
       </>
+    ),
+  },
+  {
+    key: 'whatToExpect',
+    title: "What you'll gain",
+    body: (
+      <p><a href="#af-benefits-recap" className="af-inline-link">In the coming three months, be prepared (AND even excited?!) for these beneficial, lasting shifts — subtly or drastically:</a></p>
     ),
   },
 ];
@@ -242,7 +252,7 @@ const SECTIONS = [
     fields: [
       { label: 'If you knew — really knew — that this could genuinely change, how much would you want that — on a scale of 1-10?', type: 'scale', hue: 150, hueOpts: { light: 78 } },
       { label: 'This is a three-month container of real transformation. Are you ready to invest in yourself financially, energetically, and with your time?', type: 'yesno', options: ['Absolutely', 'Maybe Later'], hue: 175, hueOpts: { light: 78 } },
-      { label: 'Real transformation tends to ripple: waves of emotion, deep questions, shifts in your sense of self, your relationships, your priorities, the way you see things — all of it may move. On a scale of 1–10, how ready are you to show up to that kind of unfolding?', type: 'scale', hue: 200, hueOpts: { light: 78 } },
+      { label: 'Real transformation tends to ripple: waves of emotion, deep questions, shifts in your sense of self, your relationships, your priorities, the way you see things — all of it may move. We will be working yourself on a profound level, so you can expect big waves and big results. On a scale of 1–10, how ready are you to show up to that kind of unfolding?', type: 'scale', hue: 200, hueOpts: { light: 78 } },
     ],
   },
   {
@@ -637,7 +647,7 @@ const AlignmentForm = () => {
                 })}
 
                 {/* Benefits recap — openable dropdowns, right before Submit */}
-                <div className="af-benefits">
+                <div className="af-benefits" id="af-benefits-recap">
                   <h2 className="af-plain-heading">In the coming three months, be prepared (AND even excited?!) for these beneficial, lasting shifts — subtly or drastically:</h2>
 
                   <ul className="af-benefit-list">
@@ -660,6 +670,10 @@ const AlignmentForm = () => {
                   <div className="gold-divider"></div>
 
                   <p className="af-tagline">Get your energy back, and get your life back.</p> 
+
+                  <div className="gold-divider"></div>
+
+                  <p className="af-tagline">I'm ready →</p> 
                 </div>
 
                 {missingField && (

@@ -266,7 +266,7 @@ const TapIntoFreedom = () => {
       </section>
 
       {/* It's Time to Get All Your Energy Back */}
-      <section className="tif-benefits section-rainbow" id="benefits">
+      <section className="tif-benefits section-rainbow">
         <div className="container">
           <h2 className="subtitle-heading">It's Time to Get All Your Energy Back.</h2>
 
@@ -278,7 +278,7 @@ const TapIntoFreedom = () => {
 
           <div className="gold-divider"></div>
 
-          <h3>In these three months you likely will have these lasting shifts — subtly or drastically:</h3>
+          <h3 id="benefits">In these three months you likely will have these lasting shifts — subtly or drastically:</h3>
 
           <ul className="tif-benefit-list">
             {benefits.map((b) => (
