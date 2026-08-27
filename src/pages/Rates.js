@@ -187,7 +187,7 @@ const Rates = () => {
             <div className="timeline-point highlighted-point">
               <div className="timeline-number">2</div>
               <div className="timeline-content middle-card">
-                <h3>$170</h3>
+                <h3>$180</h3>
                 <p className="timeline-label">Standard Rate</p>
                 {/* <h3>Standard Rate</h3>
                 <p className="timeline-label">165</p> */}
