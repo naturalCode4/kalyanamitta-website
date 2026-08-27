@@ -171,7 +171,7 @@ const Rates = () => {
             <div className="timeline-point highlighted-point">
               <div className="timeline-number">1</div>
               <div className="timeline-content middle-card">
-                <h3>$90-111</h3>
+                <h3>$88-111</h3>
                 <p className="timeline-label">Accessible Range</p>
                 {/* <h3>Accessible Range</h3>
                 <p className="timeline-label">80 - 120</p> */}
@@ -198,7 +198,7 @@ const Rates = () => {
             <div className="timeline-point">
               <div className="timeline-number">3</div>
               <div className="timeline-content">
-                <h3>$222-250</h3>
+                <h3>$222-300</h3>
                 <p className="timeline-label">Sustaining Range</p>
                 {/* <h3>Sustaining Range</h3>
                 <p className="timeline-label">225 - 250</p> */}
