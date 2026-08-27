@@ -161,7 +161,7 @@ const Rates = () => {
                 {/* <p className="flexible-label">90 minutes: $80-250</p> */}
                 <p className="subtitle">I offer flexible pricing so that this work is accessible. Choose an amount that feels aligned—honoring this work and what's sustainable for you.</p>
                 <p className="subtitle">I offer these rates because I am passionate about this powerful work and desire for it to be shared widely. There is a huge wealth disparity in the modern world. For many, the standard rate or more is an easy investment, and others can use the support.</p>
-                <p className="subtitle">For those with financial ease, your generosity honors the exchange of energy between us, allows me to thrive doing what I love, supports this work in the world, and makes it accessible to others.</p>
+                <p className="subtitle">For those with financial ease, your generosity makes this work accessible to others who need lower payments, honors the experience and energy I bring, allows me to thrive doing what I love, and supports the growth of deep healing in the world.</p>
               </div>
             </div>
           <p className="rates-duration-note">
@@ -175,7 +175,7 @@ const Rates = () => {
                 <p className="timeline-label">Accessible Range</p>
                 {/* <h3>Accessible Range</h3>
                 <p className="timeline-label">80 - 120</p> */}
-                <p className="timeline-description">For those whom the standard rate is financially inaccessible. Your presence & sincerity matter most.</p>
+                <p className="timeline-description">For those whom the standard rate is genuinely inaccessible. Your presence & sincerity matter most.</p>
               </div>
               {/* <div className="timeline-content">
                 <h3>$50 - 70</h3>

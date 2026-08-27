@@ -43,7 +43,7 @@ const CalendlyEmbed = () => {
             Learn more about Spiritual Counseling
           </Link>
         </div>
-        <p className="calendly-footer-note">Sessions are held virtually or in my current location (Aguascalientes, MX)</p>
+        <p className="calendly-footer-note">Sessions are held virtually or in my current location</p>
     </div>
   );
 };

@@ -9,7 +9,7 @@ import { Helmet } from 'react-helmet';
 const SUBJECT_OPTIONS = [
   'Schedule a 30-minute Free Consultation',
   'Question about Offerings and Programs',
-  'Invite Adin to Lead An Event',
+  'Invite Adin to Your Podcast or Event',
   'Other',
 ];
 
