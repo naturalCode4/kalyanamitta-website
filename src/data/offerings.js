@@ -58,7 +58,7 @@ export const helpList = [
   "Build confidence and clarity for important decisions, conversations, transitions, and daily living",
   "Divine masculine development and Men's work",
   "Develop conscious sexuality, increase sexual energy, and creatively channel your life-force",
-  "Prepare and integrate psychedelic experiences",
+  "Prepare for and integrate psychedelic experiences",
   "Connect to nature and elemental energy",
   "Receive understanding, friendship, and support, and become that space for yourself and others",
 ];

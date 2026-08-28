@@ -221,7 +221,7 @@ const SECTIONS = [
     intro: ['The more honest and specific you can be, the more useful our work together becomes from session one.'],
     fields: [
       { label: 'What are you up to in life right now? Where is most of your energy going right now?', type: 'textarea', rows: 5 },
-      { label: "Imagine you already have this — it's real, and it's yours: the best version of yourself, fully alive. Take a few minutes to dream freely: what does your life actually look like? How do you feel? Write it down, trusting what comes.", type: 'textarea', rows: 8 },
+      { label: "Imagine you already have this — really – it's here, it's yours: the best version of yourself, fully manifest. Take a few minutes to dream freely: what does your life actually look like? How do you feel? What are you like? Write it down, trusting what comes.", type: 'textarea', rows: 8 },
     ],
     quote: '"As within, so without." — The 2nd Hermetic Principle. When you change inside, your outside world changes too, to match your frequency.',
   },
@@ -252,7 +252,7 @@ const SECTIONS = [
     fields: [
       { label: 'If you knew — really knew — that this could genuinely change, how much would you want that — on a scale of 1-10?', type: 'scale', hue: 150, hueOpts: { light: 78 } },
       { label: 'This is a three-month container of real transformation. Are you ready to invest in yourself financially, energetically, and with your time?', type: 'yesno', options: ['Absolutely', 'Maybe Later'], hue: 175, hueOpts: { light: 78 } },
-      { label: 'Real transformation tends to ripple: waves of emotion, deep questions, shifts in your sense of self, your relationships, your priorities, the way you see things — all of it may move. We will be working yourself on a profound level, so you can expect big waves and big results. On a scale of 1–10, how ready are you to show up to that kind of unfolding?', type: 'scale', hue: 200, hueOpts: { light: 78 } },
+      { label: 'Real transformation tends to ripple: waves of emotion, deep questions, shifts in your sense of self, your relationships, your priorities, the way you see things — all of it may move. We will be healing on a profound level, so you can expect big waves and big results. On a scale of 1–10, how willing are you to show up to that kind of unfolding, given the results?', type: 'scale', hue: 200, hueOpts: { light: 78 } },
     ],
   },
   {
@@ -267,7 +267,7 @@ const SECTIONS = [
     fields: [
       {
         label: 'What areas of your life — inner or outer — matter most to you to improve right now?',
-        note: "(These are just suggested categories your Areas of Focus might fall under — it can be whatever's actually yours: recovering lost mental clarity or strength in a particular area, releasing difficult emotions, thought patterns, anxiety, or depression, healing trauma, PTSD, or ancestral/cultural conditioning, authenticity, confidence, and voice, relationships, self-image, sexual energy and intimacy, true masculinity, true femininity, purpose, work, or money, life transitions, physical health, spiritual growth, or something else entirely. Again, just examples to get the ball rollin')",
+        note: "(These are just suggested categories your Areas of Focus might fall under — it can be whatever's actually yours: recovering lost mental clarity or strength in a particular area, releasing difficult emotions, thought patterns, anxiety, depression, anger, healing trauma, PTSD, or ancestral/cultural conditioning, authenticity, confidence, and voice, relationships, self-image, sexual energy and intimacy, true masculinity, true femininity, purpose, work, or money, life transitions, physical health, spiritual growth, or something else entirely. Again, just examples to get the ball rollin')",
         type: 'textarea',
         rows: 6,
       },
@@ -673,7 +673,7 @@ const AlignmentForm = () => {
 
                   <div className="gold-divider"></div>
 
-                  <p className="af-tagline">I'm ready →</p> 
+                  <p className="af-tagline">Ready? →</p> 
                 </div>
 
                 {missingField && (
