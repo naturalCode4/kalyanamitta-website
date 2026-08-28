@@ -191,7 +191,7 @@ const TapIntoFreedom = () => {
       <Helmet>
         <title>Tap Into Freedom | 12-Week EFT Healing Program with Adin</title>
         <meta name="description" content="Become calm, happy, free, and empowered as your baseline. A 12-week EFT (Tapping) program to dissolve old pain and reclaim your life, for good." />
-        <meta property="og:title" content="Tap Into Freedom | 12-Week EFT Healing Program" />
+        <meta property="og:title" content="Tap Into Freedom | 12-Week EFT Healing Offer" />
         <meta property="og:description" content="Be calm, happy, free, and empowered as your baseline. A 12-week EFT (Tapping) program to dissolve old pain and reclaim your life, for good." />
         <meta property="og:url" content="https://healing-on-tap.com/tap-into-freedom" />
       </Helmet>
@@ -236,7 +236,7 @@ const TapIntoFreedom = () => {
           <div className="gold-divider"></div>
 
           <p className="tif-emphasis"><u className="tif-underline"><em>Tap Into Freedom</em></u> is a 12-week container of guided, one-on-one transformation that exists to end that cost for you. For good.</p>
-          <p className="tif-emphasis">All of it aimed at a <u className="tif-underline">whole life healing</u> and <u className="tif-underline">dissolution of the pain that's restricting your fullness</u> – and to hand you excellent tools <u className="tif-underline">for life</u>.</p>
+          <p className="tif-emphasis">All of it aimed at a <u className="tif-underline">whole life healing</u>, <u className="tif-underline">nervous system upgrade</u>, and return to <u className="tif-underline">fullness</u> – and to hand you excellent tools <u className="tif-underline">for life</u>.</p>
           <p className="tif-emphasis">Whatever you're carrying – we <em>can</em> shift it.</p>
 
           <div className="gold-divider"></div>
@@ -335,7 +335,7 @@ const TapIntoFreedom = () => {
               <h3 className="tif-gold-heading">How do we create this powerful shift?</h3>
               <ul className="list-bullets tif-method-list">
                 <li>A 3-month container of <strong>transformative healing and upgrades</strong>.</li>
-                <li><strong>Twelve</strong> potent <strong>90-minute EFT</strong> & <strong>Coaching</strong> sessions with Adin.</li>
+                <li><strong>Twelve</strong> potent <strong>90-minute EFT</strong> (Emotional Freedom Techniques, aka Tapping) & <strong>Coaching</strong> sessions with Adin.</li>
                 <li>This isn't a group program where you're one of many. You get a <strong>private 1-on-1 mentorship</strong>, the whole way through — <strong>my full presence and direct, expert guidance</strong>, built to <strong>fully meet you.</strong></li>
                 <li>Direct <strong>email access with Adin</strong>, for <strong>ongoing support</strong>, check-ins, and guidance between sessions.</li>
                 <li>Gain proficiency in using the <strong>wonderful modality</strong> of <strong>EFT on yourself</strong>.</li>
@@ -391,7 +391,7 @@ const TapIntoFreedom = () => {
                       EFT incorporates acupoints from Traditional Chinese Medicine. Each tapping point lies on a meridian — an energy channel that governs essential aspects of the body, mind, and spirit. By tapping these points, we're balancing each meridian and essentially giving ourselves a needle-free acupuncture treatment, while addressing the emotions and beliefs we wish to transform. This physiologically treats your issue.
                     </p>
                     <p>
-                      When the original experience(s) that created the issue occurred, we may not have had the capacity to fully feel, process, or integrate what happened. As a result, there's an embodied emotional imprint we still carry… like old baggage. Through tapping, we revisit the trigger from a different state — one of greater calm, safety, self-compassion, and love. Instead of reinforcing the old reaction, the neural pathways are updated to this healthier response. We dissolve an issue on the neurological level and rewrite our lives. The heavy baggage (how's this 'baggage' metaphor working out for you?) gets dropped, and we attain genuine freedom.
+                      When the original experience(s) that created the issue occurred, we may not have had the capacity to fully feel, process, or integrate what happened. As a result, there's an embodied emotional imprint we still carry… like old baggage. Through tapping, we revisit the trigger from a different state — one of greater calm, safety, self-compassion, and love. Instead of reinforcing the old reaction, the neural pathways are updated to this healthier response. We dissolve an issue on the neurological level and rewrite our lives. The heavy baggage gets dropped, and we attain genuine freedom.
                     </p>
                     <p>
                       EFT is well-backed by over <a href="https://eftuniverse.com/research-studies" target="_blank" rel="noopener noreferrer" className="tif-inline-link">100 studies and trials</a>.
@@ -406,10 +406,10 @@ const TapIntoFreedom = () => {
                   </div>
                   <div className={`collapsible-content ${openSections.sessionExpect ? 'open' : ''}`}>
                     <p>
-                      Gentle tapping on various points on the body, call-and-response guidance, and expressing in your own voice. I will guide you to process your issue on the deepest level and move towards self-acceptance and love. I meet you where you are, and move at the pace your own system is ready for.
+                      Gentle tapping on various points on the body, call-and-response guidance, expressing in your own voice, and other techniques. I will guide you to process your issue on the deepest level and move towards self-acceptance and love. I meet you where you are, and move at the pace your own system is ready for.
                     </p>
                     <p>
-                      During a session you'll typically see improvements in your issue, more positive thinking and emotions, and insights around your issue (sometimes full-on universal downloads — no joke). Also a sense of love, peace, confidence, and other wonderful qualities. Shifts usually continue to unfold for several days after a session.
+                      During a session you'll typically experience relief around your issue, more positive thinking and emotions, and insights (sometimes full-on universal downloads — no joke). Also a sense of love, peace, confidence, and other wonderful qualities. Shifts usually continue to unfold for several days after a session.
                     </p>
                   </div>
                 </aside>
@@ -417,7 +417,7 @@ const TapIntoFreedom = () => {
 
               <div className="gold-divider"></div>
 
-              <p className="tif-emphasis">This excellent modality will become yours for life.</p>
+              <p className="tif-emphasis"><em>This excellent modality will become yours for life.</em></p>
               <p className="tif-color-green">In this program, you will not only receive 12 potent EFT sessions: You will gain proficiency in practicing EFT on yourself. You can use EFT to address the challenges of your life and continue your inner work.
               </p>
 
@@ -686,10 +686,10 @@ const TapIntoFreedom = () => {
           <ul className="list-bullets tif-investment-list">
             <li>Become <u className="tif-underline">calm, happy, free, and empowered</u> as your <u className="tif-underline">baseline</u>.</li>
             <li>Restore your <u className="tif-underline">life-force</u>.</li>
-            <li>Finally get free of pain that's been quietly running the show.</li>
-            <li>Better relationships, improved health, and create the outcomes you actually want.</li>
-            <li>Heal beyond belief, at the root — not just manage symptoms — across your body, mind, and spirit.</li>
-            <li>High-level tools and knowledge that stay with you, long after our three months together.</li>
+            <li>Finally get <u className="tif-underline">free of pain</u> that's been quietly running the show.</li>
+            <li><u className="tif-underline">Better relationships</u>, <u className="tif-underline">improved health</u>, and create the <u className="tif-underline">outcomes</u> you actually want.</li>
+            <li><u className="tif-underline">Heal</u> beyond belief, at the root — not just manage symptoms — across your <u className="tif-underline">body, mind, and spirit.</u></li>
+            <li><u className="tif-underline">High-level tools and knowledge</u> that grow with you, long after our three months together.</li>
           </ul>
           <p className="tif-center">
             See the full list of <a href="#benefits" target="_blank" rel="noopener noreferrer" className="tif-inline-link">what you'll gain →</a> and <a href="#method" target="_blank" rel="noopener noreferrer" className="tif-inline-link">what's included →</a>.

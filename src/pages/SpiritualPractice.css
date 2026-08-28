@@ -394,3 +394,52 @@
     display: block;
   }
 }
+/* Testimonial quote callouts, same pattern as TapIntoFreedom.js's .tif-quote / EFT.js's .eft-quote */
+.spiritual-quote {
+  clear: both;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  max-width: 700px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.spiritual-stars {
+  color: #fbbc05;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.spiritual-quote-text {
+  font-style: italic;
+  color: #e8e8e8;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  font-size: 1.1rem !important;
+  text-align: center !important;
+}
+
+.spiritual-quote-author {
+  font-weight: 600;
+  color: #d4af37;
+  margin-bottom: 0;
+  font-size: 1.05rem !important;
+  text-align: center !important;
+}
+
+/* Pullquote for the Buddha/Upaddha Sutta quote, same pattern as TapIntoFreedom.css's .tif-pullquote */
+.spiritual-pullquote {
+  font-style: italic;
+  font-size: 1.15rem !important;
+  color: #e8e8e8;
+  text-align: center !important;
+  max-width: 800px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+  border-left: none;
+  line-height: 1.7;
+}

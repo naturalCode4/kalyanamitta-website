@@ -123,7 +123,7 @@ const EFT = () => {
                   Imagine a tool that can relieve you of self-defeating thoughts, feelings, and actions– that you've held for years or decades– patterns you just assumed were an unchangeable part of your existence. Imagine being able to let go of these patterns and consciously uplevel your nervous system in a way that brings you great freedom, ease, joy, clarity, alignment, and empowerment.
                 </p>
                 <p>
-                 While I have immersed myself in numerous spiritual practices and modalities, EFT is the most powerful and universal tool I have encountered for resolving issues / creating positive new outcomes—and I am so grateful to have encountered it and offer it. I hope that I can support as many people as possible with EFT.
+                 While I have immersed myself in numerous spiritual practices and modalities, EFT is the most powerful and universal tool I have encountered for resolving issues and creating positive new outcomes—and I am so grateful to have encountered it and offer it. I hope that I can support as many people as possible with EFT.
                 </p>
                 <p>
                   Beyond EFT — I wield it with skillfulness, unconditional love, and depth that goes beyond the normal scope of this already powerful modality.
@@ -213,10 +213,11 @@ const EFT = () => {
                   <h4>Beginning the Session</h4>
                   <p>
                     You'll be in a comfortable, private space where you can fully express yourself.
-                    I'll begin guiding the practice and show you points to self-tap on your body, and we will tap together throughout the session. We'll explore your issue, and I may ask you questions to dive deeper into the core of the issue. 
+                    I'll begin guiding the practice and show you points to self-tap on your body, and we will tap together throughout the session. We'll explore your issue, and I may ask you questions to dive deeper into the core of the issue.
                   </p>
+                  <Quote text="The work we did together helped me shift and dissolve old social triggers and conditioning, empowering me to show up with more confidence." author="Bella S." />
                 </div>
-                
+
                 <div className="expect-item">
                   <h4>During the Session</h4>
                   <p>
@@ -224,14 +225,13 @@ const EFT = () => {
                     You will likely directly experience shifts in energy, release of negative thoughts and emotions, fresh insights, and freedom around your issue(s)-- A.K.A. Emotional Freedom.
                   </p>
                   <Quote text="I always leave our sessions feeling lighter." author="Kathryn S." />
-                  <Quote text="The work we did together helped me shift and dissolve old social triggers and conditioning, empowering me to show up with more confidence." author="Bella S." />
                 </div>
 
                 <div className="expect-item">
                   <h4>After the Session</h4>
                   <p>
                     In most cases, you will notice significant relief, clarity, and shifts — more positive thinking and emotions, and insights around your issue (sometimes full-on universal downloads — no joke).
-                    EFT deeply resolves issues on the subconscious and neurological level, and transformation continue in the days and weeks following your session.
+                    EFT deeply resolves issues on the subconscious and neurological level, and transformation continues in the days and weeks following your session.
                     We may discuss practices that might support your goals.
                   </p>
                   <Quote text="I went from a pretty intense 10 down to a 0. Great experience that was safe, welcoming, and allowed me to dissolve a pattern that no longer supports my evolution." author="Brittany R." />
