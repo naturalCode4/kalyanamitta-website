@@ -117,7 +117,7 @@ const About = () => {
                   One gift I bring is grounding spirituality and practice with contemporary understandings and meeting individuals as they are. I am told I have a way with making it <em>real</em> and accessible.
                 </p>
                 <p>
-                  My mission is to support you by offering loving presence, powerful modalities, and wisdom— with passion and integrity with my work, aka <a href="https://www.stillwatermpc.org/dharma-topics/right_livelihood_and_the_art_of_living/" target="_blank">Right Livelihood</a>. I am fluent in different ways of speaking about these subjects— spiritual and scientific, mystical or ordinary, unfiltered or measured. I am also occasionally funny.
+                  My mission is to support you by offering loving presence, powerful modalities, and wisdom— with passion and integrity with my work, aka <a href="https://www.stillwatermpc.org/dharma-topics/right_livelihood_and_the_art_of_living/" target="_blank">Right Livelihood</a>. I am fluent in different ways of speaking about these subjects— spiritual and scientific, mystical or ordinary, unfiltered or measured. I am also sometimes funny!
                 </p>
                 <p>
                   If you're curious about how we might work together, I am too!

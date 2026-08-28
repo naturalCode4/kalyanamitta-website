@@ -414,6 +414,19 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
+  align-items: stretch;
+}
+
+/* Flex column so the quote (margin-top: auto, below) sinks to the bottom of
+   each card, keeping quotes aligned across cards regardless of how long the
+   paragraph above them is. */
+.expect-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.expect-item .eft-quote {
+  margin-top: auto;
 }
 
 .expect-item h4 {

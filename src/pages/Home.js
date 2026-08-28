@@ -68,7 +68,7 @@ const Home = () => {
               </div>
               <div className="manifesto-connector"></div>
               <div className="manifesto-item">
-                <span className="manifesto-text">It's time to get all your life-force back,<br className="desktop-break" />and dissolve the pain you never chose.</span>
+                <span className="manifesto-text">It's time to get your power back,<br className="desktop-break" />and dissolve the pain you never chose.</span>
               </div>
             </div>
 
