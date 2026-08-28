@@ -510,3 +510,39 @@
     display: block;
   }
 }
+/* Testimonial quote callouts, same pattern as TapIntoFreedom.js's .tif-quote */
+.eft-quote {
+  clear: both;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  max-width: 700px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.eft-stars {
+  color: #fbbc05;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.eft-quote-text {
+  font-style: italic;
+  color: #e8e8e8;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  font-size: 1.1rem !important;
+  text-align: center !important;
+}
+
+.eft-quote-author {
+  font-weight: 600;
+  color: #d4af37;
+  margin-bottom: 0;
+  font-size: 1.05rem !important;
+  text-align: center !important;
+}

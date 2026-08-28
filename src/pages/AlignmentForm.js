@@ -58,12 +58,12 @@ const BENEFITS = [
   {
     key: 'health',
     text: 'Improved health',
-    detail: 'Get free from addictions, phobias, and unwanted patterns, and resolve physical pain, tension, and psychosomatically-rooted conditions. We heal stress and stored emotion, a primary reason people get diseases.',
+    detail: 'Get free from addictions, phobias, and unwanted patterns, and resolve physical pain, tension, and psychosomatically-rooted conditions. We heal stress and unprocessed emotion, a primary reason people get diseases.',
   },
   {
     key: 'relationships',
     text: 'Better relationships',
-    detail: 'Develop authentic relationships, increase your capacity for genuine love and connection, and resolve relationship issues.',
+    detail: 'Develop authentic relationships, increase your capacity for love and connection, and resolve relationship issues.',
     review: { text: "It helped me shift a challenging relationship dynamic I'd been struggling with. I'm actually seeing lasting changes.", author: 'Gloria R.' },
   },
   {
@@ -172,7 +172,7 @@ const MORE_ABOUT = [
     title: 'More on ongoing support',
     body: (
       <>
-        <p>This isn't a group program where you're one of many. You get a <strong>private 1-on-1</strong> program, the whole way through — <strong>my full presence and direct, expert guidance </strong>, built to <strong>fully meet you.</strong></p>
+        <p>This isn't a group program where you're one of many. You get a <strong>private 1-on-1 mentorship</strong>, the whole way through — <strong>my full presence and direct, expert guidance </strong>, built to <strong>fully meet you.</strong></p>
         <p>Direct email access with Adin. Beyond the weekly sessions themselves, I maintain availability for my clients throughout the whole three months. That includes being energetically available and reachable by email — typically 1 or 2 emails a week — for guidance, presence, sharing, and integration support as things come up.</p>
         {/* Cohort experience temporarily removed: "We'll also have Weekly cohort circles for sharing, connection, and tapping." */}
       </>

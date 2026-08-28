@@ -109,12 +109,12 @@ const TapIntoFreedom = () => {
     {
       key: 'health',
       text: 'Improved physical health',
-      detail: 'Get free from addictions, phobias, and unwanted patterns, and resolve physical pain, tension, and psychosomatically-rooted conditions. We heal stress and stored emotion, a primary reason people get diseases.',
+      detail: 'Get free from addictions, phobias, and unwanted patterns, and resolve physical pain, tension, and psychosomatically-rooted conditions. unprocessed emotion, a primary reason people get diseases.',
     },
     {
       key: 'relationships',
       text: 'Better relationships',
-      detail: 'Develop authentic relationships, increase your capacity for genuine love and connection, and resolve relationship issues.',
+      detail: 'Develop authentic relationships, increase your capacity for love and connection, and resolve relationship issues.',
       review: { text: "It helped me shift a challenging relationship dynamic I'd been struggling with. I'm actually seeing lasting changes.", author: 'Gloria R.' },
     },
     {
@@ -335,8 +335,8 @@ const TapIntoFreedom = () => {
               <h3 className="tif-gold-heading">How do we create this powerful shift?</h3>
               <ul className="list-bullets tif-method-list">
                 <li>A 3-month container of <strong>transformative healing and upgrades</strong>.</li>
-                <li><strong>Twelve</strong> potent <strong>90-minute EFT</strong> & Coaching sessions with Adin.</li>
-                <li>This isn't a group program where you're one of many. You get a <strong>private 1-on-1</strong> program, the whole way through — <strong>my full presence and direct, expert guidance </strong>, built to <strong>fully meet you.</strong></li>
+                <li><strong>Twelve</strong> potent <strong>90-minute EFT</strong> & <strong>Coaching</strong> sessions with Adin.</li>
+                <li>This isn't a group program where you're one of many. You get a <strong>private 1-on-1 mentorship</strong>, the whole way through — <strong>my full presence and direct, expert guidance </strong>, built to <strong>fully meet you.</strong></li>
                 <li>Direct <strong>email access with Adin</strong>, for <strong>ongoing support</strong>, check-ins, and guidance between sessions.</li>
                 <li>Gain proficiency in using the <strong>wonderful modality</strong> of <strong>EFT on yourself</strong>.</li>
                 <li>Learn/cultivate a <strong>spiritual practice</strong> that's genuinely yours and <strong>deeply supports your life</strong> (this is optional but encouraged), and be held accountable for its development.</li>
