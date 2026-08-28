@@ -172,8 +172,8 @@ const MORE_ABOUT = [
     title: 'More on ongoing support',
     body: (
       <>
-        <p>This isn't a group program where you're one of many. You get a <strong>private 1-on-1 mentorship</strong>, the whole way through — <strong>my full presence and direct, expert guidance </strong>, built to <strong>fully meet you.</strong></p>
-        <p>Direct email access with Adin. Beyond the weekly sessions themselves, I maintain availability for my clients throughout the whole three months. That includes being energetically available and reachable by email — typically 1 or 2 emails a week — for guidance, presence, sharing, and integration support as things come up.</p>
+        <p>This isn't a group program where you're one of many. You get a <strong>private 1-on-1 mentorship</strong>, the whole way through — <strong>my full presence and direct, expert guidance</strong>, built to <strong>fully meet you.</strong></p>
+        <p>You get <strong>direct email access with me</strong> through the whole program. Beyond the weekly sessions themselves, I maintain energetic availability and attunement for my clients throughout the whole three months. I typically respond to 1 or 2 emails a week — for guidance, presence, sharing, and integration support as things come up.</p>
         {/* Cohort experience temporarily removed: "We'll also have Weekly cohort circles for sharing, connection, and tapping." */}
       </>
     ),
@@ -547,7 +547,7 @@ const AlignmentForm = () => {
               <div className="gold-divider"></div>
 
               <p className="af-review-note">
-                I review each application personally. If it's a good fit, we'll set up a free 30-minute call to align, understand the program better, ask each other any questions we have.
+                I review each application personally. If it's a good fit, we'll set up a free 30-minute call to align, understand the program better, and ask each other any questions we have.
               </p>
             </div>
           </section>
@@ -586,7 +586,7 @@ const AlignmentForm = () => {
               <ul className="list-bullets af-investment-list">
                 <li style={hueVars(39, { light: 82 })}>A 3-month container of <u className="af-underline">profound healing and upgrades</u>. Become <u className="af-underline">calm, happy, free, and empowered as your baseline</u>, dissolve pain that's been quietly running your life, and restore your <u className="af-underline">freedom.</u></li>
                 <li style={hueVars(42, { light: 82 })}>Twelve potent 90-minute 1-on-1 <u className="af-underline">EFT &amp; Coaching sessions</u> with Adin. <em>EFT is the single most effective healing tool</em> I've found for resolving nearly any issue at the root. Powerful, simple, gentle, fast, and versatile.</li>
-                <li style={hueVars(39, { light: 82 })}>Direct email access with Adin, for check-ins and guidance between sessions to keep you on track</li>
+                <li style={hueVars(39, { light: 82 })}>Direct email access with Adin, for guidance, presence, sharing, and integration support between sessions.</li>
                 <li style={hueVars(46, { light: 82 })}>Gain proficiency in using the powerful modality of <u className="af-underline">EFT on yourself.</u></li>
                 <li style={hueVars(49, { light: 82 })}>Cultivate a <u className="af-underline">spiritual practice</u> that's genuinely yours and deeply supports your life.</li>
                 {/* Cohort experience temporarily removed

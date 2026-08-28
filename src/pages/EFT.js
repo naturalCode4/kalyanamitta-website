@@ -104,7 +104,7 @@ const EFT = () => {
                 I'm advanced certified in EFT, and I integrate spiritual understanding — the wisdom of Love, Acceptance, and Letting Go — beyond typical EFT territory, attuned to you.
               </p>
               <p>
-                I trained in EFT in the context of a school that embraces the deepest spiritual wisdom and neuroscience. This school has produced massively positive, whole-life transformations and flourishing for hundreds of people — and trains them to do the same for others.
+                I trained in EFT in the context of a <a href="https://trainwithsonya.us/" target="_blank" rel="noopener noreferrer">school</a> that embraces the deepest spiritual wisdom and neuroscience. This school has produced massively positive, whole-life transformations and flourishing for hundreds of people — and trains them to do the same for others.
               </p>
 
               <Quote text="The scientist in me was a little skeptical it wouldn't work... I could not have been more wrong. My first session was so powerful — releasing so much pain I'd been dealing with for years." author="Zac K." />

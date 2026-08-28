@@ -336,7 +336,7 @@ const TapIntoFreedom = () => {
               <ul className="list-bullets tif-method-list">
                 <li>A 3-month container of <strong>transformative healing and upgrades</strong>.</li>
                 <li><strong>Twelve</strong> potent <strong>90-minute EFT</strong> & <strong>Coaching</strong> sessions with Adin.</li>
-                <li>This isn't a group program where you're one of many. You get a <strong>private 1-on-1 mentorship</strong>, the whole way through — <strong>my full presence and direct, expert guidance </strong>, built to <strong>fully meet you.</strong></li>
+                <li>This isn't a group program where you're one of many. You get a <strong>private 1-on-1 mentorship</strong>, the whole way through — <strong>my full presence and direct, expert guidance</strong>, built to <strong>fully meet you.</strong></li>
                 <li>Direct <strong>email access with Adin</strong>, for <strong>ongoing support</strong>, check-ins, and guidance between sessions.</li>
                 <li>Gain proficiency in using the <strong>wonderful modality</strong> of <strong>EFT on yourself</strong>.</li>
                 <li>Learn/cultivate a <strong>spiritual practice</strong> that's genuinely yours and <strong>deeply supports your life</strong> (this is optional but encouraged), and be held accountable for its development.</li>
@@ -435,7 +435,7 @@ const TapIntoFreedom = () => {
               </div>
               <div className={`collapsible-content ${openSections.whereLearned ? 'open' : ''}`}>
                 <p className="tif-color-green">
-                  I trained in EFT in the context of a school that embraces the deepest spiritual wisdom and neuroscience. This school has produced massively positive, whole-life transformations and flourishing for hundreds of people — and trains them to do the same for others.
+                  I trained in EFT in the context of a <a href="https://trainwithsonya.us/" target="_blank" rel="noopener noreferrer" className="tif-inline-link">school</a> that embraces the deepest spiritual wisdom and neuroscience. This school has produced massively positive, whole-life transformations and flourishing for hundreds of people — and trains them to do the same for others.
                 </p>
               </div>
 
@@ -517,16 +517,16 @@ const TapIntoFreedom = () => {
                 I have <u className="tif-underline">lived</u> this work, not just studied it: I've gained my calm, happiness, freedom, authority, energy, and life. I've come through PTSD, childhood wounding, emotionally immature parenting, anxiety, depression, shame, insecurity, heartbreak, and learned to walk as a sensitive and conscious soul and blacksheep.
               </p>
               <p>
-                When you work with me, you're with someone who's <u className="tif-underline"><em>been down there</em></u> in the mud, made it through, and earned their metaphorical badges and stamps. You're not alone in this!
-              </p>
-              <p>
-                People describe me as warm, intuitive, reliable, open-hearted, compassionate, safe, rooted, gentle, intelligence, devoted, and wise. People say I help them understand healing and spirituality in a way that's <em>real</em>.
+                When you work with me, you're with someone who's <u className="tif-underline"><em>been down there</em></u> in the mud, made it through, and earned their metaphorical badges and stamps. <u className="tif-underline">You're not alone in this!</u>
               </p>
               {totalReviews !== null && (
                 <p>
                   <a href={GOOGLE_REVIEWS_URL} target="_blank" rel="noopener noreferrer" className="tif-inline-link">See {totalReviews} 5-Star reviews on Google →</a>
                 </p>
               )}
+              <p>
+                People describe me as warm, intuitive, reliable, open-hearted, compassionate, safe, rooted, gentle, intelligence, devoted, and wise. People say I help them understand healing and spirituality in a way that's <em>real</em>.
+              </p>
 
               <div className="collapsible-header tif-inline-trigger" onClick={() => toggleSection('fullStory')}>
                 <span className={`triangle ${openSections.fullStory ? 'open' : ''}`}></span>
@@ -537,7 +537,7 @@ const TapIntoFreedom = () => {
                   I've always had a natural affinity for genuine connection, meditation, deep play, the natural world, and spiritual understanding. I knew early to follow my own path — and take a different way from the mediocrity most of the adults and institutions around me were offering. There is an authenticity and unfolding <u className="tif-underline">only you can walk.</u>
                 </p>
                 <p>
-                  EFT has been <u className="tif-underline">absolutely essential</u> in my healing journey. As I write this, I actually see the world as beautiful. I actually love and accept myself. I’m no longer crushed by negative emotions, triggers, and thoughts like I was most of my life. My work feels deeply aligned. I feel peace, freedom, power, and have confidence in myself. My health, habits, all my relationships, sense of self-worth, sense of divinity, have all improved. I offer to you what I’ve lived, because I know <u className="tif-underline">it can do the same for you</u>. And it’s so, so worth it.
+                  EFT has been <u className="tif-underline">absolutely essential</u> in my healing journey. As I write this, I actually see the world as beautiful. I actually love and accept myself. I’m no longer crushed by negative emotions, triggers, and thoughts like I was most of my life. My work feels deeply aligned. I feel peace, freedom, power, and have confidence in myself. My health, habits, finances, relationships, sense of self-worth, sense of divinity, have all improved. I offer to you what I’ve lived, because I know <u className="tif-underline">it can do the same for you</u>. And it’s so, so worth it.
                 </p>
               </div>
 
@@ -638,17 +638,17 @@ const TapIntoFreedom = () => {
               </h3>
               <div className={`collapsible-content ${openSections.forYouIf ? 'open' : ''}`}>
                 <ul className="list-bullets">
-                  <li>You're carrying something unresolved and you're ready to put down the weight — maybe that hasn't budged no matter what you've tried</li>
                   <li>You want more personal power, peace, play, love, and to improve aspect(s) of your life</li>
+                  <li>You want a better-functioning nervous system, brain, body, and mind</li>
+                  <li>You're carrying something unresolved and you're ready to put down the weight — maybe that hasn't budged no matter what you've tried</li>
                   <li>You're ready to invest in yourself financially</li>
                   <li>You want embodied change, not just talk</li>
-                  <li>You want a better-functioning nervous system, brain, body, and mind</li>
                   <li>Maybe you are a spiritual practitioner, but your practice isn't addressing certain layers of your psyche, trauma, or humanity. If that's you, you hold a place in my heart and this has been designed with you in mind</li>
                   <li>You are in <em>any part</em> of your personal development, spiritual maturity, and healing journey. I support people who are just starting to open to these dimensions, as well as those that are already very mature in their inner work</li>
                   <li>You're ready to go deep and be honest, with someone who can hold it</li>
                   <li>Living from your heart and in integrity matters deeply to you</li>
                   <li>You want tools to keep growing, not a forever dependency</li>
-                  <li>You feel a connection with me, your guide</li>
+                  <li>You feel a connection and affinity with me</li>
                   <li>Even if you're a little skeptical, or you've been let down before</li>
                 </ul>
               </div>
@@ -662,7 +662,7 @@ const TapIntoFreedom = () => {
               <div className={`collapsible-content ${openSections.notForYouIf ? 'open' : ''}`}>
                 <ul className="list-bullets">
                   <li>You're seeking a quick fix with no real engagement — this work asks something of you</li>
-                  <li>You're not ready to invest your focus, time, and money into you</li>
+                  <li>You're not ready to invest your focus, time, and money on you</li>
                   <li>You're not ready to see yourself, or would rather idly talk about your problems or play the victim than actually improve your situation— this work asks you to meet yourself deeply</li>
                   <li>Living from your heart and with integrity, isn't really a priority for you</li>
                   <li>You're in acute crisis or need primary medical or mental-health treatment — that care comes first, and this can complement it once you're stable</li>
@@ -681,14 +681,14 @@ const TapIntoFreedom = () => {
           <h2 className="subtitle-heading">Investment.</h2>
 
           <p className="tif-tagline tif-tagline-lg">This is an investment that can completely transform your life.</p>
-          <p className="tif-tagline tif-tagline-lg">It is offered because it brings innumerable benefits.</p>
+          <p className="tif-tagline tif-tagline-lg">It is offered because it brings massive benefit, including</p>
 
-          <p className="tif-emphasis">
-            Become <u className="tif-underline">calm, happy, free, and empowered</u> as your <u className="tif-underline">baseline</u> — restore your <u className="tif-underline">life-force</u>, and finally get free of pain that's been quietly running the show.
-          </p>
           <ul className="list-bullets tif-investment-list">
-            <li>Better relationships, improved health, and real progress on the outcomes you actually want.</li>
-            <li>Heal at the root — not just manage symptoms — across your body, mind, and spirit.</li>
+            <li>Become <u className="tif-underline">calm, happy, free, and empowered</u> as your <u className="tif-underline">baseline</u>.</li>
+            <li>Restore your <u className="tif-underline">life-force</u>.</li>
+            <li>Finally get free of pain that's been quietly running the show.</li>
+            <li>Better relationships, improved health, and create the outcomes you actually want.</li>
+            <li>Heal beyond belief, at the root — not just manage symptoms — across your body, mind, and spirit.</li>
             <li>High-level tools and knowledge that stay with you, long after our three months together.</li>
           </ul>
           <p className="tif-center">
@@ -716,7 +716,7 @@ const TapIntoFreedom = () => {
           <p className="tif-tagline">Go deep, and earn a life you choose.</p>
 
           <div className="tif-cta-group">
-            <a href={ALIGNMENT_FORM_URL} className="btn">I'm Ready –– Fill Out the Alignment Form →</a>
+            <a href={ALIGNMENT_FORM_URL} className="btn">I'm Ready –– Fill Out the Alignment Form! →</a>
             <Link to="/contact#get-in-touch" className="btn btn-outline">Have questions? I'm happy to respond by email →</Link>
           </div>
         </div>
