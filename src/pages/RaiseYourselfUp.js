@@ -19,7 +19,7 @@ const Quote = ({ text, author }) => (
   </div>
 );
 
-const ComingHomeToYourself = () => {
+const RaiseYourselfUp = () => {
   const [openSections, setOpenSections] = useState({
     costOfCarrying: false,
     eftWorks: false,
@@ -100,21 +100,21 @@ const ComingHomeToYourself = () => {
   return (
     <div className="program-page">
       <Helmet>
-        <title>Coming Home to Yourself | Healing from Toxic Parenting with Adin</title>
+        <title>Raise Yourself Up | Healing from Toxic Parenting with Adin</title>
         <meta name="description" content="A 12-week EFT program to reclaim your authenticity, trust, and peace after emotionally immature, abusive, or toxic parenting." />
-        <meta property="og:title" content="Coming Home to Yourself | Healing from Toxic Parenting" />
+        <meta property="og:title" content="Raise Yourself Up | Healing from Toxic Parenting" />
         <meta property="og:description" content="Reclaim the trust, boundaries, and self-love that emotionally immature or toxic parenting took from you. A 12-week EFT program with Adin." />
-        <meta property="og:url" content="https://healing-on-tap.com/coming-home-to-yourself" />
+        <meta property="og:url" content="https://healing-on-tap.com/raise-yourself-up" />
       </Helmet>
 
       {/* Hero */}
       <section className="fd-hero">
         <div className="container">
-          <h1 className="subtitle-heading">Coming Home to Yourself</h1>
+          <h1 className="subtitle-heading">Raise Yourself Up</h1>
           <p className="fd-hero-line fd-italic">Healing from Emotionally Immature, Abusive, or Toxic Parenting</p>
           <p className="fd-hero-line">You didn't learn to <u className="fd-underline">hate yourself</u> by accident.</p>
           <p className="fd-hero-line">Reclaim the trust, boundaries, and love that were <u className="fd-underline">never supposed to be this hard</u> to find.</p>
-          <p className="fd-hero-line">Come home to yourself — <u className="fd-underline">for good.</u></p>
+          <p className="fd-hero-line">Raise yourself up — <u className="fd-underline">for good.</u></p>
           <div className="fd-cta-center">
             <a href={ALIGNMENT_FORM_URL} className="btn">Apply →</a>
           </div>
@@ -147,7 +147,7 @@ const ComingHomeToYourself = () => {
 
           <div className="gold-divider"></div>
 
-          <p className="fd-emphasis"><u className="fd-underline"><em>Coming Home to Yourself</em></u> is a 12-week container of guided, one-on-one transformation, built specifically for reclaiming what emotionally immature, abusive, or toxic parenting took. It exists to end that cost. For good.</p>
+          <p className="fd-emphasis"><u className="fd-underline"><em>Raise Yourself Up</em></u> is a 12-week container of guided, one-on-one transformation, built specifically for reclaiming what emotionally immature, abusive, or toxic parenting took. It exists to end that cost. For good.</p>
           <p className="fd-emphasis">It's the same depth of work as my flagship <Link to="/freedom-dojo" className="fd-inline-link">Freedom Dojo</Link> program — pointed directly at the parent-shaped wound underneath so much else.</p>
           <p className="fd-emphasis">Whatever you're carrying — the self-doubt, the shame, the relationship patterns, the guilt over estrangement or contact — we <em>can</em> shift it.</p>
 
@@ -164,7 +164,7 @@ const ComingHomeToYourself = () => {
       {/* Benefits */}
       <section className="fd-benefits section-rainbow">
         <div className="container">
-          <h2 className="subtitle-heading">It's Time to Come Home to Yourself.</h2>
+          <h2 className="subtitle-heading">It's Time to Raise Yourself Up.</h2>
 
           <p className="fd-emphasis-strong">
             This is where you get to say: I'm done believing the coldness was about me. <u className="fd-underline">I'm taking my self back now.</u>
@@ -325,7 +325,7 @@ const ComingHomeToYourself = () => {
 
               <div className="gold-divider"></div>
 
-              <p className="fd-tagline">Break free from old conditioning, and come home to yourself.</p>
+              <p className="fd-tagline">Break free from old conditioning, and raise yourself up.</p>
               <div className="fd-cta-center">
                 <a href={ALIGNMENT_FORM_URL} className="btn">Join Now →</a>
               </div>
@@ -501,7 +501,7 @@ const ComingHomeToYourself = () => {
 
           <div className="gold-divider"></div>
 
-          <p className="fd-tagline">Go deep, and come all the way home to yourself.</p>
+          <p className="fd-tagline">Go deep, and raise yourself the rest of the way up.</p>
 
           <div className="fd-cta-group">
             <a href={ALIGNMENT_FORM_URL} className="btn">I'm Ready –– Fill Out the Alignment Form! →</a>
@@ -527,4 +527,4 @@ const ComingHomeToYourself = () => {
   );
 };
 
-export default ComingHomeToYourself;
+export default RaiseYourselfUp;

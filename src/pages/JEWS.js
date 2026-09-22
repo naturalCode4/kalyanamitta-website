@@ -113,9 +113,9 @@ const JEWS = () => {
   return (
     <div className="program-page">
       <Helmet>
-        <title>JEWS | Jewish Emotional Wellness Sessions with Adin</title>
+        <title>J.E.W.S. | Jewish Emotional Wellness Sessions with Adin</title>
         <meta name="description" content="A 12-week EFT & spiritual counseling program for the specific emotional, ancestral, and spiritual patterns of Jewish life — stress, money, food, safety, spirituality, Israel, and more." />
-        <meta property="og:title" content="JEWS | Jewish Emotional Wellness Sessions" />
+        <meta property="og:title" content="J.E.W.S. | Jewish Emotional Wellness Sessions" />
         <meta property="og:description" content="A 12-week EFT & spiritual counseling program for the specific emotional, ancestral, and spiritual patterns of Jewish life." />
         <meta property="og:url" content="https://healing-on-tap.com/jews" />
       </Helmet>
@@ -123,7 +123,7 @@ const JEWS = () => {
       {/* Hero */}
       <section className="fd-hero">
         <div className="container">
-          <h1 className="subtitle-heading">JEWS</h1>
+          <h1 className="subtitle-heading">J.E.W.S.</h1>
           <p className="fd-hero-line fd-italic">Jewish Emotional Wellness Sessions</p>
           <p className="fd-hero-line">Come home to yourself — <u className="fd-underline">for good.</u></p>
           <p className="fd-hero-line">Release the stress, guilt, and vigilance <u className="fd-underline">running your nervous system</u> since before you were born.</p>
@@ -160,7 +160,7 @@ const JEWS = () => {
 
           <div className="gold-divider"></div>
 
-          <p className="fd-emphasis"><u className="fd-underline"><em>JEWS</em></u> — Jewish Emotional Wellness Sessions — is a 12-week container of guided, one-on-one transformation, built specifically for the emotional, ancestral, and spiritual terrain of Jewish life. It exists to end that quiet cost, for good.</p>
+          <p className="fd-emphasis"><u className="fd-underline"><em>J.E.W.S.</em></u> — Jewish Emotional Wellness Sessions — is a 12-week container of guided, one-on-one transformation, built specifically for the emotional, ancestral, and spiritual terrain of Jewish life. It exists to end that quiet cost, for good.</p>
           <p className="fd-emphasis">It's the same depth of work as my flagship <Link to="/freedom-dojo" className="fd-inline-link">Freedom Dojo</Link> program — pointed at what's specifically yours to carry as a Jewish person, and specifically ready to be put down.</p>
           <p className="fd-emphasis">Whatever you're holding — the stress, the food stuff, the money stuff, the God stuff, the Israel stuff, the mother stuff — we <em>can</em> shift it.</p>
 

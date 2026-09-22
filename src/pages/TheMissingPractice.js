@@ -19,7 +19,7 @@ const Quote = ({ text, author }) => (
   </div>
 );
 
-const BeyondTheCushion = () => {
+const TheMissingPractice = () => {
   const [openSections, setOpenSections] = useState({
     costOfCarrying: false,
     eftWorks: false,
@@ -101,17 +101,17 @@ const BeyondTheCushion = () => {
   return (
     <div className="program-page">
       <Helmet>
-        <title>Beyond the Cushion | EFT for Spiritual Practitioners with Adin</title>
+        <title>The Missing Practice | EFT for Spiritual Practitioners with Adin</title>
         <meta name="description" content="A 12-week EFT program for spiritual practitioners whose meditation, yoga, or ceremonial practice hasn't fully addressed their deeper trauma, psyche, or humanity." />
-        <meta property="og:title" content="Beyond the Cushion | EFT for Spiritual Practitioners" />
+        <meta property="og:title" content="The Missing Practice | EFT for Spiritual Practitioners" />
         <meta property="og:description" content="For practitioners whose practice hasn't touched their deeper trauma, psyche, or humanity. A 12-week EFT program with Adin." />
-        <meta property="og:url" content="https://healing-on-tap.com/beyond-the-cushion" />
+        <meta property="og:url" content="https://healing-on-tap.com/the-missing-practice" />
       </Helmet>
 
       {/* Hero */}
       <section className="fd-hero">
         <div className="container">
-          <h1 className="subtitle-heading">Beyond the Cushion</h1>
+          <h1 className="subtitle-heading">The Missing Practice</h1>
           <p className="fd-hero-line fd-italic">EFT for Spiritual Practitioners</p>
           <p className="fd-hero-line">Your practice took you far. <u className="fd-underline">This takes you the rest of the way.</u></p>
           <p className="fd-hero-line">Clear what meditation, yoga, or ceremony alone <u className="fd-underline">couldn't fully reach.</u></p>
@@ -148,7 +148,7 @@ const BeyondTheCushion = () => {
 
           <div className="gold-divider"></div>
 
-          <p className="fd-emphasis"><u className="fd-underline"><em>Beyond the Cushion</em></u> is a 12-week container of guided, one-on-one transformation, built specifically for practitioners whose practice hasn't fully touched their deeper trauma, psyche, or humanity. It exists to close that gap. For good.</p>
+          <p className="fd-emphasis"><u className="fd-underline"><em>The Missing Practice</em></u> is a 12-week container of guided, one-on-one transformation, built specifically for practitioners whose practice hasn't fully touched their deeper trauma, psyche, or humanity. It exists to close that gap. For good.</p>
           <p className="fd-emphasis">It's the same depth of work as my flagship <Link to="/freedom-dojo" className="fd-inline-link">Freedom Dojo</Link> program — aimed specifically at what your cushion, mat, or altar couldn't fully clear.</p>
           <p className="fd-emphasis">This isn't a replacement for your practice. It's the complement to it.</p>
 
@@ -491,4 +491,4 @@ const BeyondTheCushion = () => {
   );
 };
 
-export default BeyondTheCushion;
+export default TheMissingPractice;
