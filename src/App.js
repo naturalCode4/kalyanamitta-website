@@ -15,7 +15,7 @@ import Contact from './pages/Contact';
 import Devportfolio from './pages/Devportfolio';
 import AlignmentForm from './pages/AlignmentForm';
 import JEWS from './pages/JEWS';
-import TheMissingPractice from './pages/TheMissingPractice';
+import ThePractitionersCompanion from './pages/ThePractitionersCompanion';
 import RaiseYourselfUp from './pages/RaiseYourselfUp';
 
 function AppContent() {
@@ -43,10 +43,11 @@ function AppContent() {
           <Route path="/alignment-form" element={<AlignmentForm />} />
           {/* Niche program experiments — real URLs, not yet linked from nav/site content */}
           <Route path="/jews" element={<JEWS />} />
-          <Route path="/the-missing-practice" element={<TheMissingPractice />} />
+          <Route path="/the-practitioners-companion" element={<ThePractitionersCompanion />} />
           <Route path="/raise-yourself-up" element={<RaiseYourselfUp />} />
           {/* Old names/URLs — redirect so any links already shared keep working */}
-          <Route path="/beyond-the-cushion" element={<Navigate to="/the-missing-practice" replace />} />
+          <Route path="/beyond-the-cushion" element={<Navigate to="/the-practitioners-companion" replace />} />
+          <Route path="/the-missing-practice" element={<Navigate to="/the-practitioners-companion" replace />} />
           <Route path="/coming-home-to-yourself" element={<Navigate to="/raise-yourself-up" replace />} />
           <Route path="*" element={<Home />} />
         </Routes>

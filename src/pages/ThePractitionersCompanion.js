@@ -19,7 +19,7 @@ const Quote = ({ text, author }) => (
   </div>
 );
 
-const TheMissingPractice = () => {
+const ThePractitionersCompanion = () => {
   const [openSections, setOpenSections] = useState({
     costOfCarrying: false,
     eftWorks: false,
@@ -60,8 +60,8 @@ const TheMissingPractice = () => {
     },
     {
       key: 'supports',
-      text: 'A practice that supports you, instead of covering for you',
-      detail: "You stop unconsciously using meditation, yoga, or ceremony as a container to manage or suppress what's actually asking to be felt — because you have somewhere better suited to bring it.",
+      text: 'A practice that gets to just be your practice',
+      detail: "Meditation, yoga, and ceremony get to be exactly what they are, instead of also quietly carrying what's actually asking to be felt — because that layer finally has somewhere dedicated to go.",
       review: { text: 'I always leave our sessions feeling lighter.', author: 'Kathryn S.' },
     },
     {
@@ -101,20 +101,20 @@ const TheMissingPractice = () => {
   return (
     <div className="program-page">
       <Helmet>
-        <title>The Missing Practice | EFT for Spiritual Practitioners with Adin</title>
-        <meta name="description" content="A 12-week EFT program for spiritual practitioners whose meditation, yoga, or ceremonial practice hasn't fully addressed their deeper trauma, psyche, or humanity." />
-        <meta property="og:title" content="The Missing Practice | EFT for Spiritual Practitioners" />
-        <meta property="og:description" content="For practitioners whose practice hasn't touched their deeper trauma, psyche, or humanity. A 12-week EFT program with Adin." />
-        <meta property="og:url" content="https://healing-on-tap.com/the-missing-practice" />
+        <title>The Practitioner's Companion | EFT for Spiritual Practitioners with Adin</title>
+        <meta name="description" content="A 12-week EFT program that works alongside your meditation, yoga, or ceremonial practice — direct support for the trauma, psyche, and humanity practice alone was never designed to carry." />
+        <meta property="og:title" content="The Practitioner's Companion | EFT for Spiritual Practitioners" />
+        <meta property="og:description" content="A companion to your practice, not a verdict on it. A 12-week EFT program with Adin." />
+        <meta property="og:url" content="https://healing-on-tap.com/the-practitioners-companion" />
       </Helmet>
 
       {/* Hero */}
       <section className="fd-hero">
         <div className="container">
-          <h1 className="subtitle-heading">The Missing Practice</h1>
+          <h1 className="subtitle-heading">The Practitioner's Companion</h1>
           <p className="fd-hero-line fd-italic">EFT for Spiritual Practitioners</p>
-          <p className="fd-hero-line">Your practice took you far. <u className="fd-underline">This takes you the rest of the way.</u></p>
-          <p className="fd-hero-line">Clear what meditation, yoga, or ceremony alone <u className="fd-underline">couldn't fully reach.</u></p>
+          <p className="fd-hero-line">Your practice is doing exactly what it's meant to do. <u className="fd-underline">This is a different tool, for a different layer.</u></p>
+          <p className="fd-hero-line">Direct, dedicated support for the trauma and nervous-system patterning <u className="fd-underline">practice was never built to carry alone.</u></p>
           <p className="fd-hero-line">Come back to your practice lighter — <u className="fd-underline">for good.</u></p>
           <div className="fd-cta-center">
             <a href={ALIGNMENT_FORM_URL} className="btn">Apply →</a>
@@ -126,7 +126,7 @@ const TheMissingPractice = () => {
       <section className="fd-intro section-dark">
         <div className="container">
           <p className="fd-center fd-narrow fd-intro-strong">
-            You've done real practice. This isn't about doing more of it. It's about finally addressing what practice alone was never quite built to reach.
+            You've done real practice, and it's given you real ground. This isn't about doing more of it, or fixing it. It's about a second, complementary tool — built for a layer that meditation, yoga, and ceremony were never designed to reach on their own.
           </p>
           <p className="fd-emphasis">
             <u className="fd-underline">Listen:</u> A lot of committed practitioners are quietly carrying an <u className="fd-underline">enormous</u>, invisible backlog: unprocessed trauma, old emotion, nervous system patterns that formed <em>long before</em> the practice began. It doesn't always show up as suffering you'd name out loud — sometimes it shows up as a plateau, a subtle bypass, or a body that never quite lets stillness all the way in.
@@ -148,8 +148,8 @@ const TheMissingPractice = () => {
 
           <div className="gold-divider"></div>
 
-          <p className="fd-emphasis"><u className="fd-underline"><em>The Missing Practice</em></u> is a 12-week container of guided, one-on-one transformation, built specifically for practitioners whose practice hasn't fully touched their deeper trauma, psyche, or humanity. It exists to close that gap. For good.</p>
-          <p className="fd-emphasis">It's the same depth of work as my flagship <Link to="/freedom-dojo" className="fd-inline-link">Freedom Dojo</Link> program — aimed specifically at what your cushion, mat, or altar couldn't fully clear.</p>
+          <p className="fd-emphasis"><u className="fd-underline"><em>The Practitioner's Companion</em></u> is a 12-week container of guided, one-on-one transformation, built specifically to work alongside serious practitioners — direct support for the trauma, psyche, and humanity that practice was never designed to be the tool for. It exists to give that layer somewhere real to go. For good.</p>
+          <p className="fd-emphasis">It's the same depth of work as my flagship <Link to="/freedom-dojo" className="fd-inline-link">Freedom Dojo</Link> program — aimed specifically at what your cushion, mat, or altar was never meant to carry alone.</p>
           <p className="fd-emphasis">This isn't a replacement for your practice. It's the complement to it.</p>
 
           <div className="gold-divider"></div>
@@ -157,7 +157,7 @@ const TheMissingPractice = () => {
           <Quote text="Adin's presence is grounded, compassionate, and deeply intuitive — he creates a safe space where real emotional release and clarity can unfold." author="Ryan S." />
 
           <div className="fd-cta-center">
-            <a href={ALIGNMENT_FORM_URL} className="btn">Sign me up! I want my practice to finally land! →</a>
+            <a href={ALIGNMENT_FORM_URL} className="btn">Sign me up! I want this layer to have its own home! →</a>
           </div>
         </div>
       </section>
@@ -165,12 +165,12 @@ const TheMissingPractice = () => {
       {/* Benefits */}
       <section className="fd-benefits section-rainbow">
         <div className="container">
-          <h2 className="subtitle-heading">It's Time to Let Your Practice Do Less Work.</h2>
+          <h2 className="subtitle-heading">Give Your Practice the Right Teammate.</h2>
 
           <p className="fd-emphasis-strong">
-            This is where you get to say: I'm done quietly using my practice to manage what it was never built to resolve. <u className="fd-underline">I'm giving that job to the right tool now.</u>
+            This is where you get to say: my practice gets to just be my practice now. <u className="fd-underline">This layer gets its own dedicated support.</u>
           </p>
-          <p className="fd-emphasis-strong">This is real, sustained transformation aimed at what your meditation, yoga, or ceremonial practice has been working around — down to the root.</p>
+          <p className="fd-emphasis-strong">This is real, sustained transformation aimed at the trauma and nervous-system patterning underneath your meditation, yoga, or ceremonial practice — down to the root.</p>
 
           <div className="gold-divider"></div>
 
@@ -207,7 +207,7 @@ const TheMissingPractice = () => {
       <section className="fd-notsymptom section-dark">
         <div className="container">
           <h2 className="subtitle-heading">The Real Thing.</h2>
-          <p className="fd-emphasis-strong">Not another technique to add to the stack. Not a deeper retreat. Not more hours on the cushion, hoping it finally breaks through.</p>
+          <p className="fd-emphasis-strong">Not a substitute for your retreats, your teacher, or your sitting practice — all of it stays exactly as valuable as it already is. Something else, working underneath and alongside it.</p>
           <p className="fd-emphasis-strong">
             <em>A life-changing shift on every level: emotionally, mentally, energetically, neurologically, physically — down into the nervous system itself. A wonderful, <u className="fd-underline">lasting upgrade</u> to your practice and your life, starting from exactly where you're at.</em>
           </p>
@@ -238,7 +238,7 @@ const TheMissingPractice = () => {
 
               <div className="gold-divider"></div>
 
-              <h3>So What is EFT/Tapping — and why isn't sitting with it enough?</h3>
+              <h3>So What is EFT/Tapping — and how does it work alongside sitting practice?</h3>
 
               <aside className="fd-sidebar fd-side-right">
                 <blockquote className="fd-pullquote">
@@ -250,7 +250,7 @@ const TheMissingPractice = () => {
                 <b>EFT/Tapping</b> is a <b>highly effective tool</b> for resolving nearly <b>any issue</b> completely — simple, gentle, and fast. You tap acupoints on your own body while being <b>skillfully guided</b> to address your issue or goal.
               </p>
               <p>
-                Sitting in stillness with an activated nervous system can genuinely help — and it can also, at a certain intensity, reinforce the very freeze or suppression pattern you're trying to release. EFT gives the system an active, physical, titrated way to actually discharge and process what's held — which is often exactly the missing piece between "I've observed this pattern for years" and "this pattern is actually resolved."
+                Sitting in stillness with an activated nervous system can genuinely help. Some patterns also respond beautifully to something more active alongside it — EFT gives the system a physical, titrated way to actually discharge and process what's held, which pairs well with the spaciousness sitting practice builds. Different tools, working together, between "I've observed this pattern for years" and "this pattern is actually resolved."
               </p>
 
               <Quote text="It was like magic!" author="Andrea L." />
@@ -315,7 +315,7 @@ const TheMissingPractice = () => {
                 EFT is where this stuff actually got addressed. And having that tool changed two things for me, in this order of how I noticed them, but not in order of importance: First, it gave my practice room to just <em>be</em> practice — I stopped quietly using meditation as a container to manage or suppress what was actually asking to be felt, because I finally had somewhere better suited to bring it. Second, and this is the part that mattered more: <u className="fd-underline">it actually cleared those things</u>. Which made the practice itself so much easier — so much less white-knuckling through coarse, difficult waves that kept crashing back no matter how many hours I sat.
               </p>
               <p>
-                I'm not here to compete with your tradition, your teacher, or your practice. I'm here to be the complement to it — the part that was maybe always missing.
+                I'm not here to compete with your tradition, your teacher, or your practice. I'm here to work alongside it — your companion for the layer it was never designed to be the tool for.
               </p>
 
               <div className="gold-divider fd-about-divider"></div>
@@ -345,7 +345,7 @@ const TheMissingPractice = () => {
               <p>Whatever you actually bring, we work with that. Common terrain for practitioners includes:</p>
 
               <ul className="list-bullets">
-                <li><strong>C-PTSD and trauma</strong> that meditation, yoga, or ceremony alone hasn't resolved.</li>
+                <li><strong>C-PTSD and trauma</strong> — the kind that calls for a direct, active complement alongside meditation, yoga, or ceremony.</li>
 
                 <li>
                   <div className="collapsible-header fd-inline-trigger" onClick={() => toggleSection('bypass')}>
@@ -397,12 +397,12 @@ const TheMissingPractice = () => {
               </h3>
               <div className={`collapsible-content ${openSections.forYouIf ? 'open' : ''}`}>
                 <ul className="list-bullets">
-                  <li>You're a spiritual practitioner, but your practice isn't addressing certain layers of your psyche, trauma, or humanity</li>
-                  <li>You've done real practice — meditation, yoga, ceremony, monastic or ashram time — and know the cushion alone hasn't been enough</li>
+                  <li>You're a spiritual practitioner, and there are layers of your psyche, trauma, or humanity that could use direct, dedicated support alongside your practice</li>
+                  <li>You've done real practice — meditation, yoga, ceremony, monastic or ashram time — and you're ready to give the trauma-and-nervous-system layer its own tool, too</li>
                   <li>You suspect you've been spiritually bypassing something, and you're ready to actually look</li>
                   <li>You want your insight to land in your nervous system and your life, not just stay in your understanding</li>
-                  <li>You're carrying trauma or C-PTSD that predates your practice and hasn't fully resolved through it</li>
-                  <li>You want a complement to your path, not a replacement for it</li>
+                  <li>You're carrying trauma or C-PTSD that predates your practice, and you want a tool built specifically for that layer</li>
+                  <li>You want a companion to your path, not a replacement for it</li>
                   <li>You're ready to go deep and be honest, with someone who can hold it</li>
                   <li>You're ready to invest in yourself financially</li>
                 </ul>
@@ -416,7 +416,7 @@ const TheMissingPractice = () => {
               </h3>
               <div className={`collapsible-content ${openSections.notForYouIf ? 'open' : ''}`}>
                 <ul className="list-bullets">
-                  <li>You're looking for someone to validate that your tradition or teacher was wrong — I'm not here to relitigate your path, just to support what it hasn't reached</li>
+                  <li>You're looking for someone to validate that your tradition or teacher was wrong — I'm not here to relitigate your path, just to work alongside it</li>
                   <li>You're seeking a quick fix with no real engagement — this work asks something of you</li>
                   <li>You're in acute crisis or need primary medical or mental-health treatment — that care comes first, and this can complement it once you're stable</li>
                 </ul>
@@ -439,7 +439,7 @@ const TheMissingPractice = () => {
           <ul className="list-bullets fd-investment-list">
             <li><u className="fd-underline">Heal</u> beyond belief, at the root — not just manage symptoms — across your <u className="fd-underline">body, mind, and spirit.</u></li>
             <li>A nervous system that can actually meet stillness.</li>
-            <li>A practice that supports you, instead of quietly covering for what's unresolved.</li>
+            <li>A practice that gets to just be your practice, while this layer gets its own dedicated support.</li>
             <li>Restored <u className="fd-underline">depth</u> and <u className="fd-underline">ease</u> in your practice.</li>
             <li><u className="fd-underline">High-level tools</u> that grow with you, long after our three months together.</li>
           </ul>
@@ -465,7 +465,7 @@ const TheMissingPractice = () => {
 
           <div className="gold-divider"></div>
 
-          <p className="fd-tagline">Go deep, and let your practice finally meet the rest of you.</p>
+          <p className="fd-tagline">Go deep, and let your practice and your healing walk side by side.</p>
 
           <div className="fd-cta-group">
             <a href={ALIGNMENT_FORM_URL} className="btn">I'm Ready –– Fill Out the Alignment Form! →</a>
@@ -491,4 +491,4 @@ const TheMissingPractice = () => {
   );
 };
 
-export default TheMissingPractice;
+export default ThePractitionersCompanion;
