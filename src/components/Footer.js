@@ -15,9 +15,9 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Quick Links</h4>
             <ul>
-              <li><Link to="/tap-into-freedom">Tap Into Freedom Program</Link></li>
+              <li><Link to="/freedom-dojo">The Freedom Dojo</Link></li>
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/EFT-emotional-freedom-techniques">EFT</Link></li>
+              <li><Link to="/EFT-emotional-freedom-techniques">EFT/Tapping</Link></li>
               {/* Reiki / Energy Healing temporarily removed from nav — page still live at /energy-work for direct links */}
               {/* <li><Link to="/energy-work">Energy Healing</Link></li> */}
               <li><Link to="/spiritual-practice">Spiritual Counseling</Link></li>

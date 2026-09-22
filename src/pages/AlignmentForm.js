@@ -20,7 +20,7 @@ const Quote = ({ text, author }) => (
 );
 
 // Testimonial sidebar running alongside the survey — same voices used on
-// the Tap Into Freedom page, just reused here (that page is left untouched).
+// the Freedom Dojo page, just reused here (that page is left untouched).
 const SIDEBAR_QUOTES = [
   {
     key: 'ryan',
@@ -51,7 +51,7 @@ const SIDEBAR_QUOTES = [
 
 const quoteByKey = (key) => SIDEBAR_QUOTES.find((q) => q.key === key);
 
-// Recap of the Tap Into Freedom benefits, same content as that page's
+// Recap of the Freedom Dojo benefits, same content as that page's
 // benefit dropdowns — reworded very slightly here to match the copy given
 // for this page, but the detail/review text is intentionally identical.
 const BENEFITS = [
@@ -233,7 +233,7 @@ const SECTIONS = [
     sidebarQuote: 'zach',
     intro: [
       'The vast majority of people are carrying heavy baggage that quietly affects their well-being, life-force, peace, relationships, confidence, health, clarity, and much more.',
-      'Tap Into Freedom exists to end that cost. For good.',
+      'Freedom Dojo exists to end that cost. For good.',
       'This is a real, sustained transformation that can profoundly shift nearly anything you carry.',
     ],
     fields: [
@@ -509,7 +509,7 @@ const AlignmentForm = () => {
     <div className="alignment-form-page">
       <Helmet>
         <title>Alignment Form | Healing On Tap</title>
-        <meta name="description" content="Fill out the Alignment Form to begin Tap Into Freedom with Adin." />
+        <meta name="description" content="Fill out the Alignment Form to begin Freedom Dojo with Adin." />
       </Helmet>
 
       {status === 'success' ? (
@@ -532,7 +532,7 @@ const AlignmentForm = () => {
               <h1 className="subtitle-heading">Alignment Form</h1>
               <p className="af-hero-line"><u className="af-underline af-hero-welcome">Welcome.</u></p>
               <p className="af-hero-line">
-                In the <em>Tap Into Freedom</em> program you will become more calm, happy, free, and empowered as your baseline, dissolve pain that's been quietly running your life, and restore your freedom — for good.
+                In the <em>Freedom Dojo</em> you will become more calm, happy, free, and empowered as your baseline, dissolve pain that's been quietly running your life, and restore your freedom — for good.
               </p>
             </div>
           </section>
@@ -541,13 +541,13 @@ const AlignmentForm = () => {
           <section className="af-transform" style={hueVars(0, { sat: 60, light: 75 })}>
             <div className="container">
               <p className="af-emphasis">
-                A life-changing shift <u className="af-underline">on every level</u>: emotionally, mentally, energetically, neurologically, physically down into the cells of the body and your very DNA. A wonderful, <u className="af-underline">lasting upgrade to your life</u> — starting from exactly where you're at.
+                A life-changing shift <u className="af-underline">on every level</u>: emotionally, mentally, energetically, neurologically, physically down into the cells and DNA. A wonderful, <u className="af-underline">lasting upgrade to your life</u> — starting from exactly where you're at.
               </p>
 
               <div className="gold-divider"></div>
 
               <p className="af-review-note">
-                I review each application personally. If it's a good fit, we'll set up a free 30-minute call to align, understand the program better, and ask each other any questions we have.
+                I review each application personally. If it's a good fit, the next step is a free 30-minute call to align. If approved, you'll be onboarded and we'll begin.
               </p>
             </div>
           </section>
@@ -573,7 +573,7 @@ const AlignmentForm = () => {
             </div>
           </section>
 
-          {/* Investment recap — same content as the Tap Into Freedom page's
+          {/* Investment recap — same content as the Freedom Dojo page's
               Investment section, reused here rather than imported since that
               page's CSS isn't guaranteed loaded on this route. Each line
               steps forward along the same red -> violet spectrum as the
@@ -673,7 +673,7 @@ const AlignmentForm = () => {
 
                   <div className="gold-divider"></div>
 
-                  <p className="af-tagline">Ready? →</p> 
+                  <p className="af-tagline">Ready? Take a deep breath →</p> 
                 </div>
 
                 {missingField && (

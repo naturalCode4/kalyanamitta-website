@@ -1,9 +1,8 @@
 export const offerings = [
   {
     id: 'EFT-emotional-freedom-techniques',
-    title: 'EFT (Tapping)',
-    availability: 'Available in-person or virtual',
-    content: "EFT is the single most effective healing tool I've found for resolving nearly any issue at the root — powerful, simple, gentle, and fast. It involves tapping acupoints on your own body while a practitioner skillfully guides you to heal and upgrade at the root of an issue or goal. It neutralizes and dissolves negative thought patterns and emotions, undesired conditioning, and restores access to your full energy and the ability to be authentic, aligned, and create the life you desire."
+    title: 'Tapping (EFT)',
+    content: "EFT is a highly effective tool for resolving nearly any issue completely — simple, gentle, and fast. You will tap acupoints on your own body while I skillfully guide you to heal, resolve, and upgrade issue or goal. It neutralizes and dissolves negative thought patterns and emotions, undesired conditioning, and restores the health of your nervous system and the ability to live the life you desire."
   },
   // Reiki / Energy Healing temporarily removed from the offerings grid — page still live at /energy-work for direct links
   // {
@@ -15,8 +14,7 @@ export const offerings = [
   {
     id: 'spiritual-practice',
     title: 'Spiritual Counseling and Practices',
-    availability: 'Available in-person or virtual',
-    content: "Guidance, education, and heart-companionship on your spiritual life and path — addressing where you face challenges, where you're growing, and what's next. I also help you learn or deepen a practice — building a real, living relationship with it: meditation, breathwork, yoga, voice-based sound healing, prayer, ecstatic dance, or another entirely."
+    content: "Guidance, education, and heart-companionship in your life and spiritual development — addressing your challenges and expansion. I help people relate to spirituality authentically. I can help you learn or deepen practices — building a living relationship with: meditation, breathwork, yoga, voice-based sound healing, prayer, ecstatic dance, or whatever you bring."
   },
 ];
 

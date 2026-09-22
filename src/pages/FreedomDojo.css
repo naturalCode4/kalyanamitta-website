@@ -1,4 +1,4 @@
-/* Tap Into Freedom Page Styles */
+/* Freedom Dojo Page Styles */
 
 /* ---------- Experiment: colored "grey" text ----------
    Plain grey body text (most sections quietly fell back to the site's
@@ -19,20 +19,20 @@
    this replaces originally had no explicit color (i.e. it fell back to the
    global #b8b8b8), so deleting is a clean revert. */
 :root {
-  --tif-intro-text: hsl(0, 65%, 78%);        /* red    (1st section) */
-  --tif-benefits-text: hsl(28, 70%, 72%);    /* orange (2nd) */
-  --tif-method-text: hsl(52, 65%, 70%);      /* yellow (3rd) */
-  --tif-wise-friend-text: hsl(140, 40%, 68%);/* green  (4th) */
-  --tif-about-text: hsl(205, 60%, 76%);      /* blue   (5th) */
-  --tif-focus-text: hsl(248, 50%, 80%);      /* indigo (6th) */
-  --tif-investment-text: hsl(280, 45%, 82%); /* violet (7th, last) */
+  --fd-intro-text: hsl(0, 65%, 78%);        /* red    (1st section) */
+  --fd-benefits-text: hsl(28, 70%, 72%);    /* orange (2nd) */
+  --fd-method-text: hsl(52, 65%, 70%);      /* yellow (3rd) */
+  --fd-wise-friend-text: hsl(140, 40%, 68%);/* green  (4th) */
+  --fd-about-text: hsl(205, 60%, 76%);      /* blue   (5th) */
+  --fd-focus-text: hsl(248, 50%, 80%);      /* indigo (6th) */
+  --fd-investment-text: hsl(280, 45%, 82%); /* violet (7th, last) */
 }
 
-.tap-into-freedom {
+.freedom-dojo {
   min-height: 100vh;
 }
 
-.tap-into-freedom section {
+.freedom-dojo section {
   padding: 5rem 0;
 }
 
@@ -48,7 +48,7 @@
   scroll-margin-top: 85px;
 }
 
-.tif-hero {
+.fd-hero {
   background: linear-gradient(
     135deg,
     #0f0f0f 0%,
@@ -64,12 +64,12 @@
   border-bottom: 2px solid #d4af37;
 }
 
-.tif-hero h1.subtitle-heading {
+.fd-hero h1.subtitle-heading {
   font-size: 4.4rem;
   margin-bottom: 2rem;
 }
 
-.tif-hero-line {
+.fd-hero-line {
   font-size: 1.5rem;
   font-weight: 700;
   color: #f0f0f0;
@@ -79,10 +79,10 @@
 }
 
 
-/* Reusable underline treatment — apply className="tif-underline" to any
+/* Reusable underline treatment — apply className="fd-underline" to any
    <u> (or other inline element) wherever an underline is wanted on this
    page, so the styling stays consistent. */
-.tif-underline {
+.fd-underline {
   text-decoration: underline;
   text-decoration-color: #d4af37;
   text-decoration-thickness: 2px;
@@ -92,51 +92,51 @@
 /* Plain inline text links (e.g. the "100 studies and trials" citation)
    otherwise fall back to the browser's default link color, which is dark
    and hard to read against this page's near-black backgrounds. */
-.tif-inline-link {
+.fd-inline-link {
   color: #d4af37;
   text-decoration: underline;
 }
 
-.tif-inline-link:hover {
+.fd-inline-link:hover {
   color: #f4d03f;
 }
 
 /* ---------- Section headers used throughout ---------- */
-.tap-into-freedom h2.subtitle-heading {
+.freedom-dojo h2.subtitle-heading {
   text-align: center;
   font-size: 3.2rem;
   margin-bottom: 2rem;
 }
 
-.tap-into-freedom h3 {
+.freedom-dojo h3 {
   font-size: 2.1rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
   text-align: center;
 }
 
-.tif-intro h3,
-.tif-method h3,
-.tif-about h3,
-.tif-focus h3,
-.tif-wise-friend h3 {
+.fd-intro h3,
+.fd-method h3,
+.fd-about h3,
+.fd-focus h3,
+.fd-wise-friend h3 {
   color: #f0f0f0;
 }
 
 /* Dropdown / collapsible headers are centered on this page, including the
    per-benefit headers (they reuse the shared .collapsible-header class). */
-.tap-into-freedom .collapsible-header {
+.freedom-dojo .collapsible-header {
   justify-content: center;
 }
 
 /* ---------- Emphasis lines ---------- */
 /* font-size/text-align need !important: Home.css has a page-wide
    ".section-rainbow p { font-size: 1.1rem; text-align: left; ... }" rule
-   that's MORE specific than a single class like .tif-emphasis (it also
+   that's MORE specific than a single class like .fd-emphasis (it also
    matches on the "p" element), and Benefits/Wise Friend/Focus all use
    .section-rainbow — without !important that leak silently shrinks and
-   left-aligns every .tif-emphasis line in those three sections. */
-.tif-emphasis {
+   left-aligns every .fd-emphasis line in those three sections. */
+.fd-emphasis {
   font-weight: 700;
   font-size: 1.8rem !important;
   line-height: 1.6;
@@ -146,19 +146,19 @@
   margin: 1.8rem auto;
 }
 
-.tif-emphasis-strong {
+.fd-emphasis-strong {
   font-weight: 700;
-  font-size: 1.45rem !important; /* !important: see the note above .tif-emphasis */
+  font-size: 1.45rem !important; /* !important: see the note above .fd-emphasis */
   color: #ffffff;
   text-align: center !important;
   max-width: 800px;
   margin: 0 auto 1.5rem;
 }
 
-.tif-small-italic {
+.fd-small-italic {
   font-style: italic;
   text-align: center !important;
-  font-size: 1.05rem !important; /* !important: see the note above .tif-emphasis */
+  font-size: 1.05rem !important; /* !important: see the note above .fd-emphasis */
   /* Plain white (via Home.css's page-wide .section-rainbow rule) — Where We
      Focus deliberately isn't part of the rainbow text-color system, see the
      note at the top of this file. */
@@ -167,14 +167,14 @@
 /* Utility for one-off plain paragraphs that need centering — the default
    section rule left-aligns ordinary <p> tags for body-copy readability, so
    use this to override on a specific paragraph without touching the rest. */
-.tif-center {
+.fd-center {
   text-align: center !important;
 }
 
-/* Pairs with .tif-center for short standalone paragraphs (not body copy) —
+/* Pairs with .fd-center for short standalone paragraphs (not body copy) —
    caps the line width so centered text reads as a curated statement rather
    than one long line stretching the full container. */
-.tif-narrow {
+.fd-narrow {
   max-width: 800px !important;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -183,11 +183,11 @@
 /* ---------- Tagline pull-lines before CTAs ----------
    color needs !important: sections using the site-wide .section-dark class
    (e.g. Investment, Not Symptom Management) carry a `.section-dark p` rule
-   that's MORE specific than a single class like .tif-tagline, so without
+   that's MORE specific than a single class like .fd-tagline, so without
    this the gold color silently loses to that section's default light-grey
    paragraph color. */
-.tif-tagline {
-  text-align: center !important; /* !important: see the note above .tif-emphasis */
+.fd-tagline {
+  text-align: center !important; /* !important: see the note above .fd-emphasis */
   font-style: italic;
   font-weight: 700;
   font-size: 1.85rem !important;
@@ -198,33 +198,33 @@
 }
 
 /* One-off size bump for a specific tagline instance, e.g. the Investment
-   section's opening line — stack alongside .tif-tagline, not instead of it. */
-.tif-tagline-lg {
-  font-size: 2.1rem !important; /* !important: needed to beat .tif-tagline's own !important */
+   section's opening line — stack alongside .fd-tagline, not instead of it. */
+.fd-tagline-lg {
+  font-size: 2.1rem !important; /* !important: needed to beat .fd-tagline's own !important */
   max-width: 850px;
 }
 
-/* One-off size bump for a specific .tif-emphasis instance — stack alongside
-   .tif-emphasis, not instead of it. */
-.tif-emphasis-lg {
+/* One-off size bump for a specific .fd-emphasis instance — stack alongside
+   .fd-emphasis, not instead of it. */
+.fd-emphasis-lg {
   font-size: 2.2rem !important;
 }
 
 /* ---------- CTA buttons ---------- */
 /* .btn is a shared global class (used on other pages too) — bump size only
    within this page rather than touching the shared rule. */
-.tap-into-freedom .btn {
+.freedom-dojo .btn {
   font-size: 1.15rem;
   padding: 0.95rem 2.4rem;
 }
 
-.tif-cta-center {
+.fd-cta-center {
   display: flex;
   justify-content: center;
   margin-top: 1.5rem;
 }
 
-.tif-cta-group {
+.fd-cta-group {
   display: flex;
   gap: 1.5rem;
   justify-content: center;
@@ -239,26 +239,26 @@
    text (unlike float) and never makes the next block wait for it to finish
    (unlike a grid row, which sizes to its tallest cell). The main column's
    own height is all that matters for what comes after — text continues
-   right away. .tif-flow is the positioning context; .tif-flow-main is the
-   reserved-margin text column; each .tif-sidebar is pinned left or right
+   right away. .fd-flow is the positioning context; .fd-flow-main is the
+   reserved-margin text column; each .fd-sidebar is pinned left or right
    via a modifier class. Sections with sidebars get a wider container so
    there's real breathing room in the middle once the margins are reserved. */
-.tif-wise-friend .container,
-.tif-about .container,
-.tif-focus .container,
-.tif-method .container {
+.fd-wise-friend .container,
+.fd-about .container,
+.fd-focus .container,
+.fd-method .container {
   max-width: 1600px;
 }
 
-.tif-flow {
+.fd-flow {
   position: relative;
 }
 
-.tif-flow-main {
+.fd-flow-main {
   max-width: 720px;
 }
 
-.tif-flow-main.tif-flow-main-left {
+.fd-flow-main.fd-flow-main-left {
   margin-left: 440px;
 }
 
@@ -270,13 +270,13 @@
    there are two sidebars (one real reservation each side) and when there's
    only one (a matching phantom reservation on the empty side keeps the
    text visually centered instead of hugging that side). */
-.tif-flow-main.tif-flow-main-both {
+.fd-flow-main.fd-flow-main-both {
   margin-left: 440px;
   margin-right: 440px;
   max-width: none;
 }
 
-.tif-about-image {
+.fd-about-image {
   float: right;
   width: 260px;
   margin: 0 0 1rem 1.25rem;
@@ -290,14 +290,14 @@
    number of lines around it regardless of height (confirmed by testing up
    to 900px with no change), a real cross-browser float/line-wrap quirk, so
    flexbox is used instead for a predictable, matchable height. */
-.tif-wise-row {
+.fd-wise-row {
   display: flex;
   align-items: flex-start;
   gap: 1.25rem;
   margin: 1.8rem 0;
 }
 
-.tif-wise-image {
+.fd-wise-image {
   flex: 0 0 240px;
   width: 240px;
   height: 565px;
@@ -309,7 +309,7 @@
   transform: scaleX(-1);
 }
 
-.tif-emphasis.tif-wise-emphasis {
+.fd-emphasis.fd-wise-emphasis {
   flex: 1;
   min-width: 0;
   text-align: left !important;
@@ -318,11 +318,11 @@
 }
 
 @media (max-width: 700px) {
-  .tif-wise-row {
+  .fd-wise-row {
     flex-direction: column;
   }
 
-  .tif-wise-image {
+  .fd-wise-image {
     flex: none;
     width: 100%;
     max-width: 300px;
@@ -335,18 +335,18 @@
 /* Stop the floated portrait from squeezing the "More about Adin" dropdown
    into a narrow column — the float should only sit beside the opening
    paragraph, not everything that follows it. */
-.tif-about .tif-inline-trigger {
+.fd-about .fd-inline-trigger {
   clear: both;
 }
 
 /* The page-wide 5rem gold-divider margin is tuned for gaps between major
    sections — right after this short dropdown trigger it reads as a dead
    zone, so it gets a tighter margin here specifically. */
-.tif-about-divider {
+.fd-about-divider {
   margin: 1.5rem auto !important;
 }
 
-.tif-sidebar {
+.fd-sidebar {
   position: absolute;
   top: 0;
   width: 380px;
@@ -356,11 +356,11 @@
   padding: 1.75rem 2rem;
 }
 
-.tif-sidebar.tif-side-left {
+.fd-sidebar.fd-side-left {
   left: 0;
 }
 
-.tif-sidebar.tif-side-right {
+.fd-sidebar.fd-side-right {
   right: 0;
 }
 
@@ -370,47 +370,47 @@
    normal flow — so opening one naturally pushes the next one down instead
    of needing a hardcoded pixel gap that either overlaps when expanded or
    leaves a dead gap when collapsed. */
-.tif-sidebar-stack {
+.fd-sidebar-stack {
   position: absolute;
   width: 380px;
 }
 
-.tif-sidebar-stack.tif-side-left {
+.fd-sidebar-stack.fd-side-left {
   left: 0;
 }
 
-.tif-sidebar-stack.tif-side-right {
+.fd-sidebar-stack.fd-side-right {
   right: 0;
 }
 
-.tif-sidebar-stack .tif-sidebar {
+.fd-sidebar-stack .fd-sidebar {
   position: static;
   margin-bottom: 1.5rem;
 }
 
-.tif-sidebar-stack .tif-sidebar:last-child {
+.fd-sidebar-stack .fd-sidebar:last-child {
   margin-bottom: 0;
 }
 
-.tif-sidebar p {
+.fd-sidebar p {
   margin-bottom: 0;
   font-size: 1.1rem;
   line-height: 1.7;
   text-align: left !important;
 }
 
-.tif-sidebar p + p {
+.fd-sidebar p + p {
   margin-top: 1.3rem;
 }
 
-.tif-sidebar .tif-quote {
+.fd-sidebar .fd-quote {
   margin: 0;
   max-width: none;
 }
 
 /* A sidebar that's ALSO a dropdown: same bordered box, but the header
    toggles a collapsed/expanded content block inside it, starting closed. */
-.tif-sidebar-dropdown-header {
+.fd-sidebar-dropdown-header {
   justify-content: flex-start !important;
   text-align: left;
   font-size: 1.15rem;
@@ -419,23 +419,23 @@
 }
 
 /* Sidebars are absolutely positioned, so their height never reflows the
-   section around them (see the .tif-flow note above) — which also means a
+   section around them (see the .fd-flow note above) — which also means a
    long dropdown, once opened, can grow taller than the section itself and
    spill into whatever comes next. Capping the open height with a scrollbar
    keeps it contained no matter how long the content is. More specific than
    the shared ".collapsible-content.open { max-height: 5000px }" rule, so no
    !important needed. */
-.tif-sidebar-dropdown .collapsible-content.open {
+.fd-sidebar-dropdown .collapsible-content.open {
   max-height: 480px;
   overflow-y: auto;
 }
 
-.tif-sidebar-dropdown-header .triangle {
+.fd-sidebar-dropdown-header .triangle {
   color: #d4af37;
   flex-shrink: 0;
 }
 
-.tif-sidebar-dropdown .collapsible-content p {
+.fd-sidebar-dropdown .collapsible-content p {
   text-align: left !important;
   font-size: 1.05rem;
   line-height: 1.8;
@@ -449,11 +449,11 @@
    text-color system (see the note at the top of this file), so its
    sidebar-dropdown text just falls through to plain white like the rest of
    that section's body copy. */
-.tif-method .tif-sidebar-dropdown .collapsible-content p {
-  color: var(--tif-method-text);
+.fd-method .fd-sidebar-dropdown .collapsible-content p {
+  color: var(--fd-method-text);
 }
 
-.tif-sidebar-dropdown .collapsible-content p:first-child {
+.fd-sidebar-dropdown .collapsible-content p:first-child {
   margin-top: 1rem;
 }
 
@@ -461,13 +461,13 @@
    heading (h3) and not a sidebar, just a short "see more" prompt between
    paragraphs. Shortening plan: content behind these starts collapsed. */
 /* Same gold, italic look the "How do we create this powerful shift?" line
-   had as a .tif-inline-trigger dropdown before it became a plain header. */
-.tif-gold-heading {
+   had as a .fd-inline-trigger dropdown before it became a plain header. */
+.fd-gold-heading {
   color: #d4af37 !important;
   font-style: italic;
 }
 
-.tif-inline-trigger {
+.fd-inline-trigger {
   justify-content: center;
   color: #d4af37;
   font-size: 1.28rem;
@@ -477,15 +477,15 @@
   max-width: 700px;
 }
 
-.tif-inline-trigger .triangle {
+.fd-inline-trigger .triangle {
   color: #d4af37;
 }
 
-.tif-inline-trigger:hover {
+.fd-inline-trigger:hover {
   opacity: 0.8;
 }
 
-.tif-sidebar-quote {
+.fd-sidebar-quote {
   font-style: italic;
   color: #d4af37 !important;
   margin-top: 1rem !important;
@@ -500,27 +500,27 @@
    reserved margins) well before that gets tight, so mobile AND common
    laptop widths just read straight down the page. */
 @media (max-width: 1400px) {
-  .tif-flow-main,
-  .tif-flow-main.tif-flow-main-left,
-  .tif-flow-main.tif-flow-main-both {
+  .fd-flow-main,
+  .fd-flow-main.fd-flow-main-left,
+  .fd-flow-main.fd-flow-main-both {
     max-width: 100%;
     margin: 0;
   }
 
-  .tif-sidebar {
+  .fd-sidebar {
     position: static;
     width: 100%;
     margin: 0 0 1.5rem;
     top: auto !important;
   }
 
-  .tif-sidebar-stack {
+  .fd-sidebar-stack {
     position: static;
     width: 100%;
     top: auto !important;
   }
 
-  .tif-about-image {
+  .fd-about-image {
     float: none;
     width: 100%;
     max-width: 300px;
@@ -530,7 +530,7 @@
 }
 
 /* ---------- Pull quotes (Anais Nin, Sonya Sophia, Carl Rogers, Buddha) ---------- */
-.tif-pullquote {
+.fd-pullquote {
   font-style: italic;
   font-size: 1.28rem;
   color: #e8e8e8;
@@ -543,18 +543,18 @@
   position: relative;
 }
 
-.tif-pullquote::before,
-.tif-pullquote::after {
+.fd-pullquote::before,
+.fd-pullquote::after {
   color: #d4af37;
   font-size: 1.4rem;
 }
 
-.tif-pullquote-dialogue {
+.fd-pullquote-dialogue {
   text-align: left;
   font-size: 1.1rem;
 }
 
-.tif-sidebar .tif-pullquote {
+.fd-sidebar .fd-pullquote {
   margin: 0;
   max-width: none;
   padding: 0;
@@ -562,7 +562,7 @@
 }
 
 /* ---------- Inline star testimonials ---------- */
-.tif-quote {
+.fd-quote {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(212, 175, 55, 0.3);
   border-radius: 12px;
@@ -572,7 +572,7 @@
   text-align: center;
 }
 
-.tif-stars {
+.fd-stars {
   color: #fbbc05;
   font-size: 1.1rem;
   letter-spacing: 2px;
@@ -580,10 +580,10 @@
   margin-bottom: 0.5rem;
 }
 
-/* text-align/font-size !important: see the note above .tif-emphasis — the
+/* text-align/font-size !important: see the note above .fd-emphasis — the
    same Home.css leak also force-left-aligns quote text inside
    Benefits/Wise Friend/Focus without this. */
-.tif-quote-text {
+.fd-quote-text {
   font-style: italic;
   color: #e8e8e8;
   margin-bottom: 0.5rem;
@@ -592,16 +592,16 @@
   text-align: center !important;
 }
 
-.tif-quote-author {
+.fd-quote-author {
   font-weight: 600;
   color: #d4af37;
   margin-bottom: 0;
-  font-size: 1.05rem !important; /* !important: see the note above .tif-quote-text */
+  font-size: 1.05rem !important; /* !important: see the note above .fd-quote-text */
   text-align: center !important;
 }
 
 /* ---------- Benefit list (each item its own dropdown when it has a review) ---------- */
-.tif-benefit-list {
+.fd-benefit-list {
   list-style: none;
   padding: 0;
   margin: 1.5rem auto 2.5rem;
@@ -612,7 +612,7 @@
   align-items: start;
 }
 
-.tif-benefit-item {
+.fd-benefit-item {
   border-bottom: 1px solid rgba(212, 175, 55, 0.2);
   padding: 0.9rem 0;
   display: flex;
@@ -620,14 +620,14 @@
 }
 
 @media (max-width: 900px) {
-  .tif-benefit-list {
+  .fd-benefit-list {
     grid-template-columns: 1fr;
   }
 }
 
-.tif-benefit-detail {
+.fd-benefit-detail {
   text-align: left;
-  /* !important: see the note above .tif-emphasis — Home.css's page-wide
+  /* !important: see the note above .fd-emphasis — Home.css's page-wide
      .section-rainbow leak otherwise shrinks this back down to 1.1rem. */
   font-size: 1.08rem !important;
   line-height: 1.8;
@@ -638,7 +638,7 @@
      at the top of this file. */
 }
 
-.tif-benefit-header {
+.fd-benefit-header {
   font-size: 1.2rem;
   color: #ffffff;
   margin: 0;
@@ -654,17 +654,17 @@
   text-align: left;
 }
 
-.tif-benefit-header .triangle {
+.fd-benefit-header .triangle {
   color: #d4af37;
 }
 
-.tif-benefit-item .collapsible-content .tif-quote {
+.fd-benefit-item .collapsible-content .fd-quote {
   margin-top: 1rem;
   margin-bottom: 0;
 }
 
 /* ---------- "This Is For You If" / "This Is NOT For You If" side by side ---------- */
-.tif-dual-dropdown {
+.fd-dual-dropdown {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 3rem;
@@ -673,34 +673,34 @@
   margin: 0 auto;
 }
 
-.tif-dual-dropdown h3 {
+.fd-dual-dropdown h3 {
   margin-top: 0;
 }
 
 @media (max-width: 900px) {
-  .tif-dual-dropdown {
+  .fd-dual-dropdown {
     grid-template-columns: 1fr;
     gap: 2.5rem 0;
   }
 }
 
 /* ---------- Section variants for this page ---------- */
-.tif-intro,
-.tif-benefits,
-.tif-notsymptom,
-.tif-wise-friend,
-.tif-focus,
-.tif-investment {
+.fd-intro,
+.fd-benefits,
+.fd-notsymptom,
+.fd-wise-friend,
+.fd-focus,
+.fd-investment {
   text-align: center;
 }
 
-.tif-intro p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author):not(.tif-emphasis-strong):not(.tif-benefit-detail):not(.tif-sidebar-quote),
-.tif-method p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author):not(.tif-emphasis-strong):not(.tif-benefit-detail):not(.tif-sidebar-quote),
-.tif-about p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author):not(.tif-emphasis-strong):not(.tif-benefit-detail):not(.tif-sidebar-quote),
-.tif-focus p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author):not(.tif-emphasis-strong):not(.tif-benefit-detail):not(.tif-sidebar-quote),
-.tif-wise-friend p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author):not(.tif-emphasis-strong):not(.tif-benefit-detail):not(.tif-sidebar-quote),
-.tif-benefits p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author):not(.tif-emphasis-strong):not(.tif-benefit-detail):not(.tif-sidebar-quote),
-.tif-investment p:not(.tif-emphasis):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author):not(.tif-emphasis-strong):not(.tif-benefit-detail):not(.tif-sidebar-quote) {
+.fd-intro p:not(.fd-emphasis):not(.fd-small-italic):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author):not(.fd-emphasis-strong):not(.fd-benefit-detail):not(.fd-sidebar-quote),
+.fd-method p:not(.fd-emphasis):not(.fd-small-italic):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author):not(.fd-emphasis-strong):not(.fd-benefit-detail):not(.fd-sidebar-quote),
+.fd-about p:not(.fd-emphasis):not(.fd-small-italic):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author):not(.fd-emphasis-strong):not(.fd-benefit-detail):not(.fd-sidebar-quote),
+.fd-focus p:not(.fd-emphasis):not(.fd-small-italic):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author):not(.fd-emphasis-strong):not(.fd-benefit-detail):not(.fd-sidebar-quote),
+.fd-wise-friend p:not(.fd-emphasis):not(.fd-small-italic):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author):not(.fd-emphasis-strong):not(.fd-benefit-detail):not(.fd-sidebar-quote),
+.fd-benefits p:not(.fd-emphasis):not(.fd-small-italic):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author):not(.fd-emphasis-strong):not(.fd-benefit-detail):not(.fd-sidebar-quote),
+.fd-investment p:not(.fd-emphasis):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author):not(.fd-emphasis-strong):not(.fd-benefit-detail):not(.fd-sidebar-quote) {
   text-align: left;
   font-size: 1.18rem;
   line-height: 1.9;
@@ -715,31 +715,31 @@
    deliberately NOT colored here — see the note at the top of this file —
    so their plain paragraphs just fall through to Home.css's page-wide
    ".section-rainbow * { color: white !important }" rule. */
-.tif-intro p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author) {
-  color: var(--tif-intro-text);
+.fd-intro p:not(.fd-emphasis):not(.fd-small-italic):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author) {
+  color: var(--fd-intro-text);
 }
-.tif-method p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author) {
-  color: var(--tif-method-text);
+.fd-method p:not(.fd-emphasis):not(.fd-small-italic):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author) {
+  color: var(--fd-method-text);
 }
 /* The "what's included" list added to the howShift dropdown has no <p>
    wrapper, so the rule above never reaches it — without this it silently
    falls through to the body's default dark text color (nearly invisible
    against this section's dark background). Font-size/line-height match
    what the paragraphs it replaced rendered at (the shared
-   ".tif-method p:not(...)" rule elsewhere in this file). */
-.tif-method-list li {
-  color: var(--tif-method-text);
+   ".fd-method p:not(...)" rule elsewhere in this file). */
+.fd-method-list li {
+  color: var(--fd-method-text);
   font-size: 1.18rem;
   line-height: 1.9;
 }
-.tif-about p:not(.tif-emphasis):not(.tif-small-italic):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author) {
-  color: var(--tif-about-text);
+.fd-about p:not(.fd-emphasis):not(.fd-small-italic):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author) {
+  color: var(--fd-about-text);
 }
-.tif-investment p:not(.tif-emphasis):not(.tif-tagline):not(.tif-quote-text):not(.tif-quote-author) {
-  color: var(--tif-investment-text);
+.fd-investment p:not(.fd-emphasis):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author) {
+  color: var(--fd-investment-text);
 }
 
-.tif-notsymptom p {
+.fd-notsymptom p {
   text-align: center;
   max-width: 800px;
   margin-left: auto;
@@ -747,7 +747,7 @@
 }
 
 /* ---------- Investment / pricing ---------- */
-.tif-pricing-row {
+.fd-pricing-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
@@ -755,51 +755,51 @@
   margin: 2.5rem auto;
 }
 
-.tif-investment-list,
-.tif-intro-list {
+.fd-investment-list,
+.fd-intro-list {
   max-width: 600px;
   margin: 1.5rem auto 2rem;
   text-align: left;
 }
 
 /* Explicit request: orange, distinct from Intro's own red rainbow color. */
-.tif-intro-list li {
-  color: var(--tif-benefits-text);
+.fd-intro-list li {
+  color: var(--fd-benefits-text);
 }
 
 /* Explicit request: green, distinct from Method's own yellow rainbow color.
-   !important needed to beat the per-section ".tif-method p:not(...)" rule,
+   !important needed to beat the per-section ".fd-method p:not(...)" rule,
    which is more specific (6 classes) than a single extra class here. */
-.tif-color-green {
-  color: var(--tif-wise-friend-text) !important;
+.fd-color-green {
+  color: var(--fd-wise-friend-text) !important;
 }
 
-.tif-investment-list li {
+.fd-investment-list li {
   font-weight: 700;
   font-size: 1.5rem;
   color: #c9a3e8; /* explicit request: purple */
   padding: 0.4rem 0 0.4rem 20px;
 }
 
-/* Explicit request: bolder than the pale --tif-intro-text red used for
+/* Explicit request: bolder than the pale --fd-intro-text red used for
    ordinary Intro paragraphs, while staying in the same red family. */
-.tif-intro-strong {
+.fd-intro-strong {
   color: hsl(0, 80%, 74%) !important;
 }
 
-.tif-italic {
+.fd-italic {
   font-style: italic;
 }
 
-/* Explicit request: darker purple than the .tif-investment-list bullets above. */
-.tif-payment-note {
+/* Explicit request: darker purple than the .fd-investment-list bullets above. */
+.fd-payment-note {
   color: #a878d9 !important;
 }
 
 /* Very light pastel rainbow instead of flat white — each card gets a
    different hue order so the two read as distinct, still light enough that
    the card's existing dark text (#1a1a1a / #444) stays easily readable. */
-.tif-price-card {
+.fd-price-card {
   background: linear-gradient(135deg, #f8d3e2 0%, #faedb8 33%, #bfe9d3 66%, #c3ddf5 100%);
   border-radius: 12px;
   padding: 2rem;
@@ -808,13 +808,13 @@
   position: relative;
 }
 
-.tif-price-card h3 {
+.fd-price-card h3 {
   color: #1a1a1a !important;
   margin-top: 0;
   font-size: 1.55rem;
 }
 
-.tif-price {
+.fd-price {
   font-size: 2.2rem;
   font-weight: 700;
   color: #1a1a1a !important;
@@ -822,14 +822,14 @@
   text-align: center;
 }
 
-.tif-price-note {
+.fd-price-note {
   color: #444 !important;
   font-size: 1rem;
   text-align: center;
   margin-bottom: 0;
 }
 
-.tif-price-highlight {
+.fd-price-highlight {
   background: linear-gradient(135deg, #c9d0f5 0%, #ddc3f2 33%, #f7c8e0 66%, #fbe6ae 100%);
   border: 6px solid #d4af37;
   transform: scale(1.03);
@@ -842,14 +842,14 @@
    each other. Gold dividers are the one deliberate exception — a bigger,
    intentional break between sub-sections. These rules come last on
    purpose so they win over each component's own earlier margin. */
-.tif-quote,
-.tif-pullquote,
-.tif-tagline,
-.tif-emphasis,
-.tif-emphasis-strong,
-.tif-benefit-list,
-.tif-dual-dropdown,
-.tif-pricing-row {
+.fd-quote,
+.fd-pullquote,
+.fd-tagline,
+.fd-emphasis,
+.fd-emphasis-strong,
+.fd-benefit-list,
+.fd-dual-dropdown,
+.fd-pricing-row {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -859,8 +859,8 @@
    neighbor it could land next to) is enough to open up the gap both
    before the preceding tagline/one-liner and after, into whatever quote
    or paragraph follows. */
-.tif-cta-center,
-.tif-cta-group {
+.fd-cta-center,
+.fd-cta-group {
   margin-top: 3.5rem;
   margin-bottom: 3.5rem;
 }
@@ -870,12 +870,12 @@
    stacks on top of the section's own bottom padding for a much bigger gap
    than any other section boundary gets. Zero it out in that case and let
    the section padding do the job by itself. */
-.tif-cta-center:last-child,
-.tif-cta-group:last-child {
+.fd-cta-center:last-child,
+.fd-cta-group:last-child {
   margin-bottom: 0;
 }
 
-.tap-into-freedom .gold-divider {
+.freedom-dojo .gold-divider {
   margin: 5rem auto;
 }
 
@@ -883,7 +883,7 @@
 /* Same muted dark-rainbow treatment as the hero, but shifted to a purple
    theme (indigo/violet/magenta) instead of the hero's red/orange, so the
    page opens and closes with the same technique in two different hues. */
-.tif-signoff {
+.fd-signoff {
   text-align: center;
   background: linear-gradient(
     135deg,
@@ -897,63 +897,63 @@
   );
 }
 
-.tif-feedback-link {
+.fd-feedback-link {
   color: #d4af37;
   text-decoration: underline;
   font-size: 1.15rem;
 }
 
-.tif-feedback-link:hover {
+.fd-feedback-link:hover {
   color: #f4d03f;
 }
 
-.tif-signoff-text {
+.fd-signoff-text {
   font-size: 1.7rem;
   color: #f0f0f0;
 }
 
 /* .list-bullets is a shared global class (used on other pages too) — bump
    its text size only within this page rather than touching the shared rule. */
-.tap-into-freedom .list-bullets li {
+.freedom-dojo .list-bullets li {
   font-size: 1.1rem;
   line-height: 1.6;
 }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 768px) {
-  .tap-into-freedom section {
+  .freedom-dojo section {
     padding: 3rem 0;
   }
 
-  .tif-hero {
+  .fd-hero {
     padding: 6rem 0 3rem;
   }
 
-  .tif-hero h1.subtitle-heading {
+  .fd-hero h1.subtitle-heading {
     font-size: 2.2rem;
   }
 
-  .tif-hero-line {
+  .fd-hero-line {
     font-size: 1.15rem;
   }
 
-  .tap-into-freedom h2.subtitle-heading {
+  .freedom-dojo h2.subtitle-heading {
     font-size: 2.3rem;
   }
 
-  .tif-emphasis-strong {
+  .fd-emphasis-strong {
     font-size: 1.1rem;
   }
 
-  .tif-tagline {
+  .fd-tagline {
     font-size: 1.1rem;
   }
 
-  .tif-price-highlight {
+  .fd-price-highlight {
     transform: none;
   }
 
-  .tif-cta-group {
+  .fd-cta-group {
     flex-direction: column;
     align-items: center;
   }

@@ -66,9 +66,10 @@ const EFT = () => {
       <section className="EFT-emotional-freedom-techniques-hero">
         <div className="container">
           <div className="EFT-emotional-freedom-techniques-hero-content">
-            <h1>Emotional Freedom Techniques (EFT)</h1>
+            <h1>EFT (a.k.a Tapping)</h1>
             <p className="EFT-emotional-freedom-techniques-subtitle">
-              The single most effective tool I've found for rapid, lasting transformation — heal at the root, improve your physical health, become calm, happy, free, and empowered, and create the life you desire.
+              A highly effective tool for rapid, root-level transformation — improve your physical health, become calm, happy, free, and empowered, and create the life you desire. You will be skillfully guided to resolve nearly any issue or goal.
+
             </p>
           </div>
         </div>
@@ -95,10 +96,10 @@ const EFT = () => {
             </div>
             <div className="about-eft-text">
               <p>
-                EFT is the single most effective healing tool I've found for resolving nearly any issue at the root — powerful, simple, gentle, fast, and versatile. It involves self-acceptance, self-love, and tapping acupoints on your own body while I skillfully guide you to address an issue or goal. It neutralizes and dissolves negative thought patterns and emotions, undesired conditioning, and restores access to your full energy and the ability to be calm, happy, free, and create the life you desire.
+                EFT stands for Emotional Freedom Techniques. It's commonly known as Tapping. It's super simple to practice. But having practiced for more than 10 years with various healing modalities, mystical traditions, and spiritual practices – I specialize in EFT for a good reason.
               </p>
               <p>
-                This is a remarkably versatile tool that can make a real difference in nearly any area of your life (see "Who and What is EFT For" below).
+                This is a remarkably versatile tool for rapid, root-level transformation. EFT can make a lasting difference in nearly any area of your life (see "Who and What is EFT For" below).
               </p>
               <p>
                 I'm advanced certified in EFT, and I integrate spiritual understanding — the wisdom of Love, Acceptance, and Letting Go — beyond typical EFT territory, attuned to you.

@@ -82,7 +82,7 @@ const Header = () => {
         <nav className={`nav ${isMenuOpen ? 'active' : ''}`}>
           <ul className="nav-list">
             <li className="nav-item">
-              <Link to="/tap-into-freedom" className="nav-link" onClick={(e) => handleNavClick(e, null)}>The Tap Into Freedom Offer</Link>
+              <Link to="/freedom-dojo" className="nav-link" onClick={(e) => handleNavClick(e, null)}>The Freedom Dojo Offer</Link>
             </li>
             <li className="nav-item">
               <Link to="/" className="nav-link" onClick={(e) => handleNavClick(e, null)}>Home</Link>

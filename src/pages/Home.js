@@ -11,6 +11,16 @@ import pic2 from '../assets/pic2.jpg';
 import pic17 from '../assets/pic17.jpg';
 import { Helmet } from 'react-helmet';
 
+const Stars = () => <span className="home-stars">★★★★★</span>;
+
+const Quote = ({ text, author }) => (
+  <div className="home-quote">
+    <Stars />
+    <p className="home-quote-text">"{text}"</p>
+    <p className="home-quote-author">— {author}</p>
+  </div>
+);
+
 const Home = () => {
   const { hash } = useLocation();
 
@@ -52,33 +62,33 @@ const Home = () => {
             <h1><u className="hero-underline">Healing On Tap</u></h1>
 
             <p className="hero-subtitle">
-              This is where you gain real, lasting freedom.
+              This work brings you to live in authentic wisdom, love, and freedom.
             </p>
             <p className="hero-subtitle">
-              <em>You've made it.</em>
+              <em>Welcome.</em>
             </p>
 
             <div className="hero-manifesto">
               <div className="manifesto-item">
-                <span className="manifesto-text">Become calm, happy, free, and empowered – as your baseline.<br className="desktop-break" />Unmute your soul.</span>
-              </div>
-              <div className="manifesto-connector"></div>
-              <div className="manifesto-item">
-                <span className="manifesto-text">Transform at the deepest root — not just the surface.<br className="desktop-break" />Gain the life you desire.</span>
+                <span className="manifesto-text">Become more calm, happy, free, and empowered – as your baseline.<br className="desktop-break" />Unmute your soul.</span>
               </div>
               <div className="manifesto-connector"></div>
               <div className="manifesto-item">
                 <span className="manifesto-text">It's time to get your power back,<br className="desktop-break" />and dissolve the pain you never chose.</span>
               </div>
+              <div className="manifesto-connector"></div>
+              <div className="manifesto-item">
+                <span className="manifesto-text">Transform at the root level.<br className="desktop-break" />Gain the life you desire.</span>
+              </div>
             </div>
 
             <p className="hero-polarize">
-              This is the real thing. This is your invitation. So, are you ready?
+              This is your invitation. This work works. Are you ready?
             </p>
 
             <div className="hero-buttons">
-              <Link to="/tap-into-freedom" className="btn">Apply for the Tap Into Freedom Program →</Link>
-              <Link to="/contact#booking" className="btn btn-outline">Book Your Session →</Link>
+              <Link to="/contact#booking" className="btn btn-outline">Book A Session →</Link>
+              <Link to="/freedom-dojo" className="btn">Apply for the Freedom Dojo Program →</Link>
             </div>
 
           </div>
@@ -93,7 +103,7 @@ const Home = () => {
       >
         <div className="grid grid-2">
           <div>
-            <p><em>Healing On Tap</em> offers <b>life-changing shifts</b> to all who are called — on every level: emotionally, mentally, energetically, spiritually, neurologically, physically down to the cells of your body.</p>
+            <p><em>Healing On Tap</em> offers <b>life-changing shifts</b> to all who are called — on every level: emotionally, mentally, energetically, spiritually, neurologically, physically down to the cells and DNA.</p>
             <p>This work offers profound, lasting transformation — reaching into every part of your life, inner and outer. <b>Whatever it is you're carrying, this work can shift it.</b></p>
             <p>This is where you <b>put down the heavy baggage</b> — the old fear, unprocessed pain, negative emotions, and limiting beliefs and conditioning you never chose. Here, at the deepest, root level, you restore your <b>life-force</b> — earning the <b>freedom to live calm, happy, free, and empowered.</b></p>
             <p>At your core, you are <em>already</em> <b></b>whole, inherently <b>loving</b>, <b>wise</b>, <b>peaceful</b>, with the <b>innate capacity for healing</b>. This work clears what's been in the way, and activates these innate qualities so they can <b>fully bloom.</b></p>
@@ -125,7 +135,6 @@ const Home = () => {
             <ServiceCard
               key={offering.id}
               title={offering.title}
-              availability={offering.availability}
               content={offering.content}
               learnMoreLink={`/${offering.id}`}
               variant="rainbow"
@@ -205,7 +214,20 @@ const Home = () => {
 
         </div>
       </Section>
-      
+
+      {/* Testimonials */}
+      <Section
+        variant="dark"
+        title="What People Are Saying"
+        subtitle=""
+      >
+        <div className="home-quotes-grid">
+          <Quote text="Adin's presence is grounded, compassionate, and deeply intuitive — he creates a safe space where real emotional release and clarity can unfold." author="Ryan S." />
+          <Quote text="Adin is an innately gifted intuitive healer, with the dedication and discipline to match his inborn talents. I trust both the quality of his own energy and the many ways he facilitates energetic balance and emotional wellness for others." author="Zachary H." />
+          <Quote text="Adin has an open heart and high emotional intelligence — both of which make it seamless and easy to connect with him and have him facilitate healing work. He is committed to his own personal, spiritual path — and the evidence of that work is shown in the value he's able to provide by elucidating and helping me find insights and let go of trauma that no longer serves me. You're in good hands with Adin." author="Travis D." />
+        </div>
+      </Section>
+
       {/* CTA Section */}
       <Section 
         variant="dark" 

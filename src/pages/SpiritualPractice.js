@@ -149,6 +149,12 @@ const SpiritualPractice = () => {
 
               <h2 className="subtitle-heading">About Spiritual Practice</h2>
 
+              <div className="offering-book-cta">
+                <Link to="/contact#booking" className="btn btn-outline">
+                  Book a Session with Adin to Receive Guidance in Spiritual Practice →
+                </Link>
+              </div>
+
               <p>
                 I guide several mind-body practices, helping you learn or deepen yours, and make it genuinely yours. They have different benefits, emphases, and approaches — each touching various aspects of your spiritual life and being. Together, they grow your physical, mental, emotional, and spiritual health; deepen your self-awareness and sensitivity; and connect you with your higher self, intuition, purpose, and conscience.
               </p>

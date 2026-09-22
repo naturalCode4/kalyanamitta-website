@@ -523,7 +523,7 @@
     display: block;
   }
 }
-/* Testimonial quote callouts, same pattern as TapIntoFreedom.js's .tif-quote */
+/* Testimonial quote callouts, same pattern as FreedomDojo.js's .fd-quote */
 .eft-quote {
   clear: both;
   background: rgba(255, 255, 255, 0.03);

@@ -1535,8 +1535,53 @@
 /* Mobile Hiding */
 @media (max-width: 768px) {
   .nav-btn { display: none; } /* Hide explicit buttons on mobile, swipe/tap is better */
-  
+
   /* Reset spacing on mobile so it doesn't look cramped if buttons are gone */
-  .carousel-navigation-area { display: block; } 
+  .carousel-navigation-area { display: block; }
   .carousel-strip-wrapper { margin-top: -10px; }
+}
+
+/* Testimonial quotes, same pattern as EFT.js's .eft-quote */
+.home-quotes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+  align-items: stretch;
+}
+
+.home-quote {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-stars {
+  color: #fbbc05;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.home-quote-text {
+  font-style: italic;
+  color: #e8e8e8;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  font-size: 1.1rem !important;
+  text-align: center !important;
+}
+
+.home-quote-author {
+  font-weight: 600;
+  color: #d4af37;
+  margin-bottom: 0;
+  font-size: 1.05rem !important;
+  text-align: center !important;
 }

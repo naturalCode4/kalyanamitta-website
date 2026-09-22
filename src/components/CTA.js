@@ -11,7 +11,7 @@ const CTA = ({
   return (
     <div className="cta-section">
       <div className="cta-buttons">
-        <Link to="/tap-into-freedom" className="btn">Apply for Tap Into Freedom →</Link>
+        <Link to="/freedom-dojo" className="btn">Apply for Freedom Dojo →</Link>
         <Link to={primaryButtonLink} className="btn btn-outline">{primaryButtonText}</Link>
       </div>
       <p className="cta-discovery-call-note">GET IN TOUCH with any questions or to schedule a free 30-minute consultation.</p>

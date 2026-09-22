@@ -9,7 +9,7 @@ const Rates = () => {
 
   const packages = [
     {
-      name: 'Tap Into Freedom Program',
+      name: 'Freedom Dojo Program',
       description: "A 12-week container to dissolve the limitations that have been running your life, and become calm, happy, free, and empowered — for good.",
       mainPrice: '$2,420',
       slidingScale: ' Founding Cohort',
@@ -23,7 +23,7 @@ const Rates = () => {
         'My ongoing support the whole way'
       ],
       ctaText: 'Learn More & Apply',
-      ctaLink: '/tap-into-freedom'
+      ctaLink: '/freedom-dojo'
     },
     {
       name: '4-Session Combo',
@@ -136,18 +136,18 @@ const Rates = () => {
         </div>
       </section>
 
-      {/* Tap Into Freedom Program highlight */}
-      <section className="rates-tif-highlight section-dark">
+      {/* Freedom Dojo Program highlight */}
+      <section className="rates-fd-highlight section-dark">
         <div className="container">
-          <h2 className="subtitle-heading">The <u className="rates-underline">Tap Into Freedom</u> Program</h2>
-          <p className="rates-tif-description">
+          <h2 className="subtitle-heading">The <u className="rates-underline">Freedom Dojo</u> Program</h2>
+          <p className="rates-fd-description">
             A 12-week container to dissolve what's been running your life, and become calm, happy, free, and empowered — for good.
           </p>
-          <div className="rates-tif-price">
+          <div className="rates-fd-price">
             <span className="price-gold">$2,420</span> Founding Cohort
-            <span className="rates-tif-original"> · $3,000 Standard</span>
+            <span className="rates-fd-original"> · $3,000 Standard</span>
           </div>
-          <Link to="/tap-into-freedom" className="btn">Learn More →</Link>
+          <Link to="/freedom-dojo" className="btn">Learn More →</Link>
         </div>
       </section>
 
@@ -284,7 +284,7 @@ const Rates = () => {
             {packages.map((pkg, index) => (
               <div
                 key={index}
-                className={`package-card ${pkg.name.includes('Session Combo') || pkg.name === 'Tap Into Freedom Program' ? 'combo-highlight' : ''}`}
+                className={`package-card ${pkg.name.includes('Session Combo') || pkg.name === 'Freedom Dojo Program' ? 'combo-highlight' : ''}`}
               >
                 <div className="package-header">
                   <h3>{pkg.name}</h3>

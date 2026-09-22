@@ -1,6 +1,6 @@
 /* Alignment Form Page Styles
-   Same visual language as TapIntoFreedom.css (subtitle-heading, gold-divider,
-   collapsible-header/triangle, .tif-quote-style testimonials) but WITHOUT
+   Same visual language as FreedomDojo.css (subtitle-heading, gold-divider,
+   collapsible-header/triangle, .fd-quote-style testimonials) but WITHOUT
    the .section-rainbow textured background — color instead comes from a
    red -> violet spectrum applied per form section via inline CSS vars
    (--af-text / --af-accent / --af-accent-bg), set in AlignmentForm.js. */
@@ -20,7 +20,7 @@
 }
 
 /* ---------- Hero ----------
-   Same dark purple gradient as TapIntoFreedom's .tif-signoff section —
+   Same dark purple gradient as FreedomDojo's .fd-signoff section —
    reused directly since it's already a proven dark-purple version of that
    page's muted-gradient technique. */
 .af-hero {
@@ -68,7 +68,7 @@
   line-height: 1.5;
 }
 
-/* Same treatment as TapIntoFreedom's .tif-underline (defined locally since
+/* Same treatment as FreedomDojo's .fd-underline (defined locally since
    that page's CSS isn't guaranteed to be loaded here). */
 .af-underline {
   text-decoration: underline;
@@ -200,7 +200,7 @@
   color: var(--af-text, #d4af37);
 }
 
-/* ---------- Testimonials (same look as TapIntoFreedom's tif-quote) ---------- */
+/* ---------- Testimonials (same look as FreedomDojo's fd-quote) ---------- */
 .af-quote {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(212, 175, 55, 0.3);
@@ -309,7 +309,7 @@
 
 /* Wider container just for this section so there's room for a reserved
    right-hand margin on the 4 sections that carry a testimonial — same
-   technique as TapIntoFreedom's sidebar sections: each quote is taken out
+   technique as FreedomDojo's sidebar sections: each quote is taken out
    of flow (position: absolute) within its own section so it never reshapes
    that section's text, and collapses to plain static stacking (right where
    it already sits in the DOM, i.e. one quote per section) on narrower

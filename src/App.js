@@ -1,11 +1,11 @@
 import React from 'react';
-import { useLocation, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useLocation, BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import GoToTopPage from './components/GoToTopPage';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import TapIntoFreedom from './pages/TapIntoFreedom';
+import FreedomDojo from './pages/FreedomDojo';
 import About from './pages/About';
 import EnergyWork from './pages/EnergyWork';
 import SpiritualPractice from './pages/SpiritualPractice';
@@ -25,7 +25,9 @@ function AppContent() {
       {!hideHeader && <Header />}
       <main className="main-content">
         <Routes>
-          <Route path="/tap-into-freedom" element={<TapIntoFreedom />} />
+          <Route path="/freedom-dojo" element={<FreedomDojo />} />
+          {/* Old program name/URL — redirect so existing links/bookmarks keep working */}
+          <Route path="/tap-into-freedom" element={<Navigate to="/freedom-dojo" replace />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/energy-work" element={<EnergyWork />} />

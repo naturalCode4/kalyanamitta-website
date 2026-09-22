@@ -394,7 +394,7 @@
     display: block;
   }
 }
-/* Testimonial quote callouts, same pattern as TapIntoFreedom.js's .tif-quote / EFT.js's .eft-quote */
+/* Testimonial quote callouts, same pattern as FreedomDojo.js's .fd-quote / EFT.js's .eft-quote */
 .spiritual-quote {
   clear: both;
   background: rgba(255, 255, 255, 0.03);
@@ -431,7 +431,7 @@
   text-align: center !important;
 }
 
-/* Pullquote for the Buddha/Upaddha Sutta quote, same pattern as TapIntoFreedom.css's .tif-pullquote */
+/* Pullquote for the Buddha/Upaddha Sutta quote, same pattern as FreedomDojo.css's .fd-pullquote */
 .spiritual-pullquote {
   font-style: italic;
   font-size: 1.15rem !important;

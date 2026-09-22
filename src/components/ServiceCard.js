@@ -3,10 +3,9 @@ import { Link } from 'react-router-dom';
 import Card from './Card';
 import './ServiceCard.css';
 
-const ServiceCard = ({ 
-  title, 
-  availability, 
-  content = '', 
+const ServiceCard = ({
+  title,
+  content = '',
   benefits = [], 
   description = '',
   learnMoreLink = '',
@@ -45,9 +44,6 @@ const ServiceCard = ({
             </ul>
           </div>
         )}
-
-        {/* Availability */}
-        {availability && <p className="service-availability">{availability}</p>}
 
         {/* Buttons */}
         <div className="service-actions">
