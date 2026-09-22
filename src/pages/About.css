@@ -65,9 +65,27 @@
   line-height: 1.7;
 }
 
-.about-image {
+.about-underline {
+  text-decoration: underline;
+  text-decoration-color: #d4af37;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.about-pullquote {
+  font-style: italic;
+  font-size: 1.28rem;
+  color: #e8e8e8;
+  text-align: center;
+  max-width: 800px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+  line-height: 1.7;
+}
+
+.about-story-image {
   float: right;
-  width: 100px;
+  width: 260px;
   margin-left: 2rem;
   margin-bottom: 1.5rem;
   margin-top: 0;
@@ -395,7 +413,7 @@
     font-size: 1.65rem;
   }
   
-  .about-image {
+  .about-story-image {
     float: none;
     width: 100%;
     max-width: 300px;

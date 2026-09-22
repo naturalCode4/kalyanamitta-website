@@ -1,4 +1,4 @@
-/* Freedom Dojo Page Styles */
+/* Shared layout & styles for program landing pages (Freedom Dojo and its niche variants) */
 
 /* ---------- Experiment: colored "grey" text ----------
    Plain grey body text (most sections quietly fell back to the site's
@@ -28,11 +28,11 @@
   --fd-investment-text: hsl(280, 45%, 82%); /* violet (7th, last) */
 }
 
-.freedom-dojo {
+.program-page {
   min-height: 100vh;
 }
 
-.freedom-dojo section {
+.program-page section {
   padding: 5rem 0;
 }
 
@@ -102,13 +102,13 @@
 }
 
 /* ---------- Section headers used throughout ---------- */
-.freedom-dojo h2.subtitle-heading {
+.program-page h2.subtitle-heading {
   text-align: center;
   font-size: 3.2rem;
   margin-bottom: 2rem;
 }
 
-.freedom-dojo h3 {
+.program-page h3 {
   font-size: 2.1rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -125,7 +125,7 @@
 
 /* Dropdown / collapsible headers are centered on this page, including the
    per-benefit headers (they reuse the shared .collapsible-header class). */
-.freedom-dojo .collapsible-header {
+.program-page .collapsible-header {
   justify-content: center;
 }
 
@@ -213,7 +213,7 @@
 /* ---------- CTA buttons ---------- */
 /* .btn is a shared global class (used on other pages too) — bump size only
    within this page rather than touching the shared rule. */
-.freedom-dojo .btn {
+.program-page .btn {
   font-size: 1.15rem;
   padding: 0.95rem 2.4rem;
 }
@@ -875,7 +875,7 @@
   margin-bottom: 0;
 }
 
-.freedom-dojo .gold-divider {
+.program-page .gold-divider {
   margin: 5rem auto;
 }
 
@@ -914,14 +914,14 @@
 
 /* .list-bullets is a shared global class (used on other pages too) — bump
    its text size only within this page rather than touching the shared rule. */
-.freedom-dojo .list-bullets li {
+.program-page .list-bullets li {
   font-size: 1.1rem;
   line-height: 1.6;
 }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 768px) {
-  .freedom-dojo section {
+  .program-page section {
     padding: 3rem 0;
   }
 
@@ -937,7 +937,7 @@
     font-size: 1.15rem;
   }
 
-  .freedom-dojo h2.subtitle-heading {
+  .program-page h2.subtitle-heading {
     font-size: 2.3rem;
   }
 

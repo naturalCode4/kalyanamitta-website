@@ -14,6 +14,9 @@ import Rates from './pages/Rates';
 import Contact from './pages/Contact';
 import Devportfolio from './pages/Devportfolio';
 import AlignmentForm from './pages/AlignmentForm';
+import JEWS from './pages/JEWS';
+import BeyondTheCushion from './pages/BeyondTheCushion';
+import ComingHomeToYourself from './pages/ComingHomeToYourself';
 
 function AppContent() {
   const location = useLocation();
@@ -38,6 +41,10 @@ function AppContent() {
           <Route path="/devportfolio" element={<Devportfolio />} />
           {/* No nav link on purpose — only reachable via the CTAs that link here. */}
           <Route path="/alignment-form" element={<AlignmentForm />} />
+          {/* Niche program experiments — real URLs, not yet linked from nav/site content */}
+          <Route path="/jews" element={<JEWS />} />
+          <Route path="/beyond-the-cushion" element={<BeyondTheCushion />} />
+          <Route path="/coming-home-to-yourself" element={<ComingHomeToYourself />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </main>

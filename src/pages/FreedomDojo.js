@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './FreedomDojo.css';
+import './ProgramPage.css';
 import { Helmet } from 'react-helmet';
 import pic10 from '../assets/pic10.jpg';
 import pic17 from '../assets/pic17.jpg';
@@ -187,7 +187,7 @@ const FreedomDojo = () => {
   ];
 
   return (
-    <div className="freedom-dojo">
+    <div className="program-page">
       <Helmet>
         <title>Freedom Dojo | 12-Week EFT Healing Program with Adin</title>
         <meta name="description" content="Become calm, happy, free, and empowered as your baseline. A 12-week EFT (Tapping) program to dissolve old pain and reclaim your life, for good." />

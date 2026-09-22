@@ -1,0 +1,530 @@
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './ProgramPage.css';
+import { Helmet } from 'react-helmet';
+import pic10 from '../assets/pic10.jpg';
+import pic17 from '../assets/pic17.jpg';
+
+// Every "Fill out the Alignment Form" CTA on this page reads from this one
+// constant.
+const ALIGNMENT_FORM_URL = '/alignment-form';
+
+const Stars = () => <span className="fd-stars">★★★★★</span>;
+
+const Quote = ({ text, author }) => (
+  <div className="fd-quote">
+    <Stars />
+    <p className="fd-quote-text">"{text}"</p>
+    <p className="fd-quote-author">— {author}</p>
+  </div>
+);
+
+const ComingHomeToYourself = () => {
+  const [openSections, setOpenSections] = useState({
+    costOfCarrying: false,
+    eftWorks: false,
+    sessionExpect: false,
+    whereLearned: false,
+    unveiling: false,
+    estrangement: false,
+    reparenting: false,
+    forYouIf: false,
+    notForYouIf: false,
+  });
+
+  const [openBenefits, setOpenBenefits] = useState({
+    trust: false,
+    boundaries: false,
+    cptsd: false,
+    shame: false,
+    relationships: false,
+    innerchild: false,
+    reparent: false,
+    power: false,
+  });
+
+  const toggleSection = (section) => {
+    setOpenSections((prev) => ({ ...prev, [section]: !prev[section] }));
+  };
+
+  const toggleBenefit = (key) => {
+    setOpenBenefits((prev) => ({ ...prev, [key]: !prev[key] }));
+  };
+
+  const benefits = [
+    {
+      key: 'trust',
+      text: 'Restored trust in yourself',
+      detail: "Your own perceptions, needs, and truth become trustworthy again — instead of always needing to be checked against someone else's reaction first.",
+    },
+    {
+      key: 'boundaries',
+      text: 'The ability to set and hold boundaries',
+      detail: "Without the guilt spiral, the over-explaining, or the collapse back into old roles.",
+      review: { text: "It helped me shift a challenging relationship dynamic I'd been struggling with. I'm actually seeing lasting changes.", author: 'Gloria R.' },
+    },
+    {
+      key: 'cptsd',
+      text: 'Real relief from C-PTSD symptoms',
+      detail: "Emotional flashbacks, hypervigilance around others' moods, toxic shame, and the chronic bracing for conflict or disapproval.",
+      review: { text: 'I always leave our sessions feeling lighter.', author: 'Kathryn S.' },
+    },
+    {
+      key: 'shame',
+      text: 'Freedom from chronic, disproportionate shame',
+      detail: "The shame that doesn't fully make sense given what's 'supposed' to have happened — because it was never really about what happened, it was about learning to blame yourself for it.",
+    },
+    {
+      key: 'relationships',
+      text: 'Healthier relationships, including romantic ones',
+      detail: "Repairing the template — less testing, less fear of abandonment or engulfment, more capacity for real intimacy without losing yourself in it.",
+    },
+    {
+      key: 'innerchild',
+      text: 'A healed inner child',
+      detail: "The part of you who missed the love, attention, or protection they needed — finally met, held, and brought home.",
+    },
+    {
+      key: 'reparent',
+      text: 'Reparenting — your own divine mother and father, within',
+      detail: "Cultivating the energy of unconditional love and steady protection inside yourself, so you're no longer waiting for it from people who couldn't give it.",
+      review: { text: "I feel like he opened a door to my spirituality that I wasn't even sure existed.", author: 'Mckenzi P.' },
+    },
+    {
+      key: 'power',
+      text: 'Reclaimed personal power',
+      detail: "Living for yourself, authentically — not in reaction to your parents, and not still auditioning for their approval.",
+    },
+  ];
+
+  return (
+    <div className="program-page">
+      <Helmet>
+        <title>Coming Home to Yourself | Healing from Toxic Parenting with Adin</title>
+        <meta name="description" content="A 12-week EFT program to reclaim your authenticity, trust, and peace after emotionally immature, abusive, or toxic parenting." />
+        <meta property="og:title" content="Coming Home to Yourself | Healing from Toxic Parenting" />
+        <meta property="og:description" content="Reclaim the trust, boundaries, and self-love that emotionally immature or toxic parenting took from you. A 12-week EFT program with Adin." />
+        <meta property="og:url" content="https://healing-on-tap.com/coming-home-to-yourself" />
+      </Helmet>
+
+      {/* Hero */}
+      <section className="fd-hero">
+        <div className="container">
+          <h1 className="subtitle-heading">Coming Home to Yourself</h1>
+          <p className="fd-hero-line fd-italic">Healing from Emotionally Immature, Abusive, or Toxic Parenting</p>
+          <p className="fd-hero-line">You didn't learn to <u className="fd-underline">hate yourself</u> by accident.</p>
+          <p className="fd-hero-line">Reclaim the trust, boundaries, and love that were <u className="fd-underline">never supposed to be this hard</u> to find.</p>
+          <p className="fd-hero-line">Come home to yourself — <u className="fd-underline">for good.</u></p>
+          <div className="fd-cta-center">
+            <a href={ALIGNMENT_FORM_URL} className="btn">Apply →</a>
+          </div>
+        </div>
+      </section>
+
+      {/* Intro */}
+      <section className="fd-intro section-dark">
+        <div className="container">
+          <p className="fd-center fd-narrow fd-intro-strong">
+            This isn't about blaming your parents forever. It's about finally telling the truth about what happened — so you can stop paying for it.
+          </p>
+          <p className="fd-emphasis">
+            <u className="fd-underline">Listen:</u> When a parent is emotionally calloused, absent, or unpredictable, a child rarely concludes "my parent has a limitation." A child concludes <em>something is wrong with me</em>. That belief doesn't stay in childhood — it becomes the quiet operating system underneath your adult life: your self-trust, your relationships, your sense of what you're allowed to need.
+          </p>
+
+          <div className="collapsible-header fd-inline-trigger" onClick={() => toggleSection('costOfCarrying')}>
+            <span className={`triangle ${openSections.costOfCarrying ? 'open' : ''}`}></span>
+            See what this is actually costing us
+          </div>
+          <div className={`collapsible-content ${openSections.costOfCarrying ? 'open' : ''}`}>
+            <p className="fd-emphasis">
+              It <u className="fd-underline">costs</u> people so much: their <em>trust in themselves, their capacity for real intimacy, their sense of safety in their own perceptions, their peace, and their permission to simply want what they want.</em> Even their view of whether they're a fundamentally lovable person at all.
+            </p>
+          </div>
+
+          <blockquote className="fd-pullquote">
+            "And the day came when the risk to remain tight in a bud was more painful than the risk it took to blossom." — Anaïs Nin
+          </blockquote>
+
+          <div className="gold-divider"></div>
+
+          <p className="fd-emphasis"><u className="fd-underline"><em>Coming Home to Yourself</em></u> is a 12-week container of guided, one-on-one transformation, built specifically for reclaiming what emotionally immature, abusive, or toxic parenting took. It exists to end that cost. For good.</p>
+          <p className="fd-emphasis">It's the same depth of work as my flagship <Link to="/freedom-dojo" className="fd-inline-link">Freedom Dojo</Link> program — pointed directly at the parent-shaped wound underneath so much else.</p>
+          <p className="fd-emphasis">Whatever you're carrying — the self-doubt, the shame, the relationship patterns, the guilt over estrangement or contact — we <em>can</em> shift it.</p>
+
+          <div className="gold-divider"></div>
+
+          <Quote text="Adin's presence is grounded, compassionate, and deeply intuitive — he creates a safe space where real emotional release and clarity can unfold." author="Ryan S." />
+
+          <div className="fd-cta-center">
+            <a href={ALIGNMENT_FORM_URL} className="btn">Sign me up! I want myself back! →</a>
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits */}
+      <section className="fd-benefits section-rainbow">
+        <div className="container">
+          <h2 className="subtitle-heading">It's Time to Come Home to Yourself.</h2>
+
+          <p className="fd-emphasis-strong">
+            This is where you get to say: I'm done believing the coldness was about me. <u className="fd-underline">I'm taking my self back now.</u>
+          </p>
+          <p className="fd-emphasis-strong">This is real, sustained transformation aimed at what emotionally immature or toxic parenting left behind — down to the root.</p>
+
+          <div className="gold-divider"></div>
+
+          <h3 id="benefits">In these three months you likely will have these lasting shifts — subtly or drastically:</h3>
+
+          <ul className="fd-benefit-list">
+            {benefits.map((b) => (
+              <li key={b.key} className="fd-benefit-item">
+                <div className="collapsible-header fd-benefit-header" onClick={() => toggleBenefit(b.key)}>
+                  <span className={`triangle ${openBenefits[b.key] ? 'open' : ''}`}></span>
+                  {b.text}
+                </div>
+                <div className={`collapsible-content ${openBenefits[b.key] ? 'open' : ''}`}>
+                  <p className="fd-benefit-detail">{b.detail}</p>
+                  {b.review && <Quote text={b.review.text} author={b.review.author} />}
+                </div>
+              </li>
+            ))}
+          </ul>
+
+          <p className="fd-emphasis fd-emphasis-lg">Until believing you were the problem is <em>literally</em> a memory.</p>
+
+          <div className="gold-divider"></div>
+
+          <div className="fd-cta-center">
+            <a href={ALIGNMENT_FORM_URL} className="btn">Yep, That's What I Want →</a>
+          </div>
+
+          <Quote text="I have to admit, the scientist in me was a little skeptical that it wouldn't work, but I could not have been more wrong. My first session was so powerful — naming and releasing so much pain I'd been dealing with for years." author="Zac K." />
+        </div>
+      </section>
+
+      {/* Not symptom management */}
+      <section className="fd-notsymptom section-dark">
+        <div className="container">
+          <h2 className="subtitle-heading">The Real Thing.</h2>
+          <p className="fd-emphasis-strong">Not more journaling about it. Not another book that explains the pattern without resolving it. Not white-knuckling your way through another holiday.</p>
+          <p className="fd-emphasis-strong">
+            <em>A life-changing shift on every level: emotionally, mentally, energetically, neurologically, physically — down into the nervous system's oldest, earliest patterning. A wonderful, <u className="fd-underline">lasting upgrade</u> to your life, starting from exactly where you're at.</em>
+          </p>
+          <p className="fd-emphasis-strong">I'm telling you straight: this is what I guide people to achieve.</p>
+          <p className="fd-tagline">Get your self back, and get your life back.</p>
+          <div className="fd-cta-center">
+            <a href={ALIGNMENT_FORM_URL} className="btn">I'm Ready to Begin →</a>
+          </div>
+        </div>
+      </section>
+
+      {/* The Method */}
+      <section className="fd-method" id="method">
+        <div className="container">
+          <h2 className="subtitle-heading">The Method.</h2>
+
+          <div className="fd-flow">
+            <div className="fd-flow-main fd-flow-main-both">
+              <h3 className="fd-gold-heading">How do we create this shift?</h3>
+              <ul className="list-bullets fd-method-list">
+                <li>A 3-month container of <strong>transformative healing and upgrades</strong>.</li>
+                <li><strong>Twelve</strong> potent <strong>90-minute EFT</strong> (Emotional Freedom Techniques, aka Tapping) & <strong>Coaching</strong> sessions with Adin.</li>
+                <li>A <strong>private 1-on-1 mentorship</strong>, built to fully meet you — not a group program where you're one of many.</li>
+                <li>Direct <strong>email access with Adin</strong>, for ongoing support between sessions.</li>
+                <li>Gain proficiency using <strong>EFT on yourself</strong>, for life.</li>
+                <li>Space to cultivate a <strong>reparenting practice</strong> — genuinely yours — if that calls to you (optional but encouraged).</li>
+              </ul>
+
+              <div className="gold-divider"></div>
+
+              <h3>So What is EFT/Tapping?!</h3>
+              <p>
+                <b>EFT/Tapping</b> is a <b>highly effective tool</b> for resolving nearly <b>any issue</b> completely — simple, gentle, and fast. You tap acupoints on your own body while being <b>skillfully guided</b> to address your issue or goal.
+              </p>
+              <p>
+                It neutralizes and <b>dissolves</b> negative thought patterns and emotions, undesired conditioning, and restores the <b>health of your nervous system</b>. For patterns this old — formed before you had words for them — EFT can reach underneath the story to where the belief actually lives in the body.
+              </p>
+
+              <Quote text="It was like magic!" author="Andrea L." />
+
+              <div className="collapsible-header fd-inline-trigger" onClick={() => toggleSection('eftWorks')}>
+                <span className={`triangle ${openSections.eftWorks ? 'open' : ''}`}></span>
+                Want to know more about the magic behind Tapping?
+              </div>
+              <div className={`collapsible-content ${openSections.eftWorks ? 'open' : ''}`}>
+                <p>
+                  Research suggests tapping reduces activation of the amygdala's threat response, allowing the nervous system to shift into a calmer, more regulated state — even while bringing attention to what would previously have triggered the body's automatic stress response. This is essential for revisiting early experiences: it lets us process them from a place of present-day safety, rather than getting re-flooded by them.
+                </p>
+                <p>
+                  EFT incorporates acupoints from Traditional Chinese Medicine, balancing the body's energy meridians while addressing the emotions and beliefs we're working to transform. EFT is well-backed by over <a href="https://eftuniverse.com/research-studies" target="_blank" rel="noopener noreferrer" className="fd-inline-link">100 studies and trials</a>.
+                </p>
+              </div>
+
+              <div className="collapsible-header fd-inline-trigger" onClick={() => toggleSection('sessionExpect')}>
+                <span className={`triangle ${openSections.sessionExpect ? 'open' : ''}`}></span>
+                Curious what you'll actually do in a session?
+              </div>
+              <div className={`collapsible-content ${openSections.sessionExpect ? 'open' : ''}`}>
+                <p>
+                  Gentle tapping on various points on the body, call-and-response guidance, expressing in your own voice. I meet you exactly where you are — including the parts of this that feel disloyal, confusing, or too big to say out loud.
+                </p>
+              </div>
+
+              <div className="gold-divider"></div>
+
+              <div className="collapsible-header fd-inline-trigger" onClick={() => toggleSection('whereLearned')}>
+                <span className={`triangle ${openSections.whereLearned ? 'open' : ''}`}></span>
+                Where did I learn this?
+              </div>
+              <div className={`collapsible-content ${openSections.whereLearned ? 'open' : ''}`}>
+                <p className="fd-color-green">
+                  I trained in EFT in the context of a <a href="https://trainwithsonya.us/" target="_blank" rel="noopener noreferrer" className="fd-inline-link">school</a> that embraces the deepest spiritual wisdom and neuroscience. This school has produced massively positive, whole-life transformations for hundreds of people — and trains them to do the same for others.
+                </p>
+              </div>
+
+              <p className="fd-tagline">My wish is that you stop paying, in the present, for something that happened in the past.</p>
+              <div className="fd-cta-center">
+                <a href={ALIGNMENT_FORM_URL} className="btn">Be part of the magic →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Adin */}
+      <section className="fd-about">
+        <div className="container">
+          <h2 className="subtitle-heading">About Adin</h2>
+
+          <div className="fd-flow">
+            <aside className="fd-sidebar fd-side-left">
+              <Quote text="Adin has an open heart and high emotional intelligence — both of which make it seamless and easy to connect with him and have him facilitate healing work. You're in good hands with Adin." author="Travis D." />
+            </aside>
+
+            <div className="fd-flow-main fd-flow-main-both">
+              <img
+                src={pic10}
+                alt="Adin outdoors among the trees"
+                className="fd-about-image"
+              />
+              <p>
+                I have <u className="fd-underline">lived</u> this work, not just studied it: I have attained greater calm, happiness, freedom, authority, energy, and life-force. I've come through PTSD, childhood wounding, and emotionally immature parenting myself — along with the anxiety, depression, shame, insecurity, and heartbreak that came with it — and learned to walk as a sensitive, conscious soul and 'black sheep.' I've positively transformed my life with EFT and other practices.
+              </p>
+              <p>
+                When you work with me, you're with someone who's <u className="fd-underline"><em>been there in the mud</em></u>, made it through, and earned their metaphorical badges and stamps. You're not alone in this.
+              </p>
+              <p>
+                People describe me as warm, intuitive, reliable, open-hearted, compassionate, safe, rooted, gentle, intelligent, devoted, and wise. People say I help them understand healing in a way that's <em>real</em>.
+              </p>
+
+              <div className="gold-divider fd-about-divider"></div>
+
+              <p>
+                I am Advanced Certified in EFT through the Sonya Sophia School of Living Arts. Reiki II. 500-hour Yoga Teacher Training. Deep experience across Buddhist, Native American, and other spiritual traditions. Shaped by a life seeking what actually illuminates <u className="fd-underline">Truth, Freedom, Love, and Goodness.</u>
+              </p>
+
+              <div className="gold-divider"></div>
+
+              <p className="fd-tagline">Break free from old conditioning, and come home to yourself.</p>
+              <div className="fd-cta-center">
+                <a href={ALIGNMENT_FORM_URL} className="btn">Join Now →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Where We Focus */}
+      <section className="fd-focus section-rainbow">
+        <div className="container">
+          <h2 className="subtitle-heading">Where We Focus.</h2>
+
+          <div className="fd-flow">
+            <div className="fd-flow-main fd-flow-main-both">
+              <p>Whatever you actually bring, we work with that — this is never a checklist applied to you. Common terrain includes:</p>
+
+              <ul className="list-bullets">
+                <li><strong>The internalized self-hatred pattern.</strong> Unwinding the belief you formed as a child — that the coldness or chaos was evidence something was wrong with <em>you</em>, not evidence of your parent's own limitation.</li>
+                <li><strong>Loss of trust in self.</strong> Chronic self-doubt, second-guessing your own perceptions, needing outside validation to know what you feel is real.</li>
+                <li><strong>Distrust in relationships</strong>, including romantic ones — fear of abandonment, fear of engulfment, testing people, or pushing love away right when it arrives.</li>
+                <li><strong>Complex PTSD.</strong> Emotional flashbacks, hypervigilance to others' moods, toxic shame, and a nervous system still bracing for a household that may not exist anymore.</li>
+
+                <li>
+                  <div className="collapsible-header fd-inline-trigger" onClick={() => toggleSection('unveiling')}>
+                    <span className={`triangle ${openSections.unveiling ? 'open' : ''}`}></span>
+                    <strong>The unveiling — and the anger.</strong>
+                  </div>
+                  <div className={`collapsible-content ${openSections.unveiling ? 'open' : ''}`}>
+                    <p>
+                      There is a reclaiming of power here, and it often runs through a necessary step: seeing your parents clearly as they actually were and are — not the story you had to tell yourself to survive them. That seeing tends to bring real anger. I want to be direct with you: that anger is not the end-point of this work, but it is an important, often unavoidable part of it. Skipping it usually means it stays lodged in the body instead. We make room for it, fully, on the way to something more spacious than anger.
+                    </p>
+                  </div>
+                </li>
+
+                <li><strong>Setting and holding boundaries</strong> — without the guilt spiral or the collapse back into old roles.</li>
+
+                <li>
+                  <div className="collapsible-header fd-inline-trigger" onClick={() => toggleSection('estrangement')}>
+                    <span className={`triangle ${openSections.estrangement ? 'open' : ''}`}></span>
+                    <strong>Estrangement, low-contact, and guilt.</strong>
+                  </div>
+                  <div className={`collapsible-content ${openSections.estrangement ? 'open' : ''}`}>
+                    <p>
+                      Whether you're fully estranged, low-contact, or still in regular contact, guilt tends to show up regardless of the choice — guilt for the distance, or guilt for staying. We work with the actual guilt, not a verdict on which choice is right for you. That's yours to determine.
+                    </p>
+                  </div>
+                </li>
+
+                <li><strong>Living for yourself, authentically.</strong> Restoring the simple, radical permission to want what you want.</li>
+                <li><strong>Healing the inner child</strong> who missed the love, attention, or protection they needed.</li>
+
+                <li>
+                  <div className="collapsible-header fd-inline-trigger" onClick={() => toggleSection('reparenting')}>
+                    <span className={`triangle ${openSections.reparenting ? 'open' : ''}`}></span>
+                    <strong>Reparenting.</strong>
+                  </div>
+                  <div className={`collapsible-content ${openSections.reparenting ? 'open' : ''}`}>
+                    <p>
+                      Cultivating the energy of divine mother and divine father within yourself — unconditional love and steady, protective presence — so you're no longer waiting to receive it from people who were never able to give it. This becomes a wellspring you can return to for the rest of your life.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+
+              <p className="fd-small-italic">… and, again: whatever you actually bring is what we work with. This list is a starting point, not a boundary.</p>
+            </div>
+          </div>
+
+          <div className="gold-divider"></div>
+
+          <div className="fd-dual-dropdown">
+            <div>
+              <h3 className="collapsible-header" onClick={() => toggleSection('forYouIf')}>
+                <span className={`triangle ${openSections.forYouIf ? 'open' : ''}`}></span>
+                This Is For You If
+              </h3>
+              <div className={`collapsible-content ${openSections.forYouIf ? 'open' : ''}`}>
+                <ul className="list-bullets">
+                  <li>You grew up with a parent, or parents, who were emotionally immature, abusive, or toxic — subtly or overtly</li>
+                  <li>You find yourself distrusting your own perceptions, needs, or worth</li>
+                  <li>Romantic or close relationships feel like minefields, or you keep recreating the same dynamic</li>
+                  <li>You carry shame that doesn't fully make sense given what's "supposed" to have happened to you</li>
+                  <li>You're navigating estrangement, low-contact, or complicated ongoing contact, and the guilt that comes with it</li>
+                  <li>You're ready to feel the anger you've been avoiding, on the way to something better than anger</li>
+                  <li>You want to set boundaries without collapsing into guilt</li>
+                  <li>You want embodied change, not just more understanding of the pattern</li>
+                  <li>You're ready to invest in yourself financially</li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="collapsible-header" onClick={() => toggleSection('notForYouIf')}>
+                <span className={`triangle ${openSections.notForYouIf ? 'open' : ''}`}></span>
+                This Is NOT For You If
+              </h3>
+              <div className={`collapsible-content ${openSections.notForYouIf ? 'open' : ''}`}>
+                <ul className="list-bullets">
+                  <li>You want someone to simply confirm your parents were monsters, full stop — this work makes room for real complexity, including grief for what could have been</li>
+                  <li>You're seeking a quick fix with no real engagement — this work asks something of you</li>
+                  <li>You're in acute crisis or need primary medical or mental-health treatment — that care comes first, and this can complement it once you're stable</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <p className="fd-small-italic">This work complements, and does not replace, medical or mental-health care.</p>
+        </div>
+      </section>
+
+      {/* A Wise Companion */}
+      <section className="fd-wise-friend section-rainbow">
+        <div className="container">
+          <h2 className="subtitle-heading">On Wise Companions.</h2>
+
+          <div className="fd-flow">
+            <div className="fd-flow-main fd-flow-main-both">
+              <div className="fd-wise-row">
+                <img
+                  src={pic17}
+                  alt="Adin outdoors among flowers"
+                  className="fd-wise-image"
+                />
+                <p className="fd-emphasis fd-wise-emphasis">
+                  I will be walking by your side, supporting you every step of the way — through the deep inner transformation, including the anger, the grief, and the difficult stuff. It's a blessing to be of service.
+                </p>
+              </div>
+              <p>
+                Across nearly every spiritual tradition, having a wise guide is considered essential. In Buddhism, this friend is called a <em>kalyāṇamitta</em> — someone who helps guide you in your highest interest, helping your eyes to see things they never saw before. This person should embody wisdom, unconditional love, detachment, and skillfulness — through thick and thin. I strive to be that for you, including as you meet the parts of your story that are hardest to say out loud.
+              </p>
+
+              <Quote text="Adin is an innately gifted intuitive healer, with the dedication and discipline to match his inborn talents. I trust both the quality of his own energy and the many ways he facilitates energetic balance and emotional wellness for others." author="Zachary H." />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Investment */}
+      <section className="fd-investment section-dark" id="investment">
+        <div className="container">
+          <h2 className="subtitle-heading">Investment.</h2>
+
+          <p className="fd-tagline fd-tagline-lg">This is an investment that can positively transform your life.</p>
+          <p className="fd-tagline fd-tagline-lg">It is offered because it brings massive benefit, including</p>
+
+          <ul className="list-bullets fd-investment-list">
+            <li><u className="fd-underline">Heal</u> beyond belief, at the root — not just manage symptoms — across your <u className="fd-underline">body, mind, and spirit.</u></li>
+            <li>Restored trust in yourself, and in your closest relationships.</li>
+            <li>The ability to set boundaries without guilt running the show.</li>
+            <li>A healed inner child, and a reparented adult.</li>
+            <li><u className="fd-underline">High-level tools</u> that grow with you, long after our three months together.</li>
+          </ul>
+          <p className="fd-center">
+            See the full list of <a href="#benefits" target="_blank" rel="noopener noreferrer" className="fd-inline-link">what you'll gain →</a> and <a href="#method" target="_blank" rel="noopener noreferrer" className="fd-inline-link">what's included →</a>.
+          </p>
+
+          <div className="gold-divider"></div>
+
+          <div className="fd-pricing-row">
+            <div className="fd-price-card">
+              <h3>Standard</h3>
+              <p className="fd-price">$3,000</p>
+            </div>
+            <div className="fd-price-card fd-price-highlight">
+              <h3>Founding Cohort</h3>
+              <p className="fd-price">$2,420</p>
+              <p className="fd-price-note">A genuine thank-you for stepping in early as this program grows into its best form.</p>
+            </div>
+          </div>
+          <br></br>
+          <p className="fd-center fd-payment-note"><em>Payment plans available.</em></p>
+
+          <div className="gold-divider"></div>
+
+          <p className="fd-tagline">Go deep, and come all the way home to yourself.</p>
+
+          <div className="fd-cta-group">
+            <a href={ALIGNMENT_FORM_URL} className="btn">I'm Ready –– Fill Out the Alignment Form! →</a>
+            <Link to="/contact#get-in-touch" className="btn btn-outline">Have questions? I'm happy to respond by email →</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Sign off */}
+      <section className="fd-signoff">
+        <div className="container">
+          <p className="fd-signoff-text">In your corner, <strong>Adin</strong></p>
+          <div className="fd-cta-center">
+            <a href={ALIGNMENT_FORM_URL} className="btn">Let's do this →</a>
+          </div>
+
+          <div className="gold-divider"></div>
+
+          <Link to="/contact#get-in-touch" className="fd-feedback-link">Provide Feedback. Help us make this program the best it can be →</Link>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default ComingHomeToYourself;

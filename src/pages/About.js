@@ -89,13 +89,22 @@ const About = () => {
             </div>
             <div className="about-adin-text">
               <p>
-                Adin is a healer and integrative guide who helps people transform, heal, and align with their inherent wisdom and basic goodness. His mission is to alchemize evolution by offering powerful modalities, his loving presence, and wisdom. His approach is integrative and personal– grounded in intuition, science, and various spiritual traditions.
+                Adin is a healer and integrative guide who provides life-changing healing and support for your total well-being, health, desired outcomes, and higher Self awakening — helping people transform, heal, and align with their inherent wisdom and basic goodness. It is a joy and honor to support your breakthrough.
               </p>
               <p>
-                He offers EFT (Emotional Freedom Techniques, or Tapping) and Spiritual Counseling and Practices (Meditation, Yoga, Breathwork, Sound Healing).
+                His mission is to alchemize evolution by offering powerful modalities, loving presence, and wisdom. His approach is integrative and personal– grounded in intuition, science, and various spiritual traditions.
+              </p>
+              <p>
+                He offers EFT (Emotional Freedom Techniques, or Tapping) and Spiritual Counseling and Practices (Meditation, Yoga, Breathwork, Voice-Based Sound Healing, Prayer, Ecstatic Dance).
               </p>
               <p>
                 He is a certified practitioner of Emotional Freedom Techniques (EFT), Reiki II, Yoga (500 YTT), and Breathwork. He has practiced in Zen, Tibetan, and Theravadan Buddhist lineages. He has explored mysticism across Native, Taoist, Judaic, Christian, Hermetic, and Sufi traditions, as well as yoga, qi gong, medicine work, shamanism, healing arts, psychic development, bhakti, and ecstatic dance—seeking what genuinely gives life, unclouds the pure heart, and supports positive transformation.
+              </p>
+              <p>
+                Adin has <u className="about-underline">lived</u> this work, not just studied it. He's come through PTSD, childhood wounding, emotionally immature parenting, anxiety, depression, shame, insecurity, and heartbreak — and learned to walk as a sensitive, conscious soul and "black sheep." EFT and his other practices have positively transformed his life. When you work with him, you're with someone who's <u className="about-underline"><em>been there in the mud</em></u>, made it through, and earned his metaphorical badges and stamps. You're not alone in this.
+              </p>
+              <p>
+                People describe Adin as warm, intuitive, reliable, open-hearted, compassionate, safe, rooted, gentle, intelligent, devoted, and wise. People say he helps them understand healing and spirituality in a way that's <em>real</em>.
               </p>
               <div className="gold-divider"></div>
               
@@ -135,10 +144,16 @@ const About = () => {
                 <img
                   src={pic10}
                   alt="Adin outdoors among the trees"
-                  className="about-image"
+                  className="about-story-image"
                 />
                 <p>
-                  When I was 15, I underwent a rapid shift from depression to radical expansion of awareness and access to peace and joy. It was as if my mind stilled, and opened to eternal and ecstatic presence. It felt like a natural continuation of who I'd always been and the natural expansiveness I longed for. Love and peace to the forefront! I remember in elementary school often preferring to lie in the grass— with the trees, birds, clouds, sky— than hang out with my friends, and I spent abundant time wandering through my neighborhood in a state of deep play—a state that's so vital for children to experience. I navigated this blissful state and I discovered I could dissolve negative feelings in minutes simply by, with a heart of loving presence: accepting and letting it be. This turns out to be profound wisdom emphasized in the worlds of spiritual evolution, healing, and emotional processing. Around that time, I encountered a small, luminous book called <a href="https://www.bdk.or.jp/pdf/buddhist-scriptures/02_english/TheTeachingofBuddha.pdf" target="_blank">The Teachings of Buddha</a>, and it immediately read like poetry pointing to the truths of consciousness, our kind and pure nature, and our potential.                </p>
+                  I remember even in elementary school lying in the grass with stillness and wonder— with the trees, birds, clouds, sky— often preferring this over hanging out with friends. I spent abundant time wandering through my neighborhood in a state of deep play—a state that's so vital for children to experience. I always had a deep sensitivity, care for all, and sense of justice. A common question spiritual folk ask is "when did you wake up"; for me, I can't name any diametrical shift, but rather a continuation and evolution. Sometimes I joke "countless lifetimes ago." Maybe it's true though.
+                </p>
+                <p>
+                  When I was 15, I underwent a rapid shift from depression to radical expansion of awareness and access to peace and joy. It was as if my mind stilled, and opened to eternal and ecstatic presence. Love and peace to the forefront! I now realize that dissociation was involved, as I was in a lot of pain.
+                </p>
+                <p>
+                  I navigated this blissful state and I discovered I could dissolve negative feelings in minutes simply by, with a heart of loving presence: accepting and letting it be. This turns out to be profound wisdom emphasized in the worlds of spiritual evolution, healing, and emotional processing. Around that time, I encountered a small, luminous book called <a href="https://www.bdk.or.jp/pdf/buddhist-scriptures/02_english/TheTeachingofBuddha.pdf" target="_blank">The Teachings of Buddha</a>, and it immediately read like poetry pointing to the truths of consciousness, our kind and pure nature, and our potential.                </p>
                 <p>
                   Six months after this initial awakening, I struggled to integrate these experiences and insights with my conceptual reality and the rest of my human experience. With little cultural context, appreciation, or support for what I was going through and the insights that were arising, I felt confused. Also, I had unresolved painful emotions and trauma that, with the greater awareness now present in me, had become more conscious. I had formed a dualistic delusion that the expansive state I'd experienced was more 'real' than any other experience, which resulted in a lot of judgment and agitation toward other parts of myself. While these states may carry a high vibration and touch profound truth, we ought to awaken our entire integrated being into life. The insight and energy hadn't yet become stable and grounded. It took time to integrate these expanded aspects of consciousness with my human and interpersonal self. During this time, I immersed myself in Ram Dass's <a href="https://shop.ramdass.org/products/be-here-now?srsltid=AfmBOorSfDnrK1GqlrYAtMHW7Q3RTAsF_mq-qS2aa1RVtA9uVWQQSKMQ" target="_blank">Be Here Now</a>, resonating with it over and over; it had a big impact on me. Meeting and resolving pain from early childhood experiences is surely an ongoing journey—I'm still doing it—and I can help you do it too.                </p>
                 <p>
@@ -147,6 +162,9 @@ const About = () => {
                   Since then I've explored many other kinds of contemplative practices. Each of the practices I offer today– Emotional Freedom Techniques (Tapping), Spiritual Counseling, Meditation, Yoga, Breathwork, and Sound Healing– have had a very positive impact on me. I offer what I believe in and have lived.                </p>
                 <p>
                   In April 2025, I felt ready to center my livelihood around what I already love doing—helping people and sharing my life and practice. The willingness to follow divine alignment and purpose was perhaps very obvious when it came to me! But to be fair, I wasn't fully ready before then. Then, once I made a confident commitment to step into this work, The Great Spirit sent me on a healing journey, which I believe purified me and prepared me to step more fully into service. I am continually learning and growing. That same year I certified in Reiki II, <a href="https://trainwithsonya.us/" target="_blank">EFT (Tapping)</a>, yoga, and pranayama. I feel aligned, grounded, and empowered to offer this work from a place of depth, stability, and clear intention.
+                </p>
+                <p>
+                  EFT in particular has been <u className="about-underline">absolutely essential</u> in my healing journey. As I write this, I actually see the world as beautiful. I actually love and accept myself. I'm no longer crushed by negative emotions, triggers, and thoughts like I was for most of my life. My work feels deeply aligned. I feel peace, freedom, power, and confidence in myself. My health, habits, finances, relationships, and sense of self-worth and divinity have all improved. I offer you what I've lived, because I know <u className="about-underline">it can do the same for you</u>. And it's so, so worth it.
                 </p>
               </div>
               
@@ -204,6 +222,12 @@ const About = () => {
                   <b>Music</b>: I play the keys. <a href="https://stoneboysolar.bandcamp.com/album/nomadic-improv" target="_blank">Here's the album</a> I released in 2025. It is my hope these nomadic improvisation brings you peace and close to your soul.
                 </p>
               </div>
+
+              <div className="gold-divider"></div>
+
+              <blockquote className="about-pullquote">
+                "There is a light in you which cannot die. Your life is a sublime expression of this light to the degree you are willing to listen to your own soul's loving guidance." — Sonya Sophia
+              </blockquote>
             </div>
           </div>
         </div>

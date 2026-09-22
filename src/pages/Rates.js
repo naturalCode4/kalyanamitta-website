@@ -9,7 +9,7 @@ const Rates = () => {
 
   const packages = [
     {
-      name: 'Freedom Dojo Program',
+      name: 'Freedom Dojo',
       description: "A 12-week container to dissolve the limitations that have been running your life, and become calm, happy, free, and empowered — for good.",
       mainPrice: '$2,420',
       slidingScale: ' Founding Cohort',
@@ -27,13 +27,13 @@ const Rates = () => {
     },
     {
       name: '4-Session Combo',
-      description: "If you're tired of white-knuckling through life, this is for you. Four potent sessions to release what's weighing you down and reclaim your energy — fast.",
+      description: "If you're tired of white-knuckling through life, this is for you. A month together — four potent sessions to release what's weighing you down and reclaim your energy — fast.",
       mainPrice: '$612',
       slidingScale: ' / Sliding Scale $377-1,020',
       originalPrice: '$720. Sliding Scale $444-1,200',
       discount: '15% OFF',
       features: [
-        'Four 90 minute sessions',
+        'A month together: four 90-minute 1-on-1 sessions',
         'Any combination of services',
         'Ongoing support and guidance',
         '15% discount on total price'
@@ -49,6 +49,7 @@ const Rates = () => {
       features: [
         'Seven 90 minute sessions',
         'Any combination of services',
+        'Learn to tap (EFT) on yourself',
         'Ongoing support and guidance',
         '20% discount on total price'
       ]
@@ -139,7 +140,7 @@ const Rates = () => {
       {/* Freedom Dojo Program highlight */}
       <section className="rates-fd-highlight section-dark">
         <div className="container">
-          <h2 className="subtitle-heading">The <u className="rates-underline">Freedom Dojo</u> Program</h2>
+          <h2 className="subtitle-heading">The <u className="rates-underline">Freedom Dojo</u> Offer</h2>
           <p className="rates-fd-description">
             A 12-week container to dissolve what's been running your life, and become calm, happy, free, and empowered — for good.
           </p>
@@ -284,7 +285,7 @@ const Rates = () => {
             {packages.map((pkg, index) => (
               <div
                 key={index}
-                className={`package-card ${pkg.name.includes('Session Combo') || pkg.name === 'Freedom Dojo Program' ? 'combo-highlight' : ''}`}
+                className={`package-card ${pkg.name.includes('Session Combo') || pkg.name === 'Freedom Dojo' ? 'combo-highlight' : ''}`}
               >
                 <div className="package-header">
                   <h3>{pkg.name}</h3>
