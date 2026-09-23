@@ -47,7 +47,7 @@ const Portfolio = () => {
       role: "Developer & Designer",
       description: "A high-performance React website designed and built from scratch. Features include intricate frontend implementation with JS/CSS design and animations, no-framework responsive layouts, Google Mailer/ Maps/ Reviews API integration via serverless functions, and SEO optimization (Schema/Helmet).",
       link: "/", // Links to home
-      linkText: "Visit Website (hint: you're on it)"
+      linkText: "Visit Website"
     },
     {
       title: "SonShip",
@@ -125,6 +125,13 @@ const Portfolio = () => {
       description: "B.S. Audio Engineering with coursework in Engineering, CS and Programming, Math, Physics, Data, and Media",
       link: null,
       linkText: null
+    },
+    {
+      title: "My Portfolio Page",
+      role: "Developer and Designer",
+      description: "I coded the portfolio page you're on right now, from scratch. Perks of being an engineer.",
+      link: null,
+      linkText: "Hint: You're on it!"
     }
   ];
 
