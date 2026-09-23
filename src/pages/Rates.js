@@ -4,6 +4,7 @@ import './Rates.css';
 import Section from '../components/Section';
 import CTA from '../components/CTA';
 import { Helmet } from 'react-helmet';
+import picA817dd0e from '../assets/a817dd0e-ff09-480a-9c6d-7c733248859a.jpeg';
 
 const Rates = () => {
 
@@ -281,6 +282,11 @@ const Rates = () => {
       <section className="packages-section">
         <div className="container">
           <h2 className="subtitle-heading">Programs & Packages</h2>
+          <img
+            src={picA817dd0e}
+            alt="Healing On Tap"
+            className="rates-programs-image"
+          />
           <div className="packages-grid">
             {packages.map((pkg, index) => (
               <div

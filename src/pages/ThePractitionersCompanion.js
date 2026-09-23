@@ -4,6 +4,9 @@ import './ProgramPage.css';
 import { Helmet } from 'react-helmet';
 import pic10 from '../assets/pic10.jpg';
 import pic17 from '../assets/pic17.jpg';
+import pic4152ea30 from '../assets/4152ea30-85db-4c66-a070-5396088159be.jpeg';
+import pic4911d1d3 from '../assets/4911d1d3-96ac-44ee-9891-1ae03842e87d.jpeg';
+import picC675882c from '../assets/c675882c-9d73-4f44-8862-a2007139ab1d.jpeg';
 
 // Every "Fill out the Alignment Form" CTA on this page reads from this one
 // constant.
@@ -25,9 +28,6 @@ const ThePractitionersCompanion = () => {
     eftWorks: false,
     sessionExpect: false,
     whereLearned: false,
-    bypass: false,
-    teacher: false,
-    integration: false,
     fullStory: false,
     forYouIf: false,
     notForYouIf: false,
@@ -42,6 +42,14 @@ const ThePractitionersCompanion = () => {
     embodied: false,
     shame: false,
     reconnect: false,
+    health: false,
+    relationships: false,
+    outcomes: false,
+    energy: false,
+    innerchild: false,
+    values: false,
+    happiness: false,
+    supported: false,
   });
 
   const toggleSection = (section) => {
@@ -96,6 +104,47 @@ const ThePractitionersCompanion = () => {
       text: 'Reconnection with why you started practicing in the first place',
       detail: "Before it became identity, achievement, or obligation. Back to aliveness, curiosity, and genuine devotion.",
     },
+    {
+      key: 'health',
+      text: 'Improved physical health',
+      detail: "Get free from unwanted patterns and resolve physical pain, tension, and psychosomatically-rooted conditions — unprocessed emotion is a primary reason people get sick.",
+    },
+    {
+      key: 'relationships',
+      text: 'Better relationships, on and off the cushion',
+      detail: "Develop real capacity for connection and intimacy — not just equanimity you perform when things get close.",
+      review: { text: "It helped me shift a challenging relationship dynamic I'd been struggling with. I'm actually seeing lasting changes.", author: 'Gloria R.' },
+    },
+    {
+      key: 'outcomes',
+      text: 'Achieve the outcomes you desire',
+      detail: "Get more of what you actually want — money and abundance, thriving relationships, vibrant health, purposeful work, and whatever else matters most to you.",
+    },
+    {
+      key: 'energy',
+      text: 'Increased energy, focus, and creativity',
+      detail: "Because you'll be less dragged around by old patterns and unprocessed static.",
+    },
+    {
+      key: 'innerchild',
+      text: 'A healed inner child',
+      detail: "Most of what practice keeps circling around has roots in what happened early on. We bring direct medicine to the part of you that's still waiting to be met.",
+    },
+    {
+      key: 'values',
+      text: 'The ability to embody your values',
+      detail: "Know, speak, and follow through on what's important to you, with integrity — free from the quiet gap between your ideals and your actual behavior.",
+    },
+    {
+      key: 'happiness',
+      text: 'Happiness, humor, and wisdom',
+      detail: "That comes naturally from being aligned with yourself — not performed as spiritual affect.",
+    },
+    {
+      key: 'supported',
+      text: 'Be deeply met and compassionately guided',
+      detail: "Three months held with care the whole way — safe to bring anything, including the parts that don't fit your practice's language for things.",
+    },
   ];
 
   return (
@@ -149,8 +198,8 @@ const ThePractitionersCompanion = () => {
           <div className="gold-divider"></div>
 
           <p className="fd-emphasis"><u className="fd-underline"><em>The Practitioner's Companion</em></u> is a 12-week container of guided, one-on-one transformation, built specifically to work alongside serious practitioners — direct support for the trauma, psyche, and humanity that practice was never designed to be the tool for. It exists to give that layer somewhere real to go. For good.</p>
-          <p className="fd-emphasis">It's the same depth of work as my flagship <Link to="/freedom-dojo" className="fd-inline-link">Freedom Dojo</Link> program — aimed specifically at what your cushion, mat, or altar was never meant to carry alone.</p>
-          <p className="fd-emphasis">This isn't a replacement for your practice. It's the complement to it.</p>
+          <p className="fd-emphasis">It's real, deep, one-on-one work — aimed specifically at what your cushion, mat, or altar was never meant to carry alone.</p>
+          <p className="fd-emphasis">This isn't a replacement for your practice. It's the complement to it. And as with everything I offer: I meet you exactly where you're at.</p>
 
           <div className="gold-divider"></div>
 
@@ -207,6 +256,11 @@ const ThePractitionersCompanion = () => {
       <section className="fd-notsymptom section-dark">
         <div className="container">
           <h2 className="subtitle-heading">The Real Thing.</h2>
+          <img
+            src={picC675882c}
+            alt="Adin"
+            className="fd-about-image"
+          />
           <p className="fd-emphasis-strong">Not a substitute for your retreats, your teacher, or your sitting practice — all of it stays exactly as valuable as it already is. Something else, working underneath and alongside it.</p>
           <p className="fd-emphasis-strong">
             <em>A life-changing shift on every level: emotionally, mentally, energetically, neurologically, physically — down into the nervous system itself. A wonderful, <u className="fd-underline">lasting upgrade</u> to your practice and your life, starting from exactly where you're at.</em>
@@ -224,9 +278,13 @@ const ThePractitionersCompanion = () => {
         <div className="container">
           <h2 className="subtitle-heading">The Method.</h2>
 
-          <div className="fd-flow">
-            <div className="fd-flow-main fd-flow-main-both">
-              <h3 className="fd-gold-heading">How do we create this shift?</h3>
+          <img
+            src={pic4911d1d3}
+            alt="Adin"
+            className="fd-about-image"
+          />
+
+          <h3 className="fd-gold-heading">How do we create this shift?</h3>
               <ul className="list-bullets fd-method-list">
                 <li>A 3-month container of <strong>transformative healing and upgrades</strong>.</li>
                 <li><strong>Twelve</strong> potent <strong>90-minute EFT</strong> (Emotional Freedom Techniques, aka Tapping) & <strong>Coaching</strong> sessions with Adin.</li>
@@ -240,11 +298,9 @@ const ThePractitionersCompanion = () => {
 
               <h3>So What is EFT/Tapping — and how does it work alongside sitting practice?</h3>
 
-              <aside className="fd-sidebar fd-side-right">
-                <blockquote className="fd-pullquote">
-                  "EFT is a self-healing modality that combines aspects of Chinese medicine and modern psychology with self-acceptance and unconditional love. EFT recalibrates your brain's responses to stimuli, reprogramming your body and brain's ability to function properly." — Sonya Sophia, EFT Expert, and My EFT Trainer and Certifier
-                </blockquote>
-              </aside>
+              <blockquote className="fd-pullquote">
+                "EFT is a self-healing modality that combines aspects of Chinese medicine and modern psychology with self-acceptance and unconditional love. EFT recalibrates your brain's responses to stimuli, reprogramming your body and brain's ability to function properly." — Sonya Sophia, EFT Expert, and My EFT Trainer and Certifier
+              </blockquote>
 
               <p>
                 <b>EFT/Tapping</b> is a <b>highly effective tool</b> for resolving nearly <b>any issue</b> completely — simple, gentle, and fast. You tap acupoints on your own body while being <b>skillfully guided</b> to address your issue or goal.
@@ -284,8 +340,6 @@ const ThePractitionersCompanion = () => {
               <div className="fd-cta-center">
                 <a href={ALIGNMENT_FORM_URL} className="btn">Be part of the magic →</a>
               </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -340,52 +394,22 @@ const ThePractitionersCompanion = () => {
         <div className="container">
           <h2 className="subtitle-heading">Where We Focus.</h2>
 
-          <div className="fd-flow">
-            <div className="fd-flow-main fd-flow-main-both">
-              <p>Whatever you actually bring, we work with that. Common terrain for practitioners includes:</p>
+          <img
+            src={pic4152ea30}
+            alt="Spiritual practice"
+            className="fd-about-image"
+          />
 
-              <ul className="list-bullets">
-                <li><strong>C-PTSD and trauma</strong> — the kind that calls for a direct, active complement alongside meditation, yoga, or ceremony.</li>
+          <p>As with everything I offer, I meet you exactly where you're at — whatever you actually bring is what we work with, for the most part, as applicable to you. Common terrain for practitioners includes:</p>
 
-                <li>
-                  <div className="collapsible-header fd-inline-trigger" onClick={() => toggleSection('bypass')}>
-                    <span className={`triangle ${openSections.bypass ? 'open' : ''}`}></span>
-                    <strong>Spiritual bypass.</strong>
-                  </div>
-                  <div className={`collapsible-content ${openSections.bypass ? 'open' : ''}`}>
-                    <p>Using transcendence, positivity, non-attachment, or "it's all consciousness anyway" to skip past what's actually unresolved and human in you. This is one of the most common — and most invisible — patterns I see in serious practitioners.</p>
-                  </div>
-                </li>
+          <ul className="list-bullets">
+            <li><strong>C-PTSD and trauma</strong> — the kind that calls for a direct, active complement alongside meditation, yoga, or ceremony.</li>
+            <li><strong>Burnout and spiritual perfectionism.</strong> The exhausting sense that you should always be further along, calmer, more equanimous, less reactive.</li>
+            <li><strong>The gap between insight and embodiment.</strong> "I understand this pattern completely and I still react exactly the same way."</li>
+            <li><strong>Restoring trust in your own inner authority</strong>, after years of relying on an external teacher, text, or tradition to tell you what's true.</li>
+          </ul>
 
-                <li><strong>Burnout and spiritual perfectionism.</strong> The exhausting sense that you should always be further along, calmer, more equanimous, less reactive.</li>
-                <li><strong>The gap between insight and embodiment.</strong> "I understand this pattern completely and I still react exactly the same way."</li>
-
-                <li>
-                  <div className="collapsible-header fd-inline-trigger" onClick={() => toggleSection('teacher')}>
-                    <span className={`triangle ${openSections.teacher ? 'open' : ''}`}></span>
-                    <strong>Teacher and community dynamics.</strong>
-                  </div>
-                  <div className={`collapsible-content ${openSections.teacher ? 'open' : ''}`}>
-                    <p>Disillusionment, complicated power dynamics, or cult-adjacent experiences in a sangha, ashram, or lineage. Grief, anger, or confusion around leaving — or questioning — a teacher or tradition you once gave your full trust to.</p>
-                  </div>
-                </li>
-
-                <li>
-                  <div className="collapsible-header fd-inline-trigger" onClick={() => toggleSection('integration')}>
-                    <span className={`triangle ${openSections.integration ? 'open' : ''}`}></span>
-                    <strong>Integration after retreats, openings, or psychedelic experience.</strong>
-                  </div>
-                  <div className={`collapsible-content ${openSections.integration ? 'open' : ''}`}>
-                    <p>Profound experiences that opened something real, but left you without a clear way to actually integrate it into an ordinary human life — relationships, work, a body that still has old patterns running.</p>
-                  </div>
-                </li>
-
-                <li><strong>Restoring trust in your own inner authority</strong>, after years of relying on an external teacher, text, or tradition to tell you what's true.</li>
-              </ul>
-
-              <p className="fd-small-italic">… and, again: whatever you actually bring is what we work with. This list is a starting point, not a boundary.</p>
-            </div>
-          </div>
+          <p className="fd-small-italic">… and, again: whatever you actually bring is what we work with. This list is a starting point, not a boundary.</p>
 
           <div className="gold-divider"></div>
 
@@ -437,10 +461,14 @@ const ThePractitionersCompanion = () => {
           <p className="fd-tagline fd-tagline-lg">It is offered because it brings massive benefit, including</p>
 
           <ul className="list-bullets fd-investment-list">
+            <li>Improved physical health.</li>
+            <li>Better relationships, on and off the cushion.</li>
             <li><u className="fd-underline">Heal</u> beyond belief, at the root — not just manage symptoms — across your <u className="fd-underline">body, mind, and spirit.</u></li>
             <li>A nervous system that can actually meet stillness.</li>
+            <li>More <u className="fd-underline">calm, happy, free</u>, and <u className="fd-underline">empowered</u> as your <u className="fd-underline">baseline</u>.</li>
             <li>A practice that gets to just be your practice, while this layer gets its own dedicated support.</li>
             <li>Restored <u className="fd-underline">depth</u> and <u className="fd-underline">ease</u> in your practice.</li>
+            <li>Restored <u className="fd-underline">vitality</u> and <u className="fd-underline">intuition</u>.</li>
             <li><u className="fd-underline">High-level tools</u> that grow with you, long after our three months together.</li>
           </ul>
           <p className="fd-center">

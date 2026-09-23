@@ -6,6 +6,9 @@ import Section from '../components/Section';
 import CTA from '../components/CTA';
 import pic5 from '../assets/pic5.jpg';
 import pic10 from '../assets/pic10.jpg';
+import picCf2295ed from '../assets/cf2295ed-b41c-4c8d-961d-74604f58c998.jpeg';
+import picFea532c1 from '../assets/fea532c1-c343-44d9-a6cf-fb5920db9fa5.jpeg';
+import picA817dd0e from '../assets/a817dd0e-ff09-480a-9c6d-7c733248859a.jpeg';
 import { Helmet } from 'react-helmet';
 
 const About = () => {
@@ -114,6 +117,11 @@ const About = () => {
                 My Approach
               </h3>
               <div className={`collapsible-content ${openSections.approach ? 'open' : ''}`}>
+                <img
+                  src={picCf2295ed}
+                  alt="Adin"
+                  className="about-story-image"
+                />
                 <p>
                   My approach is integrative and personal — grounded in loving presence, intuition, science, clear guidance, spiritual knowledge, lived experience and growth, and healing abilities that have unfolded in my life and consciousness. When I draw on esoteric knowledge, spiritual traditions, or science, I strive to root this in living truth — which is, after all, what spirituality with any value whatsoever awakens us to.</p>
                 <p>
@@ -189,6 +197,12 @@ const About = () => {
                 To any one who has felt the pull toward transformation and healing—but has been challenged by questions of cultural acceptability, wondered where there is space for you, or doubted whether you are even capable of it—let’s walk this path together.
               </p>
 
+              <img
+                src={picA817dd0e}
+                alt="Adin"
+                className="about-story-image"
+              />
+
               </div>
               
               <div className="gold-divider"></div>
@@ -215,6 +229,11 @@ const About = () => {
                 Side Offerings
               </h3>
               <div className={`collapsible-content ${openSections.side ? 'open' : ''}`}>
+                <img
+                  src={picFea532c1}
+                  alt="Adin"
+                  className="about-story-image"
+                />
                 <p>
                   <b>Web Development</b>: I designed and developed this website solo from scratch (including these rainbows!). Building and designing high quality custom websites is my side hustle. I have some availability, so <a href="/contact#get-in-touch" target="_blank">get in touch</a> if you would like me to build/help with your website or app. I am especially excited to develop for Dharma centers, healing practitioners, and environmentally/socially positive organizations— and I may give you a friend rate for the good fortune of building something I feel a heart-connection to. I'm currently developing this <a href="https://dharma-gates.vercel.app/" target="_blank">Dharma Center Directory</a>!
                 </p>

@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import './ProgramPage.css';
 import { Helmet } from 'react-helmet';
 import pic10 from '../assets/pic10.jpg';
+import pic95b7b6cb from '../assets/95b7b6cb-a832-4835-8e34-398f1ad35dbe.jpeg';
+import picC675882c from '../assets/c675882c-9d73-4f44-8862-a2007139ab1d.jpeg';
 
 // Every "Fill out the Alignment Form" CTA on this page reads from this one
 // constant.
@@ -44,6 +46,14 @@ const JEWS = () => {
     israel: false,
     family: false,
     humor: false,
+    health: false,
+    outcomes: false,
+    energy: false,
+    clarity: false,
+    eq: false,
+    values: false,
+    supported: false,
+    practices: false,
   });
 
   const toggleSection = (section) => {
@@ -108,6 +118,46 @@ const JEWS = () => {
       text: 'Your humor and lightness, restored',
       detail: "You get to laugh because you want to — not because it's the only socially sanctioned way to say the unsayable.",
     },
+    {
+      key: 'health',
+      text: 'Improved physical health',
+      detail: "Get free from unwanted patterns, and resolve physical pain, tension, and psychosomatically-rooted conditions. Stress is a principal cause of illness — and in this community in particular, stress has often been running unchecked for generations.",
+    },
+    {
+      key: 'outcomes',
+      text: 'Achieve the outcomes you desire',
+      detail: "Get more of what you actually want — money and abundance, thriving relationships, vibrant health, meaningful work, and whatever else matters most to you.",
+    },
+    {
+      key: 'energy',
+      text: 'Increased energy, focus, and creativity',
+      detail: "Because you'll be less dragged around by vigilance, worry, and inherited conditioning.",
+    },
+    {
+      key: 'clarity',
+      text: 'Restored mental clarity and intuition',
+      detail: "With the fog of hypervigilance, unprocessed emotion, and unresolved family patterns cleared.",
+    },
+    {
+      key: 'eq',
+      text: 'Higher emotional intelligence',
+      detail: "This work is inherently an education in presence and your emotional body — and it tends to deepen your empathy for your own family's patterns, too.",
+    },
+    {
+      key: 'values',
+      text: 'The ability to embody your values',
+      detail: "Know, speak, and live what's actually important to you — with integrity, not obligation.",
+    },
+    {
+      key: 'supported',
+      text: 'Be deeply met and compassionately guided',
+      detail: "Three months held with care the whole way — safe to bring anything, including whatever you've never said out loud.",
+    },
+    {
+      key: 'practices',
+      text: 'Practices that stay with you, for life',
+      detail: "The ability to practice EFT on yourself, and a much greater capacity to regulate your own nervous system, long after we're done.",
+    },
   ];
 
   return (
@@ -160,9 +210,8 @@ const JEWS = () => {
 
           <div className="gold-divider"></div>
 
-          <p className="fd-emphasis"><u className="fd-underline"><em>J.E.W.S.</em></u> — Jewish Emotional Wellness Sessions — is a 12-week container of guided, one-on-one transformation, built specifically for the emotional, ancestral, and spiritual terrain of Jewish life. It exists to end that quiet cost, for good.</p>
-          <p className="fd-emphasis">It's the same depth of work as my flagship <Link to="/freedom-dojo" className="fd-inline-link">Freedom Dojo</Link> program — pointed at what's specifically yours to carry as a Jewish person, and specifically ready to be put down.</p>
-          <p className="fd-emphasis">Whatever you're holding — the stress, the food stuff, the money stuff, the God stuff, the Israel stuff, the mother stuff — we <em>can</em> shift it.</p>
+          <p className="fd-emphasis"><u className="fd-underline"><em>J.E.W.S.</em></u> — Jewish Emotional Wellness Sessions — is a 12-week container of guided, one-on-one deep transformational work, pointed at what's specifically yours to carry as a Jewish person, and specifically ready to be put down. It exists to end that quiet cost, for good.</p>
+          <p className="fd-emphasis">And as with all of my work: I meet you exactly where you're at. Whatever you're holding — the stress, the food stuff, the money stuff, the God stuff, the Israel stuff, the mother stuff, or something else entirely — we <em>can</em> shift it.</p>
 
           <div className="gold-divider"></div>
 
@@ -219,6 +268,11 @@ const JEWS = () => {
       <section className="fd-notsymptom section-dark">
         <div className="container">
           <h2 className="subtitle-heading">The Real Thing.</h2>
+          <img
+            src={picC675882c}
+            alt="Adin"
+            className="fd-about-image"
+          />
           <p className="fd-emphasis-strong">Not a coping mechanism. Not "just don't think about it." Not more information about the trauma — actual resolution of it.</p>
           <p className="fd-emphasis-strong">
             <em>A life-changing shift on every level: emotionally, mentally, energetically, spiritually, and physically — down into the nervous system and the body's own inherited memory. A wonderful, <u className="fd-underline">lasting upgrade</u> to your life, starting from exactly where you're at.</em>
@@ -236,9 +290,7 @@ const JEWS = () => {
         <div className="container">
           <h2 className="subtitle-heading">The Method.</h2>
 
-          <div className="fd-flow">
-            <div className="fd-flow-main fd-flow-main-both">
-              <h3 className="fd-gold-heading">How do we create this shift?</h3>
+          <h3 className="fd-gold-heading">How do we create this shift?</h3>
               <ul className="list-bullets fd-method-list">
                 <li>A 3-month container of <strong>transformative healing and upgrades</strong>.</li>
                 <li><strong>Twelve</strong> potent <strong>90-minute EFT</strong> (Emotional Freedom Techniques, aka Tapping) & <strong>Coaching</strong> sessions with Adin.</li>
@@ -302,8 +354,6 @@ const JEWS = () => {
               <div className="fd-cta-center">
                 <a href={ALIGNMENT_FORM_URL} className="btn">Be part of the magic →</a>
               </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -312,9 +362,13 @@ const JEWS = () => {
         <div className="container">
           <h2 className="subtitle-heading">Where We Focus.</h2>
 
-          <div className="fd-flow">
-            <div className="fd-flow-main fd-flow-main-both">
-              <p>Whatever you actually bring, we work with that — this is never a checklist applied to you. It's a map of common terrain, not a diagnosis. Areas we often go:</p>
+          <img
+            src={pic95b7b6cb}
+            alt="Adin"
+            className="fd-about-image"
+          />
+
+          <p>As with everything I offer, I meet you exactly where you're at — whatever you actually bring is what we work with, for the most part, as applicable to you. This is never a checklist applied to you. It's a map of common terrain, not a diagnosis. Areas we often go:</p>
 
               <ul className="list-bullets">
                 <li><strong>Normalized stress and anxiety.</strong> The kind that's almost celebrated — including in stressed, loving, anxious parents who showed care through worry. Learning that calm is also safe.</li>
@@ -352,9 +406,7 @@ const JEWS = () => {
                 <li><strong>"Good Jew" performance pressure.</strong> Achievement, observance, or assimilation as inherited survival strategies — and the guilt engine that runs underneath them.</li>
               </ul>
 
-              <p className="fd-small-italic">… and, again: whatever you actually bring is what we work with. This list is a starting point, not a boundary.</p>
-            </div>
-          </div>
+          <p className="fd-small-italic">… and, again: whatever you actually bring is what we work with. This list is a starting point, not a boundary.</p>
 
           <div className="gold-divider"></div>
 
@@ -448,9 +500,13 @@ const JEWS = () => {
           <p className="fd-tagline fd-tagline-lg">It is offered because it brings massive benefit, including</p>
 
           <ul className="list-bullets fd-investment-list">
+            <li>Improved physical health.</li>
+            <li>Better relationships.</li>
             <li><u className="fd-underline">Heal</u> beyond belief, at the root — not just manage symptoms — across your <u className="fd-underline">body, mind, and spirit.</u></li>
             <li>A nervous system that isn't running on inherited high alert.</li>
+            <li>More <u className="fd-underline">calm, happy, free</u>, and <u className="fd-underline">empowered</u> as your <u className="fd-underline">baseline</u>.</li>
             <li>Restored <u className="fd-underline">peace</u> with food, money, and family.</li>
+            <li>Restored <u className="fd-underline">vitality</u> and <u className="fd-underline">intuition</u>.</li>
             <li>A spirituality that's actually <u className="fd-underline">yours</u>.</li>
             <li><u className="fd-underline">High-level tools</u> that grow with you, long after our three months together.</li>
           </ul>

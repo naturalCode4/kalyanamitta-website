@@ -4,6 +4,8 @@ import './ProgramPage.css';
 import { Helmet } from 'react-helmet';
 import pic10 from '../assets/pic10.jpg';
 import pic17 from '../assets/pic17.jpg';
+import pic95b7b6cb from '../assets/95b7b6cb-a832-4835-8e34-398f1ad35dbe.jpeg';
+import picC675882c from '../assets/c675882c-9d73-4f44-8862-a2007139ab1d.jpeg';
 
 // Every "Fill out the Alignment Form" CTA on this page reads from this one
 // constant.
@@ -41,6 +43,15 @@ const RaiseYourselfUp = () => {
     innerchild: false,
     reparent: false,
     power: false,
+    health: false,
+    outcomes: false,
+    energy: false,
+    clarity: false,
+    eq: false,
+    values: false,
+    happiness: false,
+    supported: false,
+    practices: false,
   });
 
   const toggleSection = (section) => {
@@ -95,6 +106,51 @@ const RaiseYourselfUp = () => {
       text: 'Reclaimed personal power',
       detail: "Living for yourself, authentically — not in reaction to your parents, and not still auditioning for their approval.",
     },
+    {
+      key: 'health',
+      text: 'Improved physical health',
+      detail: "Get free from unwanted patterns and resolve physical pain, tension, and psychosomatically-rooted conditions — unprocessed emotion is a primary reason people get sick.",
+    },
+    {
+      key: 'outcomes',
+      text: 'Achieve the outcomes you desire',
+      detail: "Get more of what you actually want — money and abundance, thriving relationships, vibrant health, purposeful work, and whatever else matters most to you.",
+    },
+    {
+      key: 'energy',
+      text: 'Increased energy, focus, and creativity',
+      detail: "Because you'll be less dragged around by hypervigilance, self-doubt, and old survival patterns.",
+    },
+    {
+      key: 'clarity',
+      text: 'Restored mental clarity and intuition',
+      detail: "With the fog of self-doubt, triggers, and unresolved family patterns cleared.",
+    },
+    {
+      key: 'eq',
+      text: 'Higher emotional intelligence',
+      detail: "This work is inherently an education in presence and your emotional body — and tends to deepen your capacity to understand your own family's patterns, too.",
+    },
+    {
+      key: 'values',
+      text: 'The ability to embody your values',
+      detail: "Know, speak, and follow through on what's important to you, with integrity — free from the pain of not living what you actually believe in.",
+    },
+    {
+      key: 'happiness',
+      text: 'Happiness, humor, and wisdom',
+      detail: "That comes naturally from being aligned with yourself.",
+    },
+    {
+      key: 'supported',
+      text: 'Be deeply met and compassionately guided',
+      detail: "Three months held with care the whole way — safe to bring anything, including the anger, the grief, and the parts you've never said out loud.",
+    },
+    {
+      key: 'practices',
+      text: 'Practices that stay with you, for life',
+      detail: "The ability to practice EFT on yourself, and a much greater capacity to regulate your own nervous system, long after we're done.",
+    },
   ];
 
   return (
@@ -148,8 +204,8 @@ const RaiseYourselfUp = () => {
           <div className="gold-divider"></div>
 
           <p className="fd-emphasis"><u className="fd-underline"><em>Raise Yourself Up</em></u> is a 12-week container of guided, one-on-one transformation, built specifically for reclaiming what emotionally immature, abusive, or toxic parenting took. It exists to end that cost. For good.</p>
-          <p className="fd-emphasis">It's the same depth of work as my flagship <Link to="/freedom-dojo" className="fd-inline-link">Freedom Dojo</Link> program — pointed directly at the parent-shaped wound underneath so much else.</p>
-          <p className="fd-emphasis">Whatever you're carrying — the self-doubt, the shame, the relationship patterns, the guilt over estrangement or contact — we <em>can</em> shift it.</p>
+          <p className="fd-emphasis">It's real, deep, one-on-one work — pointed directly at the parent-shaped wound underneath so much else.</p>
+          <p className="fd-emphasis">And as with all of my work: I meet you exactly where you're at. Whatever you're carrying — the self-doubt, the shame, the relationship patterns, the guilt over estrangement or contact, or something else entirely — we <em>can</em> shift it.</p>
 
           <div className="gold-divider"></div>
 
@@ -206,6 +262,11 @@ const RaiseYourselfUp = () => {
       <section className="fd-notsymptom section-dark">
         <div className="container">
           <h2 className="subtitle-heading">The Real Thing.</h2>
+          <img
+            src={picC675882c}
+            alt="Adin"
+            className="fd-about-image"
+          />
           <p className="fd-emphasis-strong">Not more journaling about it. Not another book that explains the pattern without resolving it. Not white-knuckling your way through another holiday.</p>
           <p className="fd-emphasis-strong">
             <em>A life-changing shift on every level: emotionally, mentally, energetically, neurologically, physically — down into the nervous system's oldest, earliest patterning. A wonderful, <u className="fd-underline">lasting upgrade</u> to your life, starting from exactly where you're at.</em>
@@ -223,9 +284,7 @@ const RaiseYourselfUp = () => {
         <div className="container">
           <h2 className="subtitle-heading">The Method.</h2>
 
-          <div className="fd-flow">
-            <div className="fd-flow-main fd-flow-main-both">
-              <h3 className="fd-gold-heading">How do we create this shift?</h3>
+          <h3 className="fd-gold-heading">How do we create this shift?</h3>
               <ul className="list-bullets fd-method-list">
                 <li>A 3-month container of <strong>transformative healing and upgrades</strong>.</li>
                 <li><strong>Twelve</strong> potent <strong>90-minute EFT</strong> (Emotional Freedom Techniques, aka Tapping) & <strong>Coaching</strong> sessions with Adin.</li>
@@ -286,8 +345,6 @@ const RaiseYourselfUp = () => {
               <div className="fd-cta-center">
                 <a href={ALIGNMENT_FORM_URL} className="btn">Be part of the magic →</a>
               </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -339,9 +396,13 @@ const RaiseYourselfUp = () => {
         <div className="container">
           <h2 className="subtitle-heading">Where We Focus.</h2>
 
-          <div className="fd-flow">
-            <div className="fd-flow-main fd-flow-main-both">
-              <p>Whatever you actually bring, we work with that — this is never a checklist applied to you. Common terrain includes:</p>
+          <img
+            src={pic95b7b6cb}
+            alt="Adin"
+            className="fd-about-image"
+          />
+
+          <p>As with everything I offer, I meet you exactly where you're at — whatever you actually bring is what we work with, for the most part, as applicable to you. This is never a checklist applied to you. Common terrain includes:</p>
 
               <ul className="list-bullets">
                 <li><strong>The internalized self-hatred pattern.</strong> Unwinding the belief you formed as a child — that the coldness or chaos was evidence something was wrong with <em>you</em>, not evidence of your parent's own limitation.</li>
@@ -391,9 +452,7 @@ const RaiseYourselfUp = () => {
                 </li>
               </ul>
 
-              <p className="fd-small-italic">… and, again: whatever you actually bring is what we work with. This list is a starting point, not a boundary.</p>
-            </div>
-          </div>
+          <p className="fd-small-italic">… and, again: whatever you actually bring is what we work with. This list is a starting point, not a boundary.</p>
 
           <div className="gold-divider"></div>
 
@@ -442,25 +501,21 @@ const RaiseYourselfUp = () => {
         <div className="container">
           <h2 className="subtitle-heading">On Wise Companions.</h2>
 
-          <div className="fd-flow">
-            <div className="fd-flow-main fd-flow-main-both">
-              <div className="fd-wise-row">
-                <img
-                  src={pic17}
-                  alt="Adin outdoors among flowers"
-                  className="fd-wise-image"
-                />
-                <p className="fd-emphasis fd-wise-emphasis">
-                  I will be walking by your side, supporting you every step of the way — through the deep inner transformation, including the anger, the grief, and the difficult stuff. It's a blessing to be of service.
-                </p>
-              </div>
-              <p>
-                Across nearly every spiritual tradition, having a wise guide is considered essential. In Buddhism, this friend is called a <em>kalyāṇamitta</em> — someone who helps guide you in your highest interest, helping your eyes to see things they never saw before. This person should embody wisdom, unconditional love, detachment, and skillfulness — through thick and thin. I strive to be that for you, including as you meet the parts of your story that are hardest to say out loud.
-              </p>
-
-              <Quote text="Adin is an innately gifted intuitive healer, with the dedication and discipline to match his inborn talents. I trust both the quality of his own energy and the many ways he facilitates energetic balance and emotional wellness for others." author="Zachary H." />
-            </div>
+          <div className="fd-wise-row">
+            <img
+              src={pic17}
+              alt="Adin outdoors among flowers"
+              className="fd-wise-image"
+            />
+            <p className="fd-emphasis fd-wise-emphasis">
+              I will be walking by your side, supporting you every step of the way — through the deep inner transformation, including the anger, the grief, and the difficult stuff. It's a blessing to be of service.
+            </p>
           </div>
+          <p>
+            Across nearly every spiritual tradition, having a wise guide is considered essential. In Buddhism, this friend is called a <em>kalyāṇamitta</em> — someone who helps guide you in your highest interest, helping your eyes to see things they never saw before. This person should embody wisdom, unconditional love, detachment, and skillfulness — through thick and thin. I strive to be that for you, including as you meet the parts of your story that are hardest to say out loud.
+          </p>
+
+          <Quote text="Adin is an innately gifted intuitive healer, with the dedication and discipline to match his inborn talents. I trust both the quality of his own energy and the many ways he facilitates energetic balance and emotional wellness for others." author="Zachary H." />
         </div>
       </section>
 
@@ -473,9 +528,13 @@ const RaiseYourselfUp = () => {
           <p className="fd-tagline fd-tagline-lg">It is offered because it brings massive benefit, including</p>
 
           <ul className="list-bullets fd-investment-list">
+            <li>Improved physical health.</li>
+            <li>Better relationships, including romantic ones.</li>
             <li><u className="fd-underline">Heal</u> beyond belief, at the root — not just manage symptoms — across your <u className="fd-underline">body, mind, and spirit.</u></li>
             <li>Restored trust in yourself, and in your closest relationships.</li>
+            <li>More <u className="fd-underline">calm, happy, free</u>, and <u className="fd-underline">empowered</u> as your <u className="fd-underline">baseline</u>.</li>
             <li>The ability to set boundaries without guilt running the show.</li>
+            <li>Restored <u className="fd-underline">vitality</u> and <u className="fd-underline">intuition</u>.</li>
             <li>A healed inner child, and a reparented adult.</li>
             <li><u className="fd-underline">High-level tools</u> that grow with you, long after our three months together.</li>
           </ul>

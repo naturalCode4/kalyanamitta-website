@@ -4,6 +4,8 @@ import Section from '../components/Section';
 import CTA from '../components/CTA';
 import './SpiritualPractice.css';
 import pic4 from '../assets/pic4.jpg';
+import pic97bfe1a4 from '../assets/97bfe1a4-beb9-4fd0-ae9e-c46d918bd026.jpeg';
+import picEd32e69a from '../assets/ed32e69a-59ce-4ab0-bfcf-4067bd94fd72.jpeg';
 import { Helmet } from 'react-helmet';
 
 const Stars = () => <span className="spiritual-stars">★★★★★</span>;
@@ -149,6 +151,14 @@ const SpiritualPractice = () => {
 
               <h2 className="subtitle-heading">About Spiritual Practice</h2>
 
+              <div className="spiritual-image-container">
+                <img
+                  src={pic97bfe1a4}
+                  alt="Spiritual Practice"
+                  className="spiritual-practice-pic"
+                />
+              </div>
+
               <div className="offering-book-cta">
                 <Link to="/contact#booking" className="btn btn-outline">
                   Book a Session with Adin to Receive Guidance in Spiritual Practice →
@@ -166,6 +176,14 @@ const SpiritualPractice = () => {
               </p>
 
               <Quote text="Adin has an open heart and high emotional intelligence — both of which make it seamless and easy to connect with him and have him facilitate healing work. He is committed to his own personal, spiritual path — and the evidence of that work is shown in the value he's able to provide by elucidating and helping me find insights and let go of trauma that no longer serves me. You're in good hands with Adin." author="Travis D." />
+
+              <div className="spiritual-image-container">
+                <img
+                  src={picEd32e69a}
+                  alt="Spiritual Practice"
+                  className="spiritual-practice-pic"
+                />
+              </div>
 
               {/* Voice-Based Sound Healing - Collapsible */}
               <h3 className="collapsible-header" onClick={() => toggleSection('soundHealing')}>

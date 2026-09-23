@@ -4,6 +4,7 @@ import './ProgramPage.css';
 import { Helmet } from 'react-helmet';
 import pic10 from '../assets/pic10.jpg';
 import pic17 from '../assets/pic17.jpg';
+import pic4911d1d3 from '../assets/4911d1d3-96ac-44ee-9891-1ae03842e87d.jpeg';
 
 // Every "Fill out the Alignment Form" CTA on this page reads from this one
 // constant.
@@ -729,6 +730,11 @@ const FreedomDojo = () => {
       {/* Sign off */}
       <section className="fd-signoff">
         <div className="container">
+          <img
+            src={pic4911d1d3}
+            alt="Adin"
+            className="fd-signoff-image"
+          />
           <p className="fd-signoff-text">In your corner, <strong>Adin</strong></p>
           <div className="fd-cta-center">
             <a href={ALIGNMENT_FORM_URL} className="btn">Let's do this →</a>
