@@ -66,7 +66,7 @@ const EFT = () => {
       <section className="EFT-emotional-freedom-techniques-hero">
         <div className="container">
           <div className="EFT-emotional-freedom-techniques-hero-content">
-            <h1>EFT (a.k.a Tapping)</h1>
+            <h1>EFT (a.k.a. Tapping)</h1>
             <p className="EFT-emotional-freedom-techniques-subtitle">
               A highly effective tool for rapid, root-level transformation — improve your physical health, become calm, happy, free, and empowered, and create the life you desire. You will be skillfully guided to resolve nearly any issue or goal.
 
@@ -108,7 +108,10 @@ const EFT = () => {
                 I trained in EFT in the context of a <a href="https://trainwithsonya.us/" target="_blank" rel="noopener noreferrer">school</a> that embraces the deepest spiritual wisdom and neuroscience. This school has produced massively positive, whole-life transformations and flourishing for hundreds of people — and trains them to do the same for others.
               </p>
 
-              <Quote text="The scientist in me was a little skeptical it wouldn't work... I could not have been more wrong. My first session was so powerful — releasing so much pain I'd been dealing with for years." author="Zac K." />
+              <div className="eft-quote-row">
+                <Quote text="It's his love – beyond the Tapping – this process I've walked through with Adin. I think everyone should make time for themselves to heal in this way and experience this kind of love as the foundation." author="Sīla W." />
+                <Quote text="I felt safe and held in our sessions." author="Glo R." />
+              </div>
 
               <div className="gold-divider"></div>
 
@@ -130,7 +133,7 @@ const EFT = () => {
                   Beyond EFT — I wield it with skillfulness, unconditional love, and depth that goes beyond the normal scope of this already powerful modality.
                 </p>
 
-                <Quote text="It's his love – beyond the Tapping – this process I've walked through with Adin. I think everyone should make time for themselves to heal in this way and experience this kind of love as the foundation." author="Sīla W." />
+                <Quote text="Deep emotional healing on the first session I did not expect such powerful results 🙏 great guidance through the whole process." author="Mike Y." />
               </div>
               <div className="gold-divider"></div>
 
@@ -143,6 +146,10 @@ const EFT = () => {
                 <p>
                   Tapping works wonders on the system! Research suggests it reduces activation of the amygdala's threat response, letting your nervous system shift into a calmer, more regulated state — even while bringing attention to what would normally trigger it. This lets you stay present with the issue and feel safe enough to fully feel and process it.
                 </p>
+
+                {isDesktop && (
+                  <Quote text="The scientist in me was a little skeptical it wouldn't work... I could not have been more wrong. My first session was so powerful — releasing so much pain I'd been dealing with for years." author="Zac K." />
+                )}
 
                 <Quote text="EFT is a self-healing modality that combines aspects of Chinese medicine and modern psychology with self-acceptance and unconditional love. EFT recalibrates your brain's responses to stimuli, reprogramming your body and brain's ability to function properly. EFT can positively transform your life in ways you never imagined possible." author="Sonya Sophia, EFT Expert and Trainer" noStars />
                 <p>
@@ -174,6 +181,9 @@ const EFT = () => {
                 <p>
                   EFT is well-backed by <a href="https://eftuniverse.com/research-studies/" target="_blank">over 100 peer-reviewed scientific studies and trials</a>, and it is leading the modern western medical system in treating many ailments. Its power can be verified through your own personal experience — often in one session or even a few minutes.
                 </p>
+                {!isDesktop && (
+                  <Quote text="The scientist in me was a little skeptical it wouldn't work... I could not have been more wrong. My first session was so powerful — releasing so much pain I'd been dealing with for years." author="Zac K." />
+                )}
                 <p>
                   For some issues, EFT may provide relief very quickly, while with other issues you may experience improvements over time. How quickly you experience benefits can vary based on individual factors and the nature of your concerns.
                 </p>
@@ -196,6 +206,8 @@ const EFT = () => {
                 <p>
                   Whether you're navigating daily overwhelm or trauma, physical pain or deep emotions, self-doubt or anxiety, addiction or grief, relationship challenges or break up pains, manifesting abundance or actualizing your deepest calling, connecting to higher consciousness or opening to love—EFT can accelerate your healing and transformation.
                 </p>
+
+                <Quote text="After a breakup and experiencing shock in my body for 3 weeks and not been able to regulate, sleep and let go of the disturbing sense of anxiety, I decided to reach out for a session. The session was 90 minutes long and what happened inside me was truly a tremendous shift. I was given sacred listening, he is very intuitive and sensitive. I now feel like I'm back to myself again, I am so grateful that he was passing through my village in Mexico and I was able to receive his medicine. Thanks!!" author="Ati D." />
               </div>
 
               <div className="gold-divider"></div>

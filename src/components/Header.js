@@ -82,23 +82,51 @@ const Header = () => {
         <nav className={`nav ${isMenuOpen ? 'active' : ''}`}>
           <ul className="nav-list">
             <li className="nav-item">
-              <Link to="/freedom-dojo" className="nav-link" onClick={(e) => handleNavClick(e, null)}>The Freedom Dojo Offer</Link>
-            </li>
-            <li className="nav-item">
               <Link to="/" className="nav-link" onClick={(e) => handleNavClick(e, null)}>Home</Link>
             </li>
-            
+
+            <li className="nav-item">
+              <Link to="/freedom-dojo" className="nav-link" onClick={(e) => handleNavClick(e, null)}>The Freedom Dojo Offer</Link>
+            </li>
+
+            {/* Offerings Dropdown - UPDATED TO MATCH ABOUT STRUCTURE */}
+            <li className="nav-item dropdown">
+              <div className="nav-link-wrapper">
+                <button
+                  className="nav-link"
+                  onClick={toggleOfferings}
+                  style={{ cursor: 'pointer' }}
+                >
+                  Offerings
+                </button>
+                <button
+                  className={`dropdown-arrow ${isOfferingsOpen ? 'active' : ''}`}
+                  onClick={toggleOfferings}
+                  aria-label="Toggle Offerings Menu"
+                >
+                  ▼
+                </button>
+              </div>
+
+              <ul className={`dropdown-menu ${isOfferingsOpen ? 'show' : ''}`}>
+                <li><Link to="/EFT-emotional-freedom-techniques" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>EFT (Tapping)</Link></li>
+                {/* Reiki / Energy Healing temporarily removed from nav — page still live at /energy-work for direct links */}
+                {/* <li><Link to="/energy-work" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>Energy Healing</Link></li> */}
+                <li><Link to="/spiritual-practice" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>Spiritual Counseling & Practice</Link></li>
+              </ul>
+            </li>
+
             {/* About Dropdown */}
             <li className="nav-item dropdown">
               <div className="nav-link-wrapper">
-                <Link 
-                    to="/about" 
-                    className="nav-link" 
+                <Link
+                    to="/about"
+                    className="nav-link"
                     onClick={(e) => handleNavClick(e, null)}
                   >
                     About
                 </Link>
-                <button 
+                <button
                   className={`dropdown-arrow ${isAboutOpen ? 'active' : ''}`}
                   onClick={toggleAboutDropdown}
                   aria-label="Toggle About Menu"
@@ -106,7 +134,7 @@ const Header = () => {
                   ▼
                 </button>
               </div>
-              
+
               <ul className={`dropdown-menu ${isAboutOpen ? 'show' : ''}`}>
                 <li>
                   <Link
@@ -126,33 +154,6 @@ const Header = () => {
                     About Adin
                   </Link>
                 </li>
-              </ul>
-            </li>
-
-            {/* Offerings Dropdown - UPDATED TO MATCH ABOUT STRUCTURE */}
-            <li className="nav-item dropdown">
-              <div className="nav-link-wrapper">
-                <button
-                  className="nav-link" 
-                  onClick={toggleOfferings}
-                  style={{ cursor: 'pointer' }}
-                >
-                  Offerings
-                </button>
-                <button 
-                  className={`dropdown-arrow ${isOfferingsOpen ? 'active' : ''}`}
-                  onClick={toggleOfferings}
-                  aria-label="Toggle Offerings Menu"
-                >
-                  ▼
-                </button>
-              </div>
-
-              <ul className={`dropdown-menu ${isOfferingsOpen ? 'show' : ''}`}>
-                <li><Link to="/EFT-emotional-freedom-techniques" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>EFT (Tapping)</Link></li>
-                {/* Reiki / Energy Healing temporarily removed from nav — page still live at /energy-work for direct links */}
-                {/* <li><Link to="/energy-work" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>Energy Healing</Link></li> */}
-                <li><Link to="/spiritual-practice" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>Spiritual Counseling & Practice</Link></li>
               </ul>
             </li>
 

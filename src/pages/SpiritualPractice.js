@@ -92,7 +92,7 @@ const SpiritualPractice = () => {
                 The spiritual friendship and companionship itself matters deeply here: walking this path with someone who's committed to it themself, and has been through real depths, earned their metaphorical badges and stamps, empathizes with you, understands your experience, and can help guide you through it.
               </p>
 
-              <Quote text="He is a passionate practitioner of many modalities who has helped me expand my consciousness and deepen my meditation, yoga, and energy practices." author="Ethan B." />
+              <Quote text="I feel like he opened a door to my spirituality that I wasn't even sure existed." author="Mckenzi P." />
 
               <p>
                 Across nearly every spiritual tradition, having a wise guide is considered essential. In Buddhism, this friend is called a kalyāṇamitta – someone who helps guide you in your highest interest, helping your eyes to see things they never saw before. They may not just tell you what you want to hear or what's comfortable. This person should embody wisdom, unconditional love, detachment, and skillfulness –– through thick and thin. I strive to be that for you.
@@ -103,7 +103,7 @@ const SpiritualPractice = () => {
                 <em>Upaddha Sutta</em> (SN 45.2)
               </blockquote>
 
-              <Quote text="I feel like he opened a door to my spirituality that I wasn't even sure existed." author="Mckenzi P." />
+              <Quote text="Adin holds really incredible and powerful intentional loving space. Working with him helped me work through so much and get to the root of my issue in just an hour or so. Thank you for sharing your potent Medicine Adin 🙏🏼" author="Caleb S." />
 
               <p>
                 I bring in my own wisdom, methods, personal experience, and intuition as well as teachings from many spiritual traditions, as appropriate to what's alive. I've practiced in Zen, Tibetan, and Theravadan Buddhist lineages, and explored mysticism across Native American, Tantric, Taoist, Judaic, Christian, Hermetic, and Sufi traditions, as well as yoga (including yoga philosophy), qi gong, medicine work, shamanism, healing arts, sexual energy cultivation, psychic development, bhakti, and ecstatic dance.
@@ -142,7 +142,6 @@ const SpiritualPractice = () => {
                 And that's just a start — <a href="/#what-we-can-do-together" target="_blank">here's the fuller list</a> of what I do best.
               </p>
 
-              <Quote text="Adin is an innately gifted intuitive healer, with the dedication and discipline to match his inborn talents. I trust both the quality of his own energy and the many ways he facilitates energetic balance and emotional wellness for others." author="Zachary H." />
               <p>
                 Ultimately, everything that happens is according to what you're ready for. Some shifts happen quickly, almost like magic. Others take patience and lots of love.
               </p>
@@ -161,7 +160,7 @@ const SpiritualPractice = () => {
 
               <div className="offering-book-cta">
                 <Link to="/contact#booking" className="btn btn-outline">
-                  Book a Session with Adin to Receive Guidance in Spiritual Practice →
+                  Book a Session with Adin and Receive Guidance in Spiritual Practice →
                 </Link>
               </div>
 
@@ -175,9 +174,9 @@ const SpiritualPractice = () => {
                 Real growth necessarily involves real challenge — that's not a flaw in the process, that's baked into the process.
               </p>
 
-              <Quote text="Adin has an open heart and high emotional intelligence — both of which make it seamless and easy to connect with him and have him facilitate healing work. He is committed to his own personal, spiritual path — and the evidence of that work is shown in the value he's able to provide by elucidating and helping me find insights and let go of trauma that no longer serves me. You're in good hands with Adin." author="Travis D." />
+              <Quote text="He is a passionate practitioner of many modalities who has helped me expand my consciousness and deepen my meditation, yoga, and energy practices." author="Ethan B." />
 
-              <div className="spiritual-image-container">
+              <div className="spiritual-image-container spiritual-practice-pic-sm">
                 <img
                   src={picEd32e69a}
                   alt="Spiritual Practice"
@@ -185,6 +184,14 @@ const SpiritualPractice = () => {
                 />
               </div>
 
+              {/* Meditation - Collapsible */}
+              <h3 className="collapsible-header" onClick={() => toggleSection('meditation')}>
+                <span className={`triangle ${openSections.meditation ? 'open' : ''}`}></span>
+                <b>Meditation</b>
+              </h3>
+              <div className={`collapsible-content ${openSections.meditation ? 'open' : ''}`}>
+              </div>
+              
               {/* Voice-Based Sound Healing - Collapsible */}
               <h3 className="collapsible-header" onClick={() => toggleSection('soundHealing')}>
                 <span className={`triangle ${openSections.soundHealing ? 'open' : ''}`}></span>
@@ -207,14 +214,6 @@ const SpiritualPractice = () => {
                 <b>Yoga (Asana)</b>
               </h3>
               <div className={`collapsible-content ${openSections.yogaAsana ? 'open' : ''}`}>
-              </div>
-
-              {/* Meditation - Collapsible */}
-              <h3 className="collapsible-header" onClick={() => toggleSection('meditation')}>
-                <span className={`triangle ${openSections.meditation ? 'open' : ''}`}></span>
-                <b>Meditation</b>
-              </h3>
-              <div className={`collapsible-content ${openSections.meditation ? 'open' : ''}`}>
               </div>
 
               {/* Ecstatic Dance / Intuitive Movement - Collapsible */}

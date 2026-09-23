@@ -95,7 +95,8 @@
 
 .calendly-embed-container,
 .contact-email {
-  width: 1200px; /* Same as Calendly */
+  width: 100%;
+  max-width: 1200px; /* Same as Calendly */
   margin: 0 auto; /* Center align */
 }
 
@@ -217,4 +218,100 @@
   display: flex;
   flex-direction: column; /* Stack items vertically */
   gap: 2rem; /* Add space between items */
+}
+
+/* The booking section needs more breathing room than the standard 1200px
+   .container so testimonials can sit outside the Calendly widget itself,
+   rather than squeezing its already-fixed-width column. */
+#booking .container {
+  max-width: 1800px;
+}
+
+.booking-with-quotes {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.booking-widget-col {
+  flex: 1 1 1200px;
+  min-width: 0;
+}
+
+.booking-quotes {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 260px;
+  flex-shrink: 0;
+  padding-top: 4rem;
+}
+
+/* Below this, there's no longer room for real side columns — testimonials
+   move into two centered rows above/below the widget instead. */
+@media (max-width: 1600px) {
+  .booking-with-quotes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .booking-widget-col {
+    order: 2;
+    width: 100%;
+  }
+
+  .booking-quotes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 700px;
+    padding-top: 0;
+  }
+
+  .booking-quotes-left {
+    order: 1;
+  }
+
+  .booking-quotes-right {
+    order: 3;
+    margin-top: 0.5rem;
+  }
+}
+
+.contact-stars {
+  color: #fbbc05;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.contact-quote {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-quote-text {
+  font-style: italic;
+  color: #e8e8e8;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  font-size: 1.05rem;
+  text-align: center !important;
+}
+
+.contact-quote-author {
+  font-weight: 600;
+  color: #d4af37;
+  margin-bottom: 0;
+  text-align: center !important;
 }

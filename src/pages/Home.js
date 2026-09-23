@@ -62,7 +62,7 @@ const Home = () => {
             <h1><u className="hero-underline">Healing On Tap</u></h1>
 
             <p className="hero-subtitle">
-              This work brings you to live in authentic wisdom, love, and freedom.
+              This work where you gain authentic freedom, wisdom, and love.
             </p>
             <p className="hero-subtitle">
               <em>Welcome.</em>
@@ -88,7 +88,7 @@ const Home = () => {
 
             <div className="hero-buttons">
               <Link to="/contact#booking" className="btn btn-outline">Book A Session →</Link>
-              <Link to="/freedom-dojo" className="btn">Apply for the Freedom Dojo Program →</Link>
+              <Link to="/freedom-dojo" className="btn">Apply for the Freedom Dojo →</Link>
             </div>
 
           </div>
@@ -119,6 +119,7 @@ const Home = () => {
                 className="about-image"
               />
             </div>
+            <Quote text="Adin's presence is grounded, compassionate, and deeply intuitive — he creates a safe space where real emotional release and clarity can unfold." author="Ryan S." />
           </div>
         </div>
       </Section>
@@ -173,6 +174,8 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+        <Quote text="Adin has an open heart and high emotional intelligence — both of which make it seamless and easy to connect with him and have him facilitate healing work. He is committed to his own personal, spiritual path — and the evidence of that work is shown in the value he's able to provide by elucidating and helping me find insights and let go of trauma that no longer serves me. You're in good hands with Adin." author="Travis D." />
       </Section>
 
       {/* About Adin */}
@@ -193,10 +196,11 @@ const Home = () => {
                   className="about-image"
                 />
               </div>
+              <Quote text="Adin is an innately gifted intuitive healer, with the dedication and discipline to match his inborn talents. I trust both the quality of his own energy and the many ways he facilitates energetic balance and emotional wellness for others." author="Zachary H." />
             </div>
 
             <div className="about-text-content">
-              <p>Welcome! My name is Adin. It's a joy and honor to support you in this work. <br></br><br></br>I walk with people and help them gain love, wisdom, clarity, freedom, ease, authenticity, and spiritual capacity– to let go of limiting beliefs, anxiety, negative emotion, and trauma– and to get the inner world and outer circumstances they desire. I offer what I <b>live</b> and deeply believe in. <br></br><br></br> I offer 30-minute free consultations and am happy to discuss anything beforehand.</p>
+              <p>Welcome! My name is Adin. It's a joy and honor to support you in this work. <br></br><br></br>I walk with people and help them gain love, wisdom, clarity, freedom, ease, authenticity, and spiritual capacity – to let go of limiting beliefs, anxiety, negative emotion, and trauma – and to have an inner world and outer circumstances they desire. I offer what I <b>live</b> and deeply believe in. <br></br><br></br> I offer 30-minute free consultations and am happy to discuss anything beforehand.</p>
             </div>
           </div>
 
@@ -212,19 +216,6 @@ const Home = () => {
             </Link>
           </div>
 
-        </div>
-      </Section>
-
-      {/* Testimonials */}
-      <Section
-        variant="dark"
-        title="What People Are Saying"
-        subtitle=""
-      >
-        <div className="home-quotes-grid">
-          <Quote text="Adin's presence is grounded, compassionate, and deeply intuitive — he creates a safe space where real emotional release and clarity can unfold." author="Ryan S." />
-          <Quote text="Adin is an innately gifted intuitive healer, with the dedication and discipline to match his inborn talents. I trust both the quality of his own energy and the many ways he facilitates energetic balance and emotional wellness for others." author="Zachary H." />
-          <Quote text="Adin has an open heart and high emotional intelligence — both of which make it seamless and easy to connect with him and have him facilitate healing work. He is committed to his own personal, spiritual path — and the evidence of that work is shown in the value he's able to provide by elucidating and helping me find insights and let go of trauma that no longer serves me. You're in good hands with Adin." author="Travis D." />
         </div>
       </Section>
 

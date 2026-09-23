@@ -1150,10 +1150,24 @@
   gap: 2.5rem;
   width: 100%;
   text-align: left;
+  margin-bottom: 20rem;
 }
 
 .about-adin-top .about-photos {
   flex: 0 0 320px;
+  position: relative;
+}
+
+/* Zachary's quote sits under the photo but is pulled out of flow (absolute)
+   so its text length never grows this row's height — the row stays sized
+   to the image/paragraph, and the outer container's margin-bottom below
+   reserves room for the quote so it doesn't overlap the buttons beneath. */
+.about-adin-top .home-quote {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 1.5rem;
 }
 
 .about-adin-top .photo-container {
@@ -1197,6 +1211,21 @@
 
   .about-adin-top .about-text-content p {
     text-align: center !important;
+  }
+
+  /* Desktop pulls this quote out of flow (absolute) so it doesn't grow the
+     row's height, reserving space below via margin-bottom. On mobile
+     .about-adin-top stacks into a single column instead, so that absolute
+     positioning has nothing correct to anchor to — it was overlapping the
+     text that follows. Let it flow normally here; no reservation needed. */
+  .about-adin-top {
+    margin-bottom: 0;
+  }
+
+  .about-adin-top .home-quote {
+    position: static;
+    margin: 1.5rem auto 0;
+    max-width: 400px;
   }
 }
 

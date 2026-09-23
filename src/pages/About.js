@@ -6,7 +6,7 @@ import Section from '../components/Section';
 import CTA from '../components/CTA';
 import pic5 from '../assets/pic5.jpg';
 import pic10 from '../assets/pic10.jpg';
-import picCf2295ed from '../assets/cf2295ed-b41c-4c8d-961d-74604f58c998.jpeg';
+import pic70f59c8d from '../assets/70f59c8d-640e-438b-89e4-2c87df476923.jpeg';
 import picFea532c1 from '../assets/fea532c1-c343-44d9-a6cf-fb5920db9fa5.jpeg';
 import picA817dd0e from '../assets/a817dd0e-ff09-480a-9c6d-7c733248859a.jpeg';
 import { Helmet } from 'react-helmet';
@@ -118,7 +118,7 @@ const About = () => {
               </h3>
               <div className={`collapsible-content ${openSections.approach ? 'open' : ''}`}>
                 <img
-                  src={picCf2295ed}
+                  src={pic70f59c8d}
                   alt="Adin"
                   className="about-story-image"
                 />
@@ -184,6 +184,11 @@ const About = () => {
                 Healing is For Everyone
               </h3>
               <div className={`collapsible-content ${openSections.healing ? 'open' : ''}`}>
+              <img
+                src={picA817dd0e}
+                alt="Adin"
+                className="about-story-image about-story-image-lg"
+              />
               <p>
                 In modern Western culture, there has been a strong emphasis on emotional and shadow healing, as well as energy arts. While men have long pursued spiritual training, women are disproportionately engaging in this work.
               </p>
@@ -196,13 +201,6 @@ const About = () => {
               <p>
                 To any one who has felt the pull toward transformation and healing—but has been challenged by questions of cultural acceptability, wondered where there is space for you, or doubted whether you are even capable of it—let’s walk this path together.
               </p>
-
-              <img
-                src={picA817dd0e}
-                alt="Adin"
-                className="about-story-image"
-              />
-
               </div>
               
               <div className="gold-divider"></div>

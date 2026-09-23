@@ -4,7 +4,17 @@ import CalendlyEmbed from '../components/CalendlyEmbed';
 import sendEmail from '../utilities/emailUtils'; // Import the utility
 import CustomAlert from '../components/CustomAlert'; // Import the custom alert
 import './Contact.css';
-import { Helmet } from 'react-helmet'; 
+import { Helmet } from 'react-helmet';
+
+const Stars = () => <span className="contact-stars">★★★★★</span>;
+
+const Quote = ({ text, author }) => (
+  <div className="contact-quote">
+    <Stars />
+    <p className="contact-quote-text">"{text}"</p>
+    <p className="contact-quote-author">— {author}</p>
+  </div>
+);
 
 const SUBJECT_OPTIONS = [
   'Schedule a 30-minute Free Consultation',
@@ -58,9 +68,21 @@ const Contact = () => {
       {/* Combined Rainbow Section */}
       <section id="booking" className="contact-content section-rainbow">
         <div className="container content-items">
-          {/* Calendly Embed */}
-          <div>
-            <CalendlyEmbed />
+          {/* Calendly Embed, flanked by testimonials on wide screens */}
+          <div className="booking-with-quotes">
+            <div className="booking-quotes booking-quotes-left">
+              <Quote text="I felt safe and held in our sessions." author="Glo R." />
+              <Quote text="Deep emotional healing on the first session I did not expect such powerful results 🙏 great guidance through the whole process." author="Mike Y." />
+            </div>
+
+            <div className="booking-widget-col">
+              <CalendlyEmbed />
+            </div>
+
+            <div className="booking-quotes booking-quotes-right">
+              <Quote text="Adin's presence is grounded, compassionate, and deeply intuitive — he creates a safe space where real emotional release and clarity can unfold." author="Ryan S." />
+              <Quote text="It was like magic!" author="Andrea L." />
+            </div>
           </div>
 
           {/* Contact Me by Email Form */}

@@ -146,7 +146,7 @@ const Rates = () => {
             A 12-week container to dissolve what's been running your life, and become calm, happy, free, and empowered — for good.
           </p>
           <div className="rates-fd-price">
-            <span className="price-gold">$2,420</span> Founding Cohort
+            <span className="price-gold">$2,420</span> Founding Cohort (first 8 participants)
             <span className="rates-fd-original"> · $3,000 Standard</span>
           </div>
           <Link to="/freedom-dojo" className="btn">Learn More →</Link>

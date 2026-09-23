@@ -94,6 +94,10 @@
   border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
+.about-story-image.about-story-image-lg {
+  width: 364px;
+}
+
 .placeholder-image {
   width: 100%;
   height: 400px;
@@ -417,7 +421,10 @@
     float: none;
     width: 100%;
     max-width: 300px;
-    margin: 0 auto 2rem;
+    /* Symmetric top/bottom so the gap above the photo (from whatever
+       heading precedes it — often a zero-margin collapsible-header) matches
+       the gap below it, into the text. */
+    margin: 2rem auto;
   }
   
   .testimonials-section {
@@ -525,7 +532,7 @@
   /* On mobile, stack them by removing float */
   .about-image-container {
     float: none;
-    margin: 0 auto 2rem auto; /* Center and add bottom space */
+    margin: 2rem auto; /* Center, with matching space above and below */
     max-width: 300px;
     display: block;
   }

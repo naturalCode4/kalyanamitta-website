@@ -2,11 +2,34 @@ import React, { useEffect }from 'react';
 import { Helmet } from 'react-helmet';
 import './Devportfolio.css';
 import Section from '../components/Section';
-import pic5 from '../assets/pic5.jpg'
+import picBio from '../assets/devportfolio-bio-photo.png';
+import picSmoothie from '../assets/devportfolio-smoothie-photo.png';
+import pic70f59c8d from '../assets/70f59c8d-640e-438b-89e4-2c87df476923.jpeg';
+import pic020b669b from '../assets/020b669b-64c2-4df4-a091-dbc755cc66c4.jpeg';
 
 // You will need to put your resume PDF in public/assets/ or src/assets/
 // For now, I'll link to a placeholder path
-const RESUME_PATH = "/assets/Adin_Resume.pdf"; 
+const RESUME_PATH = "/assets/Adin_Resume.pdf";
+
+// Small flame icon (Heroicons "fire", solid) recolored to a gold/orange
+// gradient — used to lead each client quote instead of a plain 🔥 emoji.
+const Flame = () => (
+  <svg className="quote-flame" viewBox="0 0 24 24" aria-hidden="true">
+    <defs>
+      <linearGradient id="flameGradient" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stopColor="#f7d774" />
+        <stop offset="55%" stopColor="#e2a12e" />
+        <stop offset="100%" stopColor="#c9531a" />
+      </linearGradient>
+    </defs>
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      fill="url(#flameGradient)"
+      d="M12.963 2.286a.75.75 0 00-1.071-.136 9.742 9.742 0 00-3.539 6.176 7.547 7.547 0 01-1.705-1.715.75.75 0 00-1.152-.082A9 9 0 1015.68 4.534a7.46 7.46 0 01-2.717-2.248zM15.75 14.25a3.75 3.75 0 11-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 011.925-3.545 3.75 3.75 0 013.255 3.717z"
+    />
+  </svg>
+);
 
 const Portfolio = () => {
   
@@ -24,7 +47,14 @@ const Portfolio = () => {
       role: "Developer & Designer",
       description: "A high-performance React website designed and built from scratch. Features include intricate frontend implementation with JS/CSS design and animations, no-framework responsive layouts, Google Mailer/ Maps/ Reviews API integration via serverless functions, and SEO optimization (Schema/Helmet).",
       link: "/", // Links to home
-      linkText: "View Website (hint: you're on it)"
+      linkText: "Visit Website (hint: you're on it)"
+    },
+    {
+      title: "SonShip",
+      role: "Developer & Designer",
+      description: "Designed and built a custom, beautifully designed React.js site for an off-grid, solar-powered mobile kitchen and power unit. Worked closely with the client — who had little technical background — to develop his vision, create an elegant design, scribe his writing, and shape his story into a lasting legacy for his family.",
+      link: "https://sonship.party",
+      linkText: "Visit Website"
     },
     {
       title: "Bells Mountain Dharma Center",
@@ -76,7 +106,7 @@ const Portfolio = () => {
       linkText: "Visit Website"
     },
     {
-      title: "Music Genius - Spotify deprecated the API... : (",
+      title: "Music Genius",
       role: "Developer and Designer",
       description: "Created an elegant interface mimicking audio equipment. Improved Spotify API performance by enhancing the search algorithm, fetching and playing music based on user preferences. Unfortunately, Spotify deprecated this API's functionality, so the app is no longer working. Here's a video demo",
       link: "https://www.youtube.com/watch?v=NT_9bwzr0Hs",
@@ -111,11 +141,11 @@ const Portfolio = () => {
       {/* Hero Section */}
       <section className="portfolio-hero">
         <div className="container">
-          <h1>Adin Kramer</h1>
-          <h2>Software Engineer</h2>
+          <h1>Adin Mankind</h1>
+          <h2>Software Engineer, Healing Practitioner</h2>
           {/* <h2>Adin "Stone Boy" Kramer</h2> */}
           <p className="portfolio-subtitle">
-            Full Stack Web Development • React.JS • UI/UX Design • Squarespace
+            Full Stack Web Development • UI/UX Design • Tech Infrastructure • Conscious Creations
           </p>
         </div>
       </section>
@@ -124,31 +154,47 @@ const Portfolio = () => {
       <section className="portfolio-contact-section">
         <div className="container contact-content-wrapper">
           <div className="contact-image-col">
-            <img src={pic5} alt='Adin "Stone Boy" Kramer' className="portfolio-profile-pic" />
+            <img src={picBio} alt='Adin "Stone Boy" Kramer' className="portfolio-profile-pic" />
           </div>
           <div className="contact-text-col">
-            <h3>Work With Me</h3>
+            <h3>Graciously handling the tech side of your conscious creation.</h3>
             <p><i>4+ years of experience, trusted by clients across the US.</i></p>
             <p>
-              I build beautiful, custom websites and apps for businesses and individuals who care about quality. Clean code, thoughtful design, clear communication — and I can handle everything from concept to launch.
+              I build beautiful, custom websites and apps for conscious businesses, practitioners, and communities. With me, you have a sincere spiritual practitioner with the logical left-brain mind of a software engineer, working towards the betterment of mankind. I work closely with my clients to deliver a product that feels authentically like them. I produce clean code, thoughtful designs, and clear communication.
             </p>
             <p>
-              Affordable and flexible to fit your budget. Let's talk about your project.
+              I am strong in content writing, web design, the creative process, and the business side of things. You have the option to co-create with me, or bring a fully-formed vision and I'll build it exactly as given, or anything in between.
             </p>
             <p><i>
-              I have a special place in my heart for Dharma centers, healing practitioners, and environmentally and socially positive organizations — reach out and we can likely work something out on price.
+              I hold in my heart that which leads to imperative collective awakening happening on Earth right now. Dharma and Yoga centers, healing practitioners, conscious creations and products, environmentally and socially positive organizations: Reach out – I am happy to connect and support you.
             </i></p>
-
+            <ul className="list-checkmarks contact-highlights">
+              <li>
+                Affordable and flexible to fit your budget. Let's talk about your project.
+              </li>
+              <li>
+                Websites are coded with love from scratch without the use of AI templates. I also use Squarespace as appropriate.
+              </li>
+              <li>
+                Available for long-term support.
+              </li>
+            </ul>
             <div className="contact-details">
-              {/* <p><strong>Phone:</strong> +1 (301) 641-2855</p> */}
-              <p><strong>Location:</strong> West Philadelphia, PA / Remote</p>
+              <p><strong>Location:</strong> Anywhere / A Phone Call Away / West Philadelphia, PA, USA</p>
+              <p><strong>Phone:</strong> +1 (Three Oh Won) 6 For 1 Two Ate 55</p>
             </div>
             
-            <div className="cta-section" style={{ marginTop: '1.5rem', alignItems: 'flex-start' }}>
+            <div className="cta-section" style={{ marginTop: '1.5rem', alignItems: 'center' }}>
               <div className="cta-buttons">
                 {/* <a href="/contact#get-in-touch" target="_blank" className="btn">Contact Me for a Free Call</a> */}
                 {/* <a href="https://www.linkedin.com/in/adinkramer/" target="_blank" rel="noopener noreferrer" className="btn btn-outline">LinkedIn</a> */}
               </div>
+            </div>
+          </div>
+
+          <div className="contact-diamond-col">
+            <div className="portfolio-diamond-frame">
+              <img src={picSmoothie} alt="Adin working from a cafe" className="portfolio-diamond-pic" />
             </div>
           </div>
         </div>
@@ -156,13 +202,19 @@ const Portfolio = () => {
 
       <section className="quote-section">
         <div className="container quote-wrapper">
-        <p>"Extremely reliable and followed through with every task in a timely manner."</p>
+        <p><Flame />"After carefully reviewing [his work] I'm just thrilled to give up a OHH HELL YES."</p>
         <br></br>
-        <p>"Adin had a very thorough understanding of our different options as we navigated our website, and was able to elucidate them to us in a very simple manner."</p>
+        <p><Flame />"Extremely reliable and followed through with every task in a timely manner."</p>
         <br></br>
-        <p>"We are very satisfied with the creativity, intelligence, and beauty of his work and would be very quick to recommend his services."</p>
+        <p><Flame />"Adin had a very thorough understanding of our different options as we navigated our website, and was able to elucidate them to us in a very simple manner."</p>
+        <br></br>
+        <p><Flame />"We are very satisfied with the creativity, intelligence, and beauty of his work and would be very quick to recommend his services."</p>
         </div>
       </section>
+
+      <div className="portfolio-photo-break portfolio-photo-break-quotes">
+        <img src={pic020b669b} alt="Adin" className="portfolio-profile-pic portfolio-pic-020b669" />
+      </div>
 
       {/* Projects Grid */}
       <div className="container portfolio-section">
@@ -193,6 +245,10 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      <div className="portfolio-photo-break portfolio-photo-break-grid">
+        <img src={pic70f59c8d} alt="Adin" className="portfolio-profile-pic" />
       </div>
 
       {/* Resume Section */}
