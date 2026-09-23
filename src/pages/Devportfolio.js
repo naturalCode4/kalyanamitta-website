@@ -129,7 +129,7 @@ const Portfolio = () => {
     {
       title: "My Portfolio Page",
       role: "Developer and Designer",
-      description: "I coded the portfolio page you're on right now. Perks of being an engineer.",
+      description: "I custom coded this portfolio page. Perks of being an engineer.",
       link: null,
       linkText: "Hint: You're on it!"
     }
