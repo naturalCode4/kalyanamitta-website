@@ -147,7 +147,74 @@
     border-bottom-color: #d4af37;
     letter-spacing: 0.5px;
   }
-  
+
+  /* Reset the button defaults so the "Hint: You're on it!" balloon trigger
+     is visually indistinguishable from the real <a class="portfolio-link">
+     links next to it. */
+  .portfolio-link-button {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+  }
+
+  /* --- Balloon easter egg --- */
+  .balloon-overlay {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  .balloon {
+    position: absolute;
+    bottom: -140px;
+    border-radius: 50% 50% 50% 50% / 58% 58% 42% 42%;
+    box-shadow:
+      inset -8px -10px 14px rgba(0, 0, 0, 0.2),
+      inset 6px 8px 12px rgba(255, 255, 255, 0.35);
+    animation-name: balloon-float;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+  }
+
+  .balloon::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid currentColor;
+  }
+
+  .balloon::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 1px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.35);
+  }
+
+  @keyframes balloon-float {
+    0% {
+      transform: translate(0, 0) rotate(-4deg);
+      opacity: 0;
+    }
+    8% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate(var(--drift), -145vh) rotate(6deg);
+      opacity: 0;
+    }
+  }
+
   /* --- Resume Section --- */
   .resume-section {
     background: #151515;

@@ -62,7 +62,7 @@ const Home = () => {
             <h1><u className="hero-underline">Healing On Tap</u></h1>
 
             <p className="hero-subtitle">
-              This work where you gain authentic freedom, wisdom, and love.
+              This is where you gain inner freedom, authentic wisdom, and expand true love.
             </p>
             <p className="hero-subtitle">
               <em>Welcome.</em>

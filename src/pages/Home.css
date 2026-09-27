@@ -676,7 +676,7 @@
   }
 
   .hero-subtitle {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-top: -0.5rem;
   }
 
@@ -699,10 +699,6 @@
   .section-rainbow .section-title.subtitle-heading,
   .section-dark .section-title.subtitle-heading {
     font-size: 1.65rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.1rem;
   }
   
   .first-session-content h2 {

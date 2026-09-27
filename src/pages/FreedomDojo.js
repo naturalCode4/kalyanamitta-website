@@ -217,7 +217,7 @@ const FreedomDojo = () => {
             That's not a slogan or hype. In fact, I hate flashy or manipulative marketing. It's what we see this work <u className="fd-underline">actually do</u>.
           </p>
           <p className="fd-emphasis">
-          <u className="fd-underline">Listen:</u> Most people are quietly paying an <u className="fd-underline">enormous</u>, invisible price: unprocessed pain, negative emotions, old fear, and limiting beliefs they <em>never chose</em>. Heavy baggage quietly <u className="fd-underline">living in the nervous system</u>, <u className="fd-underline">running life behind the scenes</u>.
+            Are you quietly paying the <u className="fd-underline">enormous</u>, invisible price of unprocessed pain, negative emotions, old fear, and limiting beliefs you <em>never chose</em>? Heavy baggage, <u className="fd-underline">running life behind the scenes</u>.
           </p>
 
           <div className="collapsible-header fd-inline-trigger" onClick={() => toggleSection('costOfCarrying')}>

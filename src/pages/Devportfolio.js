@@ -1,4 +1,4 @@
-import React, { useEffect }from 'react';
+import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import './Devportfolio.css';
 import Section from '../components/Section';
@@ -31,8 +31,11 @@ const Flame = () => (
   </svg>
 );
 
+const BALLOON_COLORS = ['#ff4d6d', '#ffd166', '#06d6a0', '#4ea8de', '#c77dff', '#f4845f', '#ef476f', '#d4af37'];
+
 const Portfolio = () => {
-  
+  const [balloons, setBalloons] = useState([]);
+
   useEffect(() => {
     const footer = document.querySelector('footer');
       if (footer) footer.style.display = 'none';
@@ -40,6 +43,22 @@ const Portfolio = () => {
         if (footer) footer.style.display = 'block'; // Restore on unmount
       };
   }, []);
+
+  // Over-the-top easter egg for the "Hint: You're on it!" card — fills the
+  // screen with balloons on click, then clears itself out.
+  const launchBalloons = () => {
+    const batch = Array.from({ length: 30 }, (_, i) => ({
+      id: `${Date.now()}-${i}`,
+      left: Math.random() * 100,
+      duration: 3.5 + Math.random() * 2.5,
+      delay: Math.random() * 0.7,
+      size: 42 + Math.random() * 30,
+      color: BALLOON_COLORS[Math.floor(Math.random() * BALLOON_COLORS.length)],
+      drift: (Math.random() - 0.5) * 200,
+    }));
+    setBalloons(batch);
+    window.setTimeout(() => setBalloons([]), 6500);
+  };
 
   const projects = [
     {
@@ -131,7 +150,8 @@ const Portfolio = () => {
       role: "Developer and Designer",
       description: "I custom coded this portfolio page. Perks of being an engineer.",
       link: null,
-      linkText: "Hint: You're on it!"
+      linkText: "Hint: You're on it!",
+      easterEgg: "balloons"
     }
   ];
 
@@ -234,11 +254,19 @@ const Portfolio = () => {
               <p>{project.description}</p>
               
               {/* LOGIC UPDATE: Handle Link vs No-Link Text */}
-              {project.link ? (
-                <a 
-                  href={project.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+              {project.easterEgg === 'balloons' ? (
+                <button
+                  type="button"
+                  onClick={launchBalloons}
+                  className="portfolio-link portfolio-link-button"
+                >
+                  {project.linkText} →
+                </button>
+              ) : project.link ? (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="portfolio-link"
                 >
                   {project.linkText} →
@@ -290,6 +318,27 @@ const Portfolio = () => {
 
         </div>
       </section>
+
+      {balloons.length > 0 && (
+        <div className="balloon-overlay" aria-hidden="true">
+          {balloons.map((b) => (
+            <span
+              key={b.id}
+              className="balloon"
+              style={{
+                left: `${b.left}%`,
+                width: `${b.size}px`,
+                height: `${b.size * 1.2}px`,
+                animationDuration: `${b.duration}s`,
+                animationDelay: `${b.delay}s`,
+                '--drift': `${b.drift}px`,
+                backgroundColor: b.color,
+                color: b.color,
+              }}
+            />
+          ))}
+        </div>
+      )}
 
     </div>
   );
