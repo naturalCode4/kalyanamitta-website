@@ -89,6 +89,19 @@
   text-underline-offset: 4px;
 }
 
+/* First-letter rainbow treatment for hero taglines — apply via the
+   RainbowTitle helper in each program page, which wraps each main word's
+   first letter in one of the 7 hue classes below, cycling in order. Filler
+   words (and/from/etc) are left plain. Colors are light pastels tuned to
+   stay readable on the dark .fd-hero gradient. */
+.fd-rainbow-letter-0 { color: hsl(0, 75%, 72%); }
+.fd-rainbow-letter-1 { color: hsl(30, 80%, 68%); }
+.fd-rainbow-letter-2 { color: hsl(50, 80%, 65%); }
+.fd-rainbow-letter-3 { color: hsl(140, 55%, 65%); }
+.fd-rainbow-letter-4 { color: hsl(205, 70%, 70%); }
+.fd-rainbow-letter-5 { color: hsl(255, 65%, 76%); }
+.fd-rainbow-letter-6 { color: hsl(285, 60%, 76%); }
+
 /* Plain inline text links (e.g. the "100 studies and trials" citation)
    otherwise fall back to the browser's default link color, which is dark
    and hard to read against this page's near-black backgrounds. */
@@ -116,6 +129,7 @@
 }
 
 .fd-intro h3,
+.fd-timeline-section h3,
 .fd-method h3,
 .fd-about h3,
 .fd-focus h3,
@@ -243,6 +257,8 @@
    reserved-margin text column; each .fd-sidebar is pinned left or right
    via a modifier class. Sections with sidebars get a wider container so
    there's real breathing room in the middle once the margins are reserved. */
+.fd-isyou .container,
+.fd-running .container,
 .fd-wise-friend .container,
 .fd-about .container,
 .fd-focus .container,
@@ -687,8 +703,228 @@
   }
 }
 
+/* Lasting Shifts reuses the benefit grid, but its items are plain labels
+   rather than dropdowns — .fd-benefit-header's layout normally comes from
+   the shared .collapsible-header class, which these don't carry. */
+.fd-benefit-static {
+  display: flex;
+  gap: 10px; /* matches .collapsible-header's gap in shared.css */
+}
+
+/* Invisible stand-in for the dropdown arrow, so plain items' text lines up
+   with the dropdown items' text in the same column. */
+.fd-triangle-spacer {
+  visibility: hidden;
+}
+
+/* The text-only sections (Is This You?, Why It's Still Running You, Example
+   Timeline) read as one column, so cap them to a comfortable line length. */
+.fd-timeline-section .container {
+  max-width: 860px;
+}
+
+/* Plain bullet lists in the new prose sections (Is This You?, Where We
+   Focus) — left-aligned and capped to the same reading width as body copy. */
+.fd-prose-list {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.program-page .fd-prose-list li {
+  color: #e8e8e8;
+  font-size: 1.18rem;
+  line-height: 1.8;
+  margin-bottom: 0.6rem;
+}
+
+/* ---------- Example Timeline ----------
+   A single vertical rail with a gold dot per week — one column at every
+   width, so it needs no separate mobile layout. */
+.fd-timeline {
+  list-style: none;
+  padding: 0 0 0 2rem;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  border-left: 2px solid rgba(212, 175, 55, 0.35);
+}
+
+.fd-timeline-week {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.fd-timeline-week:last-child {
+  padding-bottom: 0;
+}
+
+.fd-timeline-week::before {
+  content: '';
+  position: absolute;
+  left: calc(-2rem - 7px);
+  top: 0.55rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #d4af37;
+}
+
+.program-page h3.fd-timeline-label {
+  text-align: left;
+  font-size: 1.4rem;
+  margin: 0 0 0.5rem;
+  color: #d4af37;
+}
+
+.fd-timeline-when {
+  color: #b8b8b8;
+  font-weight: 400;
+}
+
+.fd-timeline-items {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.fd-timeline-items li {
+  font-size: 1.12rem;
+  line-height: 1.7;
+  color: #e8e8e8;
+  margin-bottom: 0.3rem;
+}
+
+/* Several short testimonials side by side (one column on narrow screens). */
+.fd-quote-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  align-items: stretch;
+}
+
+.fd-quote-row .fd-quote {
+  margin: 0;
+  max-width: none;
+}
+
+/* Why It's Still Running You has only two visible paragraphs, shorter than
+   its "This goes deep." sidebar once opened — and absolutely positioned
+   sidebars don't stretch the section, so reserve room for it on desktop
+   (below 1400px the sidebar stacks in normal flow; see .fd-sidebar). */
+@media (min-width: 1401px) {
+  .fd-running .fd-flow {
+    min-height: 380px;
+  }
+}
+
+/* A sidebar-style dropdown box placed in normal flow, centered between a
+   heading and full-width content (Is This You?'s "Where Did You Land?"). In
+   flow it stretches the section as it opens, so it needs no height cap. */
+.fd-sidebar.fd-sidebar-centered {
+  position: static;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.fd-sidebar-centered.fd-sidebar-dropdown .collapsible-content.open {
+  max-height: 5000px;
+  overflow-y: visible;
+}
+
+/* ---------- Hero definitions (power / authority) ----------
+   Two dictionary-style boxes flanking the title on wide screens: the hero
+   gets the wide container, a narrower text column than other sections so
+   the big title doesn't wrap too much, and boxes centered vertically. */
+.fd-hero .container {
+  max-width: 1600px;
+}
+
+.fd-hero .fd-flow-main.fd-flow-main-both {
+  margin-left: 340px;
+  margin-right: 340px;
+}
+
+.fd-hero .fd-sidebar.fd-definition {
+  width: 300px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 1.4rem 1.6rem;
+  text-align: left;
+}
+
+.fd-definition p {
+  color: #e8e8e8;
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+
+.fd-definition p + p {
+  margin-top: 0.6rem;
+}
+
+.fd-definition .fd-definition-word {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #d4af37;
+  line-height: 1.2;
+}
+
+.fd-definition .fd-definition-meta {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #b8b8b8;
+}
+
+@media (max-width: 1400px) {
+  .fd-hero .fd-flow-main.fd-flow-main-both {
+    margin: 0;
+  }
+
+  .fd-hero .fd-sidebar.fd-definition {
+    transform: none;
+    width: 100%;
+    max-width: 600px;
+    margin: 1.5rem auto 0;
+  }
+}
+
+/* Bullet stand-in for the dropdown arrow in plain (non-dropdown) grids,
+   e.g. the "Subjects we'll likely touch on" list. */
+.fd-grid-bullet {
+  color: #d4af37;
+  flex-shrink: 0;
+}
+
+/* Even rows for benefit-style grids whose labels wrap to 3+ lines (the
+   plain list only stays even while every label fits the 3.4rem header).
+   Each item spans two row tracks shared across the whole row via subgrid —
+   header, then dropdown content — so every header in a row is the same
+   height with its label centered, and the dividing lines line up. */
+.fd-benefit-list.fd-benefit-list-even {
+  align-items: stretch;
+}
+
+.fd-benefit-list-even .fd-benefit-item {
+  display: grid;
+  grid-row: span 2;
+  grid-template-rows: subgrid;
+}
+
+.fd-benefit-list-even .fd-benefit-header {
+  height: 100%;
+}
+
 /* ---------- Section variants for this page ---------- */
 .fd-intro,
+.fd-isyou,
+.fd-running,
+.fd-timeline-section,
 .fd-benefits,
 .fd-notsymptom,
 .fd-wise-friend,
@@ -698,6 +934,9 @@
 }
 
 .fd-intro p:not(.fd-emphasis):not(.fd-small-italic):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author):not(.fd-emphasis-strong):not(.fd-benefit-detail):not(.fd-sidebar-quote),
+.fd-isyou p:not(.fd-emphasis):not(.fd-small-italic):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author):not(.fd-emphasis-strong):not(.fd-benefit-detail):not(.fd-sidebar-quote),
+.fd-running p:not(.fd-emphasis):not(.fd-small-italic):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author):not(.fd-emphasis-strong):not(.fd-benefit-detail):not(.fd-sidebar-quote),
+.fd-timeline-section p:not(.fd-emphasis):not(.fd-small-italic):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author):not(.fd-emphasis-strong):not(.fd-benefit-detail):not(.fd-sidebar-quote),
 .fd-method p:not(.fd-emphasis):not(.fd-small-italic):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author):not(.fd-emphasis-strong):not(.fd-benefit-detail):not(.fd-sidebar-quote),
 .fd-about p:not(.fd-emphasis):not(.fd-small-italic):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author):not(.fd-emphasis-strong):not(.fd-benefit-detail):not(.fd-sidebar-quote),
 .fd-focus p:not(.fd-emphasis):not(.fd-small-italic):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author):not(.fd-emphasis-strong):not(.fd-benefit-detail):not(.fd-sidebar-quote),
@@ -852,6 +1091,7 @@
 .fd-emphasis-strong,
 .fd-benefit-list,
 .fd-dual-dropdown,
+.fd-timeline,
 .fd-pricing-row {
   margin-top: 2rem;
   margin-bottom: 2rem;

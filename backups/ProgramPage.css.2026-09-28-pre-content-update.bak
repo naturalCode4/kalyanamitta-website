@@ -1,0 +1,993 @@
+/* Shared layout & styles for program landing pages (Freedom Dojo and its niche variants) */
+
+/* ---------- Experiment: colored "grey" text ----------
+   Plain grey body text (most sections quietly fell back to the site's
+   global grey, #b8b8b8, since they don't use the .section-dark /
+   .section-rainbow color overrides), replaced with a light-pastel rainbow
+   that shifts one step — red, yellow, blue, violet — in reading order down
+   the page: Intro → Method → About Adin → Investment. Benefits, A Wise
+   Friend, and Where We Focus are excluded on purpose: those three sections
+   use the busy .section-rainbow background image, and colored text on top
+   of it read as noisy/hard to read, so their body copy stays plain white.
+   Their rainbow variables (orange, green, indigo) still exist below and are
+   reused for a few specific one-off requests elsewhere on the page (e.g.
+   the Intro bullet list, the green Method paragraphs) even though they're
+   no longer that section's own body-text color.
+   TO REVERT: delete this whole block plus the "Per-section body text
+   color" rules and the reused-variable rules further down, and remove the
+   var(...) references from those selectors — every plain-paragraph rule
+   this replaces originally had no explicit color (i.e. it fell back to the
+   global #b8b8b8), so deleting is a clean revert. */
+:root {
+  --fd-intro-text: hsl(0, 65%, 78%);        /* red    (1st section) */
+  --fd-benefits-text: hsl(28, 70%, 72%);    /* orange (2nd) */
+  --fd-method-text: hsl(52, 65%, 70%);      /* yellow (3rd) */
+  --fd-wise-friend-text: hsl(140, 40%, 68%);/* green  (4th) */
+  --fd-about-text: hsl(205, 60%, 76%);      /* blue   (5th) */
+  --fd-focus-text: hsl(248, 50%, 80%);      /* indigo (6th) */
+  --fd-investment-text: hsl(280, 45%, 82%); /* violet (7th, last) */
+}
+
+.program-page {
+  min-height: 100vh;
+}
+
+.program-page section {
+  padding: 5rem 0;
+}
+
+/* ---------- Hero ----------
+   A muted, mostly-dark version of the site's rainbow gradient — same hue
+   sequence (purple → teal → gold → orange → red) as the vivid
+   .section-rainbow bands elsewhere, just desaturated and darkened so it
+   reads as a subtle tint rather than the full rainbow treatment. */
+/* Offsets the #method in-page jump link so the fixed site header (~69px,
+   see App.css) doesn't cover the top of the section it scrolls to. */
+#method,
+#benefits {
+  scroll-margin-top: 85px;
+}
+
+.fd-hero {
+  background: linear-gradient(
+    135deg,
+    #0f0f0f 0%,
+    #1c1626 20%,
+    #14201f 38%,
+    #16211b 52%,
+    #241c14 68%,
+    #24140f 82%,
+    #0f0f0f 100%
+  );
+  text-align: center;
+  padding: 8rem 0 4rem;
+  border-bottom: 2px solid #d4af37;
+}
+
+.fd-hero h1.subtitle-heading {
+  font-size: 4.4rem;
+  margin-bottom: 2rem;
+}
+
+.fd-hero-line {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f0f0f0;
+  max-width: 700px;
+  margin: 0 auto 1.75rem;
+  line-height: 1.5;
+}
+
+
+/* Reusable underline treatment — apply className="fd-underline" to any
+   <u> (or other inline element) wherever an underline is wanted on this
+   page, so the styling stays consistent. */
+.fd-underline {
+  text-decoration: underline;
+  text-decoration-color: #d4af37;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+/* First-letter rainbow treatment for hero taglines — apply via the
+   RainbowTitle helper in each program page, which wraps each main word's
+   first letter in one of the 7 hue classes below, cycling in order. Filler
+   words (and/from/etc) are left plain. Colors are light pastels tuned to
+   stay readable on the dark .fd-hero gradient. */
+.fd-rainbow-letter-0 { color: hsl(0, 75%, 72%); }
+.fd-rainbow-letter-1 { color: hsl(30, 80%, 68%); }
+.fd-rainbow-letter-2 { color: hsl(50, 80%, 65%); }
+.fd-rainbow-letter-3 { color: hsl(140, 55%, 65%); }
+.fd-rainbow-letter-4 { color: hsl(205, 70%, 70%); }
+.fd-rainbow-letter-5 { color: hsl(255, 65%, 76%); }
+.fd-rainbow-letter-6 { color: hsl(285, 60%, 76%); }
+
+/* Plain inline text links (e.g. the "100 studies and trials" citation)
+   otherwise fall back to the browser's default link color, which is dark
+   and hard to read against this page's near-black backgrounds. */
+.fd-inline-link {
+  color: #d4af37;
+  text-decoration: underline;
+}
+
+.fd-inline-link:hover {
+  color: #f4d03f;
+}
+
+/* ---------- Section headers used throughout ---------- */
+.program-page h2.subtitle-heading {
+  text-align: center;
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+}
+
+.program-page h3 {
+  font-size: 2.1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.fd-intro h3,
+.fd-method h3,
+.fd-about h3,
+.fd-focus h3,
+.fd-wise-friend h3 {
+  color: #f0f0f0;
+}
+
+/* Dropdown / collapsible headers are centered on this page, including the
+   per-benefit headers (they reuse the shared .collapsible-header class). */
+.program-page .collapsible-header {
+  justify-content: center;
+}
+
+/* ---------- Emphasis lines ---------- */
+/* font-size/text-align need !important: Home.css has a page-wide
+   ".section-rainbow p { font-size: 1.1rem; text-align: left; ... }" rule
+   that's MORE specific than a single class like .fd-emphasis (it also
+   matches on the "p" element), and Benefits/Wise Friend/Focus all use
+   .section-rainbow — without !important that leak silently shrinks and
+   left-aligns every .fd-emphasis line in those three sections. */
+.fd-emphasis {
+  font-weight: 700;
+  font-size: 1.8rem !important;
+  line-height: 1.6;
+  color: #f0f0f0;
+  text-align: center !important;
+  max-width: 800px;
+  margin: 1.8rem auto;
+}
+
+.fd-emphasis-strong {
+  font-weight: 700;
+  font-size: 1.45rem !important; /* !important: see the note above .fd-emphasis */
+  color: #ffffff;
+  text-align: center !important;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+}
+
+.fd-small-italic {
+  font-style: italic;
+  text-align: center !important;
+  font-size: 1.05rem !important; /* !important: see the note above .fd-emphasis */
+  /* Plain white (via Home.css's page-wide .section-rainbow rule) — Where We
+     Focus deliberately isn't part of the rainbow text-color system, see the
+     note at the top of this file. */
+}
+
+/* Utility for one-off plain paragraphs that need centering — the default
+   section rule left-aligns ordinary <p> tags for body-copy readability, so
+   use this to override on a specific paragraph without touching the rest. */
+.fd-center {
+  text-align: center !important;
+}
+
+/* Pairs with .fd-center for short standalone paragraphs (not body copy) —
+   caps the line width so centered text reads as a curated statement rather
+   than one long line stretching the full container. */
+.fd-narrow {
+  max-width: 800px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* ---------- Tagline pull-lines before CTAs ----------
+   color needs !important: sections using the site-wide .section-dark class
+   (e.g. Investment, Not Symptom Management) carry a `.section-dark p` rule
+   that's MORE specific than a single class like .fd-tagline, so without
+   this the gold color silently loses to that section's default light-grey
+   paragraph color. */
+.fd-tagline {
+  text-align: center !important; /* !important: see the note above .fd-emphasis */
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.85rem !important;
+  color: #d4af37 !important;
+  max-width: 700px;
+  margin: 2rem auto 1.5rem;
+  line-height: 1.5;
+}
+
+/* One-off size bump for a specific tagline instance, e.g. the Investment
+   section's opening line — stack alongside .fd-tagline, not instead of it. */
+.fd-tagline-lg {
+  font-size: 2.1rem !important; /* !important: needed to beat .fd-tagline's own !important */
+  max-width: 850px;
+}
+
+/* One-off size bump for a specific .fd-emphasis instance — stack alongside
+   .fd-emphasis, not instead of it. */
+.fd-emphasis-lg {
+  font-size: 2.2rem !important;
+}
+
+/* ---------- CTA buttons ---------- */
+/* .btn is a shared global class (used on other pages too) — bump size only
+   within this page rather than touching the shared rule. */
+.program-page .btn {
+  font-size: 1.15rem;
+  padding: 0.95rem 2.4rem;
+}
+
+.fd-cta-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.fd-cta-group {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+/* ---------- Sidebars / callout boxes ----------
+   True independent side column: the sidebar is taken clean out of the
+   document flow (position: absolute) and pinned to a margin the main text
+   reserves for it. Because it's out of flow, it never reshapes the main
+   text (unlike float) and never makes the next block wait for it to finish
+   (unlike a grid row, which sizes to its tallest cell). The main column's
+   own height is all that matters for what comes after — text continues
+   right away. .fd-flow is the positioning context; .fd-flow-main is the
+   reserved-margin text column; each .fd-sidebar is pinned left or right
+   via a modifier class. Sections with sidebars get a wider container so
+   there's real breathing room in the middle once the margins are reserved. */
+.fd-wise-friend .container,
+.fd-about .container,
+.fd-focus .container,
+.fd-method .container {
+  max-width: 1600px;
+}
+
+.fd-flow {
+  position: relative;
+}
+
+.fd-flow-main {
+  max-width: 720px;
+}
+
+.fd-flow-main.fd-flow-main-left {
+  margin-left: 440px;
+}
+
+/* Reserve both margins explicitly — rather than just capping a width and
+   letting it sit flush left — so the text column can never run underneath
+   a sidebar, and so it reads as genuinely centered on the page rather than
+   centered-within-whatever-space-was-left (which looks left- or
+   right-shifted whenever the reservation is asymmetric). Used both when
+   there are two sidebars (one real reservation each side) and when there's
+   only one (a matching phantom reservation on the empty side keeps the
+   text visually centered instead of hugging that side). */
+.fd-flow-main.fd-flow-main-both {
+  margin-left: 440px;
+  margin-right: 440px;
+  max-width: none;
+}
+
+.fd-about-image {
+  float: right;
+  width: 260px;
+  margin: 0 0 1rem 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(212, 175, 55, 0.4);
+}
+
+/* "On Wise Companions" portrait, paired with its paragraph as a flex row
+   instead of a CSS float — a float here would only ever wrap a fixed
+   number of lines around it regardless of height (confirmed by testing up
+   to 900px with no change), a real cross-browser float/line-wrap quirk, so
+   flexbox is used instead for a predictable, matchable height. */
+.fd-wise-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin: 1.8rem 0;
+}
+
+.fd-wise-image {
+  flex: 0 0 240px;
+  width: 240px;
+  height: 565px;
+  object-fit: cover;
+  object-position: center 78%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(212, 175, 55, 0.4);
+  transform: scaleX(-1);
+}
+
+.fd-emphasis.fd-wise-emphasis {
+  flex: 1;
+  min-width: 0;
+  text-align: left !important;
+  max-width: none !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 700px) {
+  .fd-wise-row {
+    flex-direction: column;
+  }
+
+  .fd-wise-image {
+    flex: none;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    margin: 0 auto;
+  }
+}
+
+/* Stop the floated portrait from squeezing the "More about Adin" dropdown
+   into a narrow column — the float should only sit beside the opening
+   paragraph, not everything that follows it. */
+.fd-about .fd-inline-trigger {
+  clear: both;
+}
+
+/* The page-wide 5rem gold-divider margin is tuned for gaps between major
+   sections — right after this short dropdown trigger it reads as a dead
+   zone, so it gets a tighter margin here specifically. */
+.fd-about-divider {
+  margin: 1.5rem auto !important;
+}
+
+.fd-sidebar {
+  position: absolute;
+  top: 0;
+  width: 380px;
+  background: rgba(212, 175, 55, 0.06);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  border-radius: 12px;
+  padding: 1.75rem 2rem;
+}
+
+.fd-sidebar.fd-side-left {
+  left: 0;
+}
+
+.fd-sidebar.fd-side-right {
+  right: 0;
+}
+
+/* Two (or more) dropdown-sidebars sharing one side, one under the other.
+   The stack itself is positioned absolutely ONCE (still doesn't reflow the
+   main text column), but its children are plain static blocks that stack in
+   normal flow — so opening one naturally pushes the next one down instead
+   of needing a hardcoded pixel gap that either overlaps when expanded or
+   leaves a dead gap when collapsed. */
+.fd-sidebar-stack {
+  position: absolute;
+  width: 380px;
+}
+
+.fd-sidebar-stack.fd-side-left {
+  left: 0;
+}
+
+.fd-sidebar-stack.fd-side-right {
+  right: 0;
+}
+
+.fd-sidebar-stack .fd-sidebar {
+  position: static;
+  margin-bottom: 1.5rem;
+}
+
+.fd-sidebar-stack .fd-sidebar:last-child {
+  margin-bottom: 0;
+}
+
+.fd-sidebar p {
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: left !important;
+}
+
+.fd-sidebar p + p {
+  margin-top: 1.3rem;
+}
+
+.fd-sidebar .fd-quote {
+  margin: 0;
+  max-width: none;
+}
+
+/* A sidebar that's ALSO a dropdown: same bordered box, but the header
+   toggles a collapsed/expanded content block inside it, starting closed. */
+.fd-sidebar-dropdown-header {
+  justify-content: flex-start !important;
+  text-align: left;
+  font-size: 1.15rem;
+  color: #ffffff;
+  margin: 0 !important;
+}
+
+/* Sidebars are absolutely positioned, so their height never reflows the
+   section around them (see the .fd-flow note above) — which also means a
+   long dropdown, once opened, can grow taller than the section itself and
+   spill into whatever comes next. Capping the open height with a scrollbar
+   keeps it contained no matter how long the content is. More specific than
+   the shared ".collapsible-content.open { max-height: 5000px }" rule, so no
+   !important needed. */
+.fd-sidebar-dropdown .collapsible-content.open {
+  max-height: 480px;
+  overflow-y: auto;
+}
+
+.fd-sidebar-dropdown-header .triangle {
+  color: #d4af37;
+  flex-shrink: 0;
+}
+
+.fd-sidebar-dropdown .collapsible-content p {
+  text-align: left !important;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #d1d1d1; /* fallback grey if used somewhere with no section override below */
+  margin-bottom: 1.2rem;
+}
+
+/* Reuses the section's own rainbow color rather than a separate one, so
+   the sidebar-dropdown text matches whichever section it's actually in.
+   Focus isn't included here — it deliberately isn't part of the rainbow
+   text-color system (see the note at the top of this file), so its
+   sidebar-dropdown text just falls through to plain white like the rest of
+   that section's body copy. */
+.fd-method .fd-sidebar-dropdown .collapsible-content p {
+  color: var(--fd-method-text);
+}
+
+.fd-sidebar-dropdown .collapsible-content p:first-child {
+  margin-top: 1rem;
+}
+
+/* A dropdown trigger that sits inline in the main body copy — not a section
+   heading (h3) and not a sidebar, just a short "see more" prompt between
+   paragraphs. Shortening plan: content behind these starts collapsed. */
+/* Same gold, italic look the "How do we create this powerful shift?" line
+   had as a .fd-inline-trigger dropdown before it became a plain header. */
+.fd-gold-heading {
+  color: #d4af37 !important;
+  font-style: italic;
+}
+
+.fd-inline-trigger {
+  justify-content: center;
+  color: #d4af37;
+  font-size: 1.28rem;
+  font-weight: 600;
+  font-style: italic;
+  margin: 1.5rem auto !important;
+  max-width: 700px;
+}
+
+.fd-inline-trigger .triangle {
+  color: #d4af37;
+}
+
+.fd-inline-trigger:hover {
+  opacity: 0.8;
+}
+
+.fd-sidebar-quote {
+  font-style: italic;
+  color: #d4af37 !important;
+  margin-top: 1rem !important;
+  font-size: 1.1rem !important;
+}
+
+/* Below this, reserved margins leave too little room to read comfortably —
+   text can shrink to a cramped sliver right next to the sidebar, which
+   reads as broken/overlapping even though nothing is technically
+   colliding. As a principle: drop the side columns back into plain,
+   full-width, static blocks in reading order (no absolute positioning, no
+   reserved margins) well before that gets tight, so mobile AND common
+   laptop widths just read straight down the page. */
+@media (max-width: 1400px) {
+  .fd-flow-main,
+  .fd-flow-main.fd-flow-main-left,
+  .fd-flow-main.fd-flow-main-both {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .fd-sidebar {
+    position: static;
+    width: 100%;
+    margin: 0 0 1.5rem;
+    top: auto !important;
+  }
+
+  .fd-sidebar-stack {
+    position: static;
+    width: 100%;
+    top: auto !important;
+  }
+
+  .fd-about-image {
+    float: none;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 1.5rem;
+    display: block;
+  }
+}
+
+/* ---------- Pull quotes (Anais Nin, Sonya Sophia, Carl Rogers, Buddha) ---------- */
+.fd-pullquote {
+  font-style: italic;
+  font-size: 1.28rem;
+  color: #e8e8e8;
+  text-align: center;
+  max-width: 800px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+  border-left: none;
+  line-height: 1.7;
+  position: relative;
+}
+
+.fd-pullquote::before,
+.fd-pullquote::after {
+  color: #d4af37;
+  font-size: 1.4rem;
+}
+
+.fd-pullquote-dialogue {
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.fd-sidebar .fd-pullquote {
+  margin: 0;
+  max-width: none;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+/* ---------- Inline star testimonials ---------- */
+.fd-quote {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  max-width: 700px;
+  margin: 2rem auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fd-stars {
+  color: #fbbc05;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* text-align/font-size !important: see the note above .fd-emphasis — the
+   same Home.css leak also force-left-aligns quote text inside
+   Benefits/Wise Friend/Focus without this. */
+.fd-quote-text {
+  font-style: italic;
+  color: #e8e8e8;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  font-size: 1.1rem !important;
+  text-align: center !important;
+}
+
+.fd-quote-author {
+  font-weight: 600;
+  color: #d4af37;
+  margin-bottom: 0;
+  font-size: 1.05rem !important; /* !important: see the note above .fd-quote-text */
+  text-align: center !important;
+}
+
+/* ---------- Benefit list (each item its own dropdown when it has a review) ---------- */
+.fd-benefit-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem auto 2.5rem;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 2.5rem;
+  align-items: start;
+}
+
+.fd-benefit-item {
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  padding: 0.9rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 900px) {
+  .fd-benefit-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fd-benefit-detail {
+  text-align: left;
+  /* !important: see the note above .fd-emphasis — Home.css's page-wide
+     .section-rainbow leak otherwise shrinks this back down to 1.1rem. */
+  font-size: 1.08rem !important;
+  line-height: 1.8;
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+  /* Plain white (via Home.css's page-wide .section-rainbow rule) — Benefits
+     deliberately isn't part of the rainbow text-color system, see the note
+     at the top of this file. */
+}
+
+.fd-benefit-header {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin: 0;
+  padding-left: 0.2rem;
+  /* Fixed height + left-aligned content so 1-line and 2-line labels still
+     line up on the same row height, with the arrow at a fixed x/y position
+     down each column regardless of how the label wraps. Centering the text
+     here would let the arrow drift left/right with label length, so this
+     overrides the page-wide centered-dropdown rule for this one case. */
+  min-height: 3.4rem;
+  align-items: center;
+  justify-content: flex-start !important;
+  text-align: left;
+}
+
+.fd-benefit-header .triangle {
+  color: #d4af37;
+}
+
+.fd-benefit-item .collapsible-content .fd-quote {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* ---------- "This Is For You If" / "This Is NOT For You If" side by side ---------- */
+.fd-dual-dropdown {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 3rem;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fd-dual-dropdown h3 {
+  margin-top: 0;
+}
+
+@media (max-width: 900px) {
+  .fd-dual-dropdown {
+    grid-template-columns: 1fr;
+    gap: 2.5rem 0;
+  }
+}
+
+/* ---------- Section variants for this page ---------- */
+.fd-intro,
+.fd-benefits,
+.fd-notsymptom,
+.fd-wise-friend,
+.fd-focus,
+.fd-investment {
+  text-align: center;
+}
+
+.fd-intro p:not(.fd-emphasis):not(.fd-small-italic):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author):not(.fd-emphasis-strong):not(.fd-benefit-detail):not(.fd-sidebar-quote),
+.fd-method p:not(.fd-emphasis):not(.fd-small-italic):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author):not(.fd-emphasis-strong):not(.fd-benefit-detail):not(.fd-sidebar-quote),
+.fd-about p:not(.fd-emphasis):not(.fd-small-italic):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author):not(.fd-emphasis-strong):not(.fd-benefit-detail):not(.fd-sidebar-quote),
+.fd-focus p:not(.fd-emphasis):not(.fd-small-italic):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author):not(.fd-emphasis-strong):not(.fd-benefit-detail):not(.fd-sidebar-quote),
+.fd-wise-friend p:not(.fd-emphasis):not(.fd-small-italic):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author):not(.fd-emphasis-strong):not(.fd-benefit-detail):not(.fd-sidebar-quote),
+.fd-benefits p:not(.fd-emphasis):not(.fd-small-italic):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author):not(.fd-emphasis-strong):not(.fd-benefit-detail):not(.fd-sidebar-quote),
+.fd-investment p:not(.fd-emphasis):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author):not(.fd-emphasis-strong):not(.fd-benefit-detail):not(.fd-sidebar-quote) {
+  text-align: left;
+  font-size: 1.18rem;
+  line-height: 1.9;
+  margin-bottom: 1.6rem;
+}
+
+/* Per-section body text color — see the "colored grey" variable block at
+   the top of this file for the palette and revert instructions. Testimonial
+   quote text/author and pull-quotes are explicitly excluded: quotes need to
+   stay visually distinct from body copy, not inherit the section's rainbow
+   hue like ordinary paragraphs do. Benefits, Wise Friend, and Focus are
+   deliberately NOT colored here — see the note at the top of this file —
+   so their plain paragraphs just fall through to Home.css's page-wide
+   ".section-rainbow * { color: white !important }" rule. */
+.fd-intro p:not(.fd-emphasis):not(.fd-small-italic):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author) {
+  color: var(--fd-intro-text);
+}
+.fd-method p:not(.fd-emphasis):not(.fd-small-italic):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author) {
+  color: var(--fd-method-text);
+}
+/* The "what's included" list added to the howShift dropdown has no <p>
+   wrapper, so the rule above never reaches it — without this it silently
+   falls through to the body's default dark text color (nearly invisible
+   against this section's dark background). Font-size/line-height match
+   what the paragraphs it replaced rendered at (the shared
+   ".fd-method p:not(...)" rule elsewhere in this file). */
+.fd-method-list li {
+  color: var(--fd-method-text);
+  font-size: 1.18rem;
+  line-height: 1.9;
+}
+.fd-about p:not(.fd-emphasis):not(.fd-small-italic):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author) {
+  color: var(--fd-about-text);
+}
+.fd-investment p:not(.fd-emphasis):not(.fd-tagline):not(.fd-quote-text):not(.fd-quote-author) {
+  color: var(--fd-investment-text);
+}
+
+.fd-notsymptom p {
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------- Investment / pricing ---------- */
+.fd-pricing-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 800px;
+  margin: 2.5rem auto;
+}
+
+.fd-investment-list,
+.fd-intro-list {
+  max-width: 600px;
+  margin: 1.5rem auto 2rem;
+  text-align: left;
+}
+
+/* Explicit request: orange, distinct from Intro's own red rainbow color. */
+.fd-intro-list li {
+  color: var(--fd-benefits-text);
+}
+
+/* Explicit request: green, distinct from Method's own yellow rainbow color.
+   !important needed to beat the per-section ".fd-method p:not(...)" rule,
+   which is more specific (6 classes) than a single extra class here. */
+.fd-color-green {
+  color: var(--fd-wise-friend-text) !important;
+}
+
+.fd-investment-list li {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #c9a3e8; /* explicit request: purple */
+  padding: 0.4rem 0 0.4rem 20px;
+}
+
+/* Explicit request: bolder than the pale --fd-intro-text red used for
+   ordinary Intro paragraphs, while staying in the same red family. */
+.fd-intro-strong {
+  color: hsl(0, 80%, 74%) !important;
+}
+
+.fd-italic {
+  font-style: italic;
+}
+
+/* Explicit request: darker purple than the .fd-investment-list bullets above. */
+.fd-payment-note {
+  color: #a878d9 !important;
+}
+
+/* Very light pastel rainbow instead of flat white — each card gets a
+   different hue order so the two read as distinct, still light enough that
+   the card's existing dark text (#1a1a1a / #444) stays easily readable. */
+.fd-price-card {
+  background: linear-gradient(135deg, #f8d3e2 0%, #faedb8 33%, #bfe9d3 66%, #c3ddf5 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.fd-price-card h3 {
+  color: #1a1a1a !important;
+  margin-top: 0;
+  font-size: 1.55rem;
+}
+
+.fd-price {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1a1a1a !important;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.fd-price-note {
+  color: #444 !important;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.fd-price-highlight {
+  background: linear-gradient(135deg, #c9d0f5 0%, #ddc3f2 33%, #f7c8e0 66%, #fbe6ae 100%);
+  border: 6px solid #d4af37;
+  transform: scale(1.03);
+}
+
+/* ---------- Consistent vertical rhythm ----------
+   Every "special" block (quotes, pull-quotes, taglines, emphasis lines,
+   CTA clusters, dropdown groups) shares the same top/bottom margin, so the
+   gap around them stays even no matter which two happen to sit next to
+   each other. Gold dividers are the one deliberate exception — a bigger,
+   intentional break between sub-sections. These rules come last on
+   purpose so they win over each component's own earlier margin. */
+.fd-quote,
+.fd-pullquote,
+.fd-tagline,
+.fd-emphasis,
+.fd-emphasis-strong,
+.fd-benefit-list,
+.fd-dual-dropdown,
+.fd-pricing-row {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* CTA clusters get extra room on both sides — since margins collapse
+   between adjacent blocks, bumping just this one (rather than every
+   neighbor it could land next to) is enough to open up the gap both
+   before the preceding tagline/one-liner and after, into whatever quote
+   or paragraph follows. */
+.fd-cta-center,
+.fd-cta-group {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+/* Whenever a CTA is the LAST thing in its section (hero, intro, not-symptom,
+   method, investment, sign-off all end this way), its own margin-bottom
+   stacks on top of the section's own bottom padding for a much bigger gap
+   than any other section boundary gets. Zero it out in that case and let
+   the section padding do the job by itself. */
+.fd-cta-center:last-child,
+.fd-cta-group:last-child {
+  margin-bottom: 0;
+}
+
+.program-page .gold-divider {
+  margin: 5rem auto;
+}
+
+/* ---------- Sign off ---------- */
+/* Same muted dark-rainbow treatment as the hero, but shifted to a purple
+   theme (indigo/violet/magenta) instead of the hero's red/orange, so the
+   page opens and closes with the same technique in two different hues. */
+.fd-signoff {
+  text-align: center;
+  padding-top: 2.5rem;
+  background: linear-gradient(
+    135deg,
+    #0f0f0f 0%,
+    #1c1430 20%,
+    #241a3a 38%,
+    #2b1a40 52%,
+    #3a1a3a 68%,
+    #2a1030 82%,
+    #0f0f0f 100%
+  );
+}
+
+.fd-feedback-link {
+  color: #d4af37;
+  text-decoration: underline;
+  font-size: 1.15rem;
+}
+
+.fd-feedback-link:hover {
+  color: #f4d03f;
+}
+
+.fd-signoff-text {
+  font-size: 1.7rem;
+  color: #f0f0f0;
+}
+
+.fd-signoff-image {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  object-position: center 22%;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(212, 175, 55, 0.4);
+  margin: 0 auto 2.5rem;
+  display: block;
+}
+
+.fd-signoff .fd-cta-center {
+  margin-top: 2.5rem;
+}
+
+/* .list-bullets is a shared global class (used on other pages too) — bump
+   its text size only within this page rather than touching the shared rule. */
+.program-page .list-bullets li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .program-page section {
+    padding: 3rem 0;
+  }
+
+  .fd-hero {
+    padding: 6rem 0 3rem;
+  }
+
+  .fd-hero h1.subtitle-heading {
+    font-size: 2.2rem;
+  }
+
+  .fd-hero-line {
+    font-size: 1.15rem;
+  }
+
+  .program-page h2.subtitle-heading {
+    font-size: 2.3rem;
+  }
+
+  .fd-emphasis-strong {
+    font-size: 1.1rem;
+  }
+
+  .fd-tagline {
+    font-size: 1.1rem;
+  }
+
+  .fd-price-highlight {
+    transform: none;
+  }
+
+  .fd-cta-group {
+    flex-direction: column;
+    align-items: center;
+  }
+}

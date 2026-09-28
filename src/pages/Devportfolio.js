@@ -45,19 +45,25 @@ const Portfolio = () => {
   }, []);
 
   // Over-the-top easter egg for the "Hint: You're on it!" card — fills the
-  // screen with balloons on click, then clears itself out.
+  // screen with balloons on click. Each balloon removes only itself when
+  // its own animation ends (rather than a single shared timeout clearing
+  // the whole batch), so clicking again mid-flight adds more balloons on
+  // top instead of yanking the current ones out mid-air.
   const launchBalloons = () => {
-    const batch = Array.from({ length: 30 }, (_, i) => ({
-      id: `${Date.now()}-${i}`,
+    const batch = Array.from({ length: 55 }, (_, i) => ({
+      id: `${Date.now()}-${i}-${Math.random().toString(36).slice(2)}`,
       left: Math.random() * 100,
-      duration: 3.5 + Math.random() * 2.5,
-      delay: Math.random() * 0.7,
-      size: 42 + Math.random() * 30,
+      duration: 4 + Math.random() * 3,
+      delay: Math.random() * 0.8,
+      size: 46 + Math.random() * 34,
       color: BALLOON_COLORS[Math.floor(Math.random() * BALLOON_COLORS.length)],
-      drift: (Math.random() - 0.5) * 200,
+      drift: (Math.random() - 0.5) * 220,
     }));
-    setBalloons(batch);
-    window.setTimeout(() => setBalloons([]), 6500);
+    setBalloons((prev) => [...prev, ...batch]);
+  };
+
+  const removeBalloon = (id) => {
+    setBalloons((prev) => prev.filter((b) => b.id !== id));
   };
 
   const projects = [
@@ -325,6 +331,7 @@ const Portfolio = () => {
             <span
               key={b.id}
               className="balloon"
+              onAnimationEnd={() => removeBalloon(b.id)}
               style={{
                 left: `${b.left}%`,
                 width: `${b.size}px`,

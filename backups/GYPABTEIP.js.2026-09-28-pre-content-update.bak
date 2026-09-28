@@ -11,6 +11,41 @@ import picC675882c from '../assets/c675882c-9d73-4f44-8862-a2007139ab1d.jpeg';
 // constant.
 const ALIGNMENT_FORM_URL = '/alignment-form';
 
+// Filler words skipped when picking out "main" words for the rainbow-letter
+// treatment on hero taglines.
+const RAINBOW_FILLER_WORDS = new Set(['and', 'from', 'of', 'the', 'to', 'for', 'a', 'an', 'in', 'on', 'or']);
+
+// `colors` optionally gives an explicit palette index (0-6) per main word;
+// otherwise main words cycle through the palette from `startIndex`.
+const RainbowTitle = ({ text, startIndex = 0, colors }) => {
+  const words = text.split(' ');
+  let colorIndex = startIndex;
+  return words.map((word, i) => {
+    const firstLetterPos = word.search(/[a-zA-Z]/);
+    const bareWord = firstLetterPos === -1 ? '' : word.slice(firstLetterPos).replace(/[^a-zA-Z]/g, '');
+    const isMainWord = bareWord.length > 0 && !RAINBOW_FILLER_WORDS.has(bareWord.toLowerCase());
+    let rendered = word;
+    if (isMainWord) {
+      const paletteIndex = colors ? colors[(colorIndex - startIndex) % colors.length] : colorIndex % 7;
+      const colorClass = `fd-rainbow-letter-${paletteIndex}`;
+      colorIndex += 1;
+      rendered = (
+        <>
+          {word.slice(0, firstLetterPos)}
+          <span className={colorClass}>{word[firstLetterPos]}</span>
+          {word.slice(firstLetterPos + 1)}
+        </>
+      );
+    }
+    return (
+      <React.Fragment key={i}>
+        {rendered}
+        {i < words.length - 1 ? ' ' : ''}
+      </React.Fragment>
+    );
+  });
+};
+
 const Stars = () => <span className="fd-stars">★★★★★</span>;
 
 const Quote = ({ text, author }) => (
@@ -21,7 +56,7 @@ const Quote = ({ text, author }) => (
   </div>
 );
 
-const RaiseYourselfUp = () => {
+const GYPABTEIP = () => {
   const [openSections, setOpenSections] = useState({
     costOfCarrying: false,
     eftWorks: false,
@@ -156,21 +191,22 @@ const RaiseYourselfUp = () => {
   return (
     <div className="program-page">
       <Helmet>
-        <title>Raise Yourself Up | Healing from Toxic Parenting with Adin</title>
+        <title>GYPABTEIP! | Get Your Power and Authority Back from Toxic and Emotionally Immature Parenting!</title>
         <meta name="description" content="A 12-week EFT program to reclaim your authenticity, trust, and peace after emotionally immature, abusive, or toxic parenting." />
-        <meta property="og:title" content="Raise Yourself Up | Healing from Toxic Parenting" />
+        <meta property="og:title" content="GYPABTEIP! | Get Your Power and Authority Back from Toxic and Emotionally Immature Parenting!" />
         <meta property="og:description" content="Reclaim the trust, boundaries, and self-love that emotionally immature or toxic parenting took from you. A 12-week EFT program with Adin." />
-        <meta property="og:url" content="https://healing-on-tap.com/raise-yourself-up" />
+        <meta property="og:url" content="https://healing-on-tap.com/gypabteip" />
       </Helmet>
 
       {/* Hero */}
       <section className="fd-hero">
         <div className="container">
-          <h1 className="subtitle-heading">Raise Yourself Up</h1>
-          <p className="fd-hero-line fd-italic">Healing from Emotionally Immature, Abusive, or Toxic Parenting</p>
-          <p className="fd-hero-line">You didn't learn to <u className="fd-underline">hate yourself</u> by accident.</p>
-          <p className="fd-hero-line">Reclaim the trust, boundaries, and love that were <u className="fd-underline">never supposed to be this hard</u> to find.</p>
-          <p className="fd-hero-line">Raise yourself up — <u className="fd-underline">for good.</u></p>
+          <h1 className="subtitle-heading"><RainbowTitle text="Get Your Power and Authority Back from Toxic and Emotionally Immature Parenting!" colors={[0, 1, 2, 3, 3, 4, 4, 5, 6]} /></h1>
+          <p className="fd-hero-line fd-italic"><u className="fd-underline">GYPABTEIP!</u> (Yes, that's really the name.)</p>
+          <p className="fd-hero-line"><u className="fd-underline">Quick question for you</u>: Do you have a rough internal terrain that's difficult to convey to even close friends because a profound level of insecurity was chronically beaten into you by emotionally-immature parents who pretended like they were totally great, but then in your adult life you slowly but surely came to the realization that they actually lack the most basic accountability and empathy?!</p>
+          {/* <p className="fd-hero-line">You didn't learn to <u className="fd-underline">distrust yourself</u> by accident. It was ingrained in you in your childhood.</p>
+          <p className="fd-hero-line">It's time to unwind those <u className="fd-underline">super intense feelings</u>.</p>
+          <p className="fd-hero-line">Reclaim the safety, boundaries, self-love, and confidence that were <u className="fd-underline">never supposed to be this hard</u> to find.</p> */}
           <div className="fd-cta-center">
             <a href={ALIGNMENT_FORM_URL} className="btn">Apply →</a>
           </div>
@@ -181,10 +217,10 @@ const RaiseYourselfUp = () => {
       <section className="fd-intro section-dark">
         <div className="container">
           <p className="fd-center fd-narrow fd-intro-strong">
-            This isn't about blaming your parents forever. It's about finally telling the truth about what happened — so you can stop paying for it.
+            This isn't about become a victim or blaming your parents forever. It's about finally getting clear on the the truth of what happened — so you can move through it.
           </p>
           <p className="fd-emphasis">
-            <u className="fd-underline">Listen:</u> When a parent is emotionally calloused, absent, or unpredictable, a child rarely concludes "my parent has a limitation." A child concludes <em>something is wrong with me</em>. That belief doesn't stay in childhood — it becomes the quiet operating system underneath your adult life: your self-trust, your relationships, your sense of what you're allowed to need.
+            <u className="fd-underline">Listen:</u> When a parent doesn't give love to their child, they don't conclude "my parents aren't " A child concludes <em>something is wrong with me</em>. And until resolved, it will continue to quiet operate underneath in your adult life: in your confidence, your relationships, relationship with your feelings.
           </p>
 
           <div className="collapsible-header fd-inline-trigger" onClick={() => toggleSection('costOfCarrying')}>
@@ -203,7 +239,7 @@ const RaiseYourselfUp = () => {
 
           <div className="gold-divider"></div>
 
-          <p className="fd-emphasis"><u className="fd-underline"><em>Raise Yourself Up</em></u> is a 12-week container of guided, one-on-one transformation, built specifically for reclaiming what emotionally immature, abusive, or toxic parenting took. It exists to end that cost. For good.</p>
+          <p className="fd-emphasis"><u className="fd-underline"><em>GYPABTEIP!</em></u> is a 12-week container of guided, one-on-one transformation, built specifically for reclaiming what emotionally immature, abusive, or toxic parenting took. It exists to end that cost. For good.</p>
           <p className="fd-emphasis">It's real, deep, one-on-one work — pointed directly at the parent-shaped wound underneath so much else.</p>
           <p className="fd-emphasis">And as with all of my work: I meet you exactly where you're at. Whatever you're carrying — the self-doubt, the shame, the relationship patterns, the guilt over estrangement or contact, or something else entirely — we <em>can</em> shift it.</p>
 
@@ -220,7 +256,7 @@ const RaiseYourselfUp = () => {
       {/* Benefits */}
       <section className="fd-benefits section-rainbow">
         <div className="container">
-          <h2 className="subtitle-heading">It's Time to Raise Yourself Up.</h2>
+          <h2 className="subtitle-heading">It's Time to Get Your Power Back.</h2>
 
           <p className="fd-emphasis-strong">
             This is where you get to say: I'm done believing the coldness was about me. <u className="fd-underline">I'm taking my self back now.</u>
@@ -382,7 +418,7 @@ const RaiseYourselfUp = () => {
 
               <div className="gold-divider"></div>
 
-              <p className="fd-tagline">Break free from old conditioning, and raise yourself up.</p>
+              <p className="fd-tagline">Break free from old conditioning, and reclaim your power.</p>
               <div className="fd-cta-center">
                 <a href={ALIGNMENT_FORM_URL} className="btn">Join Now →</a>
               </div>
@@ -560,7 +596,7 @@ const RaiseYourselfUp = () => {
 
           <div className="gold-divider"></div>
 
-          <p className="fd-tagline">Go deep, and raise yourself the rest of the way up.</p>
+          <p className="fd-tagline">Go deep, and take your power all the way back.</p>
 
           <div className="fd-cta-group">
             <a href={ALIGNMENT_FORM_URL} className="btn">I'm Ready –– Fill Out the Alignment Form! →</a>
@@ -586,4 +622,4 @@ const RaiseYourselfUp = () => {
   );
 };
 
-export default RaiseYourselfUp;
+export default GYPABTEIP;

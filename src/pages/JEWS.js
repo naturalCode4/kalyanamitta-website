@@ -10,6 +10,38 @@ import picC675882c from '../assets/c675882c-9d73-4f44-8862-a2007139ab1d.jpeg';
 // constant.
 const ALIGNMENT_FORM_URL = '/alignment-form';
 
+// Filler words skipped when picking out "main" words for the rainbow-letter
+// treatment on hero taglines.
+const RAINBOW_FILLER_WORDS = new Set(['and', 'from', 'of', 'the', 'to', 'for', 'a', 'an', 'in', 'on', 'or']);
+
+const RainbowTitle = ({ text, startIndex = 0 }) => {
+  const words = text.split(' ');
+  let colorIndex = startIndex;
+  return words.map((word, i) => {
+    const firstLetterPos = word.search(/[a-zA-Z]/);
+    const bareWord = firstLetterPos === -1 ? '' : word.slice(firstLetterPos).replace(/[^a-zA-Z]/g, '');
+    const isMainWord = bareWord.length > 0 && !RAINBOW_FILLER_WORDS.has(bareWord.toLowerCase());
+    let rendered = word;
+    if (isMainWord) {
+      const colorClass = `fd-rainbow-letter-${colorIndex % 7}`;
+      colorIndex += 1;
+      rendered = (
+        <>
+          {word.slice(0, firstLetterPos)}
+          <span className={colorClass}>{word[firstLetterPos]}</span>
+          {word.slice(firstLetterPos + 1)}
+        </>
+      );
+    }
+    return (
+      <React.Fragment key={i}>
+        {rendered}
+        {i < words.length - 1 ? ' ' : ''}
+      </React.Fragment>
+    );
+  });
+};
+
 const Stars = () => <span className="fd-stars">★★★★★</span>;
 
 const Quote = ({ text, author }) => (
@@ -174,7 +206,7 @@ const JEWS = () => {
       <section className="fd-hero">
         <div className="container">
           <h1 className="subtitle-heading">J.E.W.S.</h1>
-          <p className="fd-hero-line fd-italic">Jewish Emotional Wellness Sessions</p>
+          <p className="fd-hero-line fd-italic"><RainbowTitle text="Jewish Emotional Wellness Sessions" startIndex={2} /></p>
           <p className="fd-hero-line">Come home to yourself — <u className="fd-underline">for good.</u></p>
           <p className="fd-hero-line">Release the stress, guilt, and vigilance <u className="fd-underline">running your nervous system</u> since before you were born.</p>
           <p className="fd-hero-line">Reclaim your spirituality, your safety, and your seat at your own table.</p>

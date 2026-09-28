@@ -1,3 +1,28 @@
+// The 12-week programs, shown as cards in the Home page's Offerings section.
+// Every description opens with the same "A 12-week tapping and coaching program".
+export const programs = [
+  {
+    id: 'freedom-dojo',
+    title: 'Freedom Dojo',
+    content: 'A 12-week tapping and coaching program to dissolve old pain and reclaim your life, for good. Become calm, happy, free, and empowered as your baseline.',
+  },
+  {
+    id: 'gypabteip',
+    title: 'GYPABTEIP!',
+    content: 'A 12-week tapping and coaching program: Get Your Power & Authority Back from Toxic and Emotionally-Immature Parenting!',
+  },
+  {
+    id: 'jews',
+    title: 'J.E.W.S.',
+    content: 'A 12-week tapping and coaching program for the specific emotional, ancestral, and spiritual patterns of Jewish life — chronic stress and survival, food, and developing your authority with Judaism.',
+  },
+  {
+    id: 'the-practitioners-companion',
+    title: "The Practitioner's Companion",
+    content: "A 12-week tapping and coaching program that works alongside your spiritual practice — deep healing for the trauma, psyche, and humanity aspects your practice alone isn't designed to carry.",
+  },
+];
+
 export const offerings = [
   {
     id: 'EFT-emotional-freedom-techniques',

@@ -16,7 +16,7 @@ import Devportfolio from './pages/Devportfolio';
 import AlignmentForm from './pages/AlignmentForm';
 import JEWS from './pages/JEWS';
 import ThePractitionersCompanion from './pages/ThePractitionersCompanion';
-import RaiseYourselfUp from './pages/RaiseYourselfUp';
+import GYPABTEIP from './pages/GYPABTEIP';
 
 function AppContent() {
   const location = useLocation();
@@ -39,16 +39,12 @@ function AppContent() {
           <Route path="/rates" element={<Rates />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/devportfolio" element={<Devportfolio />} />
-          {/* No nav link on purpose — only reachable via the CTAs that link here. */}
           <Route path="/alignment-form" element={<AlignmentForm />} />
-          {/* Niche program experiments — real URLs, not yet linked from nav/site content */}
           <Route path="/jews" element={<JEWS />} />
           <Route path="/the-practitioners-companion" element={<ThePractitionersCompanion />} />
-          <Route path="/raise-yourself-up" element={<RaiseYourselfUp />} />
-          {/* Old names/URLs — redirect so any links already shared keep working */}
-          <Route path="/beyond-the-cushion" element={<Navigate to="/the-practitioners-companion" replace />} />
-          <Route path="/the-missing-practice" element={<Navigate to="/the-practitioners-companion" replace />} />
-          <Route path="/coming-home-to-yourself" element={<Navigate to="/raise-yourself-up" replace />} />
+          <Route path="/gypabteip" element={<GYPABTEIP />} />
+          <Route path="/raise-yourself-up" element={<Navigate to="/gypabteip" replace />} />
+          <Route path="/coming-home-to-yourself" element={<Navigate to="/gypabteip" replace />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </main>

@@ -5,7 +5,7 @@ import Section from '../components/Section';
 import CTA from '../components/CTA';
 import ServiceCard from '../components/ServiceCard';
 import HelpCarousel from '../components/HelpCarousel';
-import { offerings, helpList, gainsList } from '../data/offerings';
+import { programs, offerings, helpList, gainsList } from '../data/offerings';
 import './Home.css';
 import pic2 from '../assets/pic2.jpg';
 import pic17 from '../assets/pic17.jpg';
@@ -62,27 +62,30 @@ const Home = () => {
             <h1><u className="hero-underline">Healing On Tap</u></h1>
 
             <p className="hero-subtitle">
-              This is where you gain inner freedom, authentic wisdom, and expand true love.
+              Welcome.
             </p>
             <p className="hero-subtitle">
-              <em>Welcome.</em>
+              <em>This is where you:</em>
             </p>
 
             <div className="hero-manifesto">
               <div className="manifesto-item">
-                <span className="manifesto-text">Become more calm, happy, free, and empowered – as your baseline.<br className="desktop-break" />Unmute your soul.</span>
+                <span className="manifesto-text">Become more calm, happy, free, and empowered – as your baseline,<br className="desktop-break" />and dissolve a lifetime of held pain.</span>
               </div>
               <div className="manifesto-connector"></div>
               <div className="manifesto-item">
-                <span className="manifesto-text">It's time to get your power back,<br className="desktop-break" />and dissolve the pain you never chose.</span>
+                <span className="manifesto-text">Get your power and authority back.<br className="desktop-break" />Unmute your soul.</span>
               </div>
               <div className="manifesto-connector"></div>
               <div className="manifesto-item">
-                <span className="manifesto-text">Transform at the root level.<br className="desktop-break" />Gain the life you desire.</span>
+                <span className="manifesto-text">Transform at the root level and<br className="desktop-break" />Gain the life you desire.</span>
               </div>
             </div>
-
-            <p className="hero-polarize">
+            
+            <p className="hero-subtitle">
+              It is a joy and honor to support your breakthrough.
+            </p>
+            <p className="hero-subtitle">
               This is your invitation. This work works. Are you ready?
             </p>
 
@@ -94,6 +97,48 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Offerings - the 12-week programs */}
+      <Section
+        variant="dark"
+        title="Offerings"
+        subtitle=""
+      >
+        <div className="grid grid-cards grid-cards-pairs">
+          {programs.map((program) => (
+            <div className="program-circle" key={program.id}>
+              <ServiceCard
+                title={program.title}
+                content={program.content}
+                learnMoreLink={`/${program.id}`}
+                primaryLink="/alignment-form"
+                primaryLabel={`Apply for ${program.title} →`}
+                variant="rainbow"
+              />
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      {/* Sessions - individual EFT and spiritual counseling */}
+      <Section 
+        variant="dark" 
+        title="Sessions"
+        subtitle=""
+      >
+
+        <div className="grid grid-cards">
+          {offerings.map((offering) => (
+            <ServiceCard
+              key={offering.id}
+              title={offering.title}
+              content={offering.content}
+              learnMoreLink={`/${offering.id}`}
+              variant="rainbow"
+            />
+          ))}
+        </div>
+      </Section>
 
        {/* About Healing On Tap */}
        <Section 
@@ -124,26 +169,6 @@ const Home = () => {
         </div>
       </Section>
       
-      {/* Manifesto Section */}
-      <Section 
-        variant="dark" 
-        title="Offerings"
-        subtitle=""
-      >
-
-        <div className="grid grid-cards">
-          {offerings.map((offering) => (
-            <ServiceCard
-              key={offering.id}
-              title={offering.title}
-              content={offering.content}
-              learnMoreLink={`/${offering.id}`}
-              variant="rainbow"
-            />
-          ))}
-        </div>
-      </Section>
-
       {/* Help List Section - two collapsible carousels, side by side */}
       <Section
         id="what-we-can-do-together"
@@ -196,12 +221,15 @@ const Home = () => {
                   className="about-image"
                 />
               </div>
-              <Quote text="Adin is an innately gifted intuitive healer, with the dedication and discipline to match his inborn talents. I trust both the quality of his own energy and the many ways he facilitates energetic balance and emotional wellness for others." author="Zachary H." />
             </div>
 
             <div className="about-text-content">
               <p>Welcome! My name is Adin. It's a joy and honor to support you in this work. <br></br><br></br>I walk with people and help them gain love, wisdom, clarity, freedom, ease, authenticity, and spiritual capacity – to let go of limiting beliefs, anxiety, negative emotion, and trauma – and to have an inner world and outer circumstances they desire. I offer what I <b>live</b> and deeply believe in. <br></br><br></br> I offer 30-minute free consultations and am happy to discuss anything beforehand.</p>
             </div>
+          </div>
+
+          <div className="about-adin-quote">
+            <Quote text="Adin is an innately gifted intuitive healer, with the dedication and discipline to match his inborn talents. I trust both the quality of his own energy and the many ways he facilitates energetic balance and emotional wellness for others." author="Zachary H." />
           </div>
 
           <div className="btn-group about-buttons">

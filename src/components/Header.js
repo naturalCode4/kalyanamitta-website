@@ -4,10 +4,11 @@ import './Header.css';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isOfferingsOpen, setIsOfferingsOpen] = useState(false);
+  const [isProgramsOpen, setIsProgramsOpen] = useState(false);
+  const [isMethodsOpen, setIsMethodsOpen] = useState(false);
   const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-  
+
   const location = useLocation();
 
   useEffect(() => {
@@ -20,18 +21,33 @@ const Header = () => {
 
   const toggleMenu = () => {
     if (isMenuOpen) {
+      setIsProgramsOpen(false);
+      setIsMethodsOpen(false);
       setIsAboutOpen(false);
-      setIsOfferingsOpen(false);
     }
     setIsMenuOpen(!isMenuOpen);
   };
-  
-  // Toggle Offerings (Text Click)
-  const toggleOfferings = (e) => {
+
+  // Toggle Offerings/Programs Dropdown (Text Click)
+  const togglePrograms = (e) => {
     e.preventDefault();
     e.stopPropagation();
-    setIsOfferingsOpen(!isOfferingsOpen);
-    if (!isMobile && isAboutOpen) setIsAboutOpen(false);
+    setIsProgramsOpen(!isProgramsOpen);
+    if (!isMobile) {
+      setIsMethodsOpen(false);
+      setIsAboutOpen(false);
+    }
+  };
+
+  // Toggle Methods Dropdown (Text Click)
+  const toggleMethods = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsMethodsOpen(!isMethodsOpen);
+    if (!isMobile) {
+      setIsProgramsOpen(false);
+      setIsAboutOpen(false);
+    }
   };
 
   // Toggle About Dropdown (Arrow Click)
@@ -39,19 +55,23 @@ const Header = () => {
     e.preventDefault();
     e.stopPropagation();
     setIsAboutOpen(!isAboutOpen);
-    if (!isMobile && isOfferingsOpen) setIsOfferingsOpen(false);
+    if (!isMobile) {
+      setIsProgramsOpen(false);
+      setIsMethodsOpen(false);
+    }
   };
 
   const handleNavClick = (e, targetId) => {
-    setIsMenuOpen(false); 
+    setIsMenuOpen(false);
+    setIsProgramsOpen(false);
+    setIsMethodsOpen(false);
     setIsAboutOpen(false);
-    setIsOfferingsOpen(false);
-    
+
     if (targetId) {
-      return; 
+      return;
     }
 
-    const targetPath = e.currentTarget.getAttribute('href'); 
+    const targetPath = e.currentTarget.getAttribute('href');
     const isSamePage = location.pathname === targetPath;
 
     if (isSamePage) {
@@ -85,30 +105,53 @@ const Header = () => {
               <Link to="/" className="nav-link" onClick={(e) => handleNavClick(e, null)}>Home</Link>
             </li>
 
-            <li className="nav-item">
-              <Link to="/freedom-dojo" className="nav-link" onClick={(e) => handleNavClick(e, null)}>The Freedom Dojo Offer</Link>
-            </li>
-
-            {/* Offerings Dropdown - UPDATED TO MATCH ABOUT STRUCTURE */}
+            {/* Offerings Dropdown - the four program pages */}
             <li className="nav-item dropdown">
               <div className="nav-link-wrapper">
                 <button
                   className="nav-link"
-                  onClick={toggleOfferings}
+                  onClick={togglePrograms}
                   style={{ cursor: 'pointer' }}
                 >
                   Offerings
                 </button>
                 <button
-                  className={`dropdown-arrow ${isOfferingsOpen ? 'active' : ''}`}
-                  onClick={toggleOfferings}
+                  className={`dropdown-arrow ${isProgramsOpen ? 'active' : ''}`}
+                  onClick={togglePrograms}
                   aria-label="Toggle Offerings Menu"
                 >
                   ▼
                 </button>
               </div>
 
-              <ul className={`dropdown-menu ${isOfferingsOpen ? 'show' : ''}`}>
+              <ul className={`dropdown-menu ${isProgramsOpen ? 'show' : ''}`}>
+                <li><Link to="/freedom-dojo" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>Freedom Dojo</Link></li>
+                <li><Link to="/gypabteip" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>GYPABTEIP!</Link></li>
+                <li><Link to="/jews" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>JEWS</Link></li>
+                <li><Link to="/the-practitioners-companion" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>The Practitioner's Companion</Link></li>
+              </ul>
+            </li>
+
+            {/* Methods Dropdown - EFT and Spiritual Counseling */}
+            <li className="nav-item dropdown">
+              <div className="nav-link-wrapper">
+                <button
+                  className="nav-link"
+                  onClick={toggleMethods}
+                  style={{ cursor: 'pointer' }}
+                >
+                  Sessions
+                </button>
+                <button
+                  className={`dropdown-arrow ${isMethodsOpen ? 'active' : ''}`}
+                  onClick={toggleMethods}
+                  aria-label="Toggle Sessions Menu"
+                >
+                  ▼
+                </button>
+              </div>
+
+              <ul className={`dropdown-menu ${isMethodsOpen ? 'show' : ''}`}>
                 <li><Link to="/EFT-emotional-freedom-techniques" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>EFT (Tapping)</Link></li>
                 {/* Reiki / Energy Healing temporarily removed from nav — page still live at /energy-work for direct links */}
                 {/* <li><Link to="/energy-work" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>Energy Healing</Link></li> */}

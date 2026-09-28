@@ -197,6 +197,15 @@ const hueVars = (h, { sat = 68, light = 70 } = {}) => ({
   '--af-accent-bg': `hsl(${h}, ${sat - 18}%, 24%)`,
 });
 
+// Asked first on the form, but stored as the LAST answer (see the initial
+// `answers` state below): the API writes answers to the Google Sheet as
+// columns in order, so appending keeps every existing column in place.
+const PROGRAM_FIELD = {
+  label: 'Which program are you applying for?',
+  type: 'yesno',
+  options: ['Freedom Dojo', 'GYPABTEIP!', 'J.E.W.S.', "The Practitioner's Companion"],
+};
+
 const SECTIONS = [
   {
     key: 'aboutYou',
@@ -205,6 +214,7 @@ const SECTIONS = [
     sidebarQuote: 'sila',
     intro: ["These questions help us both understand what's resonating before we even talk. The more honest and specific you can be, the more useful our work together becomes from session one."],
     fields: [
+      PROGRAM_FIELD,
       { label: 'Name', type: 'text' },
       { label: 'Email', type: 'email' },
       { label: 'Phone', type: 'tel' },
@@ -357,7 +367,8 @@ const buildMailto = (answers) => {
 
 const AlignmentForm = () => {
   const [answers, setAnswers] = useState(
-    ALL_FIELDS.reduce((acc, f) => ({ ...acc, [f.label]: '' }), {})
+    [...ALL_FIELDS.filter((f) => f !== PROGRAM_FIELD), PROGRAM_FIELD]
+      .reduce((acc, f) => ({ ...acc, [f.label]: '' }), {})
   );
   const [status, setStatus] = useState('idle'); // idle | submitting | success | error
   const [failedAttempts, setFailedAttempts] = useState(0);

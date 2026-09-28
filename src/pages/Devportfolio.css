@@ -172,9 +172,18 @@
     position: absolute;
     bottom: -140px;
     border-radius: 50% 50% 50% 50% / 58% 58% 42% 42%;
+    /* Layered on top of the inline background-color: a bright specular
+       highlight up top-left (the classic glossy-balloon "shine spot"),
+       a soft rim-shadow bottom-right for roundness, plus the existing
+       inset shadows for edge depth. */
+    background-image:
+      radial-gradient(circle at 30% 22%, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0) 32%),
+      radial-gradient(circle at 78% 85%, rgba(0, 0, 0, 0.3), transparent 60%);
+    background-repeat: no-repeat;
     box-shadow:
-      inset -8px -10px 14px rgba(0, 0, 0, 0.2),
-      inset 6px 8px 12px rgba(255, 255, 255, 0.35);
+      inset -10px -12px 16px rgba(0, 0, 0, 0.25),
+      inset 8px 10px 14px rgba(255, 255, 255, 0.3),
+      0 6px 18px rgba(0, 0, 0, 0.35);
     animation-name: balloon-float;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
