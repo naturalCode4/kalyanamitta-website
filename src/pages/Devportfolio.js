@@ -5,11 +5,32 @@ import Section from '../components/Section';
 import picBio from '../assets/devportfolio-bio-photo.png';
 import picSmoothie from '../assets/devportfolio-smoothie-photo.png';
 import pic70f59c8d from '../assets/70f59c8d-640e-438b-89e4-2c87df476923.jpeg';
-import pic020b669b from '../assets/020b669b-64c2-4df4-a091-dbc755cc66c4.jpeg';
+import picYoga from '../assets/adin-yoga-warrior.jpg';
+import picGulls from '../assets/devportfolio-gulls-photo.jpg';
 
 // You will need to put your resume PDF in public/assets/ or src/assets/
 // For now, I'll link to a placeholder path
 const RESUME_PATH = "/assets/Adin_Resume.pdf";
+
+// Main call to action — big gold text, not a button. The number is stored in
+// pieces and joined at runtime so the full digit string never appears in the
+// bundle for scrapers to grep. Tapping it opens a WhatsApp chat with a
+// friendly opener prefilled.
+const PHONE_PARTS = ['1', '301', '641', '2855'];
+const PHONE_DISPLAY = `+${PHONE_PARTS[0]} (${PHONE_PARTS[1]}) ${PHONE_PARTS[2]}-${PHONE_PARTS[3]}`;
+const WHATSAPP_URL = `https://wa.me/${PHONE_PARTS.join('')}?text=${encodeURIComponent(
+  "Hi Adin! I saw your portfolio and I'd love to talk about a project."
+)}`;
+
+const WhatsAppCTA = () => (
+  <div className="portfolio-whatsapp-cta">
+    <p className="portfolio-whatsapp-cta-line">To get started, send me a message on WhatsApp.</p>
+    <p className="portfolio-whatsapp-cta-number">
+      <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">{PHONE_DISPLAY}</a>
+    </p>
+    <p className="portfolio-whatsapp-cta-sub">Tell me a bit about you and what you're building! And I'll get back to you shortly.</p>
+  </div>
+);
 
 // Small flame icon (Heroicons "fire", solid) recolored to a gold/orange
 // gradient — used to lead each client quote instead of a plain 🔥 emoji.
@@ -69,9 +90,16 @@ const Portfolio = () => {
   const projects = [
     {
       title: "Healing On Tap",
-      role: "Developer & Designer",
+      role: "Creator, Developer & Designer",
       description: "A high-performance React website designed and built from scratch. Features include intricate frontend implementation with JS/CSS design and animations, no-framework responsive layouts, Google Mailer/ Maps/ Reviews API integration via serverless functions, and SEO optimization (Schema/Helmet).",
       link: "/", // Links to home
+      linkText: "Visit Website"
+    },
+    {
+      title: "Astrological Libido Tracker",
+      role: "Creator, Developer & Designer",
+      description: "Did you know men have sexual cycles too? It's based in your astrology, and it's surprisingly predictable. I made this first-of-its-kind tracker.",
+      link: "https://astrological-libido-tracker.vercel.app/",
       linkText: "Visit Website"
     },
     {
@@ -178,7 +206,7 @@ const Portfolio = () => {
           <h2>Software Engineer, Healing Practitioner</h2>
           {/* <h2>Adin "Stone Boy" Kramer</h2> */}
           <p className="portfolio-subtitle">
-            Full Stack Web Development • UI/UX Design • Tech Infrastructure • Conscious Creations
+            <span>Conscious Creations •</span> <span>Full Stack Web/App Development •</span> <span>UI/UX Design •</span> <span>Tech Infrastructure</span>
           </p>
         </div>
       </section>
@@ -187,36 +215,55 @@ const Portfolio = () => {
       <section className="portfolio-contact-section">
         <div className="container contact-content-wrapper">
           <div className="contact-image-col">
-            <img src={picBio} alt='Adin "Stone Boy" Kramer' className="portfolio-profile-pic" />
+            <figure className="portfolio-photo-figure">
+              <img src={picBio} alt='Adin "Stone Boy" Kramer' className="portfolio-profile-pic" />
+              <figcaption>Happy client / owner of the 'SonShip'</figcaption>
+            </figure>
           </div>
           <div className="contact-text-col">
             <h3>Graciously handling the tech side of your conscious creation.</h3>
-            <p><i>4+ years of experience, trusted by clients across the US.</i></p>
+            <p><i>4+ years of experience, trusted by clients across the USA.</i></p>
             <p>
-              I build beautiful, custom websites and apps for conscious businesses, practitioners, and communities. With me, you have a sincere spiritual practitioner with the logical left-brain mind of a software engineer, working towards the betterment of mankind. I work closely with my clients to deliver a product that feels authentically like them. I produce clean code, thoughtful designs, and clear communication.
+              I build beautiful, custom websites and apps for conscious businesses, practitioners, and communities. With me, you have a sincere spiritual being with the logical left-brain mind of a software engineer, working towards the betterment of mankind. I work closely with my clients to deliver a product that feels authentically like them. I produce clean code, thoughtful designs, and clear communication.
             </p>
             <p>
-              I am strong in content writing, web design, the creative process, and the business side of things. You have the option to co-create with me, or bring a fully-formed vision and I'll build it exactly as given, or anything in between.
+              I am strong in content writing, web design, the creative process, and the business side of things. You have the option to co-create with me, or bring a fully-formed project and I'll build it exactly as given – or anything in between.
             </p>
             <p><i>
               I hold in my heart that which leads to imperative collective awakening happening on Earth right now. Dharma and Yoga centers, healing practitioners, conscious creations and products, environmentally and socially positive organizations: Reach out – I am happy to connect and support you.
             </i></p>
             <ul className="list-checkmarks contact-highlights">
               <li>
-                Affordable and flexible to fit your budget. Let's talk about your project.
+                Affordable and flexible to fit your needs. Let's talk about your project.
               </li>
               <li>
-                Websites are coded with love from scratch without the use of AI templates. I also use Squarespace as appropriate.
+                You just work with me – no complication. 1 versatile engineer that can handle it all: consultation, design collaboration, build, website–business strategy, integrations, hosting, QA, ongoing support.
+              </li>
+              <li>
+                Plus, if you want it: I'm a strong writer and can help with your words, content, and story, not just the tech.
+              </li>
+              <li>
+                Websites are coded with love from scratch without templates. I also use Squarespace as appropriate.
+              </li>
+              <li>
+                Conscious creations without leaking life-force to AI.
+              </li>
+              <li>
+                Easy to work with, strong communicator, creative.
+              </li>
+              <li>
+                Quick turn-around time.
               </li>
               <li>
                 Available for long-term support.
               </li>
             </ul>
             <div className="contact-details">
-              <p><strong>Location:</strong> Anywhere / A Phone Call Away / West Philadelphia, PA, USA</p>
-              <p><strong>Phone:</strong> +1 (Three Oh Won) 6 For 1 Two Ate 55</p>
+              <p><strong>Location:</strong> Anywhere / A Message or Call Away / USA</p>
             </div>
-            
+
+            <WhatsAppCTA />
+
             <div className="cta-section" style={{ marginTop: '1.5rem', alignItems: 'center' }}>
               <div className="cta-buttons">
                 {/* <a href="/contact#get-in-touch" target="_blank" className="btn">Contact Me for a Free Call</a> */}
@@ -226,12 +273,19 @@ const Portfolio = () => {
           </div>
 
           <div className="contact-diamond-col">
-            <div className="portfolio-diamond-frame">
-              <img src={picSmoothie} alt="Adin working from a cafe" className="portfolio-diamond-pic" />
-            </div>
+            <figure className="portfolio-photo-figure">
+              <div className="portfolio-diamond-frame">
+                <img src={picSmoothie} alt="Adin working from a cafe" className="portfolio-diamond-pic" />
+              </div>
+              <figcaption>All websites are nutrient-infused.</figcaption>
+            </figure>
           </div>
         </div>
       </section>
+
+      <div className="portfolio-photo-break portfolio-photo-break-wide">
+        <img src={picGulls} alt="Gulls in flight against a clear sky" className="portfolio-wide-pic portfolio-pic-gulls" />
+      </div>
 
       <section className="quote-section">
         <div className="container quote-wrapper">
@@ -246,15 +300,16 @@ const Portfolio = () => {
       </section>
 
       <div className="portfolio-photo-break portfolio-photo-break-quotes">
-        <img src={pic020b669b} alt="Adin" className="portfolio-profile-pic portfolio-pic-020b669" />
+        <img src={picYoga} alt="Adin in warrior II pose in an open-air yoga studio" className="portfolio-wide-pic" />
       </div>
 
       {/* Projects Grid */}
       <div className="container portfolio-section">
+        <h2 className="portfolio-section-title">Examples of Work</h2>
         <div className="portfolio-grid">
         {projects.map((project, index) => (
             <div key={index} className="portfolio-card">
-              <span className="card-number">0{index + 1}</span>
+              <span className="card-number">{String(index + 1).padStart(2, '0')}</span>
               <h3>{project.title}</h3>
               <h4>{project.role}</h4>
               <p>{project.description}</p>
@@ -292,12 +347,19 @@ const Portfolio = () => {
         <img src={pic70f59c8d} alt="Adin" className="portfolio-profile-pic" />
       </div>
 
+      {/* Call to action, repeated before the résumé */}
+      <section className="portfolio-cta-band">
+        <div className="container">
+          <WhatsAppCTA />
+        </div>
+      </section>
+
       {/* Resume Section */}
       <section className="resume-section">
         <div className="container resume-container">
           <h2>Résumé</h2>
+          <p>(The formal stuff, if you're into that.)</p>
           <p>Download my full resume for detailed work history and technical skills.</p>
-          
           <div className="cta-section"> {/* WRAPPER ADDED */}
             <div className="cta-buttons">
               <a 

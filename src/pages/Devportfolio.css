@@ -51,18 +51,38 @@
   
   .portfolio-subtitle {
     font-size: 1.3rem;
-    opacity: 0.95;
-    max-width: 700px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    /* Wide enough to keep all four items on one line on desktop. */
+    max-width: 980px;
     margin: 0 auto;
-    color: #b8b8b8;
+    /* Neon sign: bright blue letters with clean edges (no tight halo
+       smearing them), and the glow pushed out behind as a soft blue haze.
+       Saturated blue is hard on the eye, so the letters stay fairly light. */
+    color: #8ccbff;
+    text-shadow:
+      0 0 8px rgba(30, 130, 255, 0.6),
+      0 0 20px rgba(30, 110, 255, 0.45),
+      0 0 40px rgba(30, 90, 255, 0.3);
     position: relative;
     z-index: 1;
+  }
+
+  /* When it does wrap (phones), break between items, never mid-item. */
+  .portfolio-subtitle span {
+    white-space: nowrap;
   }
   
   /* --- Portfolio Grid --- */
   .portfolio-section {
     padding: 4rem 0;
     border-top: 1px solid #2d3748;
+  }
+
+  /* Same plain h2 look as the "Résumé" heading, centered over the grid. */
+  .portfolio-section-title {
+    text-align: center;
+    margin-bottom: 2.5rem;
   }
   
   .portfolio-grid {
@@ -307,7 +327,9 @@
 
 /* New Contact Section Styles */
 .portfolio-contact-section {
-  padding: 6rem 0;
+  /* Bottom is lighter than top: the birds photo break follows directly,
+     and it brings its own spacing below. */
+  padding: 6rem 0 3rem;
   background: #0f0f0f;
   border-top: 1px solid #2d3748;
 }
@@ -348,12 +370,37 @@
   background-color: #0f0f0f;
 }
 
+/* Desktop only: the side photos center on the (tall) bio text, which puts
+   them low — nudge both up. Mobile stacks them, so leave it alone there. */
+@media (min-width: 769px) {
+  .contact-image-col,
+  .contact-diamond-col {
+    transform: translateY(-12rem);
+  }
+}
+
+/* Photo with a small caption underneath. */
+.portfolio-photo-figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-photo-figure figcaption {
+  margin-top: 0.85rem;
+  color: #b8b8b8;
+  font-size: 0.95rem;
+  font-style: italic;
+  text-align: center;
+}
+
 /* Standalone photo breaks between sections — same circular portrait
    treatment as .portfolio-profile-pic, just centered on its own. */
 .portfolio-photo-break {
   display: flex;
   justify-content: center;
-  padding: 3rem 0;
+  padding: 3rem 16px;
 }
 
 /* .quote-section carries its own large bottom padding (6rem), so this photo
@@ -367,14 +414,31 @@
    plus this break's top padding (3rem) makes the gap up to the grid much
    bigger than the gap down to .resume-section's border-top line. */
 .portfolio-photo-break-grid {
-  margin-top: -4rem;
+  margin-top: -3.5rem;
 }
 
-/* Adin sits toward the right of this particular source photo — shift the
-   crop further right so he's fully in frame, not clipped at the edge. */
-.portfolio-pic-020b669 {
-  object-position: 92% 30%;
+/* Landscape photo breaks — these are wide scenes, so a circle crop would
+   cut them off. Same gold border/shadow, just a rounded rectangle. */
+.portfolio-wide-pic {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  border-radius: 16px;
+  border: 2px solid #d4af37;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
+
+.portfolio-photo-break-wide {
+  /* 4rem below matches the gap above: contact's 3rem bottom padding plus
+     the last bio paragraph's 1rem margin. */
+  padding: 0 16px 4rem;
+}
+
+/* Source is only 612px wide — stay under that so it doesn't blur. */
+.portfolio-pic-gulls {
+  max-width: 540px;
+}
+
 
 .contact-text-col {
   flex: 1;
@@ -388,6 +452,74 @@
   flex-direction: column;
   align-items: center;
 }
+
+/* If the bio's CTA buttons are ever all commented out, don't let the
+   empty wrapper's margins add dead space above the birds photo. */
+.contact-text-col .cta-section:has(.cta-buttons:empty) {
+  display: none;
+}
+
+/* Big gold WhatsApp call to action (used near contact and before résumé).
+   Selectors are two classes deep so they beat `.contact-text-col p`. */
+.portfolio-whatsapp-cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.portfolio-whatsapp-cta .portfolio-whatsapp-cta-line {
+  color: #d4af37;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.portfolio-whatsapp-cta .portfolio-whatsapp-cta-number {
+  color: #d4af37;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  line-height: 1.3;
+  margin: 0.75rem 0 0;
+}
+
+/* Tappable number: stays gold, with a subtle underline so it reads as a link. */
+.portfolio-whatsapp-cta .portfolio-whatsapp-cta-number a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(212, 175, 55, 0.45);
+  text-underline-offset: 4px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.portfolio-whatsapp-cta .portfolio-whatsapp-cta-number a:hover {
+  color: #f4d03f;
+  text-decoration-color: #f4d03f;
+}
+
+.portfolio-whatsapp-cta .portfolio-whatsapp-cta-sub {
+  color: #d4af37;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  max-width: 560px;
+  margin: 0.75rem auto 0;
+}
+
+/* WhatsApp CTA band between the work grid and the résumé. */
+.portfolio-cta-band {
+  text-align: center;
+  padding: 0 0 4rem;
+}
+
+/* The photo break above already supplies the gap — keep the photo evenly
+   spaced between the work grid and this CTA. */
+.portfolio-cta-band .portfolio-whatsapp-cta {
+  margin-top: 0;
+}
+
+
+
 
 /* The bio's surrounding paragraphs are centered, but a bulleted list reads
    better left-aligned — keep it that way regardless of the parent. */

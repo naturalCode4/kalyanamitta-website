@@ -6,6 +6,7 @@ import './SpiritualPractice.css';
 import pic4 from '../assets/pic4.jpg';
 import pic97bfe1a4 from '../assets/97bfe1a4-beb9-4fd0-ae9e-c46d918bd026.jpeg';
 import picEd32e69a from '../assets/ed32e69a-59ce-4ab0-bfcf-4067bd94fd72.jpeg';
+import picYoga from '../assets/adin-yoga-warrior.jpg';
 import { Helmet } from 'react-helmet';
 
 const Stars = () => <span className="spiritual-stars">★★★★★</span>;
@@ -105,6 +106,13 @@ const SpiritualPractice = () => {
 
               <Quote text="Adin holds really incredible and powerful intentional loving space. Working with him helped me work through so much and get to the root of my issue in just an hour or so. Thank you for sharing your potent Medicine Adin 🙏🏼" author="Caleb S." />
 
+              <div className="spiritual-image-container">
+                <img
+                  src={picYoga}
+                  alt="Adin in warrior II pose in an open-air yoga studio"
+                  className="spiritual-practice-pic"
+                />
+              </div>
               <p>
                 I bring in my own wisdom, methods, personal experience, and intuition as well as teachings from many spiritual traditions, as appropriate to what's alive. I've practiced in Zen, Tibetan, and Theravadan Buddhist lineages, and explored mysticism across Native American, Tantric, Taoist, Judaic, Christian, Hermetic, and Sufi traditions, as well as yoga (including yoga philosophy), qi gong, medicine work, shamanism, healing arts, sexual energy cultivation, psychic development, bhakti, and ecstatic dance.
               </p>
