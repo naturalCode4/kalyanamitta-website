@@ -131,19 +131,19 @@ const GYPABTEIP = () => {
   // "Is This You?" — the other side of the lasting shifts below. Same
   // format: items with a `detail` render as dropdowns; the rest are plain.
   const isThisYou = [
-    { text: 'Your feelings never felt safe', detail: "They weren't held, met, or treated with compassion." },
+    { text: "Your feelings don't feel fully safe", detail: 'Something in you feels afraid when feelings arise.' },
     { text: 'A harsh inner critic', detail: 'The voice in your head is harsh, critical, and perfectionist. We tend to talk to ourselves the way our parents talked, either to us or to themselves.' },
     { text: "You don't trust yourself", detail: "You were told how to live: what's good, how to behave, and what's okay to feel and express, and what isn't." },
-    { text: 'Heavy negative emotions', detail: 'Shame, guilt, hopelessness, anxiety, fear, chronic stress.' },
+    { text: 'Heavy negative emotions', detail: 'Shame, hopelessness, anxiety, fear, depression, chronic stress. And the background of guilt.' },
     { text: 'Chronic caretaking', detail: "You're highly attuned to other people's emotional states, and you regulate them at your own expense. Maybe you were the child who became the parent." },
     { text: 'Still bracing, still reading the room', detail: 'Maybe you learned the sound of the floorboards and the doors, so you could hide, or at least prepare yourself. You learned the difference in footsteps, or the way a door closed, as signs of danger. You learned the quiet ways to sneak past your parents.' },
-    { text: "Parents who can't take accountability", detail: "You probably woke up to it as an adult. When you try to talk to them about it, they don't take accountability, validate your experience, or have much empathy." },
+    { text: "Parents who didn't take accountability", detail: 'You woke up to this as an adult. And when you brought it up to them, which took courage, they took little accountability, failed to validate your experience, gaslit you, and lacked understanding and empathy.' },
     { text: 'Second-guessing your own perceptions' },
     { text: 'Wondering if you are fundamentally lovable' },
-    { text: 'Difficulty expressing yourself' },
+    { text: 'Difficulty expressing yourself', detail: "You're still finding your voice and power." },
     { text: 'Fear of what other people will think of you' },
     { text: 'Low confidence and self-worth' },
-    { text: "Feeling like your life isn't really yours" },
+    { text: 'High expectations from parents', detail: 'You feel pressure to walk in their footsteps.' },
     { text: 'Struggling to let yourself want what you want' },
     { text: 'Difficulty with real intimacy' },
     { text: 'Repeating toxic patterns in relationships, including romantic ones' },
@@ -249,7 +249,7 @@ const GYPABTEIP = () => {
               <h1 className="subtitle-heading"><RainbowTitle text="Get Your Power & Authority Back from Toxic and Emotionally Immature Parenting" /><span className="fd-rainbow-letter-2">!</span></h1>
               <p className="fd-hero-line fd-italic"><u className="fd-underline">GYPABTEIP!</u> (Yes, that's really the name.)</p>
               <p className="fd-hero-line"><u className="fd-underline">Quick question for you</u>: Do you have a rough internal terrain that's difficult to convey to even close friends because a profound level of insecurity was chronically beaten into you by emotionally-immature parents who pretended like they were totally great, but then in your adult life you slowly but surely came to the realization that they actually lack the most basic accountability and empathy?!</p>
-              <p className="fd-hero-line">Well, this is the deep dive healing made <u className="fd-underline">for you!</u> I am here to help radically shift your power, authority, and well-being</p>
+              <p className="fd-hero-line">Welcome! This is the deep dive shift <u className="fd-underline">for you!</u> This will radically shift your power, authority, and well-being.</p>
               {/* <p className="fd-hero-line">You didn't learn to <u className="fd-underline">distrust yourself</u> by accident. It was ingrained in you in your childhood.</p>
               <p className="fd-hero-line">It's time to unwind those <u className="fd-underline">super intense feelings</u>.</p>
               <p className="fd-hero-line">Reclaim the safety, boundaries, self-love, and confidence that were <u className="fd-underline">never supposed to be this hard</u> to find.</p> */}
@@ -274,7 +274,7 @@ const GYPABTEIP = () => {
       {/* Intro */}
       <section className="fd-intro section-dark">
         <div className="container">
-          <p className="fd-emphasis"><u className="fd-underline"><em>GYPABTEIP!</em></u> is a 12-week, one-on-one container for reclaiming what emotionally immature, toxic, or neglectful parenting took from you, and ending what it's still costing you. For good.</p>
+          <p className="fd-emphasis"><u className="fd-underline"><em>GYPABTEIP!</em></u> is a 12-week, one-on-one transformation for doing exactly what the title says. Reclaim what neglect cost you by healing down to the deepest level.</p>
 
           <div className="collapsible-header fd-inline-trigger" onClick={() => toggleSection('costOfCarrying')}>
             <span className={`triangle ${openSections.costOfCarrying ? 'open' : ''}`}></span>
@@ -282,9 +282,13 @@ const GYPABTEIP = () => {
           </div>
           <div className={`collapsible-content ${openSections.costOfCarrying ? 'open' : ''}`}>
             <p className="fd-emphasis">
-              It costs people <u className="fd-underline">so much</u>: their <em><u className="fd-underline">power</u>, capacity for authentic <u className="fd-underline">relationships</u>, <u className="fd-underline">self-love</u>, their <u className="fd-underline">peace</u>, and their <u className="fd-underline">ability to achieve</u> what they deeply want.</em> Even their fundamental <u className="fd-underline">view of themselves</u> and whether they're <u className="fd-underline">lovable and worthy</u>. The <u className="fd-underline">nervous system's health and stability</u>. And a lot more.
+              The truth is it <u className="fd-underline">costs</u> people <u className="fd-underline">so much</u>: their health, relationships, finances, personal peace, confidence, mental clarity, focus, positivity, quality of their actions and words, and much more. Even skewing their very view of reality, themselves, and what's possible. People live with unresolved trauma and feelings that are running life behind the scenes almost all the time.
             </p>
           </div>
+
+          <blockquote className="fd-pullquote">
+            "And the day came when the risk to remain tight in a bud was more painful than the risk it took to blossom." — Anaïs Nin
+          </blockquote>
 
           <Quote text="Adin's presence is grounded, compassionate, and deeply intuitive — he creates a safe space where real emotional release and clarity can unfold." author="Ryan S." />
 
@@ -299,24 +303,27 @@ const GYPABTEIP = () => {
         <div className="container">
           <h2 className="subtitle-heading">Is This You?</h2>
 
-          <aside className="fd-sidebar fd-sidebar-dropdown fd-sidebar-centered">
-            <div className="collapsible-header fd-sidebar-dropdown-header" onClick={() => toggleSection('whereLanded')}>
-              <span className={`triangle ${openSections.whereLanded ? 'open' : ''}`}></span>
-              <strong>Where Did You Land?</strong>
-            </div>
-            <div className={`collapsible-content ${openSections.whereLanded ? 'open' : ''}`}>
-              <p>Let me level with you here. Parents are ideally to be a place where you genuinely feel warmth, bond, and safety: where you can bring whatever's alive and receive the unconditional love and support.</p>
-              <p><strong>So what did you receive?</strong></p>
-              <p><strong>Maybe a warm, real bond.</strong> There was real closeness and a genuine bond. Maybe there were some things you couldn't bring to them. Your parents taught your nervous system how to be loved and how to hold difficult stuff.</p>
-              <p><strong>Some people didn't even receive that. Home was generally unsafe.</strong> You didn't trust them. Emotional safety was rare, or never there. They weren't someone you could go to. They have a lot of unprocessed shit. They weren't capable of accountability. Or they were mostly or entirely absent.</p>
-              <p><strong>And for some, the parent has been one of the biggest aggressors and problems in your life.</strong> You have very emotionally-immature parents! They may have been erratic and unpredictable. Probably a lot of image obsession and emotional neglect or abuse. There may have been narcissism or mental illness. The household was chronically unsafe, and sometimes siblings were part of it too.</p>
-              <p><strong>If you're in the last two, this is for you.</strong></p>
-            </div>
-          </aside>
-
           <ul className="fd-benefit-list fd-benefit-list-even">
             {isThisYou.map(renderShift)}
           </ul>
+
+          <aside className="fd-sidebar fd-sidebar-dropdown fd-sidebar-centered">
+            <div className="collapsible-header fd-sidebar-dropdown-header" onClick={() => toggleSection('whereLanded')}>
+              <span className={`triangle ${openSections.whereLanded ? 'open' : ''}`}></span>
+              <strong>Where Did Your Childhood Land?</strong>
+            </div>
+            <div className={`collapsible-content ${openSections.whereLanded ? 'open' : ''}`}>
+              <p><strong>What did you receive from your parenting?</strong></p>
+              <p><em>Let me level with you here.</em> Parents are ideally mature humans that unconditionally support you. They is unwavering support, unity, reliability, warmth, safety, and bonding. You could bring whatever is going on with you and would be received with unconditional love from safe people.</p>
+              <p>Doesn't sound like you, does it... Maybe this does: HOLY SH*T, is that even possible?!</p>
+              <p>I bet even a real and warm, trustworthy bond with people who make a lot of mistakes, and acted up at times, sounds fantastic. Being safe in difficult stuff</p>
+              <p><strong>This is for you if you didn't even receive that.</strong></p>
+              <p>For you, emotional safety was rare, if ever there. Your parents were not someone you could rely on and safely open up to. They have a ton of unprocessed shit. They lacked accountability and empathy. Or they were absent.</p>
+              <p>They themselves probably needed this program... But remember: you only have power and authority over YOU.</p>
+              <p>For some, the parent was not only unreliable, but a huge aggressor to your life and well-being. They were hostile, erratic, and unpredictable. There was image-obsession and emotional abuse. The household was chronically unsafe, and sometimes siblings were part of it too. There may have been narcissism or mental illness. Newsflash: You have toxic and emotionally-immature (and neglectful) parents!</p>
+              <p><strong>You're in the right place. Read on {'<3'}</strong></p>
+            </div>
+          </aside>
 
           <div className="fd-quote-row">
             <Quote text="I have to admit, the scientist in me was a little skeptical that it wouldn't work, but I could not have been more wrong. My first session was so powerful — naming and releasing so much pain I'd been dealing with for years." author="Zac K." />
