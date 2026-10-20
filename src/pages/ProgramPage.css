@@ -682,6 +682,76 @@
   margin-bottom: 0;
 }
 
+/* ---------- "Is This You?" grouped accordions ----------
+   Reuses the benefit grid; each group header is a real <button>, so reset
+   the browser button styles the shared .collapsible-header doesn't cover.
+   font-size/text-align !important: see the note above .fd-emphasis. */
+.fd-isyou-subtitle {
+  font-size: 1.25rem !important;
+  line-height: 1.7;
+  color: #e8e8e8;
+  text-align: center !important;
+  max-width: 800px;
+  margin: 0 auto 1rem;
+}
+
+.fd-isyou-groups {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 2.5rem;
+  align-items: start;
+  max-width: 1200px;
+  margin: 1.5rem auto 2.5rem;
+}
+
+.fd-isyou-col {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .fd-isyou-groups {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fd-isyou-col {
+    display: contents;
+  }
+}
+
+.fd-isyou-toggle {
+  width: 100%;
+  font: inherit;
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-align: left;
+}
+
+/* shared.css removes the focus outline on .collapsible-header — bring it
+   back for keyboard users only. */
+.fd-isyou-toggle:focus-visible {
+  outline: 2px solid #d4af37;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.fd-isyou-items {
+  margin: 0.25rem 0 0.5rem 0.2rem;
+}
+
+.program-page .fd-isyou-items li {
+  color: #e8e8e8;
+  font-size: 1.08rem;
+  line-height: 1.6;
+  padding: 0.3rem 0 0.3rem 20px;
+}
+
+.fd-isyou-closing {
+  margin: 0 auto 3rem;
+}
+
 /* ---------- "This Is For You If" / "This Is NOT For You If" side by side ---------- */
 .fd-dual-dropdown {
   display: grid;

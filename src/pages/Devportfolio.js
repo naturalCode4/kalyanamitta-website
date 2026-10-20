@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import './Devportfolio.css';
 import Section from '../components/Section';
@@ -28,7 +28,7 @@ const WhatsAppCTA = () => (
     <p className="portfolio-whatsapp-cta-number">
       <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">{PHONE_DISPLAY}</a>
     </p>
-    <p className="portfolio-whatsapp-cta-sub">Tell me a bit about you and what you're building! And I'll get back to you shortly.</p>
+    <p className="portfolio-whatsapp-cta-sub">Tell me a bit about you and your project! I'll get back to you shortly.</p>
   </div>
 );
 
@@ -52,7 +52,136 @@ const Flame = () => (
   </svg>
 );
 
-const BALLOON_COLORS = ['#ff4d6d', '#ffd166', '#06d6a0', '#4ea8de', '#c77dff', '#f4845f', '#ef476f', '#d4af37'];
+// "How I work" values, shown as carpenter's-rule rows. Rows alternate between
+// the gold and neon-blue accents used elsewhere on the page.
+const VALUES = [
+  {
+    title: 'Done Right',
+    icon: 'shield',
+    text: 'The right build for your needs, built with excellence. Quick turnaround, no cut corners.',
+  },
+  {
+    title: 'Full-Spectrum Versatility',
+    icon: 'layers',
+    text: 'Not just the code: UI/UX and web design, website and business strategy, SEO, content writing and storytelling, integrations, hosting and infrastructure, QA, and ongoing support. Emotional and energetic support is available too.',
+  },
+  {
+    title: 'Collaborative Creations',
+    icon: 'lotus',
+    text: "I love bringing positive-impact offerings to life, with deep personal attunement and real collaboration. I put my energy into bettering the world through what you create.",
+  },
+  {
+    title: 'Clear Communication',
+    icon: 'brain',
+    text: 'Real communication, with the technical side explained in plain English. Honesty, integrity, transparency, reliability, and professionalism.',
+  },
+  {
+    title: 'People First',
+    icon: 'heart',
+    text: 'Your vision and collaboration sit at the center of every project.',
+  },
+];
+
+const VALUE_ICONS = {
+  shield: (
+    <>
+      <path className="fill" d="M14 3l9 3v7c0 6-4 10-9 12-5-2-9-6-9-12V6z" />
+      <path d="M14 3l9 3v7c0 6-4 10-9 12-5-2-9-6-9-12V6z" />
+      <path d="M10 14l3 3 5-6" />
+    </>
+  ),
+  // Two hemispheres in the page's two accents: logical left in blue,
+  // creative right in gold, regardless of the row's color.
+  brain: (
+    <>
+      <g className="brain-left">
+        <path className="fill" d="M13.3 4.8 C12.3 3.7 10.5 3.5 9.4 4.4 C8.1 3.9 6.5 4.7 6.2 6.1 C4.7 6.4 3.8 7.9 4.2 9.3 C3.0 10.1 2.7 11.9 3.6 13.0 C2.7 14.1 2.9 15.9 4.1 16.7 C3.8 18.2 4.8 19.7 6.3 19.9 C6.7 21.4 8.3 22.3 9.8 21.9 C10.7 23.1 12.4 23.3 13.3 22.4 Z" />
+        <path d="M13.3 4.8 C12.3 3.7 10.5 3.5 9.4 4.4 C8.1 3.9 6.5 4.7 6.2 6.1 C4.7 6.4 3.8 7.9 4.2 9.3 C3.0 10.1 2.7 11.9 3.6 13.0 C2.7 14.1 2.9 15.9 4.1 16.7 C3.8 18.2 4.8 19.7 6.3 19.9 C6.7 21.4 8.3 22.3 9.8 21.9 C10.7 23.1 12.4 23.3 13.3 22.4 Z" />
+        <path d="M6.2 6.1 C7.3 6.2 8.2 6.9 8.4 8.0 M13.3 8.6 C11.8 8.4 10.5 9.3 10.2 10.6 M4.2 9.3 C5.4 9.3 6.5 9.9 7.0 10.9 M3.6 13.0 C5.0 13.2 6.2 14.1 6.5 15.4 M13.3 13.6 C11.6 13.5 10.1 14.5 9.6 16.0 M6.3 19.9 C6.6 18.8 7.6 18.0 8.8 17.9 M9.8 21.9 C9.8 20.8 10.5 19.9 11.5 19.6" />
+      </g>
+      <g className="brain-right">
+        <path className="fill" d="M 14.7 4.8 C 15.7 3.7 17.5 3.5 18.6 4.4 C 19.9 3.9 21.5 4.7 21.8 6.1 C 23.3 6.4 24.2 7.9 23.8 9.3 C 25 10.1 25.3 11.9 24.4 13 C 25.3 14.1 25.1 15.9 23.9 16.7 C 24.2 18.2 23.2 19.7 21.7 19.9 C 21.3 21.4 19.7 22.3 18.2 21.9 C 17.3 23.1 15.6 23.3 14.7 22.4 Z" />
+        <path d="M 14.7 4.8 C 15.7 3.7 17.5 3.5 18.6 4.4 C 19.9 3.9 21.5 4.7 21.8 6.1 C 23.3 6.4 24.2 7.9 23.8 9.3 C 25 10.1 25.3 11.9 24.4 13 C 25.3 14.1 25.1 15.9 23.9 16.7 C 24.2 18.2 23.2 19.7 21.7 19.9 C 21.3 21.4 19.7 22.3 18.2 21.9 C 17.3 23.1 15.6 23.3 14.7 22.4 Z" />
+        <path d="M 21.8 6.1 C 20.7 6.2 19.8 6.9 19.6 8 M 14.7 8.6 C 16.2 8.4 17.5 9.3 17.8 10.6 M 23.8 9.3 C 22.6 9.3 21.5 9.9 21 10.9 M 24.4 13 C 23 13.2 21.8 14.1 21.5 15.4 M 14.7 13.6 C 16.4 13.5 17.9 14.5 18.4 16 M 21.7 19.9 C 21.4 18.8 20.4 18 19.2 17.9 M 18.2 21.9 C 18.2 20.8 17.5 19.9 16.5 19.6" />
+      </g>
+    </>
+  ),
+  layers: (
+    <>
+      <path className="fill" d="M14 4l10 5-10 5-10-5z" />
+      <path d="M14 4l10 5-10 5-10-5z" />
+      <path d="M4 14l10 5 10-5M4 19l10 5 10-5" />
+    </>
+  ),
+  heart: (
+    <>
+      <path className="fill" d="M14 24s-9-5.5-9-12a5 5 0 019-3 5 5 0 019 3c0 6.5-9 12-9 12z" />
+      <path d="M14 24s-9-5.5-9-12a5 5 0 019-3 5 5 0 019 3c0 6.5-9 12-9 12z" />
+    </>
+  ),
+  lotus: (
+    <>
+      <path className="fill" d="M14 6c3 3 3 10 0 14-3-4-3-11 0-14z" />
+      <path d="M14 6c3 3 3 10 0 14-3-4-3-11 0-14z" />
+      <path d="M12 19c-3-1-7-4-7-9 3 0 6 2 7.5 5M16 19c3-1 7-4 7-9-3 0-6 2-7.5 5" />
+      <path d="M5 22h18" />
+    </>
+  ),
+};
+
+const ValueIcon = ({ name }) => (
+  <span className="value-icon" aria-hidden="true">
+    <svg viewBox="0 0 28 28" width="30" height="30" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      {VALUE_ICONS[name]}
+    </svg>
+  </span>
+);
+
+// Fills the ruler "meters" once the values list scrolls into view.
+const ValuesList = () => {
+  const ref = useRef(null);
+  const [filled, setFilled] = useState(false);
+
+  useEffect(() => {
+    if (!('IntersectionObserver' in window)) {
+      setFilled(true);
+      return;
+    }
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setFilled(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+    observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <ol ref={ref} className={`values-list ${filled ? 'filled' : ''}`}>
+      {VALUES.map((v, i) => (
+        <li
+          key={v.title}
+          className={`value-row value-${i % 2 ? 'blue' : 'gold'}`}
+          style={{ '--i': i }}
+        >
+          <span className="value-meter" aria-hidden="true" />
+          <span className="value-num">{String(i + 1).padStart(2, '0')}</span>
+          <div>
+            <h3>{v.title}</h3>
+            <p>{v.text}</p>
+          </div>
+          <ValueIcon name={v.icon} />
+        </li>
+      ))}
+    </ol>
+  );
+};
+
+const BALLOON_COLORS =['#ff4d6d', '#ffd166', '#06d6a0', '#4ea8de', '#c77dff', '#f4845f', '#ef476f', '#d4af37'];
 
 const Portfolio = () => {
   const [balloons, setBalloons] = useState([]);
@@ -88,6 +217,14 @@ const Portfolio = () => {
   };
 
   const projects = [
+    {
+      title: "My Portfolio Page",
+      role: "Developer and Designer",
+      description: "I custom coded this portfolio page from scratch. Perks of being an engineer.",
+      link: null,
+      linkText: "Hint: You're on it!",
+      easterEgg: "balloons"
+    },
     {
       title: "Healing On Tap",
       role: "Creator, Developer & Designer",
@@ -179,14 +316,6 @@ const Portfolio = () => {
       link: null,
       linkText: null
     },
-    {
-      title: "My Portfolio Page",
-      role: "Developer and Designer",
-      description: "I custom coded this portfolio page. Perks of being an engineer.",
-      link: null,
-      linkText: "Hint: You're on it!",
-      easterEgg: "balloons"
-    }
   ];
 
   return (
@@ -213,25 +342,43 @@ const Portfolio = () => {
 
             {/* NEW Contact / Bio Section */}
       <section className="portfolio-contact-section">
-        <div className="container contact-content-wrapper">
-          <div className="contact-image-col">
-            <figure className="portfolio-photo-figure">
-              <img src={picBio} alt='Adin "Stone Boy" Kramer' className="portfolio-profile-pic" />
-              <figcaption>Happy client / owner of the 'SonShip'</figcaption>
-            </figure>
+        <div className="container contact-content-wrapper contact-text-col">
+          {/* Photos flank the heading */}
+          <div className="contact-photo-row">
+            <div className="contact-image-col">
+              <figure className="portfolio-photo-figure">
+                <img src={picBio} alt='Adin "Stone Boy" Kramer' className="portfolio-profile-pic" />
+                <figcaption>With a happy client, the owner of the 'SonShip'</figcaption>
+              </figure>
+            </div>
+            <div className="contact-intro">
+              <h3>Graciously handling the tech side of your conscious creation.</h3>
+              <p><i>5+ years of experience, trusted by clients across the USA.</i></p>
+            </div>
+
+            <div className="contact-diamond-col">
+              <figure className="portfolio-photo-figure">
+                <div className="portfolio-diamond-frame">
+                  <img src={picSmoothie} alt="Adin working from a cafe" className="portfolio-diamond-pic" />
+                </div>
+                <figcaption>All websites are nutrient-infused.</figcaption>
+              </figure>
+            </div>
           </div>
-          <div className="contact-text-col">
-            <h3>Graciously handling the tech side of your conscious creation.</h3>
-            <p><i>4+ years of experience, trusted by clients across the USA.</i></p>
-            <p>
-              I build beautiful, custom websites and apps for conscious businesses, practitioners, and communities. With me, you have a sincere spiritual being with the logical left-brain mind of a software engineer, working towards the betterment of mankind. I work closely with my clients to deliver a product that feels authentically like them. I produce clean code, thoughtful designs, and clear communication.
-            </p>
-            <p>
-              I am strong in content writing, web design, the creative process, and the business side of things. You have the option to co-create with me, or bring a fully-formed project and I'll build it exactly as given – or anything in between.
-            </p>
-            <p><i>
-              I hold in my heart that which leads to imperative collective awakening happening on Earth right now. Dharma and Yoga centers, healing practitioners, conscious creations and products, environmentally and socially positive organizations: Reach out – I am happy to connect and support you.
-            </i></p>
+
+          {/* About (left) and highlights checklist (right), side by side */}
+          <div className="contact-columns">
+            <div className="contact-about">
+              <p>
+                I build beautiful, custom websites and apps for conscious businesses, practitioners, and communities. With me, you have a sincere spiritual being with the logical left-brain mind of a software engineer, working towards the betterment of mankind. I work closely with my clients to deliver a product that feels authentically like them. I produce clean code, thoughtful designs, and clear communication.
+              </p>
+              <p>
+                I am strong in content writing, web design, the creative process, and the business side of things. You have the option to co-create with me, or bring a fully-formed project and I'll build it exactly as given – or anything in between.
+              </p>
+              <p><i>
+                I hold in my heart that which leads to imperative collective awakening happening on Earth right now. Dharma and Yoga centers, healing practitioners, conscious creations and products, environmentally and socially positive organizations: Reach out – I am happy to connect and support you.
+              </i></p>
+            </div>
             <ul className="list-checkmarks contact-highlights">
               <li>
                 Affordable and flexible to fit your needs. Let's talk about your project.
@@ -258,6 +405,10 @@ const Portfolio = () => {
                 Available for long-term support.
               </li>
             </ul>
+          </div>
+
+          {/* Location + WhatsApp call to action */}
+          <div className="contact-cta-col">
             <div className="contact-details">
               <p><strong>Location:</strong> Anywhere / A Message or Call Away / USA</p>
             </div>
@@ -271,15 +422,17 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div className="contact-diamond-col">
-            <figure className="portfolio-photo-figure">
-              <div className="portfolio-diamond-frame">
-                <img src={picSmoothie} alt="Adin working from a cafe" className="portfolio-diamond-pic" />
-              </div>
-              <figcaption>All websites are nutrient-infused.</figcaption>
-            </figure>
+      {/* Values: ruler rows that fill on scroll */}
+      <section className="values-section">
+        <div className="container values">
+          <div className="values-head">
+            <p className="values-eyebrow">Conscious Creations</p>
+            <h2>Everything you want in a great engineer &mdash; with heart.</h2>
           </div>
+          <ValuesList />
         </div>
       </section>
 

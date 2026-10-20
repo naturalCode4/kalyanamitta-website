@@ -128,38 +128,106 @@ const GYPABTEIP = () => {
     setOpenBenefits((prev) => ({ ...prev, [key]: !prev[key] }));
   };
 
-  // "Is This You?" — the other side of the lasting shifts below. Same
-  // format: items with a `detail` render as dropdowns; the rest are plain.
-  const isThisYou = [
-    { text: "Your feelings don't feel fully safe", detail: 'Something in you feels afraid when feelings arise.' },
-    { text: 'A harsh inner critic', detail: 'The voice in your head is harsh, critical, and perfectionist. We tend to talk to ourselves the way our parents talked, either to us or to themselves.' },
-    { text: "You don't trust yourself", detail: "You were told how to live: what's good, how to behave, and what's okay to feel and express, and what isn't." },
-    { text: 'Heavy negative emotions', detail: 'Shame, hopelessness, anxiety, fear, depression, chronic stress. And the background of guilt.' },
-    { text: 'Chronic caretaking', detail: "You're highly attuned to other people's emotional states, and you regulate them at your own expense. Maybe you were the child who became the parent." },
-    { text: 'Still bracing, still reading the room', detail: 'Maybe you learned the sound of the floorboards and the doors, so you could hide, or at least prepare yourself. You learned the difference in footsteps, or the way a door closed, as signs of danger. You learned the quiet ways to sneak past your parents.' },
-    { text: "Parents who didn't take accountability", detail: 'You woke up to this as an adult. And when you brought it up to them, which took courage, they took little accountability, failed to validate your experience, gaslit you, and lacked understanding and empathy.' },
-    { text: 'Second-guessing your own perceptions' },
-    { text: 'Wondering if you are fundamentally lovable' },
-    { text: 'Difficulty expressing yourself', detail: "You're still finding your voice and power." },
-    { text: 'Fear of what other people will think of you' },
-    { text: 'Low confidence and self-worth' },
-    { text: 'High expectations from parents', detail: 'You feel pressure to walk in their footsteps.' },
-    { text: 'Struggling to let yourself want what you want' },
-    { text: 'Difficulty with real intimacy' },
-    { text: 'Repeating toxic patterns in relationships, including romantic ones' },
-    { text: 'A nervous system stuck on high alert', detail: 'Trauma, triggers, and C-PTSD symptoms.' },
-    { text: 'Old memories and triggers surfacing in similar situations' },
-    { text: 'Blaming yourself for what happened' },
-    { text: 'A wounded inner child' },
-    { text: "Still waiting for the love your parents couldn't give" },
-    { text: 'Carrying resentment toward your parents, or yourself' },
-    { text: 'Inherited family patterns and indoctrination' },
-    { text: 'Feeling overwhelmed by your emotions, or cut off from them' },
-    { text: 'Mental fog and a muted intuition' },
-    { text: 'Stress showing up in your body' },
-    { text: 'Addiction and coping habits' },
-    { text: 'A career or life path set out for you that doesn\'t fit', detail: "Maybe you went down a career path that was set out for you. You either got out, or you're still in it, miserable, not knowing another way." },
+  // "Is This You?" — the other side of the lasting shifts below, grouped
+  // into collapsible themes. All groups start collapsed.
+  const isThisYouGroups = [
+    {
+      title: 'Your parents and family',
+      items: [
+        "You had toxic and emotionally immature parents! And it affects you deeply into your adult life.",
+        "Parents who didn't take accountability",
+        'You lack the embodied knowledge of being held, cared for, and supported',
+        'Carrying resentment toward your parents, or blaming yourself for what happened',
+        'High expectations from parents',
+        'Inherited family patterns and indoctrination',
+        'A wounded inner child',
+      ],
+    },
+    {
+      title: 'Your relationship with yourself',
+      items: [
+        'A harsh inner critic',
+        "You don't trust yourself",
+        'Mental fog and a muted intuition',
+        'Second-guessing your own perceptions',
+        'Uncertainty whether you are fundamentally lovable and worthy',
+        'Low confidence and self-esteem',
+      ],
+    },
+    {
+      title: 'Heavy negative emotions',
+      items: [
+        'Shame, hopelessness, anxiety, fear, depression, chronic stress',
+        'A background of guilt',
+        "Your feelings don't feel fully safe, and sharing them feels like burdening others",
+        'Feeling overwhelmed by your emotions, or cut off from them',
+      ],
+    },
+    {
+      title: 'Your body and nervous system',
+      items: [
+        'Still bracing, still reading the room',
+        'A nervous system stuck on high alert',
+        'Old memories and triggers surfacing in similar situations',
+        'Stress showing up in your body',
+        'Addiction and coping habits',
+      ],
+    },
+    {
+      title: 'Struggles in relationships',
+      items: [
+        'Chronic caretaking',
+        'Strong fear of what other people think of you',
+        'Difficulty being close to people, or with intimacy',
+        'Repeating old attachment patterns, including in romantic relationships',
+      ],
+    },
+    {
+      title: 'Your voice and your path',
+      items: [
+        'Difficulty expressing yourself',
+        'Struggling to let yourself want what you want',
+        "Following a career or life path shaped by your parents' expectations, and it doesn't fit",
+        "Living inside a reality built from other people's beliefs, even ones part of you knows aren't true",
+      ],
+    },
   ];
+
+  const [openIsYouGroups, setOpenIsYouGroups] = useState({});
+
+  const toggleIsYouGroup = (title) => {
+    setOpenIsYouGroups((prev) => ({ ...prev, [title]: !prev[title] }));
+  };
+
+  const renderIsYouGroup = (g, i) => {
+    const open = !!openIsYouGroups[g.title];
+    return (
+      <li key={g.title} className="fd-benefit-item" style={{ order: i }}>
+        <button
+          type="button"
+          id={`isyou-group-${i}`}
+          className="collapsible-header fd-benefit-header fd-isyou-toggle"
+          aria-expanded={open}
+          aria-controls={`isyou-panel-${i}`}
+          onClick={() => toggleIsYouGroup(g.title)}
+        >
+          <span className={`triangle ${open ? 'open' : ''}`} aria-hidden="true"></span>
+          {g.title}
+        </button>
+        <div
+          id={`isyou-panel-${i}`}
+          role="region"
+          aria-labelledby={`isyou-group-${i}`}
+          aria-hidden={!open}
+          className={`collapsible-content ${open ? 'open' : ''}`}
+        >
+          <ul className="list-bullets fd-isyou-items">
+            {g.items.map((item) => <li key={item}>{item}</li>)}
+          </ul>
+        </div>
+      </li>
+    );
+  };
 
   // Items with a `detail` render as dropdowns; the rest are plain labels.
   const lastingShifts = [
@@ -302,10 +370,25 @@ const GYPABTEIP = () => {
       <section className="fd-isyou section-rainbow">
         <div className="container">
           <h2 className="subtitle-heading">Is This You?</h2>
+          <p className="fd-isyou-subtitle">These aren't your flaws. They're how you adapted to survive what you lived through. This work improves or fully resolves them, so you can finally be free.</p>
 
-          <ul className="fd-benefit-list fd-benefit-list-even">
-            {isThisYou.map(renderShift)}
-          </ul>
+          {/* Three independent columns (groups 1/4, 2/5, 3/6), so opening a
+              group only pushes down its own column, not its neighbors. On
+              mobile the columns dissolve and `order` restores 1–6. */}
+          <div className="fd-isyou-groups">
+            {[0, 1, 2].map((col) => (
+              <ul key={col} className="fd-isyou-col">
+                {isThisYouGroups.map((g, i) => (i % 3 === col ? renderIsYouGroup(g, i) : null))}
+              </ul>
+            ))}
+          </div>
+
+          <div className="fd-isyou-closing">
+            <p className="fd-emphasis-strong">If this feels heavy, that's because it is, and it can change.</p>
+            <div className="fd-cta-center">
+              <a href={ALIGNMENT_FORM_URL} className="btn">Find your peace here →</a>
+            </div>
+          </div>
 
           <aside className="fd-sidebar fd-sidebar-dropdown fd-sidebar-centered">
             <div className="collapsible-header fd-sidebar-dropdown-header" onClick={() => toggleSection('whereLanded')}>
@@ -315,8 +398,8 @@ const GYPABTEIP = () => {
             <div className={`collapsible-content ${openSections.whereLanded ? 'open' : ''}`}>
               <p><strong>What did you receive from your parenting?</strong></p>
               <p><em>Let me level with you here.</em> Parents are ideally mature humans that unconditionally support you. They is unwavering support, unity, reliability, warmth, safety, and bonding. You could bring whatever is going on with you and would be received with unconditional love from safe people.</p>
-              <p>Doesn't sound like you, does it... Maybe this does: HOLY SH*T, is that even possible?!</p>
-              <p>I bet even a real and warm, trustworthy bond with people who make a lot of mistakes, and acted up at times, sounds fantastic. Being safe in difficult stuff</p>
+              <p>But that doesn't sound like you, does it... Maybe this does... 'HOLY SH*T, that's even possible?!'</p>
+              <p>Even a real bond and consistent warmth with parents who make mistakes and couldn't always be relied on probably sounds fantastic.</p>
               <p><strong>This is for you if you didn't even receive that.</strong></p>
               <p>For you, emotional safety was rare, if ever there. Your parents were not someone you could rely on and safely open up to. They have a ton of unprocessed shit. They lacked accountability and empathy. Or they were absent.</p>
               <p>They themselves probably needed this program... But remember: you only have power and authority over YOU.</p>
@@ -425,8 +508,8 @@ const GYPABTEIP = () => {
             {lastingShifts.map(renderShift)}
           </ul>
 
-          <h3>Subjects we'll likely cover on the journey</h3>
-          <p className="fd-center">We meet these topics as they arise and are relevant to you:</p>
+          <h3>Subjects we'll visit on the journey</h3>
+          <p className="fd-center">As they are relevant to you:</p>
           <ul className="fd-benefit-list fd-benefit-list-even">
             <li className="fd-benefit-item">
               <div className="fd-benefit-header fd-benefit-static"><span className="fd-grid-bullet" aria-hidden="true">•</span>Repeating old family patterns in relationships, including romantic ones</div>

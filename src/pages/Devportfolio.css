@@ -336,11 +336,58 @@
 
 .contact-content-wrapper {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 4rem;
+  flex-direction: column;
+  gap: 3rem;
   max-width: 1300px;
   margin: 0 auto;
+}
+
+/* About text (left) and highlights checklist (right). */
+.contact-columns {
+  display: grid;
+  /* Ratio measured so About and the checklist render at about the same
+     height (within a line). Both cards stretch to match exactly. */
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+  text-align: left;
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .contact-columns { grid-template-columns: 1.15fr 1fr; }
+}
+
+/* Photos on either side of the heading. */
+.contact-photo-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.contact-intro {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Desktop only: sit the heading a bit above the photos' midline. Mobile
+   stacks it between the photos, so leave it alone there. */
+@media (min-width: 769px) {
+  .contact-intro {
+    transform: translateY(-4.5rem);
+  }
+}
+
+.contact-intro h3 {
+  margin-bottom: 0.5rem;
+}
+
+.contact-intro p {
+  margin-bottom: 0;
+}
+
+.contact-about p:last-child {
+  margin-bottom: 0;
 }
 
 .contact-image-col,
@@ -368,15 +415,6 @@
   height: 370px;
   object-fit: contain;
   background-color: #0f0f0f;
-}
-
-/* Desktop only: the side photos center on the (tall) bio text, which puts
-   them low — nudge both up. Mobile stacks them, so leave it alone there. */
-@media (min-width: 769px) {
-  .contact-image-col,
-  .contact-diamond-col {
-    transform: translateY(-12rem);
-  }
 }
 
 /* Photo with a small caption underneath. */
@@ -441,8 +479,6 @@
 
 
 .contact-text-col {
-  flex: 1;
-  min-width: 0;
   text-align: center;
 }
 
@@ -521,12 +557,16 @@
 
 
 
-/* The bio's surrounding paragraphs are centered, but a bulleted list reads
-   better left-aligned — keep it that way regardless of the parent. */
+.contact-about,
 .contact-text-col .contact-highlights {
-  text-align: left;
-  display: inline-block;
-  margin: 1rem 0 2.5rem;
+  margin: 0;
+  padding: 2rem 2.25rem;
+  background: #1a1a1a;
+  border: 1px solid #2d3748;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .contact-text-col .contact-highlights li {
@@ -583,8 +623,21 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .contact-content-wrapper {
+    gap: 2rem;
+  }
+
+  .contact-columns {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .contact-about,
+  .contact-text-col .contact-highlights {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .contact-photo-row {
     flex-direction: column;
-    text-align: center;
     gap: 2rem;
   }
   
@@ -596,4 +649,144 @@
   .cta-section {
     align-items: center !important; /* Force center on mobile */
   }
+}
+/* --- Values: carpenter's-rule rows that fill on scroll --- */
+.values-section {
+  padding: 5rem 0;
+  background: #0f0f0f;
+  border-top: 1px solid #2d3748;
+}
+.values {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 56px;
+  align-items: start;
+}
+.values-head { position: sticky; top: 110px; }
+.values-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 1rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #d4af37;
+}
+.values-eyebrow::before {
+  content: '';
+  width: 40px;
+  height: 3px;
+  border-radius: 2px;
+  background: #d4af37;
+}
+.values-head h2 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.9rem, 3.6vw, 2.8rem);
+  line-height: 1.15;
+  color: #ffffff;
+}
+.values-list { list-style: none; margin: 0; padding: 0; }
+.value-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 64px 1fr 56px;
+  gap: 20px;
+  align-items: start;
+  padding: 26px 4px 24px;
+}
+.value-gold { --accent: #b8902a; --accent-bright: #f4d03f; }
+.value-blue { --accent: #2f7fd6; --accent-bright: #8ccbff; }
+/* Ruler line: baseline with short ticks every 12px, long ticks every 60px */
+.value-row::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 12px;
+  background:
+    linear-gradient(#3a4250, #3a4250) top / 100% 2px no-repeat,
+    repeating-linear-gradient(90deg, #3a4250 0 2px, transparent 2px 60px) top / 100% 12px no-repeat,
+    repeating-linear-gradient(90deg, #2d3440 0 1px, transparent 1px 12px) top / 100% 6px no-repeat;
+}
+/* Meter: the same ruler in the row's color, revealed left to right. */
+.value-meter {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 14px;
+  background:
+    repeating-linear-gradient(90deg, var(--accent) 0 2px, transparent 2px 60px) top / 100% 14px no-repeat,
+    repeating-linear-gradient(90deg, var(--accent-bright) 0 1px, transparent 1px 12px) top / 100% 7px no-repeat;
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 1.3s cubic-bezier(0.2, 0.7, 0.2, 1);
+  transition-delay: calc(var(--i) * 0.18s + 0.1s);
+}
+/* Bar: dark to bright (reaching full brightness by ~60%), tapering from
+   2px on the left to 9px on the right, with a soft glow. */
+.value-meter::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 9px;
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-bright) 60%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 22%);
+  filter: drop-shadow(0 0 6px var(--accent-bright));
+}
+.values-list.filled .value-meter { clip-path: inset(0 0 0 0); }
+@media (prefers-reduced-motion: reduce) {
+  .value-meter { transition: none; }
+}
+.values-list .value-row:last-child { padding-bottom: 0; }
+.value-num {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1;
+  color: var(--accent-bright);
+  font-variant-numeric: tabular-nums;
+}
+.value-row h3 {
+  margin: 0 0 0.25em;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem;
+  color: #ffffff;
+}
+.value-row p {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.04rem;
+  line-height: 1.6;
+  color: #b8b8b8;
+}
+.value-icon {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: #1a1a1a;
+  border: 1px solid #2d3748;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  color: var(--accent-bright);
+}
+.value-icon svg { display: block; }
+.value-icon .fill { fill: var(--accent); stroke: none; opacity: 0.35; }
+.value-icon .brain-left { --accent: #2f7fd6; color: #8ccbff; }
+.value-icon .brain-right { --accent: #b8902a; color: #f4d03f; }
+
+@media (max-width: 768px) {
+  .values { grid-template-columns: 1fr; gap: 2rem; }
+  .values-head { position: static; }
+  .value-row { grid-template-columns: 44px 1fr 44px; gap: 14px; }
+  .value-num { font-size: 1.8rem; }
+  .value-icon { width: 44px; height: 44px; border-radius: 10px; }
+  .value-icon svg { width: 24px; height: 24px; }
 }
