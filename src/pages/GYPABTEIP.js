@@ -370,7 +370,7 @@ const GYPABTEIP = () => {
       <section className="fd-isyou section-rainbow">
         <div className="container">
           <h2 className="subtitle-heading">Is This You?</h2>
-          <p className="fd-isyou-subtitle">These aren't your flaws. They're how you adapted to survive what you lived through. This work improves or fully resolves them, so you can finally be free.</p>
+          <p className="fd-isyou-subtitle">These aren't your flaws. They're how you adapted to survive what you lived through. This work improves or fully resolves them, so you can finally be free to be you.</p>
 
           {/* Three independent columns (groups 1/4, 2/5, 3/6), so opening a
               group only pushes down its own column, not its neighbors. On
@@ -397,13 +397,13 @@ const GYPABTEIP = () => {
             </div>
             <div className={`collapsible-content ${openSections.whereLanded ? 'open' : ''}`}>
               <p><strong>What did you receive from your parenting?</strong></p>
-              <p><em>Let me level with you here.</em> Parents are ideally mature humans that unconditionally support you. They is unwavering support, unity, reliability, warmth, safety, and bonding. You could bring whatever is going on with you and would be received with unconditional love from safe people.</p>
-              <p>But that doesn't sound like you, does it... Maybe this does... 'HOLY SH*T, that's even possible?!'</p>
+              <p><em>Let me level with you here.</em> Parents are ideally mature humans that unconditionally support you. There is unwavering support, unity, reliability, warmth, safety, and bonding. You could bring whatever is going on with you and would be received with unconditional love from safe people. They were positive role models teaching you how to live.</p>
+              <p>This doesn't sound like you, does it?... Maybe this does: 'HOLY SH*T, that's even possible?!'</p>
               <p>Even a real bond and consistent warmth with parents who make mistakes and couldn't always be relied on probably sounds fantastic.</p>
               <p><strong>This is for you if you didn't even receive that.</strong></p>
               <p>For you, emotional safety was rare, if ever there. Your parents were not someone you could rely on and safely open up to. They have a ton of unprocessed shit. They lacked accountability and empathy. Or they were absent.</p>
               <p>They themselves probably needed this program... But remember: you only have power and authority over YOU.</p>
-              <p>For some, the parent was not only unreliable, but a huge aggressor to your life and well-being. They were hostile, erratic, and unpredictable. There was image-obsession and emotional abuse. The household was chronically unsafe, and sometimes siblings were part of it too. There may have been narcissism or mental illness. Newsflash: You have toxic and emotionally-immature (and neglectful) parents!</p>
+              <p>For some, the parent was not only unreliable, but a huge aggressor to your life and well-being. They were hostile, erratic, and unpredictable. There was image-obsession and emotional abuse. The household was chronically unsafe, and sometimes siblings were part of it too. There may have been narcissism or mental illness. If this is you: You have toxic and emotionally-immature (and neglectful) parents! Welcome.</p>
               <p><strong>You're in the right place. Read on {'<3'}</strong></p>
             </div>
           </aside>
