@@ -11,12 +11,9 @@ const Rates = () => {
   const packages = [
     {
       name: 'Freedom Dojo',
-      description: "A 12-week container to dissolve the limitations that have been running your life, and become calm, happy, free, and empowered — for good.",
-      mainPrice: '$2,420',
-      slidingScale: ' Founding Cohort',
-      originalPrice: '$3,000',
-      discount: 'Standard Rate',
+      description: "A container to dissolve the limitations that have been running your life, and become calm, happy, free, empowered to achieve what you desire — for good.",
       features: [
+        'A 3-month container of healing and upgrades: improving or completely resolving 3 to 6 Areas of Focus, creating a massively positive, lasting transformation for you',
         'Twelve 90-minute 1-on-1 EFT & Coaching sessions',
         'Gain proficiency using EFT on yourself',
         "Cultivate a spiritual practice that's genuinely yours",
@@ -145,10 +142,6 @@ const Rates = () => {
           <p className="rates-fd-description">
             A 12-week container to dissolve what's been running your life, and become calm, happy, free, and empowered — for good.
           </p>
-          <div className="rates-fd-price">
-            <span className="price-gold">$2,420</span> Founding Cohort (first 8 participants)
-            <span className="rates-fd-original"> · $3,000 Standard</span>
-          </div>
           <Link to="/freedom-dojo" className="btn">Learn More →</Link>
         </div>
       </section>
@@ -177,7 +170,7 @@ const Rates = () => {
                 <p className="timeline-label">Accessible Range</p>
                 {/* <h3>Accessible Range</h3>
                 <p className="timeline-label">80 - 120</p> */}
-                <p className="timeline-description">For those whom the standard rate is genuinely inaccessible. Your presence & sincerity matter most.</p>
+                <p className="timeline-description">For those whom the standard rate is genuinely inaccessible. Your presence & sincerity are imperative.</p>
               </div>
               {/* <div className="timeline-content">
                 <h3>$50 - 70</h3>
@@ -282,11 +275,6 @@ const Rates = () => {
       <section className="packages-section">
         <div className="container">
           <h2 className="subtitle-heading">Programs & Packages</h2>
-          <img
-            src={picA817dd0e}
-            alt="Healing On Tap"
-            className="rates-programs-image"
-          />
           <div className="packages-grid">
             {packages.map((pkg, index) => (
               <div
@@ -296,17 +284,19 @@ const Rates = () => {
                 <div className="package-header">
                   <h3>{pkg.name}</h3>
                   <p className="package-description">{pkg.description}</p>
-                  <div className="package-price">
-                    {/* Render split prices */}
-                    <div className="current-price-container">
-                      <span className="price-gold">{pkg.mainPrice}</span>
-                      <span className="price-pink">{pkg.slidingScale}</span>
+                  {pkg.mainPrice && (
+                    <div className="package-price">
+                      {/* Render split prices */}
+                      <div className="current-price-container">
+                        <span className="price-gold">{pkg.mainPrice}</span>
+                        <span className="price-pink">{pkg.slidingScale}</span>
+                      </div>
+                      <div className="old-price-container">
+                        <span className="original-price">{pkg.originalPrice}</span>
+                        <span className="discount">{pkg.discount}</span>
+                      </div>
                     </div>
-                    <div className="old-price-container">
-                      <span className="original-price">{pkg.originalPrice}</span>
-                      <span className="discount">{pkg.discount}</span>
-                    </div>
-                  </div>
+                  )}
                   <p className="package-duration">{pkg.duration}</p>
                 </div>
                 <div className="package-features">
@@ -324,6 +314,11 @@ const Rates = () => {
               </div>
             ))}
           </div>
+          <img
+            src={picA817dd0e}
+            alt="Healing On Tap"
+            className="rates-programs-image"
+          />
         </div>
       </section>
 

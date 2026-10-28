@@ -548,22 +548,6 @@ const JEWS = () => {
 
           <div className="gold-divider"></div>
 
-          <div className="fd-pricing-row">
-            <div className="fd-price-card">
-              <h3>Standard</h3>
-              <p className="fd-price">$3,000</p>
-            </div>
-            <div className="fd-price-card fd-price-highlight">
-              <h3>Founding Cohort</h3>
-              <p className="fd-price">$2,420</p>
-              <p className="fd-price-note">A genuine thank-you for stepping in early as this program grows into its best form.</p>
-            </div>
-          </div>
-          <br></br>
-          <p className="fd-center fd-payment-note"><em>Payment plans available.</em></p>
-
-          <div className="gold-divider"></div>
-
           <p className="fd-tagline">Go deep, and earn a life — and a spirituality — you actually choose.</p>
 
           <div className="fd-cta-group">

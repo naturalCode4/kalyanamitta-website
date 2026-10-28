@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 
+// While Freedom Dojo is the only public program, it sits in the nav on its own.
+// Set to true to bring back the Offerings dropdown (and uncomment the program links inside it).
+const SHOW_OFFERINGS_DROPDOWN = false;
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isProgramsOpen, setIsProgramsOpen] = useState(false);
@@ -105,7 +109,8 @@ const Header = () => {
               <Link to="/" className="nav-link" onClick={(e) => handleNavClick(e, null)}>Home</Link>
             </li>
 
-            {/* Offerings Dropdown - the four program pages */}
+            {/* Offerings Dropdown - program pages */}
+            {SHOW_OFFERINGS_DROPDOWN ? (
             <li className="nav-item dropdown">
               <div className="nav-link-wrapper">
                 <button
@@ -126,11 +131,17 @@ const Header = () => {
 
               <ul className={`dropdown-menu ${isProgramsOpen ? 'show' : ''}`}>
                 <li><Link to="/freedom-dojo" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>Freedom Dojo</Link></li>
-                <li><Link to="/gypabteip" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>GYPABTEIP!</Link></li>
-                <li><Link to="/jews" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>JEWS</Link></li>
-                <li><Link to="/the-practitioners-companion" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>The Practitioner's Companion</Link></li>
+                {/* Other programs temporarily removed from nav — pages still live at /gypbsteip, /jews, /the-practitioners-companion for direct links */}
+                {/* <li><Link to="/gypbsteip" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>GYP&amp;BSTEIP!</Link></li> */}
+                {/* <li><Link to="/jews" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>JEWS</Link></li> */}
+                {/* <li><Link to="/the-practitioners-companion" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>The Practitioner's Companion</Link></li> */}
               </ul>
             </li>
+            ) : (
+            <li className="nav-item">
+              <Link to="/freedom-dojo" className="nav-link" onClick={(e) => handleNavClick(e, null)}>Freedom Dojo</Link>
+            </li>
+            )}
 
             {/* Methods Dropdown - EFT and Spiritual Counseling */}
             <li className="nav-item dropdown">

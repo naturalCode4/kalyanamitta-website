@@ -868,6 +868,12 @@
   gap: 2.5rem;
 }
 
+/* A single program (others currently commented out in src/data/offerings.js)
+   gets one centered column instead of sitting in the left half of the pair. */
+.grid-cards.grid-cards-pairs:has(> :only-child) {
+  grid-template-columns: minmax(0, 480px);
+}
+
 /* Program cards as circles, on a darker rainbow: the inset shadow paints
    over the gradient but under the text. Content is centered and kept
    narrow enough to sit inside the circle. */

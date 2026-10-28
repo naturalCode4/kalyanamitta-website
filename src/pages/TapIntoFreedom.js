@@ -701,22 +701,6 @@ const TapIntoFreedom = () => {
 
           <div className="gold-divider"></div>
 
-          <div className="tif-pricing-row">
-            <div className="tif-price-card">
-              <h3>Standard</h3>
-              <p className="tif-price">$3,000</p>
-            </div>
-            <div className="tif-price-card tif-price-highlight">
-              <h3>Founding Cohort</h3>
-              <p className="tif-price">$2,420</p>
-              <p className="tif-price-note">A genuine thank-you for stepping in early as this program grows into its best form.</p>
-            </div>
-          </div>
-          <br></br>
-          <p className="tif-center tif-payment-note"><em>Payment plans available.</em></p>
-
-          <div className="gold-divider"></div>
-
           <p className="tif-tagline">Go deep, and earn a life you choose.</p>
 
           <div className="tif-cta-group">

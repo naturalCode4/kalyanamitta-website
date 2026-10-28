@@ -203,7 +203,7 @@ const hueVars = (h, { sat = 68, light = 70 } = {}) => ({
 const PROGRAM_FIELD = {
   label: 'Which program are you applying for?',
   type: 'yesno',
-  options: ['Freedom Dojo', 'GYPABTEIP!', 'J.E.W.S.', "The Practitioner's Companion"],
+  options: ['Freedom Dojo', 'GYP&BSTEIP!', 'J.E.W.S.', "The Practitioner's Companion"],
 };
 
 const SECTIONS = [

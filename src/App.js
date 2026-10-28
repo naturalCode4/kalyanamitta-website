@@ -16,7 +16,7 @@ import Devportfolio from './pages/Devportfolio';
 import AlignmentForm from './pages/AlignmentForm';
 import JEWS from './pages/JEWS';
 import ThePractitionersCompanion from './pages/ThePractitionersCompanion';
-import GYPABTEIP from './pages/GYPABTEIP';
+import GYPBSTEIP from './pages/GYPBSTEIP';
 
 function AppContent() {
   const location = useLocation();
@@ -42,9 +42,10 @@ function AppContent() {
           <Route path="/alignment-form" element={<AlignmentForm />} />
           <Route path="/jews" element={<JEWS />} />
           <Route path="/the-practitioners-companion" element={<ThePractitionersCompanion />} />
-          <Route path="/gypabteip" element={<GYPABTEIP />} />
-          <Route path="/raise-yourself-up" element={<Navigate to="/gypabteip" replace />} />
-          <Route path="/coming-home-to-yourself" element={<Navigate to="/gypabteip" replace />} />
+          <Route path="/gypbsteip" element={<GYPBSTEIP />} />
+          <Route path="/gypabteip" element={<Navigate to="/gypbsteip" replace />} />
+          <Route path="/raise-yourself-up" element={<Navigate to="/gypbsteip" replace />} />
+          <Route path="/coming-home-to-yourself" element={<Navigate to="/gypbsteip" replace />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </main>

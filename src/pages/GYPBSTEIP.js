@@ -65,7 +65,7 @@ const Quote = ({ text, author }) => (
   </div>
 );
 
-const GYPABTEIP = () => {
+const GYPBSTEIP = () => {
   const [totalReviews, setTotalReviews] = useState(null);
 
   // Same fetch logic as components/GoogleReviews.js, trimmed to just the
@@ -302,11 +302,11 @@ const GYPABTEIP = () => {
   return (
     <div className="program-page">
       <Helmet>
-        <title>GYPABTEIP! | Get Your Power and Authority Back from Toxic and Emotionally Immature Parenting!</title>
+        <title>GYP&amp;BSTEIP! | Get Your Power and Sovereignty Back from Toxic and Emotionally Immature Parenting!</title>
         <meta name="description" content="A 12-week EFT program to reclaim your authenticity, trust, and peace after emotionally immature, abusive, or toxic parenting." />
-        <meta property="og:title" content="GYPABTEIP! | Get Your Power and Authority Back from Toxic and Emotionally Immature Parenting!" />
+        <meta property="og:title" content="GYP&amp;BSTEIP! | Get Your Power and Sovereignty Back from Toxic and Emotionally Immature Parenting!" />
         <meta property="og:description" content="Reclaim the trust, boundaries, and self-love that emotionally immature or toxic parenting took from you. A 12-week EFT program with Adin." />
-        <meta property="og:url" content="https://healing-on-tap.com/gypabteip" />
+        <meta property="og:url" content="https://healing-on-tap.com/gypbsteip" />
       </Helmet>
 
       {/* Hero */}
@@ -314,8 +314,8 @@ const GYPABTEIP = () => {
         <div className="container">
           <div className="fd-flow">
             <div className="fd-flow-main fd-flow-main-both">
-              <h1 className="subtitle-heading"><RainbowTitle text="Get Your Power & Authority Back from Toxic and Emotionally Immature Parenting" /><span className="fd-rainbow-letter-2">!</span></h1>
-              <p className="fd-hero-line fd-italic"><u className="fd-underline">GYPABTEIP!</u> (Yes, that's really the name.)</p>
+              <h1 className="subtitle-heading"><RainbowTitle text="Get Your Power and Sovereignty Back from Toxic and Emotionally Immature Parenting" /><span className="fd-rainbow-letter-2">!</span></h1>
+              <p className="fd-hero-line fd-italic"><u className="fd-underline">GYP&amp;BSTEIP!</u> (Yes, that's really the name.)</p>
               <p className="fd-hero-line"><u className="fd-underline">Quick question for you</u>: Do you have a rough internal terrain that's difficult to convey to even close friends because a profound level of insecurity was chronically beaten into you by emotionally-immature parents who pretended like they were totally great, but then in your adult life you slowly but surely came to the realization that they actually lack the most basic accountability and empathy?!</p>
               <p className="fd-hero-line">Welcome! This is the deep dive shift <u className="fd-underline">for you!</u> This will radically shift your power, authority, and well-being.</p>
               {/* <p className="fd-hero-line">You didn't learn to <u className="fd-underline">distrust yourself</u> by accident. It was ingrained in you in your childhood.</p>
@@ -342,7 +342,7 @@ const GYPABTEIP = () => {
       {/* Intro */}
       <section className="fd-intro section-dark">
         <div className="container">
-          <p className="fd-emphasis"><u className="fd-underline"><em>GYPABTEIP!</em></u> is a 12-week, one-on-one transformation for doing exactly what the title says. Reclaim what neglect cost you by healing down to the deepest level.</p>
+          <p className="fd-emphasis"><u className="fd-underline"><em>GYP&amp;BSTEIP!</em></u> is a 12-week, one-on-one transformation for doing exactly what the title says. Reclaim what neglect cost you by healing down to the deepest level.</p>
 
           <div className="collapsible-header fd-inline-trigger" onClick={() => toggleSection('costOfCarrying')}>
             <span className={`triangle ${openSections.costOfCarrying ? 'open' : ''}`}></span>
@@ -467,7 +467,7 @@ const GYPABTEIP = () => {
               <div className={`collapsible-content ${openSections.runningMore ? 'open' : ''}`}>
                 <p>When you brought your hurt to them, you may have been told you're "too sensitive," a 'difficult child', told to toughen up, or somehow blamed for your issue by the parent who was bigger and had a more powerful voice. Maybe it was "when you're parents, you'll understand...".</p>
                 <p>Being told these things are a sign that your parents may be toxic and immature, and didn't give you the love and attention you deserved! It’s called gaslighting. So because of this you have learned that your feelings were wrong and that your experience/perception isn’t valid. So there's a fundamental distrust in your own intuition. Much compassion to this situation – no judgment – I’m just telling it like it is.</p>
-                <p>In GYPABTEIP!, you restore access to your intuition, self-trust, power, and authority.</p>
+                <p>In GYP&amp;BSTEIP!, you restore access to your intuition, self-trust, power, and authority.</p>
                 <p>Some people develop complex PTSD (CPTSD). PTSD comes from one or a handful of traumatic events. CPTSD comes from being raised in an environment where the same harm happened over and over again.</p>
                 <p>Carried into adulthood unprocessed, this doesn't just go away. Similar situations can trigger old memories, sometimes ones you don't even consciously remember. The old stories keep running.</p>
               </div>
@@ -963,22 +963,6 @@ const GYPABTEIP = () => {
 
           <div className="gold-divider"></div>
 
-          <div className="fd-pricing-row">
-            <div className="fd-price-card">
-              <h3>Standard</h3>
-              <p className="fd-price">$3,000</p>
-            </div>
-            <div className="fd-price-card fd-price-highlight">
-              <h3>Founding Cohort</h3>
-              <p className="fd-price">$2,420</p>
-              <p className="fd-price-note">A genuine thank-you for stepping in early as this program grows into its best form.</p>
-            </div>
-          </div>
-          <br></br>
-          <p className="fd-center fd-payment-note"><em>Payment plans available.</em></p>
-
-          <div className="gold-divider"></div>
-
           <p className="fd-tagline">Go deep, and take your power all the way back.</p>
 
           <div className="fd-cta-group">
@@ -1010,4 +994,4 @@ const GYPABTEIP = () => {
   );
 };
 
-export default GYPABTEIP;
+export default GYPBSTEIP;
