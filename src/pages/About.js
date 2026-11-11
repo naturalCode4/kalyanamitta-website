@@ -98,11 +98,16 @@ const About = () => {
                 His mission is to alchemize evolution by offering powerful modalities, loving presence, and wisdom. His approach is integrative and personal– grounded in intuition, science, and various spiritual traditions.
               </p>
               <p>
-                He offers EFT (Emotional Freedom Techniques, or Tapping) and Spiritual Counseling and Practices (Meditation, Yoga, Breathwork, Voice-Based Sound Healing, Prayer, Ecstatic Dance).
+                He offers EFT (Emotional Freedom Techniques, or Tapping) and Spiritual Coaching and Practices (Meditation, Yoga, Breathwork, Voice-Based Sound Healing, Prayer, Ecstatic Dance).
               </p>
               <p>
                 He is a certified practitioner of Emotional Freedom Techniques (EFT), Reiki II, Yoga (500 YTT), and Breathwork. He has practiced in Zen, Tibetan, and Theravadan Buddhist lineages. He has explored mysticism across Native, Taoist, Judaic, Christian, Hermetic, and Sufi traditions, as well as yoga, qi gong, medicine work, shamanism, healing arts, psychic development, bhakti, and ecstatic dance—seeking what genuinely gives life, unclouds the pure heart, and supports positive transformation.
               </p>
+              <img
+                src={pic10}
+                alt="Adin outdoors among the trees"
+                className="about-story-image about-story-image-clear"
+              />
               <p>
                 Adin has <u className="about-underline">lived</u> this work, not just studied it. He's come through PTSD, childhood wounding, emotionally immature parenting, anxiety, depression, shame, insecurity, and heartbreak — and learned to walk as a sensitive, conscious soul and "black sheep." EFT and his other practices have positively transformed his life. When you work with him, you're with someone who's <u className="about-underline"><em>been there in the mud</em></u>, made it through, and earned his metaphorical badges and stamps. You're not alone in this.
               </p>
@@ -143,7 +148,7 @@ const About = () => {
               
               <div className="gold-divider"></div>
               
-              {/* Story - Collapsible */}
+              {/* Story temporarily removed — uncomment to bring it back. Its photo (pic10) now sits in the always-visible bio above.
               <h3 className="collapsible-header" onClick={() => toggleSection('story')}>
                 <span className={`triangle ${openSections.story ? 'open' : ''}`}></span>
                 Story
@@ -167,7 +172,7 @@ const About = () => {
                 <p>
                   At Wesleyan University, while studying music and engineering, I explored Buddhist meditation, Ashtanga Yoga, Shamanism, and eagerly pursued a more truthful knowing of the heart, mind, and how to live this life well. My friends and I were concerned about the stress and mental-performance-focused culture we saw both on campus and in society at large. We founded the Wesleyan Buddhist meditation club and created a really supportive space together. A friend who had spent a semester at <a href="https://zenstudies.org/dai-bosatsu-zendo/" target="_blank">Dai Bosatsu Zendo</a> brought our group there, where I got to experience meditation in a beautiful, traditional context. A wonderful non-profit organization, <a href="https://www.dharma-gates.org/" target="_blank">Dharma Gates</a>, arose from my friend group's desire to positively impact culture and wellness— which generously (without cost) offers immersions for young people in deep and authentic Buddhist meditation practice.                </p> 
                 <p>
-                  Since then I've explored many other kinds of contemplative practices. Each of the practices I offer today– Emotional Freedom Techniques (Tapping), Spiritual Counseling, Meditation, Yoga, Breathwork, and Sound Healing– have had a very positive impact on me. I offer what I believe in and have lived.                </p>
+                  Since then I've explored many other kinds of contemplative practices. Each of the practices I offer today– Emotional Freedom Techniques (Tapping), Spiritual Coaching, Meditation, Yoga, Breathwork, and Sound Healing– have had a very positive impact on me. I offer what I believe in and have lived.                </p>
                 <p>
                   In April 2025, I felt ready to center my livelihood around what I already love doing—helping people and sharing my life and practice. The willingness to follow divine alignment and purpose was perhaps very obvious when it came to me! But to be fair, I wasn't fully ready before then. Then, once I made a confident commitment to step into this work, The Great Spirit sent me on a healing journey, which I believe purified me and prepared me to step more fully into service. I am continually learning and growing. That same year I certified in Reiki II, <a href="https://trainwithsonya.us/" target="_blank">EFT (Tapping)</a>, yoga, and pranayama. I feel aligned, grounded, and empowered to offer this work from a place of depth, stability, and clear intention.
                 </p>
@@ -177,7 +182,8 @@ const About = () => {
               </div>
               
               <div className="gold-divider"></div>
-              
+              */}
+
               {/* Healing is For Everyone - Collapsible */}
               <h3 className="collapsible-header" onClick={() => toggleSection('healing')}>
                 <span className={`triangle ${openSections.healing ? 'open' : ''}`}></span>

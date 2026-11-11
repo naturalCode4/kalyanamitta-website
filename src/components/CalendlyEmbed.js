@@ -40,7 +40,7 @@ const CalendlyEmbed = () => {
             Learn more about Reiki / Energy Healing
           </Link> */}
 <Link to="/spiritual-practice" className="btn btn-outline btn-small" target="_blank">
-            Learn more about Spiritual Counseling
+            Learn more about Spiritual Coaching
           </Link>
         </div>
         <p className="calendly-footer-note">Sessions are held virtually or in my current location</p>

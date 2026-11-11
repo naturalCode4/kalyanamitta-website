@@ -98,6 +98,11 @@
   width: 364px;
 }
 
+/* Sits below the floated portrait instead of beside it. */
+.about-story-image.about-story-image-clear {
+  clear: right;
+}
+
 .placeholder-image {
   width: 100%;
   height: 400px;

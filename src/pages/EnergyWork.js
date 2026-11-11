@@ -149,7 +149,7 @@ const EnergyWork = () => {
                 <div className="expect-item">
                   <h4>Closing & Integration</h4>
                   <p>
-                    After the session, we'll take time to ground and integrate. If you'd like, we can discuss anything that arose—experiences, energy, insights, or questions. Spiritual counseling is available if desired. Subtle shifts tend to become more apparent after the session, and one may continue to notice positive shifts for several days.
+                    After the session, we'll take time to ground and integrate. If you'd like, we can discuss anything that arose—experiences, energy, insights, or questions. Spiritual coaching is available if desired. Subtle shifts tend to become more apparent after the session, and one may continue to notice positive shifts for several days.
                   </p>
                 </div>
 

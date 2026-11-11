@@ -196,9 +196,9 @@ const JEWS = () => {
     <div className="program-page">
       <Helmet>
         <title>J.E.W.S. | Jewish Emotional Wellness Sessions with Adin</title>
-        <meta name="description" content="A 12-week EFT & spiritual counseling program for the specific emotional, ancestral, and spiritual patterns of Jewish life — stress, money, food, safety, spirituality, Israel, and more." />
+        <meta name="description" content="A 12-week EFT & spiritual coaching program for the specific emotional, ancestral, and spiritual patterns of Jewish life — stress, money, food, safety, spirituality, Israel, and more." />
         <meta property="og:title" content="J.E.W.S. | Jewish Emotional Wellness Sessions" />
-        <meta property="og:description" content="A 12-week EFT & spiritual counseling program for the specific emotional, ancestral, and spiritual patterns of Jewish life." />
+        <meta property="og:description" content="A 12-week EFT & spiritual coaching program for the specific emotional, ancestral, and spiritual patterns of Jewish life." />
         <meta property="og:url" content="https://healing-on-tap.com/jews" />
       </Helmet>
 

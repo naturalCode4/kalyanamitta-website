@@ -56,14 +56,14 @@ const Flame = () => (
 // the gold and neon-blue accents used elsewhere on the page.
 const VALUES = [
   {
+    title: 'Full-Spectrum Versatility',
+    icon: 'layers',
+    text: 'Not just the code: Full project management, UI/UX and web design, website and business strategy, SEO, content writing and storytelling, integrations, hosting and infrastructure, QA, and continuous updates. I provide emotional and energetic support, too.',
+  },
+  {
     title: 'Done Right',
     icon: 'shield',
     text: 'The right build for your needs, built with excellence. Quick turnaround, no cut corners.',
-  },
-  {
-    title: 'Full-Spectrum Versatility',
-    icon: 'layers',
-    text: 'Not just the code: UI/UX and web design, website and business strategy, SEO, content writing and storytelling, integrations, hosting and infrastructure, QA, and ongoing support. Emotional and energetic support is available too.',
   },
   {
     title: 'Collaborative Creations',
@@ -233,10 +233,10 @@ const Portfolio = () => {
       linkText: "Visit Website"
     },
     {
-      title: "Astrological Libido Tracker",
-      role: "Creator, Developer & Designer",
-      description: "Did you know men have sexual cycles too? It's based in your astrology, and it's surprisingly predictable. I made this first-of-its-kind tracker.",
-      link: "https://astrological-libido-tracker.vercel.app/",
+      title: "Anchor'd Aspens Home Care",
+      role: "Developer and Designer",
+      description: "A beautiful custom site meeting the brand of conscious contractors based in Boulder, Colorado. This is built in React.js, CSS, and Claude AI for implementation. It includes a custom mailer integration. I'm very proud of this one - built for some close friends doing excellent work.",
+      link: "http://www.anchordaspen.com",
       linkText: "Visit Website"
     },
     {
@@ -244,6 +244,13 @@ const Portfolio = () => {
       role: "Developer & Designer",
       description: "Designed and built a custom, beautifully designed React.js site for an off-grid, solar-powered mobile kitchen and power unit. Worked closely with the client — who had little technical background — to develop his vision, create an elegant design, scribe his writing, and shape his story into a lasting legacy for his family.",
       link: "https://sonship.party",
+      linkText: "Visit Website"
+    },
+    {
+      title: "Astrological Libido Tracker",
+      role: "Creator, Developer & Designer",
+      description: "Did you know men have sexual cycles too? It's based in your astrology, and it's surprisingly predictable. I made this first-of-its-kind tracker.",
+      link: "https://astrological-libido-tracker.vercel.app/",
       linkText: "Visit Website"
     },
     {
@@ -384,7 +391,7 @@ const Portfolio = () => {
                 Affordable and flexible to fit your needs. Let's talk about your project.
               </li>
               <li>
-                You just work with me – no complication. 1 versatile engineer that can handle it all: consultation, design collaboration, build, website–business strategy, integrations, hosting, QA, ongoing support.
+                You just work with me – no complication. 1 versatile engineer that can handle it all: consultation, full project management, design collaboration, build, website–business strategy, integrations, hosting, QA, ongoing support.
               </li>
               <li>
                 Plus, if you want it: I'm a strong writer and can help with your words, content, and story, not just the tech.

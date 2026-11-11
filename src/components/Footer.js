@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <h3>Healing On Tap</h3>
-            <p>Healing & Guidance Rooted in Love and Wisdom. EFT & Spiritual Counseling</p>
+            <p>Healing & Guidance Rooted in Love and Wisdom. EFT & Spiritual Coaching</p>
           </div>
           
           <div className="footer-section">
@@ -20,7 +20,7 @@ const Footer = () => {
               <li><Link to="/EFT-emotional-freedom-techniques">EFT/Tapping</Link></li>
               {/* Reiki / Energy Healing temporarily removed from nav — page still live at /energy-work for direct links */}
               {/* <li><Link to="/energy-work">Energy Healing</Link></li> */}
-              <li><Link to="/spiritual-practice">Spiritual Counseling</Link></li>
+              <li><Link to="/spiritual-practice">Spiritual Coaching</Link></li>
               <li><Link to="/about#testimonials">Testimonials</Link></li>
               <li><Link to="/about#about-adin">About Adin</Link></li>
               <li><Link to="/rates">Rates</Link></li>

@@ -143,7 +143,7 @@ const Header = () => {
             </li>
             )}
 
-            {/* Methods Dropdown - EFT and Spiritual Counseling */}
+            {/* Methods Dropdown - EFT and Spiritual Coaching */}
             <li className="nav-item dropdown">
               <div className="nav-link-wrapper">
                 <button
@@ -166,7 +166,7 @@ const Header = () => {
                 <li><Link to="/EFT-emotional-freedom-techniques" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>EFT (Tapping)</Link></li>
                 {/* Reiki / Energy Healing temporarily removed from nav — page still live at /energy-work for direct links */}
                 {/* <li><Link to="/energy-work" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>Energy Healing</Link></li> */}
-                <li><Link to="/spiritual-practice" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>Spiritual Counseling & Practice</Link></li>
+                <li><Link to="/spiritual-practice" className="dropdown-link" onClick={(e) => handleNavClick(e, null)}>Spiritual Coaching & Practice</Link></li>
               </ul>
             </li>
 

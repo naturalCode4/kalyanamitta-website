@@ -26,9 +26,9 @@ Done
 - Home page shorter catchier summary. Like Luminary Shaman
 - Ask folks to post review on Google - Owen, Ethan, Travis
 - Choose picture
-- Quick Links Offerings link... Get rid of that page. Add EFT, Energy Healing, Spiritual Counseling. Also add testimonials to footer too.
+- Quick Links Offerings link... Get rid of that page. Add EFT, Energy Healing, Spiritual Coaching. Also add testimonials to footer too.
 - ? Sometimes the reviews repeat themselves forever, maybe that's only when i make edits now.
-- Update spiritual counseling for pointed Ruler energy guidance. Give them some more to bite on, like 3 bullet points: loving presence, pointed guidance, practice
+- Update spiritual coaching for pointed Ruler energy guidance. Give them some more to bite on, like 3 bullet points: loving presence, pointed guidance, practice
 - on both desktop and mobile, the header goes too far out to the edge. it's basically touching. increase those margins 
 - Add edance to my calendar
 - *Make responsive*

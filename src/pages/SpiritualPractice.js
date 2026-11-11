@@ -24,6 +24,7 @@ const SpiritualPractice = () => {
     soundHealing: false,
     breathwork: false,
     yogaAsana: false,
+    prayer: false,
     meditation: false,
     ecstaticDance: false,
     eft: false
@@ -39,9 +40,9 @@ const SpiritualPractice = () => {
   return (
     <div className="spiritual-practice">
       <Helmet>
-        <title>Spiritual Counseling and Practices | Deep Support for Your Life and Spiritual Path</title>
+        <title>Spiritual Coaching and Practices | Deep Support for Your Life and Spiritual Path</title>
         <meta name="description" content="Build the wisdom and compassion needed to live well. Be seen and heard as you are. Learn and deepen mind-body practices." />
-        <meta property="og:title" content="Spiritual Counseling and Practices | Deep Support for Your Life and Spiritual Path" />
+        <meta property="og:title" content="Spiritual Coaching and Practices | Deep Support for Your Life and Spiritual Path" />
         <meta property="og:description" content="Build the wisdom and compassion needed to live well. Be seen and heard as you are. Learn and deepen mind-body practices." />
         <meta property="og:url" content="https://healing-on-tap.com/spiritual-practice" />
       </Helmet>
@@ -49,7 +50,7 @@ const SpiritualPractice = () => {
       <section className="spiritual-practice-hero">
         <div className="container">
           <div className="spiritual-practice-hero-content">
-            <h1>Spiritual Counseling & Practice</h1>
+            <h1>Spiritual Coaching & Practice</h1>
             <p className="spiritual-practice-subtitle">
               Deepen your spiritual understanding, and cultivate the wisdom, compassion, and authenticity needed to live well. Be deeply met, compassionately supported, and guided. Learn or deepen Mind-Body practices to grow in the Spiritual Life.
             </p>
@@ -61,7 +62,7 @@ const SpiritualPractice = () => {
       <section className="about-spiritual-practice section-rainbow">
         <div className="container">
           <div className="about-spiritual-practice-content">
-            <h2 className="subtitle-heading">About Spiritual Counseling</h2>
+            <h2 className="subtitle-heading">About Spiritual Coaching</h2>
             <div className="offering-book-cta">
               <Link to="/contact#booking" className="btn btn-outline">
                 Book a Session →
@@ -72,7 +73,7 @@ const SpiritualPractice = () => {
             <div className="spiritual-image-container">
               <img
                 src={pic4}
-                alt="Spiritual Counseling Session"
+                alt="Spiritual Coaching Session"
                 className="spiritual-practice-pic"
               />
             </div>
@@ -222,6 +223,14 @@ const SpiritualPractice = () => {
                 <b>Yoga (Asana)</b>
               </h3>
               <div className={`collapsible-content ${openSections.yogaAsana ? 'open' : ''}`}>
+              </div>
+
+              {/* Prayer - Collapsible */}
+              <h3 className="collapsible-header" onClick={() => toggleSection('prayer')}>
+                <span className={`triangle ${openSections.prayer ? 'open' : ''}`}></span>
+                <b>Prayer</b>
+              </h3>
+              <div className={`collapsible-content ${openSections.prayer ? 'open' : ''}`}>
               </div>
 
               {/* Ecstatic Dance / Intuitive Movement - Collapsible */}

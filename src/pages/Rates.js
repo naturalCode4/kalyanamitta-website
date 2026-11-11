@@ -11,7 +11,7 @@ const Rates = () => {
   const packages = [
     {
       name: 'Freedom Dojo',
-      description: "A container to dissolve the limitations that have been running your life, and become calm, happy, free, empowered to achieve what you desire — for good.",
+      description: "A 12-week container to seriously upgrade your existence. Dissolve old pain and create massively positive shifts, that last. Get calm, happy, free, and empowered – as your baseline.",
       features: [
         'A 3-month container of healing and upgrades: improving or completely resolving 3 to 6 Areas of Focus, creating a massively positive, lasting transformation for you',
         'Twelve 90-minute 1-on-1 EFT & Coaching sessions',
@@ -26,30 +26,28 @@ const Rates = () => {
     {
       name: '4-Session Combo',
       description: "If you're tired of white-knuckling through life, this is for you. A month together — four potent sessions to release what's weighing you down and reclaim your energy — fast.",
-      mainPrice: '$612',
-      slidingScale: ' / Sliding Scale $377-1,020',
-      originalPrice: '$720. Sliding Scale $444-1,200',
-      discount: '15% OFF',
+      mainPrice: '$684',
+      originalPrice: '$720',
+      discount: '5% OFF',
       features: [
         'A month together: four 90-minute 1-on-1 sessions',
-        'Any combination of services',
+        'Any combination of services: EFT, Coaching, Spiritual Counseling and Practices',
         'Ongoing support and guidance',
-        '15% discount on total price'
+        '5% discount on total price'
       ]
     },
     {
       name: '7-Session Combo',
-      description: "For those ready to go all in on real change — even the big stuff. Seven potent sessions to heal at the root and expand your spiritual capacity, for good.",
-      mainPrice: '$1,008',
-      slidingScale: ' / Sliding Scale $621-1,680',
-      originalPrice: '$1,260. Sliding Scale $777-2,100',
-      discount: '20% OFF',
+      description: "For profound, lasting change in your life — even the big stuff. Heal at the root and rise to meet your potential.",
+      mainPrice: '$1,134',
+      originalPrice: '$1,260',
+      discount: '10% OFF',
       features: [
         'Seven 90 minute sessions',
-        'Any combination of services',
+        'Any combination of services: EFT, Coaching, Spiritual Counseling and Practices',
         'Learn to tap (EFT) on yourself',
         'Ongoing support and guidance',
-        '20% discount on total price'
+        '10% discount on total price'
       ]
     },
   ];
@@ -118,9 +116,9 @@ const Rates = () => {
     <div className="rates">
       <Helmet>
         <title>Rates & Packages | Healing On Tap</title>
-        <meta name="description" content="View pricing for single sessions and packages for EFT and Counseling." />
+        <meta name="description" content="View pricing for single sessions and packages for EFT and Coaching." />
         <meta property="og:title" content="Healing On Tap | Rates & Packages" />
-        <meta property="og:description" content="View pricing for single sessions and packages for EFT and Counseling." />
+        <meta property="og:description" content="View pricing for single sessions and packages for EFT and Coaching." />
         <meta property="og:url" content="https://healing-on-tap.com/rates" />
       </Helmet>
       {/* Hero Section */}
@@ -140,7 +138,7 @@ const Rates = () => {
         <div className="container">
           <h2 className="subtitle-heading">The <u className="rates-underline">Freedom Dojo</u> Offer</h2>
           <p className="rates-fd-description">
-            A 12-week container to dissolve what's been running your life, and become calm, happy, free, and empowered — for good.
+            A 12-week container to seriously upgrade your existence. Dissolve old pain and create massively positive shifts, that last. Get calm, happy, free, and empowered – as your baseline.
           </p>
           <Link to="/freedom-dojo" className="btn">Learn More →</Link>
         </div>

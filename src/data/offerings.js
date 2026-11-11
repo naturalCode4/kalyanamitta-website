@@ -1,10 +1,9 @@
 // The 12-week programs, shown as cards in the Home page's Offerings section.
-// Every description opens with the same "A 12-week tapping and coaching program".
 export const programs = [
   {
     id: 'freedom-dojo',
     title: 'Freedom Dojo',
-    content: 'A 12-week tapping and coaching program to dissolve old pain and reclaim your life, for good. Become calm, happy, free, and empowered as your baseline.',
+    content: 'A 12-week container to seriously upgrade your existence. Dissolve old pain and create massively positive shifts, that last. Get calm, happy, free, and empowered – as your baseline.',
   },
   // Other programs temporarily hidden from the Home page — pages still live for direct links
   // {
@@ -39,7 +38,7 @@ export const offerings = [
   // },
   {
     id: 'spiritual-practice',
-    title: 'Spiritual Counseling and Practices',
+    title: 'Spiritual Coaching and Practices',
     content: "Guidance, education, and heart-companionship in your life and spiritual development — addressing your challenges and expansion. I help people relate to spirituality authentically. I can help you learn or deepen practices — building a living relationship with: meditation, breathwork, yoga, voice-based sound healing, prayer, ecstatic dance, or whatever you bring."
   },
 ];

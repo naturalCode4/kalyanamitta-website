@@ -562,15 +562,20 @@
   margin: 0;
   padding: 2rem 2.25rem;
   background: #1a1a1a;
-  border: 1px solid #2d3748;
+  /* Light blue from the hero neon sign (.value-blue's --accent-bright). */
+  border: 1px solid #8ccbff;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+.contact-text-col .contact-about p {
+  color: #8ccbff;
+}
+
 .contact-text-col .contact-highlights li {
-  color: #b8b8b8;
+  color: #8ccbff;
   font-size: 1.1rem;
 }
 

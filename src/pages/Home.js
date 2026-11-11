@@ -51,9 +51,9 @@ const Home = () => {
     <div className="home">
       <Helmet>
         <title>Healing On Tap | Integrative Healing & Guidance</title>
-        <meta name="description" content="Transform your life with EFT Tapping and Spiritual Counseling." />
+        <meta name="description" content="Transform your life with EFT Tapping and Spiritual Coaching." />
         <meta property="og:title" content="Healing On Tap | Integrative Healing & Guidance" />
-        <meta property="og:description" content="Transform your life with EFT Tapping and Spiritual Counseling." />
+        <meta property="og:description" content="Transform your life with EFT Tapping and Spiritual Coaching." />
       </Helmet>
       {/* Hero Section */}
       <section className="hero">
@@ -98,13 +98,14 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Offerings - the 12-week programs */}
+      {/* Offerings and Sessions - the 12-week programs (circles) first, then
+          individual EFT and spiritual coaching sessions (cards) */}
       <Section
         variant="dark"
-        title="Offerings"
+        title="Offerings and Sessions"
         subtitle=""
       >
-        <div className="grid grid-cards grid-cards-pairs">
+        <div className="offerings-sessions-grid">
           {programs.map((program) => (
             <div className="program-circle" key={program.id}>
               <ServiceCard
@@ -117,25 +118,15 @@ const Home = () => {
               />
             </div>
           ))}
-        </div>
-      </Section>
-
-      {/* Sessions - individual EFT and spiritual counseling */}
-      <Section 
-        variant="dark" 
-        title="Sessions"
-        subtitle=""
-      >
-
-        <div className="grid grid-cards">
           {offerings.map((offering) => (
-            <ServiceCard
-              key={offering.id}
-              title={offering.title}
-              content={offering.content}
-              learnMoreLink={`/${offering.id}`}
-              variant="rainbow"
-            />
+            <div className="session-card" key={offering.id}>
+              <ServiceCard
+                title={offering.title}
+                content={offering.content}
+                learnMoreLink={`/${offering.id}`}
+                variant="rainbow"
+              />
+            </div>
           ))}
         </div>
       </Section>
@@ -152,7 +143,7 @@ const Home = () => {
             <p>This work offers profound, lasting transformation — reaching into every part of your life, inner and outer. <b>Whatever it is you're carrying, this work can shift it.</b></p>
             <p>This is where you <b>put down the heavy baggage</b> — the old fear, unprocessed pain, negative emotions, and limiting beliefs and conditioning you never chose. Here, at the deepest, root level, you restore your <b>life-force</b> — earning the <b>freedom to live calm, happy, free, and empowered.</b></p>
             <p>At your core, you are <em>already</em> <b></b>whole, inherently <b>loving</b>, <b>wise</b>, <b>peaceful</b>, with the <b>innate capacity for healing</b>. This work clears what's been in the way, and activates these innate qualities so they can <b>fully bloom.</b></p>
-            <p>The primary methods we use are <b>EFT (Emotional Freedom Techniques, aka Tapping)</b> and <b>Spiritual Counseling and Practices</b> — including <b>breathwork, yoga, sound healing, prayer, meditation, and ecstatic dance</b>.</p>
+            <p>The primary methods we use are <b>EFT (Emotional Freedom Techniques, aka Tapping)</b> and <b>Spiritual Coaching and Practices</b> — including <b>breathwork, yoga, sound healing, prayer, meditation, and ecstatic dance</b>.</p>
             <p>Some shifts will happen wonderfully <b>fast</b>, almost like <b>magic.</b> Others take patience. Either way, when it moves, it moves <b>palpably and profoundly</b> — not just on the surface.</p>
             <p>Grounded in intuition, science, essential spiritual teachings, deep training and experience, and love and wisdom, this guidance meets you where you are, and unfolds at the depth you're ready for. <b>I got you.</b> <em>All it takes is your willingness.</em></p>
           </div>

@@ -862,16 +862,43 @@
   margin-top: 2rem
 }
 
-/* Four program cards read better as a 2x2 block than as 3 + 1 orphan. */
-.grid-cards.grid-cards-pairs {
-  grid-template-columns: repeat(2, 480px);
-  gap: 2.5rem;
+/* Programs (circles) and sessions (cards) share one row on desktop:
+   circle on the left, session cards filling the rest. Flex-wrap so extra
+   programs (currently commented out in src/data/offerings.js) wrap cleanly. */
+.offerings-sessions-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
-/* A single program (others currently commented out in src/data/offerings.js)
-   gets one centered column instead of sitting in the left half of the pair. */
-.grid-cards.grid-cards-pairs:has(> :only-child) {
-  grid-template-columns: minmax(0, 480px);
+.offerings-sessions-grid .program-circle {
+  flex: 0 0 auto;
+}
+
+/* min-width: 0 lets the cards shrink below their buttons' natural width;
+   without it the second card wraps even on full-width desktop. */
+.offerings-sessions-grid .session-card {
+  flex: 1 1 260px;
+  min-width: 0;
+  max-width: 380px;
+  align-self: stretch;
+}
+
+.offerings-sessions-grid .session-card .card {
+  height: 100%;
+}
+
+/* Not enough room for circle + two cards in one row: circle gets its own
+   row, centered, with the session cards side by side beneath it. */
+@media (max-width: 1100px) {
+  .offerings-sessions-grid .program-circle {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* Program cards as circles, on a darker rainbow: the inset shadow paints
@@ -934,10 +961,6 @@
 @media (max-width: 1024px) {
   .grid-cards {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-
-  .grid-cards.grid-cards-pairs {
-    grid-template-columns: minmax(0, 480px);
   }
 }
 
